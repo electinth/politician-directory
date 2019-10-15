@@ -28,9 +28,9 @@ const ProfilePage = ({ data: { profileYaml } }) => (
         <span key={position}>{`${position}`}</span>
       ))}
     </p>
-    <h3>คณะรัฐมนตรี: {`${profileYaml.in_cabinet ? "ใช่" : "ไม่ใข่"}`}</h3>
-    <h3>ส.ว.: {`${profileYaml.in_senate ? "ใช่" : "ไม่ใข่"}`}</h3>
-    <h3>ส.ส.: {`${profileYaml.in_representatives ? "ใช่" : "ไม่ใข่"}`}</h3>
+    <h3>คณะรัฐมนตรี: {`${profileYaml.in_cabinet ? "ใช่" : "ไม่ใช่"}`}</h3>
+    <h3>ส.ว.: {`${profileYaml.in_senate ? "ใช่" : "ไม่ใช่"}`}</h3>
+    <h3>ส.ส.: {`${profileYaml.in_representatives ? "ใช่" : "ไม่ใช่"}`}</h3>
   </Layout>
 )
 
