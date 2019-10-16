@@ -1,8 +1,8 @@
 <h1 align="center">
-  Political Directory
+  Politician Directory
 </h1>
 
-สมุดพกนักการเมือง (Political Directory) is an open-source project for listing and tracking activities of members of the Cabinet and National Assembly of Thailand. It's run on [Gatsby](https://www.gatsbyjs.org).
+สมุดพกนักการเมือง (Politician Directory) is an open-source project for listing and tracking activities of members of the Cabinet and National Assembly of Thailand. It's run on [Gatsby](https://www.gatsbyjs.org).
 
 ## Development
 
