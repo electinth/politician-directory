@@ -1,8 +1,10 @@
 - id: '1'
   title: 'LGBT #1'
-  title_en: ''
+  en:
+    title: ''
+    legal_title: ''
   legal_title: ร่างข้อบังคับการประชุมฯ พ.ศ.
-  field5: ประชุม ส.ส.
+  meeting: ประชุม ส.ส.
   type: วาระ
   vote_date: '2019-08-22'
   passed: true
@@ -21,9 +23,11 @@
       link: ''
 - id: '2'
   title: 'LGBT #2'
-  title_en: ''
+  en:
+    title: ''
+    legal_title: ''
   legal_title: ร่างข้อบังคับการประชุมฯ พ.ศ.
-  field5: ประชุม ส.ว.
+  meeting: ประชุม ส.ว.
   type: ญัตติ
   vote_date: '2019-09-15'
   passed: false
@@ -42,11 +46,13 @@
       link: ''
 - id: '3'
   title: 'BTS #1'
-  title_en: ''
+  en:
+    title: ''
+    legal_title: ''
   legal_title: ''
-  field5: ''
+  meeting: ''
   type: ''
-  vote_date: ''
+  vote_date: null
   passed: false
   approve: null
   disprove: null
@@ -63,11 +69,13 @@
       link: ''
 - id: '4'
   title: 'BTS #2'
-  title_en: ''
+  en:
+    title: ''
+    legal_title: ''
   legal_title: ''
-  field5: ''
+  meeting: ''
   type: ''
-  vote_date: ''
+  vote_date: null
   passed: false
   approve: null
   disprove: null

@@ -1,10 +1,12 @@
-- id: "1"
+- id: '1'
   title: นาย
   name: กนก
   lastname: ลิ้มตระกูล
-  title_en: Mr.
-  name_en: Kanok
-  lastname_en: Limtrakul
+  en:
+    title: Mr.
+    name: Kanok
+    lastname: Limtrakul
+    occupation: Business Person
   is_mp: true
   is_senator: false
   is_cabinet: false
@@ -12,75 +14,85 @@
   team: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: อุตรดิตถ์
-  mp_zone: "1"
+  mp_zone: '1'
   vote: 54669
-  party_position: ""
-  senator_method: ""
+  party_position: ''
+  senator_method: ''
   cabinet_position: []
   committee: []
   gender: ชาย
-  birthdate: "1957-12-25"
+  birthdate: '1957-12-25'
   education: ปริญญาโท
   graduation: []
   occupation: นักธุรกิจ
-  occupation_en: Business Person
-  occupation group: ""
+  occupation group: ''
   prev_polit_pos: []
-  quotes: ""
-  quotes_url: ""
-  asset: ""
-  debt: ""
-  facebook: ""
-  twitter: ""
+  quotes: ''
+  quotes_url: ''
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
   is_active: true
-  inactive_reason: ""
-  note: ""
-  bio: ""
-- id: "2"
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '2'
   title: นาย
   name: กนก
   lastname: วงษ์ตระหง่าน
-  title_en: Mr.
-  name_en: Kanok
-  lastname_en: Wongtrangan
+  en:
+    title: Mr.
+    name: Kanok
+    lastname: Wongtrangan
+    occupation: Politician
   is_mp: true
   is_senator: false
   is_cabinet: false
   party: ประชาธิปัตย์
   team: ฝ่ายรัฐบาล
   mp_type: บัญชีรายชื่อ
-  mp_province: ""
-  mp_zone: "14"
+  mp_province: ''
+  mp_zone: '14'
   vote: null
-  party_position: ""
-  senator_method: ""
+  party_position: ''
+  senator_method: ''
   cabinet_position: []
   committee: []
   gender: ชาย
-  birthdate: "1952-03-01"
+  birthdate: '1952-03-01'
   education: ปริญญาเอก
   graduation: []
   occupation: นักการเมือง
-  occupation_en: Politician
-  occupation group: ""
+  occupation group: ''
   prev_polit_pos: []
-  quotes: ""
-  quotes_url: ""
-  asset: ""
-  debt: ""
-  facebook: ""
-  twitter: ""
+  quotes: ''
+  quotes_url: ''
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
   is_active: true
-  inactive_reason: ""
-  note: ""
-  bio: ""
-- id: "3"
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '3'
   title: นาย
   name: กมลศักดิ์
   lastname: ลีวาเมาะ
-  title_en: Mr.
-  name_en: Kamolsak
-  lastname_en: Liwamo
+  en:
+    title: Mr.
+    name: Kamolsak
+    lastname: Liwamo
+    occupation: Lawyer
   is_mp: true
   is_senator: false
   is_cabinet: false
@@ -88,255 +100,284 @@
   team: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: นราธิวาส
-  mp_zone: "4"
+  mp_zone: '4'
   vote: 40807
-  party_position: ""
-  senator_method: ""
+  party_position: ''
+  senator_method: ''
   cabinet_position: []
   committee: []
   gender: ชาย
-  birthdate: "1968-10-19"
+  birthdate: '1968-10-19'
   education: ปริญญาโท
   graduation: []
   occupation: ทนายความ
-  occupation_en: Lawyer
-  occupation group: ""
+  occupation group: ''
   prev_polit_pos: []
-  quotes: ""
-  quotes_url: ""
-  asset: ""
-  debt: ""
-  facebook: ""
-  twitter: ""
+  quotes: ''
+  quotes_url: ''
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
   is_active: true
-  inactive_reason: ""
-  note: ""
-  bio: ""
-- id: "4"
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '4'
   title: นาย
   name: กรณ์
   lastname: จาติกวณิช
-  title_en: Mr.
-  name_en: Korn
-  lastname_en: Jatikavajnich
+  en:
+    title: Mr.
+    name: Korn
+    lastname: Jatikavajnich
+    occupation: Politician
   is_mp: true
   is_senator: false
   is_cabinet: false
   party: ประชาธิปัตย์
   team: ฝ่ายรัฐบาล
   mp_type: บัญชีรายชื่อ
-  mp_province: ""
-  mp_zone: "7"
+  mp_province: ''
+  mp_zone: '7'
   vote: null
-  party_position: ""
-  senator_method: ""
+  party_position: ''
+  senator_method: ''
   cabinet_position: []
   committee: []
   gender: ชาย
-  birthdate: "1964-02-02"
+  birthdate: '1964-02-02'
   education: ปริญญาตรี
   graduation: []
   occupation: นักการเมือง
-  occupation_en: Politician
-  occupation group: ""
+  occupation group: ''
   prev_polit_pos: []
-  quotes: ""
-  quotes_url: ""
-  asset: ""
-  debt: ""
-  facebook: ""
-  twitter: ""
+  quotes: ''
+  quotes_url: ''
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
   is_active: true
-  inactive_reason: ""
-  note: ""
-  bio: ""
-- id: "5"
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '5'
   title: นาง
   name: กาญจนารัตน์
   lastname: ลีวิโรจน์
-  title_en: Mrs.
-  name_en: Kanchana
-  lastname_en: Leewirot
+  en:
+    title: Mrs.
+    name: Kanchana
+    lastname: Leewirot
+    occupation: ''
   is_mp: false
   is_senator: true
   is_cabinet: false
-  party: ""
-  team: ""
-  mp_type: ""
-  mp_province: ""
-  mp_zone: ""
+  party: ''
+  team: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
   vote: null
-  party_position: ""
+  party_position: ''
   senator_method: ส.ว. คสช.เลือก
   cabinet_position: []
   committee: []
   gender: หญิง
-  birthdate: "1955-05-24"
-  education: ""
+  birthdate: '1955-05-24'
+  education: ''
   graduation: []
   occupation: ข้าราชการ
-  occupation_en: ""
-  occupation group: ""
+  occupation group: ''
   prev_polit_pos:
     - สนช.
     - กมธ. ยกร่าง
-  quotes: ""
-  quotes_url: ""
-  asset: ""
-  debt: ""
-  facebook: ""
-  twitter: ""
+  quotes: ''
+  quotes_url: ''
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
   is_active: true
-  inactive_reason: ""
-  note: ""
-  bio: ""
-- id: "6"
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '6'
   title: นาย
   name: กำพล
   lastname: เลิศเกียรติดำรงค์
-  title_en: Mr.
-  name_en: Kampol
-  lastname_en: Lertkiatdamrong
+  en:
+    title: Mr.
+    name: Kampol
+    lastname: Lertkiatdamrong
+    occupation: ''
   is_mp: false
   is_senator: true
   is_cabinet: false
-  party: ""
-  team: ""
-  mp_type: ""
-  mp_province: ""
-  mp_zone: ""
+  party: ''
+  team: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
   vote: null
-  party_position: ""
+  party_position: ''
   senator_method: ส.ว. เลือกกันเอง
   cabinet_position: []
   committee: []
   gender: ชาย
-  birthdate: ""
-  education: ""
+  birthdate: null
+  education: ''
   graduation: []
   occupation: เอกชน
-  occupation_en: ""
-  occupation group: ""
+  occupation group: ''
   prev_polit_pos: []
-  quotes: ""
-  quotes_url: ""
-  asset: ""
-  debt: ""
-  facebook: ""
-  twitter: ""
+  quotes: ''
+  quotes_url: ''
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
   is_active: true
-  inactive_reason: ""
-  note: ""
-  bio: ""
-- id: "7"
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '7'
   title: นาย
   name: กิตติศักดิ์
   lastname: รัตนวราหะ
-  title_en: Mr.
-  name_en: Kittisak
-  lastname_en: Rattanawaraha
+  en:
+    title: Mr.
+    name: Kittisak
+    lastname: Rattanawaraha
+    occupation: ''
   is_mp: false
   is_senator: true
   is_cabinet: false
-  party: ""
-  team: ""
-  mp_type: ""
-  mp_province: ""
-  mp_zone: ""
+  party: ''
+  team: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
   vote: null
-  party_position: ""
+  party_position: ''
   senator_method: ส.ว. คสช.เลือก
   cabinet_position: []
   committee: []
   gender: ชาย
-  birthdate: "1956-08-31"
-  education: ""
+  birthdate: '1956-08-31'
+  education: ''
   graduation: []
   occupation: เอกชน
-  occupation_en: ""
-  occupation group: ""
+  occupation group: ''
   prev_polit_pos:
     - สนช.
   quotes: ถ้าผมจะกล่าวบ้างว่า ผู้อภิปรายเป็นส.ส.ขี้ข้าโจร..."
-  quotes_url: "https://www.youtube.com/watch?v=k4hwR7ITPb8"
-  asset: ""
-  debt: ""
-  facebook: ""
-  twitter: ""
+  quotes_url: 'https://www.youtube.com/watch?v=k4hwR7ITPb8'
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
   is_active: true
-  inactive_reason: ""
-  note: ""
-  bio: ""
-- id: "8"
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '8'
   title: พลเอก
   name: ประยุทธ์
   lastname: จันทร์โอชา
-  title_en: Gen.
-  name_en: Prayuth
-  lastname_en: Chan-ocha
+  en:
+    title: Gen.
+    name: Prayuth
+    lastname: Chan-ocha
+    occupation: ''
   is_mp: false
   is_senator: false
   is_cabinet: true
-  party: ""
-  team: ""
-  mp_type: ""
-  mp_province: ""
-  mp_zone: ""
+  party: ''
+  team: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
   vote: null
-  party_position: ""
-  senator_method: ""
+  party_position: ''
+  senator_method: ''
   cabinet_position:
     - นายกรัฐมนตรี
     - รัฐมนตรีว่าการกระทรวงกลาโหม
   committee: []
   gender: ชาย
-  birthdate: ""
-  education: ""
+  birthdate: null
+  education: ''
   graduation: []
-  occupation: ""
-  occupation_en: ""
-  occupation group: ""
+  occupation: ''
+  occupation group: ''
   prev_polit_pos:
     - หัวหน้าคณะรักษาความสงบแห่งชาติ
-  quotes: '"ถึงท่านไม่ชอบผม แต่ผมก็ต้องชอบท่าน"'
+  quotes: ถึงท่านไม่ชอบผม แต่ผมก็ต้องชอบท่าน
   quotes_url: >-
     https://th.wikiquote.org/wiki/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B9%8C_%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C%E0%B9%82%E0%B8%AD%E0%B8%8A%E0%B8%B2
-  asset: ""
-  debt: ""
-  facebook: ""
-  twitter: ""
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
   is_active: true
-  inactive_reason: ""
-  note: ""
-  bio: ""
-- id: "9"
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '9'
   title: พลเอก
   name: ประวิตร
   lastname: วงษ์สุวรรณ
-  title_en: Gen.
-  name_en: Prawit
-  lastname_en: Wongsuwan
+  en:
+    title: Gen.
+    name: Prawit
+    lastname: Wongsuwan
+    occupation: ''
   is_mp: false
   is_senator: false
   is_cabinet: true
-  party: ""
-  team: ""
-  mp_type: ""
-  mp_province: ""
-  mp_zone: ""
+  party: ''
+  team: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
   vote: null
-  party_position: ""
-  senator_method: ""
+  party_position: ''
+  senator_method: ''
   cabinet_position:
     - รองนายกรัฐมนตรี
   committee: []
   gender: ชาย
-  birthdate: ""
-  education: ""
+  birthdate: null
+  education: ''
   graduation: []
-  occupation: ""
-  occupation_en: ""
-  occupation group: ""
+  occupation: ''
+  occupation group: ''
   prev_polit_pos:
     - รัฐมนตรีว่าการกระทรวงกลาโหม
   quotes: >-
@@ -346,42 +387,47 @@
     แต่จำนำข้าวหายไปหมดไม่ถึงตัวประชาชน”
   quotes_url: >-
     https://www.pptvhd36.com/news/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%94%E0%B9%87%E0%B8%99%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%99/70295
-  asset: ""
-  debt: ""
-  facebook: ""
-  twitter: ""
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
   is_active: true
-  inactive_reason: ""
-  note: ""
-  bio: ""
-- id: "10"
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '10'
   title: ดร.
   name: สมคิด
   lastname: จาตุศรีพิทักษ์
-  title_en: Dr.
-  name_en: Somkit
-  lastname_en: Chatusipitak
+  en:
+    title: Dr.
+    name: Somkit
+    lastname: Chatusipitak
+    occupation: ''
   is_mp: false
   is_senator: false
   is_cabinet: true
-  party: ""
-  team: ""
-  mp_type: ""
-  mp_province: ""
-  mp_zone: ""
+  party: ''
+  team: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
   vote: null
-  party_position: ""
-  senator_method: ""
+  party_position: ''
+  senator_method: ''
   cabinet_position:
     - รองนายกรัฐมนตรี
   committee: []
   gender: ชาย
-  birthdate: ""
-  education: ""
+  birthdate: null
+  education: ''
   graduation: []
-  occupation: ""
-  occupation_en: ""
-  occupation group: ""
+  occupation: ''
+  occupation group: ''
   prev_polit_pos:
     - สมาชิกคณะรักษาความสงบแห่งชาติ (คสช.)
   quotes: >-
@@ -392,97 +438,111 @@
     ว่าขอให้จีนซื้อข้าวซื้อยาง ผมขายหน้า คิดแต่ว่าจะทำให้จีนอยากซื้อสินค้าของเรา
     ที่ผ่านมาชาวนาเกือบ 30 ล้านคน มีจีดีพีไม่ถึง 10% ถ้าจีดีพีไม่ถึง 10%
     เขาจะเอาส่วนแบ่งที่ไหนไปได้ มันน้อยมาก"
-  quotes_url: "https://www.salika.co/2019/07/27/open-his-mind-somkid-jatusripitak/"
-  asset: ""
-  debt: ""
-  facebook: ""
-  twitter: ""
+  quotes_url: 'https://www.salika.co/2019/07/27/open-his-mind-somkid-jatusripitak/'
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
   is_active: true
-  inactive_reason: ""
-  note: ""
-  bio: ""
-- id: "11"
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '11'
   title: ดร.
   name: วิษณุ
   lastname: เครืองาม
-  title_en: Dr.
-  name_en: Witsanu
-  lastname_en: Kruangam
+  en:
+    title: Dr.
+    name: Witsanu
+    lastname: Kruangam
+    occupation: ''
   is_mp: false
   is_senator: false
   is_cabinet: true
-  party: ""
-  team: ""
-  mp_type: ""
-  mp_province: ""
-  mp_zone: ""
+  party: ''
+  team: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
   vote: null
-  party_position: ""
-  senator_method: ""
+  party_position: ''
+  senator_method: ''
   cabinet_position:
     - รองนายกรัฐมนตรี
   committee: []
   gender: ชาย
-  birthdate: ""
-  education: ""
+  birthdate: null
+  education: ''
   graduation: []
-  occupation: ""
-  occupation_en: ""
-  occupation group: ""
+  occupation: ''
+  occupation group: ''
   prev_polit_pos:
     - รองนายกรัฐมนตรี
     - ราชบัณฑิต ราชบัณฑิตยสภา
   quotes: >-
-    "ไม่ขอตอบว่าทำไมพูดแค่นั้น แต่ขอตอบว่า การถวายสัตย์เป็นเรื่องระหว่างรัฐบาล
-    กับพระมหากษัตริย์"
+    ไม่ขอตอบว่าทำไมพูดแค่นั้น แต่ขอตอบว่า การถวายสัตย์เป็นเรื่องระหว่างรัฐบาล
+    กับพระมหากษัตริย์
   quotes_url: >-
     https://www.facebook.com/Posttoday/photos/a.10151514915819835/10157724358779835/?type=3&theater
-  asset: ""
-  debt: ""
-  facebook: ""
-  twitter: ""
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
   is_active: true
-  inactive_reason: ""
-  note: ""
-  bio: ""
-- id: "12"
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '12'
   title: นาย
   name: จุรินทร์
   lastname: ลักษณวิศิษฏ์
-  title_en: Mr.
-  name_en: Jurin
-  lastname_en: Laksanawisit
+  en:
+    title: Mr.
+    name: Jurin
+    lastname: Laksanawisit
+    occupation: ''
   is_mp: true
   is_senator: false
   is_cabinet: true
   party: ประชาธิปัตย์
   team: ฝ่ายรัฐบาล
   mp_type: บัญชีรายชื่อ
-  mp_province: ""
-  mp_zone: "6"
+  mp_province: ''
+  mp_zone: '6'
   vote: null
   party_position: หัวหน้าพรรคประชาธิปัตย์
-  senator_method: ""
+  senator_method: ''
   cabinet_position:
     - รองนายกรัฐมนตรี
     - รัฐมนตรีว่าการกระทรวงพาณิชย์
   committee: []
   gender: ชาย
-  birthdate: "1956-01-01"
+  birthdate: '1956-01-01'
   education: ปริญญาโท
   graduation: []
   occupation: นักการเมือง
-  occupation_en: ""
-  occupation group: ""
+  occupation group: ''
   prev_polit_pos:
     - รองหัวหน้าพรรคประชาธิปัตย์
-  quotes: ""
-  quotes_url: ""
-  asset: ""
-  debt: ""
-  facebook: ""
-  twitter: ""
+  quotes: ''
+  quotes_url: ''
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
   is_active: true
-  inactive_reason: ""
-  note: ""
-  bio: ""
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
