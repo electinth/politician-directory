@@ -6,20 +6,20 @@ import SEO from "../components/seo"
 
 export const query = graphql`
   query($slug: String!) {
-    memoYaml(fields: { slug: { eq: $slug } }) {
+    votelogYaml(fields: { slug: { eq: $slug } }) {
       id
-      name
-      date(formatString: "D MMM YY")
+      title
+      vote_date(formatString: "D MMM YY")
     }
   }
 `
 
-const MemoPage = ({ data: { memoYaml } }) => (
+const VotelogPage = ({ data: { votelogYaml } }) => (
   <Layout>
     <SEO title="มติ" />
-    <h1>{`${memoYaml.name}`}</h1>
-    <h3>{`${memoYaml.date}`}</h3>
+    <h1>{`${votelogYaml.title}`}</h1>
+    <h3>{`${votelogYaml.vote_date}`}</h3>
   </Layout>
 )
 
-export default MemoPage
+export default VotelogPage

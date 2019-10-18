@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 
 export const query = graphql`
   query {
-    allProfileYaml {
+    allPeopleYaml {
       totalCount
       edges {
         node {
@@ -17,12 +17,13 @@ export const query = graphql`
           fields {
             slug
           }
-          prefix
+          title
           name
-          positions
-          in_cabinet
-          in_senate
-          in_representatives
+          cabinet_position
+          prev_polit_pos
+          is_cabinet
+          is_senator
+          is_mp
         }
       }
     }
@@ -34,12 +35,12 @@ export const query = graphql`
           fields {
             slug
           }
-          short
           name
+          short_name
         }
       }
     }
-    allMemoYaml {
+    allVotelogYaml {
       totalCount
       edges {
         node {
@@ -47,8 +48,8 @@ export const query = graphql`
           fields {
             slug
           }
-          name
-          date
+          title
+          vote_date
         }
       }
     }
@@ -75,13 +76,13 @@ const IndexPage = ({ data }) => (
       <li>
         <Link to="/cabinet/">ครม.</Link>
         <ul>
-          {data.allProfileYaml.edges
-            .filter(({ node }) => node.in_cabinet)
+          {data.allPeopleYaml.edges
+            .filter(({ node }) => node.is_cabinet)
             .map(({ node }) => (
               <li>
                 <Link
                   to={node.fields.slug}
-                >{`${node.prefix} ${node.name}`}</Link>
+                >{`${node.title} ${node.name}`}</Link>
               </li>
             ))}
         </ul>
@@ -89,13 +90,13 @@ const IndexPage = ({ data }) => (
       <li>
         <Link to="/representatives/">ส.ส.</Link>
         <ul>
-          {data.allProfileYaml.edges
-            .filter(({ node }) => node.in_representatives)
+          {data.allPeopleYaml.edges
+            .filter(({ node }) => node.is_mp)
             .map(({ node }) => (
               <li>
                 <Link
                   to={node.fields.slug}
-                >{`${node.prefix} ${node.name}`}</Link>
+                >{`${node.title} ${node.name}`}</Link>
               </li>
             ))}
         </ul>
@@ -103,13 +104,13 @@ const IndexPage = ({ data }) => (
       <li>
         <Link to="/senate/">ส.ว.</Link>
         <ul>
-          {data.allProfileYaml.edges
-            .filter(({ node }) => node.in_senate)
+          {data.allPeopleYaml.edges
+            .filter(({ node }) => node.is_senator)
             .map(({ node }) => (
               <li>
                 <Link
                   to={node.fields.slug}
-                >{`${node.prefix} ${node.name}`}</Link>
+                >{`${node.title} ${node.name}`}</Link>
               </li>
             ))}
         </ul>
@@ -125,11 +126,11 @@ const IndexPage = ({ data }) => (
         </ul>
       </li>
       <li>
-        <Link to="/memo/">บันทึกมติ</Link>
+        <Link to="/votelog/">บันทึกมติ</Link>
         <ul>
-          {data.allMemoYaml.edges.map(({ node }) => (
+          {data.allVotelogYaml.edges.map(({ node }) => (
             <li>
-              <Link to={node.fields.slug}>{`${node.name}`}</Link>
+              <Link to={node.fields.slug}>{`${node.title}`}</Link>
             </li>
           ))}
         </ul>

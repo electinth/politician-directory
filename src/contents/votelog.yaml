@@ -1,0 +1,84 @@
+- id: '1'
+  title: 'LGBT #1'
+  title_en: ''
+  legal_title: ร่างข้อบังคับการประชุมฯ พ.ศ.
+  field5: ประชุม ส.ส.
+  type: วาระ
+  vote_date: '2019-08-22'
+  passed: true
+  approve: 101
+  disprove: 365
+  abstained: 13
+  absent: 0
+  total_voter: 479
+  description: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+- id: '2'
+  title: 'LGBT #2'
+  title_en: ''
+  legal_title: ร่างข้อบังคับการประชุมฯ พ.ศ.
+  field5: ประชุม ส.ว.
+  type: ญัตติ
+  vote_date: '2019-09-15'
+  passed: false
+  approve: 101
+  disprove: 365
+  abstained: 13
+  absent: 0
+  total_voter: 479
+  description: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+- id: '3'
+  title: 'BTS #1'
+  title_en: ''
+  legal_title: ''
+  field5: ''
+  type: ''
+  vote_date: ''
+  passed: false
+  approve: null
+  disprove: null
+  abstained: null
+  absent: null
+  total_voter: null
+  description: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+- id: '4'
+  title: 'BTS #2'
+  title_en: ''
+  legal_title: ''
+  field5: ''
+  type: ''
+  vote_date: ''
+  passed: false
+  approve: null
+  disprove: null
+  abstained: null
+  absent: null
+  total_voter: null
+  description: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
