@@ -3,9 +3,9 @@ import { graphql, Link } from "gatsby"
 
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Button from "../components/button"
+import Hero from "../components/hero"
 
 export const query = graphql`
   query {
@@ -106,7 +106,7 @@ const IndexPage = ({ data }) => (
           ค้นหา ตรวจสอบ โปร่งใส
         </h2>
 
-        <div css={{ maxWidth: `600px`, margin: `0 auto 1.45rem` }}>
+        <div css={{ margin: `0 auto 1.45rem` }}>
           <Image />
 
           <div css={{ textAlign: "center" }}>
