@@ -38,6 +38,7 @@ export const query = graphql`
           }
           name
           short_name
+          party_faction
         }
       }
     }
@@ -211,13 +212,28 @@ const IndexPage = ({ data }) => (
           </div>
 
           <div css={{ flex: "1 1 100px", display: "inline-block" }}>
-            <h3>พรรคการเมือง</h3>
+            <h3>พรรคร่วมรัฐบาล</h3>
             <ul>
-              {data.allPartyYaml.edges.map(({ node }) => (
-                <li>
-                  <Link to={node.fields.slug}>{`${node.name}`}</Link>
-                </li>
-              ))}
+              {data.allPartyYaml.edges
+                .filter(({ node }) => node.party_faction === "ร่วมรัฐบาล")
+                .map(({ node }) => (
+                  <li>
+                    <Link to={node.fields.slug}>{`${node.name}`}</Link>
+                  </li>
+                ))}
+            </ul>
+          </div>
+
+          <div css={{ flex: "1 1 100px", display: "inline-block" }}>
+            <h3>พรรคฝ่ายค้าน</h3>
+            <ul>
+              {data.allPartyYaml.edges
+                .filter(({ node }) => node.party_faction === "ฝ่ายค้าน")
+                .map(({ node }) => (
+                  <li>
+                    <Link to={node.fields.slug}>{`${node.name}`}</Link>
+                  </li>
+                ))}
             </ul>
           </div>
 

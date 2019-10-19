@@ -80,6 +80,7 @@ const PartyPage = ({ data: { partyYaml } }) => (
           }}
         >
           <div css={{ width: "50%" }}>
+            <hr></hr>
             <h2 css={{ ...cssH2 }}>เกี่ยวกับพรรค{partyYaml.name}</h2>
             <p>{partyYaml.description || "ไม่มีข้อมูล"}</p>
 
