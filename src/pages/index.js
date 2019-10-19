@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import { css } from "@emotion/core"
 
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Button from "../components/button"
 
 export const query = graphql`
   query {
@@ -57,18 +57,38 @@ export const query = graphql`
 `
 
 const IndexPage = ({ data }) => (
-  <Layout>
+  <Layout
+    pageStyles={{
+      background: "var(--cl-pink)",
+    }}
+  >
     <SEO title="Home" />
-    <h1>ใครคือผู้แทนของเรา</h1>
-    <p>ค้นหา ตรวจสอบ โปร่งใส</p>
+    <h1
+      css={{
+        fontSize: "6rem",
+        fontWeight: "bold",
+        textAlign: "center",
+        marginTop: 0,
+        paddingTop: "6rem",
+      }}
+    >
+      ใครคือผู้แทนของเรา
+    </h1>
+    <h2 css={{ fontSize: "4.8rem", textAlign: "center" }}>
+      ค้นหา ตรวจสอบ โปร่งใส
+    </h2>
 
-    <div style={{ maxWidth: `600px`, marginBottom: `1.45rem` }}>
+    <div css={{ maxWidth: `600px`, margin: `0 auto 1.45rem` }}>
       <Image />
+
+      <div css={{ textAlign: "center" }}>
+        <Button to="/about">เกี่ยวกับเรา</Button>
+      </div>
     </div>
     <h2
-      css={css`
-        margin-bottom: ${rhythm(1 / 4)};
-      `}
+      css={{
+        marginBottom: rhythm(1 / 4),
+      }}
     >
       สารบัญ
     </h2>

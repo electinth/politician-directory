@@ -15,9 +15,18 @@ export const query = graphql`
 `
 
 const PartyPage = ({ data: { partyYaml } }) => (
-  <Layout>
+  <Layout
+    pageStyles={{
+      background: "#ffcccc",
+    }}
+  >
     <SEO title="พรรค" />
-    <h1>
+    <h1
+      css={{
+        marginTop: 0,
+        paddingTop: "6rem",
+      }}
+    >
       {`${partyYaml.name}`} ({`${partyYaml.short_name}`})
     </h1>
   </Layout>

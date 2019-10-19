@@ -15,9 +15,18 @@ export const query = graphql`
 `
 
 const VotelogPage = ({ data: { votelogYaml } }) => (
-  <Layout>
+  <Layout
+    pageStyles={{
+      background: "#ccff66",
+    }}
+  >
     <SEO title="มติ" />
-    <h1>{`${votelogYaml.title}`}</h1>
+    <h1
+      css={{
+        marginTop: 0,
+        paddingTop: "6rem",
+      }}
+    >{`${votelogYaml.title}`}</h1>
     <h3>{`${votelogYaml.vote_date}`}</h3>
   </Layout>
 )

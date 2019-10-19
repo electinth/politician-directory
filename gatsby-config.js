@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Politician Directory - ELECT`,
+    title: `Thai Politician Directory - ELECT`,
     description: `Do they work for us?`,
     author: `@electinth`,
   },
@@ -14,6 +14,15 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-transformer-yaml`,
     `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require("postcss-preset-env")({ stage: 0 })],
+        cssLoaderOptions: {
+          camelCase: false,
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {

@@ -1,0 +1,22 @@
+/* @import "~@fortawesome/fontawesome-svg-core/styles.css"; */
+
+@font-face {
+  font-family: "Noto Sans Thai";
+  src: url("fonts/NotoSansThaiUI-Regular.woff2") format("woff2"),
+    url("fonts/NotoSansThaiUI-Regular.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans Thai";
+  src: url("fonts/NotoSansThaiUI-Bold.woff2") format("woff2"),
+    url("fonts/NotoSansThaiUI-Bold.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "The Matter";
+  src: url("fonts/thematter-bold.woff2") format("woff2"),
+    url("fonts/thematter-bold.woff") format("woff");
+  font-weight: bold;
+}
