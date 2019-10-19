@@ -64,7 +64,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // Party
   const parties = await graphql(`
     query {
-      allPartyYaml {
+      allPartyYaml(filter: { party_type: { eq: "พรรค" } }) {
         edges {
           node {
             fields {
