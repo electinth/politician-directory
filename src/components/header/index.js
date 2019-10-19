@@ -62,7 +62,7 @@ const Header = ({ siteTitle }) => (
         }}
       >
         <HiddenOnMobile>
-          <a>TH</a>/<a>EN</a>
+          <a href="#">TH</a>/<a href="en">EN</a>
         </HiddenOnMobile>
         <div
           style={{ display: "flex", justifyContent: "flex-end", width: "100%" }}

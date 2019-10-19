@@ -107,7 +107,7 @@ const IndexPage = ({ data }) => (
         </h2>
 
         <div css={{ margin: `0 auto 1.45rem` }}>
-          <Image />
+          <Hero />
 
           <div css={{ textAlign: "center" }}>
             <Button to="/about">เกี่ยวกับเรา</Button>
