@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Thai Politician Directory - ELECT`,
+    title: `Thai Politician Directory`,
     description: `Do they work for us?`,
     author: `@electinth`,
   },
