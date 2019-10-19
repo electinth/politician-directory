@@ -1,0 +1,52 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 160px;
+    font-size: 20px;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-elect-pad {
+    padding-left: 10px;
+    border-left: 6px solid #ef314a;
+}
+
+.elect {
+    padding-bottom: 15px;
+}
+
+.vote {
+    font-size: 16px;
+}
+
+.footer-info {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+
+.footer-email {
+    padding-bottom: 4px;
+    font-size: 13px;
+}
+
+.footer-networks {
+    font-size: 13px;
+}
+
+.footer-contact-info {
+    font-size: 15px;
+}
+
+.footer-contact-info a {
+    color: #fff;
+}
+
+.partnership {
+    margin-top: 50px;
+    font-size: 16px;
+}

@@ -41,7 +41,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // People
   const people = await graphql(`
     query {
-      allPeopleYaml {
+      allPartyYaml {
         edges {
           node {
             fields {
@@ -87,7 +87,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // Vote Logs
   const votelogs = await graphql(`
     query {
-      allVotelogYaml {
+      allPartyYaml {
         edges {
           node {
             fields {

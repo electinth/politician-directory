@@ -9,7 +9,7 @@ import Button from "../components/button"
 
 export const query = graphql`
   query {
-    allPeopleYaml {
+    allPartyYaml {
       totalCount
       edges {
         node {
@@ -17,9 +17,9 @@ export const query = graphql`
           fields {
             slug
           }
-          title
+          twitter
           name
-          cabinet_position
+          PartyYaml
           prev_polit_pos
           is_cabinet
           is_senator
