@@ -5,7 +5,7 @@ import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
-import Hero from "../components/hero/index"
+import Hero from "../components/hero"
 
 export const query = graphql`
   query {
@@ -19,6 +19,7 @@ export const query = graphql`
           }
           title
           name
+          lastname
           cabinet_position
           prev_polit_pos
           is_cabinet
@@ -27,7 +28,7 @@ export const query = graphql`
         }
       }
     }
-    allPartyYaml {
+    allPartyYaml(filter: { party_type: { eq: "พรรค" } }) {
       totalCount
       edges {
         node {
@@ -37,6 +38,7 @@ export const query = graphql`
           }
           name
           short_name
+          party_faction
         }
       }
     }
@@ -56,6 +58,30 @@ export const query = graphql`
   }
 `
 
+const cssH1 = { fontSize: "4.8rem" }
+
+const cssSection = {
+  paddingTop: "3rem",
+  paddingBottom: "8rem",
+  h2: {
+    fontSize: "4.8rem",
+    textAlign: "center",
+  },
+}
+const cssSectionWhite = {
+  ...cssSection,
+  background: "var(--cl-white)",
+}
+const cssSectionBlack = {
+  ...cssSection,
+  color: "var(--cl-white)",
+  background: "var(--cl-black)",
+  h2: {
+    ...cssSection.h2,
+    color: "var(--cl-white)",
+  },
+}
+
 const IndexPage = ({ data }) => (
   <Layout
     pageStyles={{
@@ -63,98 +89,167 @@ const IndexPage = ({ data }) => (
     }}
   >
     <SEO title="Home" />
-    <h1
-      css={{
-        fontSize: "6rem",
-        fontWeight: "bold",
-        textAlign: "center",
-        marginTop: 0,
-        paddingTop: "6rem",
-      }}
-    >
-      ใครคือผู้แทนของเรา
-    </h1>
-    <h2 css={{ fontSize: "4.8rem", textAlign: "center" }}>
-      ค้นหา ตรวจสอบ โปร่งใส
-    </h2>
+    <section css={{ ...cssSection }}>
+      <div className="container">
+        <h1
+          css={{
+            fontSize: "6rem",
+            fontWeight: "bold",
+            textAlign: "center",
+            marginTop: 0,
+            paddingTop: "6rem",
+          }}
+        >
+          ใครคือผู้แทนของเรา
+        </h1>
+        <h2 css={{ fontSize: "4.8rem", textAlign: "center" }}>
+          ค้นหา ตรวจสอบ โปร่งใส
+        </h2>
 
-    <div css={{ maxWidth: `600px`, margin: `0 auto 1.45rem` }}>
-      <Hero />
-      <div css={{ textAlign: "center" }}>
-        <Button to="/about">เกี่ยวกับเรา</Button>
+        <div css={{ margin: `0 auto 1.45rem` }}>
+          <Image />
+
+          <div css={{ textAlign: "center" }}>
+            <Button to="/about">เกี่ยวกับเรา</Button>
+          </div>
+        </div>
       </div>
-    </div>
-    <h2
+    </section>
+
+    <section
       css={{
-        marginBottom: rhythm(1 / 4),
+        ...cssSectionWhite,
       }}
     >
-      สารบัญ
-    </h2>
-    <ul>
-      <li>
-        <Link to="/cabinet/">ครม.</Link>
-        <ul>
-          {data.allPeopleYaml.edges
-            .filter(({ node }) => node.is_cabinet)
-            .map(({ node }) => (
+      <div className="container">
+        <h2 css={{ ...cssH1 }}>สัดส่วนผู้แทนของเรา พวกเขาเป็นใครบ้าง</h2>
+      </div>
+    </section>
+
+    <section
+      css={{
+        ...cssSectionBlack,
+      }}
+    >
+      <div className="container">
+        <h2 css={{ ...cssH1 }}>สรุปผลการลงมติล่าสุด</h2>
+      </div>
+    </section>
+
+    <section
+      css={{
+        ...cssSectionWhite,
+      }}
+    >
+      <div className="container">
+        <h2 css={{ ...cssH1 }}>สำรวจตามชนิดและสังกัดผู้แทน</h2>
+      </div>
+    </section>
+
+    <section css={{ ...cssSection, background: "#eeeeee" }}>
+      <div className="container">
+        <h2
+          css={{
+            marginBottom: rhythm(1 / 4),
+          }}
+        >
+          สารบัญ
+        </h2>
+
+        <div
+          css={{
+            display: "flex",
+            alignItems: "flex-start",
+            justifyContent: "space-evenly",
+          }}
+        >
+          <div css={{ flex: "1 1 100px", display: "inline-block" }}>
+            <h3>รัฐสภาไทย</h3>
+            <ul>
               <li>
-                <Link
-                  to={node.fields.slug}
-                >{`${node.title} ${node.name}`}</Link>
+                <Link to="/cabinet/">ครม.</Link>
+                <ul>
+                  {data.allPeopleYaml.edges
+                    .filter(({ node }) => node.is_cabinet)
+                    .map(({ node }) => (
+                      <li key={node.id}>
+                        <Link
+                          to={node.fields.slug}
+                        >{`${node.title} ${node.name} ${node.lastname}`}</Link>
+                      </li>
+                    ))}
+                </ul>
               </li>
-            ))}
-        </ul>
-      </li>
-      <li>
-        <Link to="/representatives/">ส.ส.</Link>
-        <ul>
-          {data.allPeopleYaml.edges
-            .filter(({ node }) => node.is_mp)
-            .map(({ node }) => (
               <li>
-                <Link
-                  to={node.fields.slug}
-                >{`${node.title} ${node.name}`}</Link>
+                <Link to="/representatives/">ส.ส.</Link>
+                <ul>
+                  {data.allPeopleYaml.edges
+                    .filter(({ node }) => node.is_mp)
+                    .map(({ node }) => (
+                      <li key={node.id}>
+                        <Link
+                          to={node.fields.slug}
+                        >{`${node.title} ${node.name} ${node.lastname}`}</Link>
+                      </li>
+                    ))}
+                </ul>
               </li>
-            ))}
-        </ul>
-      </li>
-      <li>
-        <Link to="/senate/">ส.ว.</Link>
-        <ul>
-          {data.allPeopleYaml.edges
-            .filter(({ node }) => node.is_senator)
-            .map(({ node }) => (
               <li>
-                <Link
-                  to={node.fields.slug}
-                >{`${node.title} ${node.name}`}</Link>
+                <Link to="/senate/">ส.ว.</Link>
+                <ul>
+                  {data.allPeopleYaml.edges
+                    .filter(({ node }) => node.is_senator)
+                    .map(({ node }) => (
+                      <li key={node.id}>
+                        <Link
+                          to={node.fields.slug}
+                        >{`${node.title} ${node.name} ${node.lastname}`}</Link>
+                      </li>
+                    ))}
+                </ul>
               </li>
-            ))}
-        </ul>
-      </li>
-      <li>
-        <Link to="/party/พปชร">พรรคการเมือง</Link>
-        <ul>
-          {data.allPartyYaml.edges.map(({ node }) => (
-            <li>
-              <Link to={node.fields.slug}>{`${node.name}`}</Link>
-            </li>
-          ))}
-        </ul>
-      </li>
-      <li>
-        <Link to="/votelog/">บันทึกมติ</Link>
-        <ul>
-          {data.allVotelogYaml.edges.map(({ node }) => (
-            <li>
-              <Link to={node.fields.slug}>{`${node.title}`}</Link>
-            </li>
-          ))}
-        </ul>
-      </li>
-    </ul>
+            </ul>
+          </div>
+
+          <div css={{ flex: "1 1 100px", display: "inline-block" }}>
+            <h3>พรรคร่วมรัฐบาล</h3>
+            <ul>
+              {data.allPartyYaml.edges
+                .filter(({ node }) => node.party_faction === "ร่วมรัฐบาล")
+                .map(({ node }) => (
+                  <li>
+                    <Link to={node.fields.slug}>{`${node.name}`}</Link>
+                  </li>
+                ))}
+            </ul>
+          </div>
+
+          <div css={{ flex: "1 1 100px", display: "inline-block" }}>
+            <h3>พรรคฝ่ายค้าน</h3>
+            <ul>
+              {data.allPartyYaml.edges
+                .filter(({ node }) => node.party_faction === "ฝ่ายค้าน")
+                .map(({ node }) => (
+                  <li>
+                    <Link to={node.fields.slug}>{`${node.name}`}</Link>
+                  </li>
+                ))}
+            </ul>
+          </div>
+
+          <div css={{ flex: "1 1 100px", display: "inline-block" }}>
+            <h3>บันทึกมติ</h3>
+            <ul>
+              {data.allVotelogYaml.edges.map(({ node }) => (
+                <li key={node.id}>
+                  <Link to={node.fields.slug}>{`${node.title}`}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </Layout>
 )
 

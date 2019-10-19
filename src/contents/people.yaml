@@ -325,7 +325,8 @@
   cabinet_position:
     - นายกรัฐมนตรี
     - รัฐมนตรีว่าการกระทรวงกลาโหม
-  committee: []
+  committee:
+    - คณะกรรมาธิการขับเคลื่อนการปฏิรูปประเทศด้านการสื่อสารมวลชน
   gender: ชาย
   birthdate: null
   education: ''
@@ -423,9 +424,12 @@
     - รองนายกรัฐมนตรี
   committee: []
   gender: ชาย
-  birthdate: null
-  education: ''
-  graduation: []
+  birthdate: '1953-07-15'
+  education: ปริญญาเอก
+  graduation:
+    - 'Northwestern University, IL'
+    - สถาบันบัณฑิตพัฒนบริหารศาสตร์
+    - มหาวิทยาลัยธรรมศาสตร์
   occupation: ''
   occupation group: ''
   prev_polit_pos:
@@ -475,9 +479,11 @@
     - รองนายกรัฐมนตรี
   committee: []
   gender: ชาย
-  birthdate: null
-  education: ''
-  graduation: []
+  birthdate: '1951-09-15'
+  education: ปริญญาเอก
+  graduation:
+    - 'University of California, Berkeley, CA'
+    - มหาวิทยาลัยธรรมศาสตร์
   occupation: ''
   occupation group: ''
   prev_polit_pos:

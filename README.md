@@ -4,6 +4,18 @@
 
 สมุดพกนักการเมือง (Politician Directory) is an open-source project for listing and tracking activities of members of the Cabinet and National Assembly of Thailand. It's run on [Gatsby](https://www.gatsbyjs.org).
 
+## Table of Contents
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Development](#development)
+- [Getting Started for Contributers](#getting-started-for-contributers)
+- [Design & Architecture](#design--architecture)
+- [Glossary](#glossary)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Development
 
 After installing Node 8+ and `npm install`, you can start in development mode by
