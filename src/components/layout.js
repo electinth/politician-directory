@@ -29,7 +29,6 @@ const Layout = ({ children, pageStyles, mainStyles }) => {
       <div
         style={{
           margin: `0 auto`,
-          padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
           minHeight: "calc(100vh - 80px)",
           ...pageStyles,
@@ -39,12 +38,22 @@ const Layout = ({ children, pageStyles, mainStyles }) => {
           style={{
             maxWidth: 960,
             margin: "0 auto",
+            padding: `0px 1.0875rem 1.45rem`,
             ...mainStyles,
           }}
         >
           {children}
         </main>
-        <footer>
+        <footer
+          css={{
+            padding: "2rem",
+            background: "#222222",
+            color: "#ffffff",
+            a: {
+              color: "#ffffff",
+            },
+          }}
+        >
           © {new Date().getFullYear()}
           {` `}
           <a href="https://elect.in.th">ELECT</a>
