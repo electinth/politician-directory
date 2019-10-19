@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { css } from "@emotion/core"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -23,6 +24,9 @@ export const query = graphql`
 const PeoplePage = ({ data: { peopleYaml } }) => (
   <Layout>
     <SEO title="People" />
+    <img css={css`
+        max-height: 400px;
+      `} src={`https://elect.thematter.co/data/politicians/${peopleYaml.name}-${peopleYaml.lastname}.jpg`} />
     <h1>{`${peopleYaml.title} ${peopleYaml.name} ${peopleYaml.lastname}`}</h1>
     <h3>ตำแหน่งปัจจุบัน:</h3>
     <ul>
