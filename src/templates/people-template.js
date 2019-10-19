@@ -22,12 +22,21 @@ export const query = graphql`
 `
 
 const PeoplePage = ({ data: { peopleYaml } }) => (
-  <Layout>
+  <Layout
+    pageStyles={{
+      background: "#ffffcc",
+    }}
+  >
     <SEO title="People" />
     <img css={css`
         max-height: 400px;
       `} src={`https://elect.thematter.co/data/politicians/${peopleYaml.name}-${peopleYaml.lastname}.jpg`} />
-    <h1>{`${peopleYaml.title} ${peopleYaml.name} ${peopleYaml.lastname}`}</h1>
+    <h1
+      css={{
+        marginTop: 0,
+        paddingTop: "6rem",
+      }}
+    >{`${peopleYaml.title} ${peopleYaml.name} ${peopleYaml.lastname}`}</h1>
     <h3>ตำแหน่งปัจจุบัน:</h3>
     <ul>
       {peopleYaml.cabinet_position.map(position => (
