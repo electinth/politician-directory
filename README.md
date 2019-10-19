@@ -25,7 +25,7 @@ For first time contributer, browse for issues with `goodfirstissue` tag. Looking
 - [Prototype design](https://invis.io/7HU7PWOYAQM#387144381_Landing_Page)
 - [Technical sketches](https://projects.invisionapp.com/freehand/document/NhJHf12G0)
 
-## Grossary
+## Glossary
 
 | Thai                        | English                                |
 | --------------------------- | -------------------------------------- |
