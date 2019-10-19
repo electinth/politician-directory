@@ -19,7 +19,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
   if (node.internal.type === `PartyYaml`) {
-    const slug = `/party/${node.short_name}`
+    const slug = `/party/${node.name}`
     createNodeField({
       node,
       name: `slug`,
