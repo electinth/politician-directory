@@ -7,4 +7,19 @@
   --cl-white: #ffffff;
   --cl-black: #272727;
   --cl-pink: #fcbbdd;
+  --cl-primary: #ef314b;
+}
+
+a {
+  color: var(--cl-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
 }
