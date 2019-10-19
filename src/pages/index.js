@@ -3,9 +3,9 @@ import { graphql, Link } from "gatsby"
 
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Button from "../components/button"
+import Hero from "../components/hero"
 
 export const query = graphql`
   query {
@@ -38,6 +38,7 @@ export const query = graphql`
           }
           name
           short_name
+          party_faction
         }
       }
     }
@@ -105,8 +106,8 @@ const IndexPage = ({ data }) => (
           ค้นหา ตรวจสอบ โปร่งใส
         </h2>
 
-        <div css={{ maxWidth: `600px`, margin: `0 auto 1.45rem` }}>
-          <Image />
+        <div css={{ margin: `0 auto 1.45rem` }}>
+          <Hero />
 
           <div css={{ textAlign: "center" }}>
             <Button to="/about">เกี่ยวกับเรา</Button>
@@ -211,13 +212,28 @@ const IndexPage = ({ data }) => (
           </div>
 
           <div css={{ flex: "1 1 100px", display: "inline-block" }}>
-            <h3>พรรคการเมือง</h3>
+            <h3>พรรคร่วมรัฐบาล</h3>
             <ul>
-              {data.allPartyYaml.edges.map(({ node }) => (
-                <li>
-                  <Link to={node.fields.slug}>{`${node.name}`}</Link>
-                </li>
-              ))}
+              {data.allPartyYaml.edges
+                .filter(({ node }) => node.party_faction === "ร่วมรัฐบาล")
+                .map(({ node }) => (
+                  <li>
+                    <Link to={node.fields.slug}>{`${node.name}`}</Link>
+                  </li>
+                ))}
+            </ul>
+          </div>
+
+          <div css={{ flex: "1 1 100px", display: "inline-block" }}>
+            <h3>พรรคฝ่ายค้าน</h3>
+            <ul>
+              {data.allPartyYaml.edges
+                .filter(({ node }) => node.party_faction === "ฝ่ายค้าน")
+                .map(({ node }) => (
+                  <li>
+                    <Link to={node.fields.slug}>{`${node.name}`}</Link>
+                  </li>
+                ))}
             </ul>
           </div>
 
