@@ -8,7 +8,7 @@ import HiddenOnMobile from "../hiddenOnMobile/index"
 import "../../styles/global.css"
 
 const EnvBadge = () => {
-  const env = process.env.NODE_ENV
+  const env = process.env.GATSBY_ENV || "development"
   // hide badge on production
   if (env === "production") return {}
   return (
