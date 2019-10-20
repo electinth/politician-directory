@@ -1,11 +1,36 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import PropTypes from "prop-types"
+import _ from "lodash"
 
 import HiddenOnMobile from "../hiddenOnMobile/index"
 
 import "../../styles/global.css"
+
+const EnvBadge = () => {
+  const env = process.env.NODE_ENV
+  // hide badge on production
+  if (env === "production") return {}
+  return (
+    <div
+      css={{
+        display: "inline-block",
+        position: "absolute",
+        left: 5,
+        top: 0,
+        fontSize: "1.1rem",
+        background: "#ffee00",
+        borderRadius: "0 0 0.5rem 0.5rem",
+        padding: "0.4rem 1rem",
+        fontFamily: "Thonburi, Arial, sans-serif",
+        boxShadow: "0px 1px 0px 1px rgba(0,0,0,0.2)",
+      }}
+    >
+      [{_.startCase(env)}] This website is under active development. Any
+      information you see has not yet been validated.
+    </div>
+  )
+}
 
 const Header = ({ siteTitle }) => (
   <header
@@ -32,6 +57,7 @@ const Header = ({ siteTitle }) => (
           }}
         >
           ELECT
+          <EnvBadge />
         </Link>
       </h1>
       <HiddenOnMobile style={{ width: "50%", flexGrow: 2 }}>
@@ -62,7 +88,7 @@ const Header = ({ siteTitle }) => (
         }}
       >
         <HiddenOnMobile>
-          <a href="#">TH</a>/<a href="en">EN</a>
+          <a href="/?lang=th">TH</a>/<a href="/?lang=en">EN</a>
         </HiddenOnMobile>
         <div
           style={{ display: "flex", justifyContent: "flex-end", width: "100%" }}

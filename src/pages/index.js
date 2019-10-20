@@ -217,7 +217,7 @@ const IndexPage = ({ data }) => (
               {data.allPartyYaml.edges
                 .filter(({ node }) => node.party_faction === "ร่วมรัฐบาล")
                 .map(({ node }) => (
-                  <li>
+                  <li key={node.id}>
                     <Link to={node.fields.slug}>{`${node.name}`}</Link>
                   </li>
                 ))}
@@ -230,7 +230,7 @@ const IndexPage = ({ data }) => (
               {data.allPartyYaml.edges
                 .filter(({ node }) => node.party_faction === "ฝ่ายค้าน")
                 .map(({ node }) => (
-                  <li>
+                  <li key={node.id}>
                     <Link to={node.fields.slug}>{`${node.name}`}</Link>
                   </li>
                 ))}

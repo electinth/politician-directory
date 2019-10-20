@@ -120,7 +120,7 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
             </div>
             <div>
               {peopleYaml.committee.map(com => (
-                <span>{com}</span>
+                <span key={com}>{com}</span>
               ))}
             </div>
 
