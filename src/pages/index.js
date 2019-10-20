@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
@@ -85,7 +85,7 @@ const cssSectionBlack = {
 const IndexPage = ({ data }) => {
   console.log(
     "top 10 votelogs will be first 10 elements of array data.allVotelogYaml",
-    topTen.allVotelogYaml
+    data.allVotelogYaml
   )
   return (
     <Layout
@@ -222,7 +222,7 @@ const IndexPage = ({ data }) => {
                 {data.allPartyYaml.edges
                   .filter(({ node }) => node.party_faction === "ร่วมรัฐบาล")
                   .map(({ node }) => (
-                    <li>
+                    <li key={node.id}>
                       <Link to={node.fields.slug}>{`${node.name}`}</Link>
                     </li>
                   ))}
@@ -235,21 +235,10 @@ const IndexPage = ({ data }) => {
                 {data.allPartyYaml.edges
                   .filter(({ node }) => node.party_faction === "ฝ่ายค้าน")
                   .map(({ node }) => (
-                    <li>
+                    <li key={node.id}>
                       <Link to={node.fields.slug}>{`${node.name}`}</Link>
                     </li>
                   ))}
-              </ul>
-            </div>
-
-            <div css={{ flex: "1 1 100px", display: "inline-block" }}>
-              <h3>บันทึกมติ</h3>
-              <ul>
-                {data.allVotelogYaml.edges.map(({ node }) => (
-                  <li key={node.id}>
-                    <Link to={node.fields.slug}>{`${node.title}`}</Link>
-                  </li>
-                ))}
               </ul>
             </div>
           </div>

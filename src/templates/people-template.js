@@ -67,9 +67,12 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
     }}
   >
     <SEO title="People" />
-    <img css={css`
+    <img
+      css={css`
         max-height: 400px;
-      `} src={`https://elect.thematter.co/data/politicians/${peopleYaml.name}-${peopleYaml.lastname}.jpg`} />
+      `}
+      src={`https://elect.thematter.co/data/politicians/${peopleYaml.name}-${peopleYaml.lastname}.jpg`}
+    />
     <section css={{ ...cssSection, paddingTop: "6rem" }}>
       <div className="container">
         <div className={`${styles.card}`}>
@@ -120,7 +123,7 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
             </div>
             <div>
               {peopleYaml.committee.map(com => (
-                <span>{com}</span>
+                <span key={com}>{com}</span>
               ))}
             </div>
 
