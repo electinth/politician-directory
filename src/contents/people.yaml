@@ -11,7 +11,7 @@
   is_senator: false
   is_cabinet: false
   party: เพื่อไทย
-  team: ฝ่ายค้าน
+  party_faction: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: อุตรดิตถ์
   mp_zone: '1'
@@ -54,7 +54,7 @@
   is_senator: false
   is_cabinet: false
   party: ประชาธิปัตย์
-  team: ฝ่ายรัฐบาล
+  party_faction: ร่วมรัฐบาล
   mp_type: บัญชีรายชื่อ
   mp_province: ''
   mp_zone: '14'
@@ -97,7 +97,7 @@
   is_senator: false
   is_cabinet: false
   party: ประชาชาติ
-  team: ฝ่ายค้าน
+  party_faction: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: นราธิวาส
   mp_zone: '4'
@@ -140,7 +140,7 @@
   is_senator: false
   is_cabinet: false
   party: ประชาธิปัตย์
-  team: ฝ่ายรัฐบาล
+  party_faction: ร่วมรัฐบาล
   mp_type: บัญชีรายชื่อ
   mp_province: ''
   mp_zone: '7'
@@ -183,7 +183,7 @@
   is_senator: true
   is_cabinet: false
   party: ''
-  team: ''
+  party_faction: ''
   mp_type: ''
   mp_province: ''
   mp_zone: ''
@@ -228,7 +228,7 @@
   is_senator: true
   is_cabinet: false
   party: ''
-  team: ''
+  party_faction: ''
   mp_type: ''
   mp_province: ''
   mp_zone: ''
@@ -271,7 +271,7 @@
   is_senator: true
   is_cabinet: false
   party: ''
-  team: ''
+  party_faction: ''
   mp_type: ''
   mp_province: ''
   mp_zone: ''
@@ -315,7 +315,7 @@
   is_senator: false
   is_cabinet: true
   party: ''
-  team: ''
+  party_faction: ''
   mp_type: ''
   mp_province: ''
   mp_zone: ''
@@ -363,7 +363,7 @@
   is_senator: false
   is_cabinet: true
   party: ''
-  team: ''
+  party_faction: ''
   mp_type: ''
   mp_province: ''
   mp_zone: ''
@@ -413,7 +413,7 @@
   is_senator: false
   is_cabinet: true
   party: ''
-  team: ''
+  party_faction: ''
   mp_type: ''
   mp_province: ''
   mp_zone: ''
@@ -468,7 +468,7 @@
   is_senator: false
   is_cabinet: true
   party: ''
-  team: ''
+  party_faction: ''
   mp_type: ''
   mp_province: ''
   mp_zone: ''
@@ -519,7 +519,7 @@
   is_senator: false
   is_cabinet: true
   party: ประชาธิปัตย์
-  team: ฝ่ายรัฐบาล
+  party_faction: ร่วมรัฐบาล
   mp_type: บัญชีรายชื่อ
   mp_province: ''
   mp_zone: '6'

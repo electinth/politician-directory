@@ -1,77 +1,77 @@
-- id: "1"
+- id: '1'
   name: สภาผู้แทนราษฎรไทย
   en:
     name: House of Representatives
-    short_name: ""
-    description: ""
+    short_name: ''
+    description: ''
   short_name: ส.ส
-  color: ""
+  color: ''
   party_type: สส
   party_ordinal: 25
-  party_faction: ""
+  party_faction: ''
   description: >-
     เป็นสภาที่ได้มาจากการเลือกตั้งทั่วไป พ.ศ. 2562 ประกอบด้วยสมาชิก (ส.ส.) 500
     คนตามระบบจัดสรรปันส่วนผสม โดย 350 คนเป็นผู้แทนเขต และอีก 150
     คนมาจากระบบบัญชีรายชื่อ
-  established_date: "2019-03-24"
+  established_date: '2019-03-24'
   total_member: 500
-  party_leader: ""
-  party_secretary: ""
-  website: "https://www.parliament.go.th"
-  facebook: "https://www.facebook.com/thaiparliament"
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "2"
+  party_leader: ''
+  party_secretary: ''
+  website: 'https://www.parliament.go.th'
+  facebook: 'https://www.facebook.com/thaiparliament'
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '2'
   name: วุฒิสภาไทย
   en:
     name: Senate
-    short_name: ""
-    description: ""
+    short_name: ''
+    description: ''
   short_name: ส.ว
-  color: ""
+  color: ''
   party_type: สว
   party_ordinal: 12
-  party_faction: ""
-  description: ""
+  party_faction: ''
+  description: ''
   established_date: null
   total_member: 250
-  party_leader: ""
-  party_secretary: ""
-  website: "https://www.senate.go.th"
-  facebook: "https://www.facebook.com/SenateThailand"
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "3"
+  party_leader: ''
+  party_secretary: ''
+  website: 'https://www.senate.go.th'
+  facebook: 'https://www.facebook.com/SenateThailand'
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '3'
   name: คณะรัฐมนตรีไทย
   en:
     name: Cabinet
-    short_name: ""
-    description: ""
+    short_name: ''
+    description: ''
   short_name: ครม.
-  color: ""
+  color: ''
   party_type: ครม
   party_ordinal: 62
-  party_faction: ""
-  description: ""
+  party_faction: ''
+  description: ''
   established_date: null
   total_member: 36
-  party_leader: ""
-  party_secretary: ""
-  website: "https://www.thaigov.go.th"
-  facebook: "https://www.facebook.com/ThaigovSpokesman"
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "4"
+  party_leader: ''
+  party_secretary: ''
+  website: 'https://www.thaigov.go.th'
+  facebook: 'https://www.facebook.com/ThaigovSpokesman'
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '4'
   name: พลังประชารัฐ
   en:
     name: Palang Pracharath
-    short_name: ""
-    description: ""
+    short_name: ''
+    description: ''
   short_name: พปชร.
-  color: "#0055dd"
+  color: '#0055dd'
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
@@ -85,23 +85,23 @@
     ในการเลือกตั้งสมาชิกสภาผู้แทนราษฎรไทยเป็นการทั่วไป พ.ศ. 2562
     พรรคเสนอชื่อพลเอก ประยุทธ์ จันทร์โอชา หัวหน้าคณะรักษาความสงบแห่งชาติ
     และนายกรัฐมนตรีก่อนการเลือกตั้งให้เป็นนายกรัฐมนตรีอีกครั้งหนึ่ง
-  established_date: "2018-03-02"
+  established_date: '2018-03-02'
   total_member: 115
   party_leader: นาย อุตตม สาวนายน
-  party_secretary: ""
-  website: "https://pprp.or.th/"
-  facebook: "https://www.facebook.com/PPRPThailand/"
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "5"
+  party_secretary: ''
+  website: 'https://pprp.or.th/'
+  facebook: 'https://www.facebook.com/PPRPThailand/'
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '5'
   name: ประชาธิปัตย์
   en:
     name: Democrat
-    short_name: ""
-    description: ""
+    short_name: ''
+    description: ''
   short_name: ปชป.
-  color: "#0078b9"
+  color: '#0078b9'
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
@@ -113,23 +113,23 @@
     สาขา แรกเริ่มก่อตั้งเป็นพรรคอนุรักษนิยมและนิยมเจ้า
     ปัจจุบันมีจุดยืนแบบเสรีนิยมอนุรักษ์ (conservative liberalism)
     และนิยมตลาดแบบเสรีนิยมคลาสสิก
-  established_date: "1946-04-06"
+  established_date: '1946-04-06'
   total_member: 52
   party_leader: นาย จุรินทร์ ลักษณวิศิษฎ์
-  party_secretary: ""
-  website: "https://www.democrat.or.th"
-  facebook: "https://www.facebook.com/DemocratPartyTH/"
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "6"
+  party_secretary: ''
+  website: 'https://www.democrat.or.th'
+  facebook: 'https://www.facebook.com/DemocratPartyTH/'
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '6'
   name: ภูมิใจไทย
   en:
     name: Bhumjaithai
-    short_name: ""
-    description: ""
+    short_name: ''
+    description: ''
   short_name: ภท.
-  color: ""
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
@@ -141,317 +141,317 @@
 
     ในปัจจุบันมีนาย อนุทิน ชาญวีรกูล เป็นหัวหน้าพรรคนาย ศักดิ์สยาม ชิดชอบ
     เป็นเลขาธิการพรรค และ พันเอก เศรษฐพงศ์ มะลิสุวรรณ เป็นโฆษกพรรค
-  established_date: "2008-11-05"
+  established_date: '2008-11-05'
   total_member: 51
   party_leader: นาย อนุทิน ชาญวีรกูล
-  party_secretary: ""
-  website: "https://www.bhumjaithai.com/"
-  facebook: "https://www.facebook.com/khonbhumjaithai/"
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "7"
+  party_secretary: ''
+  website: 'https://www.bhumjaithai.com/'
+  facebook: 'https://www.facebook.com/khonbhumjaithai/'
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '7'
   name: ชาติไทยพัฒนา
   en:
     name: Chartthaipattana
-    short_name: ""
-    description: ""
+    short_name: ''
+    description: ''
   short_name: ชทพ.
-  color: ""
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
-  description: ""
+  description: ''
   established_date: null
   total_member: 10
   party_leader: นางสาว กัญจนา ศิลปอาชา
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "8"
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '8'
   name: รวมพลังประชาชาติไทย
   en:
-    name: ""
-    short_name: ""
-    description: ""
-  short_name: ""
-  color: ""
+    name: ''
+    short_name: ''
+    description: ''
+  short_name: ''
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
-  description: ""
+  description: ''
   established_date: null
   total_member: 3
   party_leader: นาย เทวัญ ลิปตพัลลภ
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "9"
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '9'
   name: ชาติพัฒนา
   en:
     name: Chart Pattana
-    short_name: ""
-    description: ""
+    short_name: ''
+    description: ''
   short_name: ชพ.
-  color: ""
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
-  description: ""
+  description: ''
   established_date: null
   total_member: null
-  party_leader: ""
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "10"
+  party_leader: ''
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '10'
   name: พลังท้องถิ่นไท
   en:
-    name: ""
-    short_name: ""
-    description: ""
-  short_name: ""
-  color: ""
+    name: ''
+    short_name: ''
+    description: ''
+  short_name: ''
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
-  description: ""
+  description: ''
   established_date: null
   total_member: null
-  party_leader: ""
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "11"
+  party_leader: ''
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '11'
   name: พลังชาติไทย
   en:
-    name: ""
-    short_name: ""
-    description: ""
-  short_name: ""
-  color: ""
+    name: ''
+    short_name: ''
+    description: ''
+  short_name: ''
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
-  description: ""
+  description: ''
   established_date: null
   total_member: null
-  party_leader: ""
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "12"
+  party_leader: ''
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '12'
   name: ประชาภิวัฒน์
   en:
-    name: ""
-    short_name: ""
-    description: ""
-  short_name: ""
-  color: ""
+    name: ''
+    short_name: ''
+    description: ''
+  short_name: ''
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
-  description: ""
+  description: ''
   established_date: null
   total_member: null
-  party_leader: ""
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "13"
+  party_leader: ''
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '13'
   name: พลังไทยรักไทย
   en:
-    name: ""
-    short_name: ""
-    description: ""
-  short_name: ""
-  color: ""
+    name: ''
+    short_name: ''
+    description: ''
+  short_name: ''
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
-  description: ""
+  description: ''
   established_date: null
   total_member: null
-  party_leader: ""
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "14"
+  party_leader: ''
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '14'
   name: ครูไทยเพื่อประชาชน
   en:
-    name: ""
-    short_name: ""
-    description: ""
-  short_name: ""
-  color: ""
+    name: ''
+    short_name: ''
+    description: ''
+  short_name: ''
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
-  description: ""
+  description: ''
   established_date: null
   total_member: null
-  party_leader: ""
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "15"
+  party_leader: ''
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '15'
   name: ประชานิยม
   en:
-    name: ""
-    short_name: ""
-    description: ""
-  short_name: ""
-  color: ""
+    name: ''
+    short_name: ''
+    description: ''
+  short_name: ''
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
-  description: ""
+  description: ''
   established_date: null
   total_member: null
-  party_leader: ""
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "16"
+  party_leader: ''
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '16'
   name: ประชาธรรมไทย
   en:
-    name: ""
-    short_name: ""
-    description: ""
-  short_name: ""
-  color: ""
+    name: ''
+    short_name: ''
+    description: ''
+  short_name: ''
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
-  description: ""
+  description: ''
   established_date: null
   total_member: null
-  party_leader: ""
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "17"
+  party_leader: ''
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '17'
   name: พลเมืองไทย
   en:
-    name: ""
-    short_name: ""
-    description: ""
-  short_name: ""
-  color: ""
+    name: ''
+    short_name: ''
+    description: ''
+  short_name: ''
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
-  description: ""
+  description: ''
   established_date: null
   total_member: null
-  party_leader: ""
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "18"
+  party_leader: ''
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '18'
   name: พลังธรรมใหม่
   en:
-    name: ""
-    short_name: ""
-    description: ""
-  short_name: ""
-  color: ""
+    name: ''
+    short_name: ''
+    description: ''
+  short_name: ''
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
-  description: ""
+  description: ''
   established_date: null
   total_member: null
-  party_leader: ""
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "19"
+  party_leader: ''
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '19'
   name: ประชาธิปไตยใหม่
   en:
-    name: ""
-    short_name: ""
-    description: ""
-  short_name: ""
-  color: ""
+    name: ''
+    short_name: ''
+    description: ''
+  short_name: ''
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
-  description: ""
+  description: ''
   established_date: null
   total_member: null
-  party_leader: ""
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "20"
+  party_leader: ''
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '20'
   name: รักษ์ผืนป่าประเทศไทย
   en:
     name: Thai Forest Conservation
-    short_name: ""
-    description: ""
+    short_name: ''
+    description: ''
   short_name: รป.
-  color: ""
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ร่วมรัฐบาล
-  description: ""
+  description: ''
   established_date: null
   total_member: 2
   party_leader: นาย ดำรงค์ พิเดช
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "21"
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '21'
   name: เพื่อไทย
   en:
     name: Pheu Thai
-    short_name: ""
-    description: ""
+    short_name: ''
+    description: ''
   short_name: พท.
-  color: "#da3731"
+  color: '#da3731'
   party_type: พรรค
   party_ordinal: null
   party_faction: ฝ่ายค้าน
@@ -468,23 +468,23 @@
     บิลดิง ซอยจินดาถวิล ถนนพระรามที่ 4 แขวงมหาพฤฒาราม เขตบางรัก กรุงเทพมหานคร
     10500) และสำนักงานสาขาพรรคแห่งแรก ตั้งอยู่ที่จังหวัดพิจิตร
     ซึ่งเป็นสาขาพรรคพลังประชาชนเดิม
-  established_date: "2008-09-20"
+  established_date: '2008-09-20'
   total_member: 136
   party_leader: นาย สมพงษ์ อมรวิวัฒน์
-  party_secretary: ""
-  website: "https://www.ptp.or.th/"
-  facebook: "https://www.facebook.com/pheuthaiparty/"
-  twitter: "https://twitter.com/PheuThaiParty"
-  email: ""
-  phone: ""
-- id: "22"
+  party_secretary: ''
+  website: 'https://www.ptp.or.th/'
+  facebook: 'https://www.facebook.com/pheuthaiparty/'
+  twitter: 'https://twitter.com/PheuThaiParty'
+  email: ''
+  phone: ''
+- id: '22'
   name: อนาคตใหม่
   en:
     name: Future Forward
-    short_name: ""
-    description: ""
+    short_name: ''
+    description: ''
   short_name: อนค.
-  color: "#ee741a"
+  color: '#ee741a'
   party_type: พรรค
   party_ordinal: null
   party_faction: ฝ่ายค้าน
@@ -498,139 +498,139 @@
     พรรคอนาคตใหม่เป็นพรรคการเมืองเกิดใหม่ที่ได้รับความสนใจมากที่สุดและมีการพาดพิงในสื่อในทางบวกมากที่สุด
     มีแรงดึงดูดต่อเยาวชน และชนกลุ่มน้อยให้ความสนใจ
     รวมทั้งมุสลิมและกลุ่มบุคคลที่มีความหลากหลายทางเพศ (LGBTQ)
-    พรรคประกาศชัดเจนว่าจะคัดฝ่ายค้านอิทธิพลของกองทัพในการเมือง
-  established_date: "2018-03-15"
+    พรรคประกาศชัดเจนว่าจะคัดค้านอิทธิพลของกองทัพในการเมือง
+  established_date: '2018-03-15'
   total_member: 80
   party_leader: นาย ธนาธร จึงรุ่งเรืองกิจ
-  party_secretary: ""
-  website: "https://futureforwardparty.org/"
-  facebook: "https://www.facebook.com/FWPthailand/"
-  twitter: "https://twitter.com/FWPthailand"
-  email: ""
-  phone: ""
-- id: "23"
+  party_secretary: ''
+  website: 'https://futureforwardparty.org/'
+  facebook: 'https://www.facebook.com/FWPthailand/'
+  twitter: 'https://twitter.com/FWPthailand'
+  email: ''
+  phone: ''
+- id: '23'
   name: เพื่อชาติ
   en:
-    name: ""
-    short_name: ""
-    description: ""
-  short_name: ""
-  color: ""
+    name: ''
+    short_name: ''
+    description: ''
+  short_name: ''
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ฝ่ายค้าน
-  description: ""
+  description: ''
   established_date: null
   total_member: null
-  party_leader: ""
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "24"
+  party_leader: ''
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '24'
   name: ประชาชาติ
   en:
-    name: ""
-    short_name: ""
-    description: ""
-  short_name: ""
-  color: ""
+    name: ''
+    short_name: ''
+    description: ''
+  short_name: ''
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ฝ่ายค้าน
-  description: ""
+  description: ''
   established_date: null
   total_member: null
-  party_leader: ""
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "25"
+  party_leader: ''
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '25'
   name: เศรษฐกิจใหม่
   en:
-    name: ""
-    short_name: ""
-    description: ""
-  short_name: ""
-  color: ""
+    name: ''
+    short_name: ''
+    description: ''
+  short_name: ''
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ฝ่ายค้าน
-  description: ""
+  description: ''
   established_date: null
   total_member: 6
   party_leader: นาย มิ่งขวัญ แสงสุวรรณ์
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "26"
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '26'
   name: เสรีรวมไทย
   en:
     name: Thai Liberal
-    short_name: ""
-    description: ""
+    short_name: ''
+    description: ''
   short_name: สร.
-  color: "#dec457"
+  color: '#dec457'
   party_type: พรรค
   party_ordinal: null
   party_faction: ฝ่ายค้าน
-  description: ""
+  description: ''
   established_date: null
   total_member: 10
   party_leader: พลตำรวจเอก เสรีพิศุทธ์ เตมียาเวส
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "27"
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '27'
   name: พลังปวงชนไทย
   en:
-    name: ""
-    short_name: ""
-    description: ""
-  short_name: ""
-  color: ""
+    name: ''
+    short_name: ''
+    description: ''
+  short_name: ''
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ฝ่ายค้าน
-  description: ""
+  description: ''
   established_date: null
   total_member: null
-  party_leader: ""
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
-- id: "28"
+  party_leader: ''
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+- id: '28'
   name: ไทยศิวิไลย์
   en:
     name: Thai Civilized
-    short_name: ""
-    description: ""
+    short_name: ''
+    description: ''
   short_name: ทศล.
-  color: ""
+  color: ''
   party_type: พรรค
   party_ordinal: null
   party_faction: ฝ่ายค้าน
-  description: ""
+  description: ''
   established_date: null
   total_member: 1
   party_leader: นาย มงคลกิตติ์ สุขสินธารานนท์
-  party_secretary: ""
-  website: ""
-  facebook: ""
-  twitter: ""
-  email: ""
-  phone: ""
+  party_secretary: ''
+  website: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''

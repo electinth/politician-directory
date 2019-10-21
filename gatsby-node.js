@@ -11,7 +11,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `PeopleYaml`) {
-    const slug = `/people/${node.id}`
+    const slug = `/people/${node.name}_${node.lastname}`
     createNodeField({
       node,
       name: `slug`,
