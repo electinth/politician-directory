@@ -1,10 +1,10 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { css } from "@emotion/core"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { ageFromBirthdate } from "../utils"
+import { ageFromBirthdate, politicianPicture } from "../utils"
 
 import styles from "./people-template.module.css"
 
@@ -67,9 +67,12 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
     }}
   >
     <SEO title="People" />
-    <img css={css`
+    <img
+      css={css`
         max-height: 400px;
-      `} src={`https://elect.thematter.co/data/politicians/${peopleYaml.name}-${peopleYaml.lastname}.jpg`} />
+      `}
+      src={politicianPicture(peopleYaml)}
+    />
     <section css={{ ...cssSection, paddingTop: "6rem" }}>
       <div className="container">
         <div className={`${styles.card}`}>
@@ -103,7 +106,15 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
 
             <hr className={`${styles.hr}`} />
             <div>
-              <p>พรรค {peopleYaml.party || "ไม่มีข้อมูล"}</p>
+              <p>
+                {peopleYaml.party ? (
+                  <Link to={`/party/${peopleYaml.party}`}>
+                    พรรค {peopleYaml.party}
+                  </Link>
+                ) : (
+                  "ไม่สังกัดพรรค"
+                )}
+              </p>
             </div>
             <div>
               {peopleYaml.mp_type === "แบ่งเขต" ? (
