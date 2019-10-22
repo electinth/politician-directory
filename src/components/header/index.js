@@ -57,7 +57,7 @@ const Header = ({ siteTitle }) => {
           justifyContent: "space-between",
         }}
       >
-        <h1 style={{ width: "25%", flexGrow: 1, margin: 0 }}>
+        <h1 className="logo" style={{ width: "25%", flexGrow: 1 }}>
           <Link
             to="/"
             style={{
@@ -69,6 +69,7 @@ const Header = ({ siteTitle }) => {
             <EnvBadge />
           </Link>
         </h1>
+
         <HiddenOnMobile style={{ width: "50%", flexGrow: 2 }}>
           <h1
             css={{
