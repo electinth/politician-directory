@@ -1,0 +1,54 @@
+.hamburger-icon {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: black;
+  transition: all 0.3s;
+}
+
+.bar:before,
+.bar:after {
+  height: 5px;
+  width: 100%;
+  background: black;
+  position: absolute;
+  content: "";
+
+  transition: all 0.3s;
+}
+.bar:after {
+  top: 10px;
+}
+.bar:before {
+  top: -10px;
+}
+
+.bar-white:before,
+.bar-white:after {
+  background: white !important;
+}
+
+.animateIcon .fade-center::after {
+  top: 0;
+  transform: rotate(45deg);
+}
+.animateIcon .fade-center::before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+.animateIcon .fade-center {
+  background: none;
+}

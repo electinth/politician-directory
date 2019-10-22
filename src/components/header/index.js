@@ -1,11 +1,13 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import _ from "lodash"
 
 import HiddenOnMobile from "../hiddenOnMobile/index"
+import Menu from "../menu/index"
 
 import "../../styles/global.css"
+import "./index.css"
 
 const EnvBadge = () => {
   const env = process.env.GATSBY_ENV || "development"
@@ -32,42 +34,30 @@ const EnvBadge = () => {
   )
 }
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#fff`,
-    }}
-  >
-    <div
+const Header = ({ siteTitle }) => {
+  const [iconClicked, setIconClicked] = useState(false)
+  return (
+    <header
       style={{
-        margin: `0 auto`,
-        padding: "0 1rem",
-        height: 80,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
+        background: `#fff`,
       }}
     >
-      <h1 style={{ width: "25%", flexGrow: 1, margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: "var(--cl-black)",
-            textDecoration: `none`,
-          }}
-        >
-          ELECT
-          <EnvBadge />
-        </Link>
-      </h1>
-      <HiddenOnMobile style={{ width: "50%", flexGrow: 2 }}>
-        <h1
-          css={{
-            margin: 0,
-            textAlign: "center",
-            fontSize: "2.4rem",
-          }}
-        >
+      {iconClicked && (
+        <Menu
+          list={[{ path: "/", label: "Home" }, { path: "/", label: "Home" }]}
+        />
+      )}
+      <div
+        style={{
+          margin: `0 auto`,
+          padding: "0 1rem",
+          height: 80,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <h1 style={{ width: "25%", flexGrow: 1, margin: 0 }}>
           <Link
             to="/"
             style={{
@@ -75,33 +65,64 @@ const Header = ({ siteTitle }) => (
               textDecoration: `none`,
             }}
           >
-            {siteTitle}
+            ELECT
+            <EnvBadge />
           </Link>
         </h1>
-      </HiddenOnMobile>
-      <div
-        style={{
-          display: "flex",
-          flexGrow: 1,
-          justifyContent: "space-between",
-          width: "25%",
-        }}
-      >
-        <HiddenOnMobile>
-          <a href="/?lang=th">TH</a>/<a href="/?lang=en">EN</a>
+        <HiddenOnMobile style={{ width: "50%", flexGrow: 2 }}>
+          <h1
+            css={{
+              margin: 0,
+              textAlign: "center",
+              fontSize: "2.4rem",
+            }}
+          >
+            <Link
+              to="/"
+              style={{
+                color: "var(--cl-black)",
+                textDecoration: `none`,
+              }}
+            >
+              {siteTitle}
+            </Link>
+          </h1>
         </HiddenOnMobile>
         <div
-          style={{ display: "flex", justifyContent: "flex-end", width: "100%" }}
+          style={{
+            display: "flex",
+            flexGrow: 1,
+            justifyContent: "space-between",
+            width: "25%",
+          }}
         >
           <HiddenOnMobile>
-            <p style={{ marginRight: "1rem", marginBottom: 0 }}>search</p>
+            <a href="/?lang=th">TH</a>/<a href="/?lang=en">EN</a>
           </HiddenOnMobile>
-          <p style={{ marginBottom: 0 }}>menu</p>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              width: "100%",
+            }}
+          >
+            <HiddenOnMobile>
+              <p style={{ marginRight: "1rem", marginBottom: 0 }}>search</p>
+            </HiddenOnMobile>
+            <div
+              class={`hamburger-icon ${iconClicked ? "animateIcon" : ""}`}
+              onClick={() => setIconClicked(!iconClicked)}
+            >
+              <div
+                class={`bar fade-center ${iconClicked ? "bar-white" : ""}`}
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-)
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
