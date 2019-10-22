@@ -7,7 +7,7 @@ import "./index.css"
 const Menu = () => {
   return (
     <div className="menu-wrapper">
-      <h2 style={{ padding: 0, fontSize: "2.4rem", color: "white" }}>
+      <h2 style={{ padding: 0, fontSize: "2.4rem", color: "#fcbbdd" }}>
         Thai Politician Directory
       </h2>
       <Link

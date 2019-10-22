@@ -40,7 +40,7 @@
 
 .bar-white:before,
 .bar-white:after {
-  background: white !important;
+  background: #fcbbdd !important;
 }
 
 .logo {
