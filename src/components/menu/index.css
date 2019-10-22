@@ -4,7 +4,6 @@
   background: #222121;
   position: absolute;
   top: -100vh;
-  left: 0;
   z-index: 2;
   animation: slideInMobile 0.3s ease-in-out forwards;
   padding: 20px 10px;
@@ -24,6 +23,7 @@
 
 @keyframes slideInDesktop {
   0% {
+    right: -100vw;
   }
   100% {
     right: 10px;
@@ -40,5 +40,9 @@
     right: -100vw;
     z-index: 2;
     animation: slideInDesktop 0.2s ease-in-out forwards;
+  }
+
+  .menu-wrapper > h2 {
+    margin: 0 0 20px 0;
   }
 }

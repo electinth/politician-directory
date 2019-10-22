@@ -52,15 +52,16 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  people.data.allPeopleYaml.edges.forEach(({ node }) => {
-    createPage({
-      path: node.fields.slug,
-      component: path.resolve(`./src/templates/people-template.js`),
-      context: {
-        slug: node.fields.slug,
-      },
+  people.data.allPeopleYaml &&
+    people.data.allPeopleYaml.edges.forEach(({ node }) => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/people-template.js`),
+        context: {
+          slug: node.fields.slug,
+        },
+      })
     })
-  })
   // Party
   const parties = await graphql(`
     query {
