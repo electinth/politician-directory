@@ -29,3 +29,10 @@
   in_cabinet: false
   in_senate: false
   in_representatives: true
+- id: ธนาทน_จึงรุ่งเรืองกิจ
+  prefix: นาย
+  name: ธนาทน จึงรุ่งเรืองกิจ
+  positions: []
+  in_cabinet: true
+  in_senate: false
+  in_representatives: true
