@@ -27,6 +27,12 @@ export const query = graphql`
   }
 `
 
+const split_array = (array, size, callback) =>
+  Array(Math.ceil(array.length / size)).fill()
+    .map((_, index) => index * size)
+    .map(start => array.slice(start, start + size))
+    .map(callback)
+
 const RepresentativesPage = ({ data }) => {
   // test data
   const data_length_to_add = 500 - data.allProfileYaml.edges.length;
@@ -46,27 +52,20 @@ const RepresentativesPage = ({ data }) => {
   }
 
   let prop_of_interest = `in_cabinet`;
-  // data.allProfileYaml.edges.sort((a, b) => b.node[prop_of_interest] - a.node[prop_of_interest]);
-  const people_of_interest = data.allProfileYaml.edges
-    .filter(({ node }) => node.in_representatives && node[prop_of_interest]);
-  const people_other = data.allProfileYaml.edges
-    .filter(({ node }) => node.in_representatives && !node[prop_of_interest]);
-
+  
   return (
     <Layout>
       <SEO title="สมาชิกสภาผู้แทนราษฎรไทย" />
       <h1>สมาชิกสภาผู้แทนราษฎรไทย</h1>
       <h2>House of Representatives</h2>
       <div class="waffle">
-        {Array(Math.ceil(people_of_interest.length / 100)).fill()
-          .map((_, index) => index * 100)
-          .map(start => people_of_interest.slice(start, start + 100))
-          .map(hundred => (
+        {split_array(
+          data.allProfileYaml.edges
+            .filter(({ node }) => node.in_representatives && node[prop_of_interest]), 
+          100, 
+          hundred => (
             <div class="hundred">
-              {Array(Math.ceil(hundred.length / 25)).fill()
-                .map((_, index) => index * 25)
-                .map(start => hundred.slice(start, start + 25))
-                .map(quarter => (
+              {split_array(hundred, 25, quarter => (
                   <div class="quarter">
                     {quarter
                       .map(({ node }) => (
@@ -78,15 +77,13 @@ const RepresentativesPage = ({ data }) => {
                 ))}
             </div>
           ))}
-        {Array(Math.ceil(people_other.length / 100)).fill()
-          .map((_, index) => index * 100)
-          .map(start => people_other.slice(start, start + 100))
-          .map(hundred => (
+        {split_array(
+          data.allProfileYaml.edges
+            .filter(({ node }) => node.in_representatives && !node[prop_of_interest]), 
+          100,
+          hundred => (
             <div class="hundred">
-              {Array(Math.ceil(hundred.length / 25)).fill()
-                .map((_, index) => index * 25)
-                .map(start => hundred.slice(start, start + 25))
-                .map(quarter => (
+              {split_array(hundred, 25, quarter => (
                   <div class="quarter">
                     {quarter
                       .map(({ node }) => (
