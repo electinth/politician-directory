@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import { getThaiName, partyLogo, politicianPicture } from "../utils"
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String!, $party: String!) {
     partyYaml(party_type: { eq: "พรรค" }, fields: { slug: { eq: $slug } }) {
       id
       name
@@ -26,6 +26,21 @@ export const query = graphql`
       facebook
       twitter
     }
+    allPeopleYaml(filter: { party: { eq: $party } }) {
+      edges {
+        node {
+          id
+          title
+          name
+          lastname
+          party
+          party_faction
+          mp_type
+          mp_province
+          mp_zone
+        }
+      }
+    }
   }
 `
 
@@ -33,32 +48,9 @@ const cssH1 = { fontSize: "4.8rem" }
 const cssH2 = { fontSize: "2.4rem" }
 const cssSection = { paddingBottom: "8rem" }
 
-const createMockMembers = partyYaml => {
-  return _.times(8).map(index => ({
-    id: index,
-    title: "นาย",
-    name: ["ประยุทธ์", "กล้า" + getThaiName(index)][index === 0 ? index : 1],
-    lastname: ["จันทร์โอชา", "ตั้งใจทำงาน"][index === 0 ? index : 1],
-    party: partyYaml.name,
-    party_faction: partyYaml.party_faction,
-    ...(index % 2 === 0
-      ? {
-          mp_type: "บัญชีรายชื่อ",
-          mp_province: "",
-          mp_zone: String(_.random(1, 50)),
-        }
-      : {
-          mp_type: "แบ่งเขต",
-          mp_province: "นราธิวาส",
-          mp_zone: String((index % 4) + 1),
-        }),
-  }))
-}
-
-const PartyPage = ({ data: { partyYaml } }) => {
+const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
   const [memberFilter, setMemberFilter] = useState({})
-  const [mockMembers] = useState(createMockMembers(partyYaml))
-
+  const [partyMembers] = useState(allPeopleYaml.edges.map(e => e.node))
   const selectMemberFilter = filter => () => setMemberFilter(filter)
 
   return (
@@ -228,7 +220,7 @@ const PartyPage = ({ data: { partyYaml } }) => {
               justifyContent: "space-evenly",
             }}
           >
-            {mockMembers
+            {partyMembers
               .filter(
                 member =>
                   !memberFilter.mp_type ||

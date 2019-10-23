@@ -70,6 +70,7 @@ exports.createPages = async ({ graphql, actions }) => {
             fields {
               slug
             }
+            name
           }
         }
       }
@@ -81,6 +82,7 @@ exports.createPages = async ({ graphql, actions }) => {
       component: path.resolve(`./src/templates/party-template.js`),
       context: {
         slug: node.fields.slug,
+        party: node.name
       },
     })
   })
