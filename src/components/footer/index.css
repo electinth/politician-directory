@@ -1,0 +1,85 @@
+.footer {
+  display: grid;
+  grid-template-columns: 15vw 1fr 15vw;
+  grid-auto-rows: auto auto;
+  background-color: black;
+  padding: 50px 0;
+}
+
+.footer-container {
+  display: grid;
+  column-gap: 2vw;
+  row-gap: 2vw;
+  grid-column: 2 / 3;
+  grid-template-columns: 1fr 10vw 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "elect      .    contact"
+    "partner partner partner";
+}
+
+.footer-elect {
+  grid-area: elect;
+}
+
+.footer-elect h2,
+.footer-elect h3 {
+  margin-left: 10px;
+}
+
+.footer-elect h2 {
+  color: white;
+  font-size: 22px;
+  margin-top: -3.5px;
+}
+
+.footer-elect h3 {
+  color: white;
+}
+
+.footer-elect::before {
+  background-color: #ef314a;
+  content: "";
+  position: absolute;
+  height: 45px;
+  width: 4px;
+  /* left: -10px; */
+  /* top: -7px; */
+}
+
+.footer-contact {
+  grid-area: contact;
+  justify-self: center;
+}
+
+.footer * {
+  color: white;
+}
+
+.footer-partner {
+  grid-area: partner;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+}
+
+.link-text {
+  border-bottom: 0.1rem solid white;
+}
+
+.footer-partner ul {
+  display: inline-block;
+}
+
+.footer-partner li {
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.footer-partner span {
+  margin-left: auto !important;
+}
