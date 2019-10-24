@@ -1,8 +1,16 @@
 .waffle {
   display: flex;
   flex-wrap: wrap;
-  width: 780px;
+  width: 813px;
   height: 440px;
+  margin: 50px 0;
+}
+
+.line {
+  background-color: black;
+  width: 3px;
+  height: 505px;
+  margin: -40px 30px -25px -10px;
 }
 
 .hundred {
@@ -39,6 +47,12 @@
   .waffle {
     width: 440px;
     height: 780px;
+  }
+
+  .line {
+    width: 505px;
+    height: 3px;
+    margin: -10px -25px 30px -40px;
   }
   
   .hundred {

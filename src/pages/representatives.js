@@ -77,6 +77,7 @@ const RepresentativesPage = ({ data }) => {
                 ))}
             </div>
           ))}
+        <div class="line"></div>
         {split_array(
           data.allProfileYaml.edges
             .filter(({ node }) => node.in_representatives && !node[prop_of_interest]), 
