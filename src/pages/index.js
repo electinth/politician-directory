@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
 import Hero from "../components/hero"
+import VoteLogCard from "../components/voteLogCard";
 
 export const query = graphql`
   query {
@@ -133,6 +134,9 @@ const IndexPage = ({ data }) => (
     >
       <div className="container">
         <h2 css={{ ...cssH1 }}>สรุปผลการลงมติล่าสุด</h2>
+        <div style={{marginTop: "6rem"}}>
+          <VoteLogCard legal_title="ร่างข้อบังคับการประชุมสภาผู้แทนราษฎพ.ศ. ซึ่งคณะกกรมาธิการวิสามัญพิจารณาเสร็จแล้ว" legal_title_en="The Democrat Party is a Thail political party. The oldest party in Thailand, it was founded as a conservative and royalist party, and now upholds a conservative-" passed={false} approve={101} disprove={365} abstained={13}absent={0} total_voter={479} vote_date="2019-08-22" />
+        </div>
       </div>
     </section>
 
