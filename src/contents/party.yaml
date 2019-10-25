@@ -2,635 +2,884 @@
   name: สภาผู้แทนราษฎรไทย
   en:
     name: House of Representatives
-    short_name: ''
-    description: ''
-  short_name: ส.ส
-  color: ''
+    short_name: '-'
+    description: >-
+      The lower house of the National Assembly of Thailand, the legislative
+      branch of the Thai government, has 500 members, all of which are
+      democratically elected: 375 members were directly elected through single
+      constituency elections, while the other 125 are elected through party-list
+      proportional representation.
+  short_name: ส.ส.
+  color: '-'
   party_type: สส
   party_ordinal: 25
-  party_faction: ''
+  party_faction: '-'
   description: >-
-    เป็นสภาที่ได้มาจากการเลือกตั้งทั่วไป พ.ศ. 2562 ประกอบด้วยสมาชิก (ส.ส.) 500
-    คนตามระบบจัดสรรปันส่วนผสม โดย 350 คนเป็นผู้แทนเขต และอีก 150
-    คนมาจากระบบบัญชีรายชื่อ
+    เป็นส่วนหนึ่งของฝ่ายนิติบัญญัติ ที่ได้มาจากการเลือกตั้งทั่วไป พ.ศ. 2562
+    ประกอบด้วยสมาชิก (ส.ส.) 500 คนตามระบบจัดสรรปันส่วนผสม โดย 350
+    คนเป็นผู้แทนเขต และอีก 150 คนมาจากระบบบัญชีรายชื่อ
+    ฝ่ายรัฐบาลเป็นรัฐบาลผสมพรรคพลังประชารัฐ
+    ส่วนฝ่ายค้านคือพรรคเพื่อไทยและพรรคร่วมฝ่ายค้านอีก 6 พรรค
   established_date: '2019-03-24'
   total_member: 500
-  party_leader: ''
-  party_secretary: ''
+  speaker: ชวน หลีกภัย
+  first_deputy_speaker: สุชาติ ตันเจริญ
+  second_deputy_speaker: ศุภชัย โพธิ์สุ
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: '-'
+  party_secretary: '-'
   website: 'https://www.parliament.go.th'
   facebook: 'https://www.facebook.com/thaiparliament'
-  twitter: ''
-  email: ''
-  phone: ''
+  twitter: '-'
+  email: webmaster@parliament.go.th
+  phone: 0-2244-2500
+  ratchakitcha: '-'
 - id: '2'
   name: วุฒิสภาไทย
   en:
     name: Senate
-    short_name: ''
+    short_name: '-'
     description: ''
   short_name: ส.ว
-  color: ''
+  color: '-'
   party_type: สว
   party_ordinal: 12
-  party_faction: ''
-  description: ''
-  established_date: null
+  party_faction: '-'
+  description: >-
+    เป็นส่วนหนึ่งของฝ่ายนิติบัญญัติ มีสมาชิก (ส.ว.) 250
+    คนที่ไม่ได้มาจากการเลือกตั้ง โดย 244 คนมาจากการสรรหา และอีก 6
+    คนเป็นสมาชิกโดยตำแหน่ง
+    วุฒิสภาชุดดังกล่าวมีอำนาจเพิ่มเติมตามบทเฉพาะกาลของรัฐธรรมนูญให้ร่วมเลือกนายกรัฐมนตรีและเร่งรัดการปฏิรูปประเทศของคณะรัฐมนตรีตลอดจนพิจารณากฎหมายที่เห็นว่าเกี่ยวข้อง
+  established_date: '2019-05-28'
   total_member: 250
-  party_leader: ''
-  party_secretary: ''
+  speaker: พรเพชร วิชิตชลชัย
+  first_deputy_speaker: สิงห์ศึก สิงห์ไพร
+  second_deputy_speaker: ศุภชัย สมเจริญ
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: '-'
+  party_secretary: '-'
   website: 'https://www.senate.go.th'
   facebook: 'https://www.facebook.com/SenateThailand'
-  twitter: ''
-  email: ''
-  phone: ''
+  twitter: '-'
+  email: webmaster@senate.go.th
+  phone: 0-2831-5888-9
+  ratchakitcha: '-'
 - id: '3'
   name: คณะรัฐมนตรีไทย
   en:
     name: Cabinet
-    short_name: ''
+    short_name: '-'
     description: ''
   short_name: ครม.
-  color: ''
+  color: '-'
   party_type: ครม
   party_ordinal: 62
-  party_faction: ''
-  description: ''
-  established_date: null
+  party_faction: '-'
+  description: >-
+    เป็นคณะบุคคลที่ทำหน้าที่บริหารราชการแผ่นดิน โดย ครม. ชุดนี้
+    เกิดจากการนำของพรรคพลังประชารัฐ ร่วมกับพรรคการเมืองอีก 19 พรรคเสนอชื่อพลเอก
+    ประยุทธ์ จันทร์โอชา ซึ่งเคยดำรงตำแหน่งนายกฯ และหัวหน้าคสช. มาเป็นเวลา 5 ปี
+    เป็นนายกรัฐมนตรีต่ออีกสมัย ทำให้ ครม.
+    ชุดนี้มีอีกชื่อเรียกว่าคณะรัฐมนตรีประยุทธ์ 2
+  established_date: '2019-07-10'
   total_member: 36
-  party_leader: ''
-  party_secretary: ''
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: พลเอก ประยุทธ์ จันทร์โอชา
+  deputy_prime_minister: |-
+    พลเอก ประวิตร วงษ์สุวรรณ
+    สมคิด จาตุศรีพิทักษ์
+    วิษณุ เครืองาม
+    จุรินทร์ ลักษณวิศิษฏ์
+    อนุทิน ชาญวีรกูล
+  party_leader: '-'
+  party_secretary: '-'
   website: 'https://www.thaigov.go.th'
   facebook: 'https://www.facebook.com/ThaigovSpokesman'
-  twitter: ''
-  email: ''
-  phone: ''
+  twitter: '-'
+  email: '-'
+  phone: '-'
+  ratchakitcha: '-'
 - id: '4'
-  name: พลังประชารัฐ
+  name: ครูไทยเพื่อประชาชน
   en:
-    name: Palang Pracharath
-    short_name: ''
+    name: Thai Teachers For People
+    short_name: T.T.P.P.
     description: ''
-  short_name: พปชร.
-  color: '#0055dd'
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ร่วมรัฐบาล
-  description: >-
-    พรรคพลังประชารัฐ (ย่อ: พปชร.) ก่อตั้งขึ้นในปี 2561
-    ภายในพรรคประกอบด้วยอดีตรัฐมนตรีในรัฐบาลประยุทธ์ 1
-    รวมทั้งมีการรับนักการเมืองหลายกลุ่มเข้าสังกัด ทั้งอดีตสมาชิกสภาผู้แทนราษฎร
-    (ส.ส.) อดีตนักการเมืองท้องถิ่น
-    อดีตแกนนำแนวร่วมประชาธิปไตยต่อต้านเผด็จการแห่งชาติ อดีต ส.ส.
-    พรรคไทยรักไทย,พรรคเพื่อไทยและอดีต ส.ส.พรรคประชาธิปัตย์ และอดีตแกนนำ กปปส.
-    ในการเลือกตั้งสมาชิกสภาผู้แทนราษฎรไทยเป็นการทั่วไป พ.ศ. 2562
-    พรรคเสนอชื่อพลเอก ประยุทธ์ จันทร์โอชา หัวหน้าคณะรักษาความสงบแห่งชาติ
-    และนายกรัฐมนตรีก่อนการเลือกตั้งให้เป็นนายกรัฐมนตรีอีกครั้งหนึ่ง
-  established_date: '2018-03-02'
-  total_member: 115
-  party_leader: นาย อุตตม สาวนายน
-  party_secretary: ''
-  website: 'https://pprp.or.th/'
-  facebook: 'https://www.facebook.com/PPRPThailand/'
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '5'
-  name: ประชาธิปัตย์
-  en:
-    name: Democrat
-    short_name: ''
-    description: ''
-  short_name: ปชป.
-  color: '#0078b9'
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ร่วมรัฐบาล
-  description: >-
-    พรรคประชาธิปัตย์ (ย่อ: ปชป.) ก่อตั้งเมื่อวันที่ 6 เมษายน พ.ศ. 2489
-    เป็นพรรคการเมืองจดทะเบียนที่เก่าแก่ที่สุดของไทยที่ยังดำเนินการอยู่
-    พรรคมีสมาชิกที่ได้แจ้งต่อนายทะเบียนพรรคการเมืองไว้ จำนวน 2,895,933 คน
-    นับเป็นพรรคการเมืองที่มีสมาชิกมากที่สุดในประเทศไทย และมีสาขาพรรคจำนวน 175
-    สาขา แรกเริ่มก่อตั้งเป็นพรรคอนุรักษนิยมและนิยมเจ้า
-    ปัจจุบันมีจุดยืนแบบเสรีนิยมอนุรักษ์ (conservative liberalism)
-    และนิยมตลาดแบบเสรีนิยมคลาสสิก
-  established_date: '1946-04-06'
-  total_member: 52
-  party_leader: นาย จุรินทร์ ลักษณวิศิษฎ์
-  party_secretary: ''
-  website: 'https://www.democrat.or.th'
-  facebook: 'https://www.facebook.com/DemocratPartyTH/'
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '6'
-  name: ภูมิใจไทย
-  en:
-    name: Bhumjaithai
-    short_name: ''
-    description: ''
-  short_name: ภท.
+  short_name: ค.พ.ช.
   color: ''
   party_type: พรรค
-  party_ordinal: null
+  party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
   description: >-
-    พรรคภูมิใจไทย (ย่อว่า: ภท.) ก่อตั้งเมื่อ 5 พฤศจิกายน พ.ศ. 2551 มี นายพิพัฒน์
-    พรมวราภรณ์ เป็นหัวหน้าพรรคคนแรก นายมงคล ศรีอ่อน เป็นเลขาธิการพรรคคนแรก
-    และนางวันเพ็ญ ขวัญวงศ์ เป็นโฆษกพรรคคนแรก
-
-
-    ในปัจจุบันมีนาย อนุทิน ชาญวีรกูล เป็นหัวหน้าพรรคนาย ศักดิ์สยาม ชิดชอบ
-    เป็นเลขาธิการพรรค และ พันเอก เศรษฐพงศ์ มะลิสุวรรณ เป็นโฆษกพรรค
-  established_date: '2008-11-05'
-  total_member: 51
-  party_leader: นาย อนุทิน ชาญวีรกูล
-  party_secretary: ''
-  website: 'https://www.bhumjaithai.com/'
-  facebook: 'https://www.facebook.com/khonbhumjaithai/'
-  twitter: ''
+    จัดตั้งขึ้นโดยเครือข่ายองค์กรครู
+    เพื่อนำเสนอนโยบายแนวทางการแก้ปัญหาวิกฤติของชาติโดยเน้นเรื่องการศึกษาและบุคลากรทางการศึกษา
+  established_date: '2011-06-28'
+  total_member: 1
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย ปรีดา บุญเพลิง
+  party_secretary: นาย สุวิชญ์ โยทองยศ
+  website: '-'
+  facebook: 'https://www.facebook.com/thaiteachersforpeopleparty/'
+  twitter: '-'
   email: ''
   phone: ''
-- id: '7'
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2554/D/132/183.PDF'
+- id: '5'
   name: ชาติไทยพัฒนา
   en:
     name: Chartthaipattana
-    short_name: ''
+    short_name: CP
     description: ''
   short_name: ชทพ.
   color: ''
   party_type: พรรค
-  party_ordinal: null
+  party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
-  description: ''
-  established_date: null
+  description: >-
+    จัดตั้งขึ้นเพื่อรองรับ ส.ส. จากพรรคชาติไทย ซึ่งถูกยุบพรรคในปี 2551
+    มีฐานเสียงหลักอยู่ที่จังหวัดสุพรรณบุรี
+    และมีจุดยืนที่ปรับตัวได้กับทุกฝ่ายจึงมักได้ร่วมรัฐบาลอยู่เสมอ
+  established_date: '2008-04-18'
   total_member: 10
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
   party_leader: นางสาว กัญจนา ศิลปอาชา
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
+  party_secretary: นาย ประภัตร โพธสุธน
+  website: 'http://www.chartthaipattana.or.th'
+  facebook: 'https://www.facebook.com/pg/ChartthaipattanaParty'
+  twitter: 'https://twitter.com/ChartthaiPT'
   email: ''
   phone: ''
-- id: '8'
-  name: รวมพลังประชาชาติไทย
-  en:
-    name: ''
-    short_name: ''
-    description: ''
-  short_name: ''
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ร่วมรัฐบาล
-  description: ''
-  established_date: null
-  total_member: 3
-  party_leader: นาย เทวัญ ลิปตพัลลภ
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '9'
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2551/D/064/66.PDF'
+- id: '6'
   name: ชาติพัฒนา
   en:
-    name: Chart Pattana
-    short_name: ''
+    name: Chartpattana
+    short_name: CPN.
     description: ''
-  short_name: ชพ.
+  short_name: ชพน.
   color: ''
   party_type: พรรค
-  party_ordinal: null
+  party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
-  description: ''
-  established_date: null
-  total_member: null
-  party_leader: ''
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '10'
-  name: พลังท้องถิ่นไท
-  en:
-    name: ''
-    short_name: ''
-    description: ''
-  short_name: ''
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ร่วมรัฐบาล
-  description: ''
-  established_date: null
-  total_member: null
-  party_leader: ''
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '11'
-  name: พลังชาติไทย
-  en:
-    name: ''
-    short_name: ''
-    description: ''
-  short_name: ''
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ร่วมรัฐบาล
-  description: ''
-  established_date: null
-  total_member: null
-  party_leader: ''
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '12'
-  name: ประชาภิวัฒน์
-  en:
-    name: ''
-    short_name: ''
-    description: ''
-  short_name: ''
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ร่วมรัฐบาล
-  description: ''
-  established_date: null
-  total_member: null
-  party_leader: ''
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '13'
-  name: พลังไทยรักไทย
-  en:
-    name: ''
-    short_name: ''
-    description: ''
-  short_name: ''
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ร่วมรัฐบาล
-  description: ''
-  established_date: null
-  total_member: null
-  party_leader: ''
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '14'
-  name: ครูไทยเพื่อประชาชน
-  en:
-    name: ''
-    short_name: ''
-    description: ''
-  short_name: ''
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ร่วมรัฐบาล
-  description: ''
-  established_date: null
-  total_member: null
-  party_leader: ''
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '15'
-  name: ประชานิยม
-  en:
-    name: ''
-    short_name: ''
-    description: ''
-  short_name: ''
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ร่วมรัฐบาล
-  description: ''
-  established_date: null
-  total_member: null
-  party_leader: ''
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '16'
-  name: ประชาธรรมไทย
-  en:
-    name: ''
-    short_name: ''
-    description: ''
-  short_name: ''
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ร่วมรัฐบาล
-  description: ''
-  established_date: null
-  total_member: null
-  party_leader: ''
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '17'
-  name: พลเมืองไทย
-  en:
-    name: ''
-    short_name: ''
-    description: ''
-  short_name: ''
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ร่วมรัฐบาล
-  description: ''
-  established_date: null
-  total_member: null
-  party_leader: ''
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '18'
-  name: พลังธรรมใหม่
-  en:
-    name: ''
-    short_name: ''
-    description: ''
-  short_name: ''
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ร่วมรัฐบาล
-  description: ''
-  established_date: null
-  total_member: null
-  party_leader: ''
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '19'
-  name: ประชาธิปไตยใหม่
-  en:
-    name: ''
-    short_name: ''
-    description: ''
-  short_name: ''
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ร่วมรัฐบาล
-  description: ''
-  established_date: null
-  total_member: null
-  party_leader: ''
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '20'
-  name: รักษ์ผืนป่าประเทศไทย
-  en:
-    name: Thai Forest Conservation
-    short_name: ''
-    description: ''
-  short_name: รป.
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ร่วมรัฐบาล
-  description: ''
-  established_date: null
-  total_member: 2
-  party_leader: นาย ดำรงค์ พิเดช
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '21'
-  name: เพื่อไทย
-  en:
-    name: Pheu Thai
-    short_name: ''
-    description: ''
-  short_name: พท.
-  color: '#da3731'
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ฝ่ายค้าน
   description: >-
-    พรรคเพื่อไทย (ย่อ: พท.) จดทะเบียนจัดตั้ง เมื่อวันที่ 20 กันยายน พ.ศ. 2551
-    โดยมี นายบัณจงศักดิ์ วงศ์รัตนวรรณ เป็นหัวหน้าพรรคคนแรก และ นายโอฬาร
-    กิจเลิศไพโรจน์ เป็นเลขาธิการพรรคคนแรก
-
-
-    สำนักงานใหญ่ของพรรค ตั้งอยู่ที่ 1770 อาคารโอเอไอ ทาวเวอร์ ถนนเพชรบุรีตัดใหม่
-    แขวงบางกะปิ เขตห้วยขวาง กรุงเทพมหานคร รหัสไปรษณีย์ 10310
-    ซึ่งเป็นที่ทำการเดิมของพรรคไทยรักไทย และพรรคพลังประชาชน (ย้ายมาจากอาคารนวสร
-    ถนนพระรามที่ 3 แขวงบางคอแหลม เขตบางคอแหลม กรุงเทพมหานคร และ 626 อาคาร บีบีดี
-    บิลดิง ซอยจินดาถวิล ถนนพระรามที่ 4 แขวงมหาพฤฒาราม เขตบางรัก กรุงเทพมหานคร
-    10500) และสำนักงานสาขาพรรคแห่งแรก ตั้งอยู่ที่จังหวัดพิจิตร
-    ซึ่งเป็นสาขาพรรคพลังประชาชนเดิม
-  established_date: '2008-09-20'
-  total_member: 136
-  party_leader: นาย สมพงษ์ อมรวิวัฒน์
-  party_secretary: ''
-  website: 'https://www.ptp.or.th/'
-  facebook: 'https://www.facebook.com/pheuthaiparty/'
-  twitter: 'https://twitter.com/PheuThaiParty'
+    เป็นการรวมกันของกลุ่มรวมใจไทยกับกลุ่มชาติพัฒนาเก่า
+    ที่เคยประกาศยุบไปรวมกับไทยรักไทยแล้วแยกออกมาใหม่
+    ฐานเสียงหลักอยู่ที่จังหวัดนครราชสีมา
+    มีจุดยืนที่ปรับตัวได้กับทุกฝ่ายจึงมักได้ร่วมรัฐบาลอยู่เสมอ
+  established_date: '2007-10-03'
+  total_member: 3
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย เทวัญ ลิปตพัลลภ
+  party_secretary: นาย ดล เหตระกูล
+  website: 'http://www.chartpattana.com/'
+  facebook: 'https://www.facebook.com/ChartpattanaParty/'
+  twitter: 'https://twitter.com/chartpattana'
   email: ''
   phone: ''
-- id: '22'
-  name: อนาคตใหม่
-  en:
-    name: Future Forward
-    short_name: ''
-    description: ''
-  short_name: อนค.
-  color: '#ee741a'
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ฝ่ายค้าน
-  description: >-
-    พรรคอนาคตใหม่ (ย่อ: อ.น.ค.) เป็นพรรคการเมืองในประเทศไทย
-    ก่อตั้งขึ้นเมื่อวันที่ 15 มีนาคม พ.ศ. 2561 โดยธนาธร จึงรุ่งเรืองกิจ
-    อดีตรองประธานบริหารบริษัทไทยซัมมิท และปิยบุตร แสงกนกกุล
-    อดีตอาจารย์ประจำคณะนิติศาสตร์ มหาวิทยาลัยธรรมศาสตร์
-
-
-    พรรคอนาคตใหม่เป็นพรรคการเมืองเกิดใหม่ที่ได้รับความสนใจมากที่สุดและมีการพาดพิงในสื่อในทางบวกมากที่สุด
-    มีแรงดึงดูดต่อเยาวชน และชนกลุ่มน้อยให้ความสนใจ
-    รวมทั้งมุสลิมและกลุ่มบุคคลที่มีความหลากหลายทางเพศ (LGBTQ)
-    พรรคประกาศชัดเจนว่าจะคัดค้านอิทธิพลของกองทัพในการเมือง
-  established_date: '2018-03-15'
-  total_member: 80
-  party_leader: นาย ธนาธร จึงรุ่งเรืองกิจ
-  party_secretary: ''
-  website: 'https://futureforwardparty.org/'
-  facebook: 'https://www.facebook.com/FWPthailand/'
-  twitter: 'https://twitter.com/FWPthailand'
-  email: ''
-  phone: ''
-- id: '23'
-  name: เพื่อชาติ
-  en:
-    name: ''
-    short_name: ''
-    description: ''
-  short_name: ''
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ฝ่ายค้าน
-  description: ''
-  established_date: null
-  total_member: null
-  party_leader: ''
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '24'
-  name: ประชาชาติ
-  en:
-    name: ''
-    short_name: ''
-    description: ''
-  short_name: ''
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ฝ่ายค้าน
-  description: ''
-  established_date: null
-  total_member: null
-  party_leader: ''
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '25'
-  name: เศรษฐกิจใหม่
-  en:
-    name: ''
-    short_name: ''
-    description: ''
-  short_name: ''
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ฝ่ายค้าน
-  description: ''
-  established_date: null
-  total_member: 6
-  party_leader: นาย มิ่งขวัญ แสงสุวรรณ์
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '26'
-  name: เสรีรวมไทย
-  en:
-    name: Thai Liberal
-    short_name: ''
-    description: ''
-  short_name: สร.
-  color: '#dec457'
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ฝ่ายค้าน
-  description: ''
-  established_date: null
-  total_member: 10
-  party_leader: พลตำรวจเอก เสรีพิศุทธ์ เตมียาเวส
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '27'
-  name: พลังปวงชนไทย
-  en:
-    name: ''
-    short_name: ''
-    description: ''
-  short_name: ''
-  color: ''
-  party_type: พรรค
-  party_ordinal: null
-  party_faction: ฝ่ายค้าน
-  description: ''
-  established_date: null
-  total_member: null
-  party_leader: ''
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-- id: '28'
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2554/D/179/121.PDF'
+- id: '7'
   name: ไทยศิวิไลย์
   en:
     name: Thai Civilized
-    short_name: ''
+    short_name: TCL.
     description: ''
   short_name: ทศล.
   color: ''
   party_type: พรรค
-  party_ordinal: null
+  party_ordinal: .nan
   party_faction: ฝ่ายค้าน
-  description: ''
-  established_date: null
+  description: >-
+    พรรคภายใต้การนำของนาย มงคลกิตติ์ สุขสินธารานนท์
+    เลขาธิการภาคีเครือข่ายต่อต้านการทุจริตคอร์รัปชั่นแห่งชาติ หลังการเลือกตั้งปี
+    62 ได้เข้าเป็นพรรคร่วมรัฐบาลระยะหนึ่ง ก่อนประกาศถอนตัวและขอเป็นฝ่ายค้านอิสระ
+  established_date: '2018-10-24'
   total_member: 1
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
   party_leader: นาย มงคลกิตติ์ สุขสินธารานนท์
-  party_secretary: ''
-  website: ''
-  facebook: ''
-  twitter: ''
+  party_secretary: นาย วิวัฒน์ เจริญพาณิชย์ศิริ
+  website: '-'
+  facebook: 'https://www.facebook.com/THAICIVILIZEDPARTY/'
+  twitter: '-'
   email: ''
   phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/003/T_0176.PDF'
+- id: '8'
+  name: ไทรักธรรม
+  en:
+    name: Thairaktham
+    short_name: T.T.
+    description: ''
+  short_name: ท.ธ.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ''
+  description: >-
+    มีชื่อเดิมว่า 'พรรคไทยรักธรรม' ในการเลือกตั้งปี 62 ได้รับเลือกตั้ง
+    ส.ส.แบบบัญชีรายชื่อ 1 คน แต่ต่อมา กกต. ประกาศให้พ้นจากสภาพ ส.ส.
+    เนื่องจากมีการเลือกตั้งซ่อมในจังหวัดเชียงใหม่ เขต 8
+    ส่งผลให้มีการคำนวณคะแนนใหม่
+  established_date: '2013-08-16'
+  total_member: 0
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย พีระวิทย์ เรื่องลือดลภาค
+  party_secretary: นาย จตุรวิทย์ กาละมิตร์
+  website: '-'
+  facebook: 'https://www.facebook.com/Thairaktham/'
+  twitter: '-'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/106/116.PDF'
+- id: '9'
+  name: ประชาชาติ
+  en:
+    name: Prachachat
+    short_name: PCC.
+    description: ''
+  short_name: ปช.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ฝ่ายค้าน
+  description: >-
+    เป็นจากการรวมตัวกันของกลุ่มบุคคลที่มีความหลากหลายในเชิงถิ่นกำเนิด ชาติพันธุ์
+    และวัฒนธรรม โดยเน้นการทำงานทางการเมืองเพื่อสร้างชาติที่เป็นสังคมพหุวัฒนธรรม
+    โดย 6 ที่นั่งของ ส.ส. เขตที่ได้รับเลือกในการเลือกตั้งปี 62
+    เป็นเขตเลือกตั้งในพื้นที่สามจังหวัดชายแดนภาคใต้ทั้งหมด
+  established_date: '2018-10-31'
+  total_member: 7
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย วันมูหะมัดนอร์ มะทา
+  party_secretary: พ.ต.อ. ทวี สอดส่อง
+  website: 'https://prachachat.org'
+  facebook: 'https://www.facebook.com/PrachachatPeopleNation'
+  twitter: '-'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0395.PDF'
+- id: '10'
+  name: ประชาธรรมไทย
+  en:
+    name: Thai People Justice
+    short_name: T.P.J.
+    description: ''
+  short_name: ปธท.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ร่วมรัฐบาล
+  description: >-
+    พรรคภายใต้การนำของนาย พิเชษฐ สถิรชวาล อดีต รมต. คมนาคม, รมช. อุตสาหกรรม,
+    และผอ. ขสมก. หลังการเลือกตั้งปี 62 ได้เข้าเป็นพรรคร่วมรัฐบาลระยะหนึ่ง
+    ก่อนประกาศถอนตัวและขอเป็นฝ่ายค้านอิสระ
+  established_date: '2018-11-02'
+  total_member: 1
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย พิเชษฐ สถิรชวาล
+  party_secretary: นาย ชัยวุฑ ตรึกตรอง
+  website: 'http://www.prachatumthai.com'
+  facebook: 'https://www.facebook.com/THPJ.Party/'
+  twitter: '-'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0488.PDF'
+- id: '11'
+  name: ประชาธิปไตยใหม่
+  en:
+    name: New Democrat
+    short_name: NDP.
+    description: ''
+  short_name: ปธม.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ร่วมรัฐบาล
+  description: >-
+    เคยส่งผู้สมัครรับเลือกตั้งในปี 54 และมี ส.ส. เขต ได้รับเลือกตั้ง 1 คน
+    ทำงานเป็นพรรคร่วมรัฐบาลยิ่งลักษณ์
+  established_date: '2011-04-21'
+  total_member: 1
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย สุรทิน พิจารณ์
+  party_secretary: นาย ชุณห์ ศิริชัยคีรีโกศล
+  website: '-'
+  facebook: 'https://www.facebook.com/NDCP2554/'
+  twitter: '-'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2554/E/062/61.PDF'
+- id: '12'
+  name: ประชาธิปัตย์
+  en:
+    name: Democrat
+    short_name: '-'
+    description: ''
+  short_name: ปชป.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ร่วมรัฐบาล
+  description: >-
+    พรรคการเมืองที่เก่าแก่ที่สุดที่ยังดำเนินการอยู่ของไทย
+    จัดตั้งขึ้นก่อนที่จะมีพระราชบัญญัติพรรคการเมือง
+    เคยมีฐานเสียงสำคัญอยู่ในภาคใต้ ปัจจุบันมีอุดมการณ์แบบประชาธิปไตยเสรีนิยม
+    และมีจุดยืนต่อต้านระบอบทักษิณ
+  established_date: '1946-04-06'
+  total_member: 53
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย จุรินทร์ ลักษณวิศิษฏ์
+  party_secretary: นาย เฉลิมชัย ศรีอ่อน
+  website: 'https://www.democrat.or.th/home'
+  facebook: 'https://www.facebook.com/DemocratPartyTH/'
+  twitter: 'http://twitter.com/democratTH'
+  email: ''
+  phone: ''
+  ratchakitcha: '-'
+- id: '13'
+  name: ประชานิยม
+  en:
+    name: Prachaniyom
+    short_name: PYP.
+    description: ''
+  short_name: ปย.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ร่วมรัฐบาล
+  description: >-
+    จัดตั้งโดยอดีตผู้ช่วยผู้บัญชาการตำรวจแห่งชาติ ในช่วงแรก
+    ถูกมองว่าเป็นพรรคการเมืองที่เป็นนอมินีของพรรคเพื่อไทย
+    แต่หัวหน้าพรรคได้ออกมาปฏิเสธพร้อมกับกล่าวว่านโยบายของพรรคตรงกับนโยบายของรัฐบาล
+  established_date: '2018-11-07'
+  total_member: 1
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: พล.ต.อ. ยงยุทธ เทพจำนงค์
+  party_secretary: พล.ต.ต. วรยุทธ อินทรสุวรรณ
+  website: '-'
+  facebook: 'https://www.facebook.com/prashaniyomparty/'
+  twitter: '-'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/005/T_0099.PDF'
+- id: '14'
+  name: ประชาภิวัฒน์
+  en:
+    name: People Progressive
+    short_name: PRA
+    description: ''
+  short_name: ปชภ.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ร่วมรัฐบาล
+  description: >-
+    พรรคภายใต้การนำของนาย สมเกียรติ ศรลัมพ์ ศิษย์วัดธรรมกาย
+    มีฐานเสียงจากพื้นที่อำเภอหันคา จังหวัดชัยนาท และมวลชนธรรมกาย
+    ชูนโยบายขับเคลื่อนประเทศด้วยศาสนา
+  established_date: '2018-08-10'
+  total_member: 1
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย สมเกียรติ ศรลัมพ์
+  party_secretary: นาง นันทนา สงฆ์ประชา
+  website: 'https://www.prachapiwat.com/'
+  facebook: 'https://www.facebook.com/love.at.first.sight.prachapiwat/'
+  twitter: '-'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/070/T81.PDF'
+- id: '15'
+  name: พลเมืองไทย
+  en:
+    name: Ponlamuang Thai
+    short_name: PONT.
+    description: ''
+  short_name: พล.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ร่วมรัฐบาล
+  description: >-
+    เดิมชื่อพรรคพลังพลเมือง เกิดจากการรวมตัวกันของอดีตรัฐมนตรีและอดีต ส.ส.
+    จากทั่วทุกภาค
+  established_date: '2018-08-10'
+  total_member: 1
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นางสาว ศิลัมพา เลิศนุวัฒน์
+  party_secretary: นาย สมเกียรติ วัฒนศิริชัยกุล
+  website: '-'
+  facebook: 'https://www.facebook.com/ptpthaiparty/'
+  twitter: '-'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/070/T137.PDF'
+- id: '16'
+  name: พลังชาติไทย
+  en:
+    name: Thai Nation Power
+    short_name: TNPP
+    description: ''
+  short_name: พพชท
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ร่วมรัฐบาล
+  description: >-
+    พรรคภายใต้การนำของพล.ต.ทรงกลด ทิพย์รัตน์ อดีตคณะทำงานของ คสช.
+    มุ่งสนับสนุนให้ พลเอก ประยุทธ์ จันทร์โอชา เป็นนายกรัฐมนตรี
+  established_date: '2018-10-31'
+  total_member: 1
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: พล.ต. ทรงกลด ทิพย์รัตน์
+  party_secretary: '-'
+  website: 'https://www.tnpparty.com/'
+  facebook: 'https://www.facebook.com/TNPP.Thai/'
+  twitter: '-'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0265.PDF'
+- id: '17'
+  name: พลังท้องถิ่นไท
+  en:
+    name: Thai Local Power
+    short_name: TLP
+    description: ''
+  short_name: พทท.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ร่วมรัฐบาล
+  description: >-
+    พรรคภายใต้การนำของนาย ชัชวาลล์ คงอุดม 'ชัช เตาปูน' อดีต สว.
+    ผู้มีอิทธิพลในพื้นที่ กทม.
+    มีจุดยืนที่จะทำงานร่วมกับพรรครัฐบาลไม่ว่าจะเป็นขั้วไหน
+  established_date: '2012-03-30'
+  total_member: 3
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย ชัชวาลล์ คงอุดม
+  party_secretary: นาย ธีรศักดิ์ พานิชวิทย์
+  website: 'http://www.tlpparty.com'
+  facebook: 'https://www.facebook.com/ThaiLocalPowerParty'
+  twitter: 'https://twitter.com/thailocalpower'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2555/D/053/143.PDF'
+- id: '18'
+  name: พลังไทยรักไทย
+  en:
+    name: Phalang Thai Rak Thai
+    short_name: P.T.R.T.
+    description: ''
+  short_name: พ.ท.ร.ท.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ร่วมรัฐบาล
+  description: >-
+    เกิดจากกลุ่มลูกหลานชาวนาเพื่อเป็นปากเป็นเสียงให้กับชาวนา
+    ชูนโยบายการแก้ปัญหาขาดแคลนแหล่งน้ำทำการเกษตร
+  established_date: '2018-10-30'
+  total_member: 1
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย คฑาเทพ เตชะเดชเรืองกุล
+  party_secretary: นาย วินัย ไชยบุตร
+  website: '-'
+  facebook: 'https://www.facebook.com/PTRTparty/'
+  twitter: '-'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0200.PDF'
+- id: '19'
+  name: พลังธรรมใหม่
+  en:
+    name: New Palangdharma
+    short_name: NPD
+    description: ''
+  short_name: พธม.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ร่วมรัฐบาล
+  description: >-
+    เป็นการรื้อฟื้นพรรคพลังธรรม ที่ก่อตั้งโดย พล.ต.จำลอง ศรีเมือง
+    อดีตหัวหน้าพรรคและแกนนำพันธมิตรประชาชนเพื่อประชาธิปไตย (พธม.)
+    โดยมีอดีตสมาชิกพรรคพลังธรรมและภาคประชาชนบางส่วนร่วมจัดตั้ง
+  established_date: '2018-09-14'
+  total_member: 1
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย ระวี มาศฉมาดล
+  party_secretary: นาย นิทัศน์ รายยวา
+  website: 'http://www.npdthai.org'
+  facebook: 'https://www.facebook.com/npdthai/'
+  twitter: '-'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/080/T_0043.PDF'
+- id: '20'
+  name: พลังประชารัฐ
+  en:
+    name: Palang Pracharath
+    short_name: PPRP
+    description: ''
+  short_name: พปชร.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ร่วมรัฐบาล
+  description: >-
+    เป็นการรวมกันของกลุ่มอดีตรัฐมนตรีในรัฐบาล คสช. อดีตแกนนำ กปปส.
+    และอดีตไทยรักไทยที่แยกตัวออกมาโดยเฉพาะกลุ่มสามมิตร มุ่งสนับสนุนให้ พลเอก
+    ประยุทธ์ จันทร์โอชา เป็นนายกรัฐมนตรี
+  established_date: '2018-11-07'
+  total_member: 115
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย อุตตม สาวนายน
+  party_secretary: นาย สนธิรัตน์ สนธิจิรวงศ์
+  website: 'https://pprp.or.th/'
+  facebook: 'https://www.facebook.com/PPRPThailand/'
+  twitter: 'https://twitter.com/pprpthailand'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/003/T_0221.PDF'
+- id: '21'
+  name: พลังปวงชนไทย
+  en:
+    name: Thai People Power
+    short_name: PLPT
+    description: ''
+  short_name: พลท.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ฝ่ายค้าน
+  description: >-
+    เป็นพรรคที่จัดตั้งเพื่อการเลือกตั้งปี 62
+    มีการเชื่อมโยงว่าเป็นพรรคสาขาของพรรคเพื่อไทย เนื่องจากคณะผู้ก่อตั้ง
+    หัวหน้าพรรค และที่ปรึกษา มีความสนิทสนมกับ ทักษิณ ชินวัตร และพรรคเพื่อไทย
+  established_date: '2018-10-29'
+  total_member: 1
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย นิคม บุญวิเศษ
+  party_secretary: นาย จรินทร์ เฮียงกุล
+  website: 'https://www.พรรคพลังปวงชนไทย.com'
+  facebook: 'https://www.facebook.com/thaipeoplepowerpartypage/'
+  twitter: 'https://twitter.com/0xREjn0OHxcFkQg'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0125.PDF'
+- id: '22'
+  name: เพื่อชาติ
+  en:
+    name: Puea Chat
+    short_name: PCH.P.
+    description: ''
+  short_name: พ.พ.ช.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ฝ่ายค้าน
+  description: >-
+    เป็นพรรคที่ได้ชื่อว่าเป็นพรรคสำรองของพรรคเพื่อไทย ต่อจากพรรคเพื่อธรรม
+    รวมถึงอีกกระแสหนึ่งเชื่อกันว่าเป็นพรรคตัวแทนของ
+    แนวร่วมประชาธิปไตยต่อต้านเผด็จการแห่งชาติ (นปช.) เพราะมีกระแสข่าวว่าแกนนำ
+    นปช. เป็นผู้สนับสนุน
+  established_date: '2013-09-18'
+  total_member: 5
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย สงคราม กิจเลิศไพโรจน์
+  party_secretary: นาง ลินดา เชิดชัย
+  website: '-'
+  facebook: 'https://www.facebook.com/PueaChatOfficial/'
+  twitter: '-'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/116/86.PDF'
+- id: '23'
+  name: เพื่อไทย
+  en:
+    name: Pheu Thai
+    short_name: PT.
+    description: ''
+  short_name: พท.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ฝ่ายค้าน
+  description: >-
+    เริ่มต้นจากพรรคไทยรักไทยในอดีต ต่อมาเป็นพรรคพลังประชาชน
+    โดยภายหลังทั้งสองพรรคตั้งต้นถูกตัดสินให้ยุบพรรค
+    จนมาเป็นพรรคเพื่อไทยในปัจจุบัน เป็นพรรคที่ถูกรัฐประหารถึง 2 ครั้งซ้อน
+    คือในปี 2549 ยุคไทยรักไทย และในปี 2557 ยุคเพื่อไทย
+  established_date: '2007-09-20'
+  total_member: 136
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย สมพงษ์ อมรวิวัฒน์
+  party_secretary: น.อ. อนุดิษฐ์ นาครทรรพ
+  website: 'https://www.ptp.or.th/'
+  facebook: 'https://www.facebook.com/pheuthaiparty/'
+  twitter: 'https://twitter.com/pheuthaiparty'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2550/E/174/1.PDF'
+- id: '24'
+  name: ภูมิใจไทย
+  en:
+    name: Bhumjaithai
+    short_name: BJT
+    description: ''
+  short_name: ภท
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ร่วมรัฐบาล
+  description: >-
+    เป็นการรวมตัวของกลุ่มไทยรักไทยเก่าที่แยกตัวออกมา กลุ่มพลังประชาชน
+    และกลุ่มเพื่อนเนวิน มีฐานเสียงหนาแน่นในพื้นที่อีสานใต้
+    มีจุดยืนที่พร้อมจะร่วมรัฐบาลกับทุกขั้ว
+  established_date: '2008-11-05'
+  total_member: 51
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย อนุทิน ชาญวีรกูล
+  party_secretary: นาย ศักดิ์สยาม ชิดชอบ
+  website: 'https://www.bhumjaithai.com/'
+  facebook: 'https://www.facebook.com/khonbhumjaithai/'
+  twitter: 'https://twitter.com/khonbhumjaithai'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2552/D/003/107.PDF'
+- id: '25'
+  name: รวมพลังประชาชาติไทย
+  en:
+    name: Action Coalition for Thailand
+    short_name: ACT
+    description: ''
+  short_name: รปช.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ร่วมรัฐบาล
+  description: >-
+    เป็นพรรคที่ต่อยอดการเคลื่อนไหวของกลุ่ม กปปส. มุ่งสนับสนุนให้ พลเอก ประยุทธ์
+    จันทร์โอชา เป็นนายกรัฐมนตรี และต่อต้านระบอบทักษิณ
+  established_date: '2118-10-26'
+  total_member: 5
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: หม่อมราชวงศ์ จัตุมงคล โสณกุล
+  party_secretary: นาย ทวีศักดิ์ ณ ตะกั่วทุ่ง
+  website: 'https://act-party.org/'
+  facebook: 'https://www.facebook.com/actpartyorg'
+  twitter: 'https://twitter.com/actpartyorg'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0324.PDF'
+- id: '26'
+  name: รักษ์ผืนป่าประเทศไทย
+  en:
+    name: Thai Forest Conservation
+    short_name: FCP
+    description: ''
+  short_name: รป.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ร่วมรัฐบาล
+  description: >-
+    เดิมชื่อพรรคทวงคืน เป็นพรรคในกำกับของนาย ดำรงค์ พิเดช
+    อดีตอธิบดีกรมอุทยานแห่งชาติ สัตว์ป่า และพันธุ์พืช 
+    ชูนโยบายอนุรักษ์ทรัพยากรและสิ่งแวดล้อม
+  established_date: '2013-01-09'
+  total_member: 2
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย ดำรงค์ พิเดช
+  party_secretary: นาย สันติภาพ อินทรพัฒน์
+  website: '-'
+  facebook: 'https://www.facebook.com/ThaiForestConservationParty/'
+  twitter: '-'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/022/113.PDF'
+- id: '27'
+  name: เศรษฐกิจใหม่
+  en:
+    name: New Economics
+    short_name: NEP
+    description: ''
+  short_name: ศม
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ฝ่ายค้าน
+  description: >-
+    พรรคที่เกิดขึ้นจากความต้องการแก้ปัญหาปากท้องของประชาชน
+    เพราะเป็ช่วงเศรษฐกิจของชนชั้นกลางลงมาย่ำแย่ ระบุจุดยืนประชาธิปไตย
+    เน้นเศรษฐกิจ ไม่เน้นขัดแย้ง
+  established_date: '2018-11-08'
+  total_member: 6
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย มนูญ สิวาภิรมย์รัตน์
+  party_secretary: นาย ภาสกร เงินเจริญกุล
+  website: 'http://www.nep.or.th/'
+  facebook: 'https://www.facebook.com/NEPThailand/'
+  twitter: 'https://www.twitter.com/NewEconomicsTH'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/003/T_0139.PDF'
+- id: '28'
+  name: เสรีรวมไทย
+  en:
+    name: Thai Liberal
+    short_name: TLP
+    description: ''
+  short_name: สร.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ฝ่ายค้าน
+  description: >-
+    พรรคภายใต้การนำของ พล.ต.อ. เสรีพิศุทธ์ เตมียาเวส
+    อดีตผู้บัญชาการตำรวจแห่งชาติ ประกาศจุดยืนไม่เห็นด้วยกับรัฐประหาร
+    สนับสนุนการปฏิรูปกองทัพ และต่อต้านเผด็จการอย่างชัดเจน
+  established_date: '2013-08-29'
+  total_member: 10
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: พล.ต.อ. เสรีพิศุทธ์ เตมียเวส
+  party_secretary: นาย วัชรา ณ วังขนาย
+  website: 'https://sereeruamthai.or.th'
+  facebook: 'https://www.facebook.com/sereeruamthai/'
+  twitter: '-'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/112/48.PDF'
+- id: '29'
+  name: อนาคตใหม่
+  en:
+    name: Future Forward
+    short_name: FWP.
+    description: ''
+  short_name: อนค.
+  color: ''
+  party_type: พรรค
+  party_ordinal: .nan
+  party_faction: ฝ่ายค้าน
+  description: >-
+    จัดตั้งขึ้นเพื่อมุ่งสร้างการเมืองแบบใหม่ สนับสนุนประชาธิปไตย
+    และต้องการยุติวงจรอุบาทว์ของรัฐประหาร
+    พร้อมประกาศชัดเจนว่าจะคัดค้านอิทธิพลของกองทัพในการเมือง
+  established_date: '2018-10-03'
+  total_member: 80
+  speaker: '-'
+  first_deputy_speaker: '-'
+  second_deputy_speaker: '-'
+  prime_minister: '-'
+  deputy_prime_minister: '-'
+  party_leader: นาย ธนาธร จึงรุ่งเรืองกิจ
+  party_secretary: นาย ปิยบุตร แสงกนกกุล
+  website: 'https://futureforwardparty.org'
+  facebook: 'https://www.facebook.com/FWPthailand/'
+  twitter: 'https://twitter.com/FWPthailand'
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/087/T_0104.PDF'
