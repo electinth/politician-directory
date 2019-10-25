@@ -122,7 +122,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-copyright" style={{ gridArea: "copyright" }}>
-          © ELECT.IN.TH
+          ©{new Date().getFullYear()} ELECT.IN.TH
         </div>
       </div>
     </footer>

@@ -46,8 +46,6 @@
   position: absolute;
   height: 45px;
   width: 4px;
-  /* left: -10px; */
-  /* top: -7px; */
 }
 
 .footer-contact {
@@ -63,33 +61,13 @@
   grid-area: partner;
 }
 
-.footer ul {
-  list-style: none;
-  margin: 0;
-}
-
 .link-text {
   border-bottom: 0.1rem solid white;
 }
 
-.footer-partner ul {
-  display: inline-block;
-}
-
-.footer-partner li {
-  color: white;
-  display: inline-block;
-  padding: 10px;
-  vertical-align: middle;
-}
-
-.footer-partner span {
-  margin-left: auto !important;
-}
-
 .footer-copyright {
   margin: auto 0;
-  font-size: 7.5px;
+  font-size: 1rem;
   justify-self: right;
 }
 
