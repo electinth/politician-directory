@@ -32,10 +32,16 @@ Every master commits will be published automatically to https://pedantic-edison-
 
 For first time contributer, browse for issues with `goodfirstissue` tag. Looking for `hacktoberfest` if you want to join the hack event!
 
-## Design & Architecture
+## Reference
+
+### Design & Architecture
 
 - [Prototype design](https://invis.io/7HU7PWOYAQM#387144381_Landing_Page)
 - [Technical sketches](https://projects.invisionapp.com/freehand/document/NhJHf12G0)
+
+### Data Dictionary
+
+- [Data-Dictionary](https://github.com/codeforthailand/politician-directory/wiki/Data-Dictionary)
 
 ## Glossary
 
