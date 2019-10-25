@@ -91,36 +91,38 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="footer-partner">
-          <ul>
-            <li style={{ marginBottom: 10 }}>Partnership</li>
-            <li>
-              <a href="https://www.boonmeelab.com" target="_blank">
-                <Img fixed={data.bml.childImageSharp.fixed}></Img>
-              </a>
-            </li>
-            <li>
-              <a href="http://punchup.world" target="_blank">
-                <Img fixed={data.punchup.childImageSharp.fixed}></Img>
-              </a>
-            </li>
-            <li>
-              <a href="https://ilaw.or.th" target="_blank">
-                <Img fixed={data.ilaw.childImageSharp.fixed}></Img>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.skooldio.com" target="_blank">
-                <Img fixed={data.skooldio.childImageSharp.fixed}></Img>
-              </a>
-            </li>
-            <li>
-              <a href="https://thematter.co" target="_blank">
-                <Img fixed={data.matter.childImageSharp.fixed}></Img>
-              </a>
-            </li>
-          </ul>
-          <span>© ELECT.IN.TH</span>
+
+        <div className="footer-logo" style={{ gridArea: "partner" }}>
+          Partnership
+        </div>
+        <div className="footer-logo" style={{ gridArea: "bml" }}>
+          <a href="https://www.boonmeelab.com" target="_blank">
+            <Img fixed={data.bml.childImageSharp.fixed}></Img>
+          </a>
+        </div>
+        <div className="footer-logo" style={{ gridArea: "punchup" }}>
+          <a href="http://punchup.world" target="_blank">
+            <Img fixed={data.punchup.childImageSharp.fixed}></Img>
+          </a>
+        </div>
+        <div className="footer-logo" style={{ gridArea: "ilaw" }}>
+          <a href="https://ilaw.or.th" target="_blank">
+            <Img fixed={data.ilaw.childImageSharp.fixed}></Img>
+          </a>
+        </div>
+        <div className="footer-logo" style={{ gridArea: "skooldio" }}>
+          <a href="https://www.skooldio.com" target="_blank">
+            <Img fixed={data.skooldio.childImageSharp.fixed}></Img>
+          </a>
+        </div>
+        <div className="footer-logo" style={{ gridArea: "matter" }}>
+          <a href="https://thematter.co" target="_blank">
+            <Img fixed={data.matter.childImageSharp.fixed}></Img>
+          </a>
+        </div>
+
+        <div className="footer-copyright" style={{ gridArea: "copyright" }}>
+          © ELECT.IN.TH
         </div>
       </div>
     </footer>

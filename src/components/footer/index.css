@@ -1,25 +1,28 @@
 .footer {
   display: grid;
-  grid-template-columns: 15vw 1fr 15vw;
+  grid-template-columns: 7vw 1fr 7vw;
   grid-auto-rows: auto auto;
   background-color: black;
   padding: 50px 0;
 }
 
 .footer-container {
+  max-width: 920px;
+  margin: auto;
   display: grid;
   column-gap: 2vw;
   row-gap: 2vw;
   grid-column: 2 / 3;
-  grid-template-columns: 1fr 10vw 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas:
-    "elect      .    contact"
-    "partner partner partner";
+    "elect elect elect elect contact contact contact contact"
+    "partner bml punchup ilaw skooldio matter copyright copyright";
 }
 
 .footer-elect {
   grid-area: elect;
+  justify-self: left;
 }
 
 .footer-elect h2,
@@ -49,7 +52,7 @@
 
 .footer-contact {
   grid-area: contact;
-  justify-self: center;
+  justify-self: right;
 }
 
 .footer * {
@@ -82,4 +85,69 @@
 
 .footer-partner span {
   margin-left: auto !important;
+}
+
+.footer-copyright {
+  margin: auto 0;
+  font-size: 7.5px;
+  justify-self: right;
+}
+
+@media screen and (max-width: 960px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "elect elect elect contact contact contact"
+      "partner bml punchup ilaw skooldio matter"
+      ". . copyright copyright . .";
+  }
+
+  .footer-copyright {
+    justify-self: center !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-container {
+    row-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "elect elect elect"
+      "contact contact contact"
+      ". partner ."
+      "bml punchup ilaw"
+      "skooldio copyright matter";
+  }
+
+  .footer-elect {
+    justify-self: left !important;
+  }
+
+  .footer-contact {
+    justify-self: left !important;
+  }
+
+  .footer-logo,
+  .footer-copyright {
+    justify-self: center !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-container {
+    row-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+      "elect"
+      "contact"
+      "partner"
+      "bml"
+      "punchup"
+      "ilaw"
+      "skooldio"
+      "matter"
+      "copyright";
+  }
 }
