@@ -96,27 +96,47 @@ const Footer = () => {
           Partnership
         </div>
         <div className="footer-logo" style={{ gridArea: "bml" }}>
-          <a href="https://www.boonmeelab.com" target="_blank">
+          <a
+            href="https://www.boonmeelab.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Img fixed={data.bml.childImageSharp.fixed}></Img>
           </a>
         </div>
         <div className="footer-logo" style={{ gridArea: "punchup" }}>
-          <a href="http://punchup.world" target="_blank">
+          <a
+            href="http://punchup.world"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Img fixed={data.punchup.childImageSharp.fixed}></Img>
           </a>
         </div>
         <div className="footer-logo" style={{ gridArea: "ilaw" }}>
-          <a href="https://ilaw.or.th" target="_blank">
+          <a
+            href="https://ilaw.or.th"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Img fixed={data.ilaw.childImageSharp.fixed}></Img>
           </a>
         </div>
         <div className="footer-logo" style={{ gridArea: "skooldio" }}>
-          <a href="https://www.skooldio.com" target="_blank">
+          <a
+            href="https://www.skooldio.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Img fixed={data.skooldio.childImageSharp.fixed}></Img>
           </a>
         </div>
         <div className="footer-logo" style={{ gridArea: "matter" }}>
-          <a href="https://thematter.co" target="_blank">
+          <a
+            href="https://thematter.co"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Img fixed={data.matter.childImageSharp.fixed}></Img>
           </a>
         </div>
