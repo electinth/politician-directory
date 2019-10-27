@@ -4,12 +4,13 @@ import { css } from "@emotion/core"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import PeopleVote from "../components/peopleVote"
 import { ageFromBirthdate, politicianPicture } from "../utils"
 
 import styles from "./people-template.module.css"
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String!, $title: String!, $name: String!, $lastname: String!) {
     peopleYaml(fields: { slug: { eq: $slug } }) {
       id
       title
@@ -36,6 +37,20 @@ export const query = graphql`
       quotes
       quotes_url
     }
+    peopleVoteYaml(
+      title: { eq: $title }
+      name: { eq: $name }
+      lastname: { eq: $lastname }
+    ) {
+      votelog {
+        _1
+        _2
+        _3
+        _4
+        _5
+        _6
+      }
+    }
   }
 `
 
@@ -60,7 +75,7 @@ const cssSectionBlack = {
   },
 }
 
-const PeoplePage = ({ data: { peopleYaml } }) => (
+const PeoplePage = ({ data: { peopleYaml, peopleVoteYaml } }) => (
   <Layout
     pageStyles={{
       background: "#eeeeee",
@@ -235,6 +250,7 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
         <div css={{ textAlign: "center" }}>
           ทั้งหมด เห็นด้วย ไม่เห็นด้วย งดออกเสียง ไม่เข้าประชุม
         </div>
+        <PeopleVote voteLog={peopleVoteYaml.votelog} />
       </div>
     </section>
   </Layout>
