@@ -1,67 +1,67 @@
 .waffle {
   display: flex;
   flex-wrap: wrap;
-  width: 813px;
-  height: 440px;
+  width: 950px;
+  height: 348px;
   margin: 50px 0;
 }
 
 .line {
   background-color: black;
-  width: 3px;
-  height: 505px;
-  margin: -40px 30px -25px -10px;
+  width: 2px;
+  height: 324px;
+  margin: 0 30px 0 0;
 }
 
 .hundred {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  width: 95px;
-  height: 440px;
-  margin: 0 35px 35px 0;
+  width: 75px;
+  height: 348px;
+  margin: 0 27px 0 0;
 }
 
 .quarter {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  width: 95px;
-  height: 95px;
-  margin: 0 0 15px 0;
+  width: 75px;
+  height: 75px;
+  margin: 0 0 9px 0;
 }
 
 .person {
   width: 12px;
   height: 12px;
-  margin: 0 7px 7px 0;
+  margin: 0 3px 3px 0;
 }
 .person.of-interest {
-  background-color: #F9AAD4;
+  background-color: #f9aad4;
 }
 .person.other {
-  background-color: #B3B3B3;
+  background-color: #b3b3b3;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 950px) {
   .waffle {
-    width: 440px;
-    height: 780px;
+    width: 348px;
+    height: 950px;
   }
 
   .line {
-    width: 505px;
-    height: 3px;
-    margin: -10px -25px 30px -40px;
+    width: 333px;
+    height: 2px;
+    margin: 0px;
   }
-  
+
   .hundred {
     flex-wrap: nowrap;
-    width: 440px;
-    height: 95px;
+    width: 348px;
+    height: 75px;
   }
 
   .quarter {
-    margin: 0 15px 0 0;
+    margin: 0 12px 0 0;
   }
 }
