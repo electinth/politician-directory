@@ -10,19 +10,19 @@ const Hero = () => (
       display: "flex",
       flexWrap: "wrap",
       marginTop: "2rem",
-      marginBottom: "1rem",
+      marginBottom: "5rem",
     }}
   >
     <HeroFeature
-      title="Feature #1"
+      title="ค้นประวัติบุคคล"
       subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
     />
     <HeroFeature
-      title="Feature #2"
+      title="ค้นประวัติบุคคล"
       subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
     />
     <HeroFeature
-      title="Feature #3"
+      title="ค้นประวัติบุคคล"
       subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
     />
   </div>
