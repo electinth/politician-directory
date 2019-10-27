@@ -10,8 +10,8 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 // You can delete this file if you're not using it
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === `ProfileYaml`) {
-    const slug = `/profile/${node.id}`
+  if (node.internal.type === `PeopleYaml`) {
+    const slug = `/people/${node.name}-${node.lastname}`
     createNodeField({
       node,
       name: `slug`,
@@ -19,15 +19,15 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
   if (node.internal.type === `PartyYaml`) {
-    const slug = `/party/${node.short}`
+    const slug = `/party/${node.name}`
     createNodeField({
       node,
       name: `slug`,
       value: slug,
     })
   }
-  if (node.internal.type === `MemoYaml`) {
-    const slug = `/memo/${node.id}`
+  if (node.internal.type === `VotelogYaml`) {
+    const slug = `/votelog/${node.id}`
     createNodeField({
       node,
       name: `slug`,
@@ -38,10 +38,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  // Profile
-  const profiles = await graphql(`
+  // People
+  const people = await graphql(`
     query {
-      allProfileYaml {
+      allPeopleYaml {
         edges {
           node {
             fields {
@@ -52,24 +52,26 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  profiles.data.allProfileYaml.edges.forEach(({ node }) => {
-    createPage({
-      path: node.fields.slug,
-      component: path.resolve(`./src/templates/profile-template.js`),
-      context: {
-        slug: node.fields.slug,
-      },
+  people.data.allPeopleYaml &&
+    people.data.allPeopleYaml.edges.forEach(({ node }) => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/people-template.js`),
+        context: {
+          slug: node.fields.slug,
+        },
+      })
     })
-  })
   // Party
   const parties = await graphql(`
     query {
-      allPartyYaml {
+      allPartyYaml(filter: { party_type: { eq: "พรรค" } }) {
         edges {
           node {
             fields {
               slug
             }
+            name
           }
         }
       }
@@ -81,13 +83,14 @@ exports.createPages = async ({ graphql, actions }) => {
       component: path.resolve(`./src/templates/party-template.js`),
       context: {
         slug: node.fields.slug,
+        party: node.name
       },
     })
   })
-  // Memo
-  const memoes = await graphql(`
+  // Vote Logs
+  const votelogs = await graphql(`
     query {
-      allMemoYaml {
+      allVotelogYaml {
         edges {
           node {
             fields {
@@ -98,10 +101,10 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  memoes.data.allMemoYaml.edges.forEach(({ node }) => {
+  votelogs.data.allVotelogYaml.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/templates/memo-template.js`),
+      component: path.resolve(`./src/templates/votelog-template.js`),
       context: {
         slug: node.fields.slug,
       },

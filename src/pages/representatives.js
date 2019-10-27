@@ -7,7 +7,7 @@ import "./waffle.css"
 
 export const query = graphql`
   query {
-    allProfileYaml {
+    allPeopleYaml {
       totalCount
       edges {
         node {
@@ -15,44 +15,32 @@ export const query = graphql`
           fields {
             slug
           }
-          prefix
+          title
           name
-          positions
-          in_cabinet
-          in_senate
-          in_representatives
+          lastname
+          cabinet_position
+          prev_polit_pos
+          is_cabinet
+          is_senator
+          is_mp
         }
       }
     }
   }
 `
 
+const full_name = node => `${node.title}${node.name} ${node.lastname}`
+
 const split_array = (array, size, callback) =>
-  Array(Math.ceil(array.length / size)).fill()
+  Array(Math.ceil(array.length / size))
+    .fill()
     .map((_, index) => index * size)
     .map(start => array.slice(start, start + size))
     .map(callback)
 
 const RepresentativesPage = ({ data }) => {
-  // test data
-  const data_length_to_add = 500 - data.allProfileYaml.edges.length;
-  for(let i = 0; i < data_length_to_add; i++) {
-    data.allProfileYaml.edges.push({
-      node: {
-        id: i,
-        fields: { slug: i },
-        prefix: "คน",
-        name: "มนุษย์" + i,
-        positions: [],
-        in_cabinet: Math.random() > 0.7,
-        in_senate: false,
-        in_representatives: true
-      }
-    });
-  }
+  let prop_of_interest = `is_cabinet`
 
-  let prop_of_interest = `in_cabinet`;
-  
   return (
     <Layout>
       <SEO title="สมาชิกสภาผู้แทนราษฎรไทย" />
@@ -60,42 +48,44 @@ const RepresentativesPage = ({ data }) => {
       <h2>House of Representatives</h2>
       <div class="waffle">
         {split_array(
-          data.allProfileYaml.edges
-            .filter(({ node }) => node.in_representatives && node[prop_of_interest]), 
-          100, 
-          hundred => (
-            <div class="hundred">
-              {split_array(hundred, 25, quarter => (
-                  <div class="quarter">
-                    {quarter
-                      .map(({ node }) => (
-                        <div title={`${node.prefix} ${node.name}`} class="person of-interest">
-                          {/* <Link to={node.fields.slug}>{`${node.prefix} ${node.name}`}</Link> */}
-                        </div>
-                      ))}
-                  </div>
-                ))}
-            </div>
-          ))}
-        <div class="line"></div>
-        {split_array(
-          data.allProfileYaml.edges
-            .filter(({ node }) => node.in_representatives && !node[prop_of_interest]), 
+          data.allPeopleYaml.edges.filter(
+            ({ node }) => node.is_mp && node[prop_of_interest]
+          ),
           100,
           hundred => (
             <div class="hundred">
               {split_array(hundred, 25, quarter => (
-                  <div class="quarter">
-                    {quarter
-                      .map(({ node }) => (
-                        <div title={`${node.prefix} ${node.name}`} class="person other">
-                          {/* <Link to={node.fields.slug}>{`${node.prefix} ${node.name}`}</Link> */}
-                        </div>
-                      ))}
-                  </div>
-                ))}
+                <div class="quarter">
+                  {quarter.map(({ node }) => (
+                    <div title={full_name(node)} class="person of-interest">
+                      {/* <Link to={node.fields.slug}>{full_name(node)}</Link> */}
+                    </div>
+                  ))}
+                </div>
+              ))}
             </div>
-          ))}
+          )
+        )}
+        <div class="line"></div>
+        {split_array(
+          data.allPeopleYaml.edges.filter(
+            ({ node }) => node.is_mp && !node[prop_of_interest]
+          ),
+          100,
+          hundred => (
+            <div class="hundred">
+              {split_array(hundred, 25, quarter => (
+                <div class="quarter">
+                  {quarter.map(({ node }) => (
+                    <div title={full_name(node)} class="person other">
+                      {/* <Link to={node.fields.slug}>{full_name(node)}</Link> */}
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
+          )
+        )}
       </div>
     </Layout>
   )

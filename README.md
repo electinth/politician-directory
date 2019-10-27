@@ -1,8 +1,22 @@
 <h1 align="center">
-  Political Directory
+  Politician Directory
 </h1>
 
-สมุดพกนักการเมือง (Political Directory) is an open-source project for listing and tracking activities of members of the Cabinet and National Assembly of Thailand. It's run on [Gatsby](https://www.gatsbyjs.org).
+สมุดพกนักการเมือง (Politician Directory) is an open-source project for listing and tracking activities of members of the Cabinet and National Assembly of Thailand. It's run on [Gatsby](https://www.gatsbyjs.org).
+
+## Table of Contents
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Development](#development)
+- [Getting Started for Contributers](#getting-started-for-contributers)
+- [Reference](#reference)
+  - [Design & Architecture](#design--architecture)
+  - [Data Dictionary](#data-dictionary)
+- [Glossary](#glossary)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Development
 
@@ -20,12 +34,18 @@ Every master commits will be published automatically to https://pedantic-edison-
 
 For first time contributer, browse for issues with `goodfirstissue` tag. Looking for `hacktoberfest` if you want to join the hack event!
 
-## Design & Architecture
+## Reference
+
+### Design & Architecture
 
 - [Prototype design](https://invis.io/7HU7PWOYAQM#387144381_Landing_Page)
 - [Technical sketches](https://projects.invisionapp.com/freehand/document/NhJHf12G0)
 
-## Grossary
+### Data Dictionary
+
+- [Data-Dictionary](https://github.com/codeforthailand/politician-directory/wiki/Data-Dictionary)
+
+## Glossary
 
 | Thai                        | English                                |
 | --------------------------- | -------------------------------------- |

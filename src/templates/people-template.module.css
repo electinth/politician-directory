@@ -1,0 +1,13 @@
+.hr {
+  height: 4px;
+}
+
+.card {
+  background: var(--cl-white);
+  display: flex;
+  align-items: flex-start;
+
+  h1 {
+    font-size: 2rem;
+  }
+}

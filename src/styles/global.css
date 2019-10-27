@@ -1,0 +1,26 @@
+:root {
+  font-size: 62.5%;
+
+  --ff-text: "Noto Sans Thai", "Thonburi", sans-serif;
+  --ff-title: "The Matter";
+
+  --cl-white: #ffffff;
+  --cl-black: #272727;
+  --cl-gray-2: #979797;
+  --cl-pink: #fcbbdd;
+  --cl-primary: #ef314b;
+}
+
+a {
+  color: var(--cl-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
