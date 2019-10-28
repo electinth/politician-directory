@@ -2,7 +2,13 @@ import React from "react"
 
 import { css } from "@emotion/core"
 
-const PeopleVote = ({ voteLog, allVote }) => {
+const PeopleVote = ({
+  voteLog,
+  allVote,
+  handleFilter,
+  activeFilter,
+  filterChoiceState,
+}) => {
   const voteText = {
     "1": "เห็นด้วย",
     "2": "ไม่เห็นด้วย",
@@ -21,6 +27,22 @@ const PeopleVote = ({ voteLog, allVote }) => {
 
   return (
     <>
+      <ul>
+        {filterChoiceState.map(({ name, choice }) => (
+          <li
+            onClick={() => handleFilter(choice)}
+            css={
+              activeFilter == choice
+                ? css`
+                    color: ${voteColor[choice]};
+                  `
+                : null
+            }
+          >
+            {name}
+          </li>
+        ))}
+      </ul>
       {allVote.map(({ id, title, legal_title, vote_date }) => (
         <div
           css={css`

@@ -89,11 +89,13 @@ class PeoplePage extends React.Component {
     peopleYaml: this.props.data.peopleYaml,
     voteLog: this.props.data.peopleVoteYaml.votelog,
     allVote: this.props.data.allVotelogYaml.nodes,
-    filterChoiceButton: [
-      { choice: 1, isActive: false },
-      { choice: 2, isActive: false },
-      { choice: 3, isActive: false },
-      { choice: 4, isActive: false },
+    activeFilter: 0,
+    filterChoiceState: [
+      { name: "ทั้งหมด", choice: 0 },
+      { name: "เห็นด้วย", choice: 1 },
+      { name: "ไม่เห็นด้วย", choice: 2 },
+      { name: "งดออกเสียง", choice: 3 },
+      { name: "ไม่เข้าประชุม", choice: 4 },
     ],
   }
 
@@ -111,17 +113,23 @@ class PeoplePage extends React.Component {
   handleFilter = choice => {
     let allVote = this.props.data.allVotelogYaml.nodes
     if (choice === 0) {
-      this.setState({ allVote })
+      this.setState({ allVote, activeFilter: choice })
     } else {
       allVote = _.filter(allVote, function(o) {
         return o["choice"] == choice
       })
-      this.setState({ allVote })
+      this.setState({ allVote, activeFilter: choice })
     }
   }
 
   render() {
-    const { peopleYaml, voteLog, allVote } = this.state
+    const {
+      peopleYaml,
+      voteLog,
+      allVote,
+      activeFilter,
+      filterChoiceState,
+    } = this.state
     console.log("voteLog", voteLog)
     console.log("allVote", allVote)
     console.log("merged", this.mergeVote(voteLog, allVote))
@@ -299,14 +307,13 @@ class PeoplePage extends React.Component {
             >
               สรุปการลงมติในสภา
             </h2>
-            <ul>
-              <li onClick={() => this.handleFilter(0)}>ทั้งหมด</li>
-              <li onClick={() => this.handleFilter(1)}>เห็นด้วย</li>
-              <li onClick={() => this.handleFilter(2)}>ไม่เห็นด้วย</li>
-              <li onClick={() => this.handleFilter(3)}>งดออกเสียง</li>
-              <li onClick={() => this.handleFilter(4)}>ไม่เข้าประชุม</li>
-            </ul>
-            <PeopleVote voteLog={voteLog} allVote={allVote} />
+            <PeopleVote
+              voteLog={voteLog}
+              allVote={allVote}
+              handleFilter={this.handleFilter}
+              filterChoiceState={filterChoiceState}
+              activeFilter={activeFilter}
+            />
           </div>
         </section>
       </Layout>
