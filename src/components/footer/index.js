@@ -3,6 +3,7 @@ import React from "react"
 import "./index.css"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import ExternalLink from "../externalLink"
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -59,35 +60,41 @@ const Footer = () => {
           <h2>ELECT</h2>
           <h3>In VOTE We TRUST</h3>
           <span>
-            <a
+            <ExternalLink
               className="link-text"
               href="https://elect.in.th/about/"
               style={{ color: "#ffffff" }}
             >
               เราคือใคร.. ทำไมต้อง ELECT?
-            </a>
+            </ExternalLink>
           </span>
         </div>
         <div className="footer-contact">
           <h2>CONTACT US</h2>
           <ul>
             <li>
-              <a className="link-text" href="mailto: contact@elect.in.th">
+              <ExternalLink
+                className="link-text"
+                href="mailto: contact@elect.in.th"
+              >
                 contact@elect.in.th
-              </a>
+              </ExternalLink>
             </li>
             <li>
-              <a
+              <ExternalLink
                 className="link-text"
                 href="https://www.facebook.com/electinth/"
               >
                 Facebook
-              </a>
+              </ExternalLink>
             </li>
             <li>
-              <a className="link-text" href="https://twitter.com/electinth/">
+              <ExternalLink
+                className="link-text"
+                href="https://twitter.com/electinth/"
+              >
                 Twitter
-              </a>
+              </ExternalLink>
             </li>
           </ul>
         </div>
@@ -96,49 +103,29 @@ const Footer = () => {
           Partnership
         </div>
         <div className="footer-logo" style={{ gridArea: "bml" }}>
-          <a
-            href="https://www.boonmeelab.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <ExternalLink href="https://www.boonmeelab.com">
             <Img fixed={data.bml.childImageSharp.fixed}></Img>
-          </a>
+          </ExternalLink>
         </div>
         <div className="footer-logo" style={{ gridArea: "punchup" }}>
-          <a
-            href="http://punchup.world"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <ExternalLink href="http://punchup.world">
             <Img fixed={data.punchup.childImageSharp.fixed}></Img>
-          </a>
+          </ExternalLink>
         </div>
         <div className="footer-logo" style={{ gridArea: "ilaw" }}>
-          <a
-            href="https://ilaw.or.th"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <ExternalLink href="https://ilaw.or.th">
             <Img fixed={data.ilaw.childImageSharp.fixed}></Img>
-          </a>
+          </ExternalLink>
         </div>
         <div className="footer-logo" style={{ gridArea: "skooldio" }}>
-          <a
-            href="https://www.skooldio.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <ExternalLink href="https://www.skooldio.com">
             <Img fixed={data.skooldio.childImageSharp.fixed}></Img>
-          </a>
+          </ExternalLink>
         </div>
         <div className="footer-logo" style={{ gridArea: "matter" }}>
-          <a
-            href="https://thematter.co"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <ExternalLink href="https://thematter.co">
             <Img fixed={data.matter.childImageSharp.fixed}></Img>
-          </a>
+          </ExternalLink>
         </div>
 
         <div className="footer-copyright" style={{ gridArea: "copyright" }}>

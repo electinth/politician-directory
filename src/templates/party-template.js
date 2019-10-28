@@ -4,6 +4,7 @@ import _ from "lodash"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ExternalLink from "../components/externalLink"
 import { getThaiName, partyLogo, politicianPicture } from "../utils"
 
 export const query = graphql`
@@ -110,13 +111,9 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
                 <div>
                   <h2>Official Website</h2>
                   <p>
-                    <a
-                      href={partyYaml.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <ExternalLink href={partyYaml.website}>
                       {partyYaml.website}
-                    </a>
+                    </ExternalLink>
                   </p>
                 </div>
               ) : null}
