@@ -99,15 +99,14 @@ class PeoplePage extends React.Component {
     ],
   }
 
-  mergeVote = (peoplevote, votelog) => {
-    for (const [k, v] of Object.entries(peoplevote)) {
-      votelog.forEach(log => {
+  mergeVote = (voteLog, allVote) => {
+    for (const [k, v] of Object.entries(voteLog)) {
+      allVote.forEach(log => {
         if (`_${log.id}` == k) {
           log["choice"] = v
         }
       })
     }
-    return votelog
   }
 
   handleFilter = choice => {
@@ -130,7 +129,7 @@ class PeoplePage extends React.Component {
       activeFilter,
       filterChoiceState,
     } = this.state
-
+    this.mergeVote(voteLog, allVote)
     return (
       <Layout
         pageStyles={{
@@ -291,29 +290,13 @@ class PeoplePage extends React.Component {
           </div>
         </section>
         <hr />
-        <section
-          css={{
-            ...cssSectionWhite,
-          }}
-        >
-          <div className="container">
-            <h2
-              css={{
-                fontSize: "4.8rem",
-                textAlign: "center",
-              }}
-            >
-              สรุปการลงมติในสภา
-            </h2>
-            <PeopleVote
-              voteLog={voteLog}
-              allVote={allVote}
-              handleFilter={this.handleFilter}
-              filterChoiceState={filterChoiceState}
-              activeFilter={activeFilter}
-            />
-          </div>
-        </section>
+        <PeopleVote
+          voteLog={voteLog}
+          allVote={allVote}
+          handleFilter={this.handleFilter}
+          filterChoiceState={filterChoiceState}
+          activeFilter={activeFilter}
+        />
       </Layout>
     )
   }
