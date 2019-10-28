@@ -17,8 +17,12 @@ const HeroFeature = ({ title, subtitle }) => (
     }}
   >
     <FeatureIcon />
-    <h2 style={{ textAlign: "center" }}>{title}</h2>
-    <p style={{ textAlign: "center" }}>{subtitle}</p>
+    <h2
+      style={{ textAlign: "center", fontSize: "2.4rem", marginBottom: "2rem" }}
+    >
+      {title}
+    </h2>
+    <p style={{ textAlign: "center", fontSize: "1.8rem" }}>{subtitle}</p>
   </div>
 )
 

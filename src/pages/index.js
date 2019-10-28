@@ -10,6 +10,22 @@ import VoteLogCard from "../components/voteLogCard"
 
 export const query = graphql`
   query {
+    cabinet: allPeopleYaml(filter: { is_cabinet: { eq: true } }) {
+      totalCount
+    }
+    senator: allPeopleYaml(filter: { is_senator: { eq: true } }) {
+      totalCount
+    }
+    partyCoalition: allPartyYaml(
+      filter: { party_faction: { eq: "ร่วมรัฐบาล" } }
+    ) {
+      totalCount
+    }
+    partyOpposition: allPartyYaml(
+      filter: { party_faction: { eq: "ฝ่ายค้าน" } }
+    ) {
+      totalCount
+    }
     allPeopleYaml {
       totalCount
       edges {
@@ -43,7 +59,7 @@ export const query = graphql`
         }
       }
     }
-    allVotelogYaml {
+    allVotelogYaml(limit: 6) {
       totalCount
       edges {
         node {
@@ -51,7 +67,16 @@ export const query = graphql`
           fields {
             slug
           }
-          title
+          legal_title
+          en {
+            legal_title
+          }
+          passed
+          approve
+          disprove
+          abstained
+          absent
+          total_voter
           vote_date
         }
       }
@@ -83,6 +108,71 @@ const cssSectionBlack = {
   },
 }
 
+const cssPartyTypeCard = {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  minWidth: 300,
+  minHeight: 350,
+  padding: "2rem",
+  borderRadius: "10px",
+  color: "var(--cl-white)",
+  background: "var(--cl-black)",
+
+  width: `calc(${100 / 2}% - 2rem)`,
+  marginBottom: "2rem",
+  "&:nth-child(2n+1)": {
+    marginRight: "2rem",
+  },
+  "&:hover": {
+    background: "var(--cl-gray-0)",
+    textDecoration: "none",
+  },
+  h3: {
+    color: "var(--cl-white)",
+    fontSize: "3.6rem",
+  },
+  h4: {
+    color: "var(--cl-white)",
+    fontSize: "2.4rem",
+    fontFamily: "var(--ff-text)",
+    fontWeight: "normal",
+  },
+}
+const cssMPColumn = {
+  display: "block",
+  // flexDirection: "column",
+  // justifyContent: "center",
+  // // alignItems: "center",
+  // // minWidth: 300,
+  // // minHeight: 350,
+  padding: "2rem",
+  // borderRadius: "10px",
+  // color: "var(--cl-white)",
+  // background: "var(--cl-black)",
+
+  width: `calc(${100 / 2}% - 2rem)`,
+  marginBottom: "2rem",
+  "&:nth-child(2n+1)": {
+    marginRight: "2rem",
+  },
+  // h3: {
+  //   color: "var(--cl-white)",
+  //   fontSize: "3.6rem",
+  // },
+  // h4: {
+  //   color: "var(--cl-white)",
+  //   fontSize: "2.4rem",
+  //   fontFamily: "var(--ff-text)",
+  //   fontWeight: "normal",
+  // },
+  h3: {
+    textAlign: "center",
+    fontSize: "2.4rem",
+  },
+}
+
 const IndexPage = ({ data }) => (
   <Layout
     pageStyles={{
@@ -98,12 +188,19 @@ const IndexPage = ({ data }) => (
             fontWeight: "bold",
             textAlign: "center",
             marginTop: 0,
+            marginBottom: "1rem",
             paddingTop: "6rem",
           }}
         >
           ใครคือผู้แทนของเรา
         </h1>
-        <h2 css={{ fontSize: "4.8rem", textAlign: "center" }}>
+        <h2
+          css={{
+            fontSize: "4.8rem",
+            textAlign: "center",
+            marginBottom: "8rem",
+          }}
+        >
           ค้นหา ตรวจสอบ โปร่งใส
         </h2>
 
@@ -134,18 +231,36 @@ const IndexPage = ({ data }) => (
     >
       <div className="container">
         <h2 css={{ ...cssH1 }}>สรุปผลการลงมติล่าสุด</h2>
-        <div style={{ marginTop: "6rem" }}>
-          <VoteLogCard
-            legal_title="ร่างข้อบังคับการประชุมสภาผู้แทนราษฎพ.ศ. ซึ่งคณะกกรมาธิการวิสามัญพิจารณาเสร็จแล้ว"
-            legal_title_en="The Democrat Party is a Thail political party. The oldest party in Thailand, it was founded as a conservative and royalist party, and now upholds a conservative-"
-            passed={false}
-            approve={101}
-            disprove={365}
-            abstained={13}
-            absent={0}
-            total_voter={479}
-            vote_date="2019-08-22"
-          />
+        <div
+          css={{
+            display: "flex",
+            justifyContent: "flex-start",
+            alignItems: "flex-start",
+            flexWrap: "wrap",
+            marginTop: "6rem",
+          }}
+        >
+          {data.allVotelogYaml.edges.map(({ node }) => (
+            <VoteLogCard
+              key={node.id}
+              css={{
+                width: `calc(${100 / 2}% - 2rem)`,
+                marginBottom: "2rem",
+                "&:nth-child(2n+1)": {
+                  marginRight: "2rem",
+                },
+              }}
+              legal_title={node.legal_title}
+              legal_title_en={node.en.legal_title}
+              passed={node.passed}
+              approve={node.approve}
+              disprove={node.disprove}
+              abstained={node.abstained}
+              absent={node.absent}
+              total_voter={node.total_voter}
+              vote_date={node.vote_date}
+            />
+          ))}
         </div>
       </div>
     </section>
@@ -157,109 +272,65 @@ const IndexPage = ({ data }) => (
     >
       <div className="container">
         <h2 css={{ ...cssH1 }}>สำรวจตามชนิดและสังกัดผู้แทน</h2>
-      </div>
-    </section>
-
-    <section css={{ ...cssSection, background: "#eeeeee" }}>
-      <div className="container">
-        <h2
-          css={{
-            marginBottom: rhythm(1 / 4),
-          }}
-        >
-          สารบัญ
-        </h2>
 
         <div
           css={{
             display: "flex",
+            justifyContent: "flex-start",
             alignItems: "flex-start",
-            justifyContent: "space-evenly",
+            flexWrap: "wrap",
+            marginTop: "6rem",
           }}
         >
-          <div css={{ flex: "1 1 100px", display: "inline-block" }}>
-            <h3>รัฐสภาไทย</h3>
-            <ul>
-              <li>
-                <Link to="/cabinet/">ครม.</Link>
-                <ul>
-                  {data.allPeopleYaml.edges
-                    .filter(({ node }) => node.is_cabinet)
-                    .map(({ node }) => (
-                      <li key={node.id}>
-                        <Link
-                          to={node.fields.slug}
-                        >{`${node.title} ${node.name} ${node.lastname}`}</Link>
-                      </li>
-                    ))}
-                </ul>
-              </li>
-              <li>
-                <Link to="/representatives/">ส.ส.</Link>
-                <ul>
-                  {data.allPeopleYaml.edges
-                    .filter(({ node }) => node.is_mp)
-                    .map(({ node }) => (
-                      <li key={node.id}>
-                        <Link
-                          to={node.fields.slug}
-                        >{`${node.title} ${node.name} ${node.lastname}`}</Link>
-                      </li>
-                    ))}
-                </ul>
-              </li>
-              <li>
-                <Link to="/senate/">ส.ว.</Link>
-                <ul>
-                  {data.allPeopleYaml.edges
-                    .filter(({ node }) => node.is_senator)
-                    .map(({ node }) => (
-                      <li key={node.id}>
-                        <Link
-                          to={node.fields.slug}
-                        >{`${node.title} ${node.name} ${node.lastname}`}</Link>
-                      </li>
-                    ))}
-                </ul>
-              </li>
-            </ul>
-          </div>
+          <Link to={"/cabinet"} css={cssPartyTypeCard}>
+            <h3>คณะรัฐมนตรี</h3>
+            <h4>{data.cabinet.totalCount} คน</h4>
+          </Link>
+          <Link to={"/senate"} css={cssPartyTypeCard}>
+            <h3>สมาชิกวุฒิสภา</h3>
+            <h4>{data.senator.totalCount} คน</h4>
+          </Link>
+        </div>
 
-          <div css={{ flex: "1 1 100px", display: "inline-block" }}>
-            <h3>พรรคร่วมรัฐบาล</h3>
-            <ul>
-              {data.allPartyYaml.edges
-                .filter(({ node }) => node.party_faction === "ร่วมรัฐบาล")
-                .map(({ node }) => (
-                  <li key={node.id}>
-                    <Link to={node.fields.slug}>{`${node.name}`}</Link>
-                  </li>
-                ))}
-            </ul>
-          </div>
-
-          <div css={{ flex: "1 1 100px", display: "inline-block" }}>
-            <h3>พรรคฝ่ายค้าน</h3>
-            <ul>
-              {data.allPartyYaml.edges
-                .filter(({ node }) => node.party_faction === "ฝ่ายค้าน")
-                .map(({ node }) => (
-                  <li key={node.id}>
-                    <Link to={node.fields.slug}>{`${node.name}`}</Link>
-                  </li>
-                ))}
-            </ul>
-          </div>
-
-          <div css={{ flex: "1 1 100px", display: "inline-block" }}>
-            <h3>บันทึกมติ</h3>
-            <ul>
-              {data.allVotelogYaml.edges.map(({ node }) => (
-                <li key={node.id}>
-                  <Link to={node.fields.slug}>{`${node.title}`}</Link>
-                </li>
-              ))}
-            </ul>
+        <div>
+          <h3
+            css={{ fontSize: "3.6rem", textAlign: "center", marginTop: "4rem" }}
+          >
+            สมาชิกสภาผู้แทนราษฎร
+          </h3>
+          <div
+            css={{
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "flex-start",
+              flexWrap: "wrap",
+              marginTop: "2rem",
+            }}
+          >
+            <div css={cssMPColumn}>
+              <h3>พรรคร่วมรัฐบาล ({data.partyCoalition.totalCount})</h3>
+              <ul>
+                {data.allPartyYaml.edges
+                  .filter(({ node }) => node.party_faction === "ร่วมรัฐบาล")
+                  .map(({ node }) => (
+                    <li>
+                      <Link to={node.fields.slug}>{node.name}</Link>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+            <div css={cssMPColumn}>
+              <h3>พรรคฝ่ายค้าน ({data.partyOpposition.totalCount})</h3>
+              <ul>
+                {data.allPartyYaml.edges
+                  .filter(({ node }) => node.party_faction === "ฝ่ายค้าน")
+                  .map(({ node }) => (
+                    <li>
+                      <Link to={node.fields.slug}>{node.name}</Link>
+                    </li>
+                  ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>

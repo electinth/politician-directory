@@ -4,6 +4,7 @@ import moment from "moment"
 import "../styles/global.css"
 
 const VoteLogCard = ({
+  className,
   legal_title,
   legal_title_en,
   passed,
@@ -20,13 +21,13 @@ const VoteLogCard = ({
   const abstainedBar = (abstained * 100) / total_voter + "%"
   return (
     <div
-      style={{
-        marginBottom: "1.08rem",
+      className={className}
+      css={{
         display: "flex",
         flexDirection: "column",
-        width: "33%",
-        minWidth: "400px",
-        minHeight: "350px",
+        width: 300,
+        minWidth: 300,
+        minHeight: 350,
         padding: "2rem",
         borderRadius: "10px",
         backgroundColor: "var(--cl-white)",
@@ -78,7 +79,7 @@ const VoteLogCard = ({
       </h2>
       <h3
         style={{
-          fontSize: "2.5rem",
+          fontSize: "2.4rem",
           paddingTop: "1rem",
           lineHeight: "3rem",
         }}
