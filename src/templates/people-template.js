@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PeopleVote from "../components/peopleVote"
 import { ageFromBirthdate, politicianPicture } from "../utils"
+import _ from "lodash"
 
 import styles from "./people-template.module.css"
 
@@ -51,6 +52,14 @@ export const query = graphql`
         _6
       }
     }
+    allVotelogYaml {
+      nodes {
+        id
+        title
+        legal_title
+        vote_date
+      }
+    }
   }
 `
 
@@ -75,185 +84,227 @@ const cssSectionBlack = {
   },
 }
 
-const PeoplePage = ({ data: { peopleYaml, peopleVoteYaml } }) => (
-  <Layout
-    pageStyles={{
-      background: "#eeeeee",
-    }}
-  >
-    <SEO title="People" />
-    <img
-      css={css`
-        max-height: 400px;
-      `}
-      alt=""
-      src={politicianPicture(peopleYaml)}
-    />
-    <section css={{ ...cssSection, paddingTop: "6rem" }}>
-      <div className="container">
-        <div className={`${styles.card}`}>
-          <div css={{ width: "50%" }}>
-            <h1
-              css={{
-                marginTop: 0,
-                fontSize: "3.2rem",
-              }}
-            >{`${peopleYaml.title} ${peopleYaml.name} ${peopleYaml.lastname}`}</h1>
-            <h3>ตำแหน่งปัจจุบัน:</h3>
-            <ul>
-              {peopleYaml.cabinet_position.map(position => (
-                <li key={position}>{`${position}`}</li>
-              ))}
-            </ul>
-            <h3>ตำแหน่งที่ผ่านมา:</h3>
-            <ul>
-              {peopleYaml.prev_polit_pos.map(position => (
-                <li key={position}>{`${position}`}</li>
-              ))}
-            </ul>
-            <h3>
-              คณะรัฐมนตรี: {`${peopleYaml.is_cabinet ? "ใช่" : "ไม่ใช่"}`}
-            </h3>
-            <h3>ส.ว.: {`${peopleYaml.is_senator ? "ใช่" : "ไม่ใช่"}`}</h3>
-            <h3>ส.ส.: {`${peopleYaml.is_mp ? "ใช่" : "ไม่ใช่"}`}</h3>
-          </div>
-          <div css={{ width: "50%" }}>
-            <h2 css={{ ...cssH2 }}>ข้อมูลพื้นฐาน</h2>
+class PeoplePage extends React.Component {
+  state = {
+    peopleYaml: this.props.data.peopleYaml,
+    voteLog: this.props.data.peopleVoteYaml.votelog,
+    allVote: this.props.data.allVotelogYaml.nodes,
+  }
 
-            <hr className={`${styles.hr}`} />
-            <div>
-              <p>
-                {peopleYaml.party ? (
-                  <Link to={`/party/${peopleYaml.party}`}>
-                    พรรค {peopleYaml.party}
-                  </Link>
-                ) : (
-                  "ไม่สังกัดพรรค"
-                )}
-              </p>
-            </div>
-            <div>
-              {peopleYaml.mp_type === "แบ่งเขต" ? (
-                <p>
-                  สมาชิกสภาผู้แทนราษฎร แบ่งเขต จังหวัด {peopleYaml.mp_province}{" "}
-                  เขต {peopleYaml.mp_zone}
-                </p>
-              ) : (
-                <p>
-                  สมาชิกสภาผู้แทนราษฎร บัญชีรายชื่อ ลำดับที่
-                  {peopleYaml.mp_zone}
-                </p>
-              )}
-            </div>
-            <div>
-              {peopleYaml.committee.map(com => (
-                <span key={com}>{com}</span>
-              ))}
-            </div>
+  mergeVote = (peoplevote, votelog) => {
+    for (const [k, v] of Object.entries(peoplevote)) {
+      votelog.forEach(log => {
+        if (`_${log.id}` == k) {
+          log["choice"] = v
+        }
+      })
+    }
+    return votelog
+  }
 
-            <hr className={`${styles.hr}`} />
-            <div>
-              <span>เพศ {peopleYaml.gender}</span>
-              {" / "}
-              <span>อายุ {ageFromBirthdate(peopleYaml.birthdate)} ปี</span>
-              {" / "}
-              <span>การศึกษา {peopleYaml.education}</span>
-              <ul>
-                {peopleYaml.graduation.map(grad => (
-                  <li key={grad}>{grad}</li>
-                ))}
-              </ul>
-              <span>อาชีพเดิม {peopleYaml.occupation}</span>
-            </div>
+  handleFilter = choice => {
+    let allVote = this.props.data.allVotelogYaml.nodes
+    allVote = _.filter(allVote, function(o) {
+      return o["choice"] == choice
+    })
+    this.setState({ allVote })
+  }
 
-            <hr className={`${styles.hr}`} />
-            <div>
-              <span>ทรัพย์สิน {peopleYaml.asset}</span>
-              {" / "}
-              <span>หนี้สิน {peopleYaml.deby}</span>
-              {" / "}
-              <a
-                href="https://elect.in.th/politics-and-business"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ตรวจสอบประวัติทางธุรกิจ
-              </a>
-            </div>
-
-            <hr className={`${styles.hr}`} />
-            <div>Official Link</div>
-            <div>Facebook | Twitter | Website | Instagram</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    {peopleYaml.quotes ? (
-      <section
-        css={{
-          ...cssSectionBlack,
+  render() {
+    const { peopleYaml, voteLog, allVote } = this.state
+    console.log("voteLog", voteLog)
+    console.log("allVote", allVote)
+    console.log("merged", this.mergeVote(voteLog, allVote))
+    return (
+      <Layout
+        pageStyles={{
+          background: "#eeeeee",
         }}
       >
-        <div className="container">
-          <span css={{ color: "#fcbbdd", fontSize: "3.6rem" }}>"</span>
-          <blockquote css={{ fontSize: "3.6rem" }}>
-            {peopleYaml.quotes}
-          </blockquote>
-          <div className="quotes-reference">
-            — {`${peopleYaml.title} ${peopleYaml.name} ${peopleYaml.lastname}`}(
-            <a
-              href={peopleYaml.quotes_url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              อ้างอิง
-            </a>
-            )
-          </div>
-        </div>
-      </section>
-    ) : null}
+        <SEO title="People" />
+        <img
+          css={css`
+            max-height: 400px;
+          `}
+          alt=""
+          src={politicianPicture(peopleYaml)}
+        />
+        <section css={{ ...cssSection, paddingTop: "6rem" }}>
+          <div className="container">
+            <div className={`${styles.card}`}>
+              <div css={{ width: "50%" }}>
+                <h1
+                  css={{
+                    marginTop: 0,
+                    fontSize: "3.2rem",
+                  }}
+                >{`${peopleYaml.title} ${peopleYaml.name} ${peopleYaml.lastname}`}</h1>
+                <h3>ตำแหน่งปัจจุบัน:</h3>
+                <ul>
+                  {peopleYaml.cabinet_position.map(position => (
+                    <li key={position}>{`${position}`}</li>
+                  ))}
+                </ul>
+                <h3>ตำแหน่งที่ผ่านมา:</h3>
+                <ul>
+                  {peopleYaml.prev_polit_pos.map(position => (
+                    <li key={position}>{`${position}`}</li>
+                  ))}
+                </ul>
+                <h3>
+                  คณะรัฐมนตรี: {`${peopleYaml.is_cabinet ? "ใช่" : "ไม่ใช่"}`}
+                </h3>
+                <h3>ส.ว.: {`${peopleYaml.is_senator ? "ใช่" : "ไม่ใช่"}`}</h3>
+                <h3>ส.ส.: {`${peopleYaml.is_mp ? "ใช่" : "ไม่ใช่"}`}</h3>
+              </div>
+              <div css={{ width: "50%" }}>
+                <h2 css={{ ...cssH2 }}>ข้อมูลพื้นฐาน</h2>
 
-    <section
-      css={{
-        ...cssSectionWhite,
-      }}
-    >
-      <div className="container">
-        <h2
+                <hr className={`${styles.hr}`} />
+                <div>
+                  <p>
+                    {peopleYaml.party ? (
+                      <Link to={`/party/${peopleYaml.party}`}>
+                        พรรค {peopleYaml.party}
+                      </Link>
+                    ) : (
+                      "ไม่สังกัดพรรค"
+                    )}
+                  </p>
+                </div>
+                <div>
+                  {peopleYaml.mp_type === "แบ่งเขต" ? (
+                    <p>
+                      สมาชิกสภาผู้แทนราษฎร แบ่งเขต จังหวัด{" "}
+                      {peopleYaml.mp_province} เขต {peopleYaml.mp_zone}
+                    </p>
+                  ) : (
+                    <p>
+                      สมาชิกสภาผู้แทนราษฎร บัญชีรายชื่อ ลำดับที่
+                      {peopleYaml.mp_zone}
+                    </p>
+                  )}
+                </div>
+                <div>
+                  {peopleYaml.committee.map(com => (
+                    <span key={com}>{com}</span>
+                  ))}
+                </div>
+
+                <hr className={`${styles.hr}`} />
+                <div>
+                  <span>เพศ {peopleYaml.gender}</span>
+                  {" / "}
+                  <span>อายุ {ageFromBirthdate(peopleYaml.birthdate)} ปี</span>
+                  {" / "}
+                  <span>การศึกษา {peopleYaml.education}</span>
+                  <ul>
+                    {peopleYaml.graduation.map(grad => (
+                      <li key={grad}>{grad}</li>
+                    ))}
+                  </ul>
+                  <span>อาชีพเดิม {peopleYaml.occupation}</span>
+                </div>
+
+                <hr className={`${styles.hr}`} />
+                <div>
+                  <span>ทรัพย์สิน {peopleYaml.asset}</span>
+                  {" / "}
+                  <span>หนี้สิน {peopleYaml.deby}</span>
+                  {" / "}
+                  <a
+                    href="https://elect.in.th/politics-and-business"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ตรวจสอบประวัติทางธุรกิจ
+                  </a>
+                </div>
+
+                <hr className={`${styles.hr}`} />
+                <div>Official Link</div>
+                <div>Facebook | Twitter | Website | Instagram</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {peopleYaml.quotes ? (
+          <section
+            css={{
+              ...cssSectionBlack,
+            }}
+          >
+            <div className="container">
+              <span css={{ color: "#fcbbdd", fontSize: "3.6rem" }}>"</span>
+              <blockquote css={{ fontSize: "3.6rem" }}>
+                {peopleYaml.quotes}
+              </blockquote>
+              <div className="quotes-reference">
+                —{" "}
+                {`${peopleYaml.title} ${peopleYaml.name} ${peopleYaml.lastname}`}
+                (
+                <a
+                  href={peopleYaml.quotes_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  อ้างอิง
+                </a>
+                )
+              </div>
+            </div>
+          </section>
+        ) : null}
+
+        <section
           css={{
-            fontSize: "4.8rem",
-            textAlign: "center",
+            ...cssSectionWhite,
           }}
         >
-          การปรากฏตัวบนข่าวล่าสุด
-        </h2>
-        <div></div>
-      </div>
-    </section>
-    <hr />
-    <section
-      css={{
-        ...cssSectionWhite,
-      }}
-    >
-      <div className="container">
-        <h2
+          <div className="container">
+            <h2
+              css={{
+                fontSize: "4.8rem",
+                textAlign: "center",
+              }}
+            >
+              การปรากฏตัวบนข่าวล่าสุด
+            </h2>
+            <div></div>
+          </div>
+        </section>
+        <hr />
+        <section
           css={{
-            fontSize: "4.8rem",
-            textAlign: "center",
+            ...cssSectionWhite,
           }}
         >
-          สรุปการลงมติในสภา
-        </h2>
-        <div css={{ textAlign: "center" }}>
-          ทั้งหมด เห็นด้วย ไม่เห็นด้วย งดออกเสียง ไม่เข้าประชุม
-        </div>
-        <PeopleVote voteLog={peopleVoteYaml.votelog} />
-      </div>
-    </section>
-  </Layout>
-)
+          <div className="container">
+            <h2
+              css={{
+                fontSize: "4.8rem",
+                textAlign: "center",
+              }}
+            >
+              สรุปการลงมติในสภา
+            </h2>
+            <ul>
+              <li>ทั้งหมด</li>
+              <li onClick={() => this.handleFilter(1)}>เห็นด้วย</li>
+              <li onClick={() => this.handleFilter(2)}>ไม่เห็นด้วย</li>
+              <li onClick={() => this.handleFilter(3)}>งดออกเสียง</li>
+              <li onClick={() => this.handleFilter(4)}>ไม่เข้าประชุม</li>
+            </ul>
+            <PeopleVote
+              voteLog={voteLog}
+              allVote={this.mergeVote(voteLog, allVote)}
+            />
+          </div>
+        </section>
+      </Layout>
+    )
+  }
+}
 
 export default PeoplePage
