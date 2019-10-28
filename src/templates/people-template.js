@@ -130,9 +130,7 @@ class PeoplePage extends React.Component {
       activeFilter,
       filterChoiceState,
     } = this.state
-    console.log("voteLog", voteLog)
-    console.log("allVote", allVote)
-    console.log("merged", this.mergeVote(voteLog, allVote))
+
     return (
       <Layout
         pageStyles={{

@@ -27,7 +27,18 @@ const PeopleVote = ({
 
   return (
     <>
-      <ul>
+      <ul
+        css={css`
+          list-style: none;
+          text-align: center;
+          li {
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 2.5rem;
+          }
+        `}
+      >
         {filterChoiceState.map(({ name, choice }) => (
           <li
             onClick={() => handleFilter(choice)}
@@ -35,6 +46,8 @@ const PeopleVote = ({
               activeFilter == choice
                 ? css`
                     color: ${voteColor[choice]};
+                    border-bottom: 3px ${voteColor[choice]} solid;
+                    font-weight: 600;
                   `
                 : null
             }
