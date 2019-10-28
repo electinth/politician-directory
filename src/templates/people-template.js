@@ -89,6 +89,12 @@ class PeoplePage extends React.Component {
     peopleYaml: this.props.data.peopleYaml,
     voteLog: this.props.data.peopleVoteYaml.votelog,
     allVote: this.props.data.allVotelogYaml.nodes,
+    filterChoiceButton: [
+      { choice: 1, isActive: false },
+      { choice: 2, isActive: false },
+      { choice: 3, isActive: false },
+      { choice: 4, isActive: false },
+    ],
   }
 
   mergeVote = (peoplevote, votelog) => {
@@ -104,10 +110,14 @@ class PeoplePage extends React.Component {
 
   handleFilter = choice => {
     let allVote = this.props.data.allVotelogYaml.nodes
-    allVote = _.filter(allVote, function(o) {
-      return o["choice"] == choice
-    })
-    this.setState({ allVote })
+    if (choice === 0) {
+      this.setState({ allVote })
+    } else {
+      allVote = _.filter(allVote, function(o) {
+        return o["choice"] == choice
+      })
+      this.setState({ allVote })
+    }
   }
 
   render() {
@@ -290,16 +300,13 @@ class PeoplePage extends React.Component {
               สรุปการลงมติในสภา
             </h2>
             <ul>
-              <li>ทั้งหมด</li>
+              <li onClick={() => this.handleFilter(0)}>ทั้งหมด</li>
               <li onClick={() => this.handleFilter(1)}>เห็นด้วย</li>
               <li onClick={() => this.handleFilter(2)}>ไม่เห็นด้วย</li>
               <li onClick={() => this.handleFilter(3)}>งดออกเสียง</li>
               <li onClick={() => this.handleFilter(4)}>ไม่เข้าประชุม</li>
             </ul>
-            <PeopleVote
-              voteLog={voteLog}
-              allVote={this.mergeVote(voteLog, allVote)}
-            />
+            <PeopleVote voteLog={voteLog} allVote={allVote} />
           </div>
         </section>
       </Layout>

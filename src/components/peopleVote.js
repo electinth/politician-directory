@@ -1,7 +1,6 @@
 import React from "react"
 
-import { useStaticQuery, graphql } from "gatsby"
-import { css, cx } from "@emotion/core"
+import { css } from "@emotion/core"
 
 const PeopleVote = ({ voteLog, allVote }) => {
   const voteText = {
