@@ -9,7 +9,6 @@ const cssSectionWhite = {
 }
 
 const PeopleVote = ({
-  voteLog,
   allVote,
   handleFilter,
   activeFilter,
@@ -75,20 +74,20 @@ const PeopleVote = ({
             </li>
           ))}
         </ul>
-        {allVote.map(({ id, title, legal_title, vote_date }) => (
+        {allVote.map(({ choice, title, legal_title, vote_date }) => (
           <div
             css={css`
               padding: 0.5rem 2rem;
               font-size: 24px;
               border-radius: 10px;
               border: 1px solid black;
-              border-left: 15px solid ${voteColor[voteLog[`_${id}`]]};
+              border-left: 15px solid ${voteColor[choice]};
               margin: 20px 0px;
             `}
           >
             <p
               css={css`
-                color: ${voteColor[voteLog[`_${id}`]]};
+                color: ${voteColor[choice]};
                 margin: 15px 0px;
               `}
             >
@@ -98,10 +97,10 @@ const PeopleVote = ({
                   height: 15px;
                   width: 15px;
                   margin-right: 10px;
-                  background-color: ${voteColor[voteLog[`_${id}`]]};
+                  background-color: ${voteColor[choice]};
                 `}
               ></div>
-              {voteText[voteLog[`_${id}`]]}
+              {voteText[choice]}
             </p>
             <p>{title}</p>
             <p

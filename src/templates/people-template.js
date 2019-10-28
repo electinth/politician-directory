@@ -291,7 +291,6 @@ class PeoplePage extends React.Component {
         </section>
         <hr />
         <PeopleVote
-          voteLog={voteLog}
           allVote={allVote}
           handleFilter={this.handleFilter}
           filterChoiceState={filterChoiceState}
