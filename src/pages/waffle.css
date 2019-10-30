@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   width: 950px;
   height: 348px;
-  margin: 50px 0;
+  margin: 50px auto 0 auto;
 }
 
 .line {
@@ -35,12 +35,16 @@
   width: 12px;
   height: 12px;
   margin: 0 3px 3px 0;
+  border: 0px;
 }
 .person.of-interest {
   background-color: #f9aad4;
 }
 .person.other {
   background-color: #b3b3b3;
+}
+.person:hover {
+  border: 2px solid #222222;
 }
 
 @media only screen and (max-width: 950px) {

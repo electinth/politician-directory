@@ -173,169 +173,225 @@ const cssMPColumn = {
   },
 }
 
-const IndexPage = ({ data }) => (
-  <Layout
-    pageStyles={{
-      background: "var(--cl-pink)",
-    }}
-  >
-    <SEO title="Home" />
-    <section css={{ ...cssSection }}>
-      <div className="container">
-        <h1
-          css={{
-            fontSize: "6rem",
-            fontWeight: "bold",
-            textAlign: "center",
-            marginTop: 0,
-            marginBottom: "1rem",
-            paddingTop: "6rem",
-          }}
-        >
-          ใครคือผู้แทนของเรา
-        </h1>
-        <h2
-          css={{
-            fontSize: "4.8rem",
-            textAlign: "center",
-            marginBottom: "8rem",
-          }}
-        >
-          ค้นหา ตรวจสอบ โปร่งใส
-        </h2>
-
-        <div css={{ margin: `0 auto 1.45rem` }}>
-          <Hero />
-
-          <div css={{ textAlign: "center" }}>
-            <Button to="/about">เกี่ยวกับเรา</Button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      css={{
-        ...cssSectionWhite,
-      }}
-    >
-      <div className="container">
-        <h2 css={{ ...cssH1 }}>สัดส่วนผู้แทนของเรา พวกเขาเป็นใครบ้าง</h2>
-      </div>
-    </section>
-
-    <section
-      css={{
-        ...cssSectionBlack,
-      }}
-    >
-      <div className="container">
-        <h2 css={{ ...cssH1 }}>สรุปผลการลงมติล่าสุด</h2>
-        <div
-          css={{
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "flex-start",
-            flexWrap: "wrap",
-            marginTop: "6rem",
-          }}
-        >
-          {data.allVotelogYaml.edges.map(({ node }) => (
-            <VoteLogCard
-              key={node.id}
-              css={{
-                width: `calc(${100 / 2}% - 2rem)`,
-                marginBottom: "2rem",
-                "&:nth-child(2n+1)": {
-                  marginRight: "2rem",
-                },
-              }}
-              legal_title={node.legal_title}
-              legal_title_en={node.en.legal_title}
-              passed={node.passed}
-              approve={node.approve}
-              disprove={node.disprove}
-              abstained={node.abstained}
-              absent={node.absent}
-              total_voter={node.total_voter}
-              vote_date={node.vote_date}
-            />
+const split_array = (array, size, callback) =>
+  Array(Math.ceil(array.length / size))
+    .fill()
+    .map((_, index) => index * size)
+    .map(start => array.slice(start, start + size))
+    .map(callback)
+const full_name = node => `${node.title}${node.name} ${node.lastname}`
+const waffle = (data, cls) =>
+  split_array(data, 100, hundred => (
+    <div class="hundred">
+      {split_array(hundred, 25, quarter => (
+        <div class="quarter">
+          {quarter.map(({ node }) => (
+            <div title={full_name(node)} class={cls}>
+              {/* <Link to={node.fields.slug}>{full_name(node)}</Link> */}
+            </div>
           ))}
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  ))
 
-    <section
-      css={{
-        ...cssSectionWhite,
+const IndexPage = ({ data }) => {
+  let prop_of_interest = {
+    prop: `is_cabinet`,
+    name: "รัฐมนตรี",
+  }
+  let data_of_interest = data.allPeopleYaml.edges.filter(
+    ({ node }) => node[prop_of_interest.prop]
+  )
+  let data_the_rest = data.allPeopleYaml.edges.filter(
+    ({ node }) => !node[prop_of_interest.prop]
+  )
+
+  return (
+    <Layout
+      pageStyles={{
+        background: "var(--cl-pink)",
       }}
     >
-      <div className="container">
-        <h2 css={{ ...cssH1 }}>สำรวจตามชนิดและสังกัดผู้แทน</h2>
-
-        <div
-          css={{
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "flex-start",
-            flexWrap: "wrap",
-            marginTop: "6rem",
-          }}
-        >
-          <Link to={"/cabinet"} css={cssPartyTypeCard}>
-            <h3>คณะรัฐมนตรี</h3>
-            <h4>{data.cabinet.totalCount} คน</h4>
-          </Link>
-          <Link to={"/senate"} css={cssPartyTypeCard}>
-            <h3>สมาชิกวุฒิสภา</h3>
-            <h4>{data.senator.totalCount} คน</h4>
-          </Link>
-        </div>
-
-        <div>
-          <h3
-            css={{ fontSize: "3.6rem", textAlign: "center", marginTop: "4rem" }}
+      <SEO title="Home" />
+      <section css={{ ...cssSection }}>
+        <div className="container">
+          <h1
+            css={{
+              fontSize: "6rem",
+              fontWeight: "bold",
+              textAlign: "center",
+              marginTop: 0,
+              marginBottom: "1rem",
+              paddingTop: "6rem",
+            }}
           >
-            สมาชิกสภาผู้แทนราษฎร
-          </h3>
+            ใครคือผู้แทนของเรา
+          </h1>
+          <h2
+            css={{
+              fontSize: "4.8rem",
+              textAlign: "center",
+              marginBottom: "8rem",
+            }}
+          >
+            ค้นหา ตรวจสอบ โปร่งใส
+          </h2>
+
+          <div css={{ margin: `0 auto 1.45rem` }}>
+            <Hero />
+
+            <div css={{ textAlign: "center" }}>
+              <Button to="/about">เกี่ยวกับเรา</Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        css={{
+          ...cssSectionWhite,
+        }}
+      >
+        <div className="container">
+          <h2 css={{ ...cssH1 }}>สัดส่วนผู้แทนของเรา พวกเขาเป็นใครบ้าง</h2>
+          <h2>
+            <span css={{ fontSize: "7.2rem", verticalAlign: "middle" }}>
+              {(
+                (100 * data_of_interest.length) /
+                data.allPeopleYaml.edges.length
+              ).toFixed(2)}
+              %
+            </span>
+            <span css={{ fontFamily: "var(--ff-text)", fontSize: "2.4rem" }}>
+              ของผู้แทนในสภาทั้งหมดเป็น{prop_of_interest.name}
+            </span>
+          </h2>
+          <div class="waffle">
+            {waffle(data_of_interest, "person of-interest")}
+            <div class="line"></div>
+            {waffle(data_the_rest, "person other")}
+          </div>
+        </div>
+      </section>
+
+      <section
+        css={{
+          ...cssSectionBlack,
+        }}
+      >
+        <div className="container">
+          <h2 css={{ ...cssH1 }}>สรุปผลการลงมติล่าสุด</h2>
           <div
             css={{
               display: "flex",
               justifyContent: "flex-start",
               alignItems: "flex-start",
               flexWrap: "wrap",
-              marginTop: "2rem",
+              marginTop: "6rem",
             }}
           >
-            <div css={cssMPColumn}>
-              <h3>พรรคร่วมรัฐบาล ({data.partyCoalition.totalCount})</h3>
-              <ul>
-                {data.allPartyYaml.edges
-                  .filter(({ node }) => node.party_faction === "ร่วมรัฐบาล")
-                  .map(({ node }) => (
-                    <li>
-                      <Link to={node.fields.slug}>{node.name}</Link>
-                    </li>
-                  ))}
-              </ul>
-            </div>
-            <div css={cssMPColumn}>
-              <h3>พรรคฝ่ายค้าน ({data.partyOpposition.totalCount})</h3>
-              <ul>
-                {data.allPartyYaml.edges
-                  .filter(({ node }) => node.party_faction === "ฝ่ายค้าน")
-                  .map(({ node }) => (
-                    <li>
-                      <Link to={node.fields.slug}>{node.name}</Link>
-                    </li>
-                  ))}
-              </ul>
+            {data.allVotelogYaml.edges.map(({ node }) => (
+              <VoteLogCard
+                key={node.id}
+                css={{
+                  width: `calc(${100 / 2}% - 2rem)`,
+                  marginBottom: "2rem",
+                  "&:nth-child(2n+1)": {
+                    marginRight: "2rem",
+                  },
+                }}
+                legal_title={node.legal_title}
+                legal_title_en={node.en.legal_title}
+                passed={node.passed}
+                approve={node.approve}
+                disprove={node.disprove}
+                abstained={node.abstained}
+                absent={node.absent}
+                total_voter={node.total_voter}
+                vote_date={node.vote_date}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        css={{
+          ...cssSectionWhite,
+        }}
+      >
+        <div className="container">
+          <h2 css={{ ...cssH1 }}>สำรวจตามชนิดและสังกัดผู้แทน</h2>
+
+          <div
+            css={{
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "flex-start",
+              flexWrap: "wrap",
+              marginTop: "6rem",
+            }}
+          >
+            <Link to={"/cabinet"} css={cssPartyTypeCard}>
+              <h3>คณะรัฐมนตรี</h3>
+              <h4>{data.cabinet.totalCount} คน</h4>
+            </Link>
+            <Link to={"/senate"} css={cssPartyTypeCard}>
+              <h3>สมาชิกวุฒิสภา</h3>
+              <h4>{data.senator.totalCount} คน</h4>
+            </Link>
+          </div>
+
+          <div>
+            <h3
+              css={{
+                fontSize: "3.6rem",
+                textAlign: "center",
+                marginTop: "4rem",
+              }}
+            >
+              สมาชิกสภาผู้แทนราษฎร
+            </h3>
+            <div
+              css={{
+                display: "flex",
+                justifyContent: "flex-start",
+                alignItems: "flex-start",
+                flexWrap: "wrap",
+                marginTop: "2rem",
+              }}
+            >
+              <div css={cssMPColumn}>
+                <h3>พรรคร่วมรัฐบาล ({data.partyCoalition.totalCount})</h3>
+                <ul>
+                  {data.allPartyYaml.edges
+                    .filter(({ node }) => node.party_faction === "ร่วมรัฐบาล")
+                    .map(({ node }) => (
+                      <li>
+                        <Link to={node.fields.slug}>{node.name}</Link>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+              <div css={cssMPColumn}>
+                <h3>พรรคฝ่ายค้าน ({data.partyOpposition.totalCount})</h3>
+                <ul>
+                  {data.allPartyYaml.edges
+                    .filter(({ node }) => node.party_faction === "ฝ่ายค้าน")
+                    .map(({ node }) => (
+                      <li>
+                        <Link to={node.fields.slug}>{node.name}</Link>
+                      </li>
+                    ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </Layout>
-)
+      </section>
+    </Layout>
+  )
+}
 
 export default IndexPage
