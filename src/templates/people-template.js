@@ -183,10 +183,7 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
           paddingBottom: "5.2rem",
         }}
       >
-        <div
-          className="container"
-          css={{ display: "flex", flexDirection: "column" }}
-        >
+        <div className="container">
           <div css={{ display: "flex", marginBottom: "3.6rem" }}>
             <div
               css={{
