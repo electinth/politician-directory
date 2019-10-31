@@ -4,6 +4,7 @@ import { css } from "@emotion/core"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ExternalLink from "../components/externalLink"
 import { ageFromBirthdate, politicianPicture } from "../utils"
 
 import styles from "./people-template.module.css"
@@ -157,13 +158,9 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
               {" / "}
               <span>หนี้สิน {peopleYaml.deby}</span>
               {" / "}
-              <a
-                href="https://elect.in.th/politics-and-business"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <ExternalLink href="https://elect.in.th/politics-and-business">
                 ตรวจสอบประวัติทางธุรกิจ
-              </a>
+              </ExternalLink>
             </div>
 
             <hr className={`${styles.hr}`} />
@@ -187,14 +184,7 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
           </blockquote>
           <div className="quotes-reference">
             — {`${peopleYaml.title} ${peopleYaml.name} ${peopleYaml.lastname}`}(
-            <a
-              href={peopleYaml.quotes_url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              อ้างอิง
-            </a>
-            )
+            <ExternalLink href={peopleYaml.quotes_url}>อ้างอิง</ExternalLink>)
           </div>
         </div>
       </section>
