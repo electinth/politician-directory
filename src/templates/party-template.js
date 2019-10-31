@@ -56,8 +56,7 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
   return (
     <Layout
       pageStyles={{
-        background:
-          partyYaml.party_faction === "ร่วมรัฐบาล" ? "#ffeeee" : "#eeeeff",
+        background: partyYaml.color,
       }}
     >
       <SEO title="พรรค" />
