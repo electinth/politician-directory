@@ -57,7 +57,11 @@ const cssSectionBlack = {
   },
   blockquote: {
     color: "var(--cl-white)",
-    lineHeight: 1.5,
+    lineHeight: 1.8,
+    border: "none",
+    fontSize: "3.6rem",
+    fontStyle: "normal",
+    fontFamily: "var(--ff-title)",
   },
 }
 
@@ -175,16 +179,52 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
       <section
         css={{
           ...cssSectionBlack,
+          paddingTop: "6.4rem",
+          paddingBottom: "5.2rem",
         }}
       >
-        <div className="container">
-          <span css={{ color: "#fcbbdd", fontSize: "3.6rem" }}>"</span>
-          <blockquote css={{ fontSize: "3.6rem" }}>
-            {peopleYaml.quotes}
-          </blockquote>
-          <div className="quotes-reference">
-            — {`${peopleYaml.title} ${peopleYaml.name} ${peopleYaml.lastname}`}(
-            <ExternalLink href={peopleYaml.quotes_url}>อ้างอิง</ExternalLink>)
+        <div
+          className="container"
+          css={{ display: "flex", flexDirection: "column" }}
+        >
+          <div css={{ display: "flex", marginBottom: "3.6rem" }}>
+            <div
+              css={{
+                fontSize: "4.8rem",
+                fontFamily: "var(--ff-title)",
+                marginRight: "1.6rem",
+              }}
+            >
+              "
+            </div>
+            <blockquote>{peopleYaml.quotes}</blockquote>
+          </div>
+          <div
+            css={{
+              display: "flex",
+              justifyContent: "flex-end",
+              fontFamily: "var(--ff-title)",
+              fontSize: "3.6rem",
+            }}
+          >
+            <div css={{ marginRight: "2rem" }}>—</div>
+            <div>
+              <div css={{ marginBottom: "0.5rem" }}>
+                {`${peopleYaml.title} ${peopleYaml.name} ${peopleYaml.lastname}`}
+              </div>
+              <div>
+                <ExternalLink
+                  href={peopleYaml.quotes_url}
+                  css={{
+                    textDecoration: "underline",
+                    fontSize: "2.4rem",
+                    color: "white",
+                  }}
+                >
+                  อ้างอิง
+                </ExternalLink>
+              </div>
+            </div>
           </div>
         </div>
       </section>
