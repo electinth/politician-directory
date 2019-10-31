@@ -195,7 +195,7 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
                 marginRight: "1.6rem",
               }}
             >
-              "
+              “
             </div>
             <blockquote>{peopleYaml.quotes}</blockquote>
           </div>
