@@ -11,7 +11,9 @@
 
 - [Development](#development)
 - [Getting Started for Contributers](#getting-started-for-contributers)
-- [Design & Architecture](#design--architecture)
+- [Reference](#reference)
+  - [Design & Architecture](#design--architecture)
+  - [Data Dictionary](#data-dictionary)
 - [Glossary](#glossary)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

@@ -1,11 +1,10 @@
 import React, { useState } from "react"
 import { graphql, Link } from "gatsby"
-import _ from "lodash"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ExternalLink from "../components/externalLink"
-import { getThaiName, partyLogo, politicianPicture } from "../utils"
+import { partyLogo, politicianPicture } from "../utils"
 
 export const query = graphql`
   query($slug: String!, $party: String!) {

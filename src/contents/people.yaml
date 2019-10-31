@@ -6,7 +6,7 @@
     title: General
     name: Prayut
     lastname: Chan-o-cha
-    occupation: Business Person
+    occupation: ''
   is_mp: false
   is_senator: false
   is_cabinet: true
@@ -16,310 +16,6 @@
   mp_province: อุตรดิตถ์
   mp_zone: '1'
   vote: 54669
-  party_position: ''
-  senator_method: ''
-  cabinet_position: []
-  committee: []
-  gender: ชาย
-  birthdate: '1957-12-25'
-  education: ปริญญาโท
-  graduation: []
-  occupation: นักธุรกิจ
-  occupation group: ''
-  prev_polit_pos: []
-  quotes: ''
-  quotes_url: ''
-  asset: ''
-  debt: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-  is_active: true
-  inactive_reason: ''
-  active_since: null
-  inactive_since: null
-  note: ''
-  bio: ''
-- id: '2'
-  title: พลเอก
-  name: ประวิตร
-  lastname: วงษ์สุวรรณ
-  en:
-    title: ''
-    name: ''
-    lastname: ''
-    occupation: Politician
-  is_mp: false
-  is_senator: false
-  is_cabinet: true
-  party: ''
-  party_faction: ''
-  mp_type: ''
-  mp_province: ''
-  mp_zone: '14'
-  vote: null
-  party_position: ''
-  senator_method: ''
-  cabinet_position: []
-  committee: []
-  gender: ชาย
-  birthdate: '1952-03-01'
-  education: ปริญญาเอก
-  graduation: []
-  occupation: นักการเมือง
-  occupation group: ''
-  prev_polit_pos: []
-  quotes: ''
-  quotes_url: ''
-  asset: ''
-  debt: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-  is_active: true
-  inactive_reason: ''
-  active_since: null
-  inactive_since: null
-  note: ''
-  bio: ''
-- id: '3'
-  title: ดร.
-  name: สมคิด
-  lastname: จาตุศรีพิทักษ์
-  en:
-    title: ''
-    name: ''
-    lastname: ''
-    occupation: Lawyer
-  is_mp: false
-  is_senator: false
-  is_cabinet: true
-  party: ''
-  party_faction: ''
-  mp_type: ''
-  mp_province: นราธิวาส
-  mp_zone: '4'
-  vote: 40807
-  party_position: ''
-  senator_method: ''
-  cabinet_position: []
-  committee: []
-  gender: ชาย
-  birthdate: '1968-10-19'
-  education: ปริญญาโท
-  graduation: []
-  occupation: ทนายความ
-  occupation group: ''
-  prev_polit_pos: []
-  quotes: ''
-  quotes_url: ''
-  asset: ''
-  debt: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-  is_active: true
-  inactive_reason: ''
-  active_since: null
-  inactive_since: null
-  note: ''
-  bio: ''
-- id: '4'
-  title: ดร.
-  name: วิษณุ
-  lastname: เครืองาม
-  en:
-    title: ''
-    name: ''
-    lastname: ''
-    occupation: Politician
-  is_mp: false
-  is_senator: false
-  is_cabinet: true
-  party: ''
-  party_faction: ''
-  mp_type: ''
-  mp_province: ''
-  mp_zone: '7'
-  vote: null
-  party_position: ''
-  senator_method: ''
-  cabinet_position: []
-  committee: []
-  gender: ชาย
-  birthdate: '1964-02-02'
-  education: ปริญญาตรี
-  graduation: []
-  occupation: นักการเมือง
-  occupation group: ''
-  prev_polit_pos: []
-  quotes: ''
-  quotes_url: ''
-  asset: ''
-  debt: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-  is_active: true
-  inactive_reason: ''
-  active_since: null
-  inactive_since: null
-  note: ''
-  bio: ''
-- id: '5'
-  title: พลเอก
-  name: ชัยชาญ
-  lastname: ช้างมงคล
-  en:
-    title: ''
-    name: ''
-    lastname: ''
-    occupation: ''
-  is_mp: false
-  is_senator: false
-  is_cabinet: true
-  party: ''
-  party_faction: ''
-  mp_type: ''
-  mp_province: ''
-  mp_zone: ''
-  vote: null
-  party_position: ''
-  senator_method: ส.ว. คสช.เลือก
-  cabinet_position: []
-  committee: []
-  gender: หญิง
-  birthdate: '1955-05-24'
-  education: ''
-  graduation: []
-  occupation: ข้าราชการ
-  occupation group: ''
-  prev_polit_pos:
-    - สนช.
-    - กมธ. ยกร่าง
-  quotes: ''
-  quotes_url: ''
-  asset: ''
-  debt: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-  is_active: true
-  inactive_reason: ''
-  active_since: null
-  inactive_since: null
-  note: ''
-  bio: ''
-- id: '6'
-  title: นาย
-  name: อุตตม
-  lastname: สาวนายน
-  en:
-    title: ''
-    name: ''
-    lastname: ''
-    occupation: ''
-  is_mp: false
-  is_senator: false
-  is_cabinet: true
-  party: ''
-  party_faction: ''
-  mp_type: ''
-  mp_province: ''
-  mp_zone: ''
-  vote: null
-  party_position: ''
-  senator_method: ส.ว. เลือกกันเอง
-  cabinet_position: []
-  committee: []
-  gender: ชาย
-  birthdate: null
-  education: ''
-  graduation: []
-  occupation: เอกชน
-  occupation group: ''
-  prev_polit_pos: []
-  quotes: ''
-  quotes_url: ''
-  asset: ''
-  debt: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-  is_active: true
-  inactive_reason: ''
-  active_since: null
-  inactive_since: null
-  note: ''
-  bio: ''
-- id: '7'
-  title: นาย
-  name: ดอน
-  lastname: ปรมัตถ์วินัย
-  en:
-    title: ''
-    name: ''
-    lastname: ''
-    occupation: ''
-  is_mp: false
-  is_senator: false
-  is_cabinet: true
-  party: ''
-  party_faction: ''
-  mp_type: ''
-  mp_province: ''
-  mp_zone: ''
-  vote: null
-  party_position: ''
-  senator_method: ส.ว. คสช.เลือก
-  cabinet_position: []
-  committee: []
-  gender: ชาย
-  birthdate: '1956-08-31'
-  education: ''
-  graduation: []
-  occupation: เอกชน
-  occupation group: ''
-  prev_polit_pos:
-    - สนช.
-  quotes: ถ้าผมจะกล่าวบ้างว่า ผู้อภิปรายเป็นส.ส.ขี้ข้าโจร..."
-  quotes_url: 'https://www.youtube.com/watch?v=k4hwR7ITPb8'
-  asset: ''
-  debt: ''
-  facebook: ''
-  twitter: ''
-  email: ''
-  phone: ''
-  is_active: true
-  inactive_reason: ''
-  active_since: null
-  inactive_since: null
-  note: ''
-  bio: ''
-- id: '8'
-  title: นาย
-  name: พิพัฒน์
-  lastname: รัชกิจประการ
-  en:
-    title: ''
-    name: ''
-    lastname: ''
-    occupation: ''
-  is_mp: false
-  is_senator: false
-  is_cabinet: true
-  party: ''
-  party_faction: ''
-  mp_type: ''
-  mp_province: ''
-  mp_zone: ''
-  vote: null
   party_position: ''
   senator_method: ''
   cabinet_position:
@@ -350,10 +46,10 @@
   inactive_since: null
   note: ''
   bio: ''
-- id: '9'
-  title: นาย
-  name: จุติ
-  lastname: ไกรฤกษ์
+- id: '2'
+  title: พลเอก
+  name: ประวิตร
+  lastname: วงษ์สุวรรณ
   en:
     title: ''
     name: ''
@@ -362,11 +58,11 @@
   is_mp: false
   is_senator: false
   is_cabinet: true
-  party: ประชาธิปัตย์
-  party_faction: ร่วมรัฐบาล
-  mp_type: บัญชีรายชื่อ
+  party: ''
+  party_faction: ''
+  mp_type: ''
   mp_province: ''
-  mp_zone: '8'
+  mp_zone: '14'
   vote: null
   party_position: ''
   senator_method: ''
@@ -383,7 +79,7 @@
     - รัฐมนตรีว่าการกระทรวงกลาโหม
   quotes: >-
     “จำนำข้าวเสียหายกี่แสนล้าน เรือดำน้ำซื้อแค่หมื่นกว่าล้าน
-    เงินหมื่นกว่าล้านซื้อเรือดำน้ำได้ 50  ลำเลยไหม
+    เงินหมื่นกว่าล้านซื้อเรือดำน้ำได้ 50 ลำเลยไหม
     ไม่มีอะไรเสียหายเลยเสียเงินไปแต่ได้ของมา
     แต่จำนำข้าวหายไปหมดไม่ถึงตัวประชาชน”
   quotes_url: >-
@@ -400,10 +96,10 @@
   inactive_since: null
   note: ''
   bio: ''
-- id: '10'
-  title: นาย
-  name: สุวิทย์
-  lastname: เมษินทรีย์
+- id: '3'
+  title: ดร.
+  name: สมคิด
+  lastname: จาตุศรีพิทักษ์
   en:
     title: ''
     name: ''
@@ -415,9 +111,9 @@
   party: ''
   party_faction: ''
   mp_type: ''
-  mp_province: ''
-  mp_zone: ''
-  vote: null
+  mp_province: นราธิวาส
+  mp_zone: '4'
+  vote: 40807
   party_position: ''
   senator_method: ''
   cabinet_position:
@@ -455,10 +151,10 @@
   inactive_since: null
   note: ''
   bio: ''
-- id: '11'
-  title: นาย
-  name: เฉลิมชัย
-  lastname: ศรีอ่อน
+- id: '4'
+  title: ดร.
+  name: วิษณุ
+  lastname: เครืองาม
   en:
     title: ''
     name: ''
@@ -467,11 +163,11 @@
   is_mp: false
   is_senator: false
   is_cabinet: true
-  party: ประชาธิปัตย์
-  party_faction: ร่วมรัฐบาล
-  mp_type: แบ่งเขต
-  mp_province: ประจวบคีรีขันธ์
-  mp_zone: '2'
+  party: ''
+  party_faction: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: '7'
   vote: null
   party_position: ''
   senator_method: ''
@@ -506,6 +202,307 @@
   inactive_since: null
   note: ''
   bio: ''
+- id: '5'
+  title: พลเอก
+  name: ชัยชาญ
+  lastname: ช้างมงคล
+  en:
+    title: ''
+    name: ''
+    lastname: ''
+    occupation: ''
+  is_mp: false
+  is_senator: false
+  is_cabinet: true
+  party: ''
+  party_faction: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
+  vote: null
+  party_position: ''
+  senator_method: ''
+  cabinet_position: []
+  committee: []
+  gender: ''
+  birthdate: null
+  education: ''
+  graduation: []
+  occupation: ''
+  occupation group: ''
+  prev_polit_pos: []
+  quotes: ''
+  quotes_url: ''
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+  is_active: true
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '6'
+  title: นาย
+  name: อุตตม
+  lastname: สาวนายน
+  en:
+    title: ''
+    name: ''
+    lastname: ''
+    occupation: ''
+  is_mp: false
+  is_senator: false
+  is_cabinet: true
+  party: ''
+  party_faction: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
+  vote: null
+  party_position: ''
+  senator_method: ''
+  cabinet_position: []
+  committee: []
+  gender: ''
+  birthdate: null
+  education: ''
+  graduation: []
+  occupation: ''
+  occupation group: ''
+  prev_polit_pos: []
+  quotes: ''
+  quotes_url: ''
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+  is_active: true
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '7'
+  title: นาย
+  name: ดอน
+  lastname: ปรมัตถ์วินัย
+  en:
+    title: ''
+    name: ''
+    lastname: ''
+    occupation: ''
+  is_mp: false
+  is_senator: false
+  is_cabinet: true
+  party: ''
+  party_faction: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
+  vote: null
+  party_position: ''
+  senator_method: ''
+  cabinet_position: []
+  committee: []
+  gender: ''
+  birthdate: null
+  education: ''
+  graduation: []
+  occupation: ''
+  occupation group: ''
+  prev_polit_pos: []
+  quotes: ''
+  quotes_url: ''
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+  is_active: true
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '8'
+  title: นาย
+  name: พิพัฒน์
+  lastname: รัชกิจประการ
+  en:
+    title: ''
+    name: ''
+    lastname: ''
+    occupation: ''
+  is_mp: false
+  is_senator: false
+  is_cabinet: true
+  party: ''
+  party_faction: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
+  vote: null
+  party_position: ''
+  senator_method: ''
+  cabinet_position: []
+  committee: []
+  gender: ''
+  birthdate: null
+  education: ''
+  graduation: []
+  occupation: ''
+  occupation group: ''
+  prev_polit_pos: []
+  quotes: ''
+  quotes_url: ''
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+  is_active: true
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '9'
+  title: นาย
+  name: จุติ
+  lastname: ไกรฤกษ์
+  en:
+    title: ''
+    name: ''
+    lastname: ''
+    occupation: ''
+  is_mp: false
+  is_senator: false
+  is_cabinet: true
+  party: ประชาธิปัตย์
+  party_faction: ร่วมรัฐบาล
+  mp_type: บัญชีรายชื่อ
+  mp_province: ''
+  mp_zone: '8'
+  vote: null
+  party_position: ''
+  senator_method: ''
+  cabinet_position: []
+  committee: []
+  gender: ''
+  birthdate: null
+  education: ''
+  graduation: []
+  occupation: ''
+  occupation group: ''
+  prev_polit_pos: []
+  quotes: ''
+  quotes_url: ''
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+  is_active: true
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '10'
+  title: นาย
+  name: สุวิทย์
+  lastname: เมษินทรีย์
+  en:
+    title: ''
+    name: ''
+    lastname: ''
+    occupation: ''
+  is_mp: false
+  is_senator: false
+  is_cabinet: true
+  party: ''
+  party_faction: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
+  vote: null
+  party_position: ''
+  senator_method: ''
+  cabinet_position: []
+  committee: []
+  gender: ''
+  birthdate: null
+  education: ''
+  graduation: []
+  occupation: ''
+  occupation group: ''
+  prev_polit_pos: []
+  quotes: ''
+  quotes_url: ''
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+  is_active: true
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
+- id: '11'
+  title: นาย
+  name: เฉลิมชัย
+  lastname: ศรีอ่อน
+  en:
+    title: ''
+    name: ''
+    lastname: ''
+    occupation: ''
+  is_mp: false
+  is_senator: false
+  is_cabinet: true
+  party: ประชาธิปัตย์
+  party_faction: ร่วมรัฐบาล
+  mp_type: แบ่งเขต
+  mp_province: ประจวบคีรีขันธ์
+  mp_zone: '2'
+  vote: null
+  party_position: ''
+  senator_method: ''
+  cabinet_position: []
+  committee: []
+  gender: ''
+  birthdate: null
+  education: ''
+  graduation: []
+  occupation: ''
+  occupation group: ''
+  prev_polit_pos: []
+  quotes: ''
+  quotes_url: ''
+  asset: ''
+  debt: ''
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+  is_active: true
+  inactive_reason: ''
+  active_since: null
+  inactive_since: null
+  note: ''
+  bio: ''
 - id: '12'
   title: นางสาว
   name: มนัญญา
@@ -524,20 +521,17 @@
   mp_province: ''
   mp_zone: '6'
   vote: null
-  party_position: หัวหน้าพรรคประชาธิปัตย์
+  party_position: ''
   senator_method: ''
-  cabinet_position:
-    - รองนายกรัฐมนตรี
-    - รัฐมนตรีว่าการกระทรวงพาณิชย์
+  cabinet_position: []
   committee: []
-  gender: ชาย
-  birthdate: '1956-01-01'
-  education: ปริญญาโท
+  gender: ''
+  birthdate: null
+  education: ''
   graduation: []
-  occupation: นักการเมือง
+  occupation: ''
   occupation group: ''
-  prev_polit_pos:
-    - รองหัวหน้าพรรคประชาธิปัตย์
+  prev_polit_pos: []
   quotes: ''
   quotes_url: ''
   asset: ''
@@ -4053,17 +4047,20 @@
   mp_province: ''
   mp_zone: '6'
   vote: null
-  party_position: ''
+  party_position: หัวหน้าพรรคประชาธิปัตย์
   senator_method: ''
-  cabinet_position: []
+  cabinet_position:
+    - รองนายกรัฐมนตรี
+    - รัฐมนตรีว่าการกระทรวงพาณิชย์
   committee: []
-  gender: ''
+  gender: ชาย
   birthdate: null
-  education: ''
+  education: ปริญญาโท
   graduation: []
-  occupation: ''
+  occupation: นักการเมือง
   occupation group: ''
-  prev_polit_pos: []
+  prev_polit_pos:
+    - รองหัวหน้าพรรคประชาธิปัตย์
   quotes: ''
   quotes_url: ''
   asset: ''
