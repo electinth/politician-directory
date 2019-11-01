@@ -241,7 +241,7 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
                   }}
                 >
                   <div>
-                    <Link to={`/people/${member.name}_${member.lastname}`}>
+                    <Link to={`/people/${member.name}-${member.lastname}`}>
                       <div
                         css={{
                           borderRadius: 84,
@@ -267,7 +267,7 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
                       a: { color: "inherit" },
                     }}
                   >
-                    <Link to={`/people/${member.name}_${member.lastname}`}>
+                    <Link to={`/people/${member.name}-${member.lastname}`}>
                       {`${member.title} ${member.name} ${member.lastname}`}
                     </Link>
                   </div>
