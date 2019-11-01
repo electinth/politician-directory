@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import Button from "../components/button"
 import Hero from "../components/hero"
 import VoteLogCard from "../components/voteLogCard"
+import Waffle from "../components/waffle"
 
 export const query = graphql`
   query {
@@ -173,28 +174,6 @@ const cssMPColumn = {
   },
 }
 
-const split_array = (array, size, callback) =>
-  Array(Math.ceil(array.length / size))
-    .fill()
-    .map((_, index) => index * size)
-    .map(start => array.slice(start, start + size))
-    .map(callback)
-const full_name = node => `${node.title}${node.name} ${node.lastname}`
-const waffle = (data, cls) =>
-  split_array(data, 100, hundred => (
-    <div class="hundred">
-      {split_array(hundred, 25, quarter => (
-        <div class="quarter">
-          {quarter.map(({ node }) => (
-            <div title={full_name(node)} class={cls}>
-              {/* <Link to={node.fields.slug}>{full_name(node)}</Link> */}
-            </div>
-          ))}
-        </div>
-      ))}
-    </div>
-  ))
-
 const IndexPage = ({ data }) => {
   let prop_of_interest = {
     prop: `is_cabinet`,
@@ -267,11 +246,10 @@ const IndexPage = ({ data }) => {
               ของผู้แทนในสภาทั้งหมดเป็น{prop_of_interest.name}
             </span>
           </h2>
-          <div class="waffle">
-            {waffle(data_of_interest, "person of-interest")}
-            <div class="line"></div>
-            {waffle(data_the_rest, "person other")}
-          </div>
+          <Waffle
+            // key="parliament"
+            data={[data_of_interest, data_the_rest]}
+          />
         </div>
       </section>
 
