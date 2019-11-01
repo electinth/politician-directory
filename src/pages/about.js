@@ -56,7 +56,10 @@ const AboutPage = () => (
             <ExternalLink href="https://www.instagram.com/namsaisupavong/">
               @namsaisupavong
             </ExternalLink>
-          </div>
+            <ExternalLink href="https://web.facebook.com/?_rdc=1&_rdr">
+              TEnsor4
+            </ExternalLink>
+       ,   </div>
         </div>
       </div>
     </section>
