@@ -42,13 +42,15 @@ const AboutPage = () => (
           </div>
           <div>
             <ExternalLink href="https://github.com/rapee">
-              Rapee Suveeranont Panut Wibulpolprasert
+              Rapee Suveeranont
             </ExternalLink>
             <ExternalLink href="https://th1nkk1d.xyz">
               Withee Poositasai
             </ExternalLink>
+            <ExternalLink href="https://github.com/Wisawing">
+              Panut Wibulpolprasert
+            </ExternalLink>
           </div>
-
           <div>
             <strong>ออกแบบ 🎨</strong>
           </div>
