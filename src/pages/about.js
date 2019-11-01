@@ -44,14 +44,17 @@ const AboutPage = () => (
             <ExternalLink href="https://github.com/rapee">
               Rapee Suveeranont
             </ExternalLink>{" "}
+            <ExternalLink href="https://github.com/Nakanan">
+              TEnsor4
+            </ExternalLink>{" "}
             <ExternalLink href="https://th1nkk1d.xyz">
               Withee Poositasai
             </ExternalLink>{" "}
-            <ExternalLink href="https://github.com/Wisawing">
-              Panut Wibulpolprasert
-            </ExternalLink>{" "}
             <ExternalLink href="https://github.com/noimeta">
               Noi Meta 😼
+            </ExternalLink>{" "}
+            <ExternalLink href="https://github.com/Wisawing">
+              Panut Wibulpolprasert
             </ExternalLink>
           </div>
           <div>
