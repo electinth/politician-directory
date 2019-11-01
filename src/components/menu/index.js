@@ -10,15 +10,31 @@ const Menu = () => {
       <h2 style={{ padding: 0, fontSize: "2.4rem", color: "#fcbbdd" }}>
         Thai Politician Directory
       </h2>
-      <Link
-        to={"/"}
-        style={{
-          color: "white",
-          textDecoration: `none`,
-        }}
-      >
-        ABC
-      </Link>
+
+      <ul>
+        <li>
+          <Link
+            to={"/"}
+            style={{
+              color: "white",
+              textDecoration: `none`,
+            }}
+          >
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            to={"/about"}
+            style={{
+              color: "white",
+              textDecoration: `none`,
+            }}
+          >
+            About
+          </Link>
+        </li>
+      </ul>
     </div>
   )
 }
