@@ -48,6 +48,11 @@ const AboutPage = () => (
               Withee Poositasai
             </ExternalLink>
           </div>
+          <div>
+            <ExternalLink href="https://github.com/noimeta">
+              Noi Meta 😼
+            </ExternalLink>
+          </div>
 
           <div>
             <strong>ออกแบบ 🎨</strong>
