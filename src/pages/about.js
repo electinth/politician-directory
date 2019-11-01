@@ -46,6 +46,12 @@ const AboutPage = () => (
             </ExternalLink>{" "}
             <ExternalLink href="https://github.com/Nakanan">
               TEnsor4
+            </ExternalLink>{" "}
+            <ExternalLink href="https://th1nkk1d.xyz">
+              Withee Poositasai
+            </ExternalLink>{" "}
+            <ExternalLink href="https://github.com/noimeta">
+              Noi Meta 😼
             </ExternalLink>
           </div>
 
