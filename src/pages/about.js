@@ -50,6 +50,9 @@ const AboutPage = () => (
             <ExternalLink href="https://github.com/Wisawing">
               Panut Wibulpolprasert
             </ExternalLink>
+            <ExternalLink href="https://github.com/noimeta">
+              Noi Meta 😼
+            </ExternalLink>
           </div>
           <div>
             <strong>ออกแบบ 🎨</strong>
