@@ -11,12 +11,12 @@ const split_array = (array, size, callback) =>
     .map(callback)
 const full_name = node => `${node.title}${node.name} ${node.lastname}`
 const waffle = (data, cls) =>
-  split_array(data, 100, hundred => (
-    <div className="hundred">
-      {split_array(hundred, 25, quarter => (
-        <div className="quarter">
+  split_array(data, 100, (hundred, hi) => (
+    <div key={hi} className="hundred">
+      {split_array(hundred, 25, (quarter, qi) => (
+        <div key={qi} className="quarter">
           {quarter.map(({ node }) => (
-            <div title={full_name(node)} className={cls}>
+            <div key={node.id} title={full_name(node)} className={cls}>
               {/* <Link to={node.fields.slug}>{full_name(node)}</Link> */}
             </div>
           ))}
