@@ -44,6 +44,9 @@ const AboutPage = () => (
             <ExternalLink href="https://github.com/rapee">
               Rapee Suveeranont Panut Wibulpolprasert
             </ExternalLink>
+            <ExternalLink href="https://th1nkk1d.xyz">
+              Withee Poositasai
+            </ExternalLink>
           </div>
 
           <div>
