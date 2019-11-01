@@ -43,7 +43,7 @@ const AboutPage = () => (
           <div>
             <ExternalLink href="https://github.com/rapee">
               Rapee Suveeranont
-            </ExternalLink>
+            </ExternalLink>{" "}
             <ExternalLink href="https://github.com/Nakanan">
               TEnsor4
             </ExternalLink>
