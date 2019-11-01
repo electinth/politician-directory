@@ -44,6 +44,9 @@ const AboutPage = () => (
             <ExternalLink href="https://github.com/rapee">
               Rapee Suveeranont
             </ExternalLink>
+            <ExternalLink href="https://github.com/Nakanan">
+              TEnsor4
+            </ExternalLink>
           </div>
 
           <div>
@@ -56,10 +59,7 @@ const AboutPage = () => (
             <ExternalLink href="https://www.instagram.com/namsaisupavong/">
               @namsaisupavong
             </ExternalLink>
-            <ExternalLink href="https://web.facebook.com/?_rdc=1&_rdr">
-              TEnsor4
-            </ExternalLink>
-       ,   </div>
+          </div>
         </div>
       </div>
     </section>
