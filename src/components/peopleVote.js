@@ -61,7 +61,7 @@ const PeopleVote = ({
             <li
               onClick={() => handleFilter(choice)}
               css={
-                activeFilter == choice
+                String(activeFilter) === choice
                   ? css`
                       color: ${voteColor[choice]};
                       border-bottom: 3px ${voteColor[choice]} solid;

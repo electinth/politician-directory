@@ -86,9 +86,8 @@ const cssSectionBlack = {
 
 class PeoplePage extends React.Component {
   state = {
-    peopleYaml: this.props.data.peopleYaml,
-    voteLog: this.props.data.peopleVoteYaml.votelog,
-    allVote: this.props.data.allVotelogYaml.nodes,
+    peopleYaml: this.props.peopleYaml,
+    allVote: this.props.allVote,
     activeFilter: 0,
     filterChoiceState: [
       { name: "ทั้งหมด", choice: 0 },
@@ -99,37 +98,20 @@ class PeoplePage extends React.Component {
     ],
   }
 
-  mergeVote = (voteLog, allVote) => {
-    for (const [k, v] of Object.entries(voteLog)) {
-      allVote.forEach(log => {
-        if (`_${log.id}` == k) {
-          log["choice"] = v
-        }
-      })
-    }
-  }
-
   handleFilter = choice => {
-    let allVote = this.props.data.allVotelogYaml.nodes
+    let allVote = this.props.allVote
     if (choice === 0) {
       this.setState({ allVote, activeFilter: choice })
     } else {
       allVote = _.filter(allVote, function(o) {
-        return o["choice"] == choice
+        return o["choice"] === String(choice)
       })
       this.setState({ allVote, activeFilter: choice })
     }
   }
 
   render() {
-    const {
-      peopleYaml,
-      voteLog,
-      allVote,
-      activeFilter,
-      filterChoiceState,
-    } = this.state
-    this.mergeVote(voteLog, allVote)
+    const { peopleYaml, allVote, activeFilter, filterChoiceState } = this.state
     return (
       <Layout
         pageStyles={{
@@ -301,4 +283,19 @@ class PeoplePage extends React.Component {
   }
 }
 
-export default PeoplePage
+export default ({ data }) => {
+  const peopleYaml = data.peopleYaml
+  const voteLog = data.peopleVoteYaml.votelog
+  const allVote = data.allVotelogYaml.nodes
+  // merge allVote and voteLog into allVote
+  for (const [k, v] of Object.entries(voteLog)) {
+    allVote.forEach(log => {
+      if (`_${log.id}` === String(k)) {
+        log["choice"] = v
+      }
+    })
+  }
+  console.log(allVote)
+
+  return <PeoplePage peopleYaml={peopleYaml} allVote={allVote} />
+}
