@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import FeatureIcon from "./featureIcon"
 
-const HeroFeature = ({ title, subtitle }) => (
+const HeroFeature = ({ title, subtitle, image }) => (
   <div
     style={{
       marginBottom: "1.08rem",
@@ -16,7 +16,7 @@ const HeroFeature = ({ title, subtitle }) => (
       padding: "0 .5rem",
     }}
   >
-    <FeatureIcon />
+    <FeatureIcon image={image} />
     <h2
       style={{ textAlign: "center", fontSize: "2.4rem", marginBottom: "2rem" }}
     >
