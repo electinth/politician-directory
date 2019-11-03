@@ -25,6 +25,8 @@ const chartStyle = {
 
 const chartCellStyle = {
   ...columnStyle,
+  backgroundColor: "var(--cl-black)",
+  color: "var(--cl-white)",
   fontSize: "75%",
   padding: "10px 2px",
   borderRight: "inherit",
@@ -36,13 +38,14 @@ const chartCellStyle = {
 const PartyProfileBar = () => {
   const dataset = [
     { label: "label 1", value: 40 },
-    { label: "label 2", value: 60 },
+    { label: "label 2", value: 30 },
+    { label: "label 3", value: 30 },
   ]
 
   return (
     <>
       <div css={labelStyle}>
-        {dataset.map(data => (
+        {dataset.map((data, index) => (
           <div
             key={data.label}
             css={{ ...columnStyle, width: `${data.value}%` }}
@@ -52,12 +55,16 @@ const PartyProfileBar = () => {
         ))}
       </div>
       <div css={chartStyle}>
-        {dataset.map(data => (
+        {dataset.map((data, index) => (
           <div
             key={data.label}
-            css={{ ...chartCellStyle, width: `${data.value}%` }}
+            css={{
+              ...chartCellStyle,
+              width: `${data.value}%`,
+              filter: `invert(${1 - index / (dataset.length - 1)})`,
+            }}
           >
-            {data.value}%
+            <div>{data.value}%</div>
           </div>
         ))}
       </div>
