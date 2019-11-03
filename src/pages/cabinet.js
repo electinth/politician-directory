@@ -40,7 +40,7 @@ const CabinetPage = () => (
     </h1>
     <h2>Cabinet</h2>
 
-    <div css={{ width: "500px" }}>
+    <div css={{ width: "600px" }}>
       <StackedBarChart data={mpTypes}></StackedBarChart>
       <StackedBarChart data={genders}></StackedBarChart>
       <StackedBarChart data={ages}></StackedBarChart>
