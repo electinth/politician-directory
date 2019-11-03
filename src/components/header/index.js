@@ -111,11 +111,11 @@ const Header = ({ siteTitle }) => {
               <p style={{ marginRight: "1rem", marginBottom: 0 }}>search</p>
             </HiddenOnMobile>
             <div
-              class={`hamburger-icon ${iconClicked ? "animateIcon" : ""}`}
+              className={`hamburger-icon ${iconClicked ? "animateIcon" : ""}`}
               onClick={() => setIconClicked(!iconClicked)}
             >
               <div
-                class={`bar fade-center ${iconClicked ? "bar-white" : ""}`}
+                className={`bar fade-center ${iconClicked ? "bar-white" : ""}`}
               ></div>
             </div>
           </div>
