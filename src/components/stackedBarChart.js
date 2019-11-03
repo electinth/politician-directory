@@ -13,9 +13,9 @@ const StackedBarChart = ({ data, className }) => {
 
   const labelContainer = {
     display: "flex",
-    marginBottom: "0.4rem",
-    minHeight: "44px",
-    lineHeight: "44px",
+    marginBottom: "0rem",
+    minHeight: "2.4rem",
+    lineHeight: "2.4rem",
   }
 
   const barContainer = {
