@@ -7,21 +7,20 @@ import StackedBarChart from "../components/stackedBarChart"
 
 // Mock for StackedBarChart
 const mpTypes = [
-  { name: "ส.ส.บัญชีรายชื่อ", background: "#000000", value: 33 },
-  { name: "ส.ส.เขต", background: "#000000", value: 20 },
+  { name: "ส.ส. บัญชีรายชื่อ", background: "#ffffff", value: 315 },
+  { name: "ส.ส. เขต", background: "#000000", value: 185 },
 ]
 
 const genders = [
-  { name: "หญิง", background: "#ffffff", value: 15 },
-  { name: "ชาย", background: "#000000", value: 38 },
+  { name: "เพศหญิง", background: "#ffffff", value: 125 },
+  { name: "เพศชาย", background: "#000000", value: 375 },
 ]
 
 const ages = [
-  { name: "20-29", background: "#eeeeee", value: 11 },
-  { name: "30-39", background: "#d5d1d1", value: 12 },
-  { name: "40-49", background: "#c1bbbb", value: 11 },
-  { name: "50-59", background: "#9a9292", value: 11 },
-  { name: "60+", background: "#222222", value: 8 },
+  { name: "25 - 38 ปี", background: "#eeeeee", value: 71 },
+  { name: "25 - 38 ปี", background: "#d5d1d1", value: 181 },
+  { name: "39 - 73 ปี", background: "#9a9292", value: 228 },
+  { name: "73 - 91 ปี", background: "#222222", value: 10 },
 ]
 
 const CabinetPage = () => (
