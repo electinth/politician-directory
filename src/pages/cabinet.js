@@ -3,25 +3,25 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import SegmentBar, { SegmentProp } from "../components/segmentBar"
+import StackedBarChart from "../components/stackedBarChart"
 
-// Mock for SegmentBar
+// Mock for StackedBarChart
 const mpTypes = [
-  new SegmentProp("ส.ส.บัญชีรายชื่อ", "#000000", "#ffffff", 33),
-  new SegmentProp("ส.ส.เขต", "#ffffff", "#000000", 20),
+  { name: "ส.ส.บัญชีรายชื่อ", background: "#000000", value: 33 },
+  { name: "ส.ส.เขต", background: "#000000", value: 20 },
 ]
 
 const genders = [
-  new SegmentProp("หญิง", "#000000", "#ffffff", 15),
-  new SegmentProp("ชาย", "#ffffff", "#000000", 38),
+  { name: "หญิง", background: "#ffffff", value: 15 },
+  { name: "ชาย", background: "#000000", value: 38 },
 ]
 
 const ages = [
-  new SegmentProp("20-29", "#000000", "#eeeeee", 11),
-  new SegmentProp("30-39", "#000000", "#d5d1d1", 12),
-  new SegmentProp("40-49", "#000000", "#c1bbbb", 11),
-  new SegmentProp("50-59", "#000000", "#9a9292", 11),
-  new SegmentProp("60+", "#ffffff", "#222222", 8),
+  { name: "20-29", background: "#eeeeee", value: 11 },
+  { name: "30-39", background: "#d5d1d1", value: 12 },
+  { name: "40-49", background: "#c1bbbb", value: 11 },
+  { name: "50-59", background: "#9a9292", value: 11 },
+  { name: "60+", background: "#222222", value: 8 },
 ]
 
 const CabinetPage = () => (
@@ -42,9 +42,9 @@ const CabinetPage = () => (
     <h2>Cabinet</h2>
 
     <div css={{ width: "500px" }}>
-      <SegmentBar segmentProps={mpTypes}></SegmentBar>
-      <SegmentBar segmentProps={genders}></SegmentBar>
-      <SegmentBar segmentProps={ages}></SegmentBar>
+      <StackedBarChart data={mpTypes}></StackedBarChart>
+      <StackedBarChart data={genders}></StackedBarChart>
+      <StackedBarChart data={ages}></StackedBarChart>
     </div>
   </Layout>
 )
