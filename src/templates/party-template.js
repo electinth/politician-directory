@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ExternalLink from "../components/externalLink"
+import PartyProfileBar from "../components/PartyProfileBar"
 import { partyLogo, politicianPicture } from "../utils"
 
 export const query = graphql`
@@ -137,6 +138,7 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
               <p>จำนวนสมาชิกสภาผู้แทนราษฎร {partyYaml.total_member} คน</p>
 
               <h2>ส.ส. บัญชีรายชื่อ / แบ่งเขต</h2>
+              <PartyProfileBar />
               <h2>เพศ</h2>
               <h2>ช่วงอายุ</h2>
               <h2>การศึกษา</h2>
