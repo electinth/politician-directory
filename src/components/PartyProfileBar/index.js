@@ -13,7 +13,7 @@ const columnStyle = {
 
 const labelStyle = {
   ...rowStyle,
-  fontWeight: "bold",
+  fontFamily: "var(--ff-title)",
 }
 
 const chartStyle = {
@@ -32,24 +32,18 @@ const chartCellStyle = {
   },
 }
 
-const PartyProfileBar = () => {
-  const dataset = [
-    { label: "label 1", value: 40, color: "white" },
-    { label: "label 2", value: 30, color: "gray-2" },
-    { label: "label 3", value: 30, color: "black" },
-  ]
-
+const PartyProfileBar = ({ dataset }) => {
   return (
     <>
       <div css={labelStyle}>
-        {dataset.map(({ label, value }, index) => (
+        {dataset.map(({ label, value }) => (
           <div key={label} css={{ ...columnStyle, width: `${value}%` }}>
             {label}
           </div>
         ))}
       </div>
       <div css={chartStyle}>
-        {dataset.map(({ label, value, color }, index) => (
+        {dataset.map(({ label, value, color }) => (
           <div
             key={label}
             css={{

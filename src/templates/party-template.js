@@ -137,8 +137,12 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
               <h2 css={{ ...cssH2 }}>สมาชิกพรรค</h2>
               <p>จำนวนสมาชิกสภาผู้แทนราษฎร {partyYaml.total_member} คน</p>
 
-              <h2>ส.ส. บัญชีรายชื่อ / แบ่งเขต</h2>
-              <PartyProfileBar />
+              <PartyProfileBar
+                dataset={[
+                  { label: "ส.ส. บัญชีรายชื่อ", value: 40, color: "white" },
+                  { label: "ส.ส. แบ่งเขต", value: 60, color: "black" },
+                ]}
+              />
               <h2>เพศ</h2>
               <h2>ช่วงอายุ</h2>
               <h2>การศึกษา</h2>
