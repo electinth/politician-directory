@@ -143,9 +143,39 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
                   { label: "ส.ส. แบ่งเขต", value: 60, color: "black" },
                 ]}
               />
-              <h2>เพศ</h2>
-              <h2>ช่วงอายุ</h2>
-              <h2>การศึกษา</h2>
+              <PartyProfileBar
+                dataset={[
+                  { label: "เพศหญิง", value: 25, color: "white" },
+                  { label: "เพศชาย", value: 75, color: "black" },
+                ]}
+              />
+              <PartyProfileBar
+                dataset={[
+                  { label: "25-38 ปี", value: 30, color: "white" },
+                  { label: "39-73 ปี", value: 50, color: "gray-2" },
+                  { label: "73-91 ปี", value: 20, color: "black" },
+                ]}
+              />
+              <PartyProfileBar
+                dataset={[
+                  { label: "ต่ำกว่า ป.ตรี", value: 10, color: "white" },
+                  { label: "ป. ตรี", value: 40, color: "gray-3" },
+                  { label: "ป. โท", value: 30, color: "gray-2" },
+                  { label: "ป. เอก", value: 20, color: "black" },
+                ]}
+              />
+              <PartyProfileBar
+                dataset={[
+                  { label: "กลุ่มอาชีพกฏหมาย", value: 30, color: "white" },
+                  {
+                    label: "กลุ่มอาชีพนักการเมือง",
+                    value: 20,
+                    color: "gray-3",
+                  },
+                  { label: "กลุ่มอาชีพธุรกิจ", value: 40, color: "gray-2" },
+                  { label: "อื่นๆ", value: 10, color: "black" },
+                ]}
+              />
             </div>
           </div>
         </div>
