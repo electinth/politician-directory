@@ -1,5 +1,4 @@
 import React from "react"
-import { black } from "ansi-colors"
 
 const rowStyle = {
   display: "flex",
@@ -25,8 +24,6 @@ const chartStyle = {
 
 const chartCellStyle = {
   ...columnStyle,
-  backgroundColor: "var(--cl-black)",
-  color: "var(--cl-white)",
   fontSize: "75%",
   padding: "10px 2px",
   borderRight: "inherit",
@@ -37,34 +34,32 @@ const chartCellStyle = {
 
 const PartyProfileBar = () => {
   const dataset = [
-    { label: "label 1", value: 40 },
-    { label: "label 2", value: 30 },
-    { label: "label 3", value: 30 },
+    { label: "label 1", value: 40, color: "white" },
+    { label: "label 2", value: 30, color: "gray-2" },
+    { label: "label 3", value: 30, color: "black" },
   ]
 
   return (
     <>
       <div css={labelStyle}>
-        {dataset.map((data, index) => (
-          <div
-            key={data.label}
-            css={{ ...columnStyle, width: `${data.value}%` }}
-          >
-            {data.label}
+        {dataset.map(({ label, value }, index) => (
+          <div key={label} css={{ ...columnStyle, width: `${value}%` }}>
+            {label}
           </div>
         ))}
       </div>
       <div css={chartStyle}>
-        {dataset.map((data, index) => (
+        {dataset.map(({ label, value, color }, index) => (
           <div
-            key={data.label}
+            key={label}
             css={{
               ...chartCellStyle,
-              width: `${data.value}%`,
-              filter: `invert(${1 - index / (dataset.length - 1)})`,
+              width: `${value}%`,
+              color: `var(--cl-${color === "black" ? "white" : "black"})`,
+              backgroundColor: `var(--cl-${color})`,
             }}
           >
-            <div>{data.value}%</div>
+            <div>{value}%</div>
           </div>
         ))}
       </div>
