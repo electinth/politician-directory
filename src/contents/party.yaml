@@ -110,7 +110,7 @@
     short_name: T.T.P.P.
     description: ''
   short_name: ค.พ.ช.
-  color: ''
+  color: '#175a38'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -139,7 +139,7 @@
     short_name: CP
     description: ''
   short_name: ชทพ.
-  color: ''
+  color: '#ff72a8'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -169,7 +169,7 @@
     short_name: CPN.
     description: ''
   short_name: ชพน.
-  color: ''
+  color: '#ffaf41'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -194,13 +194,13 @@
   phone: ''
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2554/D/179/121.PDF'
 - id: '7'
-  name: ไทยศิวิไลย์
+  name: ไทยศรีวิไลย์
   en:
     name: Thai Civilized
     short_name: TCL.
     description: ''
   short_name: ทศล.
-  color: ''
+  color: '#0c5197'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ฝ่ายค้าน
@@ -230,7 +230,7 @@
     short_name: T.T.
     description: ''
   short_name: ท.ธ.
-  color: ''
+  color: '#e43ba2'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ''
@@ -261,7 +261,7 @@
     short_name: PCC.
     description: ''
   short_name: ปช.
-  color: ''
+  color: '#a35f26'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ฝ่ายค้าน
@@ -292,7 +292,7 @@
     short_name: T.P.J.
     description: ''
   short_name: ปธท.
-  color: ''
+  color: '#c32429'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -322,7 +322,7 @@
     short_name: NDP.
     description: ''
   short_name: ปธม.
-  color: ''
+  color: '#eb4138'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -351,7 +351,7 @@
     short_name: '-'
     description: ''
   short_name: ปชป.
-  color: ''
+  color: '#06aff3'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -382,7 +382,7 @@
     short_name: PYP.
     description: ''
   short_name: ปย.
-  color: ''
+  color: '#ea1f25'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -412,7 +412,7 @@
     short_name: PRA
     description: ''
   short_name: ปชภ.
-  color: ''
+  color: '#076350'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -442,7 +442,7 @@
     short_name: PONT.
     description: ''
   short_name: พล.
-  color: ''
+  color: '#2d3180'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -471,7 +471,7 @@
     short_name: TNPP
     description: ''
   short_name: พพชท
-  color: ''
+  color: '#08663b'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -500,7 +500,7 @@
     short_name: TLP
     description: ''
   short_name: พทท.
-  color: ''
+  color: '#259747'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -530,7 +530,7 @@
     short_name: P.T.R.T.
     description: ''
   short_name: พ.ท.ร.ท.
-  color: ''
+  color: '#245896'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -559,7 +559,7 @@
     short_name: NPD
     description: ''
   short_name: พธม.
-  color: ''
+  color: '#e9b54a'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -589,7 +589,7 @@
     short_name: PPRP
     description: ''
   short_name: พปชร.
-  color: ''
+  color: '#1f68dd'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -619,7 +619,7 @@
     short_name: PLPT
     description: ''
   short_name: พลท.
-  color: ''
+  color: '#181f97'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ฝ่ายค้าน
@@ -649,7 +649,7 @@
     short_name: PCH.P.
     description: ''
   short_name: พ.พ.ช.
-  color: ''
+  color: '#c0bcc3'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ฝ่ายค้าน
@@ -680,7 +680,7 @@
     short_name: PT.
     description: ''
   short_name: พท.
-  color: ''
+  color: '#da3731'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ฝ่ายค้าน
@@ -711,7 +711,7 @@
     short_name: BJT
     description: ''
   short_name: ภท
-  color: ''
+  color: '#209fa0'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -741,7 +741,7 @@
     short_name: ACT
     description: ''
   short_name: รปช.
-  color: ''
+  color: '#303d8e'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -770,7 +770,7 @@
     short_name: FCP
     description: ''
   short_name: รป.
-  color: ''
+  color: '#8dbf44'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ร่วมรัฐบาล
@@ -800,7 +800,7 @@
     short_name: NEP
     description: ''
   short_name: ศม
-  color: ''
+  color: '#6e2fff'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ฝ่ายค้าน
@@ -830,7 +830,7 @@
     short_name: TLP
     description: ''
   short_name: สร.
-  color: ''
+  color: '#b49e31'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ฝ่ายค้าน
@@ -860,7 +860,7 @@
     short_name: FWP.
     description: ''
   short_name: อนค.
-  color: ''
+  color: '#ef7824'
   party_type: พรรค
   party_ordinal: .nan
   party_faction: ฝ่ายค้าน
