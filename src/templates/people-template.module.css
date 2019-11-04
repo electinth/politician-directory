@@ -1,11 +1,16 @@
 .hr {
   height: 4px;
+  background: black;
 }
 
 .card {
   background: var(--cl-white);
   display: flex;
   align-items: flex-start;
+  border-radius: 10px;
+  border: 1px solid;
+  box-shadow: 10px 10px 0px black;
+  overflow: hidden;
 
   h1 {
     font-size: 2rem;

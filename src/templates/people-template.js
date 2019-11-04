@@ -68,17 +68,33 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
     }}
   >
     <SEO title="People" />
-    <img
-      css={css`
-        max-height: 400px;
-      `}
-      alt=""
-      src={politicianPicture(peopleYaml)}
-    />
     <section css={{ ...cssSection, paddingTop: "6rem" }}>
       <div className="container">
         <div className={`${styles.card}`}>
-          <div css={{ width: "50%" }}>
+          <div css={{
+            width: "50%",
+            textAlign: "center",
+            padding: "50px 0",
+            background: "linear-gradient(to right, #FFFFFF, #EAEAEA)"
+          }}>
+            <div
+              css={ css`
+                  height: 160px;
+                  width: 160px;
+                  border-radius: 80px;
+                  margin: 0 auto;
+                  overflow: hidden;
+                  margin-bottom: 20px;
+              `}
+            >
+              <img
+                css={css`
+                  max-height: 240px
+                `}
+                alt=""
+                src={politicianPicture(peopleYaml)}
+              />
+            </div>
             <h1
               css={{
                 marginTop: 0,
@@ -104,68 +120,69 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
             <h3>ส.ส.: {`${peopleYaml.is_mp ? "ใช่" : "ไม่ใช่"}`}</h3>
           </div>
           <div css={{ width: "50%" }}>
-            <h2 css={{ ...cssH2 }}>ข้อมูลพื้นฐาน</h2>
-
-            <hr className={`${styles.hr}`} />
-            <div>
-              <p>
-                {peopleYaml.party ? (
-                  <Link to={`/party/${peopleYaml.party}`}>
-                    พรรค {peopleYaml.party}
-                  </Link>
+            <div css={{ padding: "10px"}}>
+              <h2 css={{ ...cssH2, textAlign: "center" }}>ข้อมูลพื้นฐาน</h2>
+              <hr className={`${styles.hr}`} />
+              <div>
+                <p>
+                  {peopleYaml.party ? (
+                    <Link to={`/party/${peopleYaml.party}`}>
+                      พรรค {peopleYaml.party}
+                    </Link>
+                  ) : (
+                    "ไม่สังกัดพรรค"
+                  )}
+                </p>
+              </div>
+              <div>
+                {peopleYaml.mp_type === "แบ่งเขต" ? (
+                  <p>
+                    สมาชิกสภาผู้แทนราษฎร แบ่งเขต จังหวัด {peopleYaml.mp_province}{" "}
+                    เขต {peopleYaml.mp_zone}
+                  </p>
                 ) : (
-                  "ไม่สังกัดพรรค"
+                  <p>
+                    สมาชิกสภาผู้แทนราษฎร บัญชีรายชื่อ ลำดับที่
+                    {peopleYaml.mp_zone}
+                  </p>
                 )}
-              </p>
-            </div>
-            <div>
-              {peopleYaml.mp_type === "แบ่งเขต" ? (
-                <p>
-                  สมาชิกสภาผู้แทนราษฎร แบ่งเขต จังหวัด {peopleYaml.mp_province}{" "}
-                  เขต {peopleYaml.mp_zone}
-                </p>
-              ) : (
-                <p>
-                  สมาชิกสภาผู้แทนราษฎร บัญชีรายชื่อ ลำดับที่
-                  {peopleYaml.mp_zone}
-                </p>
-              )}
-            </div>
-            <div>
-              {peopleYaml.committee.map(com => (
-                <span key={com}>{com}</span>
-              ))}
-            </div>
-
-            <hr className={`${styles.hr}`} />
-            <div>
-              <span>เพศ {peopleYaml.gender}</span>
-              {" / "}
-              <span>อายุ {ageFromBirthdate(peopleYaml.birthdate)} ปี</span>
-              {" / "}
-              <span>การศึกษา {peopleYaml.education}</span>
-              <ul>
-                {peopleYaml.graduation.map(grad => (
-                  <li key={grad}>{grad}</li>
+              </div>
+              <div>
+                {peopleYaml.committee.map(com => (
+                  <span key={com}>{com}</span>
                 ))}
-              </ul>
-              <span>อาชีพเดิม {peopleYaml.occupation}</span>
-            </div>
+              </div>
 
-            <hr className={`${styles.hr}`} />
-            <div>
-              <span>ทรัพย์สิน {peopleYaml.asset}</span>
-              {" / "}
-              <span>หนี้สิน {peopleYaml.deby}</span>
-              {" / "}
-              <ExternalLink href="https://elect.in.th/politics-and-business">
-                ตรวจสอบประวัติทางธุรกิจ
-              </ExternalLink>
-            </div>
+              <hr className={`${styles.hr}`} />
+              <div>
+                <span>เพศ {peopleYaml.gender}</span>
+                {" / "}
+                <span>อายุ {ageFromBirthdate(peopleYaml.birthdate)} ปี</span>
+                {" / "}
+                <span>การศึกษา {peopleYaml.education}</span>
+                <ul>
+                  {peopleYaml.graduation.map(grad => (
+                    <li key={grad}>{grad}</li>
+                  ))}
+                </ul>
+                <span>อาชีพเดิม {peopleYaml.occupation}</span>
+              </div>
 
-            <hr className={`${styles.hr}`} />
-            <div>Official Link</div>
-            <div>Facebook | Twitter | Website | Instagram</div>
+              <hr className={`${styles.hr}`} />
+              <div>
+                <span>ทรัพย์สิน {peopleYaml.asset}</span>
+                {" / "}
+                <span>หนี้สิน {peopleYaml.deby}</span>
+                {" / "}
+                <ExternalLink href="https://elect.in.th/politics-and-business">
+                  ตรวจสอบประวัติทางธุรกิจ
+                </ExternalLink>
+              </div>
+
+              <hr className={`${styles.hr}`} />
+              <div>Official Link</div>
+              <div>Facebook | Twitter | Website | Instagram</div>
+            </div>
           </div>
         </div>
       </div>
