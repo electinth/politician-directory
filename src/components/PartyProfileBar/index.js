@@ -16,10 +16,16 @@ const partyProfileBarStyle = {
   margin: "20px 0",
 }
 
-const labelStyle = {
+const labelRowStyle = {
   ...rowStyle,
-  fontFamily: "var(--ff-title)",
   marginBottom: 3,
+}
+
+const labelStyle = {
+  ...columnStyle,
+  justifyContent: "flex-end",
+  fontFamily: "var(--ff-title)",
+  fontSize: 14,
 }
 
 const chartStyle = {
@@ -30,7 +36,7 @@ const chartStyle = {
 
 const chartCellStyle = {
   ...columnStyle,
-  fontSize: "75%",
+  fontSize: 10,
   padding: "10px 2px",
   borderRight: "inherit",
   "&:last-child": {
@@ -41,9 +47,9 @@ const chartCellStyle = {
 const PartyProfileBar = ({ dataset }) => {
   return (
     <div css={partyProfileBarStyle}>
-      <div css={labelStyle}>
+      <div css={labelRowStyle}>
         {dataset.map(({ label, value }) => (
-          <div key={label} css={{ ...columnStyle, width: `${value}%` }}>
+          <div key={label} css={{ ...labelStyle, width: `${value}%` }}>
             {label}
           </div>
         ))}
