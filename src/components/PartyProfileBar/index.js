@@ -11,9 +11,15 @@ const columnStyle = {
   flexDirection: "column",
 }
 
+const partyProfileBarStyle = {
+  ...columnStyle,
+  margin: "20px 0",
+}
+
 const labelStyle = {
   ...rowStyle,
   fontFamily: "var(--ff-title)",
+  marginBottom: 3,
 }
 
 const chartStyle = {
@@ -34,7 +40,7 @@ const chartCellStyle = {
 
 const PartyProfileBar = ({ dataset }) => {
   return (
-    <>
+    <div css={partyProfileBarStyle}>
       <div css={labelStyle}>
         {dataset.map(({ label, value }) => (
           <div key={label} css={{ ...columnStyle, width: `${value}%` }}>
@@ -53,11 +59,11 @@ const PartyProfileBar = ({ dataset }) => {
               backgroundColor: `var(--cl-${color})`,
             }}
           >
-            <div>{value}%</div>
+            {value}%
           </div>
         ))}
       </div>
-    </>
+    </div>
   )
 }
 
