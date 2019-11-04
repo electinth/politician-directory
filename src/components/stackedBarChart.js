@@ -79,6 +79,7 @@ const StackedBarChart = ({ data }) => {
       <div css={labelContainerStyle}>
         {data.map(each => (
           <div
+            key={each.name}
             css={labelCellStyle}
             style={{ width: getPercentage(each.value) }}
           >
@@ -90,6 +91,7 @@ const StackedBarChart = ({ data }) => {
       <div css={barContainerStyle}>
         {data.map(each => (
           <div
+            key={each.name}
             className="tooltip"
             css={barCellStyle}
             style={{
