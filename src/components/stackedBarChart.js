@@ -1,29 +1,55 @@
 import React from "react"
 
-const StackedBarChart = ({ data, className }) => {
+const labelContainerStyle = {
+  display: "flex",
+  marginBottom: "0rem",
+  minHeight: "2.4rem",
+  lineHeight: "2.4rem",
+}
+
+const labelCellStyle = {
+  fontSize: "1.6rem",
+  whiteSpace: "nowrap",
+  overflow: "hidden",
+  fontFamily: "var(--ff-title)",
+}
+
+const barContainerStyle = {
+  display: "flex",
+  border: "1px solid var(--cl-black)",
+  minHeight: "36px",
+  lineHeight: "36px",
+  position: "relative",
+}
+
+const barCellStyle = {
+  borderRight: "1px solid var(--cl-black)",
+  fontSize: "1rem",
+  whiteSpace: "nowrap",
+  overflow: "hidden",
+  "&:last-child": {
+    borderRightWidth: 0,
+  },
+  "&:hover .tooltip-text": {
+    display: "block",
+  },
+}
+
+const tooltipTextStyle = {
+  display: "none",
+  fontSize: "1.2rem",
+  lineHeight: "1.8rem",
+  top: "32px",
+  position: "absolute",
+  border: "1px solid black",
+  backgroundColor: "white",
+  padding: "0.5rem",
+}
+
+const StackedBarChart = ({ data }) => {
   const totalValue = data
     .map(p => p.value)
     .reduce((acc, value) => acc + value, 0)
-
-  const barCss = barValue => ({
-    width: (barValue / totalValue) * 100 + "%",
-    overflow: "hidden",
-    minWidth: "0px",
-  })
-
-  const labelContainer = {
-    display: "flex",
-    marginBottom: "0rem",
-    minHeight: "2.4rem",
-    lineHeight: "2.4rem",
-  }
-
-  const barContainer = {
-    display: "flex",
-    border: "1px solid black",
-    minHeight: "44px",
-    lineHeight: "44px",
-  }
 
   const getPercentage = value => {
     const percentage = (value / totalValue) * 100
@@ -43,61 +69,45 @@ const StackedBarChart = ({ data, className }) => {
       .match(/.{2}/g)
       .map(x => parseInt(x, 16))
 
-    const transformed = rgb
-      .map(c => c / 255.0)
-      .map(c => (c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ^ 2.4))
-
-    const l =
-      0.2126 * transformed[0] +
-      0.7152 * transformed[1] +
-      0.0722 * transformed[2]
-    return l > 0.179 ? "#000000" : "#ffffff"
+    return 1 - (0.299 * rgb[0] + 0.587 * rgb[1] + 0.114 * rgb[2]) / 255 < 0.5
+      ? "black"
+      : "white"
   }
 
   return (
-    <div
-      class={className}
-      css={{
-        margin: "2rem",
-        fontFamily: "var(--ff-title)",
-      }}
-    >
-      <div css={labelContainer}>
+    <div css={{ margin: "2rem" }}>
+      <div css={labelContainerStyle}>
         {data.map(each => (
-          <div css={barCss(each.value)}>
+          <div
+            css={labelCellStyle}
+            style={{ width: getPercentage(each.value) }}
+          >
             <span css={{ float: "left", height: "100%", width: "1px" }}></span>
-            <span
-              css={{
-                fontSize: "1.6rem",
-                whiteSpace: "nowrap",
-                float: "left",
-              }}
-            >
-              {each.name}
-            </span>
+            <span css={{ float: "left" }}>{each.name}</span>
           </div>
         ))}
       </div>
-      <div css={barContainer}>
+      <div css={barContainerStyle}>
         {data.map(each => (
           <div
-            css={{
-              ...barCss(each.value),
+            className="tooltip"
+            css={barCellStyle}
+            style={{
               backgroundColor: each.background,
+              width: getPercentage(each.value),
             }}
           >
             <span css={{ float: "left", height: "100%", width: "1px" }}></span>
             <span
-              css={{
-                marginLeft: "0.5rem",
-                fontSize: "1.2rem",
-                whiteSpace: "nowrap",
-                float: "left",
-                color: getTextColor(each.background),
-              }}
+              css={{ float: "left", marginLeft: "0.25rem" }}
+              style={{ color: getTextColor(each.background) }}
             >
               {getPercentage(each.value)}
             </span>
+            <div className="tooltip-text" css={tooltipTextStyle}>
+              <div>{each.name}</div>
+              <div>{getPercentage(each.value)}</div>
+            </div>
           </div>
         ))}
       </div>
