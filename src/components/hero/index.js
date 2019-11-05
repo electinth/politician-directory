@@ -8,21 +8,25 @@ import HeroFeature from "./feature"
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query {
-      biograpyImage: file(relativePath: { eq: "images/illus/01.png" }) {
+      biograpyImage: file(relativePath: { eq: "images/hero/biography.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      partyImage: file(relativePath: { eq: "images/illus/02.png" }) {
+      partySummaryImage: file(
+        relativePath: { eq: "images/hero/partySummary.png" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      summaryImage: file(relativePath: { eq: "images/illus/03.png" }) {
+      voteSummaryImage: file(
+        relativePath: { eq: "images/hero/voteSummary.png" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -49,12 +53,12 @@ const Hero = () => {
       <HeroFeature
         title="ดูภาพรวมพรรคการเมือง"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-        image={data.partyImage}
+        image={data.partySummaryImage}
       />
       <HeroFeature
         title="สรุปการลงคะแนนเสียง"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-        image={data.summaryImage}
+        image={data.voteSummaryImage}
       />
     </div>
   )

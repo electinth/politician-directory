@@ -2,7 +2,7 @@ import React from "react"
 
 import Img from "gatsby-image"
 
-const FeatureIcon = props => {
+const FeatureIcon = ({ image }) => {
   return (
     <div
       style={{
@@ -13,7 +13,7 @@ const FeatureIcon = props => {
         marginBottom: "1.5rem",
       }}
     >
-      <Img fluid={props.image.childImageSharp.fluid} style={{}} />
+      <Img fluid={image.childImageSharp.fluid} style={{}} />
     </div>
   )
 }
