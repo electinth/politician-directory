@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 const path = require(`path`)
-
+const axios = require(`axios`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 // You can delete this file if you're not using it
@@ -109,5 +109,32 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: node.fields.slug,
       },
     })
+  })
+}
+
+exports.sourceNodes = async ({
+  actions,
+  createNodeId,
+  createContentDigest,
+}) => {
+  const { createNode } = actions
+
+  // Contributors
+  const { data } = await axios.get(
+    `https://api.github.com/repos/codeforthailand/politician-directory/contributors`
+  )
+
+  data.forEach(contributor => {
+    const meta = {
+      id: createNodeId(`contributor-${contributor.id}`),
+      parent: null,
+      children: [],
+      internal: {
+        type: `Contributor`,
+        contentDigest: createContentDigest(contributor),
+      },
+    }
+    const node = Object.assign({}, contributor, meta)
+    createNode(node)
   })
 }

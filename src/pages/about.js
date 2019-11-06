@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ExternalLink from "../components/externalLink"
+import { graphql } from "gatsby"
 
 const h2 = {
   fontSize: "2rem",
@@ -11,7 +12,20 @@ const sectionContent = {
   marginBottom: "3rem",
 }
 
-const AboutPage = () => (
+export const query = graphql`
+  query {
+    allContributor {
+      edges {
+        node {
+          login
+          html_url
+        }
+      }
+    }
+  }
+`
+
+const AboutPage = ({ data }) => (
   <Layout>
     <SEO title="About Us" />
     <section>
@@ -41,18 +55,12 @@ const AboutPage = () => (
             <strong>เขียนโปรแกรม 💻</strong>
           </div>
           <div>
-            <ExternalLink href="https://github.com/rapee">
-              Rapee Suveeranont
-            </ExternalLink>{" "}
-            <ExternalLink href="https://github.com/Nakanan">
-              TEnsor4
-            </ExternalLink>{" "}
-            <ExternalLink href="https://th1nkk1d.xyz">
-              Withee Poositasai
-            </ExternalLink>{" "}
-            <ExternalLink href="https://github.com/noimeta">
-              Noi Meta 😼
-            </ExternalLink>
+            {data.allContributor.edges.map(({ node }, i) => (
+              <span>
+                {i === 0 ? "" : " "}
+                <ExternalLink href={node.html_url}>{node.login}</ExternalLink>
+              </span>
+            ))}
           </div>
 
           <div>
