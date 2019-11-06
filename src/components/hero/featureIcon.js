@@ -1,22 +1,8 @@
 import React from "react"
 
-import { useStaticQuery, graphql } from "gatsby"
-
 import Img from "gatsby-image"
 
-const FeatureIcon = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "images/feature-icon.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
+const FeatureIcon = ({ image }) => {
   return (
     <div
       style={{
@@ -27,7 +13,7 @@ const FeatureIcon = () => {
         marginBottom: "1.5rem",
       }}
     >
-      <Img fluid={data.placeholderImage.childImageSharp.fluid} style={{}} />
+      <Img fluid={image.childImageSharp.fluid} style={{}} />
     </div>
   )
 }
