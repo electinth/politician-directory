@@ -110,6 +110,23 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+
+  // Vote Log Lists
+  const allVotelogs = votelogs.data.allVotelogYaml.edges
+  const votelogPerPage = 4
+  const numPages = Math.ceil(allVotelogs.length / votelogPerPage)
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/votelog` : `/votelog/page/${i + 1}`,
+      component: path.resolve("./src/templates/votelog-list-template.js"),
+      context: {
+        limit: votelogPerPage,
+        skip: i * votelogPerPage,
+        numPages,
+        currentPage: i + 1,
+      },
+    })
+  })
 }
 
 exports.sourceNodes = async ({
