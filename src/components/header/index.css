@@ -1,23 +1,24 @@
 .hamburger-icon {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 70px;
   position: absolute;
-  top: 10px;
-  left: 0;
+  top: 0;
+  right: 0;
+  margin: 0.67em 0;
   z-index: 3;
   cursor: pointer;
 }
 
 .bar {
   height: 5px;
-  width: 30px;
+  width: 24px;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  background: black;
+  background: var(--cl-black);
   transition: all 0.3s;
 }
 
@@ -25,7 +26,7 @@
 .bar:after {
   height: 5px;
   width: 100%;
-  background: black;
+  background: var(--cl-black);
   position: absolute;
   content: "";
 
@@ -40,7 +41,7 @@
 
 .bar-white:before,
 .bar-white:after {
-  background: #fcbbdd !important;
+  background: var(--cl-paper-gray) !important;
 }
 
 .logo {

@@ -191,7 +191,6 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
               ].join(" ")}
               role="tab"
               onClick={() => {
-                console.log("hey")
                 setMemberFilter({ mp_type: "บัญชีรายชื่อ" })
               }}
             >

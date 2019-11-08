@@ -6,11 +6,19 @@
 
   --cl-white: #ffffff;
   --cl-black: #272727;
+  --cl-paper-gray: #eeeeee;
+  --cl-pink: #fcbbdd;
+  --cl-primary: #ef314b;
+
   --cl-gray-0: #363636;
   --cl-gray-1: #6c6c6c;
   --cl-gray-2: #979797;
-  --cl-pink: #fcbbdd;
-  --cl-primary: #ef314b;
+  --cl-gray-3: #cccccc;
+  --cl-gray-4: #eeeeee;
+
+  --cl-vote-abstained: #cccccc;
+  --cl-vote-yes: #329a2e;
+  --cl-vote-no: #ec2627;
 }
 
 a {

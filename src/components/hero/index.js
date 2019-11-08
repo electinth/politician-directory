@@ -35,7 +35,7 @@ const Hero = () => {
       }
     }
   `)
-  console.log(data)
+
   return (
     <div
       style={{

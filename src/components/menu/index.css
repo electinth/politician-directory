@@ -1,16 +1,18 @@
 .menu-wrapper {
   width: 100%;
   height: 100%;
-  background: #222121;
+  color: var(--cl-white);
+  background: var(--cl-black);
   position: absolute;
   top: -100vh;
   z-index: 2;
   animation: slideInMobile 0.3s ease-in-out forwards;
-  padding: 20px 10px;
+  padding: 2rem 2rem;
+  padding-bottom: 4rem;
 }
 
 .menu-wrapper > h2 {
-  margin: 5px 0 20px 50px;
+  margin: 0.5rem 0 3rem 0;
 }
 
 @keyframes slideInMobile {
@@ -43,6 +45,6 @@
   }
 
   .menu-wrapper > h2 {
-    margin: 0 0 20px 0;
+    margin: 0 0 3rem 0;
   }
 }
