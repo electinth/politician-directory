@@ -1,0 +1,625 @@
+- category: ประเภทสมาชิก
+  th: สภาผู้แทนราษฎร
+  en: Member of Parliament
+- category: ประเภทสมาชิก
+  th: วุฒิสภา
+  en: Senate
+- category: ประเภทสมาชิก
+  th: คณะรัฐมนตรี
+  en: Cabinet
+- category: พรรคฝ่ายไหน
+  th: ร่วมรัฐบาล
+  en: Coalition
+- category: พรรคฝ่ายไหน
+  th: ฝ่ายค้าน
+  en: Opposition
+- category: ประเภท ส.ส.
+  th: แบ่งเขต
+  en: Constituency
+- category: ประเภท ส.ส.
+  th: บัญชีรายชื่อ
+  en: Party-List
+- category: เพศ
+  th: ชาย
+  en: Male
+- category: เพศ
+  th: หญิง
+  en: Female
+- category: ระดับการศึกษา
+  th: ต่ำกว่าปริญญาตรี
+  en: High School Diploma
+- category: ระดับการศึกษา
+  th: ปริญญาตรี
+  en: Bachelor's Degree
+- category: ระดับการศึกษา
+  th: ปริญญาโท
+  en: Master's Degree
+- category: ระดับการศึกษา
+  th: ปริญญาเอก
+  en: Doctoral Degree
+- category: ระดับการศึกษา
+  th: สถาบันการศึกษาทางทหาร
+  en: Military Academy
+- category: กลุ่มอาชีพ
+  th: ข้าราชการ/องค์กรรัฐ
+  en: Government Officer
+- category: กลุ่มอาชีพ
+  th: นักการเมือง
+  en: Politician
+- category: กลุ่มอาชีพ
+  th: ทหาร
+  en: Military Officer
+- category: กลุ่มอาชีพ
+  th: นักกฎหมาย
+  en: Lawyer
+- category: กลุ่มอาชีพ
+  th: ตำรวจ
+  en: Police
+- category: กลุ่มอาชีพ
+  th: ยุติธรรม
+  en: Department of Justice
+- category: กลุ่มอาชีพ
+  th: การศึกษา
+  en: Educational Officer
+- category: กลุ่มอาชีพ
+  th: สาธารณสุข
+  en: Medical Officer
+- category: กลุ่มอาชีพ
+  th: เกษตรกร
+  en: Farmer
+- category: กลุ่มอาชีพ
+  th: เอกชน
+  en: Private Organization
+- category: กลุ่มอาชีพ
+  th: สื่อมวลชน
+  en: Press
+- category: กลุ่มอาชีพ
+  th: อื่นๆ
+  en: Others
+- category: อาชีพ
+  th: ข้าราชการบำนาญ
+  en: Pensioner
+- category: อาชีพ
+  th: ข้าราชการทหาร
+  en: Military Officer
+- category: อาชีพ
+  th: อาจารย์มหาวิทยาลัย
+  en: Professor
+- category: จังหวัด
+  th: กรุงเทพมหานคร
+  en: Bangkok
+- category: จังหวัด
+  th: สมุทรปราการ
+  en: Samut Prakan
+- category: จังหวัด
+  th: นนทบุรี
+  en: Nonthaburi
+- category: จังหวัด
+  th: ปทุมธานี
+  en: Pathum Thani
+- category: จังหวัด
+  th: พระนครศรีอยุธยา
+  en: Phra Nakhon Si Ayutthaya
+- category: จังหวัด
+  th: อ่างทอง
+  en: Ang Thong
+- category: จังหวัด
+  th: ลพบุรี
+  en: Lop Buri
+- category: จังหวัด
+  th: สิงห์บุรี
+  en: Sing Buri
+- category: จังหวัด
+  th: ชัยนาท
+  en: Chai Nat
+- category: จังหวัด
+  th: สระบุรี
+  en: Saraburi
+- category: จังหวัด
+  th: ชลบุรี
+  en: Chon Buri
+- category: จังหวัด
+  th: ระยอง
+  en: Rayong
+- category: จังหวัด
+  th: จันทบุรี
+  en: Chanthaburi
+- category: จังหวัด
+  th: ตราด
+  en: Trat
+- category: จังหวัด
+  th: ฉะเชิงเทรา
+  en: Chachoengsao
+- category: จังหวัด
+  th: ปราจีนบุรี
+  en: Prachin Buri
+- category: จังหวัด
+  th: นครนายก
+  en: Nakhon Nayok
+- category: จังหวัด
+  th: สระแก้ว
+  en: Sa Kaeo
+- category: จังหวัด
+  th: นครราชสีมา
+  en: Nakhon Ratchasima
+- category: จังหวัด
+  th: บุรีรัมย์
+  en: Buri Ram
+- category: จังหวัด
+  th: สุรินทร์
+  en: Surin
+- category: จังหวัด
+  th: ศรีสะเกษ
+  en: Si Sa Ket
+- category: จังหวัด
+  th: อุบลราชธานี
+  en: Ubon Ratchathani
+- category: จังหวัด
+  th: ยโสธร
+  en: Yasothon
+- category: จังหวัด
+  th: ชัยภูมิ
+  en: Chaiyaphum
+- category: จังหวัด
+  th: อำนาจเจริญ
+  en: Amnat Charoen
+- category: จังหวัด
+  th: บึงกาฬ
+  en: Nong Khai
+- category: จังหวัด
+  th: หนองบัวลำภู
+  en: Nong Bua Lamphu
+- category: จังหวัด
+  th: ขอนแก่น
+  en: Khon Kaen
+- category: จังหวัด
+  th: อุดรธานี
+  en: Udon Thani
+- category: จังหวัด
+  th: เลย
+  en: Loei
+- category: จังหวัด
+  th: หนองคาย
+  en: Nong Khai
+- category: จังหวัด
+  th: มหาสารคาม
+  en: Maha Sarakham
+- category: จังหวัด
+  th: ร้อยเอ็ด
+  en: Roi Et
+- category: จังหวัด
+  th: กาฬสินธุ์
+  en: Kalasin
+- category: จังหวัด
+  th: สกลนคร
+  en: Sakon Nakhon
+- category: จังหวัด
+  th: นครพนม
+  en: Nakhon Phanom
+- category: จังหวัด
+  th: มุกดาหาร
+  en: Mukdahan
+- category: จังหวัด
+  th: เชียงใหม่
+  en: Chiang Mai
+- category: จังหวัด
+  th: ลำพูน
+  en: Lamphun
+- category: จังหวัด
+  th: ลำปาง
+  en: Lampang
+- category: จังหวัด
+  th: อุตรดิตถ์
+  en: Uttaradit
+- category: จังหวัด
+  th: แพร่
+  en: Phrae
+- category: จังหวัด
+  th: น่าน
+  en: Nan
+- category: จังหวัด
+  th: พะเยา
+  en: Phayao
+- category: จังหวัด
+  th: เชียงราย
+  en: Chiang Rai
+- category: จังหวัด
+  th: แม่ฮ่องสอน
+  en: Mae Hong Son
+- category: จังหวัด
+  th: นครสวรรค์
+  en: Nakhon Sawan
+- category: จังหวัด
+  th: อุทัยธานี
+  en: Uthai Thani
+- category: จังหวัด
+  th: กำแพงเพชร
+  en: Kamphaeng Phet
+- category: จังหวัด
+  th: ตาก
+  en: Tak
+- category: จังหวัด
+  th: สุโขทัย
+  en: Sukhothai
+- category: จังหวัด
+  th: พิษณุโลก
+  en: Phitsanulok
+- category: จังหวัด
+  th: พิจิตร
+  en: Phichit
+- category: จังหวัด
+  th: เพชรบูรณ์
+  en: Phetchabun
+- category: จังหวัด
+  th: ราชบุรี
+  en: Ratchaburi
+- category: จังหวัด
+  th: กาญจนบุรี
+  en: Kanchanaburi
+- category: จังหวัด
+  th: สุพรรณบุรี
+  en: Suphan Buri
+- category: จังหวัด
+  th: นครปฐม
+  en: Nakhon Pathom
+- category: จังหวัด
+  th: สมุทรสาคร
+  en: Samut Sakhon
+- category: จังหวัด
+  th: สมุทรสงคราม
+  en: Samut Songkhram
+- category: จังหวัด
+  th: เพชรบุรี
+  en: Phetchaburi
+- category: จังหวัด
+  th: ประจวบคีรีขันธ์
+  en: Prachuap Khiri Khan
+- category: จังหวัด
+  th: นครศรีธรรมราช
+  en: Nakhon Si Thammarat
+- category: จังหวัด
+  th: กระบี่
+  en: Krabi
+- category: จังหวัด
+  th: พังงา
+  en: Phangnga
+- category: จังหวัด
+  th: ภูเก็ต
+  en: Phuket
+- category: จังหวัด
+  th: สุราษฎร์ธานี
+  en: Surat Thani
+- category: จังหวัด
+  th: ระนอง
+  en: Ranong
+- category: จังหวัด
+  th: ชุมพร
+  en: Chumphon
+- category: จังหวัด
+  th: สงขลา
+  en: Songkhla
+- category: จังหวัด
+  th: สตูล
+  en: Satun
+- category: จังหวัด
+  th: ตรัง
+  en: Trang
+- category: จังหวัด
+  th: พัทลุง
+  en: Phatthalung
+- category: จังหวัด
+  th: ปัตตานี
+  en: Pattani
+- category: จังหวัด
+  th: ยะลา
+  en: Yala
+- category: จังหวัด
+  th: นราธิวาส
+  en: Narathiwat
+- category: คณะกรรมาธิการ
+  th: กมธ. การกฎหมาย การยุติธรรม และการตำรวจ วุฒิสภา
+  en: 'Senate Standing Committee on Laws, Justice and Police Affairs'
+- category: คณะกรรมาธิการ
+  th: กมธ. การกฎหมาย การยุติธรรมและสิทธิมนุษยชน สภาผู้แทนฯ
+  en: 'HR Standing Committee on Legal Affairs, Justice and Human Rights'
+- category: คณะกรรมาธิการ
+  th: >-
+    กมธ. การกระจายอำนาจ การปกครองส่วนท้องถิ่น และการบริหารราชการรูปแบบพิเศษ
+    สภาผู้แทนฯ
+  en: >-
+    HR Standing Committee on Decentralization, Local Administration and Special
+    Administration of State
+- category: คณะกรรมาธิการ
+  th: กมธ. การกีฬา วุฒิสภา
+  en: Senate Standing Committee on Sports
+- category: คณะกรรมาธิการ
+  th: กมธ. การเกษตรและสหกรณ์ วุฒิสภา
+  en: Senate Standing Committee on Agriculture and Co-operatives
+- category: คณะกรรมาธิการ
+  th: กมธ. การเกษตรและสหกรณ์ สภาผู้แทนฯ
+  en: HR Standing Committee on Agriculture and Co-operatives
+- category: คณะกรรมาธิการ
+  th: กมธ. การแก้ปัญหาความยากจนและลดความเหลื่อมล้ำ วุฒิสภา
+  en: Senate Standing Committee on Poverty and Inequality Eradication
+- category: คณะกรรมาธิการ
+  th: กมธ. การคมนาคม วุฒิสภา
+  en: Senate Standing Committee on Transportation
+- category: คณะกรรมาธิการ
+  th: กมธ. การคมนาคม สภาผู้แทนฯ
+  en: HR Standing Committee on Transportation
+- category: คณะกรรมาธิการ
+  th: กมธ. การเงิน การคลัง สถาบันการเงินและตลาดการเงิน สภาผู้แทนฯ
+  en: >-
+    HR Standing Committee on Monetary Affairs, Finance, Banking and Financial
+    Institutions
+- category: คณะกรรมาธิการ
+  th: กมธ. การต่างประเทศ วุฒิสภา
+  en: Senate Standing Committee on Foreign Affairs
+- category: คณะกรรมาธิการ
+  th: กมธ. การต่างประเทศ สภาผู้แทนฯ
+  en: HR Standing Committee on Foreign Affairs
+- category: คณะกรรมาธิการ
+  th: กมธ. การตำรวจ สภาผู้แทนฯ
+  en: HR Standing Committee on Police Affairs
+- category: คณะกรรมาธิการ
+  th: กมธ. การทหารและความมั่นคงของรัฐ วุฒิสภา
+  en: Senate Standing Committee on Armed Forces and State Security
+- category: คณะกรรมาธิการ
+  th: กมธ. การทหาร สภาผู้แทนฯ
+  en: HR Standing Committee on Armed Forces
+- category: คณะกรรมาธิการ
+  th: กมธ. การท่องเที่ยว วุฒิสภา
+  en: Senate Standing Committee on Tourism
+- category: คณะกรรมาธิการ
+  th: กมธ. การท่องเที่ยว สภาผู้แทนฯ
+  en: HR Standing Committee on Tourism
+- category: คณะกรรมาธิการ
+  th: กมธ. การที่ดิน ทรัพยากรธรรมชาติและสิ่งแวดล้อม สภาผู้แทนฯ
+  en: 'HR Standing Committee on Land, Natural Resources and Environment'
+- category: คณะกรรมาธิการ
+  th: กมธ. การเทคโนโลยีสารสนเทศ การสื่อสาร และการโทรคมนาคม วุฒิสภา
+  en: >-
+    Senate Standing Committee on Information Technology, Communication and
+    Telecommunication
+- category: คณะกรรมาธิการ
+  th: กมธ. การบริหารราชการแผ่นดิน วุฒิสภา
+  en: Senate Standing Committee on Administration of State Affairs
+- category: คณะกรรมาธิการ
+  th: กมธ. การปกครองท้องถิ่น วุฒิสภา
+  en: Senate Standing Committee on Local Administration
+- category: คณะกรรมาธิการ
+  th: กมธ. การปกครอง สภาผู้แทนฯ
+  en: HR Standing Committee on Administration
+- category: คณะกรรมาธิการ
+  th: กมธ. การป้องกันปราบปรามการฟอกเงินและยาเสพติด สภาผู้แทนฯ
+  en: HR Standing Money Laundering and Narcotics Prevention and Suppression
+- category: คณะกรรมาธิการ
+  th: กมธ. การป้องกันและบรรเทาผลกระทบจากภัยธรรมชาติและสาธารณภัย สภาผู้แทนฯ
+  en: >-
+    HR Standing Committee on Prevention and Mitigation of the Effects of Natural
+    and Public Disaster
+- category: คณะกรรมาธิการ
+  th: กมธ. การป้องกันและปราบปรามการทุจริตประพฤติมิชอบ สภาผู้แทนฯ
+  en: HR Standing Corruption Prevention and Suppression
+- category: คณะกรรมาธิการ
+  th: กมธ. การพลังงาน วุฒิสภา
+  en: Senate Standing Committee on Energy
+- category: คณะกรรมาธิการ
+  th: กมธ. การพลังงาน สภาผู้แทนฯ
+  en: HR Standing Committee on Energy
+- category: คณะกรรมาธิการ
+  th: กมธ. การพัฒนาการเมือง การสื่อสารมวลชน และการมีส่วนร่วมของประชาชน สภาผู้แทนฯ
+  en: >-
+    HR Standing Committee on Political Development, Mass Communications and
+    Public Participation
+- category: คณะกรรมาธิการ
+  th: กมธ. การพัฒนาการเมืองและการมีส่วนร่วมของประชาชน วุฒิสภา
+  en: Senate Standing Committee on Political Development and Public Participation
+- category: คณะกรรมาธิการ
+  th: กมธ. การพัฒนาเศรษฐกิจ สภาผู้แทนฯ
+  en: HR Standing Committee on Economic Development
+- category: คณะกรรมาธิการ
+  th: >-
+    กมธ. การพัฒนาสังคม และกิจการเด็ก เยาวชน สตรี ผู้สูงอายุ
+    คนพิการและผู้ด้อยโอกาส วุฒิสภา
+  en: >-
+    Senate Standing Committee on Social Development and Children, Youth, Women,
+    the Elderly, the Disabled and the Underprivileged Affairs
+- category: คณะกรรมาธิการ
+  th: กมธ. การพาณิชย์และการอุตสาหกรรม วุฒิสภา
+  en: Senate Standing Committee on Commerce and Industry
+- category: คณะกรรมาธิการ
+  th: กมธ. การพาณิชย์และทรัพย์สินทางปัญญา สภาผู้แทนฯ
+  en: HR Standing Committee on Commerce and Intellectual Property
+- category: คณะกรรมาธิการ
+  th: กมธ. การแรงงาน วุฒิสภา
+  en: Senate Standing Committee on Labor
+- category: คณะกรรมาธิการ
+  th: กมธ. การแรงงาน สภาผู้แทนฯ
+  en: HR Standing Committee on Labor
+- category: คณะกรรมาธิการ
+  th: กมธ. การวิทยาศาสตร์ เทคโนโลยี วิจัยและนวัตกรรม สภาผู้แทนฯ
+  en: 'HR Standing Committee on Science, Technology, Reasearch and Innovation'
+- category: คณะกรรมาธิการ
+  th: กมธ. การศาสนา คุณธรรม จริยธรรม ศิลปะและวัฒนธรรม วุฒิสภา
+  en: 'Senate Standing Committee on Religions, Morals, Ethics, Arts and Culture'
+- category: คณะกรรมาธิการ
+  th: กมธ. การศาสนา ศิลปะและวัฒนธรรม สภาผู้แทนฯ
+  en: 'HR Standing Committee on Religion, Arts and Culture'
+- category: คณะกรรมาธิการ
+  th: กมธ. การศึกษา วุฒิสภา
+  en: Senate Standing Committee on Education
+- category: คณะกรรมาธิการ
+  th: กมธ. การศึกษา สภาผู้แทนฯ
+  en: HR Standing Committee on Education
+- category: คณะกรรมาธิการ
+  th: กมธ. การเศรษฐกิจ การเงิน และการคลัง วุฒิสภา
+  en: 'Senate Standing Committee on Economics, Monetary and Finance'
+- category: คณะกรรมาธิการ
+  th: กมธ. การสวัสดิการสังคม สภาผู้แทนฯ
+  en: HR Standing Committee on Social Welfare
+- category: คณะกรรมาธิการ
+  th: กมธ. การสาธารณสุข วุฒิสภา
+  en: Senate Standing Committee on Public Health
+- category: คณะกรรมาธิการ
+  th: กมธ. การสาธารณสุข สภาผู้แทนฯ
+  en: HR Standing Committee on Public Health
+- category: คณะกรรมาธิการ
+  th: กมธ. การสื่อสาร โทรคมนาคม และดิจิทัลเพื่อเศรษฐกิจและสังคม สภาผู้แทนฯ
+  en: >-
+    HR Standing Committee on Communication and Telecommunications for Digital
+    Economy and Society
+- category: คณะกรรมาธิการ
+  th: กมธ. การอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม วุฒิสภา
+  en: >-
+    Senate Standing Committee on Higher Education, Science, Research and
+    Innovation
+- category: คณะกรรมาธิการ
+  th: กมธ. การอุตสาหกรรม สภาผู้แทนฯ
+  en: HR Standing Committee on Industry
+- category: คณะกรรมาธิการ
+  th: >-
+    กมธ. กิจการเด็ก เยาวชน สตรี ผู้สูงอายุ ผู้พิการ กลุ่มชาติพันธุ์
+    และผู้มีความหลากหลายทางเพศ สภาผู้แทนฯ
+  en: 'HR Standing Committee on Children, Youth, Women, Elderly and the Disabled'
+- category: คณะกรรมาธิการ
+  th: >-
+    กมธ. กิจการศาล องค์กรอิสระ องค์กรอัยการ รัฐวิสาหกิจ องค์การมหาชน และกองทุน
+    สภาผู้แทนฯ
+  en: >-
+    HR Standing Constitutional Organizations, State Enterprises, Public
+    Organizations and Funds
+- category: คณะกรรมาธิการ
+  th: กมธ. กิจการ สภาผู้แทนฯ
+  en: Standing Committee on the HR Affairs
+- category: คณะกรรมาธิการ
+  th: กมธ. กิจการองค์กรอิสระตามรัฐธรรมนูญ วุฒิสภา
+  en: Senate Standing Committee on Independent Organs under the Constitution
+- category: คณะกรรมาธิการ
+  th: กมธ. กีฬา สภาผู้แทนฯ
+  en: HR Standing Committee on Sports
+- category: คณะกรรมาธิการ
+  th: กมธ. แก้ไขปัญหาราคาผลิตผลเกษตรกรรม สภาผู้แทนฯ
+  en: HR Standing Committee on Agricultural Produce Price Promotion
+- category: คณะกรรมาธิการ
+  th: กมธ. แก้ไขปัญหาหนี้สินแห่งชาติ สภาผู้แทนฯ
+  en: HR Standing Committee on National Debt Solution
+- category: คณะกรรมาธิการ
+  th: >-
+    กมธ. ความมั่นคงแห่งรัฐ กิจการชายแดนไทย ยุทธศาสตร์ชาติและการปฏิรูปประเทศ
+    สภาผู้แทนฯ
+  en: >-
+    HR Standing Committee on State Security, Border Affairs, National Strategy
+    and National Reform
+- category: คณะกรรมาธิการ
+  th: กมธ. ติดตามการบริหารงบประมาณ วุฒิสภา
+  en: Senate Standing Committee on Monitoring Nudget Administration
+- category: คณะกรรมาธิการ
+  th: >-
+    กมธ. ติดตาม เสนอแนะ และเร่งรัดการปฏิรูปประเทศ
+    และการจัดทำและดำเนินการตามยุทธศาสตร์ชาติ วุฒิสภา
+  en: >-
+    Senate Committee on Monitoring, Recommending and Accelerating National
+    Reform and Preparing and Implementing National Strategy
+- category: คณะกรรมาธิการ
+  th: กมธ. ทรัพยากรธรรมชาติและสิ่งแวดล้อม วุฒิสภา
+  en: Senate Standing Committee on Natural Resources and Environment
+- category: คณะกรรมาธิการ
+  th: กมธ. วิสามัญการพิทักษ์และเทิดทูนสถาบันพระมหากษัตริย์ วุฒิสภา
+  en: Ad Hoc Committee on Protecting and Upholding the Monarchy of the Senate
+- category: คณะกรรมาธิการ
+  th: กมธ. วิสามัญกิจการวุฒิสภา
+  en: Ad Hoc Committee on Senate Affairs
+- category: คณะกรรมาธิการ
+  th: >-
+    กมธ. วิสามัญพิจารณาศึกษาการขยายสัญญาสัมปทานทางด่วนและรถไฟฟ้า (บีทีเอส)
+    สภาผู้แทนฯ
+  en: >-
+    HR Ad Hoc Committee on the extension of concessions of express way and BTS
+    sky train
+- category: คณะกรรมาธิการ
+  th: >-
+    กมธ. วิสามัญพิจารณาศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
+    สภาผู้แทนฯ
+  en: HR Ad Hoc Committee on Chemical Implementation on Agricultural Produce
+- category: คณะกรรมาธิการ
+  th: กมธ. วิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ สภาผู้แทนฯ
+  en: HR Ad Hoc Committee on Agricultural Produce Price Decreasement
+- category: คณะกรรมาธิการ
+  th: >-
+    กมธ. วิสามัญพิจารณาศึกษาร่างพระราชบัญญัติงบประมาณรายจ่ายประจำปีงบประมาณ พ.ศ.
+    2563 วุฒิสภา
+  en: HR Ad Hoc Committee on the Draft of 2020 Annual Budget
+- category: คณะกรรมาธิการ
+  th: กมธ. ศึกษาการจัดทำและติดตามการบริหารงบประมาณ สภาผู้แทนฯ
+  en: HR Standing Committee on Budget Administration Follow-up
+- category: คณะกรรมาธิการ
+  th: กมธ. ศึกษาตรวจสอบเรื่องการทุจริต ประพฤติมิชอบและเสริมสร้างธรรมาภิบาล วุฒิสภา
+  en: >-
+    Senate Standing Committee on Studying and Inspecting Dishonest Act, Wrongful
+    Conduct and Enhancing Good Governance
+- category: คณะกรรมาธิการ
+  th: กมธ. สิทธิมนุษยชน สิทธิเสรีภาพและการคุ้มครองผู้บริโภค วุฒิสภา
+  en: >-
+    Senate Standing Committee on Human Rights, Rights, Liberties and Consumer
+    Protection
+- category: ตำแหน่งกมธ.
+  th: กรรมาธิการ
+  en: Committee
+- category: ตำแหน่งกมธ.
+  th: กรรมาธิการที่ปรึกษา
+  en: Committee Advisor
+- category: ตำแหน่งกมธ.
+  th: กรรมาธิการและที่ปรึกษาคณะกรรมาธิการ
+  en: Committee and Advisor
+- category: ตำแหน่งกมธ.
+  th: กรรมาธิการวิสามัญ
+  en: Ad Hoc Committee
+- category: ตำแหน่งกมธ.
+  th: กรรมาธิการวิสามัญและที่ปรึกษา
+  en: Ad hoc Committee and Advisor
+- category: ตำแหน่งกมธ.
+  th: โฆษกคณะกรรมาธิการ
+  en: Spokesperson of the Committee
+- category: ตำแหน่งกมธ.
+  th: ที่ปรึกษาคณะกรรมาธิการ
+  en: Advisor of the Committee
+- category: ตำแหน่งกมธ.
+  th: ที่ปรึกษาประธานคณะกรรมาธิการ
+  en: Advisor of the Chairman of the Committee
+- category: ตำแหน่งกมธ.
+  th: ที่ปรึกษาและกรรมาธิการ
+  en: Advisor and Committee
+- category: ตำแหน่งกมธ.
+  th: ประธานคณะกรรมาธิการ
+  en: Chairman of the Committee
+- category: ตำแหน่งกมธ.
+  th: ประธานคณะกรรมาธิการวิสามัญ
+  en: Chairman of the Adhoc Committee
+- category: ตำแหน่งกมธ.
+  th: ประธานที่ปรึกษาคณะกรรมาธิการ
+  en: Chairman of Advisors of the Committee
+- category: ตำแหน่งกมธ.
+  th: ผู้ช่วยเลขานุการคณะกรรมาธิการ
+  en: Assistant Secretary of of the Committee
+- category: ตำแหน่งกมธ.
+  th: รองโฆษกคณะกรรมาธิการ
+  en: Deputy Spokesperson of the Committee
+- category: ตำแหน่งกมธ.
+  th: รองประธานคณะกรรมาธิการ
+  en: Vice-Chairman of the Committee
+- category: ตำแหน่งกมธ.
+  th: รองประธานคณะกรรมาธิการวิสามัญ
+  en: Vice-Chairman of the Ad hoc Committee
+- category: ตำแหน่งกมธ.
+  th: รองประธานที่ปรึกษาคณะกรรมาธิการ
+  en: Vice Chairman of Advisors of the Committee
+- category: ตำแหน่งกมธ.
+  th: รองเลขานุการคณะกรรมาธิการ
+  en: Deputy Secretary of the Committee
+- category: ตำแหน่งกมธ.
+  th: เลขานุการคณะกรรมาธิการ
+  en: Secretary of the Committee
+- category: ตำแหน่งกมธ.
+  th: เลขานุการคณะกรรมาธิการและโฆษกคณะกรรมาธิการ
+  en: Secretary and Spokesperson of the Committee

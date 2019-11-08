@@ -17,13 +17,11 @@ export const query = graphql`
       totalCount
     }
     partyCoalition: allPartyYaml(
-      filter: { party_faction: { eq: "ร่วมรัฐบาล" } }
+      filter: { party_group: { eq: "ร่วมรัฐบาล" } }
     ) {
       totalCount
     }
-    partyOpposition: allPartyYaml(
-      filter: { party_faction: { eq: "ฝ่ายค้าน" } }
-    ) {
+    partyOpposition: allPartyYaml(filter: { party_group: { eq: "ฝ่ายค้าน" } }) {
       totalCount
     }
     allPeopleYaml {
@@ -38,7 +36,6 @@ export const query = graphql`
           name
           lastname
           cabinet_position
-          prev_polit_pos
           is_cabinet
           is_senator
           is_mp
@@ -55,7 +52,7 @@ export const query = graphql`
           }
           name
           short_name
-          party_faction
+          party_group
         }
       }
     }
@@ -343,7 +340,7 @@ const IndexPage = ({ data }) => {
                 <h3>พรรคร่วมรัฐบาล ({data.partyCoalition.totalCount})</h3>
                 <ul>
                   {data.allPartyYaml.edges
-                    .filter(({ node }) => node.party_faction === "ร่วมรัฐบาล")
+                    .filter(({ node }) => node.party_group === "ร่วมรัฐบาล")
                     .map(({ node }) => (
                       <li>
                         <Link to={node.fields.slug}>{node.name}</Link>
@@ -355,7 +352,7 @@ const IndexPage = ({ data }) => {
                 <h3>พรรคฝ่ายค้าน ({data.partyOpposition.totalCount})</h3>
                 <ul>
                   {data.allPartyYaml.edges
-                    .filter(({ node }) => node.party_faction === "ฝ่ายค้าน")
+                    .filter(({ node }) => node.party_group === "ฝ่ายค้าน")
                     .map(({ node }) => (
                       <li>
                         <Link to={node.fields.slug}>{node.name}</Link>

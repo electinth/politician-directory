@@ -13,7 +13,7 @@
   color: '-'
   party_type: สส
   party_ordinal: 25
-  party_faction: '-'
+  party_group: '-'
   description: >-
     เป็นส่วนหนึ่งของฝ่ายนิติบัญญัติ ที่ได้มาจากการเลือกตั้งทั่วไป พ.ศ. 2562
     ประกอบด้วยสมาชิก (ส.ส.) 500 คนตามระบบจัดสรรปันส่วนผสม โดย 350
@@ -40,12 +40,19 @@
   en:
     name: Senate
     short_name: '-'
-    description: ''
+    description: >-
+      The non-elected Senate is a part of the Thai legislative branch. Of its
+      250 members, 244 were appointed, while the other 6 seats are given
+      automatically to incumbent holders of top security positions. The
+      transitory provisions of the current constitution provide extra power to
+      the Senate, allowing it to participate in the Prime Minister vote, steer
+      the cabinet's national reform work, and vote for certain bills deemed
+      relevant.
   short_name: ส.ว
   color: '-'
   party_type: สว
   party_ordinal: 12
-  party_faction: '-'
+  party_group: '-'
   description: >-
     เป็นส่วนหนึ่งของฝ่ายนิติบัญญัติ มีสมาชิก (ส.ว.) 250
     คนที่ไม่ได้มาจากการเลือกตั้ง โดย 244 คนมาจากการสรรหา และอีก 6
@@ -71,12 +78,17 @@
   en:
     name: Cabinet
     short_name: '-'
-    description: ''
+    description: >-
+      The cabinet manages the government. Gen. Prayut Chan-o-Cha, endorsed by
+      Palung Pracharat Party and 19 other parties, is leading the current
+      cabinet. The junta leader had been the Prime Minister of Thailand and Head
+      of the National Council for Peace and Order (NCPO) for the past 5 years;
+      hence the nickname "Prayut 2" for this cabinet.
   short_name: ครม.
   color: '-'
   party_type: ครม
   party_ordinal: 62
-  party_faction: '-'
+  party_group: '-'
   description: >-
     เป็นคณะบุคคลที่ทำหน้าที่บริหารราชการแผ่นดิน โดย ครม. ชุดนี้
     เกิดจากการนำของพรรคพลังประชารัฐ ร่วมกับพรรคการเมืองอีก 19 พรรคเสนอชื่อพลเอก
@@ -108,12 +120,15 @@
   en:
     name: Thai Teachers For People
     short_name: T.T.P.P.
-    description: ''
+    description: >-
+      Thai Teacher for People Party was established by a network of Thai teacher
+      organisations to bring about national-crisis solving policies with the
+      approach of developing national education and educational practitioners.
   short_name: ค.พ.ช.
-  color: '#175a38'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     จัดตั้งขึ้นโดยเครือข่ายองค์กรครู
     เพื่อนำเสนอนโยบายแนวทางการแก้ปัญหาวิกฤติของชาติโดยเน้นเรื่องการศึกษาและบุคลากรทางการศึกษา
@@ -129,20 +144,24 @@
   website: '-'
   facebook: 'https://www.facebook.com/thaiteachersforpeopleparty/'
   twitter: '-'
-  email: ''
-  phone: ''
+  email: '-'
+  phone: 085-467-5922
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2554/D/132/183.PDF'
 - id: '5'
   name: ชาติไทยพัฒนา
   en:
     name: Chartthaipattana
     short_name: CP
-    description: ''
+    description: >-
+      Chartthaipattana Party was established in 2008 to absorb the MPs from
+      Chartthai Party which had been dissolved. Its stronghold is in Suphanburi
+      Province. With its flexible, friendly-to-all-side position, the party has
+      never failed to join the government.
   short_name: ชทพ.
-  color: '#ff72a8'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     จัดตั้งขึ้นเพื่อรองรับ ส.ส. จากพรรคชาติไทย ซึ่งถูกยุบพรรคในปี 2551
     มีฐานเสียงหลักอยู่ที่จังหวัดสุพรรณบุรี
@@ -159,20 +178,25 @@
   website: 'http://www.chartthaipattana.or.th'
   facebook: 'https://www.facebook.com/pg/ChartthaipattanaParty'
   twitter: 'https://twitter.com/ChartthaiPT'
-  email: ''
-  phone: ''
+  email: chartthaipattana@chartthaipattana.or.th
+  phone: 02-2438072-3
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2551/D/064/66.PDF'
 - id: '6'
   name: ชาติพัฒนา
   en:
     name: Chartpattana
     short_name: CPN.
-    description: ''
+    description: >-
+      Chartpattana is a merge between the Ruam Jai Thai group and the former
+      Chartpattana Party which had once dissolved itself to join the Thai Rak
+      Thai Party. Its stronghold is in Nakhon Ratchasima. With its flexible,
+      friendly-to-all-side position, the party has never failed to join the
+      government.
   short_name: ชพน.
-  color: '#ffaf41'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     เป็นการรวมกันของกลุ่มรวมใจไทยกับกลุ่มชาติพัฒนาเก่า
     ที่เคยประกาศยุบไปรวมกับไทยรักไทยแล้วแยกออกมาใหม่
@@ -190,20 +214,24 @@
   website: 'http://www.chartpattana.com/'
   facebook: 'https://www.facebook.com/ChartpattanaParty/'
   twitter: 'https://twitter.com/chartpattana'
-  email: ''
-  phone: ''
+  email: Office.cpn@gmail.com
+  phone: 02-241-8275
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2554/D/179/121.PDF'
 - id: '7'
   name: ไทยศรีวิไลย์
   en:
     name: Thai Civilized
     short_name: TCL.
-    description: ''
+    description: >-
+      Thai Civilized Party, led by Mongkolkit Suksintaranont, former Secretary
+      General of the National Anti-Corruption Network. After the 2019 election
+      it innitially joined the government, but has now declared itself an
+      independent opposition.
   short_name: ทศล.
-  color: '#0c5197'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ฝ่ายค้าน
+  party_ordinal: null
+  party_group: ฝ่ายค้าน
   description: >-
     พรรคภายใต้การนำของนาย มงคลกิตติ์ สุขสินธารานนท์
     เลขาธิการภาคีเครือข่ายต่อต้านการทุจริตคอร์รัปชั่นแห่งชาติ หลังการเลือกตั้งปี
@@ -220,20 +248,23 @@
   website: '-'
   facebook: 'https://www.facebook.com/THAICIVILIZEDPARTY/'
   twitter: '-'
-  email: ''
-  phone: ''
+  email: '-'
+  phone: 02-961-0380-5
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/003/T_0176.PDF'
 - id: '8'
   name: ไทรักธรรม
   en:
     name: Thairaktham
     short_name: T.T.
-    description: ''
+    description: >-
+      Thairaktham Party's sole party list seat from the 2019 general election
+      was taken back shortly afterwards, as the by-election in Chiangmai
+      Constituency 8 changed the overall party list quota given to each party.
   short_name: ท.ธ.
-  color: '#e43ba2'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ''
+  party_ordinal: null
+  party_group: ''
   description: >-
     มีชื่อเดิมว่า 'พรรคไทยรักธรรม' ในการเลือกตั้งปี 62 ได้รับเลือกตั้ง
     ส.ส.แบบบัญชีรายชื่อ 1 คน แต่ต่อมา กกต. ประกาศให้พ้นจากสภาพ ส.ส.
@@ -251,20 +282,25 @@
   website: '-'
   facebook: 'https://www.facebook.com/Thairaktham/'
   twitter: '-'
-  email: ''
-  phone: ''
+  email: |
+    tairaktham_party@outlook.com
+  phone: 099-308-5545
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/106/116.PDF'
 - id: '9'
   name: ประชาชาติ
   en:
     name: Prachachat
     short_name: PCC.
-    description: ''
+    description: >-
+      Prachachat Party comprises of people from different places of birth, races
+      and cultures, with an aim to build a multi-culture nation. All of the 6
+      seats the party earned from the 2019 election were from constituencies in
+      the three Southern border provinces.
   short_name: ปช.
-  color: '#a35f26'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ฝ่ายค้าน
+  party_ordinal: null
+  party_group: ฝ่ายค้าน
   description: >-
     เป็นจากการรวมตัวกันของกลุ่มบุคคลที่มีความหลากหลายในเชิงถิ่นกำเนิด ชาติพันธุ์
     และวัฒนธรรม โดยเน้นการทำงานทางการเมืองเพื่อสร้างชาติที่เป็นสังคมพหุวัฒนธรรม
@@ -282,20 +318,24 @@
   website: 'https://prachachat.org'
   facebook: 'https://www.facebook.com/PrachachatPeopleNation'
   twitter: '-'
-  email: ''
-  phone: ''
+  email: PeoplesNation2561@gmail.com
+  phone: 063-269-9487
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0395.PDF'
 - id: '10'
   name: ประชาธรรมไทย
   en:
     name: Thai People Justice
     short_name: T.P.J.
-    description: ''
+    description: >-
+      Thai People Justice Party is led by Pichet Sathirachawal, former transport
+      minister, former deputy industry minister and former Bangkok Mass Transit
+      Authority Director. After the 2019 election it has innitially joined the
+      governnment, but has now declared itself an independent opposition.
   short_name: ปธท.
-  color: '#c32429'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     พรรคภายใต้การนำของนาย พิเชษฐ สถิรชวาล อดีต รมต. คมนาคม, รมช. อุตสาหกรรม,
     และผอ. ขสมก. หลังการเลือกตั้งปี 62 ได้เข้าเป็นพรรคร่วมรัฐบาลระยะหนึ่ง
@@ -312,20 +352,23 @@
   website: 'http://www.prachatumthai.com'
   facebook: 'https://www.facebook.com/THPJ.Party/'
   twitter: '-'
-  email: ''
-  phone: ''
+  email: dr.chaiwut@gmail.com
+  phone: 097-998-7865
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0488.PDF'
 - id: '11'
   name: ประชาธิปไตยใหม่
   en:
     name: New Democrat
     short_name: NDP.
-    description: ''
+    description: >-
+      New Democrat Party secured 1 party list seat from the 2554 election,
+      joining the Yingluck government. In 2019 election it has again received 1
+      party list seat and joined the government with Gen. Prayut Chan-o-Cha.
   short_name: ปธม.
-  color: '#eb4138'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     เคยส่งผู้สมัครรับเลือกตั้งในปี 54 และมี ส.ส. เขต ได้รับเลือกตั้ง 1 คน
     ทำงานเป็นพรรคร่วมรัฐบาลยิ่งลักษณ์
@@ -341,20 +384,24 @@
   website: '-'
   facebook: 'https://www.facebook.com/NDCP2554/'
   twitter: '-'
-  email: ''
-  phone: ''
+  email: '-'
+  phone: '-'
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2554/E/062/61.PDF'
 - id: '12'
   name: ประชาธิปัตย์
   en:
     name: Democrat
     short_name: '-'
-    description: ''
+    description: >-
+      The oldest political party in Thailand that is still operating, Democrat
+      Party was established before Thailand has a Political Party Act. The
+      Democrat used to dominate the whole of the South. It claimes to hold a
+      liberal democratic political ideology and opposes the "Thaksin regime".
   short_name: ปชป.
-  color: '#06aff3'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     พรรคการเมืองที่เก่าแก่ที่สุดที่ยังดำเนินการอยู่ของไทย
     จัดตั้งขึ้นก่อนที่จะมีพระราชบัญญัติพรรคการเมือง
@@ -372,20 +419,24 @@
   website: 'https://www.democrat.or.th/home'
   facebook: 'https://www.facebook.com/DemocratPartyTH/'
   twitter: 'http://twitter.com/democratTH'
-  email: ''
-  phone: ''
+  email: public@democrat.or.th
+  phone: 02-828-1000
   ratchakitcha: '-'
 - id: '13'
   name: ประชานิยม
   en:
     name: Prachaniyom
     short_name: PYP.
-    description: ''
+    description: >-
+      Prachaniyom ("populist") Party was set up by a former Assistant Police
+      Commissioner General. It was first percieved as a Pheu Thai nominee. The
+      party leader denied the claim saying their policies were in line with
+      those of the government.
   short_name: ปย.
-  color: '#ea1f25'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     จัดตั้งโดยอดีตผู้ช่วยผู้บัญชาการตำรวจแห่งชาติ ในช่วงแรก
     ถูกมองว่าเป็นพรรคการเมืองที่เป็นนอมินีของพรรคเพื่อไทย
@@ -402,20 +453,25 @@
   website: '-'
   facebook: 'https://www.facebook.com/prashaniyomparty/'
   twitter: '-'
-  email: ''
-  phone: ''
+  email: |
+    info@prachaniyom.or.th
+  phone: 063-195-5511
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/005/T_0099.PDF'
 - id: '14'
   name: ประชาภิวัฒน์
   en:
     name: People Progressive
     short_name: PRA
-    description: ''
+    description: >-
+      People Progressive Party, led by Dhammakaya disciple Somkiat Sornlam, has
+      its stronghold in the Hankha District, Chainat Province. The party
+      advertises religious-driven policies and has supporters among the
+      Dhammakaya disciples.
   short_name: ปชภ.
-  color: '#076350'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     พรรคภายใต้การนำของนาย สมเกียรติ ศรลัมพ์ ศิษย์วัดธรรมกาย
     มีฐานเสียงจากพื้นที่อำเภอหันคา จังหวัดชัยนาท และมวลชนธรรมกาย
@@ -432,20 +488,22 @@
   website: 'https://www.prachapiwat.com/'
   facebook: 'https://www.facebook.com/love.at.first.sight.prachapiwat/'
   twitter: '-'
-  email: ''
-  phone: ''
+  email: prachapiwat01@gmail.com
+  phone: 056-881-326
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/070/T81.PDF'
 - id: '15'
   name: พลเมืองไทย
   en:
     name: Ponlamuang Thai
     short_name: PONT.
-    description: ''
+    description: >-
+      Ponlamuang Thai Party, formerly Ponlamuang Party, comprises former
+      ministers and MPs from all parts of Thailand.
   short_name: พล.
-  color: '#2d3180'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     เดิมชื่อพรรคพลังพลเมือง เกิดจากการรวมตัวกันของอดีตรัฐมนตรีและอดีต ส.ส.
     จากทั่วทุกภาค
@@ -461,20 +519,23 @@
   website: '-'
   facebook: 'https://www.facebook.com/ptpthaiparty/'
   twitter: '-'
-  email: ''
-  phone: ''
+  email: '-'
+  phone: 02-060-8688
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/070/T137.PDF'
 - id: '16'
   name: พลังชาติไทย
   en:
     name: Thai Nation Power
     short_name: TNPP
-    description: ''
+    description: >-
+      Thai Nation Power Party, led by Pol. Maj. Gen. Songklod Thipparat, former
+      member of the NCPO working committee, has the objective of supporting Gen.
+      Prayut Chan-o-Cha to become the Prime Minister.
   short_name: พพชท
-  color: '#08663b'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     พรรคภายใต้การนำของพล.ต.ทรงกลด ทิพย์รัตน์ อดีตคณะทำงานของ คสช.
     มุ่งสนับสนุนให้ พลเอก ประยุทธ์ จันทร์โอชา เป็นนายกรัฐมนตรี
@@ -490,20 +551,23 @@
   website: 'https://www.tnpparty.com/'
   facebook: 'https://www.facebook.com/TNPP.Thai/'
   twitter: '-'
-  email: ''
-  phone: ''
+  email: ppct_power@gmail.com
+  phone: 081-409-9998
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0265.PDF'
 - id: '17'
   name: พลังท้องถิ่นไท
   en:
     name: Thai Local Power
     short_name: TLP
-    description: ''
+    description: >-
+      Thai Local Power Party, led by Chatchawal Kong-Udom or "Chat Tao-poon",
+      former senator who is influential in Bangkok. The party made clear it
+      wanted to join the government no matter which side led it.
   short_name: พทท.
-  color: '#259747'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     พรรคภายใต้การนำของนาย ชัชวาลล์ คงอุดม 'ชัช เตาปูน' อดีต สว.
     ผู้มีอิทธิพลในพื้นที่ กทม.
@@ -520,20 +584,24 @@
   website: 'http://www.tlpparty.com'
   facebook: 'https://www.facebook.com/ThaiLocalPowerParty'
   twitter: 'https://twitter.com/thailocalpower'
-  email: ''
-  phone: ''
+  email: '-'
+  phone: |
+    thailocalpowerparty@gmail.com
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2555/D/053/143.PDF'
 - id: '18'
   name: พลังไทยรักไทย
   en:
     name: Phalang Thai Rak Thai
     short_name: P.T.R.T.
-    description: ''
+    description: >-
+      Phalang Thai Rak Thai Party was established by a group of new generation
+      of farmers aiming to represent the Thai farmers. Their top policy was to
+      solve the agricultural irrigation problems.
   short_name: พ.ท.ร.ท.
-  color: '#245896'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     เกิดจากกลุ่มลูกหลานชาวนาเพื่อเป็นปากเป็นเสียงให้กับชาวนา
     ชูนโยบายการแก้ปัญหาขาดแคลนแหล่งน้ำทำการเกษตร
@@ -549,20 +617,25 @@
   website: '-'
   facebook: 'https://www.facebook.com/PTRTparty/'
   twitter: '-'
-  email: ''
-  phone: ''
+  email: '-'
+  phone: '-'
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0200.PDF'
 - id: '19'
   name: พลังธรรมใหม่
   en:
     name: New Palangdharma
     short_name: NPD
-    description: ''
+    description: >-
+      New Palangdharma Party is a move to revive the original Palangdharma
+      Party. The original party was established by its former leader Maj. Gen.
+      Chamlong Srimuang who was also a leader of the People's Alliance for
+      Democracy (PAD). The New Palangdharma was set up by some former members of
+      the old party, together with other members of the public.
   short_name: พธม.
-  color: '#e9b54a'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     เป็นการรื้อฟื้นพรรคพลังธรรม ที่ก่อตั้งโดย พล.ต.จำลอง ศรีเมือง
     อดีตหัวหน้าพรรคและแกนนำพันธมิตรประชาชนเพื่อประชาธิปไตย (พธม.)
@@ -579,20 +652,26 @@
   website: 'http://www.npdthai.org'
   facebook: 'https://www.facebook.com/npdthai/'
   twitter: '-'
-  email: ''
-  phone: ''
+  email: wtn_fm99@hotmail.com
+  phone: |
+    092-808-9265
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/080/T_0043.PDF'
 - id: '20'
   name: พลังประชารัฐ
   en:
     name: Palang Pracharath
     short_name: PPRP
-    description: ''
+    description: >-
+      Palang Pracharath Party comprises former ministers in the NCPO's cabinet,
+      former PDRC leaders, and former members of the Thai Rak Thai Party who had
+      left the camp, especially the Sam Mitr ("three friends") faction. The
+      party's main direction is to support Gen. Prayut to become the Prime
+      Minister.
   short_name: พปชร.
-  color: '#1f68dd'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     เป็นการรวมกันของกลุ่มอดีตรัฐมนตรีในรัฐบาล คสช. อดีตแกนนำ กปปส.
     และอดีตไทยรักไทยที่แยกตัวออกมาโดยเฉพาะกลุ่มสามมิตร มุ่งสนับสนุนให้ พลเอก
@@ -609,20 +688,24 @@
   website: 'https://pprp.or.th/'
   facebook: 'https://www.facebook.com/PPRPThailand/'
   twitter: 'https://twitter.com/pprpthailand'
-  email: ''
-  phone: ''
+  email: Info@pprp.or.th
+  phone: 02-152-9999
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/003/T_0221.PDF'
 - id: '21'
   name: พลังปวงชนไทย
   en:
     name: Thai People Power
     short_name: PLPT
-    description: ''
+    description: >-
+      Thai People Power Party was especially established for the 2019 election.
+      Some believe there is a connection between this party and Pheu Thai Party
+      as its founders, leader and advisors has a close connection to Thaksin
+      Shinnawatra and Pheu Thai Party.
   short_name: พลท.
-  color: '#181f97'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ฝ่ายค้าน
+  party_ordinal: null
+  party_group: ฝ่ายค้าน
   description: >-
     เป็นพรรคที่จัดตั้งเพื่อการเลือกตั้งปี 62
     มีการเชื่อมโยงว่าเป็นพรรคสาขาของพรรคเพื่อไทย เนื่องจากคณะผู้ก่อตั้ง
@@ -639,20 +722,24 @@
   website: 'https://www.พรรคพลังปวงชนไทย.com'
   facebook: 'https://www.facebook.com/thaipeoplepowerpartypage/'
   twitter: 'https://twitter.com/0xREjn0OHxcFkQg'
-  email: ''
-  phone: ''
+  email: thaipeoplepowerparty@gmail.com
+  phone: '-'
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0125.PDF'
 - id: '22'
   name: เพื่อชาติ
   en:
     name: Puea Chat
     short_name: PCH.P.
-    description: ''
+    description: >-
+      Puea Chat is said to be another of Pheu Thai's spare party in addition to
+      Pheu Tham Party. Others believe it is the party of the red shirt UDD
+      (United Front for Democracy against Dictatorship), saying UDD leaders are
+      behind the party.
   short_name: พ.พ.ช.
-  color: '#c0bcc3'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ฝ่ายค้าน
+  party_ordinal: null
+  party_group: ฝ่ายค้าน
   description: >-
     เป็นพรรคที่ได้ชื่อว่าเป็นพรรคสำรองของพรรคเพื่อไทย ต่อจากพรรคเพื่อธรรม
     รวมถึงอีกกระแสหนึ่งเชื่อกันว่าเป็นพรรคตัวแทนของ
@@ -670,20 +757,25 @@
   website: '-'
   facebook: 'https://www.facebook.com/PueaChatOfficial/'
   twitter: '-'
-  email: ''
-  phone: ''
+  email: pueachatparty@gmail.com
+  phone: '-'
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/116/86.PDF'
 - id: '23'
   name: เพื่อไทย
   en:
     name: Pheu Thai
     short_name: PT.
-    description: ''
+    description: >-
+      Pheu Thai Party is the second reincarnation of Thai Rak Thai Party -- the
+      first one being People Power Party. Both Thai Rak Thai and People Power
+      had been dissolved. The Thai Rak Thai government was taken down by the
+      2006 military coup, while 2014 coup had ousted the recent Pheu Thai
+      government.
   short_name: พท.
-  color: '#da3731'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ฝ่ายค้าน
+  party_ordinal: null
+  party_group: ฝ่ายค้าน
   description: >-
     เริ่มต้นจากพรรคไทยรักไทยในอดีต ต่อมาเป็นพรรคพลังประชาชน
     โดยภายหลังทั้งสองพรรคตั้งต้นถูกตัดสินให้ยุบพรรค
@@ -701,20 +793,24 @@
   website: 'https://www.ptp.or.th/'
   facebook: 'https://www.facebook.com/pheuthaiparty/'
   twitter: 'https://twitter.com/pheuthaiparty'
-  email: ''
-  phone: ''
+  email: '-'
+  phone: 02-653-4000-1
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2550/E/174/1.PDF'
 - id: '24'
   name: ภูมิใจไทย
   en:
     name: Bhumjaithai
     short_name: BJT
-    description: ''
+    description: >-
+      Bhumjaithai Party is a gathering of some former members of Thai Rak Thai
+      and People Power, and the "Friends of Newin" group. It has a stronghold in
+      the southern part of the Northeast and was ready to join the government of
+      any side.
   short_name: ภท
-  color: '#209fa0'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     เป็นการรวมตัวของกลุ่มไทยรักไทยเก่าที่แยกตัวออกมา กลุ่มพลังประชาชน
     และกลุ่มเพื่อนเนวิน มีฐานเสียงหนาแน่นในพื้นที่อีสานใต้
@@ -731,20 +827,23 @@
   website: 'https://www.bhumjaithai.com/'
   facebook: 'https://www.facebook.com/khonbhumjaithai/'
   twitter: 'https://twitter.com/khonbhumjaithai'
-  email: ''
-  phone: ''
+  email: info.bhumjaithai@gmail.com
+  phone: 02-940-6740
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2552/D/003/107.PDF'
 - id: '25'
   name: รวมพลังประชาชาติไทย
   en:
     name: Action Coalition for Thailand
     short_name: ACT
-    description: ''
+    description: >-
+      Action Coalition for Thailand continues the movement of the yellow shirt
+      PDRC. It supports Gen. Prayut Chan-o-cha to become the Prime Minister and
+      opposes the Thaksin regime.
   short_name: รปช.
-  color: '#303d8e'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     เป็นพรรคที่ต่อยอดการเคลื่อนไหวของกลุ่ม กปปส. มุ่งสนับสนุนให้ พลเอก ประยุทธ์
     จันทร์โอชา เป็นนายกรัฐมนตรี และต่อต้านระบอบทักษิณ
@@ -760,23 +859,27 @@
   website: 'https://act-party.org/'
   facebook: 'https://www.facebook.com/actpartyorg'
   twitter: 'https://twitter.com/actpartyorg'
-  email: ''
-  phone: ''
+  email: info@act-party.org
+  phone: 093-254-9419
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0324.PDF'
 - id: '26'
   name: รักษ์ผืนป่าประเทศไทย
   en:
     name: Thai Forest Conservation
     short_name: FCP
-    description: ''
+    description: >-
+      Thai Forest Conservation Party, formerly the Thai Forest Land Reclaimation
+      Party, is led by Damrong Phidej, former Director General of the Department
+      of National Parks, Wildlife and Plant Conservation. Its main policy is
+      about conserving natural resource and environment.
   short_name: รป.
-  color: '#8dbf44'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ร่วมรัฐบาล
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
   description: >-
     เดิมชื่อพรรคทวงคืน เป็นพรรคในกำกับของนาย ดำรงค์ พิเดช
-    อดีตอธิบดีกรมอุทยานแห่งชาติ สัตว์ป่า และพันธุ์พืช
+    อดีตอธิบดีกรมอุทยานแห่งชาติ สัตว์ป่า และพันธุ์พืช 
     ชูนโยบายอนุรักษ์ทรัพยากรและสิ่งแวดล้อม
   established_date: '2013-01-09'
   total_member: 2
@@ -790,20 +893,24 @@
   website: '-'
   facebook: 'https://www.facebook.com/ThaiForestConservationParty/'
   twitter: '-'
-  email: ''
-  phone: ''
+  email: '-'
+  phone: 02-931-0065
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/022/113.PDF'
 - id: '27'
   name: เศรษฐกิจใหม่
   en:
     name: New Economics
     short_name: NEP
-    description: ''
+    description: >-
+      New Economics Party wants to solve economic problems and improve the
+      people's livelihood in the period when the middle and lower classes feel
+      strong impact from the sluggish economy. It claims a democratic position
+      while focusing on the economy, not on political conflicts.
   short_name: ศม
-  color: '#6e2fff'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ฝ่ายค้าน
+  party_ordinal: null
+  party_group: ฝ่ายค้าน
   description: >-
     พรรคที่เกิดขึ้นจากความต้องการแก้ปัญหาปากท้องของประชาชน
     เพราะเป็ช่วงเศรษฐกิจของชนชั้นกลางลงมาย่ำแย่ ระบุจุดยืนประชาธิปไตย
@@ -820,20 +927,24 @@
   website: 'http://www.nep.or.th/'
   facebook: 'https://www.facebook.com/NEPThailand/'
   twitter: 'https://www.twitter.com/NewEconomicsTH'
-  email: ''
-  phone: ''
+  email: pr@nep.or.th
+  phone: 02-285-2975
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/003/T_0139.PDF'
 - id: '28'
   name: เสรีรวมไทย
   en:
     name: Thai Liberal
     short_name: TLP
-    description: ''
+    description: >-
+      Thai Liberal Party is led by Pol. Gen. Seripisut Temiyavet, former Police
+      Commissioner General. It has announced its position against the military
+      coup, supporting military reforms and standing firmly against
+      dictatorship.
   short_name: สร.
-  color: '#b49e31'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ฝ่ายค้าน
+  party_ordinal: null
+  party_group: ฝ่ายค้าน
   description: >-
     พรรคภายใต้การนำของ พล.ต.อ. เสรีพิศุทธ์ เตมียาเวส
     อดีตผู้บัญชาการตำรวจแห่งชาติ ประกาศจุดยืนไม่เห็นด้วยกับรัฐประหาร
@@ -850,20 +961,24 @@
   website: 'https://sereeruamthai.or.th'
   facebook: 'https://www.facebook.com/sereeruamthai/'
   twitter: '-'
-  email: ''
-  phone: ''
+  email: '-'
+  phone: 02-433-9484
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/112/48.PDF'
 - id: '29'
   name: อนาคตใหม่
   en:
     name: Future Forward
     short_name: FWP.
-    description: ''
+    description: >-
+      Future Forward Party aims to build a new political culture, support
+      democracy, and end the vicious cycle of the military coup in Thailand. It
+      has strongly announced its position against military influence in
+      politics.
   short_name: อนค.
-  color: '#ef7824'
+  color: ''
   party_type: พรรค
-  party_ordinal: .nan
-  party_faction: ฝ่ายค้าน
+  party_ordinal: null
+  party_group: ฝ่ายค้าน
   description: >-
     จัดตั้งขึ้นเพื่อมุ่งสร้างการเมืองแบบใหม่ สนับสนุนประชาธิปไตย
     และต้องการยุติวงจรอุบาทว์ของรัฐประหาร
@@ -880,6 +995,6 @@
   website: 'https://futureforwardparty.org'
   facebook: 'https://www.facebook.com/FWPthailand/'
   twitter: 'https://twitter.com/FWPthailand'
-  email: ''
-  phone: ''
+  email: office@futureforwardparty.org
+  phone: 02-821-5688
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/087/T_0104.PDF'

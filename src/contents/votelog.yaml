@@ -14,12 +14,13 @@
   vote_date: '2019-06-05'
   prayuth: '500'
   thanathorn: '244'
-  passed: false
-  approve: .nan
-  disprove: .nan
+  passed: null
+  approve: null
+  disprove: null
   abstained: 3
+  total_voter: 747
   absent: 1
-  total_voter: 748
+  total_member: 748
   description_th: >-
     การประชุมร่วมกันของทั้ง ส.ส. และ ส.ว. ครั้งแรก
     เพื่อพิจารณาและลงมติเลือกคนที่จะมาเป็นนายกรัฐมนตรี โดยมีสองชื่อที่ถูกเสนอ
@@ -42,15 +43,17 @@
     - title: ผลการนับคะแนน
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190606122944A0.pdf
-    - title: ''
-      link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4135#!
 - id: '2'
   title: ตั้งคณะกรรมาธิการผู้มีความหลากหลายทางเพศ
   en:
-    title: ''
-    legal_title: ''
+    title: Vote to set up separate Standing Committee on LGBT rights
+    legal_title: >-
+      Consideration of the Draft Rules of Procedure of the House of
+      Representatives on item 90 under Chapter 5 related to Committee, the MPs
+      of Future Forward Party proposed to have 36 committees instead of 25 with
+      one more on LGBT rights.
   legal_title: >-
     พิจารณาร่างข้อบังคับการประชุมสภาผู้แทนราษฎร พ.ศ. .... ในข้อที่ 90 หมวดที่ 5
     ว่าด้วยกรรมาธิการ โดย ส.ส. พรรคอนาคตใหม่ ขอเพิ่มจาก 35 คณะ เป็น 36 คณะ
@@ -64,8 +67,9 @@
   approve: 101
   disprove: 365
   abstained: 13
+  total_voter: 479
   absent: 20
-  total_voter: 499
+  total_member: 499
   description_th: >
     วันที่ 22 สิงหาคม 2562
     การประชุมของสภาผู้แทนราษฎรเพื่อพิจารณาร่างข้อบังคับการประชุม
@@ -76,7 +80,15 @@
     กลุ่มชาติพันธุ์ และผู้มีความหลากหลายทางเพศ ซึ่งผลปรากฏว่า
     ที่ประชุมไม่เห็นชอบกับคำแปรญัตติของ น.ส.ณธีภัสร์ ด้วยคะแนน 365 ต่อ 101
     และงดออกเสียง 13 ส่งผลให้กรรมาธิการสามัญ จะมีจำนวน 35 คณะตามร่างเดิม 
-  description_en: ''
+  description_en: >-
+    On 22 August 2019, during the meeting of the House of Representatives to
+    consider the Draft Rules of Procedure of the House of Representatives. In
+    the draft, there are 35 House Committees, however, Nathiphat Kunsetthasit,
+    the FFP party-list MPs proposed the motion to set up a standing house
+    committee on gender diversity separate from Committee on children, young
+    people, women, the elderly, persons with disabilities, ethnic groups, and
+    LGBT people. The vote was 365 against and 101 in favour, with three
+    abstentions.
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
@@ -84,15 +96,15 @@
     - title: ร่างข้อบังคับการประชุมสภาผู้แทนราษฎร พ.ศ. 2562
       link: >-
         https://library2.parliament.go.th/giventake/content_give/force-hr2562.pdf
-    - title: ''
-      link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4154
 - id: '3'
   title: ขยายสัญญาสัมปทานทางด่วนและรถไฟฟ้าบีทีเอส
   en:
-    title: ''
-    legal_title: ''
+    title: Extend the concessions of expressway and BTS
+    legal_title: >-
+      Consideration of the Committee report on the extension of concessions of
+      express way and BTS sky train
   legal_title: >-
     ที่ประชุมพิจารณาระเบียบวาระเรื่องที่คณะกรรมาธิการพิจารณาเสร็จแล้ว คือ
     รายงานการพิจารณาศึกษาการขยายสัญญาสัมปทานทางด่วนและรถไฟฟ้า (บีทีเอส)
@@ -105,8 +117,9 @@
   approve: 412
   disprove: 25
   abstained: 20
-  absent: 42
-  total_voter: 499
+  total_voter: 457
+  absent: 40
+  total_member: 497
   description_th: >-
     วันที่ 5 กันยายน 2562
     ที่ประชุมสภาผู้แทนราษฎรมีมติเห็นชอบด้วยกับข้อเสนอตามรายงานของคณะกรรมาธิการวิสามัญ
@@ -116,22 +129,28 @@
     และไม่ขยายสัมปทานการเดินรถไฟฟ้าสายสีเขียวของบีทีเอส ที่จะสิ้นสุดในปี 2572
     ด้วยคะแนน 412 ต่อ 25 งดออกเสียง 20 คะแนน
     ซึ่งเมื่อผ่านการลงมติจากสภาผู้แทนราษฎรแล้วก็จะเสนอให้คณะรัฐมนตรีเป็นผู้นำไปปฏิบัติต่อไป
-  description_en: ''
+  description_en: >
+    On 5 September 2019, The House of Representatives had voted to approve the
+    proposal according to a study report by an Ad hoc Committee to extend the
+    concession of express way to end the dispuet between Expressway Authirity of
+    Thailand (Epat) and the Bangkok Expressway and Metro public company (BEM)
+    and not extend the concession on the BTS green line which will end in 2029.
+    The vote was 415 in favour and 25 against with 20 abstentions. After the
+    house has finalised, the proposal will be submitted to the cabinet to
+    conduct according to the result.
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191008153956A1.pdf
     - title: '-'
       link: '-'
-    - title: ''
-      link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4156#!
 - id: '4'
   title: ตั้งคณะกรรมาธิการวิสามัญพิจารณาผลกระทบโครงการอีอีซี
   en:
-    title: ''
-    legal_title: ''
+    title: Agenda to set up committee on EEC
+    legal_title: Extend the concessions of expressway and BTS
   legal_title: >-
     ญัตติด่วน
     ขอให้สภาผู้แทนราษฎรตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาและตรวจสอบผลกระทบจากการดำเนินโครงการเขตพัฒนาพิเศษภาคตะวันออก
@@ -145,8 +164,9 @@
   approve: 224
   disprove: 231
   abstained: 2
+  total_voter: 457
   absent: 40
-  total_voter: 497
+  total_member: 497
   description_th: >-
     Eastern Economic Corridor (EEC) หรือ โครงการระเบียงเศรษฐกิจพิเศษภาคตะวันออก
     เป็นหนึ่งในนโยบายหลักของรัฐบาล คสช.2
@@ -168,22 +188,42 @@
     หลังจากญัตตินี้ถูกเลื่อนพิจารณาหลายครั้ง เมื่อวันที่ 13 กันยายน 2562
     ที่ประชุมมีมติไม่เห็นด้วยให้ตั้งคณะกรรมาธิการวิสามัญด้วยเสียง 231 ต่อ 223
     เสียง งดออกเสียง 2 เสียง จากผู้เข้าประชุม 456 คน
-  description_en: ''
+  description_en: >-
+    Eastern Economic Corridor (EEC) is one of the main policy from the Nation
+    Council for Peace and Order (NCPO) regime and also become an aim of the
+    NCPO2 with Somkid Jatusripitak, the deputy Prime Minister on economic as a
+    key person who is pushing for. The goal of the EEC project is to build a
+    special economic zone to attract foreign investors in three provinces in the
+    east, Chonburi, Rayong and Chacherngsao. The obvious effect of the EECP
+    project is the rise of properties price in the area and the trade of lands.
+    Farmers and fishers who rent the lands for long time was abandoned and
+    canceled the rent contract where land owners want to sell to new investors. 
+    The effect to environment and communities will follow.
+
+
+
+
+    Representatives from at least three parties which are Future Forward Party,
+    Democrat Party and Palangpracharat Party proposed to set up Ad hoc
+    Committees to consider the effect of EEC under three different names and
+    focuses. This agenda was postponed many times until 13 September 2019, the
+    house has voted against the proposal with 231:223 with 2 abstentions from
+    the 456 attendees.
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190913143158A3.pdf
     - title: '-'
       link: '-'
-    - title: ''
-      link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4158#!
 - id: '5'
   title: พิจารณาพ.ร.ก.โอนกำลังพลและงบประมาณฯ
   en:
-    title: ''
-    legal_title: ''
+    title: >
+      An approval of executive decree on the transfer of army units, and budget,
+      to a royal security command unit. 
+    legal_title: '-'
   legal_title: >-
     พิจารณาพระราชกำหนดโอนอัตรากำลังพลและงบประมาณบางส่วนของกองทัพบก กองทัพไทย
     กระทรวงกลาโหม ไปเป็นของหน่วยบัญชาการถวาย ความปลอดภัยรักษาพระองค์
@@ -197,8 +237,9 @@
   approve: 374
   disprove: 70
   abstained: 2
-  absent: 51
-  total_voter: 497
+  total_voter: 446
+  absent: 40
+  total_member: 486
   description_th: >-
     30 กันยายน 2562 พล.อ.ประยุทธ์ จันทร์โอชา ในฐานะนายกรัฐมนตรีภายใต้รัฐบาล
     'คสช.2' ลงนามออกกฎหมายเป็นพระราชกำหนด (พ.ร.ก.)
@@ -220,22 +261,40 @@
     ปิยบุตร แสงกนกกุล อภิปรายถึงความไม่ถูกต้องตามเงื่อนไขของ มาตรา 172 ส.ส.
     พรรคอนาคตใหม่ 70 คนลงมติไม่เห็นด้วยกับการออก พ.ร.ก.ฉบับนี้
     และแพ้ไปด้วยคะแนนรวม 374 ต่อ 70 เสียง งดออกเสียง 2 เสียง
-  description_en: ''
+  description_en: >-
+    On 30 September 2019, Gen. Prayut Chan-o-cha as a Prime Minister under the
+    NCPO2 cabinet has signed an executive decree to trasfer forces and budget of
+    army units under ministry of defense, 1st Infantry Regiment of the Ratcha
+    Wallop Royal Guards and the 11th Infantry Regiment of the Ratcha Wallop
+    Royal Guards  to the royal security command unit. 
+
+
+
+
+    After an executive order was enacted, the cabinet must propose to ask for
+    approval from the parliament once the meeting was started. The legal problem
+    of such order is Section 172 of the Constitution provide the power to
+    cabinet to issue such order only on 'emergency' situation otherwise the
+    cabinet must propose to draft to parliament as normal process of legislative
+    enactment. However, the cabinet under Gen.Prayuth has failed to provide the
+    reason of emergency. On 17 October 2019, when the decree was proposed to
+    parliament consideration, Piyabutr Saengkanokkul, a secretary of future
+    forward party described the illegality of the decree with Section 172. 70
+    MPs from Future Forward Party voted against the decree and lost with 374:70
+    with 2 abstentions.
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191021111117A1.pdf
     - title: พระราชกำหนดโอนอัตรากำลังพลและงบประมาณฯ
       link: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/A/103/T_0001.PDF'
-    - title: ''
-      link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4162
 - id: '6'
   title: พ.ร.บ.งบประมาณฯ วาระที่ 1
   en:
-    title: ''
-    legal_title: ''
+    title: The First Reading of 2020 budget
+    legal_title: '-'
   legal_title: >-
     พิจารณาร่างพระราชบัญญัติงบประมาณรายจ่ายประจำปีงบประมาณพ.ศ. ๒๕๖๓ ซึ่ง
     คณะรัฐมนตรี เป็นผู้เสนอ
@@ -248,8 +307,9 @@
   approve: 251
   disprove: 0
   abstained: 234
+  total_voter: 485
   absent: 12
-  total_voter: 497
+  total_member: 497
   description_th: >-
     ทางปฏิบัติในการบริหารราชการแผ่นดิน เมื่อรัฐบาลต้องการงบประมาณจะเสนอเป็น
     ร่างพ.ร.บ.งบประมาณรายจ่ายประจำปี ทุกปี
@@ -269,14 +329,32 @@
     เข้าสู่การตั้งคณะกรรมาธิการพิจารณารายละเอียดในวาระที่สองต่อไป
     ซึ่งกำหนดระยะเวลาพิจารณา 30 วัน
     ก่อนจะนำกลับเข้ามาอภิปรายในที่ประชุมของสภาผู้แทนราษฎรอีกครั้งหนึ่ง 
-  description_en: ''
+  description_en: >-
+    In practice of the government administration, when the government needs
+    budget to conduct their work the draft budget shall be proposed to
+    parliament for consideration as an act. The 2020 budget was crucial because
+    the current government carries very small majority seats in the parliament
+    and some MPs are under qualification examinations, therefore the stability
+    of the government is very unclear. If some MPs tuned against the government,
+    the proposed budget can be failed and will effect the government
+    administration. If so, the government should resign from positions or
+    dissolve the parliament as a political tradition.  
+
+
+
+
+    On 17 October 2019, the parliament considered the 2020 annual budget that
+    proposed by the government. The discussion took three full day then at the
+    night on 19 October 2016, the house of representatives voted with 251 in
+    favour of the draft and 234 abstentions. The draft budget the passed the
+    first reading to the process of committee consideration which will take 30
+    more days to consider before it will be brought back to discuss in the house
+    again.
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191021111117A3.pdf
     - title: ร่างพระราชบัญญัติงบประมาณรายจ่ายประจำปีงบประมาณ พ.ศ. 2563
       link: 'http://bbstore.bb.go.th/cms/1570699357_1282.pdf'
-    - title: ''
-      link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4162

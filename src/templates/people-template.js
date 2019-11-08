@@ -21,16 +21,19 @@ export const query = graphql`
       birthdate
       education
       graduation
-      occupation
+      degree
+      ex_occupation
       cabinet_position
-      prev_polit_pos
       is_cabinet
       is_senator
       is_mp
       mp_type
       mp_province
       mp_zone
-      committee
+      committee {
+        set
+        position
+      }
       vote
       party
       asset
@@ -40,12 +43,8 @@ export const query = graphql`
     }
     peopleVoteYaml(name: { eq: $name }, lastname: { eq: $lastname }) {
       votelog {
-        _1
-        _2
-        _3
-        _4
-        _5
-        _6
+        key
+        value
       }
     }
     allVotelogYaml {
@@ -134,12 +133,6 @@ const PeoplePage = ({
                 <li key={position}>{`${position}`}</li>
               ))}
             </ul>
-            <h3>ตำแหน่งที่ผ่านมา:</h3>
-            <ul>
-              {peopleYaml.prev_polit_pos.map(position => (
-                <li key={position}>{`${position}`}</li>
-              ))}
-            </ul>
             <h3>
               คณะรัฐมนตรี: {`${peopleYaml.is_cabinet ? "ใช่" : "ไม่ใช่"}`}
             </h3>
@@ -175,8 +168,10 @@ const PeoplePage = ({
                 )}
               </div>
               <div>
-                {peopleYaml.committee.map(com => (
-                  <span key={com}>{com}</span>
+                {peopleYaml.committee.map((com, i) => (
+                  <span key={`${com.set}${i}`}>
+                    {com.set} {com.position}
+                  </span>
                 ))}
               </div>
 
@@ -186,13 +181,13 @@ const PeoplePage = ({
                 {" / "}
                 <span>อายุ {ageFromBirthdate(peopleYaml.birthdate)} ปี</span>
                 {" / "}
-                <span>การศึกษา {peopleYaml.education}</span>
-                <ul>
-                  {peopleYaml.graduation.map(grad => (
-                    <li key={grad}>{grad}</li>
-                  ))}
-                </ul>
-                <span>อาชีพเดิม {peopleYaml.occupation}</span>
+                <span>การศึกษา {peopleYaml.education}</span>{" "}
+                <span>
+                  {peopleYaml.graduation}
+                  {peopleYaml.degree ? ` (${peopleYaml.degree})` : null}
+                </span>
+                {" / "}
+                <span>อาชีพเดิม {peopleYaml.ex_occupation}</span>
               </div>
 
               <hr className={`${styles.hr}`} />
