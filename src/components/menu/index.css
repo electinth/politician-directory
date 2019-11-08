@@ -7,7 +7,7 @@
   top: -100vh;
   z-index: 2;
   animation: slideInMobile 0.3s ease-in-out forwards;
-  padding: 2rem 2rem;
+  padding: 1.2rem 2rem;
   padding-bottom: 4rem;
 }
 
@@ -42,6 +42,8 @@
     right: -100vw;
     z-index: 2;
     animation: slideInDesktop 0.2s ease-in-out forwards;
+    padding: 2rem 2rem;
+    padding-bottom: 4rem;
   }
 
   .menu-wrapper > h2 {

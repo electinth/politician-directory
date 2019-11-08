@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
 import "../../styles/global.css"
@@ -82,11 +83,11 @@ const languageMenu = {
   },
 }
 
-const Menu = () => {
-  const data = useStaticQuery(graphql`
+const Menu = ({ siteTitle }) => {
+  const staticData = useStaticQuery(graphql`
     query {
       voteRecordImage: file(
-        relativePath: { eq: "images/icons/voteRecord.png" }
+        relativePath: { eq: "images/icons/vote-record.png" }
       ) {
         childImageSharp {
           fixed(height: 32) {
@@ -99,13 +100,13 @@ const Menu = () => {
 
   return (
     <div className="menu-wrapper">
-      <h2 css={menuHeader}>They Work For Us?</h2>
+      <h2 css={menuHeader}>{siteTitle}</h2>
 
       <ul css={menuList}>
         <li>
           <span>
             <Img
-              fixed={data.voteRecordImage.childImageSharp.fixed}
+              fixed={staticData.voteRecordImage.childImageSharp.fixed}
               style={menuIconStyle}
             />
             สำรวจนักการเมือง
@@ -125,7 +126,7 @@ const Menu = () => {
         <li>
           <span>
             <Img
-              fixed={data.voteRecordImage.childImageSharp.fixed}
+              fixed={staticData.voteRecordImage.childImageSharp.fixed}
               style={menuIconStyle}
             />
             <Link to={"/votelog"}>สรุปวาระการลงมติ</Link>
@@ -139,14 +140,22 @@ const Menu = () => {
       </ul>
 
       <div css={languageMenu}>
-        <a className="active" href="#">
+        <a className="active" href="/">
           TH
         </a>
         {" / "}
-        <a href="#">EN</a>
+        <a href="/">EN</a>
       </div>
     </div>
   )
+}
+
+Menu.propTypes = {
+  siteTitle: PropTypes.string,
+}
+
+Menu.defaultProps = {
+  siteTitle: `Politician Directory`,
 }
 
 export default Menu
