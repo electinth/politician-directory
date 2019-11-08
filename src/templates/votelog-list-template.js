@@ -63,9 +63,9 @@ const paginationStyle = {
 
 const VoteLogPage = ({
   data: { allVotelogYaml, voteRecordImage, updateImage },
-  ...props
+  pageContext,
 }) => {
-  const { currentPage, numPages } = props.pageContext
+  const { currentPage, numPages } = pageContext
   const votelogs = allVotelogYaml.edges
 
   return (
