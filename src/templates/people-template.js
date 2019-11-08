@@ -221,7 +221,7 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
               fontSize: "3.6rem",
             }}
           >
-            <div css={{ marginRight: "2rem" }}>—</div>
+            <div css={{ marginRight: "4rem" }}>⎯⎯</div>
             <div>
               <div css={{ marginBottom: "0.5rem" }}>
                 {`${peopleYaml.title} ${peopleYaml.name} ${peopleYaml.lastname}`}
