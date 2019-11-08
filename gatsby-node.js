@@ -47,6 +47,8 @@ exports.createPages = async ({ graphql, actions }) => {
             fields {
               slug
             }
+            name
+            lastname
           }
         }
       }
@@ -59,6 +61,8 @@ exports.createPages = async ({ graphql, actions }) => {
         component: path.resolve(`./src/templates/people-template.js`),
         context: {
           slug: node.fields.slug,
+          name: node.name,
+          lastname: node.lastname,
         },
       })
     })
@@ -83,7 +87,7 @@ exports.createPages = async ({ graphql, actions }) => {
       component: path.resolve(`./src/templates/party-template.js`),
       context: {
         slug: node.fields.slug,
-        party: node.name
+        party: node.name,
       },
     })
   })

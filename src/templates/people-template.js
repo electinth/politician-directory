@@ -6,11 +6,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ExternalLink from "../components/externalLink"
 import { ageFromBirthdate, politicianPicture } from "../utils"
+import PeopleVote from "../components/peopleVote"
 
 import styles from "./people-template.module.css"
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String!, $name: String!, $lastname: String!) {
     peopleYaml(fields: { slug: { eq: $slug } }) {
       id
       title
@@ -36,6 +37,24 @@ export const query = graphql`
       debt
       quotes
       quotes_url
+    }
+    peopleVoteYaml(name: { eq: $name }, lastname: { eq: $lastname }) {
+      votelog {
+        _1
+        _2
+        _3
+        _4
+        _5
+        _6
+      }
+    }
+    allVotelogYaml {
+      nodes {
+        id
+        title
+        legal_title
+        vote_date
+      }
     }
   }
 `
@@ -65,7 +84,9 @@ const cssSectionBlack = {
   },
 }
 
-const PeoplePage = ({ data: { peopleYaml } }) => (
+const PeoplePage = ({
+  data: { peopleYaml, peopleVoteYaml, allVotelogYaml },
+}) => (
   <Layout
     pageStyles={{
       background: "#eeeeee",
@@ -75,25 +96,27 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
     <section css={{ ...cssSection, paddingTop: "6rem" }}>
       <div className="container">
         <div className={`${styles.card}`}>
-          <div css={{
-            width: "50%",
-            textAlign: "center",
-            padding: "50px 0",
-            background: "linear-gradient(to right, #FFFFFF, #EAEAEA)"
-          }}>
+          <div
+            css={{
+              width: "50%",
+              textAlign: "center",
+              padding: "50px 0",
+              background: "linear-gradient(to right, #FFFFFF, #EAEAEA)",
+            }}
+          >
             <div
-              css={ css`
-                  height: 160px;
-                  width: 160px;
-                  border-radius: 80px;
-                  margin: 0 auto;
-                  overflow: hidden;
-                  margin-bottom: 20px;
+              css={css`
+                height: 160px;
+                width: 160px;
+                border-radius: 80px;
+                margin: 0 auto;
+                overflow: hidden;
+                margin-bottom: 20px;
               `}
             >
               <img
                 css={css`
-                  max-height: 240px
+                  max-height: 240px;
                 `}
                 alt=""
                 src={politicianPicture(peopleYaml)}
@@ -124,7 +147,7 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
             <h3>ส.ส.: {`${peopleYaml.is_mp ? "ใช่" : "ไม่ใช่"}`}</h3>
           </div>
           <div css={{ width: "50%" }}>
-            <div css={{ padding: "10px"}}>
+            <div css={{ padding: "10px" }}>
               <h2 css={{ ...cssH2, textAlign: "center" }}>ข้อมูลพื้นฐาน</h2>
               <hr className={`${styles.hr}`} />
               <div>
@@ -141,8 +164,8 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
               <div>
                 {peopleYaml.mp_type === "แบ่งเขต" ? (
                   <p>
-                    สมาชิกสภาผู้แทนราษฎร แบ่งเขต จังหวัด {peopleYaml.mp_province}{" "}
-                    เขต {peopleYaml.mp_zone}
+                    สมาชิกสภาผู้แทนราษฎร แบ่งเขต จังหวัด{" "}
+                    {peopleYaml.mp_province} เขต {peopleYaml.mp_zone}
                   </p>
                 ) : (
                   <p>
@@ -262,25 +285,10 @@ const PeoplePage = ({ data: { peopleYaml } }) => (
       </div>
     </section>
     <hr />
-    <section
-      css={{
-        ...cssSectionWhite,
-      }}
-    >
-      <div className="container">
-        <h2
-          css={{
-            fontSize: "4.8rem",
-            textAlign: "center",
-          }}
-        >
-          สรุปการลงมติในสภา
-        </h2>
-        <div css={{ textAlign: "center" }}>
-          ทั้งหมด เห็นด้วย ไม่เห็นด้วย งดออกเสียง ไม่เข้าประชุม
-        </div>
-      </div>
-    </section>
+    <PeopleVote
+      peopleVoteYaml={peopleVoteYaml}
+      allVotelogYaml={allVotelogYaml}
+    />
   </Layout>
 )
 
