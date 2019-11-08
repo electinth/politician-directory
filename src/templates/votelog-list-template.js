@@ -35,15 +35,15 @@ export const query = graphql`
       relativePath: { eq: "images/votelog/VoteRecord.png" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 48) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 48) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
     updateImage: file(relativePath: { eq: "images/update/Update.png" }) {
       childImageSharp {
-        fluid(maxWidth: 17) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 17) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
@@ -82,7 +82,7 @@ const VoteLogPage = ({
         <div className="container">
           <div>
             <Img
-              fluid={voteRecordImage.childImageSharp.fluid}
+              fixed={voteRecordImage.childImageSharp.fixed}
               css={{ width: "48px", margin: "auto" }}
             ></Img>
           </div>
@@ -113,7 +113,7 @@ const VoteLogPage = ({
             }}
           >
             <Img
-              fluid={updateImage.childImageSharp.fluid}
+              fixed={updateImage.childImageSharp.fixed}
               css={{ width: "17px", height: "20px", marginRight: "0.8rem" }}
             ></Img>
             <h2
