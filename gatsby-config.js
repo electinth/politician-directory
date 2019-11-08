@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Thai Politician Directory`,
-    description: `Do they work for us?`,
+    title: `They Work For Us?`,
+    description: `Site description`,
     author: `@electinth`,
   },
   plugins: [

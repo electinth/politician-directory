@@ -1,17 +1,16 @@
 .hamburger-icon {
   height: 50px;
-  width: 70px;
-  position: absolute;
+  width: 50px;
+  position: relative;
   top: 0;
   right: 0;
-  margin: 0.67em 0;
   z-index: 3;
   cursor: pointer;
 }
 
 .bar {
-  height: 5px;
-  width: 24px;
+  height: 3px;
+  width: 21px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -24,7 +23,7 @@
 
 .bar:before,
 .bar:after {
-  height: 5px;
+  height: 3px;
   width: 100%;
   background: var(--cl-black);
   position: absolute;
@@ -33,10 +32,10 @@
   transition: all 0.3s;
 }
 .bar:after {
-  top: 10px;
+  top: 6px;
 }
 .bar:before {
-  top: -10px;
+  top: -6px;
 }
 
 .bar-white:before,
@@ -45,7 +44,7 @@
 }
 
 .logo {
-  margin-left: 60px;
+  margin-left: 1rem;
 }
 
 .animateIcon .fade-center::after {
@@ -68,8 +67,18 @@
     z-index: 3;
     cursor: pointer;
   }
-
-  .logo {
-    margin: 0;
+  .bar {
+    width: 32px;
+    &,
+    &:before,
+    &:after {
+      height: 5px;
+    }
+  }
+  .bar:after {
+    top: 8px;
+  }
+  .bar:before {
+    top: -8px;
   }
 }
