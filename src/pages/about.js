@@ -1,9 +1,10 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ExternalLink from "../components/externalLink"
-import { graphql } from "gatsby"
+import Emoji from "../components/emoji"
 
 const h2 = {
   fontSize: "2rem",
@@ -52,11 +53,13 @@ const AboutPage = ({ data }) => (
 
         <div css={sectionContent}>
           <div>
-            <strong>เขียนโปรแกรม 💻</strong>
+            <strong>
+              เขียนโปรแกรม <Emoji symbol="💻" label="computer"></Emoji>
+            </strong>
           </div>
           <div>
             {data.allContributor.edges.map(({ node }, i) => (
-              <span>
+              <span key={node.login}>
                 {i === 0 ? "" : " "}
                 <ExternalLink href={node.html_url}>{node.login}</ExternalLink>
               </span>
@@ -64,7 +67,9 @@ const AboutPage = ({ data }) => (
           </div>
 
           <div>
-            <strong>ออกแบบ 🎨</strong>
+            <strong>
+              ออกแบบ <Emoji symbol="🎨" label="palette"></Emoji>
+            </strong>
           </div>
           <div>
             <ExternalLink href="https://www.instagram.com/messymachine/">
