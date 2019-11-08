@@ -156,7 +156,7 @@ const VoteLogPage = ({
                   "&:nth-child(2n+1)": {
                     marginRight: "2rem",
                   },
-                  border: "2px solid black",
+                  border: "2px solid var(--cl-black)",
                 }}
                 legal_title={node.legal_title}
                 legal_title_en={node.en.legal_title}
