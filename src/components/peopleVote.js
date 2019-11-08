@@ -150,16 +150,15 @@ class PeopleVote extends Component {
 }
 
 export default ({ peopleVoteYaml, allVotelogYaml }) => {
-  const voteLog = peopleVoteYaml.votelog
+  const voteLogs = peopleVoteYaml.votelog
   const allVote = allVotelogYaml.nodes
   // merge allVote and voteLog into allVote
-  for (const [k, v] of Object.entries(voteLog)) {
-    allVote.forEach(log => {
-      if (`_${log.id}` === String(k)) {
-        log["choice"] = v
-      }
-    })
-  }
+  allVote.forEach(vote => {
+    const matchedVotelog = _.find(voteLogs, ["key", vote.id])
+    if (matchedVotelog) {
+      vote.choice = matchedVotelog.value
+    }
+  })
 
   return <PeopleVote allVote={allVote} />
 }

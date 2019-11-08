@@ -18,7 +18,7 @@ export const query = graphql`
         name
         description
       }
-      party_faction
+      party_group
       total_member
       party_leader
       established_date(formatString: "D MMM YYYY")
@@ -34,7 +34,7 @@ export const query = graphql`
           name
           lastname
           party
-          party_faction
+          party_group
           mp_type
           mp_province
           mp_zone

@@ -18,7 +18,6 @@ export const query = graphql`
           name
           lastname
           cabinet_position
-          prev_polit_pos
           is_cabinet
           is_senator
           is_mp
