@@ -200,7 +200,7 @@ const VoteLogPage = ({
               const pageNumber = i + 1
               if (pageNumber === currentPage) {
                 return (
-                  <a
+                  <span
                     key={`page-number-${pageNumber}`}
                     css={{
                       ...paginationStyle,
@@ -208,7 +208,7 @@ const VoteLogPage = ({
                     }}
                   >
                     {pageNumber}
-                  </a>
+                  </span>
                 )
               }
               return (
