@@ -1151,7 +1151,6 @@
     lastname: Limtragool
     cabinet_position:
       - '-'
-      - '-'
     graduation: National Institute of Development Administration
     degree: ''
     ex_occupation:
@@ -1169,7 +1168,6 @@
   vote: 54669
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -1221,7 +1219,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -1276,7 +1273,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรมและสิทธิมนุษยชน สภาผู้แทนฯ
@@ -1330,7 +1326,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. แก้ไขปัญหาหนี้สินแห่งชาติ สภาผู้แทนฯ
@@ -1382,7 +1377,6 @@
   vote: 27620
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -1440,7 +1434,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: >-
@@ -1495,7 +1488,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. การสวัสดิการสังคม สภาผู้แทนฯ
@@ -1548,7 +1540,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -1600,7 +1591,6 @@
   vote: 33492
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -1656,7 +1646,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. การศาสนา ศิลปะและวัฒนธรรม สภาผู้แทนฯ
@@ -1708,7 +1697,6 @@
   vote: 31247
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -1762,7 +1750,6 @@
   vote: 29090
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -1820,7 +1807,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การป้องกันและบรรเทาผลกระทบจากภัยธรรมชาติและสาธารณภัย สภาผู้แทนฯ
@@ -1873,7 +1859,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การเกษตรและสหกรณ์ สภาผู้แทนฯ
@@ -1925,7 +1910,6 @@
   vote: 31035
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -1981,7 +1965,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การเงิน การคลัง สถาบันการเงินและตลาดการเงิน สภาผู้แทนฯ
@@ -2033,7 +2016,6 @@
   vote: 23246
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -2090,7 +2072,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. ศึกษาการจัดทำและติดตามการบริหารงบประมาณ สภาผู้แทนฯ
@@ -2143,7 +2124,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การตำรวจ สภาผู้แทนฯ
@@ -2195,7 +2175,6 @@
   vote: 36573
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -2251,7 +2230,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การวิทยาศาสตร์ เทคโนโลยี วิจัยและนวัตกรรม สภาผู้แทนฯ
@@ -2265,7 +2243,6 @@
   graduation: โรงเรียนเบญจมราชรังสฤษฎิ์
   degree: '-'
   ex_occupation:
-    - '-'
     - '-'
   occupation_group: อื่นๆ
   quotes: ''
@@ -2303,7 +2280,6 @@
   vote: 44251
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -2358,7 +2334,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การคมนาคม สภาผู้แทนฯ
@@ -2411,7 +2386,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การศึกษา สภาผู้แทนฯ
@@ -2463,7 +2437,6 @@
   vote: 39158
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -2519,7 +2492,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. วิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ สภาผู้แทนฯ
@@ -2571,7 +2543,6 @@
   vote: 46351
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -2626,7 +2597,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การวิทยาศาสตร์ เทคโนโลยี วิจัยและนวัตกรรม สภาผู้แทนฯ
@@ -2678,7 +2648,6 @@
   vote: 28212
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -2732,7 +2701,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การทหาร สภาผู้แทนฯ
@@ -2783,7 +2751,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -2838,7 +2805,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. แก้ไขปัญหาหนี้สินแห่งชาติ สภาผู้แทนฯ
@@ -2890,7 +2856,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การปกครอง สภาผู้แทนฯ
@@ -2941,7 +2906,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -2996,7 +2960,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การอุตสาหกรรม สภาผู้แทนฯ
@@ -3048,7 +3011,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. กิจการ สภาผู้แทนฯ
@@ -3099,7 +3061,6 @@
   vote: 36728
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -3154,7 +3115,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การป้องกันและบรรเทาผลกระทบจากภัยธรรมชาติและสาธารณภัย สภาผู้แทนฯ
@@ -3206,7 +3166,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -3260,7 +3219,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การท่องเที่ยว สภาผู้แทนฯ
@@ -3311,7 +3269,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -3364,7 +3321,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรมและสิทธิมนุษยชน สภาผู้แทนฯ
@@ -3414,7 +3370,6 @@
   vote: 45681
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -3468,7 +3423,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การคมนาคม สภาผู้แทนฯ
@@ -3519,7 +3473,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -3572,7 +3525,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การที่ดิน ทรัพยากรธรรมชาติและสิ่งแวดล้อม สภาผู้แทนฯ
@@ -3622,7 +3574,6 @@
   vote: 34676
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -3674,7 +3625,6 @@
   vote: 39189
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -3728,7 +3678,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การพัฒนาเศรษฐกิจ สภาผู้แทนฯ
@@ -3778,7 +3727,6 @@
   vote: 42427
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -3830,7 +3778,6 @@
   vote: 25323
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -3885,7 +3832,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การวิทยาศาสตร์ เทคโนโลยี วิจัยและนวัตกรรม สภาผู้แทนฯ
@@ -3936,7 +3882,6 @@
   vote: 41307
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -3989,7 +3934,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การต่างประเทศ สภาผู้แทนฯ
@@ -4040,7 +3984,6 @@
   vote: 31394
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -4095,7 +4038,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การป้องกันและบรรเทาผลกระทบจากภัยธรรมชาติและสาธารณภัย สภาผู้แทนฯ
@@ -4146,7 +4088,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -4199,7 +4140,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. วิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ สภาผู้แทนฯ
@@ -4250,7 +4190,6 @@
   vote: 28750
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -4303,7 +4242,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การพลังงาน สภาผู้แทนฯ
@@ -4354,7 +4292,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -4407,7 +4344,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การปกครอง สภาผู้แทนฯ
@@ -4458,7 +4394,6 @@
   vote: 28954
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -4515,7 +4450,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การพัฒนาเศรษฐกิจ สภาผู้แทนฯ
@@ -4566,7 +4500,6 @@
   vote: 29545
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -4619,7 +4552,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การอุตสาหกรรม สภาผู้แทนฯ
@@ -4670,7 +4602,6 @@
   vote: 58842
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -4725,7 +4656,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: >-
@@ -4779,7 +4709,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การท่องเที่ยว สภาผู้แทนฯ
@@ -4830,7 +4759,6 @@
   vote: 40271
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -4885,7 +4813,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การเงิน การคลัง สถาบันการเงินและตลาดการเงิน สภาผู้แทนฯ
@@ -4936,7 +4863,6 @@
   vote: 34164
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -5041,7 +4967,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การป้องกันและปราบปรามการทุจริตประพฤติมิชอบ สภาผู้แทนฯ
@@ -5092,7 +5017,6 @@
   vote: 23576
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -5145,7 +5069,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. วิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ สภาผู้แทนฯ
@@ -5196,7 +5119,6 @@
   vote: 31767
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -5251,7 +5173,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การเกษตรและสหกรณ์ สภาผู้แทนฯ
@@ -5301,7 +5222,6 @@
   vote: 47584
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -5356,7 +5276,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการที่ปรึกษา
       set: กมธ. การเงิน การคลัง สถาบันการเงินและตลาดการเงิน สภาผู้แทนฯ
@@ -5407,7 +5326,6 @@
   vote: 29559
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -5460,7 +5378,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การที่ดิน ทรัพยากรธรรมชาติและสิ่งแวดล้อม สภาผู้แทนฯ
@@ -5511,7 +5428,6 @@
   vote: 46824
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการและที่ปรึกษาคณะกรรมาธิการ
@@ -5564,7 +5480,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -5616,7 +5531,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การวิทยาศาสตร์ เทคโนโลยี วิจัยและนวัตกรรม สภาผู้แทนฯ
@@ -5667,7 +5581,6 @@
   vote: 44675
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -5722,7 +5635,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. แก้ไขปัญหาหนี้สินแห่งชาติ สภาผู้แทนฯ
@@ -5774,7 +5686,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
       set: กมธ. การสาธารณสุข สภาผู้แทนฯ
@@ -5825,7 +5736,6 @@
   vote: 34618
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -5880,7 +5790,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. การพลังงาน สภาผู้แทนฯ
@@ -5932,7 +5841,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การตำรวจ สภาผู้แทนฯ
@@ -5982,7 +5890,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -6037,7 +5944,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การศึกษา สภาผู้แทนฯ
@@ -6088,7 +5994,6 @@
   vote: 31551
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -6145,7 +6050,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: >-
@@ -6201,7 +6105,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: >-
@@ -6254,7 +6157,6 @@
   vote: 30815
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -6309,7 +6211,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การแรงงาน สภาผู้แทนฯ
@@ -6360,7 +6261,6 @@
   vote: 34439
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -6414,7 +6314,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
       set: กมธ. การตำรวจ สภาผู้แทนฯ
@@ -6465,7 +6364,6 @@
   vote: 29026
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -6518,7 +6416,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การป้องกันและบรรเทาผลกระทบจากภัยธรรมชาติและสาธารณภัย สภาผู้แทนฯ
@@ -6569,7 +6466,6 @@
   vote: 36117
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -6624,7 +6520,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การตำรวจ สภาผู้แทนฯ
@@ -6675,7 +6570,6 @@
   vote: 48970
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -6728,7 +6622,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. กิจการ สภาผู้แทนฯ
@@ -6780,7 +6673,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. ศึกษาการจัดทำและติดตามการบริหารงบประมาณ สภาผู้แทนฯ
@@ -6831,7 +6723,6 @@
   vote: 37368
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -6888,7 +6779,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: >-
@@ -6942,7 +6832,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การตำรวจ สภาผู้แทนฯ
@@ -6993,7 +6882,6 @@
   vote: 63099
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -7046,7 +6934,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การป้องกันปราบปรามการฟอกเงินและยาเสพติด สภาผู้แทนฯ
@@ -7098,7 +6985,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. กิจการ สภาผู้แทนฯ
@@ -7149,7 +7035,6 @@
   vote: 27489
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองเลขานุการคณะกรรมาธิการ
@@ -7204,7 +7089,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การเงิน การคลัง สถาบันการเงินและตลาดการเงิน สภาผู้แทนฯ
@@ -7256,7 +7140,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. วิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ สภาผู้แทนฯ
@@ -7307,7 +7190,6 @@
   vote: 35446
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -7412,7 +7294,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: >-
@@ -7466,7 +7347,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. ศึกษาการจัดทำและติดตามการบริหารงบประมาณ สภาผู้แทนฯ
@@ -7518,7 +7398,6 @@
   vote: 31659
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -7573,7 +7452,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: >-
@@ -7627,7 +7505,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: >-
@@ -7680,7 +7557,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -7737,7 +7613,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. แก้ไขปัญหาราคาผลิตผลเกษตรกรรม สภาผู้แทนฯ
@@ -7788,7 +7663,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -7841,7 +7715,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. การศึกษา สภาผู้แทนฯ
@@ -7892,7 +7765,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -7947,7 +7819,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การปกครอง สภาผู้แทนฯ
@@ -7998,7 +7869,6 @@
   vote: 52787
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -8052,7 +7922,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การทหาร สภาผู้แทนฯ
@@ -8104,7 +7973,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การป้องกันปราบปรามการฟอกเงินและยาเสพติด สภาผู้แทนฯ
@@ -8155,7 +8023,6 @@
   vote: 35359
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -8260,7 +8127,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การทหาร สภาผู้แทนฯ
@@ -8311,7 +8177,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -8365,7 +8230,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การสาธารณสุข สภาผู้แทนฯ
@@ -8416,7 +8280,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -8469,7 +8332,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การพาณิชย์และทรัพย์สินทางปัญญา สภาผู้แทนฯ
@@ -8521,7 +8383,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. แก้ไขปัญหาราคาผลิตผลเกษตรกรรม สภาผู้แทนฯ
@@ -8572,7 +8433,6 @@
   vote: 36473
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -8627,7 +8487,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
       set: >-
@@ -8681,7 +8540,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การศึกษา สภาผู้แทนฯ
@@ -8733,7 +8591,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. ศึกษาการจัดทำและติดตามการบริหารงบประมาณ สภาผู้แทนฯ
@@ -8784,7 +8641,6 @@
   vote: 33310
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -8889,7 +8745,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -8941,7 +8796,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การพัฒนาเศรษฐกิจ สภาผู้แทนฯ
@@ -8992,7 +8846,6 @@
   vote: 58318
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -9047,7 +8900,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: >-
@@ -9101,7 +8953,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การพัฒนาเศรษฐกิจ สภาผู้แทนฯ
@@ -9153,7 +9004,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
       set: กมธ. การป้องกันและบรรเทาผลกระทบจากภัยธรรมชาติและสาธารณภัย สภาผู้แทนฯ
@@ -9204,7 +9054,6 @@
   vote: 41763
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองโฆษกคณะกรรมาธิการ
@@ -9259,7 +9108,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. วิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ สภาผู้แทนฯ
@@ -9310,7 +9158,6 @@
   vote: 43787
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -9363,7 +9210,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -9470,7 +9316,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การแรงงาน สภาผู้แทนฯ
@@ -9522,7 +9367,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การศาสนา ศิลปะและวัฒนธรรม สภาผู้แทนฯ
@@ -9573,7 +9417,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -9628,7 +9471,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การพลังงาน สภาผู้แทนฯ
@@ -9679,7 +9521,6 @@
   vote: 41877
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -9734,7 +9575,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. การต่างประเทศ สภาผู้แทนฯ
@@ -9785,7 +9625,6 @@
   vote: 35794
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -9840,7 +9679,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. ศึกษาการจัดทำและติดตามการบริหารงบประมาณ สภาผู้แทนฯ
@@ -9891,7 +9729,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -9944,7 +9781,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การสื่อสาร โทรคมนาคม และดิจิทัลเพื่อเศรษฐกิจและสังคม สภาผู้แทนฯ
@@ -9994,7 +9830,6 @@
   vote: 50127
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -10046,7 +9881,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -10101,7 +9935,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การปกครอง สภาผู้แทนฯ
@@ -10152,7 +9985,6 @@
   vote: 32965
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองเลขานุการคณะกรรมาธิการ
@@ -10205,7 +10037,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. กิจการ สภาผู้แทนฯ
@@ -10256,7 +10087,6 @@
   vote: 34406
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -10310,7 +10140,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -10366,7 +10195,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การอุตสาหกรรม สภาผู้แทนฯ
@@ -10416,7 +10244,6 @@
   vote: 27267
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -10469,7 +10296,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การสาธารณสุข สภาผู้แทนฯ
@@ -10520,7 +10346,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -10573,7 +10398,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การสื่อสาร โทรคมนาคม และดิจิทัลเพื่อเศรษฐกิจและสังคม สภาผู้แทนฯ
@@ -10624,7 +10448,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -10679,7 +10502,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การป้องกันปราบปรามการฟอกเงินและยาเสพติด สภาผู้แทนฯ
@@ -10730,7 +10552,6 @@
   vote: 40252
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -10783,7 +10604,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -10834,7 +10654,6 @@
   vote: 34797
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -10887,7 +10706,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรมและสิทธิมนุษยชน สภาผู้แทนฯ
@@ -10937,7 +10755,6 @@
   vote: 50072
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -10990,7 +10807,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การทหาร สภาผู้แทนฯ
@@ -11041,7 +10857,6 @@
   vote: 25998
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -11094,7 +10909,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -11145,7 +10959,6 @@
   vote: 35436
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -11198,7 +11011,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -11249,7 +11061,6 @@
   vote: 30111
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -11302,7 +11113,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. กีฬา สภาผู้แทนฯ
@@ -11352,7 +11162,6 @@
   vote: 34040
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -11405,7 +11214,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การป้องกันและบรรเทาผลกระทบจากภัยธรรมชาติและสาธารณภัย สภาผู้แทนฯ
@@ -11456,7 +11264,6 @@
   vote: 37532
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -11511,7 +11318,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. กีฬา สภาผู้แทนฯ
@@ -11562,7 +11368,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -11617,7 +11422,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: >-
@@ -11671,7 +11475,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การสาธารณสุข สภาผู้แทนฯ
@@ -11722,7 +11525,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -11775,7 +11577,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การพาณิชย์และทรัพย์สินทางปัญญา สภาผู้แทนฯ
@@ -11826,7 +11627,6 @@
   vote: 35579
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -11883,7 +11683,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การศึกษา สภาผู้แทนฯ
@@ -11934,7 +11733,6 @@
   vote: 27897
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -11988,7 +11786,6 @@
   vote: 31650
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -12093,7 +11890,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การป้องกันปราบปรามการฟอกเงินและยาเสพติด สภาผู้แทนฯ
@@ -12144,7 +11940,6 @@
   vote: 27656
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -12197,7 +11992,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. ศึกษาการจัดทำและติดตามการบริหารงบประมาณ สภาผู้แทนฯ
@@ -12248,7 +12042,6 @@
   vote: 28203
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -12305,7 +12098,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การเกษตรและสหกรณ์ สภาผู้แทนฯ
@@ -12356,7 +12148,6 @@
   vote: 41412
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -12411,7 +12202,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การพลังงาน สภาผู้แทนฯ
@@ -12461,7 +12251,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -12514,7 +12303,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. กีฬา สภาผู้แทนฯ
@@ -12566,7 +12354,6 @@
   vote: 30112
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -12621,7 +12408,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การศึกษา สภาผู้แทนฯ
@@ -12673,7 +12459,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การที่ดิน ทรัพยากรธรรมชาติและสิ่งแวดล้อม สภาผู้แทนฯ
@@ -12723,7 +12508,6 @@
   vote: 46409
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -12776,7 +12560,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -12831,7 +12614,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การเกษตรและสหกรณ์ สภาผู้แทนฯ
@@ -12881,7 +12663,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -12935,7 +12716,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การที่ดิน ทรัพยากรธรรมชาติและสิ่งแวดล้อม สภาผู้แทนฯ
@@ -12987,7 +12767,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การป้องกันปราบปรามการฟอกเงินและยาเสพติด สภาผู้แทนฯ
@@ -13038,7 +12817,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -13093,7 +12871,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: >-
@@ -13146,7 +12923,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -13203,7 +12979,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การป้องกันและปราบปรามการทุจริตประพฤติมิชอบ สภาผู้แทนฯ
@@ -13253,7 +13028,6 @@
   vote: 51728
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -13306,7 +13080,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การศึกษา สภาผู้แทนฯ
@@ -13357,7 +13130,6 @@
   vote: 32507
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -13413,7 +13185,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: >-
@@ -13467,7 +13238,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การศาสนา ศิลปะและวัฒนธรรม สภาผู้แทนฯ
@@ -13517,7 +13287,6 @@
   vote: 43957
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -13574,7 +13343,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การต่างประเทศ สภาผู้แทนฯ
@@ -13627,7 +13395,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -13677,7 +13444,6 @@
   vote: 26909
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -13732,7 +13498,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: >-
@@ -13785,7 +13550,6 @@
   vote: 30215
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -13840,7 +13604,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การพัฒนาเศรษฐกิจ สภาผู้แทนฯ
@@ -13892,7 +13655,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การพลังงาน สภาผู้แทนฯ
@@ -13943,7 +13705,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -13998,7 +13759,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: >-
@@ -14050,7 +13810,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -14105,7 +13864,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การพลังงาน สภาผู้แทนฯ
@@ -14156,7 +13914,6 @@
   vote: 37011
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -14209,7 +13966,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -14261,7 +14017,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การอุตสาหกรรม สภาผู้แทนฯ
@@ -14311,7 +14066,6 @@
   vote: 23273
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -14366,7 +14120,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรมและสิทธิมนุษยชน สภาผู้แทนฯ
@@ -14417,7 +14170,6 @@
   vote: 45503
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -14524,7 +14276,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การแรงงาน สภาผู้แทนฯ
@@ -14578,7 +14329,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การต่างประเทศ สภาผู้แทนฯ
@@ -14629,7 +14379,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -14682,7 +14431,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การศาสนา ศิลปะและวัฒนธรรม สภาผู้แทนฯ
@@ -14734,7 +14482,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การปกครอง สภาผู้แทนฯ
@@ -14784,7 +14531,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -14837,7 +14583,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -14888,7 +14633,6 @@
   vote: 27875
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -14941,7 +14685,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
       set: กมธ. แก้ไขปัญหาราคาผลิตผลเกษตรกรรม สภาผู้แทนฯ
@@ -14992,7 +14735,6 @@
   vote: 62741
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -15045,7 +14787,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. กีฬา สภาผู้แทนฯ
@@ -15096,7 +14837,6 @@
   vote: 20784
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -15151,7 +14891,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การสื่อสาร โทรคมนาคม และดิจิทัลเพื่อเศรษฐกิจและสังคม สภาผู้แทนฯ
@@ -15203,7 +14942,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การสื่อสาร โทรคมนาคม และดิจิทัลเพื่อเศรษฐกิจและสังคม สภาผู้แทนฯ
@@ -15253,7 +14991,6 @@
   vote: 32092
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -15306,7 +15043,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การวิทยาศาสตร์ เทคโนโลยี วิจัยและนวัตกรรม สภาผู้แทนฯ
@@ -15356,7 +15092,6 @@
   vote: 24656
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการและที่ปรึกษาคณะกรรมาธิการ
@@ -15409,7 +15144,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การคมนาคม สภาผู้แทนฯ
@@ -15459,7 +15193,6 @@
   vote: 40518
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -15514,7 +15247,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การทหาร สภาผู้แทนฯ
@@ -15565,7 +15297,6 @@
   vote: 40483
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -15618,7 +15349,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -15669,7 +15399,6 @@
   vote: 33408
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -15722,7 +15451,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การคมนาคม สภาผู้แทนฯ
@@ -15773,7 +15501,6 @@
   vote: 42990
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -15828,7 +15555,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การพลังงาน สภาผู้แทนฯ
@@ -15881,7 +15607,6 @@
   vote: 32234
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -15936,7 +15661,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การป้องกันและบรรเทาผลกระทบจากภัยธรรมชาติและสาธารณภัย สภาผู้แทนฯ
@@ -15987,7 +15711,6 @@
   vote: 41991
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -16040,7 +15763,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. กิจการ สภาผู้แทนฯ
@@ -16091,7 +15813,6 @@
   vote: 28952
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -16144,7 +15865,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การสวัสดิการสังคม สภาผู้แทนฯ
@@ -16196,7 +15916,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -16247,7 +15966,6 @@
   vote: 45092
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -16302,7 +16020,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การตำรวจ สภาผู้แทนฯ
@@ -16353,7 +16070,6 @@
   vote: 35707
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -16406,7 +16122,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การที่ดิน ทรัพยากรธรรมชาติและสิ่งแวดล้อม สภาผู้แทนฯ
@@ -16457,7 +16172,6 @@
   vote: 30582
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -16511,7 +16225,6 @@
   vote: 36310
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -16568,7 +16281,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การท่องเที่ยว สภาผู้แทนฯ
@@ -16619,7 +16331,6 @@
   vote: 36361
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -16672,7 +16383,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -16724,7 +16434,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -16781,7 +16490,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การวิทยาศาสตร์ เทคโนโลยี วิจัยและนวัตกรรม สภาผู้แทนฯ
@@ -16832,7 +16540,6 @@
   vote: 62026
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -16886,7 +16593,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การป้องกันและปราบปรามการทุจริตประพฤติมิชอบ สภาผู้แทนฯ
@@ -16937,7 +16643,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรมและสิทธิมนุษยชน สภาผู้แทนฯ
@@ -16987,7 +16692,6 @@
   vote: 26718
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -17040,7 +16744,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การป้องกันปราบปรามการฟอกเงินและยาเสพติด สภาผู้แทนฯ
@@ -17091,7 +16794,6 @@
   vote: 40597
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -17146,7 +16848,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: >-
@@ -17200,7 +16901,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การสาธารณสุข สภาผู้แทนฯ
@@ -17251,7 +16951,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -17305,7 +17004,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. กีฬา สภาผู้แทนฯ
@@ -17356,7 +17054,6 @@
   vote: 44514
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -17410,7 +17107,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: >-
@@ -17462,7 +17158,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -17517,7 +17212,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. การอุตสาหกรรม สภาผู้แทนฯ
@@ -17568,7 +17262,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -17621,7 +17314,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
       set: กมธ. การพัฒนาเศรษฐกิจ สภาผู้แทนฯ
@@ -17672,7 +17364,6 @@
   vote: 38660
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -17781,7 +17472,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. กีฬา สภาผู้แทนฯ
@@ -17832,7 +17522,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. กีฬา สภาผู้แทนฯ
@@ -17882,7 +17571,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -17935,7 +17623,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
       set: กมธ. การคมนาคม สภาผู้แทนฯ
@@ -17986,7 +17673,6 @@
   vote: 30538
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -18039,7 +17725,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การสาธารณสุข สภาผู้แทนฯ
@@ -18091,7 +17776,6 @@
   vote: 37134
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -18146,7 +17830,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การศึกษา สภาผู้แทนฯ
@@ -18196,7 +17879,6 @@
   vote: 43242
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -18253,7 +17935,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การคมนาคม สภาผู้แทนฯ
@@ -18303,7 +17984,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -18356,7 +18036,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การพลังงาน สภาผู้แทนฯ
@@ -18407,7 +18086,6 @@
   vote: 37454
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -18460,7 +18138,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การต่างประเทศ สภาผู้แทนฯ
@@ -18510,7 +18187,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -18565,7 +18241,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การคมนาคม สภาผู้แทนฯ
@@ -18616,7 +18291,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -18671,7 +18345,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การศึกษา สภาผู้แทนฯ
@@ -18723,7 +18396,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การท่องเที่ยว สภาผู้แทนฯ
@@ -18774,7 +18446,6 @@
   vote: 41002
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -18828,7 +18499,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การตำรวจ สภาผู้แทนฯ
@@ -18879,7 +18549,6 @@
   vote: 53202
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -18932,7 +18601,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรมและสิทธิมนุษยชน สภาผู้แทนฯ
@@ -18983,7 +18651,6 @@
   vote: 41603
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -19038,7 +18705,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การตำรวจ สภาผู้แทนฯ
@@ -19090,7 +18756,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -19141,7 +18806,6 @@
   vote: 31051
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -19196,7 +18860,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การต่างประเทศ สภาผู้แทนฯ
@@ -19246,7 +18909,6 @@
   vote: 30899
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -19299,7 +18961,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การเงิน การคลัง สถาบันการเงินและตลาดการเงิน สภาผู้แทนฯ
@@ -19351,7 +19012,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การป้องกันและบรรเทาผลกระทบจากภัยธรรมชาติและสาธารณภัย สภาผู้แทนฯ
@@ -19402,7 +19062,6 @@
   vote: 36320
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -19456,7 +19115,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. แก้ไขปัญหาหนี้สินแห่งชาติ สภาผู้แทนฯ
@@ -19507,7 +19165,6 @@
   vote: 34271
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -19561,7 +19218,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การท่องเที่ยว สภาผู้แทนฯ
@@ -19612,7 +19268,6 @@
   vote: 51144
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -19665,7 +19320,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การต่างประเทศ สภาผู้แทนฯ
@@ -19716,7 +19370,6 @@
   vote: 75891
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -19770,7 +19423,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การสาธารณสุข สภาผู้แทนฯ
@@ -19822,7 +19474,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -19878,7 +19529,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. กิจการ สภาผู้แทนฯ
@@ -19930,7 +19580,6 @@
   vote: 36744
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -20036,7 +19685,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรมและสิทธิมนุษยชน สภาผู้แทนฯ
@@ -20088,7 +19736,6 @@
   vote: 33729
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -20142,7 +19789,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การพัฒนาเศรษฐกิจ สภาผู้แทนฯ
@@ -20193,7 +19839,6 @@
   vote: 25329
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -20248,7 +19893,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การทหาร สภาผู้แทนฯ
@@ -20301,7 +19945,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การเงิน การคลัง สถาบันการเงินและตลาดการเงิน สภาผู้แทนฯ
@@ -20353,7 +19996,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การท่องเที่ยว สภาผู้แทนฯ
@@ -20404,7 +20046,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -20460,7 +20101,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. กีฬา สภาผู้แทนฯ
@@ -20511,7 +20151,6 @@
   vote: 48719
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -20565,7 +20204,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การพาณิชย์และทรัพย์สินทางปัญญา สภาผู้แทนฯ
@@ -20616,7 +20254,6 @@
   vote: 46049
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -20669,7 +20306,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -20720,7 +20356,6 @@
   vote: 51488
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -20776,7 +20411,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาประธานคณะกรรมาธิการ
       set: กมธ. การสวัสดิการสังคม สภาผู้แทนฯ
@@ -20829,7 +20463,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การพาณิชย์และทรัพย์สินทางปัญญา สภาผู้แทนฯ
@@ -20880,7 +20513,6 @@
   vote: 35702
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -20933,7 +20565,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การพลังงาน สภาผู้แทนฯ
@@ -20985,7 +20616,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การพลังงาน สภาผู้แทนฯ
@@ -21036,7 +20666,6 @@
   vote: 36657
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -21090,7 +20719,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. แก้ไขปัญหาราคาผลิตผลเกษตรกรรม สภาผู้แทนฯ
@@ -21142,7 +20770,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การตำรวจ สภาผู้แทนฯ
@@ -21193,7 +20820,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -21248,7 +20874,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การทหาร สภาผู้แทนฯ
@@ -21301,7 +20926,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การเงิน การคลัง สถาบันการเงินและตลาดการเงิน สภาผู้แทนฯ
@@ -21353,7 +20977,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การสวัสดิการสังคม สภาผู้แทนฯ
@@ -21404,7 +21027,6 @@
   vote: 45821
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -21458,7 +21080,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
       set: กมธ. ศึกษาการจัดทำและติดตามการบริหารงบประมาณ สภาผู้แทนฯ
@@ -21510,7 +21131,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -21561,7 +21181,6 @@
   vote: 29323
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -21668,7 +21287,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การเงิน การคลัง สถาบันการเงินและตลาดการเงิน สภาผู้แทนฯ
@@ -21720,7 +21338,6 @@
   vote: 26320
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -21774,7 +21391,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การอุตสาหกรรม สภาผู้แทนฯ
@@ -21825,7 +21441,6 @@
   vote: 36792
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -21878,7 +21493,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การสาธารณสุข สภาผู้แทนฯ
@@ -21929,7 +21543,6 @@
   vote: 31261
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -21985,7 +21598,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
       set: กมธ. การสื่อสาร โทรคมนาคม และดิจิทัลเพื่อเศรษฐกิจและสังคม สภาผู้แทนฯ
@@ -22036,7 +21648,6 @@
   vote: 53205
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -22089,7 +21700,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การวิทยาศาสตร์ เทคโนโลยี วิจัยและนวัตกรรม สภาผู้แทนฯ
@@ -22140,7 +21750,6 @@
   vote: 41978
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -22193,7 +21802,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การศึกษา สภาผู้แทนฯ
@@ -22245,7 +21853,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การต่างประเทศ สภาผู้แทนฯ
@@ -22296,7 +21903,6 @@
   vote: 32868
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -22351,7 +21957,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การพัฒนาเศรษฐกิจ สภาผู้แทนฯ
@@ -22403,7 +22008,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -22508,7 +22112,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: >-
@@ -22562,7 +22165,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การเกษตรและสหกรณ์ สภาผู้แทนฯ
@@ -22613,7 +22215,6 @@
   vote: 44346
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -22667,7 +22268,6 @@
   vote: 47640
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -22776,7 +22376,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การแรงงาน สภาผู้แทนฯ
@@ -22827,7 +22426,6 @@
   vote: 29576
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -22880,7 +22478,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. แก้ไขปัญหาหนี้สินแห่งชาติ สภาผู้แทนฯ
@@ -22931,7 +22528,6 @@
   vote: 32751
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -22984,7 +22580,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -23036,7 +22631,6 @@
   vote: 44084
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -23091,7 +22685,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. แก้ไขปัญหาหนี้สินแห่งชาติ สภาผู้แทนฯ
@@ -23143,7 +22736,6 @@
   vote: 36949
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -23199,7 +22791,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. กีฬา สภาผู้แทนฯ
@@ -23250,7 +22841,6 @@
   vote: 38268
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -23303,7 +22893,6 @@
   vote: 31265
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -23359,7 +22948,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. แก้ไขปัญหาราคาผลิตผลเกษตรกรรม สภาผู้แทนฯ
@@ -23410,7 +22998,6 @@
   vote: 46901
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -23463,7 +23050,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. การท่องเที่ยว สภาผู้แทนฯ
@@ -23514,7 +23100,6 @@
   vote: 40661
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -23567,7 +23152,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การป้องกันและปราบปรามการทุจริตประพฤติมิชอบ สภาผู้แทนฯ
@@ -23618,7 +23202,6 @@
   vote: 51230
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -23672,7 +23255,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การแรงงาน สภาผู้แทนฯ
@@ -23724,7 +23306,6 @@
   vote: 41464
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -23778,7 +23359,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการที่ปรึกษา
       set: กมธ. การเงิน การคลัง สถาบันการเงินและตลาดการเงิน สภาผู้แทนฯ
@@ -23829,7 +23409,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -23885,7 +23464,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. ศึกษาการจัดทำและติดตามการบริหารงบประมาณ สภาผู้แทนฯ
@@ -23936,7 +23514,6 @@
   vote: 28765
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -23991,7 +23568,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การปกครอง สภาผู้แทนฯ
@@ -24044,7 +23620,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การพาณิชย์และทรัพย์สินทางปัญญา สภาผู้แทนฯ
@@ -24095,7 +23670,6 @@
   vote: 30325
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -24150,7 +23724,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. ศึกษาการจัดทำและติดตามการบริหารงบประมาณ สภาผู้แทนฯ
@@ -24203,7 +23776,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -24259,7 +23831,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การคมนาคม สภาผู้แทนฯ
@@ -24312,7 +23883,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การศึกษา สภาผู้แทนฯ
@@ -24363,7 +23933,6 @@
   vote: 36009
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -24417,7 +23986,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การคมนาคม สภาผู้แทนฯ
@@ -24470,7 +24038,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การท่องเที่ยว สภาผู้แทนฯ
@@ -24521,7 +24088,6 @@
   vote: 35225
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -24575,7 +24141,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การวิทยาศาสตร์ เทคโนโลยี วิจัยและนวัตกรรม สภาผู้แทนฯ
@@ -24628,7 +24193,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การปกครอง สภาผู้แทนฯ
@@ -24679,7 +24243,6 @@
   vote: 52075
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -24787,7 +24350,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. การสื่อสาร โทรคมนาคม และดิจิทัลเพื่อเศรษฐกิจและสังคม สภาผู้แทนฯ
@@ -24841,7 +24403,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การป้องกันและปราบปรามการทุจริตประพฤติมิชอบ สภาผู้แทนฯ
@@ -24892,7 +24453,6 @@
   vote: 47481
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -24945,7 +24505,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. แก้ไขปัญหาหนี้สินแห่งชาติ สภาผู้แทนฯ
@@ -24996,7 +24555,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -25051,7 +24609,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การต่างประเทศ สภาผู้แทนฯ
@@ -25102,7 +24659,6 @@
   vote: 47609
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -25207,7 +24763,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
       set: กมธ. วิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ สภาผู้แทนฯ
@@ -25260,7 +24815,6 @@
   vote: 32587
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -25316,7 +24870,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การป้องกันปราบปรามการฟอกเงินและยาเสพติด สภาผู้แทนฯ
@@ -25367,7 +24920,6 @@
   vote: 25207
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -25420,7 +24972,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -25471,7 +25022,6 @@
   vote: 34679
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -25578,7 +25128,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: >-
@@ -25635,7 +25184,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
       set: >-
@@ -25688,7 +25236,6 @@
   vote: 37937
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -25746,7 +25293,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. แก้ไขปัญหาหนี้สินแห่งชาติ สภาผู้แทนฯ
@@ -25797,7 +25343,6 @@
   vote: 30254
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -25850,7 +25395,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -25905,7 +25449,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการและที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. กิจการ สภาผู้แทนฯ
@@ -25956,7 +25499,6 @@
   vote: 38632
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -26009,7 +25551,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การเงิน การคลัง สถาบันการเงินและตลาดการเงิน สภาผู้แทนฯ
@@ -26060,7 +25601,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -26113,7 +25653,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การป้องกันปราบปรามการฟอกเงินและยาเสพติด สภาผู้แทนฯ
@@ -26164,7 +25703,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -26219,7 +25757,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การทหาร สภาผู้แทนฯ
@@ -26270,7 +25807,6 @@
   vote: 31913
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -26323,7 +25859,6 @@
   vote: 37423
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -26378,7 +25913,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การวิทยาศาสตร์ เทคโนโลยี วิจัยและนวัตกรรม สภาผู้แทนฯ
@@ -26429,7 +25963,6 @@
   vote: 21363
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -26484,7 +26017,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: >-
@@ -26537,7 +26069,6 @@
   vote: 17652
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -26592,7 +26123,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การเกษตรและสหกรณ์ สภาผู้แทนฯ
@@ -26645,7 +26175,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. กีฬา สภาผู้แทนฯ
@@ -26697,7 +26226,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรมและสิทธิมนุษยชน สภาผู้แทนฯ
@@ -26748,7 +26276,6 @@
   vote: 47734
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -26803,7 +26330,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การปกครอง สภาผู้แทนฯ
@@ -26855,7 +26381,6 @@
   vote: 49123
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -26911,7 +26436,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. แก้ไขปัญหาราคาผลิตผลเกษตรกรรม สภาผู้แทนฯ
@@ -26963,7 +26487,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การพาณิชย์และทรัพย์สินทางปัญญา สภาผู้แทนฯ
@@ -27014,7 +26537,6 @@
   vote: 42984
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -27068,7 +26590,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การทหาร สภาผู้แทนฯ
@@ -27121,7 +26642,6 @@
   vote: 28326
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -27177,7 +26697,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. กีฬา สภาผู้แทนฯ
@@ -27228,7 +26747,6 @@
   vote: 32074
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -27283,7 +26801,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -27334,7 +26851,6 @@
   vote: 30719
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -27389,7 +26905,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การปกครอง สภาผู้แทนฯ
@@ -27442,7 +26957,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการและที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. กิจการ สภาผู้แทนฯ
@@ -27493,7 +27007,6 @@
   vote: 38481
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -27546,7 +27059,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -27596,7 +27108,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -27648,7 +27159,6 @@
   vote: null
   senator_method: '-'
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -27702,7 +27212,6 @@
   senator_method: '-'
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. วิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ สภาผู้แทนฯ
@@ -27753,7 +27262,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาและกรรมาธิการ
@@ -27806,7 +27314,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. การพลังงาน วุฒิสภา
@@ -27857,7 +27364,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -27910,7 +27416,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. กิจการองค์กรอิสระตามรัฐธรรมนูญ วุฒิสภา
@@ -27962,7 +27467,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. กิจการองค์กรอิสระตามรัฐธรรมนูญ วุฒิสภา
@@ -28013,7 +27517,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -28069,7 +27572,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรม และการตำรวจ วุฒิสภา
@@ -28120,7 +27622,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -28173,7 +27674,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การต่างประเทศ วุฒิสภา
@@ -28224,7 +27724,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -28280,7 +27779,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การเศรษฐกิจ การเงิน และการคลัง วุฒิสภา
@@ -28334,7 +27832,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การปกครองท้องถิ่น วุฒิสภา
@@ -28387,7 +27884,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -28438,7 +27934,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -28492,7 +27987,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การแก้ปัญหาความยากจนและลดความเหลื่อมล้ำ วุฒิสภา
@@ -28543,7 +28037,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -28598,7 +28091,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การแก้ปัญหาความยากจนและลดความเหลื่อมล้ำ วุฒิสภา
@@ -28651,7 +28143,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -28706,7 +28197,6 @@
   senator_method: โดยตำแหน่ง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรม และการตำรวจ วุฒิสภา
@@ -28757,7 +28247,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการวิสามัญ
@@ -28812,7 +28301,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองโฆษกคณะกรรมาธิการ
       set: กมธ. การเกษตรและสหกรณ์ วุฒิสภา
@@ -28863,7 +28351,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -28916,7 +28403,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การเศรษฐกิจ การเงิน และการคลัง วุฒิสภา
@@ -28967,7 +28453,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -29020,7 +28505,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การทหารและความมั่นคงของรัฐ วุฒิสภา
@@ -29072,7 +28556,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การสาธารณสุข วุฒิสภา
@@ -29123,7 +28606,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -29178,7 +28660,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การท่องเที่ยว วุฒิสภา
@@ -29229,7 +28710,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -29282,7 +28762,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การเกษตรและสหกรณ์ วุฒิสภา
@@ -29333,7 +28812,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -29386,7 +28864,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การศาสนา คุณธรรม จริยธรรม ศิลปะและวัฒนธรรม วุฒิสภา
@@ -29437,7 +28914,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -29490,7 +28966,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการวิสามัญ
@@ -29545,7 +29020,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การเกษตรและสหกรณ์ วุฒิสภา
@@ -29598,7 +29072,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -29649,7 +29122,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาและกรรมาธิการ
@@ -29702,7 +29174,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -29758,7 +29229,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรม และการตำรวจ วุฒิสภา
@@ -29812,7 +29282,6 @@
   senator_method: โดยตำแหน่ง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การท่องเที่ยว วุฒิสภา
@@ -29862,7 +29331,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -29915,7 +29383,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การศึกษา วุฒิสภา
@@ -29966,7 +29433,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -30021,7 +29487,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: >-
@@ -30074,7 +29539,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -30129,7 +29593,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม วุฒิสภา
@@ -30180,7 +29643,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -30234,7 +29696,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การทหารและความมั่นคงของรัฐ วุฒิสภา
@@ -30285,7 +29746,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -30339,7 +29799,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การศาสนา คุณธรรม จริยธรรม ศิลปะและวัฒนธรรม วุฒิสภา
@@ -30390,7 +29849,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -30443,7 +29901,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรม และการตำรวจ วุฒิสภา
@@ -30494,7 +29951,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -30549,7 +30005,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การศึกษา วุฒิสภา
@@ -30603,7 +30058,6 @@
   senator_method: โดยตำแหน่ง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การแก้ปัญหาความยากจนและลดความเหลื่อมล้ำ วุฒิสภา
@@ -30654,7 +30108,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -30707,7 +30160,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -30758,7 +30210,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -30815,7 +30266,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การพัฒนาการเมืองและการมีส่วนร่วมของประชาชน วุฒิสภา
@@ -30870,7 +30320,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการวิสามัญ
       set: >-
@@ -30924,7 +30373,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การกีฬา วุฒิสภา
@@ -30975,7 +30423,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -31030,7 +30477,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การศาสนา คุณธรรม จริยธรรม ศิลปะและวัฒนธรรม วุฒิสภา
@@ -31084,7 +30530,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การศึกษา วุฒิสภา
@@ -31135,7 +30580,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -31188,7 +30632,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -31239,7 +30682,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -31292,7 +30734,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การปกครองท้องถิ่น วุฒิสภา
@@ -31343,7 +30784,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -31398,7 +30838,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การศึกษา วุฒิสภา
@@ -31449,7 +30888,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -31502,7 +30940,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การทหารและความมั่นคงของรัฐ วุฒิสภา
@@ -31553,7 +30990,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -31608,7 +31044,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -31659,7 +31094,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -31712,7 +31146,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การแก้ปัญหาความยากจนและลดความเหลื่อมล้ำ วุฒิสภา
@@ -31763,7 +31196,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -31816,7 +31248,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. ทรัพยากรธรรมชาติและสิ่งแวดล้อม วุฒิสภา
@@ -31868,7 +31299,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การบริหารราชการแผ่นดิน วุฒิสภา
@@ -31919,7 +31349,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -31974,7 +31403,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. กิจการองค์กรอิสระตามรัฐธรรมนูญ วุฒิสภา
@@ -32025,7 +31453,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -32078,7 +31505,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาและกรรมาธิการ
       set: กมธ. การพลังงาน วุฒิสภา
@@ -32129,7 +31555,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -32182,7 +31607,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การต่างประเทศ วุฒิสภา
@@ -32233,7 +31657,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -32286,7 +31709,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. การบริหารราชการแผ่นดิน วุฒิสภา
@@ -32337,7 +31759,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -32390,7 +31811,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การศาสนา คุณธรรม จริยธรรม ศิลปะและวัฒนธรรม วุฒิสภา
@@ -32442,7 +31862,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -32498,7 +31917,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การต่างประเทศ วุฒิสภา
@@ -32549,7 +31967,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการวิสามัญ
@@ -32604,7 +32021,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การเกษตรและสหกรณ์ วุฒิสภา
@@ -32655,7 +32071,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
@@ -32708,7 +32123,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การทหารและความมั่นคงของรัฐ วุฒิสภา
@@ -32760,7 +32174,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -32811,7 +32224,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -32866,7 +32278,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม วุฒิสภา
@@ -32917,7 +32328,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -32970,7 +32380,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. ติดตามการบริหารงบประมาณ วุฒิสภา
@@ -33021,7 +32430,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -33076,7 +32484,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การแรงงาน วุฒิสภา
@@ -33128,7 +32535,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การคมนาคม วุฒิสภา
@@ -33179,7 +32585,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -33235,7 +32640,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม วุฒิสภา
@@ -33286,7 +32690,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -33339,7 +32742,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: โฆษกคณะกรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรม และการตำรวจ วุฒิสภา
@@ -33391,7 +32793,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การสาธารณสุข วุฒิสภา
@@ -33442,7 +32843,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -33499,7 +32899,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การท่องเที่ยว วุฒิสภา
@@ -33551,7 +32950,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การเกษตรและสหกรณ์ วุฒิสภา
@@ -33602,7 +33000,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -33659,7 +33056,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรม และการตำรวจ วุฒิสภา
@@ -33712,7 +33108,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -33767,7 +33162,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การท่องเที่ยว วุฒิสภา
@@ -33818,7 +33212,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -33873,7 +33266,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรม และการตำรวจ วุฒิสภา
@@ -33927,7 +33319,6 @@
   senator_method: โดยตำแหน่ง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. ติดตามการบริหารงบประมาณ วุฒิสภา
@@ -33979,7 +33370,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการวิสามัญ
       set: กมธ. วิสามัญกิจการวุฒิสภา
@@ -34030,7 +33420,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -34087,7 +33476,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม วุฒิสภา
@@ -34138,7 +33526,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -34191,7 +33578,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การต่างประเทศ วุฒิสภา
@@ -34242,7 +33628,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -34295,7 +33680,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองโฆษกคณะกรรมาธิการ
       set: กมธ. การท่องเที่ยว วุฒิสภา
@@ -34346,7 +33730,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -34399,7 +33782,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การกฎหมาย การยุติธรรม และการตำรวจ วุฒิสภา
@@ -34450,7 +33832,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -34505,7 +33886,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: >-
@@ -34559,7 +33939,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การปกครองท้องถิ่น วุฒิสภา
@@ -34612,7 +33991,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -34669,7 +34047,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาและกรรมาธิการ
       set: กมธ. การพลังงาน วุฒิสภา
@@ -34721,7 +34098,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การท่องเที่ยว วุฒิสภา
@@ -34772,7 +34148,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -34827,7 +34202,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาและกรรมาธิการ
       set: กมธ. การพลังงาน วุฒิสภา
@@ -34880,7 +34254,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -34935,7 +34308,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: >-
@@ -34989,7 +34361,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
       set: กมธ. การคมนาคม วุฒิสภา
@@ -35040,7 +34411,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -35093,7 +34463,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การบริหารราชการแผ่นดิน วุฒิสภา
@@ -35144,7 +34513,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -35197,7 +34565,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การคมนาคม วุฒิสภา
@@ -35249,7 +34616,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การปกครองท้องถิ่น วุฒิสภา
@@ -35300,7 +34666,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -35356,7 +34721,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองเลขานุการคณะกรรมาธิการ
@@ -35414,7 +34778,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองโฆษกคณะกรรมาธิการ
       set: กมธ. การเกษตรและสหกรณ์ วุฒิสภา
@@ -35466,7 +34829,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการวิสามัญ
@@ -35521,7 +34883,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การเศรษฐกิจ การเงิน และการคลัง วุฒิสภา
@@ -35573,7 +34934,6 @@
   senator_method: โดยตำแหน่ง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การต่างประเทศ วุฒิสภา
@@ -35624,7 +34984,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -35679,7 +35038,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การต่างประเทศ วุฒิสภา
@@ -35733,7 +35091,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. การพัฒนาการเมืองและการมีส่วนร่วมของประชาชน วุฒิสภา
@@ -35784,7 +35141,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -35839,7 +35195,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: >-
@@ -35893,7 +35248,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การสาธารณสุข วุฒิสภา
@@ -35944,7 +35298,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -35999,7 +35352,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. ทรัพยากรธรรมชาติและสิ่งแวดล้อม วุฒิสภา
@@ -36051,7 +35403,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การพัฒนาการเมืองและการมีส่วนร่วมของประชาชน วุฒิสภา
@@ -36102,7 +35453,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -36158,7 +35508,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: >-
@@ -36211,7 +35560,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -36266,7 +35614,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. ติดตามการบริหารงบประมาณ วุฒิสภา
@@ -36320,7 +35667,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การศาสนา คุณธรรม จริยธรรม ศิลปะและวัฒนธรรม วุฒิสภา
@@ -36372,7 +35718,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การท่องเที่ยว วุฒิสภา
@@ -36423,7 +35768,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -36478,7 +35822,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การเทคโนโลยีสารสนเทศ การสื่อสาร และการโทรคมนาคม วุฒิสภา
@@ -36529,7 +35872,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองเลขานุการคณะกรรมาธิการ
@@ -36584,7 +35926,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การกีฬา วุฒิสภา
@@ -36637,7 +35978,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการวิสามัญ
@@ -36692,7 +36032,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การศึกษา วุฒิสภา
@@ -36743,7 +36082,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -36797,7 +36135,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -36848,7 +36185,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -36901,7 +36237,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
       set: กมธ. ติดตามการบริหารงบประมาณ วุฒิสภา
@@ -36952,7 +36287,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการวิสามัญ
@@ -37007,7 +36341,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การเทคโนโลยีสารสนเทศ การสื่อสาร และการโทรคมนาคม วุฒิสภา
@@ -37059,7 +36392,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองโฆษกคณะกรรมาธิการ
       set: กมธ. การอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม วุฒิสภา
@@ -37110,7 +36442,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -37164,7 +36495,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การศาสนา คุณธรรม จริยธรรม ศิลปะและวัฒนธรรม วุฒิสภา
@@ -37215,7 +36545,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -37268,7 +36597,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -37324,7 +36652,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการวิสามัญ
       set: กมธ. วิสามัญกิจการวุฒิสภา
@@ -37375,7 +36702,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -37428,7 +36754,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การพลังงาน วุฒิสภา
@@ -37480,7 +36805,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -37531,7 +36855,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -37586,7 +36909,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม วุฒิสภา
@@ -37637,7 +36959,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -37690,7 +37011,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. ติดตามการบริหารงบประมาณ วุฒิสภา
@@ -37741,7 +37061,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -37794,7 +37113,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การพาณิชย์และการอุตสาหกรรม วุฒิสภา
@@ -37846,7 +37164,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
       set: กมธ. การเทคโนโลยีสารสนเทศ การสื่อสาร และการโทรคมนาคม วุฒิสภา
@@ -37897,7 +37214,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการวิสามัญ
@@ -37954,7 +37270,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การศาสนา คุณธรรม จริยธรรม ศิลปะและวัฒนธรรม วุฒิสภา
@@ -38005,7 +37320,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -38058,7 +37372,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -38113,7 +37426,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: >-
@@ -38166,7 +37478,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -38221,7 +37532,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การเศรษฐกิจ การเงิน และการคลัง วุฒิสภา
@@ -38272,7 +37582,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการวิสามัญ
@@ -38327,7 +37636,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: >-
@@ -38381,7 +37689,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การสาธารณสุข วุฒิสภา
@@ -38433,7 +37740,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. การทหารและความมั่นคงของรัฐ วุฒิสภา
@@ -38484,7 +37790,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
@@ -38538,7 +37843,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม วุฒิสภา
@@ -38590,7 +37894,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -38645,7 +37948,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การแก้ปัญหาความยากจนและลดความเหลื่อมล้ำ วุฒิสภา
@@ -38696,7 +37998,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -38751,7 +38052,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การพาณิชย์และการอุตสาหกรรม วุฒิสภา
@@ -38802,7 +38102,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาและกรรมาธิการ
@@ -38855,7 +38154,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -38906,7 +38204,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -38960,7 +38257,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการวิสามัญ
@@ -39016,7 +38312,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการวิสามัญ
       set: >-
@@ -39071,7 +38366,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การเกษตรและสหกรณ์ วุฒิสภา
@@ -39122,7 +38416,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -39175,7 +38468,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การแรงงาน วุฒิสภา
@@ -39226,7 +38518,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
@@ -39279,7 +38570,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การกีฬา วุฒิสภา
@@ -39331,7 +38621,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: เลขานุการคณะกรรมาธิการ
       set: กมธ. การเทคโนโลยีสารสนเทศ การสื่อสาร และการโทรคมนาคม วุฒิสภา
@@ -39382,7 +38671,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -39437,7 +38725,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. ทรัพยากรธรรมชาติและสิ่งแวดล้อม วุฒิสภา
@@ -39488,7 +38775,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -39541,7 +38827,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: '-'
       set: '-'
@@ -39592,7 +38877,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองเลขานุการคณะกรรมาธิการ
@@ -39645,7 +38929,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การพาณิชย์และการอุตสาหกรรม วุฒิสภา
@@ -39696,7 +38979,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -39749,7 +39031,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การบริหารราชการแผ่นดิน วุฒิสภา
@@ -39800,7 +39081,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -39853,7 +39133,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
       set: กมธ. การแรงงาน วุฒิสภา
@@ -39904,7 +39183,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -39957,7 +39235,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาและกรรมาธิการ
       set: กมธ. การพลังงาน วุฒิสภา
@@ -40008,7 +39285,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -40063,7 +39339,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. สิทธิมนุษยชน สิทธิเสรีภาพและการคุ้มครองผู้บริโภค วุฒิสภา
@@ -40114,7 +39389,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ประธานคณะกรรมาธิการ
@@ -40168,7 +39442,6 @@
   senator_method: โดยตำแหน่ง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การต่างประเทศ วุฒิสภา
@@ -40219,7 +39492,6 @@
   vote: null
   senator_method: เลือกกันเอง
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -40274,7 +39546,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การพัฒนาการเมืองและการมีส่วนร่วมของประชาชน วุฒิสภา
@@ -40325,7 +39596,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -40378,7 +39648,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองเลขานุการคณะกรรมาธิการ
       set: กมธ. การบริหารราชการแผ่นดิน วุฒิสภา
@@ -40429,7 +39698,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: กรรมาธิการ
@@ -40486,7 +39754,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การสาธารณสุข วุฒิสภา
@@ -40537,7 +39804,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
@@ -40593,7 +39859,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
       set: กมธ. การกีฬา วุฒิสภา
@@ -40644,7 +39909,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
@@ -40700,7 +39964,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การพาณิชย์และการอุตสาหกรรม วุฒิสภา
@@ -40753,7 +40016,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: รองประธานคณะกรรมาธิการ
       set: กมธ. การพลังงาน วุฒิสภา
@@ -40804,7 +40066,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: ที่ปรึกษาคณะกรรมาธิการ
@@ -40859,7 +40120,6 @@
   senator_method: เลือกโดย คสช.
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: ผู้ช่วยเลขานุการคณะกรรมาธิการ
       set: กมธ. การทหารและความมั่นคงของรัฐ วุฒิสภา
@@ -40913,7 +40173,6 @@
   senator_method: เลือกกันเอง
   cabinet_position:
     - '-'
-    - '-'
   committee:
     - position: กรรมาธิการ
       set: กมธ. การกีฬา วุฒิสภา
@@ -40966,7 +40225,6 @@
   vote: null
   senator_method: เลือกโดย คสช.
   cabinet_position:
-    - '-'
     - '-'
   committee:
     - position: '-'
