@@ -1,15 +1,15 @@
 import React from "react"
-import FeatureIcon from "../hero/featureIcon"
+import Img from "gatsby-image"
 
 export const CabinetMember = props => {
-  const { image, lastname, mp_type, name, party, party_group } = props
+  const { image, lastname, name, party, party_group } = props
 
   return (
     <div
       css={{
         backgroundColor: "white",
         border: "solid",
-        borderRadius: "0.3rem",
+        borderRadius: "0.6rem",
         width: "30rem",
         height: "10rem",
         display: "inline-block",
@@ -27,9 +27,13 @@ export const CabinetMember = props => {
           css={{
             width: "30%",
             display: "inline-block",
+            backgroundColor: "#222121",
+            borderRadius: "50%",
+            padding: "0.2rem",
+            margin: "1rem",
           }}
         >
-          <FeatureIcon image={image} />
+          <Img fluid={image.childImageSharp.fluid} />
         </div>
         <div
           css={{
@@ -38,7 +42,6 @@ export const CabinetMember = props => {
           }}
         >
           <div>{[name, lastname].join(" ")}</div>
-          <div>{mp_type}</div>
           <div>{[party, party_group].join(" ")}</div>
         </div>
       </div>

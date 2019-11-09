@@ -32,7 +32,22 @@ const CabinetMemberList = () => {
   const list = data.allPeopleYaml.edges.map(people => (
     <CabinetMember {...people.node} image={data.mockImage} />
   ))
-  return <div>{list}</div>
+  return (
+    <div
+      css={{
+        width: "65rem",
+        [`@media (max-width: 40rem)`]: {
+          width: "35rem",
+        },
+        display: "flex",
+        flexWrap: "wrap",
+        margin: "0 auto",
+        justifyContent: "center",
+      }}
+    >
+      {list}
+    </div>
+  )
 }
 
 export default CabinetMemberList
