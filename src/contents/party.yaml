@@ -125,7 +125,7 @@
       organisations to bring about national-crisis solving policies with the
       approach of developing national education and educational practitioners.
   short_name: ค.พ.ช.
-  color: ''
+  color: '#175a38'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -158,7 +158,7 @@
       Province. With its flexible, friendly-to-all-side position, the party has
       never failed to join the government.
   short_name: ชทพ.
-  color: ''
+  color: '#ff72a8'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -193,7 +193,7 @@
       friendly-to-all-side position, the party has never failed to join the
       government.
   short_name: ชพน.
-  color: ''
+  color: '#ffaf41'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -228,7 +228,7 @@
       it innitially joined the government, but has now declared itself an
       independent opposition.
   short_name: ทศล.
-  color: ''
+  color: '#0c5197'
   party_type: พรรค
   party_ordinal: null
   party_group: ฝ่ายค้าน
@@ -261,7 +261,7 @@
       was taken back shortly afterwards, as the by-election in Chiangmai
       Constituency 8 changed the overall party list quota given to each party.
   short_name: ท.ธ.
-  color: ''
+  color: '#e43ba2'
   party_type: พรรค
   party_ordinal: null
   party_group: ''
@@ -297,7 +297,7 @@
       seats the party earned from the 2019 election were from constituencies in
       the three Southern border provinces.
   short_name: ปช.
-  color: ''
+  color: '#a35f26'
   party_type: พรรค
   party_ordinal: null
   party_group: ฝ่ายค้าน
@@ -332,7 +332,7 @@
       Authority Director. After the 2019 election it has innitially joined the
       governnment, but has now declared itself an independent opposition.
   short_name: ปธท.
-  color: ''
+  color: '#c32429'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -365,7 +365,7 @@
       joining the Yingluck government. In 2019 election it has again received 1
       party list seat and joined the government with Gen. Prayut Chan-o-Cha.
   short_name: ปธม.
-  color: ''
+  color: '#eb4138'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -398,7 +398,7 @@
       Democrat used to dominate the whole of the South. It claimes to hold a
       liberal democratic political ideology and opposes the "Thaksin regime".
   short_name: ปชป.
-  color: ''
+  color: '#06aff3'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -433,7 +433,7 @@
       party leader denied the claim saying their policies were in line with
       those of the government.
   short_name: ปย.
-  color: ''
+  color: '#ea1f25'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -468,7 +468,7 @@
       advertises religious-driven policies and has supporters among the
       Dhammakaya disciples.
   short_name: ปชภ.
-  color: ''
+  color: '#076350'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -500,7 +500,7 @@
       Ponlamuang Thai Party, formerly Ponlamuang Party, comprises former
       ministers and MPs from all parts of Thailand.
   short_name: พล.
-  color: ''
+  color: '#2d3180'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -532,7 +532,7 @@
       member of the NCPO working committee, has the objective of supporting Gen.
       Prayut Chan-o-Cha to become the Prime Minister.
   short_name: พพชท
-  color: ''
+  color: '#08663b'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -564,7 +564,7 @@
       former senator who is influential in Bangkok. The party made clear it
       wanted to join the government no matter which side led it.
   short_name: พทท.
-  color: ''
+  color: '#259747'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -598,7 +598,7 @@
       of farmers aiming to represent the Thai farmers. Their top policy was to
       solve the agricultural irrigation problems.
   short_name: พ.ท.ร.ท.
-  color: ''
+  color: '#245896'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -632,7 +632,7 @@
       Democracy (PAD). The New Palangdharma was set up by some former members of
       the old party, together with other members of the public.
   short_name: พธม.
-  color: ''
+  color: '#e9b54a'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -668,7 +668,7 @@
       party's main direction is to support Gen. Prayut to become the Prime
       Minister.
   short_name: พปชร.
-  color: ''
+  color: '#1f68dd'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -702,7 +702,7 @@
       as its founders, leader and advisors has a close connection to Thaksin
       Shinnawatra and Pheu Thai Party.
   short_name: พลท.
-  color: ''
+  color: '#181f97'
   party_type: พรรค
   party_ordinal: null
   party_group: ฝ่ายค้าน
@@ -736,7 +736,7 @@
       (United Front for Democracy against Dictatorship), saying UDD leaders are
       behind the party.
   short_name: พ.พ.ช.
-  color: ''
+  color: '#c0bcc3'
   party_type: พรรค
   party_ordinal: null
   party_group: ฝ่ายค้าน
@@ -772,7 +772,7 @@
       2006 military coup, while 2014 coup had ousted the recent Pheu Thai
       government.
   short_name: พท.
-  color: ''
+  color: '#da3731'
   party_type: พรรค
   party_ordinal: null
   party_group: ฝ่ายค้าน
@@ -807,7 +807,7 @@
       the southern part of the Northeast and was ready to join the government of
       any side.
   short_name: ภท
-  color: ''
+  color: '#209fa0'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -840,7 +840,7 @@
       PDRC. It supports Gen. Prayut Chan-o-cha to become the Prime Minister and
       opposes the Thaksin regime.
   short_name: รปช.
-  color: ''
+  color: '#303d8e'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -873,7 +873,7 @@
       of National Parks, Wildlife and Plant Conservation. Its main policy is
       about conserving natural resource and environment.
   short_name: รป.
-  color: ''
+  color: '#8dbf44'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
@@ -907,7 +907,7 @@
       strong impact from the sluggish economy. It claims a democratic position
       while focusing on the economy, not on political conflicts.
   short_name: ศม
-  color: ''
+  color: '#6e2fff'
   party_type: พรรค
   party_ordinal: null
   party_group: ฝ่ายค้าน
@@ -941,7 +941,7 @@
       coup, supporting military reforms and standing firmly against
       dictatorship.
   short_name: สร.
-  color: ''
+  color: '#b49e31'
   party_type: พรรค
   party_ordinal: null
   party_group: ฝ่ายค้าน
@@ -975,7 +975,7 @@
       has strongly announced its position against military influence in
       politics.
   short_name: อนค.
-  color: ''
+  color: '#ef7824'
   party_type: พรรค
   party_ordinal: null
   party_group: ฝ่ายค้าน
