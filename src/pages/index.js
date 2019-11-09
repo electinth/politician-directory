@@ -53,6 +53,7 @@ export const query = graphql`
           name
           short_name
           party_group
+          total_member
         }
       }
     }
@@ -119,7 +120,7 @@ const cssPartyTypeCard = {
 
   width: `calc(${100 / 2}% - 2rem)`,
   marginBottom: "2rem",
-  "&:nth-child(2n+1)": {
+  "&:nth-of-type(2n+1)": {
     marginRight: "2rem",
   },
   "&:hover": {
@@ -151,7 +152,7 @@ const cssMPColumn = {
 
   width: `calc(${100 / 2}% - 2rem)`,
   marginBottom: "2rem",
-  "&:nth-child(2n+1)": {
+  "&:nth-of-type(2n+1)": {
     marginRight: "2rem",
   },
   // h3: {
@@ -181,6 +182,17 @@ const IndexPage = ({ data }) => {
   let data_the_rest = data.allPeopleYaml.edges.filter(
     ({ node }) => !node[prop_of_interest.prop]
   )
+  let coalition_data = data.allPartyYaml.edges.filter(
+    ({ node }) => node.party_group === "ร่วมรัฐบาล"
+  )
+  let opposition_data = data.allPartyYaml.edges.filter(
+    ({ node }) => node.party_group === "ฝ่ายค้าน"
+  )
+
+  const sortByNumberOfSeat = ({ node: a }, { node: b }) =>
+    b.total_member - a.total_member
+  coalition_data.sort(sortByNumberOfSeat)
+  opposition_data.sort(sortByNumberOfSeat)
 
   return (
     <Layout
@@ -271,7 +283,7 @@ const IndexPage = ({ data }) => {
                 css={{
                   width: `calc(${100 / 2}% - 2rem)`,
                   marginBottom: "2rem",
-                  "&:nth-child(2n+1)": {
+                  "&:nth-of-type(2n+1)": {
                     marginRight: "2rem",
                   },
                 }}
@@ -339,25 +351,21 @@ const IndexPage = ({ data }) => {
               <div css={cssMPColumn}>
                 <h3>พรรคร่วมรัฐบาล ({data.partyCoalition.totalCount})</h3>
                 <ul>
-                  {data.allPartyYaml.edges
-                    .filter(({ node }) => node.party_group === "ร่วมรัฐบาล")
-                    .map(({ node }) => (
-                      <li>
-                        <Link to={node.fields.slug}>{node.name}</Link>
-                      </li>
-                    ))}
+                  {coalition_data.map(({ node }) => (
+                    <li key={node.name}>
+                      <Link to={node.fields.slug}>{node.name}</Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div css={cssMPColumn}>
                 <h3>พรรคฝ่ายค้าน ({data.partyOpposition.totalCount})</h3>
                 <ul>
-                  {data.allPartyYaml.edges
-                    .filter(({ node }) => node.party_group === "ฝ่ายค้าน")
-                    .map(({ node }) => (
-                      <li>
-                        <Link to={node.fields.slug}>{node.name}</Link>
-                      </li>
-                    ))}
+                  {opposition_data.map(({ node }) => (
+                    <li key={node.name}>
+                      <Link to={node.fields.slug}>{node.name}</Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

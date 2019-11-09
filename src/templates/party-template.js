@@ -38,6 +38,7 @@ export const query = graphql`
           mp_type
           mp_province
           mp_zone
+          mp_list
         }
       }
     }
@@ -52,6 +53,24 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
   const [memberFilter, setMemberFilter] = useState({})
   const [partyMembers] = useState(allPeopleYaml.edges.map(e => e.node))
   const selectMemberFilter = filter => () => setMemberFilter(filter)
+
+  const getSortedMembers = () => {
+    let members = partyMembers.filter(
+      member => !memberFilter.mp_type || member.mp_type === memberFilter.mp_type
+    )
+    if (memberFilter.mp_type === "บัญชีรายชื่อ") {
+      members.sort((a, b) => a.mp_list - b.mp_list)
+    } else if (memberFilter.mp_type === "แบ่งเขต") {
+      members.sort((a, b) =>
+        a.mp_province === b.mp_province
+          ? a.mp_zone - b.mp_zone
+          : a.mp_province > b.mp_province
+          ? 1
+          : -1
+      )
+    }
+    return members
+  }
 
   return (
     <Layout
@@ -214,69 +233,63 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
               justifyContent: "space-evenly",
             }}
           >
-            {partyMembers
-              .filter(
-                member =>
-                  !memberFilter.mp_type ||
-                  member.mp_type === memberFilter.mp_type
-              )
-              .map((member, index) => (
+            {getSortedMembers().map((member, index) => (
+              <div
+                key={member.id}
+                css={{
+                  display: "block",
+                  flex: "1 1 360px",
+                  padding: "4rem",
+                  paddingRight: "2rem",
+                  border: "1px solid var(--cl-gray-2)",
+                  borderRadius: "1rem",
+                  background: "var(--cl-white)",
+                  marginBottom: "1rem",
+                  fontSize: "1.8rem",
+                  "&:nth-child(2n+1)": {
+                    marginRight: "1rem",
+                  },
+                }}
+              >
+                <div>
+                  <Link to={`/people/${member.name}-${member.lastname}`}>
+                    <div
+                      css={{
+                        borderRadius: 84,
+                        width: 84,
+                        height: 84,
+                        float: "left",
+                        marginBottom: 0,
+                        marginRight: "2rem",
+                        border: "2px solid var(--cl-black)",
+                        background: "var(--cl-gray-2) no-repeat",
+                        backgroundSize: "cover",
+                      }}
+                      style={{
+                        backgroundImage: `url(${politicianPicture(member)})`,
+                      }}
+                    ></div>
+                  </Link>
+                </div>
                 <div
-                  key={member.id}
                   css={{
-                    display: "block",
-                    flex: "1 1 360px",
-                    padding: "4rem",
-                    paddingRight: "2rem",
-                    border: "1px solid var(--cl-gray-2)",
-                    borderRadius: "1rem",
-                    background: "var(--cl-white)",
-                    marginBottom: "1rem",
-                    fontSize: "1.8rem",
-                    "&:nth-child(2n+1)": {
-                      marginRight: "1rem",
-                    },
+                    fontFamily: "var(--ff-title)",
+                    fontSize: "2.4rem",
+                    a: { color: "inherit" },
                   }}
                 >
-                  <div>
-                    <Link to={`/people/${member.name}-${member.lastname}`}>
-                      <div
-                        css={{
-                          borderRadius: 84,
-                          width: 84,
-                          height: 84,
-                          float: "left",
-                          marginBottom: 0,
-                          marginRight: "2rem",
-                          border: "2px solid var(--cl-black)",
-                          background: "var(--cl-gray-2) no-repeat",
-                          backgroundSize: "cover",
-                        }}
-                        style={{
-                          backgroundImage: `url(${politicianPicture(member)})`,
-                        }}
-                      ></div>
-                    </Link>
-                  </div>
-                  <div
-                    css={{
-                      fontFamily: "var(--ff-title)",
-                      fontSize: "2.4rem",
-                      a: { color: "inherit" },
-                    }}
-                  >
-                    <Link to={`/people/${member.name}-${member.lastname}`}>
-                      {`${member.title} ${member.name} ${member.lastname}`}
-                    </Link>
-                  </div>
-                  <div>
-                    {member.mp_type === "บัญชีรายชื่อ"
-                      ? `ส.ส. ${member.mp_type} ลำดับที่ ${member.mp_zone}`
-                      : `ส.ส. ${member.mp_type} จังหวัด${member.mp_province} เขต ${member.mp_zone}`}
-                  </div>
-                  <div>พรรค{`${member.party}`}</div>
+                  <Link to={`/people/${member.name}-${member.lastname}`}>
+                    {`${member.title} ${member.name} ${member.lastname}`}
+                  </Link>
                 </div>
-              ))}
+                <div>
+                  {member.mp_type === "บัญชีรายชื่อ"
+                    ? `ส.ส. ${member.mp_type} ลำดับที่ ${member.mp_list}`
+                    : `ส.ส. ${member.mp_type} จังหวัด${member.mp_province} เขต ${member.mp_zone}`}
+                </div>
+                <div>พรรค{`${member.party}`}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
