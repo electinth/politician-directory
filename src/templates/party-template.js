@@ -55,18 +55,26 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
   const selectMemberFilter = filter => () => setMemberFilter(filter)
 
   const getSortedMembers = () => {
+    // filter party member by mp_type
     let members = partyMembers.filter(
       member => !memberFilter.mp_type || member.mp_type === memberFilter.mp_type
     )
     if (memberFilter.mp_type === "บัญชีรายชื่อ") {
+      // sort by party list
       members.sort((a, b) => a.mp_list - b.mp_list)
     } else if (memberFilter.mp_type === "แบ่งเขต") {
+      // sort by province and zone
       members.sort((a, b) =>
         a.mp_province === b.mp_province
           ? a.mp_zone - b.mp_zone
-          : a.mp_province > b.mp_province
-          ? 1
-          : -1
+          : a.mp_province.localeCompare(b.mp_province, "th")
+      )
+    } else {
+      // sort by name and lastname
+      members.sort((a, b) =>
+        a.name === b.name
+          ? a.lastname.localeCompare(b.name, "th")
+          : a.name.localeCompare(b.name, "th")
       )
     }
     return members
@@ -246,7 +254,7 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
                   background: "var(--cl-white)",
                   marginBottom: "1rem",
                   fontSize: "1.8rem",
-                  "&:nth-child(2n+1)": {
+                  "&:nth-of-type(2n+1)": {
                     marginRight: "1rem",
                   },
                 }}
