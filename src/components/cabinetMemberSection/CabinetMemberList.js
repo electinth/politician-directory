@@ -3,7 +3,9 @@ import React from "react"
 import { CabinetMember } from "./CabinetMember"
 
 export const CabinetMemberList = ({ members, title }) => {
-  const list = members.map(member => <CabinetMember {...member} />)
+  const list = members.map(member => (
+    <CabinetMember {...member} key={member.id} />
+  ))
   return (
     <div>
       <h2

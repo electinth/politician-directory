@@ -38,7 +38,10 @@ export const CabinetMember = props => {
         <div
           css={{
             width: "70%",
-            display: "inline-block",
+            display: "inline-flex",
+            flexDirection: "column",
+            justifyContent: "space-evenly",
+            height: "100%",
           }}
         >
           <div>{[name, lastname].join(" ")}</div>
