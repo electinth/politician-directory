@@ -2,13 +2,13 @@ import React from "react"
 
 import Img from "gatsby-image"
 
-const FeatureIcon = ({ image }) => {
+const FeatureIcon = ({ image, borderWidth }) => {
   return (
     <div
       style={{
         backgroundColor: "#222121",
         borderRadius: "50%",
-        padding: "10%",
+        padding: borderWidth || "10%",
         width: "60%",
         marginBottom: "1.5rem",
       }}

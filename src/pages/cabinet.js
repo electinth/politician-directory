@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import StackedBarChart from "../components/stackedBarChart"
+import CabinetMemberList from "../components/cabinetMemberList"
 
 // Mock for StackedBarChart
 const mpTypes = [
@@ -45,6 +46,7 @@ const CabinetPage = () => (
       <StackedBarChart data={genders}></StackedBarChart>
       <StackedBarChart data={ages}></StackedBarChart>
     </div>
+    <CabinetMemberList />
   </Layout>
 )
 
