@@ -67,7 +67,7 @@ const cssLanguageMenu = {
 const EnvBadge = () => {
   const env = process.env.GATSBY_ENV || "development"
   // hide badge on production
-  if (env === "production") return {}
+  if (env === "production") return null
   return (
     <div
       css={{
