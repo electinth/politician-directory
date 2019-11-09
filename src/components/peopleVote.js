@@ -22,7 +22,7 @@ const voteColor = {
   "2": "#ef314b",
   "3": "grey",
   "4": "#272727",
-  "-": "-",
+  "": "-",
 }
 
 const voteText = {
@@ -30,7 +30,7 @@ const voteText = {
   "2": "ไม่เห็นด้วย",
   "3": "งดออกเสียง",
   "4": "ไม่เข้าประชุม",
-  "-": "-",
+  "": "-",
 }
 
 class PeopleVote extends Component {
