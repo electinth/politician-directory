@@ -49,6 +49,7 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             name
             lastname
+            party
           }
         }
       }
@@ -63,6 +64,7 @@ exports.createPages = async ({ graphql, actions }) => {
           slug: node.fields.slug,
           name: node.name,
           lastname: node.lastname,
+          party: node.party,
         },
       })
     })

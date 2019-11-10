@@ -12,7 +12,7 @@ import PeopleStatus from "../components/peopleStatus"
 import styles from "./people-template.module.css"
 
 export const query = graphql`
-  query($slug: String!, $name: String!, $lastname: String!) {
+  query($slug: String!, $name: String!, $lastname: String!, $party: String!) {
     peopleYaml(fields: { slug: { eq: $slug } }) {
       id
       title
@@ -48,6 +48,9 @@ export const query = graphql`
         key
         value
       }
+    }
+    partyYaml(name: { eq: $party }) {
+      color
     }
     allVotelogYaml {
       nodes {
@@ -86,11 +89,11 @@ const cssSectionBlack = {
 }
 
 const PeoplePage = ({
-  data: { peopleYaml, peopleVoteYaml, allVotelogYaml },
+  data: { peopleYaml, peopleVoteYaml, partyYaml, allVotelogYaml },
 }) => (
   <Layout
     pageStyles={{
-      background: "#eeeeee",
+      background: partyYaml.color,
     }}
   >
     <SEO title="People" />
