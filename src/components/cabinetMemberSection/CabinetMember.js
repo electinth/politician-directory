@@ -77,9 +77,9 @@ const MemberName = ({ name, lastname }) => (
 )
 
 const MemberAffiliate = props => {
-  const party = props.party && props.party != "-" ? props.party : ""
+  const party = props.party && props.party !== "-" ? props.party : ""
   const partyGroup =
-    props.partyGroup && props.partyGroup != "-" ? props.partyGroup : ""
+    props.partyGroup && props.partyGroup !== "-" ? props.partyGroup : ""
 
   return party || partyGroup ? (
     <div
