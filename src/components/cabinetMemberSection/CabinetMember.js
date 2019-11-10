@@ -1,8 +1,8 @@
 import React from "react"
-import Img from "gatsby-image"
+import { politicianPicture } from "../../utils"
 
 export const CabinetMember = props => {
-  const { image, lastname, name, party, party_group } = props
+  const { lastname, name, party, party_group } = props
 
   return (
     <div
@@ -10,10 +10,11 @@ export const CabinetMember = props => {
         backgroundColor: "white",
         border: "solid",
         borderRadius: "0.6rem",
-        width: "30rem",
-        height: "10rem",
+        width: "47rem",
+        height: "15.5rem",
         display: "inline-block",
-        margin: "0.5rem",
+        margin: "1.5rem",
+        borderWidth: "0.2rem",
       }}
     >
       <div
@@ -25,15 +26,27 @@ export const CabinetMember = props => {
       >
         <div
           css={{
-            width: "30%",
+            width: "8.5rem",
+            height: "8.5rem",
             display: "inline-block",
             backgroundColor: "#222121",
             borderRadius: "50%",
-            padding: "0.2rem",
-            margin: "1rem",
+            margin: "4rem",
+            overflow: "hidden",
           }}
         >
-          <Img fluid={image.childImageSharp.fluid} />
+          <img
+            css={{
+              width: "100%",
+              height: "100%",
+              borderRadius: "50%",
+              objectFit: "cover",
+              border: "solid",
+              borderWidth: "0.2rem",
+            }}
+            alt={`${name} ${lastname}`}
+            src={politicianPicture(props)}
+          />
         </div>
         <div
           css={{
@@ -44,10 +57,38 @@ export const CabinetMember = props => {
             height: "100%",
           }}
         >
-          <div>{[name, lastname].join(" ")}</div>
-          <div>{[party, party_group].join(" ")}</div>
+          <MemberName name={name} lastname={lastname} />
+          <MemberAffiliate party={party} partyGroup={party_group} />
         </div>
       </div>
     </div>
   )
+}
+
+const MemberName = ({ name, lastname }) => (
+  <div
+    css={{
+      fontSize: "25px",
+      fontWeight: "700",
+    }}
+  >
+    {[name, lastname].join(" ")}
+  </div>
+)
+
+const MemberAffiliate = props => {
+  const party = props.party && props.party != "-" ? props.party : ""
+  const partyGroup =
+    props.partyGroup && props.partyGroup != "-" ? props.partyGroup : ""
+
+  return party || partyGroup ? (
+    <div
+      css={{
+        fontSize: "20px",
+        fontWeight: "700",
+      }}
+    >
+      {[party, partyGroup].join(" ")}
+    </div>
+  ) : null
 }

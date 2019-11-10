@@ -28,69 +28,65 @@ const CabinetMemberSection = () => {
     }
   `)
 
-  // console.log(data)
-  // let positions = {};
-  // data.allPeopleYaml.edges.map(people => {
-  //   people.node.cabinet_position.map(position => {
-  //     positions[position] = 1
-  //   })
-  // })
-
-  // console.log(positions);
-
-  const positionList = [
-    "นายกรัฐมนตรี",
+  const ministryList = [
     "รองนายกรัฐมนตรี",
-    "รัฐมนตรีช่วยว่าการกระทรวงกลาโหม",
-    "รัฐมนตรีช่วยว่าการกระทรวงการคลัง",
-    "รัฐมนตรีช่วยว่าการกระทรวงคมนาคม",
-    "รัฐมนตรีช่วยว่าการกระทรวงพาณิชย์",
-    "รัฐมนตรีช่วยว่าการกระทรวงมหาดไทย",
-    "รัฐมนตรีช่วยว่าการกระทรวงศึกษาธิการ",
-    "รัฐมนตรีช่วยว่าการกระทรวงสาธารณสุข",
-    "รัฐมนตรีช่วยว่าการกระทรวงเกษตรและสหกรณ์",
-    "รัฐมนตรีประจำสำนักนายกรัฐมนตรี",
-    "รัฐมนตรีว่าการกระทรวงกลาโหม",
-    "รัฐมนตรีว่าการกระทรวงการคลัง",
-    "รัฐมนตรีว่าการกระทรวงการต่างประเทศ",
-    "รัฐมนตรีว่าการกระทรวงการท่องเที่ยวและกีฬา",
-    "รัฐมนตรีว่าการกระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม",
-    "รัฐมนตรีว่าการกระทรวงคมนาคม",
-    "รัฐมนตรีว่าการกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม",
-    "รัฐมนตรีว่าการกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม",
-    "รัฐมนตรีว่าการกระทรวงพลังงาน",
-    "รัฐมนตรีว่าการกระทรวงพัฒนาสังคมและความมั่นคงของมนุษย์",
-    "รัฐมนตรีว่าการกระทรวงพาณิชย์",
-    "รัฐมนตรีว่าการกระทรวงมหาดไทย",
-    "รัฐมนตรีว่าการกระทรวงยุติธรรม",
-    "รัฐมนตรีว่าการกระทรวงวัฒนธรรม",
-    "รัฐมนตรีว่าการกระทรวงศึกษาธิการ",
-    "รัฐมนตรีว่าการกระทรวงสาธารณสุข",
-    "รัฐมนตรีว่าการกระทรวงอุตสาหกรรม",
-    "รัฐมนตรีว่าการกระทรวงเกษตรและสหกรณ์",
-    "รัฐมนตรีว่าการกระทรวงแรงงาน",
+    "กระทรวงกลาโหม",
+    "กระทรวงการคลัง",
+    "กระทรวงคมนาคม",
+    "กระทรวงพาณิชย์",
+    "กระทรวงมหาดไทย",
+    "กระทรวงศึกษาธิการ",
+    "กระทรวงสาธารณสุข",
+    "กระทรวงเกษตรและสหกรณ์",
+    "สำนักนายกรัฐมนตรี",
+    "กระทรวงการต่างประเทศ",
+    "กระทรวงการท่องเที่ยวและกีฬา",
+    "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม",
+    "กระทรวงคมนาคม",
+    "กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม",
+    "กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม",
+    "กระทรวงพลังงาน",
+    "กระทรวงพัฒนาสังคมและความมั่นคงของมนุษย์",
+    "กระทรวงยุติธรรม",
+    "กระทรวงวัฒนธรรม",
+    "กระทรวงอุตสาหกรรม",
+    "กระทรวงแรงงาน",
   ]
 
-  const memberByPosition = positionList.map(position => ({
-    position,
-    members: data.allPeopleYaml.edges.filter(people =>
-      people.node.cabinet_position.some(
-        peoplePostion => peoplePostion === position
-      )
-    ),
-  }))
+  // president need special filter
+  const presidentMinistry = "นายกรัฐมนตรี"
+  const presidentList = data.allPeopleYaml.edges.filter(people =>
+    people.node.cabinet_position.some(
+      peoplePostion => peoplePostion === presidentMinistry
+    )
+  )
+
+  const memberByMinistry = [
+    {
+      ministry: presidentMinistry,
+      members: presidentList,
+    },
+  ].concat(
+    ministryList.map(ministry => ({
+      ministry,
+      members: data.allPeopleYaml.edges.filter(people =>
+        people.node.cabinet_position.some(
+          peoplePostion => peoplePostion.indexOf(ministry) > -1
+        )
+      ),
+    }))
+  )
 
   const renderCabinetMemberLists = () =>
-    memberByPosition.map(({ position, members: memberList }) => {
+    memberByMinistry.map(({ ministry, members: memberList }) => {
       const memberListWithImg = memberList.map(member => ({
         ...member.node,
-        image: data.mockImage,
       }))
       return (
         <CabinetMemberList
-          key={position}
+          key={ministry}
           members={memberListWithImg}
-          title={position}
+          title={ministry}
         />
       )
     })
