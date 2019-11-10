@@ -14,7 +14,7 @@
   vote_date: '2019-06-05'
   prayuth: '500'
   thanathorn: '244'
-  passed: null
+  passed: false
   approve: null
   disprove: null
   abstained: 3
@@ -28,14 +28,14 @@
     จึงรุ่งเรืองกิจ เสนอโดยพรรคอนาคตใหม่
     ก่อนการลงมติได้เปิดให้อภิปรายคุณสมบัติของทั้งสองคนก่อน ผลการลงมติ
     พล.อ.ประยุทธ์ ได้คะแนนมากกว่าที่ 500 ต่อ 244 เสียง งดออกเสียง 3 เสียง
-  description_en: >
+  description_en: >-
     The first meeting of the Parliament consists of the House of Representatives
     and the Senate in order to consider and vote for a person who shall become
     Prime Minister. There were two names proposed; Gen.Prayuth Chan-o-cha from
     Palangpracharat Party and Thanathorn Jungroongruangkit from Future Forward
     Party. Members of parliament were allowed to discussed before casting their
     votes. The result came up as Gen.Prayuth recieved majority vote at 500:244
-    with 3 abstentions. 
+    with 3 abstentions.
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
@@ -61,8 +61,8 @@
   meeting: ประชุมส.ส.
   type: ร่างข้อบังคับประชุมสภา
   vote_date: '2019-08-22'
-  prayuth: '-'
-  thanathorn: '-'
+  prayuth: ''
+  thanathorn: ''
   passed: false
   approve: 101
   disprove: 365
@@ -70,7 +70,7 @@
   total_voter: 479
   absent: 20
   total_member: 499
-  description_th: >
+  description_th: >-
     วันที่ 22 สิงหาคม 2562
     การประชุมของสภาผู้แทนราษฎรเพื่อพิจารณาร่างข้อบังคับการประชุม
     ในประเด็นเรื่องคณะกรรมาธิการในสภาผู้แทนราษฎร ซึ่งในร่างที่เสนอมามี 35 คณะ
@@ -79,7 +79,7 @@
     แยกออกมาจากต่างหากจากคณะกรรมาธิการเด็ก เยาวชน สตรี ผู้สูงอายุ ผู้พิการ
     กลุ่มชาติพันธุ์ และผู้มีความหลากหลายทางเพศ ซึ่งผลปรากฏว่า
     ที่ประชุมไม่เห็นชอบกับคำแปรญัตติของ น.ส.ณธีภัสร์ ด้วยคะแนน 365 ต่อ 101
-    และงดออกเสียง 13 ส่งผลให้กรรมาธิการสามัญ จะมีจำนวน 35 คณะตามร่างเดิม 
+    และงดออกเสียง 13 ส่งผลให้กรรมาธิการสามัญ จะมีจำนวน 35 คณะตามร่างเดิม
   description_en: >-
     On 22 August 2019, during the meeting of the House of Representatives to
     consider the Draft Rules of Procedure of the House of Representatives. In
@@ -111,8 +111,8 @@
   meeting: ประชุมส.ส.
   type: รายงานการพิจารณา
   vote_date: '2019-09-05'
-  prayuth: '-'
-  thanathorn: '-'
+  prayuth: ''
+  thanathorn: ''
   passed: false
   approve: 412
   disprove: 25
@@ -129,7 +129,7 @@
     และไม่ขยายสัมปทานการเดินรถไฟฟ้าสายสีเขียวของบีทีเอส ที่จะสิ้นสุดในปี 2572
     ด้วยคะแนน 412 ต่อ 25 งดออกเสียง 20 คะแนน
     ซึ่งเมื่อผ่านการลงมติจากสภาผู้แทนราษฎรแล้วก็จะเสนอให้คณะรัฐมนตรีเป็นผู้นำไปปฏิบัติต่อไป
-  description_en: >
+  description_en: >-
     On 5 September 2019, The House of Representatives had voted to approve the
     proposal according to a study report by an Ad hoc Committee to extend the
     concession of express way to end the dispuet between Expressway Authirity of
@@ -142,8 +142,8 @@
     - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191008153956A1.pdf
-    - title: '-'
-      link: '-'
+    - title: ''
+      link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4156#!
 - id: '4'
@@ -158,8 +158,8 @@
   meeting: ประชุมส.ส.
   type: ญัตติด่วน
   vote_date: '2019-09-13'
-  prayuth: '-'
-  thanathorn: '-'
+  prayuth: ''
+  thanathorn: ''
   passed: false
   approve: 224
   disprove: 231
@@ -213,17 +213,17 @@
     - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190913143158A3.pdf
-    - title: '-'
-      link: '-'
+    - title: ''
+      link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4158#!
 - id: '5'
   title: พิจารณาพ.ร.ก.โอนกำลังพลและงบประมาณฯ
   en:
-    title: >
+    title: >-
       An approval of executive decree on the transfer of army units, and budget,
-      to a royal security command unit. 
-    legal_title: '-'
+      to a royal security command unit.
+    legal_title: ''
   legal_title: >-
     พิจารณาพระราชกำหนดโอนอัตรากำลังพลและงบประมาณบางส่วนของกองทัพบก กองทัพไทย
     กระทรวงกลาโหม ไปเป็นของหน่วยบัญชาการถวาย ความปลอดภัยรักษาพระองค์
@@ -231,8 +231,8 @@
   meeting: ประชุมส.ส.
   type: พรก.
   vote_date: '2019-10-29'
-  prayuth: '-'
-  thanathorn: '-'
+  prayuth: ''
+  thanathorn: ''
   passed: false
   approve: 374
   disprove: 70
@@ -294,15 +294,15 @@
   title: พ.ร.บ.งบประมาณฯ วาระที่ 1
   en:
     title: The First Reading of 2020 budget
-    legal_title: '-'
+    legal_title: ''
   legal_title: >-
     พิจารณาร่างพระราชบัญญัติงบประมาณรายจ่ายประจำปีงบประมาณพ.ศ. ๒๕๖๓ ซึ่ง
     คณะรัฐมนตรี เป็นผู้เสนอ
   meeting: ประชุมส.ส.
   type: ร่าง พรบ.
   vote_date: '2019-10-29'
-  prayuth: '-'
-  thanathorn: '-'
+  prayuth: ''
+  thanathorn: ''
   passed: false
   approve: 251
   disprove: 0
@@ -328,7 +328,7 @@
     ให้ร่างพ.ร.บ.งบประมาณรายจ่ายประจำปี ผ่านวาระแรก
     เข้าสู่การตั้งคณะกรรมาธิการพิจารณารายละเอียดในวาระที่สองต่อไป
     ซึ่งกำหนดระยะเวลาพิจารณา 30 วัน
-    ก่อนจะนำกลับเข้ามาอภิปรายในที่ประชุมของสภาผู้แทนราษฎรอีกครั้งหนึ่ง 
+    ก่อนจะนำกลับเข้ามาอภิปรายในที่ประชุมของสภาผู้แทนราษฎรอีกครั้งหนึ่ง
   description_en: >-
     In practice of the government administration, when the government needs
     budget to conduct their work the draft budget shall be proposed to

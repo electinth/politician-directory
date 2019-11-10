@@ -28,7 +28,13 @@ npm run develop
 
 Your site is running on `http://localhost:8000` and GraphQL tool helper on `http://localhost:8000/___graphql`.
 
-Every master commits will be published automatically to https://pedantic-edison-3897de.netlify.com/. Thanks to [Netlify](https://www.netlify.com/).
+### Environments
+| Environment        | Description | 
+| :----------: |:-------------:| 
+| Dev | Each PR will be built and hosted on Netlify. |
+| [Staging](https://pedantic-edison-3897de.netlify.com/) | new features awaiting for release. |
+| [Production](#) | not available yet. |
+
 
 ## Getting Started for Contributers
 

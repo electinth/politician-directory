@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import ExternalLink from "../components/externalLink"
 import { ageFromBirthdate, politicianPicture } from "../utils"
 import PeopleVote from "../components/peopleVote"
+import PeopleStatus from "../components/peopleStatus"
 
 import styles from "./people-template.module.css"
 
@@ -27,6 +28,7 @@ export const query = graphql`
       is_cabinet
       is_senator
       is_mp
+      is_active
       mp_type
       mp_province
       mp_zone
@@ -127,6 +129,7 @@ const PeoplePage = ({
                 fontSize: "3.2rem",
               }}
             >{`${peopleYaml.title} ${peopleYaml.name} ${peopleYaml.lastname}`}</h1>
+            <PeopleStatus isActive={peopleYaml.is_active} />
             <h3>ตำแหน่งปัจจุบัน:</h3>
             <ul>
               {peopleYaml.cabinet_position.map(position => (

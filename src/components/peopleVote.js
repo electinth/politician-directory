@@ -22,7 +22,7 @@ const voteColor = {
   "2": "#ef314b",
   "3": "grey",
   "4": "#272727",
-  "-": "-",
+  "": "-",
 }
 
 const voteText = {
@@ -30,7 +30,7 @@ const voteText = {
   "2": "ไม่เห็นด้วย",
   "3": "งดออกเสียง",
   "4": "ไม่เข้าประชุม",
-  "-": "-",
+  "": "-",
 }
 
 class PeopleVote extends Component {
@@ -82,6 +82,7 @@ class PeopleVote extends Component {
           >
             {filterChoice.map(({ text, choice }) => (
               <li
+                key={choice}
                 onClick={() => this.handleFilter(choice)}
                 css={
                   activeFilter === choice
@@ -99,6 +100,7 @@ class PeopleVote extends Component {
           </ul>
           {allVote.map(({ choice, title, legal_title, vote_date }) => (
             <div
+              key={title}
               css={css`
                 padding: 0.5rem 2rem;
                 font-size: 24px;
@@ -108,7 +110,7 @@ class PeopleVote extends Component {
                 margin: 20px 0px;
               `}
             >
-              <p
+              <div
                 css={css`
                   color: ${voteColor[choice]};
                   margin: 15px 0px;
@@ -124,7 +126,7 @@ class PeopleVote extends Component {
                   `}
                 ></div>
                 {voteText[choice]}
-              </p>
+              </div>
               <p>{title}</p>
               <p
                 css={css`
