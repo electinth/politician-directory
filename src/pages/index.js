@@ -271,7 +271,7 @@ const IndexPage = ({ data }) => {
           <div
             css={{
               display: "flex",
-              justifyContent: "flex-start",
+              justifyContent: "center",
               alignItems: "flex-start",
               flexWrap: "wrap",
               marginTop: "6rem",
@@ -281,11 +281,8 @@ const IndexPage = ({ data }) => {
               <VoteLogCard
                 key={node.id}
                 css={{
-                  width: `calc(${100 / 2}% - 2rem)`,
-                  marginBottom: "2rem",
-                  "&:nth-of-type(2n+1)": {
-                    marginRight: "2rem",
-                  },
+                  width: `calc((var(--container-width) - 4rem) / 2)`,
+                  margin: "0 1rem 2rem 1rem",
                 }}
                 legal_title={node.legal_title}
                 legal_title_en={node.en.legal_title}
