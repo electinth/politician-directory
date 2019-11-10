@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   siteMetadata: {
     title: `They Work For Us?`,
     description: `Site description`,
@@ -53,3 +53,16 @@ module.exports = {
     `gatsby-plugin-offline`,
   ],
 }
+
+// Track analytics on production
+if (process.env.GATSBY_ENV === "production") {
+  const googleGtagConfig = {
+    resolve: "gatsby-plugin-gtag",
+    options: {
+      trackingId: "UA-43653558-21",
+    },
+  }
+  config.plugins.push(googleGtagConfig)
+}
+
+module.exports = config

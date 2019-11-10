@@ -1,10 +1,11 @@
 import React from "react"
+import { OutboundLink } from "gatsby-plugin-gtag"
 
 const ExternalLink = ({ children, ...props }) => {
   return (
-    <a {...props} target="_blank" rel="noopener noreferrer">
+    <OutboundLink {...props} target="_blank" rel="noopener noreferrer">
       {children}
-    </a>
+    </OutboundLink>
   )
 }
 
