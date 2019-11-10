@@ -93,7 +93,7 @@ const PeoplePage = ({
 }) => (
   <Layout
     pageStyles={{
-      background: partyYaml.color,
+      background: partyYaml !== null ? partyYaml.color : "var(--cl-gray-4)",
     }}
   >
     <SEO title="People" />
