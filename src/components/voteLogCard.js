@@ -38,33 +38,33 @@ const VoteLogCard = ({
         style={{
           width: "100%",
           height: "1.5rem",
+          border: "1px solid var(--cl-black)",
+          boxSizing: "unset",
+          display: "flex",
+          flexWrap: "nowrap",
         }}
       >
         <div
           style={{
-            width: approveBar,
+            width: `calc(${approveBar} - 0.6667px)`,
             height: "100%",
             backgroundColor: "green",
-            display: "inline-block",
-            border: "1px solid var(--cl-black)",
+            borderRight: "1px solid var(--cl-black)",
           }}
         />
         <div
           style={{
-            width: disproveBar,
+            width: `calc(${disproveBar} - 0.6667px)`,
             height: "100%",
             backgroundColor: "#404040",
-            display: "inline-block",
-            border: "1px solid var(--cl-black)",
+            borderRight: "1px solid var(--cl-black)",
           }}
         />
         <div
           style={{
-            width: abstainedBar,
+            width: `calc(${abstainedBar} - 0.6667px)`,
             height: "100%",
             backgroundColor: "lightgray",
-            display: "inline-block",
-            border: "1px solid var(--cl-black)",
           }}
         />
       </div>
