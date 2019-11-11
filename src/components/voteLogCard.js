@@ -48,7 +48,7 @@ const VoteLogCard = ({
           style={{
             width: `calc(${approveBar} - 0.6667px)`,
             height: "100%",
-            backgroundColor: "green",
+            backgroundColor: "var(--cl-vote-yes)",
             borderRight: "1px solid var(--cl-black)",
           }}
         />
@@ -56,7 +56,7 @@ const VoteLogCard = ({
           style={{
             width: `calc(${disproveBar} - 0.6667px)`,
             height: "100%",
-            backgroundColor: "#404040",
+            backgroundColor: "var(--cl-vote-no)",
             borderRight: "1px solid var(--cl-black)",
           }}
         />
@@ -64,7 +64,7 @@ const VoteLogCard = ({
           style={{
             width: `calc(${abstainedBar} - 0.6667px)`,
             height: "100%",
-            backgroundColor: "lightgray",
+            backgroundColor: "var(--cl-vote-abstained)",
           }}
         />
       </div>
