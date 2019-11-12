@@ -6,11 +6,11 @@ import FeatureIcon from "./featureIcon"
 const HeroFeature = ({ title, subtitle, image }) => (
   <div
     style={{
-      marginBottom: "1.08rem",
+      margin: "1.6rem",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      width: "33%",
+      width: "calc((var(--container-width) / 3) - 3.2rem)",
       minWidth: "200px",
       flex: "1",
       padding: "0 .5rem",
