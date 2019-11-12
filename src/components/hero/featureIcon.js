@@ -8,7 +8,6 @@ const FeatureIcon = ({ image }) => {
       style={{
         backgroundColor: "#19171a",
         borderRadius: "50%",
-        padding: "0%",
         width: "60%",
         marginBottom: "1.5rem",
       }}
