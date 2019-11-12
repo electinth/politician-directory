@@ -8,7 +8,9 @@ import HeroFeature from "./feature"
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query {
-      biograpyImage: file(relativePath: { eq: "images/hero/biography.png" }) {
+      biograpyImage: file(
+        relativePath: { eq: "images/hero/biography@2x.png" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -16,7 +18,7 @@ const Hero = () => {
         }
       }
       partySummaryImage: file(
-        relativePath: { eq: "images/hero/partySummary.png" }
+        relativePath: { eq: "images/hero/partySummary@2x.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 300) {
@@ -25,7 +27,7 @@ const Hero = () => {
         }
       }
       voteSummaryImage: file(
-        relativePath: { eq: "images/hero/voteSummary.png" }
+        relativePath: { eq: "images/hero/voteSummary@2x.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 300) {

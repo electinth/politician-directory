@@ -6,9 +6,9 @@ const FeatureIcon = ({ image }) => {
   return (
     <div
       style={{
-        backgroundColor: "#222121",
+        backgroundColor: "#19171a",
         borderRadius: "50%",
-        padding: "10%",
+        padding: "0%",
         width: "60%",
         marginBottom: "1.5rem",
       }}
