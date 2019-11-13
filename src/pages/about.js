@@ -154,7 +154,7 @@ const AboutPage = ({ data }) => (
           </ExternalLink>
         </div>
         <div css={cssSubSection}>
-          <div css={cssSubSectionHead}>ตืดต่อประสานงานและด้านอื่นๆ</div>
+          <div css={cssSubSectionHead}>ติดต่อประสานงานและด้านอื่นๆ</div>
           <p>Boonmee Lab, Minimore, The Matter, iLaw</p>
         </div>
       </div>
