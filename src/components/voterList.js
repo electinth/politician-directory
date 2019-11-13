@@ -4,16 +4,6 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import { css } from "@emotion/core"
 import _ from "lodash"
 
-const cssH1 = { fontSize: "4.8rem" }
-
-const cssSection = {
-  paddingTop: "3rem",
-  paddingBottom: "8rem",
-  h2: {
-    fontSize: "4.8rem",
-    textAlign: "center",
-  },
-}
 const filterVote = (combined, key, value) =>
   _.filter(combined, o => {
     return _.find(o.votelog, p => p.key === key).value === value
@@ -29,7 +19,6 @@ class ListCard extends Component {
       <div
         css={css`
           width: calc(50% - 2rem);
-          /* background-color: red; */
           min-height: 500px;
           border-radius: 10px;
           overflow: hidden;
@@ -38,7 +27,12 @@ class ListCard extends Component {
           }
         `}
       >
-        <h2>{`${this.props.choice} (${this.state.voter.length})`}</h2>
+        <h2
+          css={css`
+            padding: 1rem 3rem;
+            font-size: 2.5rem;
+          `}
+        >{`${this.props.choice} (${this.state.voter.length})`}</h2>
         <ul
           css={css`
             min-height: 518px;
@@ -55,9 +49,14 @@ class ListCard extends Component {
               `}
             >
               <Link to={member.fields.slug}>
-                <b>
+                <a
+                  css={css`
+                    font-weight: bold;
+                    color: var(--cl-black);
+                  `}
+                >
                   {member.name} {member.lastname}
-                </b>
+                </a>
               </Link>
 
               <p>{member.is_senator ? "สมาชิกวุฒิสภา" : member.party}</p>
@@ -148,7 +147,7 @@ export default ({ votelogKey }) => {
   const absent = filterVote(combined, votelogKey, "4")
 
   return (
-    <section css={{ ...cssSection }}>
+    <section>
       <div className="container">
         <h1>บันทึกคะแนนเสียง</h1>
         <div
