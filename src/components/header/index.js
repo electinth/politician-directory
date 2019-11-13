@@ -109,7 +109,7 @@ const Header = ({ siteTitle }) => {
           }
         }
       }
-      searchIcon: file(relativePath: { eq: "images/icons/search.png" }) {
+      searchIcon: file(relativePath: { eq: "images/icons/search/Search.png" }) {
         childImageSharp {
           fluid(maxWidth: 31) {
             ...GatsbyImageSharpFluid
