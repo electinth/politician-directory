@@ -79,7 +79,9 @@ const RepresentativesPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="สมาชิกสภาผู้แทนราษฎรไทย" />
-      <section css={{ ...cssSection, background: "#eeeeee" }}></section>
+      <section css={{ ...cssSection, background: "#eeeeee" }}>
+        <h1 css={{ textAlign: "center" }}>สมาชิกสภาผู้แทนราษฎรไทย</h1>
+      </section>
       <section css={{ ...cssSection, background: "var(--cl-white)" }}>
         <div className="container">
           <h2 css={{ ...cssH1 }}>สรุปการลงมติล่าสุด</h2>
