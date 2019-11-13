@@ -71,6 +71,7 @@ const MemberName = ({ name, lastname }) => (
     css={{
       fontSize: "25px",
       fontWeight: "700",
+      color: "black",
     }}
     href={`/people/${name}-${lastname}`}
   >
