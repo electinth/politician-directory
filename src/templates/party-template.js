@@ -1,10 +1,11 @@
 import React, { useState } from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ExternalLink from "../components/externalLink"
-import { partyLogo, politicianPicture } from "../utils"
+import PeopleCard from "../components/peopleCard"
+import { partyLogo } from "../utils"
 
 export const query = graphql`
   query($slug: String!, $party: String!) {
@@ -221,7 +222,6 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
                 setMemberFilter({ mp_type: "บัญชีรายชื่อ" })
               }}
             >
-              {" "}
               บัญชีรายชื่อ
             </li>
             <li
@@ -242,61 +242,7 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
             }}
           >
             {getSortedMembers().map((member, index) => (
-              <div
-                key={member.id}
-                css={{
-                  display: "block",
-                  flex: "1 1 360px",
-                  padding: "4rem",
-                  paddingRight: "2rem",
-                  border: "1px solid var(--cl-gray-2)",
-                  borderRadius: "1rem",
-                  background: "var(--cl-white)",
-                  marginBottom: "1rem",
-                  fontSize: "1.8rem",
-                  "&:nth-of-type(2n+1)": {
-                    marginRight: "1rem",
-                  },
-                }}
-              >
-                <div>
-                  <Link to={`/people/${member.name}-${member.lastname}`}>
-                    <div
-                      css={{
-                        borderRadius: 84,
-                        width: 84,
-                        height: 84,
-                        float: "left",
-                        marginBottom: 0,
-                        marginRight: "2rem",
-                        border: "2px solid var(--cl-black)",
-                        background: "var(--cl-gray-2) no-repeat",
-                        backgroundSize: "cover",
-                      }}
-                      style={{
-                        backgroundImage: `url(${politicianPicture(member)})`,
-                      }}
-                    ></div>
-                  </Link>
-                </div>
-                <div
-                  css={{
-                    fontFamily: "var(--ff-title)",
-                    fontSize: "2.4rem",
-                    a: { color: "inherit" },
-                  }}
-                >
-                  <Link to={`/people/${member.name}-${member.lastname}`}>
-                    {`${member.title} ${member.name} ${member.lastname}`}
-                  </Link>
-                </div>
-                <div>
-                  {member.mp_type === "บัญชีรายชื่อ"
-                    ? `ส.ส. ${member.mp_type} ลำดับที่ ${member.mp_list}`
-                    : `ส.ส. ${member.mp_type} จังหวัด${member.mp_province} เขต ${member.mp_zone}`}
-                </div>
-                <div>พรรค{`${member.party}`}</div>
-              </div>
+              <PeopleCard key={member.id} {...member} type="mp"></PeopleCard>
             ))}
           </div>
         </div>
