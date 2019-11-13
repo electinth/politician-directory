@@ -164,6 +164,7 @@ const VoteLogPage = ({
                 absent={node.absent}
                 total_voter={node.total_voter}
                 vote_date={node.vote_date}
+                slug={node.fields.slug}
               />
             ))}
           </div>
