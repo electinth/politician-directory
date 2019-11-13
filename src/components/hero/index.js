@@ -4,11 +4,14 @@ import { useStaticQuery, graphql } from "gatsby"
 import "../../styles/global.css"
 
 import HeroFeature from "./feature"
+import { media } from "../../styles"
 
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query {
-      biograpyImage: file(relativePath: { eq: "images/hero/biography.png" }) {
+      biograpyImage: file(
+        relativePath: { eq: "images/hero/biography@2x.png" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -16,7 +19,7 @@ const Hero = () => {
         }
       }
       partySummaryImage: file(
-        relativePath: { eq: "images/hero/partySummary.png" }
+        relativePath: { eq: "images/hero/partySummary@2x.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 300) {
@@ -25,7 +28,7 @@ const Hero = () => {
         }
       }
       voteSummaryImage: file(
-        relativePath: { eq: "images/hero/voteSummary.png" }
+        relativePath: { eq: "images/hero/voteSummary@2x.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 300) {
@@ -38,11 +41,17 @@ const Hero = () => {
 
   return (
     <div
-      style={{
+      css={{
         display: "flex",
         flexWrap: "wrap",
+        flexDirection: "column",
+        alignItems: "flex-start",
+        alignContent: "center",
         marginTop: "2rem",
         marginBottom: "5rem",
+        [media(767)]: {
+          flexDirection: "row",
+        },
       }}
     >
       <HeroFeature

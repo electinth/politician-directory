@@ -18,13 +18,6 @@ const CabinetMemberSection = () => {
           }
         }
       }
-      mockImage: file(relativePath: { eq: "images/hero/biography.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   `)
 
@@ -53,13 +46,29 @@ const CabinetMemberSection = () => {
     "กระทรวงแรงงาน",
   ]
 
+  // const ministryList = [
+  //   "กระทรวงเกษตรและสหกรณ์"]
+
   // president need special filter
   const presidentMinistry = "นายกรัฐมนตรี"
   const presidentList = data.allPeopleYaml.edges.filter(people =>
     people.node.cabinet_position.some(
-      peoplePostion => peoplePostion === presidentMinistry
+      peoplePosition => peoplePosition === presidentMinistry
     )
   )
+
+  const positionComparer = ministry => (a, b) => {
+    const aPosition = a.node.cabinet_position.find(
+      position => position.indexOf(ministry) > -1
+    )
+    const bPosition = b.node.cabinet_position.find(
+      position => position.indexOf(ministry) > -1
+    )
+
+    if (aPosition === bPosition) return -1
+
+    return aPosition.indexOf("ช่วย") > -1 ? 1 : -1
+  }
 
   const memberByMinistry = [
     {
@@ -69,11 +78,13 @@ const CabinetMemberSection = () => {
   ].concat(
     ministryList.map(ministry => ({
       ministry,
-      members: data.allPeopleYaml.edges.filter(people =>
-        people.node.cabinet_position.some(
-          peoplePostion => peoplePostion.indexOf(ministry) > -1
+      members: data.allPeopleYaml.edges
+        .filter(people =>
+          people.node.cabinet_position.some(
+            peoplePostion => peoplePostion.indexOf(ministry) > -1
+          )
         )
-      ),
+        .sort(positionComparer(ministry)),
     }))
   )
 

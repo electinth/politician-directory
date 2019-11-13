@@ -2,7 +2,7 @@ import React from "react"
 import { politicianPicture } from "../../utils"
 
 export const CabinetMember = props => {
-  const { lastname, name, party, party_group } = props
+  const { lastname, name, party, party_group, cabinet_position } = props
 
   return (
     <div
@@ -59,6 +59,7 @@ export const CabinetMember = props => {
         >
           <MemberName name={name} lastname={lastname} />
           <MemberAffiliate party={party} partyGroup={party_group} />
+          <MemberPosition position={cabinet_position} />
         </div>
       </div>
     </div>
@@ -66,15 +67,21 @@ export const CabinetMember = props => {
 }
 
 const MemberName = ({ name, lastname }) => (
-  <div
+  <a
     css={{
       fontSize: "25px",
       fontWeight: "700",
     }}
+    href={`/people/${name}-${lastname}`}
   >
     {[name, lastname].join(" ")}
-  </div>
+  </a>
 )
+
+const memberDetailsCss = {
+  fontSize: "20px",
+  fontWeight: "700",
+}
 
 const MemberAffiliate = props => {
   const party = props.party && props.party !== "-" ? props.party : ""
@@ -82,13 +89,10 @@ const MemberAffiliate = props => {
     props.partyGroup && props.partyGroup !== "-" ? props.partyGroup : ""
 
   return party || partyGroup ? (
-    <div
-      css={{
-        fontSize: "20px",
-        fontWeight: "700",
-      }}
-    >
-      {[party, partyGroup].join(" ")}
-    </div>
+    <div css={memberDetailsCss}>{[party, partyGroup].join(" ")}</div>
   ) : null
 }
+
+const MemberPosition = ({ position }) => (
+  <div css={memberDetailsCss}>{position}</div>
+)

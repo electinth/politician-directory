@@ -1,6 +1,8 @@
 import React from "react"
 import moment from "moment"
 
+import { Link } from "gatsby"
+import { css } from "@emotion/core"
 import "../styles/global.css"
 
 const VoteLogCard = ({
@@ -14,6 +16,7 @@ const VoteLogCard = ({
   absent,
   total_voter,
   vote_date,
+  slug,
 }) => {
   const resultColor = passed ? "green" : "red"
   const approveBar = (approve * 100) / total_voter + "%"
@@ -38,33 +41,35 @@ const VoteLogCard = ({
         style={{
           width: "100%",
           height: "1.5rem",
+          border: "1px solid var(--cl-black)",
+          display: "flex",
+          flexWrap: "nowrap",
         }}
       >
         <div
           style={{
             width: approveBar,
             height: "100%",
-            backgroundColor: "green",
-            display: "inline-block",
-            border: "1px solid var(--cl-black)",
+            backgroundColor: "var(--cl-vote-yes)",
+            borderRight: "1px solid var(--cl-black)",
+            boxSizing: "unset",
           }}
         />
         <div
           style={{
             width: disproveBar,
             height: "100%",
-            backgroundColor: "#404040",
-            display: "inline-block",
-            border: "1px solid var(--cl-black)",
+            backgroundColor: "var(--cl-vote-no)",
+            borderRight: "1px solid var(--cl-black)",
+            boxSizing: "unset",
           }}
         />
         <div
           style={{
             width: abstainedBar,
             height: "100%",
-            backgroundColor: "lightgray",
-            display: "inline-block",
-            border: "1px solid var(--cl-black)",
+            backgroundColor: "var(--cl-vote-abstained)",
+            boxSizing: "unset",
           }}
         />
       </div>
@@ -77,15 +82,24 @@ const VoteLogCard = ({
       >
         {parseInt((approve / total_voter) * 100)}% เห็นด้วย
       </h2>
-      <h3
-        style={{
-          fontSize: "2.4rem",
-          paddingTop: "1rem",
-          lineHeight: "3rem",
-        }}
+      <Link
+        to={slug}
+        css={css`
+          :hover {
+            color: var(--cl-black);
+          }
+        `}
       >
-        {legal_title}
-      </h3>
+        <h3
+          style={{
+            fontSize: "2.4rem",
+            paddingTop: "1rem",
+            lineHeight: "3rem",
+          }}
+        >
+          {legal_title}
+        </h3>
+      </Link>
       <p
         style={{
           paddingTop: "1rem",

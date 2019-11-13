@@ -141,7 +141,7 @@ const VoteLogPage = ({
           <div
             css={{
               display: "flex",
-              justifyContent: "flex-start",
+              justifyContent: "center",
               alignItems: "flex-start",
               flexWrap: "wrap",
               marginTop: "6rem",
@@ -151,11 +151,8 @@ const VoteLogPage = ({
               <VoteLogCard
                 key={node.id}
                 css={{
-                  width: `calc(${100 / 2}% - 2rem)`,
-                  marginBottom: "2rem",
-                  "&:nth-child(2n+1)": {
-                    marginRight: "2rem",
-                  },
+                  width: `calc((var(--container-width) - 4rem) / 2)`,
+                  margin: "0 1rem 2rem 1rem",
                   border: "2px solid var(--cl-black)",
                 }}
                 legal_title={node.legal_title}
@@ -167,6 +164,7 @@ const VoteLogPage = ({
                 absent={node.absent}
                 total_voter={node.total_voter}
                 vote_date={node.vote_date}
+                slug={node.fields.slug}
               />
             ))}
           </div>

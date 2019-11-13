@@ -67,7 +67,7 @@ const cssLanguageMenu = {
 const EnvBadge = () => {
   const env = process.env.GATSBY_ENV || "development"
   // hide badge on production
-  if (env === "production") return {}
+  if (env === "production") return null
   return (
     <div
       css={{
@@ -109,7 +109,7 @@ const Header = ({ siteTitle }) => {
           }
         }
       }
-      searchIcon: file(relativePath: { eq: "images/icons/search.png" }) {
+      searchIcon: file(relativePath: { eq: "images/icons/search/Search.png" }) {
         childImageSharp {
           fluid(maxWidth: 31) {
             ...GatsbyImageSharpFluid

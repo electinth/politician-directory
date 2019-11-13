@@ -19,6 +19,8 @@
   --cl-vote-abstained: #cccccc;
   --cl-vote-yes: #329a2e;
   --cl-vote-no: #ec2627;
+
+  --container-width: 920px;
 }
 
 a {
@@ -31,6 +33,6 @@ a:hover {
 }
 
 .container {
-  max-width: 920px;
+  max-width: var(--container-width);
   margin: 0 auto;
 }
