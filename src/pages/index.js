@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -79,10 +80,35 @@ export const query = graphql`
         }
       }
     }
+    cabinetImage: file(
+      relativePath: { eq: "images/icons/cabinet/Cabinet@2x.png" }
+    ) {
+      childImageSharp {
+        fixed(width: 60) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    senateImage: file(relativePath: { eq: "images/icons/senate/Senate.png" }) {
+      childImageSharp {
+        fixed(width: 60) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    representativeImage: file(
+      relativePath: { eq: "images/icons/representative/Representative@2x.png" }
+    ) {
+      childImageSharp {
+        fixed(width: 60) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
   }
 `
 
-const cssH1 = { fontSize: "4.8rem" }
+const cssH1 = { fontSize: "4.8rem", marginTop: "4rem" }
 
 const cssSection = {
   paddingTop: "3rem",
@@ -111,18 +137,14 @@ const cssPartyTypeCard = {
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  minWidth: 300,
-  minHeight: 350,
+  minHeight: "300px",
   padding: "2rem",
   borderRadius: "10px",
   color: "var(--cl-white)",
   background: "var(--cl-black)",
 
-  width: `calc(${100 / 2}% - 2rem)`,
-  marginBottom: "2rem",
-  "&:nth-of-type(2n+1)": {
-    marginRight: "2rem",
-  },
+  width: `calc((var(--container-width) - 4rem) / 2)`,
+  margin: "1rem",
   "&:hover": {
     background: "var(--cl-gray-0)",
     textDecoration: "none",
@@ -319,28 +341,43 @@ const IndexPage = ({ data }) => {
           <div
             css={{
               display: "flex",
-              justifyContent: "flex-start",
+              justifyContent: "center",
               alignItems: "flex-start",
               flexWrap: "wrap",
               marginTop: "6rem",
             }}
           >
             <Link to={"/cabinet"} css={cssPartyTypeCard}>
+              <Img
+                css={{ marginBottom: "1.2rem" }}
+                fixed={data.cabinetImage.childImageSharp.fixed}
+              />
               <h3>คณะรัฐมนตรี</h3>
               <h4>{data.cabinet.totalCount} คน</h4>
             </Link>
             <Link to={"/senate"} css={cssPartyTypeCard}>
+              <Img
+                css={{ marginBottom: "1.2rem" }}
+                fixed={data.senateImage.childImageSharp.fixed}
+              />
               <h3>สมาชิกวุฒิสภา</h3>
               <h4>{data.senator.totalCount} คน</h4>
             </Link>
           </div>
 
-          <div>
+          <div css={{ marginTop: "4rem" }}>
+            <div
+              css={{
+                marginBottom: "1.2rem",
+                textAlign: "center",
+              }}
+            >
+              <Img fixed={data.representativeImage.childImageSharp.fixed} />
+            </div>
             <h3
               css={{
                 fontSize: "3.6rem",
                 textAlign: "center",
-                marginTop: "4rem",
               }}
             >
               สมาชิกสภาผู้แทนราษฎร
