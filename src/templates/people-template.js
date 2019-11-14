@@ -11,6 +11,14 @@ import PeopleStatus from "../components/peopleStatus"
 
 import styles from "./people-template.module.css"
 
+const LinkPoliticsAndBusiness = (name, lastname, party) => {
+  return <ExternalLink
+      href={`https://elect.in.th/politics-and-business/#/p/${party}/person/${name} ${lastname}`}
+    >
+      ตรวจสอบประวัติทางธุรกิจ
+    </ExternalLink>
+}
+
 export const query = graphql`
   query($slug: String!, $name: String!, $lastname: String!, $party: String!) {
     peopleYaml(fields: { slug: { eq: $slug } }) {
@@ -202,9 +210,9 @@ const PeoplePage = ({
                 {" / "}
                 <span>หนี้สิน {peopleYaml.deby}</span>
                 {" / "}
-                <ExternalLink href="https://elect.in.th/politics-and-business">
-                  ตรวจสอบประวัติทางธุรกิจ
-                </ExternalLink>
+                { peopleYaml.mp_type !== "" &&
+                  LinkPoliticsAndBusiness(peopleYaml.name, peopleYaml.lastname, peopleYaml.party)
+                }
               </div>
 
               <hr className={`${styles.hr}`} />
