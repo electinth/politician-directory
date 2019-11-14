@@ -17,8 +17,8 @@ const labelCellStyle = {
 const barContainerStyle = {
   display: "flex",
   border: "1px solid var(--cl-black)",
-  minHeight: "36px",
-  lineHeight: "36px",
+  minHeight: "30px",
+  lineHeight: "30px",
   position: "relative",
 }
 
@@ -32,6 +32,7 @@ const barCellStyle = {
   },
   "&:hover .tooltip-text": {
     display: "block",
+    zIndex: 10,
   },
 }
 
@@ -75,7 +76,7 @@ const StackedBarChart = ({ data }) => {
   }
 
   return (
-    <div css={{ margin: "2rem" }}>
+    <div>
       <div css={labelContainerStyle}>
         {data.map(each => (
           <div
@@ -84,7 +85,16 @@ const StackedBarChart = ({ data }) => {
             style={{ width: getPercentage(each.value) }}
           >
             <span css={{ float: "left", height: "100%", width: "1px" }}></span>
-            <span css={{ float: "left" }}>{each.name}</span>
+            <span
+              css={{
+                float: "left",
+                fontFamily: "var(--ff-text)",
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+              }}
+            >
+              {each.name}
+            </span>
           </div>
         ))}
       </div>
