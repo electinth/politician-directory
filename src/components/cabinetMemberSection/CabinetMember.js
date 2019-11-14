@@ -1,11 +1,13 @@
 import React from "react"
 import { politicianPicture } from "../../utils"
+import { Link } from "gatsby"
 
 export const CabinetMember = props => {
   const { lastname, name, party, party_group, cabinet_position } = props
 
   return (
-    <div
+    <Link
+      to={`/people/${name}-${lastname}`}
       css={{
         backgroundColor: "white",
         border: "solid",
@@ -15,6 +17,10 @@ export const CabinetMember = props => {
         display: "inline-block",
         margin: "1.5rem",
         borderWidth: "0.2rem",
+        color: "inherit",
+        "&:hover": {
+          textDecoration: "none",
+        },
       }}
     >
       <div
@@ -62,21 +68,19 @@ export const CabinetMember = props => {
           <MemberPosition position={cabinet_position} />
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
 const MemberName = ({ name, lastname }) => (
-  <a
+  <div
     css={{
       fontSize: "25px",
       fontWeight: "700",
-      color: "black",
     }}
-    href={`/people/${name}-${lastname}`}
   >
     {[name, lastname].join(" ")}
-  </a>
+  </div>
 )
 
 const memberDetailsCss = {
