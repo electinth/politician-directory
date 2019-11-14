@@ -7,7 +7,7 @@ import moment from "moment"
 import PeopleCardMini from "../components/peopleCardMini";
 import './cabinet.css'
 import { calculateBackground, combineCategory, padCategory, birthdayToAgeHistogram } from "../utils"
-import CabinetMemberSection from "../components/CabinetMemberSection"
+import CabinetMemberSection from "../components/cabinetMemberSection"
 
 export const query = graphql`
   query {
