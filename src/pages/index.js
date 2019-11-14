@@ -8,6 +8,7 @@ import Button from "../components/button"
 import Hero from "../components/hero"
 import VoteLogCard from "../components/voteLogCard"
 import Waffle from "../components/waffle"
+import PartyGroupList from "../components/partyGroupList"
 
 export const query = graphql`
   query {
@@ -15,14 +16,6 @@ export const query = graphql`
       totalCount
     }
     senator: allPeopleYaml(filter: { is_senator: { eq: true } }) {
-      totalCount
-    }
-    partyCoalition: allPartyYaml(
-      filter: { party_group: { eq: "ร่วมรัฐบาล" } }
-    ) {
-      totalCount
-    }
-    partyOpposition: allPartyYaml(filter: { party_group: { eq: "ฝ่ายค้าน" } }) {
       totalCount
     }
     allPeopleYaml {
@@ -382,36 +375,12 @@ const IndexPage = ({ data }) => {
             >
               สมาชิกสภาผู้แทนราษฎร
             </h3>
-            <div
-              css={{
-                display: "flex",
-                justifyContent: "flex-start",
-                alignItems: "flex-start",
-                flexWrap: "wrap",
-                marginTop: "2rem",
+            <PartyGroupList
+              paneHeaderStyle={{
+                textAlign: "center",
+                fontSize: "2.4rem",
               }}
-            >
-              <div css={cssMPColumn}>
-                <h3>พรรคร่วมรัฐบาล ({data.partyCoalition.totalCount})</h3>
-                <ul>
-                  {coalition_data.map(({ node }) => (
-                    <li key={node.name}>
-                      <Link to={node.fields.slug}>{node.name}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div css={cssMPColumn}>
-                <h3>พรรคฝ่ายค้าน ({data.partyOpposition.totalCount})</h3>
-                <ul>
-                  {opposition_data.map(({ node }) => (
-                    <li key={node.name}>
-                      <Link to={node.fields.slug}>{node.name}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+            />
             <div
               css={{
                 textAlign: "center",
