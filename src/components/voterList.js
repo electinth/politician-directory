@@ -62,7 +62,7 @@ class ListCard extends Component {
               <p>{member.is_senator ? "สมาชิกวุฒิสภา" : member.party}</p>
             </li>
           ))}
-          {this.state.hidden ? (
+          {this.state.hidden && this.props.voter.length > 8 ? (
             <button
               css={css`
                 display: flex;
@@ -80,6 +80,7 @@ class ListCard extends Component {
                 border-radius: 10px;
                 position: absolute;
                 bottom: -2rem;
+                pointer-events: none;
                 &:focus {
                   outline: none;
                 }
@@ -95,6 +96,7 @@ class ListCard extends Component {
                   display: block;
                   margin: 2rem auto;
                   background-color: white;
+                  pointer-events: auto;
                 `}
               >
                 ดูทั้งหมด
