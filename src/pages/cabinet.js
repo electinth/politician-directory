@@ -1,8 +1,6 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
 import StackedBarChart from "../components/stackedBarChart"
 import { graphql } from "gatsby"
 import moment from "moment"

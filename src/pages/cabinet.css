@@ -12,7 +12,7 @@ h2 {
 .book {
     width: 962px;
     height: 665px;
-    margin: 2rem;
+    margin: 0 auto 5rem auto;
     background-color: var(--cl-white);
     border-radius: 1rem;
     box-shadow: 5px 5px var(--cl-black);
