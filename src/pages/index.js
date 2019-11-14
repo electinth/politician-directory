@@ -297,6 +297,14 @@ const IndexPage = ({ data }) => {
               />
             ))}
           </div>
+          <div
+            css={{
+              textAlign: "center",
+              margin: "4.8rem 0 0 0",
+            }}
+          >
+            <Button to="/votelog">ดูทั้งหมด</Button>
+          </div>
         </div>
       </section>
 
@@ -366,6 +374,14 @@ const IndexPage = ({ data }) => {
                   ))}
                 </ul>
               </div>
+            </div>
+            <div
+              css={{
+                textAlign: "center",
+                margin: "4.8rem 0 0 0",
+              }}
+            >
+              <Button to="/representatives">ดูส.ส.ทั้งหมด</Button>
             </div>
           </div>
         </div>
