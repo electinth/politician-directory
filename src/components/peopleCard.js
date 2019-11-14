@@ -9,12 +9,9 @@ const MPInfo = props => (
       css={{
         fontFamily: "var(--ff-title)",
         fontSize: "2.4rem",
-        a: { color: "inherit" },
       }}
     >
-      <Link to={`/people/${props.name}-${props.lastname}`}>
-        {`${props.title} ${props.name} ${props.lastname}`}
-      </Link>
+      {`${props.title} ${props.name} ${props.lastname}`}
     </div>
     <div>
       {props.mp_type === "บัญชีรายชื่อ"
@@ -31,12 +28,9 @@ const SenatorInfo = props => (
       css={{
         fontFamily: "var(--ff-title)",
         fontSize: "2.4rem",
-        a: { color: "inherit" },
       }}
     >
-      <Link to={`/people/${props.name}-${props.lastname}`}>
-        {`${props.title} ${props.name} ${props.lastname}`}
-      </Link>
+      {`${props.title} ${props.name} ${props.lastname}`}
     </div>
   </div>
 )
@@ -47,12 +41,9 @@ const CabinetInfo = props => (
       css={{
         fontFamily: "var(--ff-title)",
         fontSize: "2.4rem",
-        a: { color: "inherit" },
       }}
     >
-      <Link to={`/people/${props.name}-${props.lastname}`}>
-        {`${props.title} ${props.name} ${props.lastname}`}
-      </Link>
+      {`${props.title} ${props.name} ${props.lastname}`}
     </div>
   </div>
 )
@@ -66,10 +57,10 @@ const PeopleCard = ({ type, ...props }) => {
   } else if (type === "cabinet" || props.is_cabinet) {
     peopleInfo = CabinetInfo(props)
   }
-  console.log(props)
 
   return (
-    <div
+    <Link
+      to={`/people/${props.name}-${props.lastname}`}
       key={props.id}
       css={{
         display: "block",
@@ -84,30 +75,32 @@ const PeopleCard = ({ type, ...props }) => {
         "&:nth-of-type(2n+1)": {
           marginRight: "1rem",
         },
+        color: "inherit",
+        "&:hover": {
+          textDecoration: "none",
+        },
       }}
     >
       <div>
-        <Link to={`/people/${props.name}-${props.lastname}`}>
-          <div
-            css={{
-              borderRadius: 84,
-              width: 84,
-              height: 84,
-              float: "left",
-              marginBottom: 0,
-              marginRight: "2rem",
-              border: "2px solid var(--cl-black)",
-              background: "var(--cl-gray-2) no-repeat",
-              backgroundSize: "cover",
-            }}
-            style={{
-              backgroundImage: `url(${politicianPicture(props)})`,
-            }}
-          ></div>
-        </Link>
+        <div
+          css={{
+            borderRadius: 84,
+            width: 84,
+            height: 84,
+            float: "left",
+            marginBottom: 0,
+            marginRight: "2rem",
+            border: "2px solid var(--cl-black)",
+            background: "var(--cl-gray-2) no-repeat",
+            backgroundSize: "cover",
+          }}
+          style={{
+            backgroundImage: `url(${politicianPicture(props)})`,
+          }}
+        ></div>
       </div>
       <div>{peopleInfo}</div>
-    </div>
+    </Link>
   )
 }
 
