@@ -30,30 +30,21 @@ export const CabinetMember = props => {
           height: "100%",
         }}
       >
-        <div
+        <img
           css={{
             width: "8.5rem",
             height: "8.5rem",
-            display: "inline-block",
-            backgroundColor: "#222121",
             borderRadius: "50%",
+            objectFit: "cover",
+            border: "solid",
+            borderWidth: "0.2rem",
+            backgroundColor: "#222121",
             margin: "4rem",
-            overflow: "hidden",
+            flexShrink: "0",
           }}
-        >
-          <img
-            css={{
-              width: "100%",
-              height: "100%",
-              borderRadius: "50%",
-              objectFit: "cover",
-              border: "solid",
-              borderWidth: "0.2rem",
-            }}
-            alt={`${name} ${lastname}`}
-            src={politicianPicture(props)}
-          />
-        </div>
+          alt={`${name} ${lastname}`}
+          src={politicianPicture(props)}
+        />
         <div
           css={{
             width: "70%",
