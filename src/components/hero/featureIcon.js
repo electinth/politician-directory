@@ -2,7 +2,7 @@ import React from "react"
 
 import Img from "gatsby-image"
 
-const FeatureIcon = ({ image }) => {
+const FeatureIcon = ({ image, borderWidth }) => {
   return (
     <div
       style={{
