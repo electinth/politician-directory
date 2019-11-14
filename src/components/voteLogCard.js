@@ -1,6 +1,8 @@
 import React from "react"
 import moment from "moment"
 
+import { Link } from "gatsby"
+import { css } from "@emotion/core"
 import "../styles/global.css"
 
 const VoteLogCard = ({
@@ -14,6 +16,7 @@ const VoteLogCard = ({
   absent,
   total_voter,
   vote_date,
+  slug,
 }) => {
   const resultColor = passed ? "green" : "red"
   const approveBar = (approve * 100) / total_voter + "%"
@@ -79,15 +82,24 @@ const VoteLogCard = ({
       >
         {parseInt((approve / total_voter) * 100)}% เห็นด้วย
       </h2>
-      <h3
-        style={{
-          fontSize: "2.4rem",
-          paddingTop: "1rem",
-          lineHeight: "3rem",
-        }}
+      <Link
+        to={slug}
+        css={css`
+          :hover {
+            color: var(--cl-black);
+          }
+        `}
       >
-        {legal_title}
-      </h3>
+        <h3
+          style={{
+            fontSize: "2.4rem",
+            paddingTop: "1rem",
+            lineHeight: "3rem",
+          }}
+        >
+          {legal_title}
+        </h3>
+      </Link>
       <p
         style={{
           paddingTop: "1rem",
