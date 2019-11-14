@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import StackedBarChart from "../components/stackedBarChart"
-import CabinetMemberSection from "../components/CabinetMemberSection"
+import CabinetMemberSection from "../components/cabinetMemberSection"
 
 // Mock for StackedBarChart
 const mpTypes = [
