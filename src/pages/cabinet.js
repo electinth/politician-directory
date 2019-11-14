@@ -9,6 +9,7 @@ import moment from "moment"
 import PeopleCardMini from "../components/peopleCardMini";
 import './cabinet.css'
 import { calculateBackground, combineCategory, padCategory, birthdayToAgeHistogram } from "../utils"
+import CabinetMemberSection from "../components/CabinetMemberSection"
 
 export const query = graphql`
   query {
@@ -198,7 +199,9 @@ const CabinetPage = data => {
         </h2>
       </section>
 
-      <section className="section" css={{ background: "var(--cl-white)" }}></section>
+      <section className="section" css={{ background: "var(--cl-white)" }}>
+        <CabinetMemberSection />
+      </section>
     </Layout>
   )
 }
