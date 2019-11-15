@@ -177,7 +177,7 @@ const RepresentativesPage = ({ data }) => {
               </a>
             </div>
             <h2 style={{ ...cssEngTitle }}>Since</h2>
-            <p>01.04.2563</p>
+            <p>01.04.2562</p>
             <h2 style={{ ...cssEngTitle }}>Key Members</h2>
             {keyMembers.map(x => {
               return (
