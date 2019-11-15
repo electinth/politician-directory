@@ -1,11 +1,13 @@
 import React from "react"
 import { politicianPicture } from "../../utils"
+import { Link } from "gatsby"
 
 export const CabinetMember = props => {
   const { lastname, name, party, party_group, cabinet_position } = props
 
   return (
-    <div
+    <Link
+      to={`/people/${name}-${lastname}`}
       css={{
         backgroundColor: "white",
         border: "solid",
@@ -15,6 +17,10 @@ export const CabinetMember = props => {
         display: "inline-block",
         margin: "1.5rem",
         borderWidth: "0.2rem",
+        color: "inherit",
+        "&:hover": {
+          textDecoration: "none",
+        },
       }}
     >
       <div
@@ -24,30 +30,21 @@ export const CabinetMember = props => {
           height: "100%",
         }}
       >
-        <div
+        <img
           css={{
             width: "8.5rem",
             height: "8.5rem",
-            display: "inline-block",
-            backgroundColor: "#222121",
             borderRadius: "50%",
+            objectFit: "cover",
+            border: "solid",
+            borderWidth: "0.2rem",
+            backgroundColor: "#222121",
             margin: "4rem",
-            overflow: "hidden",
+            flexShrink: "0",
           }}
-        >
-          <img
-            css={{
-              width: "100%",
-              height: "100%",
-              borderRadius: "50%",
-              objectFit: "cover",
-              border: "solid",
-              borderWidth: "0.2rem",
-            }}
-            alt={`${name} ${lastname}`}
-            src={politicianPicture(props)}
-          />
-        </div>
+          alt={`${name} ${lastname}`}
+          src={politicianPicture(props)}
+        />
         <div
           css={{
             width: "70%",
@@ -62,21 +59,19 @@ export const CabinetMember = props => {
           <MemberPosition position={cabinet_position} />
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
 const MemberName = ({ name, lastname }) => (
-  <a
+  <div
     css={{
       fontSize: "25px",
       fontWeight: "700",
-      color: "black",
     }}
-    href={`/people/${name}-${lastname}`}
   >
     {[name, lastname].join(" ")}
-  </a>
+  </div>
 )
 
 const memberDetailsCss = {
