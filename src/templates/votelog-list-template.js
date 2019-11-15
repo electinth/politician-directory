@@ -18,10 +18,8 @@ export const query = graphql`
           fields {
             slug
           }
-          legal_title
-          en {
-            legal_title
-          }
+          title
+          description_th
           passed
           approve
           disprove
@@ -137,8 +135,8 @@ const VoteLogPage = ({
                   margin: "0 1rem 2rem 1rem",
                   border: "2px solid var(--cl-black)",
                 }}
-                legal_title={node.legal_title}
-                legal_title_en={node.en.legal_title}
+                title={node.title}
+                description_th={node.description_th}
                 passed={node.passed}
                 approve={node.approve}
                 disprove={node.disprove}

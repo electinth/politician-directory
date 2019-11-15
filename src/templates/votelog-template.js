@@ -13,7 +13,7 @@ export const query = graphql`
       id
       title
       legal_title
-      vote_date(formatString: "D MMM YY")
+      vote_date(formatString: "DD.M.YYYY")
       description_th
       reference
       meeting

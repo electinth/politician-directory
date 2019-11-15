@@ -7,8 +7,8 @@ import "../styles/global.css"
 
 const VoteLogCard = ({
   className,
-  legal_title,
-  legal_title_en,
+  title,
+  description_th,
   passed,
   approve,
   disprove,
@@ -97,7 +97,7 @@ const VoteLogCard = ({
             lineHeight: "3rem",
           }}
         >
-          {legal_title}
+          {title}
         </h3>
       </Link>
       <p
@@ -105,7 +105,7 @@ const VoteLogCard = ({
           paddingTop: "1rem",
         }}
       >
-        {legal_title_en}
+        {description_th}
       </p>
       <div style={{ display: "inline" }}>
         <div
