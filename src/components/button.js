@@ -7,9 +7,10 @@ const Button = ({ children, ...props }) => {
       css={{
         display: "inline-block",
         background: "var(--cl-black)",
-        padding: "1rem 3rem",
+        padding: "1rem 4rem",
         textDecoration: "none",
-        borderRadius: "1rem",
+        borderRadius: "0.8rem",
+        border: "1px solid var(--cl-white)",
         fontSize: "2.4rem",
         fontFamily: "var(--ff-title)",
         color: "var(--cl-white)",
