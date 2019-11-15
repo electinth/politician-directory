@@ -1,4 +1,5 @@
 import React from "react"
+import moment from "moment"
 
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
@@ -66,7 +67,9 @@ const VoteLogPage = ({
   pageContext,
 }) => {
   const { currentPage, numPages } = pageContext
-  const votelogs = allVotelogYaml.edges
+  const votelogs = allVotelogYaml.edges.sort(({ node: a }, { node: b }) =>
+    moment(b.vote_date).diff(moment(a.vote_date), "days")
+  )
 
   return (
     <Layout>
@@ -104,27 +107,6 @@ const VoteLogPage = ({
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <div
-            css={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "baseline",
-              paddingTop: "4rem",
-            }}
-          >
-            <Img
-              fixed={updateImage.childImageSharp.fixed}
-              css={{ width: "17px", height: "20px", marginRight: "0.8rem" }}
-            ></Img>
-            <h2
-              css={{
-                fontSize: "2.4rem",
-                color: "#eeeeee",
-              }}
-            >
-              Update : 30.10.2019
-            </h2>
-          </div>
         </div>
       </section>
       <section>
