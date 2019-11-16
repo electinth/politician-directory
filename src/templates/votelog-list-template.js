@@ -9,7 +9,11 @@ import VoteLogCard from "../components/voteLogCard"
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
-    allVotelogYaml(limit: $limit, skip: $skip) {
+    allVotelogYaml(
+      filter: { is_active: { eq: true } }
+      limit: $limit
+      skip: $skip
+    ) {
       totalCount
       edges {
         node {

@@ -12,10 +12,14 @@ import PartyGroupList from "../components/partyGroupList"
 
 export const query = graphql`
   query {
-    cabinet: allPeopleYaml(filter: { is_cabinet: { eq: true } }) {
+    cabinet: allPeopleYaml(
+      filter: { is_cabinet: { eq: true }, is_active: { eq: true } }
+    ) {
       totalCount
     }
-    senator: allPeopleYaml(filter: { is_senator: { eq: true } }) {
+    senator: allPeopleYaml(
+      filter: { is_senator: { eq: true }, is_active: { eq: true } }
+    ) {
       totalCount
     }
     allPeopleYaml {
@@ -36,22 +40,11 @@ export const query = graphql`
         }
       }
     }
-    allPartyYaml(filter: { party_type: { eq: "พรรค" } }) {
-      totalCount
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          name
-          short_name
-          party_group
-          total_member
-        }
-      }
-    }
-    allVotelogYaml(limit: 6) {
+    allVotelogYaml(
+      filter: { is_active: { eq: true } }
+      limit: 6
+      sort: { fields: vote_date, order: DESC }
+    ) {
       totalCount
       edges {
         node {
@@ -165,17 +158,6 @@ const IndexPage = ({ data }) => {
   let data_the_rest = data.allPeopleYaml.edges.filter(
     ({ node }) => !node[prop_of_interest.prop]
   )
-  let coalition_data = data.allPartyYaml.edges.filter(
-    ({ node }) => node.party_group === "ร่วมรัฐบาล"
-  )
-  let opposition_data = data.allPartyYaml.edges.filter(
-    ({ node }) => node.party_group === "ฝ่ายค้าน"
-  )
-
-  const sortByNumberOfSeat = ({ node: a }, { node: b }) =>
-    b.total_member - a.total_member
-  coalition_data.sort(sortByNumberOfSeat)
-  opposition_data.sort(sortByNumberOfSeat)
 
   return (
     <Layout

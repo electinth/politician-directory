@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import _ from "lodash"
 
 import { partyLogo } from "../utils"
 
@@ -28,17 +29,36 @@ const cssMPColumn = {
 const PartyGroupList = ({ paneHeaderStyle }) => {
   const data = useStaticQuery(graphql`
     query {
-      partyCoalition: allPartyYaml(
-        filter: { party_group: { eq: "ร่วมรัฐบาล" } }
+      partyCoalition: allPeopleYaml(
+        filter: {
+          party_group: { eq: "ร่วมรัฐบาล" }
+          is_mp: { eq: true }
+          is_active: { eq: true }
+        }
       ) {
         totalCount
       }
-      partyOpposition: allPartyYaml(
-        filter: { party_group: { eq: "ฝ่ายค้าน" } }
+      partyOpposition: allPeopleYaml(
+        filter: {
+          party_group: { eq: "ฝ่ายค้าน" }
+          is_mp: { eq: true }
+          is_active: { eq: true }
+        }
       ) {
         totalCount
       }
-      allPartyYaml(filter: { party_type: { eq: "พรรค" } }) {
+      mpParty: allPeopleYaml(
+        filter: { is_mp: { eq: true }, is_active: { eq: true } }
+      ) {
+        edges {
+          node {
+            party
+          }
+        }
+      }
+      allPartyYaml(
+        filter: { party_type: { eq: "พรรค" }, is_active: { eq: true } }
+      ) {
         totalCount
         edges {
           node {
@@ -48,18 +68,31 @@ const PartyGroupList = ({ paneHeaderStyle }) => {
             }
             name
             party_group
-            total_member
           }
         }
       }
     }
   `)
 
+  // Get active member count of each party
+  const activeMpByParty = _.mapValues(
+    _.groupBy(data.mpParty.edges.map(({ node }) => node.party)),
+    list => list.length
+  )
+
+  function totalActiveMember(partyName) {
+    return activeMpByParty[partyName] || 0
+  }
+
+  // sort by more members first, then alphabetically
   const getSortedParties = partyGroup => {
     let members = data.allPartyYaml.edges.filter(
       ({ node }) => node.party_group === partyGroup
     )
-    members.sort(({ node: a }, { node: b }) => b.total_member - a.total_member)
+    members.sort(({ node: a }, { node: b }) => {
+      const totalDiff = totalActiveMember(b.name) - totalActiveMember(a.name)
+      return totalDiff !== 0 ? totalDiff : a.name.localeCompare(b.name, "th")
+    })
     return members
   }
 
@@ -75,7 +108,7 @@ const PartyGroupList = ({ paneHeaderStyle }) => {
     >
       <div css={cssMPColumn}>
         <h3 style={{ ...paneHeaderStyle }}>
-          พรรคร่วมรัฐบาล ({data.partyCoalition.totalCount})
+          พรรคร่วมรัฐบาล ({data.partyCoalition.totalCount} คน)
         </h3>
         <ul>
           {getSortedParties("ร่วมรัฐบาล").map(({ node }) => (
@@ -84,14 +117,14 @@ const PartyGroupList = ({ paneHeaderStyle }) => {
                 <img src={partyLogo(node.name)} alt={node.name}></img>{" "}
                 {node.name}&nbsp;
               </Link>
-              ({node.total_member})
+              ({totalActiveMember(node.name)})
             </div>
           ))}
         </ul>
       </div>
       <div css={cssMPColumn}>
         <h3 style={{ ...paneHeaderStyle }}>
-          พรรคฝ่ายค้าน ({data.partyOpposition.totalCount})
+          พรรคฝ่ายค้าน ({data.partyOpposition.totalCount} คน)
         </h3>
         <ul>
           {getSortedParties("ฝ่ายค้าน").map(({ node }) => (
@@ -100,7 +133,7 @@ const PartyGroupList = ({ paneHeaderStyle }) => {
                 <img src={partyLogo(node.name)} alt={node.name}></img>{" "}
                 {node.name}&nbsp;
               </Link>
-              ({node.total_member})
+              ({totalActiveMember(node.name)})
             </div>
           ))}
         </ul>
