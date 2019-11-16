@@ -3,10 +3,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StackedBarChart from "../components/stackedBarChart"
 import { graphql } from "gatsby"
-import moment from "moment"
-import PeopleCardMini from "../components/peopleCardMini";
-import './cabinet.css'
-import { calculateBackground, combineCategory, padCategory, birthdayToAgeHistogram } from "../utils"
+import PeopleCardMini from "../components/peopleCardMini"
+import "./cabinet.css"
+import {
+  calculateBackground,
+  combineCategory,
+  padCategory,
+  birthdayToAgeHistogram,
+} from "../utils"
 import CabinetMemberSection from "../components/cabinetMemberSection"
 
 export const query = graphql`
@@ -36,7 +40,9 @@ export const query = graphql`
         }
       }
     }
-    keyMembers: allPeopleYaml(filter: {id: {in: ["13","15","35","235"]}}) {
+    keyMembers: allPeopleYaml(
+      filter: { id: { in: ["13", "15", "35", "235"] } }
+    ) {
       edges {
         node {
           id
@@ -88,7 +94,6 @@ const cssLinkBox = {
 }
 
 const CabinetPage = data => {
-
   data = data.data
   let education = data.education.group
   education = calculateBackground(education)
@@ -107,9 +112,14 @@ const CabinetPage = data => {
   age = calculateBackground(age)
 
   let keyMembers = data.keyMembers.edges
-  let keyPosition = ['ประธาน', 'รองประธานคนที่ 1', 'รองประธานคนที่ 2', 'ผู้นำฝ่ายค้าน']
+  let keyPosition = [
+    "ประธาน",
+    "รองประธานคนที่ 1",
+    "รองประธานคนที่ 2",
+    "ผู้นำฝ่ายค้าน",
+  ]
   let k = []
-  keyMembers.map( (x, idx) => {
+  keyMembers.map((x, idx) => {
     let aPerson = x.node
     aPerson.pos = keyPosition[idx]
     k.push(aPerson)
@@ -151,11 +161,10 @@ const CabinetPage = data => {
             {keyMembers.map(x => {
               return (
                 <div className="peopleCard" key={x.id}>
-                  <PeopleCardMini key={x.id} {...x}/>
+                  <PeopleCardMini key={x.id} {...x} />
                 </div>
               )
             })}
-            
           </div>
           <div className="page">
             <h2
@@ -192,9 +201,7 @@ const CabinetPage = data => {
             </div>
           </div>
         </div>
-        <h2 className="lastUpdate">
-          Last Update: 30.10.2019
-        </h2>
+        <h2 className="lastUpdate">Last Update: 30.10.2019</h2>
       </section>
 
       <section className="section" css={{ background: "var(--cl-white)" }}>

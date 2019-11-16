@@ -1,9 +1,8 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { partyLogo } from "../utils"
 import PeopleCardMini from "../components/peopleCardMini"
 import "./cabinet.css"
 import {

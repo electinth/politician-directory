@@ -69,7 +69,7 @@ export function float2Grey(x) {
 
 export function calculateBackground(input) {
   let count = input.length - 1
-  input.map((x, idx) => {
+  input.forEach((x, idx) => {
     x.background = float2Grey(idx / count)
   })
   return input
@@ -102,7 +102,7 @@ export function padCategory(input) {
   return input
 }
 
-export function birthdayToAgeHistogram (birthdate, ageBin) {
+export function birthdayToAgeHistogram(birthdate, ageBin) {
   let age = []
   age.push({ name: String("25-" + String(ageBin[0] - 1)) + " ปี", value: 0 })
   age.push({

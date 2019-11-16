@@ -153,38 +153,6 @@ const cssPartyTypeCard = {
     fontWeight: "normal",
   },
 }
-const cssMPColumn = {
-  display: "block",
-  // flexDirection: "column",
-  // justifyContent: "center",
-  // // alignItems: "center",
-  // // minWidth: 300,
-  // // minHeight: 350,
-  padding: "2rem",
-  // borderRadius: "10px",
-  // color: "var(--cl-white)",
-  // background: "var(--cl-black)",
-
-  width: `calc(${100 / 2}% - 2rem)`,
-  marginBottom: "2rem",
-  "&:nth-of-type(2n+1)": {
-    marginRight: "2rem",
-  },
-  // h3: {
-  //   color: "var(--cl-white)",
-  //   fontSize: "3.6rem",
-  // },
-  // h4: {
-  //   color: "var(--cl-white)",
-  //   fontSize: "2.4rem",
-  //   fontFamily: "var(--ff-text)",
-  //   fontWeight: "normal",
-  // },
-  h3: {
-    textAlign: "center",
-    fontSize: "2.4rem",
-  },
-}
 
 const IndexPage = ({ data }) => {
   let prop_of_interest = {
