@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { css, Global } from "@emotion/core"
 
+import ExternalLink from "../components/externalLink"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import VoterList from "../components/voterList"
@@ -16,6 +17,10 @@ export const query = graphql`
       vote_date(formatString: "DD.M.YYYY")
       description_th
       reference
+      document {
+        title
+        link
+      }
       meeting
       passed
       total_voter
@@ -154,15 +159,84 @@ const VotelogPage = ({ data: { votelogYaml, voteRecordIcon } }) => {
           </span>
         </span>
       </section>
-      <section>
+      <section
+        css={css`
+          font-size: 2rem;
+        `}
+      >
         <h1>เนื้อหา</h1>
+        <p>{votelogYaml.description_th}</p>
         <p
           css={css`
-            font-size: 2rem;
+            font-weight: bold;
+            padding-top: 2em;
           `}
         >
-          {votelogYaml.description_th}
+          อ้างอิง
         </p>
+        <ExternalLink
+          href={votelogYaml.reference}
+          css={css`
+            :hover {
+              color: var(--cl-black);
+            }
+          `}
+        >
+          <p>{votelogYaml.reference}</p>
+        </ExternalLink>
+        <p
+          css={css`
+            font-weight: bold;
+            padding-top: 2em;
+          `}
+        >
+          เอกสารการลงมติ
+        </p>
+        <button
+          css={css`
+            display: flex;
+            flex-flow: row wrap;
+            padding: 0;
+            border: none;
+            background: none;
+            width: 100%;
+            border-radius: 5px;
+            pointer-events: none;
+            &:focus {
+              outline: none;
+            }
+            text-align: left;
+          `}
+        >
+          {votelogYaml.document.map(doc => (
+            <ExternalLink
+              href={doc.link}
+              css={css`
+                color: var(--cl-black);
+                :hover {
+                  color: var(--cl-black);
+                }
+              `}
+            >
+              <span
+                css={css`
+                  font-family: var(--ff-title);
+                  font-size: 2.4rem;
+                  line-height: 3rem;
+                  cursor: pointer;
+                  border-radius: 5px;
+                  padding: 1rem 1rem;
+                  margin-right: 1rem;
+                  display: block;
+                  background-color: #fcbbdd;
+                  pointer-events: auto;
+                `}
+              >
+                {doc.title}
+              </span>
+            </ExternalLink>
+          ))}
+        </button>
       </section>
       <VoterList votelogKey={votelogYaml.id} />
     </Layout>

@@ -91,9 +91,12 @@ class ListCard extends Component {
               <span
                 onClick={() => this.setState({ hidden: !this.state.hidden })}
                 css={css`
-                  font-size: 3rem;
+                  font-family: var(--ff-title);
+                  font-size: 2.4rem;
+                  line-height: 3rem;
                   cursor: pointer;
                   border: 0.2rem solid black;
+                  border-radius: 5px;
                   padding: 1rem 6rem;
                   display: block;
                   margin: 2rem auto;
