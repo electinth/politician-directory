@@ -74,7 +74,7 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
       // sort by name and lastname
       members.sort((a, b) =>
         a.name === b.name
-          ? a.lastname.localeCompare(b.name, "th")
+          ? a.lastname.localeCompare(b.lastname, "th")
           : a.name.localeCompare(b.name, "th")
       )
     }

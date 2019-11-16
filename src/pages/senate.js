@@ -4,9 +4,14 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PeopleCard from "../components/peopleCard"
-import PeopleCardMini from "../components/peopleCardMini";
-import './cabinet.css'
-import { calculateBackground, combineCategory, padCategory, birthdayToAgeHistogram } from "../utils"
+import PeopleCardMini from "../components/peopleCardMini"
+import "./cabinet.css"
+import {
+  calculateBackground,
+  combineCategory,
+  padCategory,
+  birthdayToAgeHistogram,
+} from "../utils"
 import StackedBarChart from "../components/stackedBarChart"
 
 export const query = graphql`
@@ -51,7 +56,7 @@ export const query = graphql`
         }
       }
     }
-    keyMembers: allPeopleYaml(filter: {id: {in: ["644","737","707"]}}) {
+    keyMembers: allPeopleYaml(filter: { id: { in: ["644", "737", "707"] } }) {
       edges {
         node {
           id
@@ -109,7 +114,6 @@ const cssLinkBox = {
   },
 }
 
-
 const SenatePage = ({ data }) => {
   const [memberFilter, setMemberFilter] = useState({})
   const [members] = useState(data.allPeopleYaml.edges.map(e => e.node))
@@ -125,7 +129,7 @@ const SenatePage = ({ data }) => {
     // sort by name and lastname
     selectedMembers.sort((a, b) =>
       a.name === b.name
-        ? a.lastname.localeCompare(b.name, "th")
+        ? a.lastname.localeCompare(b.lastname, "th")
         : a.name.localeCompare(b.name, "th")
     )
     return selectedMembers
@@ -148,11 +152,11 @@ const SenatePage = ({ data }) => {
   age = calculateBackground(age)
 
   let keyMembers = data.keyMembers.edges
-  const newOrder = [0,2,1]
+  const newOrder = [0, 2, 1]
   keyMembers = newOrder.map(i => keyMembers[i])
-  let keyPosition = ['ประธาน', 'รองประธานคนที่ 1', 'รองประธานคนที่ 2']
+  let keyPosition = ["ประธาน", "รองประธานคนที่ 1", "รองประธานคนที่ 2"]
   let k = []
-  keyMembers.map( (x, idx) => {
+  keyMembers.map((x, idx) => {
     let aPerson = x.node
     aPerson.pos = keyPosition[idx]
     k.push(aPerson)
@@ -164,13 +168,17 @@ const SenatePage = ({ data }) => {
     <Layout>
       <SEO title="สมาชิกวุฒิสภา" />
       <section className="section" css={{ background: "#EDF087" }}>
-      <div className="book">
+        <div className="book">
           <div className="page leftPage">
-            <h1 css={{ ...cssH1, margin: "1rem 0 0 0"}}>สมาชิกวุฒิสภา</h1>
+            <h1 css={{ ...cssH1, margin: "1rem 0 0 0" }}>สมาชิกวุฒิสภา</h1>
             <h2 style={{ ...cssEngTitle }}>Senate</h2>
             <h2 style={{ ...cssEngTitle }}>About</h2>
             <p style={{ ...cssPageP }}>
-            เป็นคณะบุคคลที่ทำหน้าที่บริหารราชการแผ่นดิน โดย ครม. ชุดนี้ เกิดจากการนำของพรรคพลังประชารัฐ ร่วมกับพรรคการเมืองอีก 19 พรรคเสนอชื่อพลเอก ประยุทธ์ จันทร์โอชา ซึ่งเคยดำรงตำแหน่งนายกฯ และหัวหน้าคสช. มาเป็นเวลา 5 ปี เป็นนายกรัฐมนตรีต่ออีกสมัย ทำให้ ครม. ชุดนี้มีอีกชื่อเรียกว่าคณะรัฐมนตรีประยุทธ์ 2
+              เป็นคณะบุคคลที่ทำหน้าที่บริหารราชการแผ่นดิน โดย ครม. ชุดนี้
+              เกิดจากการนำของพรรคพลังประชารัฐ ร่วมกับพรรคการเมืองอีก 19
+              พรรคเสนอชื่อพลเอก ประยุทธ์ จันทร์โอชา ซึ่งเคยดำรงตำแหน่งนายกฯ
+              และหัวหน้าคสช. มาเป็นเวลา 5 ปี เป็นนายกรัฐมนตรีต่ออีกสมัย ทำให้
+              ครม. ชุดนี้มีอีกชื่อเรียกว่าคณะรัฐมนตรีประยุทธ์ 2
             </p>
             <h2 style={{ ...cssEngTitle }}>Official Website</h2>
             <div style={{ display: "block" }}>
@@ -190,7 +198,7 @@ const SenatePage = ({ data }) => {
             {keyMembers.map(x => {
               return (
                 <div className="peopleCard" key={x.id}>
-                  <PeopleCardMini key={x.id} {...x}/>
+                  <PeopleCardMini key={x.id} {...x} />
                 </div>
               )
             })}
@@ -230,9 +238,7 @@ const SenatePage = ({ data }) => {
             </div>
           </div>
         </div>
-        <h2 className="lastUpdate">
-          Last Update: 30.10.2019
-        </h2>
+        <h2 className="lastUpdate">Last Update: 30.10.2019</h2>
       </section>
       <section css={{ ...cssSection, background: "var(--cl-white)" }}>
         <div className="container">

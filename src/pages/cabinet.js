@@ -262,10 +262,10 @@ const CabinetPage = props => {
             </div>
           </div>
         </div>
-        <h2 className="lastUpdate">Last Update: 30.10.2019</h2>
       </section>
 
       <section className="section" css={{ background: "var(--cl-white)" }}>
+        <h1 css={{ fontSize: "4.8rem", textAlign: "center" }}>สมาชิกทั้งหมด</h1>
         <CabinetMemberSection />
       </section>
     </Layout>

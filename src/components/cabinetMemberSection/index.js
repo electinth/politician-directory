@@ -5,7 +5,9 @@ import { CabinetMemberList } from "./CabinetMemberList"
 const CabinetMemberSection = () => {
   const data = useStaticQuery(graphql`
     query {
-      allPeopleYaml(filter: { is_cabinet: { eq: true } }) {
+      allPeopleYaml(
+        filter: { is_cabinet: { eq: true }, is_active: { eq: true } }
+      ) {
         edges {
           node {
             id

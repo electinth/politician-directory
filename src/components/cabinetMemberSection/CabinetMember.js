@@ -50,13 +50,13 @@ export const CabinetMember = props => {
             width: "70%",
             display: "inline-flex",
             flexDirection: "column",
-            justifyContent: "space-evenly",
+            justifyContent: "center",
             height: "100%",
           }}
         >
           <MemberName name={name} lastname={lastname} />
-          <MemberAffiliate party={party} partyGroup={party_group} />
           <MemberPosition position={cabinet_position} />
+          <MemberAffiliate party={party} partyGroup={party_group} />
         </div>
       </div>
     </Link>
@@ -66,8 +66,9 @@ export const CabinetMember = props => {
 const MemberName = ({ name, lastname }) => (
   <div
     css={{
-      fontSize: "25px",
-      fontWeight: "700",
+      fontSize: "2.4rem",
+      fontWeight: "bold",
+      fontFamily: "var(--ff-title)",
     }}
   >
     {[name, lastname].join(" ")}
@@ -75,18 +76,12 @@ const MemberName = ({ name, lastname }) => (
 )
 
 const memberDetailsCss = {
-  fontSize: "20px",
-  fontWeight: "700",
+  fontSize: "1.8rem",
+  fontFamily: "var(--ff-text)",
 }
 
-const MemberAffiliate = props => {
-  const party = props.party && props.party !== "-" ? props.party : ""
-  const partyGroup =
-    props.partyGroup && props.partyGroup !== "-" ? props.partyGroup : ""
-
-  return party || partyGroup ? (
-    <div css={memberDetailsCss}>{[party, partyGroup].join(" ")}</div>
-  ) : null
+const MemberAffiliate = ({ party }) => {
+  return party ? <div css={memberDetailsCss}>พรรค{party}</div> : null
 }
 
 const MemberPosition = ({ position }) => (

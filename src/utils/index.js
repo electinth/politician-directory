@@ -10,6 +10,17 @@ export function formatDate(dt) {
 }
 
 /**
+ * Comparator function to use in Array.sort(sortThaiLocale)
+ * @param {People} a Person object
+ * @param {People} b Person object
+ */
+export function sortThaiLocale(a, b) {
+  return a.name === b.name
+    ? a.lastname.localeCompare(b.lastname, "th")
+    : a.name.localeCompare(b.name, "th")
+}
+
+/**
  * Create poltician profile image URL
  * @param {People} profile
  */
