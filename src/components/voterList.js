@@ -1,13 +1,6 @@
 import React, { Component } from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-
+import { Link } from "gatsby"
 import { css } from "@emotion/core"
-import _ from "lodash"
-
-const filterVote = (combined, key, value) =>
-  _.filter(combined, o => {
-    return _.find(o.votelog, p => p.key === key).value === value
-  })
 
 class ListCard extends Component {
   state = {
@@ -116,43 +109,7 @@ class ListCard extends Component {
   }
 }
 
-export default ({ votelogKey }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      allPeopleVoteYaml {
-        nodes {
-          id
-          title
-          name
-          lastname
-          votelog {
-            key
-            value
-          }
-        }
-      }
-      allPeopleYaml {
-        nodes {
-          id
-          is_senator
-          party
-          fields {
-            slug
-          }
-        }
-      }
-    }
-  `)
-  let combined = []
-  data.allPeopleVoteYaml.nodes.forEach(votelog => {
-    const matched = _.find(data.allPeopleYaml.nodes, ["id", votelog.id])
-    combined.push({ ...votelog, ...matched })
-  })
-  const agree = filterVote(combined, votelogKey, "1")
-  const disagree = filterVote(combined, votelogKey, "2")
-  const abstention = filterVote(combined, votelogKey, "3")
-  const absent = filterVote(combined, votelogKey, "4")
-
+export default ({ data }) => {
   return (
     <section>
       <div className="container">
@@ -163,10 +120,10 @@ export default ({ votelogKey }) => {
             flex-wrap: wrap;
           `}
         >
-          <ListCard voter={agree} choice="เห็นด้วย" />
-          <ListCard voter={disagree} choice="ไม่เห็นด้วย" />
-          <ListCard voter={abstention} choice="งดออกเสียง" />
-          <ListCard voter={absent} choice="ไม่เข้าร่วมประชุม" />
+          <ListCard voter={data[0]} choice="เห็นด้วย" />
+          <ListCard voter={data[1]} choice="ไม่เห็นด้วย" />
+          <ListCard voter={data[2]} choice="งดออกเสียง" />
+          <ListCard voter={data[3]} choice="ไม่เข้าร่วมประชุม" />
         </div>
       </div>
     </section>

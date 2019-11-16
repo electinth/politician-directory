@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { css, Global } from "@emotion/core"
+import _ from "lodash"
 
 import ExternalLink from "../components/externalLink"
 import Layout from "../components/layout"
@@ -40,9 +41,51 @@ export const query = graphql`
         }
       }
     }
+
+    allPeopleVoteYaml {
+      nodes {
+        id
+        title
+        name
+        lastname
+        votelog {
+          key
+          value
+        }
+      }
+    }
+    allPeopleYaml {
+      nodes {
+        id
+        is_senator
+        party
+        fields {
+          slug
+        }
+      }
+    }
   }
 `
-const VotelogPage = ({ data: { votelogYaml, voteRecordIcon } }) => {
+
+const filterVote = (combined, key, value) =>
+  _.filter(combined, o => {
+    return _.find(o.votelog, p => p.key === key).value === value
+  })
+
+const VotelogPage = ({
+  data: { votelogYaml, voteRecordIcon, allPeopleVoteYaml, allPeopleYaml },
+}) => {
+  let combined = []
+  allPeopleVoteYaml.nodes.forEach(votelog => {
+    const matched = _.find(allPeopleYaml.nodes, ["id", votelog.id])
+    combined.push({ ...votelog, ...matched })
+  })
+  const agree = filterVote(combined, votelogYaml.id, "1")
+  const disagree = filterVote(combined, votelogYaml.id, "2")
+  const abstention = filterVote(combined, votelogYaml.id, "3")
+  const absent = filterVote(combined, votelogYaml.id, "4")
+  const peopleByVote = [agree, disagree, abstention, absent]
+
   return (
     <Layout
       pageStyles={{
@@ -168,18 +211,10 @@ const VotelogPage = ({ data: { votelogYaml, voteRecordIcon } }) => {
         <Waffle
           // key="parliament"
           data={[
-            Array(votelogYaml.approve).fill({
-              node: { id: 0, title: "", name: "", lastname: "" },
-            }),
-            Array(votelogYaml.disprove).fill({
-              node: { id: 0, title: "", name: "", lastname: "" },
-            }),
-            Array(votelogYaml.abstained).fill({
-              node: { id: 0, title: "", name: "", lastname: "" },
-            }),
-            Array(votelogYaml.absent).fill({
-              node: { id: 0, title: "", name: "", lastname: "" },
-            }),
+            agree.map(p => ({ node: p })),
+            disagree.map(p => ({ node: p })),
+            abstention.map(p => ({ node: p })),
+            absent.map(p => ({ node: p })),
           ]}
           colors={[
             `var(--cl-vote-yes)`,
@@ -268,7 +303,7 @@ const VotelogPage = ({ data: { votelogYaml, voteRecordIcon } }) => {
           ))}
         </button>
       </section>
-      <VoterList votelogKey={votelogYaml.id} />
+      <VoterList data={[agree, disagree, abstention, absent]} />
     </Layout>
   )
 }
