@@ -16,7 +16,7 @@ const labelCellStyle = {
 
 const barContainerStyle = {
   display: "flex",
-  border: "1px solid var(--cl-black)",
+  border: "1.5px solid var(--cl-black)",
   minHeight: "30px",
   lineHeight: "30px",
   position: "relative",
@@ -71,8 +71,8 @@ const StackedBarChart = ({ data }) => {
       .map(x => parseInt(x, 16))
 
     return 1 - (0.299 * rgb[0] + 0.587 * rgb[1] + 0.114 * rgb[2]) / 255 < 0.5
-      ? "black"
-      : "white"
+      ? "var(--cl-black)"
+      : "var(--cl-white)"
   }
 
   return (

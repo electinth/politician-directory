@@ -115,7 +115,7 @@ const Menu = ({ siteTitle }) => {
               fixed={staticData.cabinetImage.childImageSharp.fixed}
               style={menuIconStyle}
             />
-            <Link to={"/cabibet"}>คณะรัฐมนตรี</Link>
+            <Link to={"/cabinet"}>คณะรัฐมนตรี</Link>
           </span>
         </li>
         <li>

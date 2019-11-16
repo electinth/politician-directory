@@ -2,6 +2,14 @@ import moment from "moment"
 import _ from "lodash"
 
 /**
+ * Format date
+ * @param {Date,String,moment} date
+ */
+export function formatDate(dt) {
+  return moment(dt).format("DD.MM.YYYY")
+}
+
+/**
  * Create poltician profile image URL
  * @param {People} profile
  */
@@ -75,26 +83,38 @@ export function calculateBackground(input) {
   return input
 }
 
-export function combineCategory(input) {
+export function combineCategory(input, restMin = 3) {
+  // first, split 'unknown' and other values
+  const unknownIndex = _.findIndex(input, ["name", "ไม่พบข้อมูล"])
+  const [unknown] = unknownIndex >= 0 ? input.splice(unknownIndex, 1) : []
+
+  // sort the rest by m
   input.sort((a, b) => parseInt(b.value) - parseInt(a.value))
   let temp = []
   let count_others = 0
   input.map((x, idx) => {
-    if (idx > 2) {
+    if (idx > restMin - 1) {
       count_others += x.value
     } else {
       temp.push(x)
     }
     return x
   })
-  temp[temp.length] = { value: count_others, name: "อื่นๆ" }
+  if (count_others > 0) {
+    temp.push({ value: count_others, name: "อื่นๆ" })
+  }
   input = temp
+
+  // lastly, put 'unknown' back as the last item
+  if (unknown) {
+    input.push(unknown)
+  }
   return input
 }
 
 export function padCategory(input) {
   input.map(x => {
-    if (x.name.length === 0) {
+    if (!x.name) {
       x.name = "ไม่พบข้อมูล"
     }
     return x
@@ -102,9 +122,12 @@ export function padCategory(input) {
   return input
 }
 
-export function birthdayToAgeHistogram(birthdate, ageBin) {
+export function birthdayToAgeHistogram(birthdate, ageBin = [39, 55, 74]) {
   let age = []
-  age.push({ name: String("25-" + String(ageBin[0] - 1)) + " ปี", value: 0 })
+  age.push({
+    name: String("25-" + String(ageBin[0] - 1)) + " ปี",
+    value: 0,
+  })
   age.push({
     name: String(ageBin[0]) + "-" + String(ageBin[1] - 1) + " ปี",
     value: 0,
@@ -113,7 +136,7 @@ export function birthdayToAgeHistogram(birthdate, ageBin) {
     name: String(ageBin[1]) + "-" + String(ageBin[2] - 1) + " ปี",
     value: 0,
   })
-  age.push({ name: String(">" + ageBin[2]) + " ปี", value: 0 })
+  age.push({ name: String(ageBin[2]) + " ปีขึ้นไป", value: 0 })
   const today = parseInt(moment().format("YYYY"))
   birthdate.map(x => {
     const y = parseInt(moment(x.node.birthdate).format("YYYY"))
