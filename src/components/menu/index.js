@@ -38,29 +38,6 @@ const menuList = {
   },
 }
 
-const menuListSub = {
-  listStyle: "none",
-  fontSize: "1.8rem",
-  color: "var(--cl-paper-gray)",
-  marginTop: "2rem",
-  marginLeft: 0,
-  li: {
-    marginBottom: "1rem",
-    "&::before": {
-      content: "'\\2B24'",
-      display: "inline-block",
-      fontSize: "1rem",
-      verticalAlign: "text-bottom",
-      lineHeight: "2.4rem",
-      marginRight: "1rem",
-    },
-    a: {
-      color: "var(--cl-paper-gray)",
-      textDecoration: `none`,
-    },
-  },
-}
-
 const menuIconStyle = {
   position: "absolute",
   top: -3,
@@ -95,6 +72,35 @@ const Menu = ({ siteTitle }) => {
           }
         }
       }
+      cabinetImage: file(
+        relativePath: { eq: "images/icons/cabinet/Cabinet@2x.png" }
+      ) {
+        childImageSharp {
+          fixed(width: 32) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      senateImage: file(
+        relativePath: { eq: "images/icons/senate/Senate.png" }
+      ) {
+        childImageSharp {
+          fixed(width: 32) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      representativeImage: file(
+        relativePath: {
+          eq: "images/icons/representative/Representative@2x.png"
+        }
+      ) {
+        childImageSharp {
+          fixed(width: 32) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `)
 
@@ -106,22 +112,29 @@ const Menu = ({ siteTitle }) => {
         <li>
           <span>
             <Img
-              fixed={staticData.voteRecordImage.childImageSharp.fixed}
+              fixed={staticData.cabinetImage.childImageSharp.fixed}
               style={menuIconStyle}
             />
-            สำรวจนักการเมือง
+            <Link to={"/cabibet"}>คณะรัฐมนตรี</Link>
           </span>
-          <ul css={menuListSub}>
-            <li>
-              <Link to={"/cabinet"}>คณะรัฐมนตรี</Link>
-            </li>
-            <li>
-              <Link to={"/senate"}>สมาชิกวุฒิสภา</Link>
-            </li>
-            <li>
-              <Link to={"/representatives"}>สมาชิกสภาผู้แทนราษฎร</Link>
-            </li>
-          </ul>
+        </li>
+        <li>
+          <span>
+            <Img
+              fixed={staticData.senateImage.childImageSharp.fixed}
+              style={menuIconStyle}
+            />
+            <Link to={"/senate"}>สมาชิกวุฒิสภา</Link>
+          </span>
+        </li>
+        <li>
+          <span>
+            <Img
+              fixed={staticData.representativeImage.childImageSharp.fixed}
+              style={menuIconStyle}
+            />
+            <Link to={"/representatives"}>สมาชิกสภาผู้แทนราษฎร</Link>
+          </span>
         </li>
         <li>
           <span>
