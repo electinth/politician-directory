@@ -268,11 +268,13 @@ const IndexPage = ({ data }) => {
               ของผู้แทนในสภาทั้งหมดเป็น{prop_of_interest.name}
             </span>
           </h2>
-          <Waffle
-            // key="parliament"
-            data={[data_of_interest, data_the_rest]}
-            colors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
-          />
+          <div css={{ margin: "50px auto 0 auto" }}>
+            <Waffle
+              // key="parliament"
+              data={[data_of_interest, data_the_rest]}
+              colors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
+            />
+          </div>
         </div>
       </section>
 

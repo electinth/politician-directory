@@ -7,6 +7,7 @@ import ExternalLink from "../components/externalLink"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import VoterList from "../components/voterList"
+import Waffle from "../components/waffle"
 
 export const query = graphql`
   query($slug: String!) {
@@ -24,6 +25,10 @@ export const query = graphql`
       meeting
       passed
       total_voter
+      approve
+      disprove
+      abstained
+      absent
     }
 
     voteRecordIcon: file(
@@ -159,6 +164,31 @@ const VotelogPage = ({ data: { votelogYaml, voteRecordIcon } }) => {
           </span>
         </span>
       </section>
+      <section>
+        <Waffle
+          // key="parliament"
+          data={[
+            Array(votelogYaml.approve).fill({
+              node: { id: 0, title: "", name: "", lastname: "" },
+            }),
+            Array(votelogYaml.disprove).fill({
+              node: { id: 0, title: "", name: "", lastname: "" },
+            }),
+            Array(votelogYaml.abstained).fill({
+              node: { id: 0, title: "", name: "", lastname: "" },
+            }),
+            Array(votelogYaml.absent).fill({
+              node: { id: 0, title: "", name: "", lastname: "" },
+            }),
+          ]}
+          colors={[
+            `var(--cl-vote-yes)`,
+            `var(--cl-vote-no)`,
+            `var(--cl-vote-abstained)`,
+            `var(--cl-vote-abstained)`,
+          ]}
+        />
+      </section>
       <section
         css={css`
           font-size: 2rem;
@@ -228,7 +258,7 @@ const VotelogPage = ({ data: { votelogYaml, voteRecordIcon } }) => {
                   padding: 1rem 1rem;
                   margin-right: 1rem;
                   display: block;
-                  background-color: #fcbbdd;
+                  background-color: var(--cl-pink);
                   pointer-events: auto;
                 `}
               >
