@@ -30,11 +30,13 @@ const VoteLogCard = ({
         flexDirection: "column",
         width: 300,
         minWidth: 300,
-        minHeight: 350,
+        height: 450,
+        minHeight: 450,
         padding: "2rem",
         borderRadius: "10px",
         backgroundColor: "var(--cl-white)",
         color: "var(--cl-black)",
+        position: "relative",
       }}
     >
       <div
@@ -103,42 +105,53 @@ const VoteLogCard = ({
       <p
         style={{
           paddingTop: "1rem",
+          textOverflow: "ellipsis",
+          whiteSpace: "nowrap",
+          overflow: "hidden",
         }}
       >
         {description_th}
       </p>
-      <div style={{ display: "inline" }}>
-        <div
-          style={{
-            borderRadius: "50%",
-            backgroundColor: resultColor,
-            width: "15px",
-            height: "15px",
-            display: "inline-block",
-          }}
-        />{" "}
-        <div
-          style={{
-            fontFamily: "var(--ff-text)",
-            fontSize: "3rem",
-            fontWeight: "bold",
-            color: resultColor,
-            display: "inline-block",
-          }}
-        >
-          {passed ? "ผ่าน" : "ไม่ผ่าน"}
-        </div>
-      </div>
-      <p
+
+      <div
         style={{
-          paddingTop: "1rem",
+          position: "absolute",
+          bottom: "1rem",
         }}
       >
-        เห็นด้วย {approve} ไม่เห็นด้วย {disprove} งดออกเสียง {abstained}
-      </p>
-      <h3 style={{ fontSize: "2rem" }}>
-        {moment(vote_date).format("D.M.YYYY")}
-      </h3>
+        <div style={{ display: "inline" }}>
+          <div
+            style={{
+              borderRadius: "50%",
+              backgroundColor: resultColor,
+              width: "15px",
+              height: "15px",
+              display: "inline-block",
+            }}
+          />{" "}
+          <div
+            style={{
+              fontFamily: "var(--ff-text)",
+              fontSize: "3rem",
+              fontWeight: "bold",
+              color: resultColor,
+              display: "inline-block",
+            }}
+          >
+            {passed ? "ผ่าน" : "ไม่ผ่าน"}
+          </div>
+        </div>
+        <p style={{ paddingTop: "1rem" }}>
+          เห็นด้วย {approve} ไม่เห็นด้วย {disprove} งดออกเสียง {abstained}
+        </p>
+        <h3
+          style={{
+            fontSize: "2rem",
+          }}
+        >
+          {moment(vote_date).format("D.M.YYYY")}
+        </h3>
+      </div>
     </div>
   )
 }
