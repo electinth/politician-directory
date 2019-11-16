@@ -144,11 +144,7 @@ const VoteLogCard = ({
         <p style={{ paddingTop: "1rem" }}>
           เห็นด้วย {approve} ไม่เห็นด้วย {disprove} งดออกเสียง {abstained}
         </p>
-        <h3
-          style={{
-            fontSize: "2rem",
-          }}
-        >
+        <h3 style={{ fontSize: "2rem" }}>
           {moment(vote_date).format("D.M.YYYY")}
         </h3>
       </div>

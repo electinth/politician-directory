@@ -40,28 +40,30 @@ class ListCard extends Component {
             margin-bottom: 10rem;
           `}
         >
-          {this.state.voter.map((member, idx) => (
-            <li
-              css={css`
-                font-size: 2rem;
-                display: ${this.state.hidden && idx > 7 ? "none" : "block"};
-                margin: 2rem 2rem;
-              `}
-            >
-              <Link to={member.fields.slug}>
-                <a
-                  css={css`
-                    font-weight: bold;
-                    color: var(--cl-black);
-                  `}
-                >
-                  {member.name} {member.lastname}
-                </a>
-              </Link>
+          {this.state.voter
+            .sort((a, b) => a.name.localeCompare(b.name, "th"))
+            .map((member, idx) => (
+              <li
+                css={css`
+                  font-size: 2rem;
+                  display: ${this.state.hidden && idx > 7 ? "none" : "block"};
+                  margin: 2rem 2rem;
+                `}
+              >
+                <Link to={member.fields.slug}>
+                  <a
+                    css={css`
+                      font-weight: bold;
+                      color: var(--cl-black);
+                    `}
+                  >
+                    {member.name} {member.lastname}
+                  </a>
+                </Link>
 
-              <p>{member.is_senator ? "สมาชิกวุฒิสภา" : member.party}</p>
-            </li>
-          ))}
+                <p>{member.is_senator ? "สมาชิกวุฒิสภา" : member.party}</p>
+              </li>
+            ))}
           {this.state.hidden && this.props.voter.length > 8 ? (
             <button
               css={css`
