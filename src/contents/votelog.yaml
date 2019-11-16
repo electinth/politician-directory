@@ -1,50 +1,50 @@
-- id: '1'
-  title: ลงมติเลือกนายกรัฐมนตรี
-  en:
-    title: Prime Minister Approval
-    legal_title: >-
-      An approval of a person suitable to be appointed as the Prime Minister
-      shall be done in accordance with section 272 of Constitution of the
-      Kingdom of Thailand
-  legal_title: >-
-    พิจารณาให้ความเห็นชอบบุคคลซึ่งสมควรได้รับแต่งตั้งเป็นนายกรัฐมนตรี ตามมาตรา
-    272 ของรัฐธรรมนูญแห่งราชอาณาจักรไทย
-  meeting: ประชุมร่วมสองสภา
-  type: เลือกนายกรัฐมนตรี
-  vote_date: '2019-06-05'
-  prayuth: '500'
-  thanathorn: '244'
-  passed: false
-  approve: null
-  disprove: null
-  abstained: 3
-  total_voter: 747
-  absent: 1
-  total_member: 748
-  description_th: >-
-    การประชุมร่วมกันของทั้ง ส.ส. และ ส.ว. ครั้งแรก
-    เพื่อพิจารณาและลงมติเลือกคนที่จะมาเป็นนายกรัฐมนตรี โดยมีสองชื่อที่ถูกเสนอ
-    คือ พล.อ.ประยุทธ์ จันทร์โอชา เสนอโดยพรรคพลังประชารัฐ และ ธนาธร
-    จึงรุ่งเรืองกิจ เสนอโดยพรรคอนาคตใหม่
-    ก่อนการลงมติได้เปิดให้อภิปรายคุณสมบัติของทั้งสองคนก่อน ผลการลงมติ
-    พล.อ.ประยุทธ์ ได้คะแนนมากกว่าที่ 500 ต่อ 244 เสียง งดออกเสียง 3 เสียง
-  description_en: >-
-    The first meeting of the Parliament consists of the House of Representatives
-    and the Senate in order to consider and vote for a person who shall become
-    Prime Minister. There were two names proposed; Gen.Prayuth Chan-o-cha from
-    Palangpracharat Party and Thanathorn Jungroongruangkit from Future Forward
-    Party. Members of parliament were allowed to discussed before casting their
-    votes. The result came up as Gen.Prayuth recieved majority vote at 500:244
-    with 3 abstentions.
-  document:
-    - title: ใบประมวลผลการลงมติ
-      link: >-
-        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190606122944A1.pdf
-    - title: ผลการนับคะแนน
-      link: >-
-        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190606122944A0.pdf
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4135#!
+# - id: '1'
+#   title: ลงมติเลือกนายกรัฐมนตรี
+#   en:
+#     title: Prime Minister Approval
+#     legal_title: >-
+#       An approval of a person suitable to be appointed as the Prime Minister
+#       shall be done in accordance with section 272 of Constitution of the
+#       Kingdom of Thailand
+#   legal_title: >-
+#     พิจารณาให้ความเห็นชอบบุคคลซึ่งสมควรได้รับแต่งตั้งเป็นนายกรัฐมนตรี ตามมาตรา
+#     272 ของรัฐธรรมนูญแห่งราชอาณาจักรไทย
+#   meeting: ประชุมร่วมสองสภา
+#   type: เลือกนายกรัฐมนตรี
+#   vote_date: '2019-06-05'
+#   prayuth: '500'
+#   thanathorn: '244'
+#   passed: false
+#   approve: null
+#   disprove: null
+#   abstained: 3
+#   total_voter: 747
+#   absent: 1
+#   total_member: 748
+#   description_th: >-
+#     การประชุมร่วมกันของทั้ง ส.ส. และ ส.ว. ครั้งแรก
+#     เพื่อพิจารณาและลงมติเลือกคนที่จะมาเป็นนายกรัฐมนตรี โดยมีสองชื่อที่ถูกเสนอ
+#     คือ พล.อ.ประยุทธ์ จันทร์โอชา เสนอโดยพรรคพลังประชารัฐ และ ธนาธร
+#     จึงรุ่งเรืองกิจ เสนอโดยพรรคอนาคตใหม่
+#     ก่อนการลงมติได้เปิดให้อภิปรายคุณสมบัติของทั้งสองคนก่อน ผลการลงมติ
+#     พล.อ.ประยุทธ์ ได้คะแนนมากกว่าที่ 500 ต่อ 244 เสียง งดออกเสียง 3 เสียง
+#   description_en: >-
+#     The first meeting of the Parliament consists of the House of Representatives
+#     and the Senate in order to consider and vote for a person who shall become
+#     Prime Minister. There were two names proposed; Gen.Prayuth Chan-o-cha from
+#     Palangpracharat Party and Thanathorn Jungroongruangkit from Future Forward
+#     Party. Members of parliament were allowed to discussed before casting their
+#     votes. The result came up as Gen.Prayuth recieved majority vote at 500:244
+#     with 3 abstentions.
+#   document:
+#     - title: ใบประมวลผลการลงมติ
+#       link: >-
+#         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190606122944A1.pdf
+#     - title: ผลการนับคะแนน
+#       link: >-
+#         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190606122944A0.pdf
+#   reference: >-
+#     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4135#!
 - id: '2'
   title: ตั้งคณะกรรมาธิการผู้มีความหลากหลายทางเพศ
   en:

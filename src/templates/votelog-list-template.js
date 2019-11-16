@@ -97,13 +97,13 @@ const VoteLogPage = ({
             บันทึกการประชุมและการลงมติ
           </h1>
           <p css={{ padding: "0 8rem", color: "#eeeeee" }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            นับตั้งแต่เปิดประชุมสภาหลังการเลือกตั้ง
+            มีการประชุมสภามาแล้วหลายต่อหลายครั้ง แต่ละครั้งก็มีหลายวาระ
+            และใช้ระยะเวลาในการประชุมยาวนาน
+            จนบางทีเราก็ตามไม่ทันว่ามีการลงมติครั้งสำคัญเกิดขึ้นในการประชุมครั้งไหนในสภาบ้าง?
+            ใครยกมือสนับสนุนหรือคัดค้านมติไหน?
+            เราจึงรวบรวบการลงมติครั้งสำคัญมาให้ พร้อมอธิบายสรุปแบบเข้าใจง่ายๆ
+            ว่าสิ่งที่ผู้แทนแต่ละคนสนับสนุนหรือคัดค้านคืออะไร
           </p>
         </div>
       </section>
