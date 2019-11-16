@@ -1,6 +1,5 @@
 import React from "react"
 import moment from "moment"
-
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 

@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+import moment from "moment"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -59,10 +60,8 @@ export const query = graphql`
           fields {
             slug
           }
-          legal_title
-          en {
-            legal_title
-          }
+          title
+          description_th
           passed
           approve
           disprove
@@ -272,6 +271,7 @@ const IndexPage = ({ data }) => {
           <Waffle
             // key="parliament"
             data={[data_of_interest, data_the_rest]}
+            colors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
           />
         </div>
       </section>
@@ -292,25 +292,29 @@ const IndexPage = ({ data }) => {
               marginTop: "6rem",
             }}
           >
-            {data.allVotelogYaml.edges.map(({ node }) => (
-              <VoteLogCard
-                key={node.id}
-                css={{
-                  width: `calc((var(--container-width) - 4rem) / 2)`,
-                  margin: "0 1rem 2rem 1rem",
-                }}
-                legal_title={node.legal_title}
-                legal_title_en={node.en.legal_title}
-                passed={node.passed}
-                approve={node.approve}
-                disprove={node.disprove}
-                abstained={node.abstained}
-                absent={node.absent}
-                total_voter={node.total_voter}
-                vote_date={node.vote_date}
-                slug={node.fields.slug}
-              />
-            ))}
+            {data.allVotelogYaml.edges
+              .sort(({ node: a }, { node: b }) =>
+                moment(b.vote_date).diff(moment(a.vote_date), "days")
+              )
+              .map(({ node }) => (
+                <VoteLogCard
+                  key={node.id}
+                  css={{
+                    width: `calc((var(--container-width) - 4rem) / 2)`,
+                    margin: "0 1rem 2rem 1rem",
+                  }}
+                  title={node.title}
+                  description_th={node.description_th}
+                  passed={node.passed}
+                  approve={node.approve}
+                  disprove={node.disprove}
+                  abstained={node.abstained}
+                  absent={node.absent}
+                  total_voter={node.total_voter}
+                  vote_date={node.vote_date}
+                  slug={node.fields.slug}
+                />
+              ))}
           </div>
           <div
             css={{
