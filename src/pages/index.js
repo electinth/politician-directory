@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import Button from "../components/button"
 import Hero from "../components/hero"
 import VoteLogCard from "../components/voteLogCard"
-import Waffle from "../components/waffle"
+import WaffleFilter from "../components/waffleFilter"
 import PartyGroupList from "../components/partyGroupList"
 
 export const query = graphql`
@@ -31,9 +31,16 @@ export const query = graphql`
           fields {
             slug
           }
-          title
+          birthdate(fromNow: true)
+          degree
+          education
+          ex_occupation
+          graduation
+          gender
+          occupation_group
           name
           lastname
+          title
           cabinet_position
           is_cabinet
           is_senator
@@ -219,10 +226,9 @@ const IndexPage = ({ data }) => {
             </span>
           </h2>
           <div css={{ margin: "50px auto 0 auto" }}>
-            <Waffle
+            <WaffleFilter
               // key="parliament"
-              data={[data_of_interest, data_the_rest]}
-              colors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
+              data={data.allPeopleYaml.edges}
             />
           </div>
         </div>
