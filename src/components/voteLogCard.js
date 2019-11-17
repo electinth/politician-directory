@@ -203,7 +203,7 @@ const VoteLogCard = ({
               marginLeft: "15px",
             }}
           />{" "}
-          ไม่ลงคะแนน {abstained}
+          ไม่ลงคะแนน {absent}
         </div>
         <h3 style={{ fontSize: "2rem" }}>
           {moment(vote_date).format("D.M.YYYY")}

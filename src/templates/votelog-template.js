@@ -80,11 +80,10 @@ const VotelogPage = ({
     const matched = _.find(allPeopleYaml.nodes, ["id", votelog.id])
     combined.push({ ...votelog, ...matched })
   })
-  const agree = filterVote(combined, votelogYaml.id, "1")
-  const disagree = filterVote(combined, votelogYaml.id, "2")
-  const abstention = filterVote(combined, votelogYaml.id, "3")
+  const approve = filterVote(combined, votelogYaml.id, "1")
+  const disprove = filterVote(combined, votelogYaml.id, "2")
+  const abstained = filterVote(combined, votelogYaml.id, "3")
   const absent = filterVote(combined, votelogYaml.id, "4")
-  const peopleByVote = [agree, disagree, abstention, absent]
 
   return (
     <Layout
@@ -211,9 +210,9 @@ const VotelogPage = ({
         <Waffle
           // key="parliament"
           data={[
-            agree.map(p => ({ node: p })),
-            disagree.map(p => ({ node: p })),
-            abstention.map(p => ({ node: p })),
+            approve.map(p => ({ node: p })),
+            disprove.map(p => ({ node: p })),
+            abstained.map(p => ({ node: p })),
             absent.map(p => ({ node: p })),
           ]}
           colors={[
@@ -223,6 +222,60 @@ const VotelogPage = ({
             `var(--cl-vote-abstained)`,
           ]}
         />
+        <div
+          style={{
+            padding: "1rem 0",
+            fontSize: "14px",
+          }}
+        >
+          <div
+            style={{
+              width: "9px",
+              height: "9px",
+              backgroundColor: "var(--cl-vote-yes)",
+              border: "1px solid var(--cl-black)",
+              boxSizing: "unset",
+              display: "inline-block",
+            }}
+          />{" "}
+          เห็นด้วย {approve.length}
+          <div
+            style={{
+              width: "9px",
+              height: "9px",
+              backgroundColor: "var(--cl-vote-no)",
+              border: "1px solid var(--cl-black)",
+              boxSizing: "unset",
+              display: "inline-block",
+              marginLeft: "15px",
+            }}
+          />{" "}
+          ไม่เห็นด้วย {disprove.length}
+          <div
+            style={{
+              width: "9px",
+              height: "9px",
+              backgroundColor: "var(--cl-vote-abstained)",
+              border: "1px solid var(--cl-black)",
+              boxSizing: "unset",
+              display: "inline-block",
+              marginLeft: "15px",
+            }}
+          />{" "}
+          งดออกเสียง {abstained.length}
+          <div
+            style={{
+              width: "9px",
+              height: "9px",
+              backgroundColor: "var(--cl-white)",
+              border: "1px solid var(--cl-black)",
+              boxSizing: "unset",
+              display: "inline-block",
+              marginLeft: "15px",
+            }}
+          />{" "}
+          ไม่ลงคะแนน {absent.length}
+        </div>
       </section>
       <section
         css={css`
@@ -303,7 +356,7 @@ const VotelogPage = ({
           ))}
         </button>
       </section>
-      <VoterList data={[agree, disagree, abstention, absent]} />
+      <VoterList data={[approve, disprove, abstained, absent]} />
     </Layout>
   )
 }
