@@ -8,7 +8,7 @@ const cssH1 = { fontSize: "4.8rem", marginTop: "4rem" }
 
 const formatHouse = house => {
   if (house === "ทั้งหมด") {
-    return "จากทั้งหมด"
+    return "ทั้งหมด"
   } else if (house === "ส.ส.") {
     return "จากสภาผู้แทนราษฎร"
   } else if (house === "ส.ว.") {
@@ -94,6 +94,15 @@ class WaffleFilter extends Component {
       <>
         <Global
           styles={css`
+            i {
+              margin-top: 5px;
+              width: 0;
+              height: 0;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+              border-top: 10px solid var(--cl-black);
+              float: right;
+            }
             button {
               text-align: left;
               background: var(--cl-pink);
@@ -149,26 +158,25 @@ class WaffleFilter extends Component {
             %
           </span>
           <span css={{ fontFamily: "var(--ff-text)", fontSize: "2.4rem" }}>
-            {`ของผู้แทน${formatHouse(this.state.currentFilter.house)}  ${
+            {`ของผู้แทน${formatHouse(this.state.currentFilter.house)} ${
               this.state.currentFilter.gender === "ทุกเพศ"
                 ? ""
-                : "และเป็นเพศ" + this.state.currentFilter.gender
-            }  ${
+                : "เป็นเพศ" + this.state.currentFilter.gender
+            } ${
               this.state.currentFilter.generation === "ทุกช่วงวัย"
                 ? ""
-                : "และเกิดในยุค " + this.state.currentFilter.generation
-            }  ${
+                : "เกิดในยุค " + this.state.currentFilter.generation
+            } ${
               this.state.currentFilter.education === "การศึกษาทั้งหมด"
                 ? ""
                 : (this.state.currentFilter.education === "สถาบันทหาร"
-                    ? "และจบการศึกษาจาก"
-                    : "และจบการศึกษาระดับ") + this.state.currentFilter.education
-            }${
+                    ? "จบการศึกษาจาก"
+                    : "จบการศึกษาระดับ") + this.state.currentFilter.education
+            } ${
               this.state.currentFilter.occupation_group ===
               "ทุกกลุ่มอาชีพ (เดิม)"
                 ? ""
-                : "และเคยประกอบอาชีพ" +
-                  this.state.currentFilter.occupation_group
+                : "เคยประกอบอาชีพ" + this.state.currentFilter.occupation_group
             }`}
           </span>
         </h2>
@@ -180,6 +188,9 @@ class WaffleFilter extends Component {
                 className="currentFilter"
               >
                 {this.state.currentFilter.house}
+                <span>
+                  <i></i>
+                </span>
               </button>
               {this.state.showMenu === 0 ? (
                 <div className="menuItems">
@@ -200,6 +211,9 @@ class WaffleFilter extends Component {
                 className="currentFilter"
               >
                 {this.state.currentFilter.gender}
+                <span>
+                  <i></i>
+                </span>
               </button>
               {this.state.showMenu === 1 ? (
                 <div className="menuItems">
@@ -220,6 +234,9 @@ class WaffleFilter extends Component {
                 className="currentFilter"
               >
                 {this.state.currentFilter.generation}
+                <span>
+                  <i></i>
+                </span>
               </button>
               {this.state.showMenu === 2 ? (
                 <div className="menuItems">
@@ -240,6 +257,9 @@ class WaffleFilter extends Component {
                 className="currentFilter"
               >
                 {this.state.currentFilter.education}
+                <span>
+                  <i></i>
+                </span>
               </button>
               {this.state.showMenu === 3 ? (
                 <div className="menuItems">
@@ -260,6 +280,9 @@ class WaffleFilter extends Component {
                 className="currentFilter"
               >
                 {this.state.currentFilter.occupation_group}
+                <span>
+                  <i></i>
+                </span>
               </button>
               {this.state.showMenu === 4 ? (
                 <div className="menuItems">
