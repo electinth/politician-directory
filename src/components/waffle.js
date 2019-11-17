@@ -11,8 +11,8 @@ const split_array = (array, size, callback) =>
     .map(start => array.slice(start, start + size))
     .map(callback)
 const full_name = node => `${node.title}${node.name} ${node.lastname}`
-const waffle = (data, color) =>
-  split_array(data, 100, (hundred, hi) => (
+const waffle = (data, color, add_separator) => {
+  let result = split_array(data, 100, (hundred, hi) => (
     <div key={hi} className="hundred">
       {split_array(hundred, 25, (quarter, qi) => (
         <div key={qi} className="quarter">
@@ -39,11 +39,16 @@ const waffle = (data, color) =>
     </div>
   ))
 
+  if (add_separator) result.push(<div key="line" className="line"></div>)
+
+  return result
+}
+
 const Waffle = ({ data, colors }) => (
   <div className="waffle">
-    {waffle(data[0], colors[0])}
-    <div className="line"></div>
-    {waffle(data[1], colors[1])}
+    {data.map((group, group_idx) =>
+      waffle(group, colors[group_idx], group_idx < data.length - 1)
+    )}
   </div>
 )
 
