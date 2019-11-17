@@ -1,13 +1,6 @@
 import React, { Component } from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-
+import { Link } from "gatsby"
 import { css } from "@emotion/core"
-import _ from "lodash"
-
-const filterVote = (combined, key, value) =>
-  _.filter(combined, o => {
-    return _.find(o.votelog, p => p.key === key).value === value
-  })
 
 class ListCard extends Component {
   state = {
@@ -40,28 +33,30 @@ class ListCard extends Component {
             margin-bottom: 10rem;
           `}
         >
-          {this.state.voter.map((member, idx) => (
-            <li
-              css={css`
-                font-size: 2rem;
-                display: ${this.state.hidden && idx > 7 ? "none" : "block"};
-                margin: 2rem 2rem;
-              `}
-            >
-              <Link to={member.fields.slug}>
-                <a
-                  css={css`
-                    font-weight: bold;
-                    color: var(--cl-black);
-                  `}
-                >
-                  {member.name} {member.lastname}
-                </a>
-              </Link>
+          {this.state.voter
+            .sort((a, b) => a.name.localeCompare(b.name, "th"))
+            .map((member, idx) => (
+              <li
+                css={css`
+                  font-size: 2rem;
+                  display: ${this.state.hidden && idx > 7 ? "none" : "block"};
+                  margin: 2rem 2rem;
+                `}
+              >
+                <Link to={member.fields.slug}>
+                  <a
+                    css={css`
+                      font-weight: bold;
+                      color: var(--cl-black);
+                    `}
+                  >
+                    {member.name} {member.lastname}
+                  </a>
+                </Link>
 
-              <p>{member.is_senator ? "สมาชิกวุฒิสภา" : member.party}</p>
-            </li>
-          ))}
+                <p>{member.is_senator ? "สมาชิกวุฒิสภา" : member.party}</p>
+              </li>
+            ))}
           {this.state.hidden && this.props.voter.length > 8 ? (
             <button
               css={css`
@@ -89,9 +84,12 @@ class ListCard extends Component {
               <span
                 onClick={() => this.setState({ hidden: !this.state.hidden })}
                 css={css`
-                  font-size: 3rem;
+                  font-family: var(--ff-title);
+                  font-size: 2.4rem;
+                  line-height: 3rem;
                   cursor: pointer;
                   border: 0.2rem solid black;
+                  border-radius: 5px;
                   padding: 1rem 6rem;
                   display: block;
                   margin: 2rem auto;
@@ -111,43 +109,7 @@ class ListCard extends Component {
   }
 }
 
-export default ({ votelogKey }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      allPeopleVoteYaml {
-        nodes {
-          id
-          title
-          name
-          lastname
-          votelog {
-            key
-            value
-          }
-        }
-      }
-      allPeopleYaml {
-        nodes {
-          id
-          is_senator
-          party
-          fields {
-            slug
-          }
-        }
-      }
-    }
-  `)
-  let combined = []
-  data.allPeopleVoteYaml.nodes.forEach(votelog => {
-    const matched = _.find(data.allPeopleYaml.nodes, ["id", votelog.id])
-    combined.push({ ...votelog, ...matched })
-  })
-  const agree = filterVote(combined, votelogKey, "1")
-  const disagree = filterVote(combined, votelogKey, "2")
-  const abstention = filterVote(combined, votelogKey, "3")
-  const absent = filterVote(combined, votelogKey, "4")
-
+export default ({ data }) => {
   return (
     <section>
       <div className="container">
@@ -158,10 +120,10 @@ export default ({ votelogKey }) => {
             flex-wrap: wrap;
           `}
         >
-          <ListCard voter={agree} choice="เห็นด้วย" />
-          <ListCard voter={disagree} choice="ไม่เห็นด้วย" />
-          <ListCard voter={abstention} choice="งดออกเสียง" />
-          <ListCard voter={absent} choice="ไม่เข้าร่วมประชุม" />
+          <ListCard voter={data[0]} choice="เห็นด้วย" />
+          <ListCard voter={data[1]} choice="ไม่เห็นด้วย" />
+          <ListCard voter={data[2]} choice="งดออกเสียง" />
+          <ListCard voter={data[3]} choice="ไม่เข้าร่วมประชุม" />
         </div>
       </div>
     </section>
