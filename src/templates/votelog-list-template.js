@@ -1,5 +1,5 @@
 import React from "react"
-
+import moment from "moment"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
@@ -21,10 +21,8 @@ export const query = graphql`
           fields {
             slug
           }
-          legal_title
-          en {
-            legal_title
-          }
+          title
+          description_th
           passed
           approve
           disprove
@@ -70,7 +68,9 @@ const VoteLogPage = ({
   pageContext,
 }) => {
   const { currentPage, numPages } = pageContext
-  const votelogs = allVotelogYaml.edges
+  const votelogs = allVotelogYaml.edges.sort(({ node: a }, { node: b }) =>
+    moment(b.vote_date).diff(moment(a.vote_date), "days")
+  )
 
   return (
     <Layout>
@@ -100,35 +100,14 @@ const VoteLogPage = ({
             บันทึกการประชุมและการลงมติ
           </h1>
           <p css={{ padding: "0 8rem", color: "#eeeeee" }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            นับตั้งแต่เปิดประชุมสภาหลังการเลือกตั้ง
+            มีการประชุมสภามาแล้วหลายต่อหลายครั้ง แต่ละครั้งก็มีหลายวาระ
+            และใช้ระยะเวลาในการประชุมยาวนาน
+            จนบางทีเราก็ตามไม่ทันว่ามีการลงมติครั้งสำคัญเกิดขึ้นในการประชุมครั้งไหนในสภาบ้าง?
+            ใครยกมือสนับสนุนหรือคัดค้านมติไหน?
+            เราจึงรวบรวบการลงมติครั้งสำคัญมาให้ พร้อมอธิบายสรุปแบบเข้าใจง่ายๆ
+            ว่าสิ่งที่ผู้แทนแต่ละคนสนับสนุนหรือคัดค้านคืออะไร
           </p>
-          <div
-            css={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "baseline",
-              paddingTop: "4rem",
-            }}
-          >
-            <Img
-              fixed={updateImage.childImageSharp.fixed}
-              css={{ width: "17px", height: "20px", marginRight: "0.8rem" }}
-            ></Img>
-            <h2
-              css={{
-                fontSize: "2.4rem",
-                color: "#eeeeee",
-              }}
-            >
-              Update : 30.10.2019
-            </h2>
-          </div>
         </div>
       </section>
       <section>
@@ -159,8 +138,8 @@ const VoteLogPage = ({
                   margin: "0 1rem 2rem 1rem",
                   border: "2px solid var(--cl-black)",
                 }}
-                legal_title={node.legal_title}
-                legal_title_en={node.en.legal_title}
+                title={node.title}
+                description_th={node.description_th}
                 passed={node.passed}
                 approve={node.approve}
                 disprove={node.disprove}

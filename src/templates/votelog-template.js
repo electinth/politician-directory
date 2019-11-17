@@ -2,10 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { css, Global } from "@emotion/core"
+import _ from "lodash"
 
+import ExternalLink from "../components/externalLink"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import VoterList from "../components/voterList"
+import Waffle from "../components/waffle"
 
 export const query = graphql`
   query($slug: String!) {
@@ -13,12 +16,20 @@ export const query = graphql`
       id
       title
       legal_title
-      vote_date(formatString: "D MMM YY")
+      vote_date(formatString: "DD.M.YYYY")
       description_th
       reference
+      document {
+        title
+        link
+      }
       meeting
       passed
       total_voter
+      approve
+      disprove
+      abstained
+      absent
     }
 
     voteRecordIcon: file(
@@ -30,9 +41,51 @@ export const query = graphql`
         }
       }
     }
+
+    allPeopleVoteYaml {
+      nodes {
+        id
+        title
+        name
+        lastname
+        votelog {
+          key
+          value
+        }
+      }
+    }
+    allPeopleYaml {
+      nodes {
+        id
+        is_senator
+        party
+        fields {
+          slug
+        }
+      }
+    }
   }
 `
-const VotelogPage = ({ data: { votelogYaml, voteRecordIcon } }) => {
+
+const filterVote = (combined, key, value) =>
+  _.filter(combined, o => {
+    return _.find(o.votelog, p => p.key === key).value === value
+  })
+
+const VotelogPage = ({
+  data: { votelogYaml, voteRecordIcon, allPeopleVoteYaml, allPeopleYaml },
+}) => {
+  let combined = []
+  allPeopleVoteYaml.nodes.forEach(votelog => {
+    const matched = _.find(allPeopleYaml.nodes, ["id", votelog.id])
+    combined.push({ ...votelog, ...matched })
+  })
+  const agree = filterVote(combined, votelogYaml.id, "1")
+  const disagree = filterVote(combined, votelogYaml.id, "2")
+  const abstention = filterVote(combined, votelogYaml.id, "3")
+  const absent = filterVote(combined, votelogYaml.id, "4")
+  const peopleByVote = [agree, disagree, abstention, absent]
+
   return (
     <Layout
       pageStyles={{
@@ -155,16 +208,102 @@ const VotelogPage = ({ data: { votelogYaml, voteRecordIcon } }) => {
         </span>
       </section>
       <section>
+        <Waffle
+          // key="parliament"
+          data={[
+            agree.map(p => ({ node: p })),
+            disagree.map(p => ({ node: p })),
+            abstention.map(p => ({ node: p })),
+            absent.map(p => ({ node: p })),
+          ]}
+          colors={[
+            `var(--cl-vote-yes)`,
+            `var(--cl-vote-no)`,
+            `var(--cl-vote-abstained)`,
+            `var(--cl-vote-abstained)`,
+          ]}
+        />
+      </section>
+      <section
+        css={css`
+          font-size: 2rem;
+        `}
+      >
         <h1>เนื้อหา</h1>
+        <p>{votelogYaml.description_th}</p>
         <p
           css={css`
-            font-size: 2rem;
+            font-weight: bold;
+            padding-top: 2em;
           `}
         >
-          {votelogYaml.description_th}
+          อ้างอิง
         </p>
+        <ExternalLink
+          href={votelogYaml.reference}
+          css={css`
+            :hover {
+              color: var(--cl-black);
+            }
+          `}
+        >
+          <p>{votelogYaml.reference}</p>
+        </ExternalLink>
+        <p
+          css={css`
+            font-weight: bold;
+            padding-top: 2em;
+          `}
+        >
+          เอกสารการลงมติ
+        </p>
+        <button
+          css={css`
+            display: flex;
+            flex-flow: row wrap;
+            padding: 0;
+            border: none;
+            background: none;
+            width: 100%;
+            border-radius: 5px;
+            pointer-events: none;
+            &:focus {
+              outline: none;
+            }
+            text-align: left;
+          `}
+        >
+          {votelogYaml.document.map(doc => (
+            <ExternalLink
+              href={doc.link}
+              css={css`
+                color: var(--cl-black);
+                :hover {
+                  color: var(--cl-black);
+                }
+              `}
+            >
+              <span
+                css={css`
+                  font-family: var(--ff-title);
+                  font-size: 2.4rem;
+                  line-height: 3rem;
+                  cursor: pointer;
+                  border-radius: 5px;
+                  padding: 1rem 1rem;
+                  margin-right: 1rem;
+                  display: block;
+                  background-color: var(--cl-pink);
+                  pointer-events: auto;
+                `}
+              >
+                {doc.title}
+              </span>
+            </ExternalLink>
+          ))}
+        </button>
       </section>
-      <VoterList votelogKey={votelogYaml.id} />
+      <VoterList data={[agree, disagree, abstention, absent]} />
     </Layout>
   )
 }
