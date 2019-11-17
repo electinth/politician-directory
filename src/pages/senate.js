@@ -3,20 +3,36 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "./cabinet.css"
+import { loadCategoryStats } from "../utils"
+import StackedBarChart from "../components/stackedBarChart"
+import { OfficialWebsite, InOfficeDate } from "../components/profile"
 import PeopleCard from "../components/peopleCard"
 import PeopleCardMini from "../components/peopleCardMini"
-import "./cabinet.css"
-import {
-  calculateBackground,
-  combineCategory,
-  padCategory,
-  birthdayToAgeHistogram,
-} from "../utils"
-import StackedBarChart from "../components/stackedBarChart"
 
 export const query = graphql`
   query {
-    allPeopleYaml(filter: { is_senator: { eq: true } }) {
+    senate: partyYaml(party_type: { eq: "สว" }, is_active: { eq: true }) {
+      name
+      party_ordinal
+      description
+      established_date
+      dissolved_date
+      total_member
+      speaker
+      first_deputy_speaker
+      second_deputy_speaker
+      website
+      facebook
+      twitter
+      email
+      phone
+      ratchakitcha
+      is_active
+    }
+    allPeopleYaml(
+      filter: { is_senator: { eq: true }, is_active: { eq: true } }
+    ) {
       totalCount
       edges {
         node {
@@ -31,51 +47,45 @@ export const query = graphql`
         }
       }
     }
-    gender: allPeopleYaml(filter: { is_senator: { eq: true } }) {
+    gender: allPeopleYaml(
+      filter: { is_senator: { eq: true }, is_active: { eq: true } }
+    ) {
       group(field: gender) {
         value: totalCount
         name: fieldValue
       }
     }
-    education: allPeopleYaml(filter: { is_senator: { eq: true } }) {
+    education: allPeopleYaml(
+      filter: { is_senator: { eq: true }, is_active: { eq: true } }
+    ) {
       group(field: education) {
         value: totalCount
         name: fieldValue
       }
     }
-    occupation_group: allPeopleYaml(filter: { is_senator: { eq: true } }) {
+    occupation_group: allPeopleYaml(
+      filter: { is_senator: { eq: true }, is_active: { eq: true } }
+    ) {
       group(field: occupation_group) {
         value: totalCount
         name: fieldValue
       }
     }
-    age: allPeopleYaml(filter: { is_senator: { eq: true } }) {
+    age: allPeopleYaml(
+      filter: { is_senator: { eq: true }, is_active: { eq: true } }
+    ) {
       edges {
         node {
           birthdate
         }
       }
     }
-    keyMembers: allPeopleYaml(filter: { id: { in: ["644", "737", "707"] } }) {
-      edges {
-        node {
-          id
-          title
-          name
-          lastname
-          party
-          party_group
-          mp_type
-          mp_province
-          mp_zone
-          mp_list
-        }
-      }
-    }
   }
 `
 
-const cssH1 = { fontSize: "4.8rem" }
+const cssH1 = {
+  fontSize: "4rem",
+}
 
 const cssSection = {
   paddingTop: "3rem",
@@ -92,34 +102,31 @@ const cssEngTitle = {
   margin: "1.5rem 0 1.2rem 0",
 }
 
-const cssPageP = {
-  fontSize: "1.7rem",
-}
+const cssPageP = {}
 
 const cssBarChart = {
   margin: "1rem 0",
 }
 
-const cssLinkBox = {
-  fontSize: "1.7rem",
-  fontFamily: "var(--ff-title)",
-  fontWeight: "bold",
-  border: "1px solid var(--cl-black)",
-  marginRight: "1rem",
-  padding: "0 1rem",
-  textDecoration: "none",
-  color: "var(--cl-black)",
-  "&:hover": {
-    textDecoration: "none",
-  },
-}
+const SenatePage = props => {
+  const { senate, ...data } = props.data
 
-const SenatePage = ({ data }) => {
   const [memberFilter, setMemberFilter] = useState({})
   const [members] = useState(data.allPeopleYaml.edges.map(e => e.node))
   const selectMemberFilter = filter => () => setMemberFilter(filter)
 
-  const getSortedMembers = () => {
+  const countMembers = filter => {
+    // filter member by senator_method
+    let selectedMembers = members.filter(
+      member =>
+        !filter.senator_method ||
+        member.senator_method === filter.senator_method
+    )
+    return selectedMembers.length
+  }
+
+  const getSortedMembers = filter => {
+    filter = filter || memberFilter
     // filter member by senator_method
     let selectedMembers = members.filter(
       member =>
@@ -135,65 +142,77 @@ const SenatePage = ({ data }) => {
     return selectedMembers
   }
 
-  let education = data.education.group
-  education = calculateBackground(education)
+  const tabList = [
+    {
+      id: "ทั้งหมด",
+      label: "ทั้งหมด",
+      count: countMembers({}),
+      filter: {},
+      getClass: memberFilter => (!memberFilter.senator_method ? "active" : ""),
+    },
+    {
+      id: "โดยตำแหน่ง",
+      label: "โดยตำแหน่ง",
+      count: countMembers({ senator_method: "โดยตำแหน่ง" }),
+      filter: { senator_method: "โดยตำแหน่ง" },
+      getClass: memberFilter =>
+        memberFilter.senator_method === "โดยตำแหน่ง" ? "active" : "",
+    },
+    {
+      id: "เลือกกันเอง",
+      label: "สรรหา",
+      count: countMembers({ senator_method: "เลือกกันเอง" }),
+      filter: { senator_method: "เลือกกันเอง" },
+      getClass: memberFilter =>
+        memberFilter.senator_method === "เลือกกันเอง" ? "active" : "",
+    },
+    {
+      id: "เลือกโดย คสช.",
+      label: "เลือกโดย คสช.",
+      count: countMembers({ senator_method: "เลือกโดย คสช." }),
+      filter: { senator_method: "เลือกโดย คสช." },
+      getClass: memberFilter =>
+        memberFilter.senator_method === "เลือกโดย คสช." ? "active" : "",
+    },
+  ]
 
-  let occupation_group = data.occupation_group.group
-  occupation_group = padCategory(occupation_group)
-  occupation_group = combineCategory(occupation_group)
-  occupation_group = calculateBackground(occupation_group)
+  const { gender, age, education, occupation_group } = loadCategoryStats(data)
 
-  let gender = data.gender.group
-  gender = calculateBackground(gender)
-
-  let birthdate = data.age.edges
-  const ageBin = [39, 52, 65]
-  let age = birthdayToAgeHistogram(birthdate, ageBin)
-  age = calculateBackground(age)
-
-  let keyMembers = data.keyMembers.edges
-  const newOrder = [0, 2, 1]
-  keyMembers = newOrder.map(i => keyMembers[i])
-  let keyPosition = ["ประธาน", "รองประธานคนที่ 1", "รองประธานคนที่ 2"]
-  let k = []
-  keyMembers.map((x, idx) => {
-    let aPerson = x.node
-    aPerson.pos = keyPosition[idx]
-    k.push(aPerson)
-    return x
+  const keyMembers = [
+    {
+      name: "speaker",
+      label: "ประธานสภา",
+    },
+    {
+      name: "first_deputy_speaker",
+      label: "รองประธานสภา คนที่ 1",
+    },
+    {
+      name: "second_deputy_speaker",
+      label: "รองประธานสภา คนที่ 2",
+    },
+  ].map((keyPos, id) => {
+    const [name, lastname] = senate[keyPos.name].split(" ")
+    const position = keyPos.label
+    return { id, name, lastname, position }
   })
-  keyMembers = k
 
   return (
-    <Layout>
+    <Layout pageStyles={{ background: "#edf087" }}>
       <SEO title="สมาชิกวุฒิสภา" />
-      <section className="section" css={{ background: "#EDF087" }}>
+      <section className="section">
         <div className="book">
           <div className="page leftPage">
-            <h1 css={{ ...cssH1, margin: "1rem 0 0 0" }}>สมาชิกวุฒิสภา</h1>
+            <h1 css={{ ...cssH1, margin: "1rem 0 0 0" }}>
+              {senate.name} ชุดที่ {senate.party_ordinal}
+            </h1>
             <h2 style={{ ...cssEngTitle }}>Senate</h2>
             <h2 style={{ ...cssEngTitle }}>About</h2>
-            <p style={{ ...cssPageP }}>
-              เป็นคณะบุคคลที่ทำหน้าที่บริหารราชการแผ่นดิน โดย ครม. ชุดนี้
-              เกิดจากการนำของพรรคพลังประชารัฐ ร่วมกับพรรคการเมืองอีก 19
-              พรรคเสนอชื่อพลเอก ประยุทธ์ จันทร์โอชา ซึ่งเคยดำรงตำแหน่งนายกฯ
-              และหัวหน้าคสช. มาเป็นเวลา 5 ปี เป็นนายกรัฐมนตรีต่ออีกสมัย ทำให้
-              ครม. ชุดนี้มีอีกชื่อเรียกว่าคณะรัฐมนตรีประยุทธ์ 2
-            </p>
-            <h2 style={{ ...cssEngTitle }}>Official Website</h2>
-            <div style={{ display: "block" }}>
-              <a css={{ ...cssLinkBox }} href="https://www.thaigov.go.th/">
-                Website
-              </a>
-              <a
-                css={{ ...cssLinkBox }}
-                href="https://www.facebook.com/%E0%B8%AA%E0%B8%B3%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%B2%E0%B8%98%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B8%93%E0%B8%B0%E0%B8%A3%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5-136289490069836/"
-              >
-                Facebook
-              </a>
-            </div>
-            <h2 style={{ ...cssEngTitle }}>Since</h2>
-            <p>01.04.2554</p>
+            <p css={{ ...cssPageP }}>{senate.description}</p>
+            <h2 css={{ ...cssEngTitle }}>Official Website</h2>
+            <OfficialWebsite {...senate}></OfficialWebsite>
+            <h2 css={{ ...cssEngTitle }}>In Office</h2>
+            <InOfficeDate {...senate}></InOfficeDate>
             <h2 style={{ ...cssEngTitle }}>Key Members</h2>
             {keyMembers.map(x => {
               return (
@@ -207,7 +226,7 @@ const SenatePage = ({ data }) => {
             <h2
               style={{
                 ...cssEngTitle,
-                marginTop: "3.5rem",
+                marginTop: "11.1rem",
                 marginBottom: "0rem",
               }}
             >
@@ -220,7 +239,7 @@ const SenatePage = ({ data }) => {
                 fontWeight: "normal",
               }}
             >
-              จำนวนสมาชิกวุฒิสภา 500 คน
+              สมาชิกวุฒิสภาจำนวน {data.allPeopleYaml.totalCount} คน
             </h2>
             <div css={{ width: "100%" }}>
               <div style={{ ...cssBarChart }}>
@@ -238,7 +257,6 @@ const SenatePage = ({ data }) => {
             </div>
           </div>
         </div>
-        <h2 className="lastUpdate">Last Update: 30.10.2019</h2>
       </section>
       <section css={{ ...cssSection, background: "var(--cl-white)" }}>
         <div className="container">
@@ -263,8 +281,9 @@ const SenatePage = ({ data }) => {
               textAlign: "center",
               "> li": {
                 display: "inline-block",
-                fontSize: "3.2rem",
-                padding: "1rem 2rem",
+                fontSize: "2.4rem",
+                padding: "1rem 0 0",
+                margin: "0 1rem",
                 cursor: "pointer",
                 "&.active": {
                   borderBottom: "8px solid var(--cl-black)",
@@ -272,44 +291,16 @@ const SenatePage = ({ data }) => {
               },
             }}
           >
-            <li
-              className={[!memberFilter.senator_method ? "active" : ""].join(
-                " "
-              )}
-              role="tab"
-              onClick={selectMemberFilter({})}
-            >
-              ทั้งหมด
-            </li>
-            <li
-              className={[
-                memberFilter.senator_method === "โดยตำแหน่ง" ? "active" : "",
-              ].join(" ")}
-              role="tab"
-              onClick={() => {
-                setMemberFilter({ senator_method: "โดยตำแหน่ง" })
-              }}
-            >
-              โดยตำแหน่ง
-            </li>
-            <li
-              className={[
-                memberFilter.senator_method === "เลือกกันเอง" ? "active" : "",
-              ].join(" ")}
-              role="tab"
-              onClick={selectMemberFilter({ senator_method: "เลือกกันเอง" })}
-            >
-              สรรหา
-            </li>
-            <li
-              className={[
-                memberFilter.senator_method === "เลือกโดย คสช." ? "active" : "",
-              ].join(" ")}
-              role="tab"
-              onClick={selectMemberFilter({ senator_method: "เลือกโดย คสช." })}
-            >
-              เลือกโดย คสช.
-            </li>
+            {tabList.map(tab => (
+              <li
+                key={tab.id}
+                className={[tab.getClass(memberFilter)].join(" ")}
+                role="tab"
+                onClick={selectMemberFilter(tab.filter)}
+              >
+                {tab.label} ({tab.count})
+              </li>
+            ))}
           </ul>
           <div
             css={{

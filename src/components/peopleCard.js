@@ -63,7 +63,7 @@ const PeopleCard = ({ type, ...props }) => {
       to={`/people/${props.name}-${props.lastname}`}
       key={props.id}
       css={{
-        display: "block",
+        display: "flex",
         flex: "1 1 360px",
         padding: "4rem",
         paddingRight: "2rem",
@@ -81,25 +81,31 @@ const PeopleCard = ({ type, ...props }) => {
         },
       }}
     >
-      <div>
-        <div
-          css={{
-            borderRadius: 84,
-            width: 84,
-            height: 84,
-            float: "left",
-            marginBottom: 0,
-            marginRight: "2rem",
-            border: "2px solid var(--cl-black)",
-            background: "var(--cl-gray-2) no-repeat",
-            backgroundSize: "cover",
-          }}
-          style={{
-            backgroundImage: `url(${politicianPicture(props)})`,
-          }}
-        ></div>
+      <div
+        css={{
+          borderRadius: 84,
+          width: 84,
+          height: 84,
+          float: "left",
+          marginBottom: 0,
+          marginRight: "2rem",
+          border: "2px solid var(--cl-black)",
+          background: "var(--cl-gray-2) no-repeat",
+          backgroundSize: "cover",
+        }}
+        style={{
+          backgroundImage: `url(${politicianPicture(props)})`,
+        }}
+      ></div>
+      <div
+        css={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+      >
+        {peopleInfo}
       </div>
-      <div>{peopleInfo}</div>
     </Link>
   )
 }

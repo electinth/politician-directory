@@ -12,7 +12,7 @@ h2 {
 .book {
   display: flex;
   width: 962px;
-  height: 665px;
+  min-height: 665px;
   margin: 0 auto 5rem auto;
   background-color: var(--cl-white);
   border-radius: 1rem;
@@ -37,7 +37,7 @@ h2 {
 .peopleCard {
   width: 50%;
   display: inline-block;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 .lastUpdate {
@@ -56,7 +56,6 @@ h2 {
   .book {
     width: 100%;
     height: auto;
-    margin: 0;
     padding-bottom: 2rem;
     padding-top: 1rem;
   }
@@ -68,7 +67,7 @@ h2 {
   .peopleCard {
     width: 100%;
     display: block;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
 
   .leftPage {

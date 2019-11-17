@@ -165,3 +165,85 @@ export function birthdayToAgeHistogram(birthdate, ageBin = [39, 55, 74]) {
   })
   return age
 }
+
+/**
+ * Template is an ordered list of columns to sort and set color
+ * template = [
+ *   { name: 'Male', label: 'เพศชาย', background: 'blue' },
+ *   { name: 'Female', label: 'เพศหญฺิง', background: 'red' },
+ * ]
+ *
+ * Where
+ * - `name` is a group value to match
+ * - `label`, if specified, use this value as a label name instead of value of `name`
+ * - `background` set color for this stack
+ * @param {*} data
+ * @param {Array} template
+ */
+export function arrangeData(data, template, options = {}) {
+  options = {
+    valueKey: "name",
+    ...options,
+  }
+  return _.compact(
+    template.map((col, i) => {
+      const item = _.find(data, [options.valueKey, col.name])
+      if (!item) return null
+      return {
+        ...item,
+        name: col.label || col.name,
+        background: col.background,
+      }
+    })
+  )
+}
+
+export function loadCategoryStats(data) {
+  let education = [...data.education.group]
+  education = arrangeData(education, [
+    { name: "ต่ำกว่าปริญญาตรี", background: "var(--cl-theme-1)" },
+    { name: "สถาบันทหาร", background: "var(--cl-theme-2)" },
+    { name: "ปริญญาตรี", background: "var(--cl-theme-3)" },
+    { name: "ปริญญาโท", background: "var(--cl-theme-4)" },
+    { name: "ปริญญาเอก", background: "var(--cl-theme-5)" },
+    { name: "ไม่พบข้อมูล", background: "var(--cl-theme-unknown)" },
+  ])
+
+  let occupation_group = [...data.occupation_group.group]
+  occupation_group = padCategory(occupation_group)
+  occupation_group = combineCategory(occupation_group)
+  const main_occupation_group = occupation_group.filter(
+    oc => !["อื่นๆ", "ไม่พบข้อมูล"].includes(oc.name)
+  )
+  occupation_group = arrangeData(occupation_group, [
+    ...main_occupation_group.slice(0, 3).map((group, i) => ({
+      name: group.name,
+      background: `var(--cl-theme-${2 + i})`,
+    })),
+    { name: "อื่นๆ", background: "var(--cl-theme-5)" },
+    { name: "ไม่พบข้อมูล", background: "var(--cl-theme-unknown)" },
+  ])
+
+  let gender = [...data.gender.group]
+  gender = arrangeData(gender, [
+    { name: "ชาย", background: "var(--cl-theme-2)" },
+    { name: "หญิง", background: "var(--cl-theme-5)" },
+    { name: "ไม่พบข้อมูล", background: "var(--cl-theme-unknown)" },
+  ])
+
+  let birthdate = [...data.age.edges]
+  let age = birthdayToAgeHistogram(birthdate)
+  age = arrangeData(age, [
+    { name: "25-38 ปี", background: "var(--cl-theme-2)" },
+    { name: "39-54 ปี", background: "var(--cl-theme-3)" },
+    { name: "55-73 ปี", background: "var(--cl-theme-4)" },
+    { name: "74 ปีขึ้นไป", background: "var(--cl-theme-5)" },
+    { name: "ไม่พบข้อมูล", background: "var(--cl-theme-unknown)" },
+  ])
+  return {
+    gender,
+    age,
+    education,
+    occupation_group,
+  }
+}
