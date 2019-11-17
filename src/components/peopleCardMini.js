@@ -46,7 +46,7 @@ const PeopleCardMini = props => {
               height: 41,
               float: "left",
               marginBottom: 0,
-              marginRight: "2rem",
+              marginRight: "1rem",
               border: "2px solid var(--cl-black)",
               background: "var(--cl-gray-2) no-repeat",
               backgroundSize: "cover",

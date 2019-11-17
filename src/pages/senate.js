@@ -1,14 +1,16 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
+import _ from "lodash"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "./cabinet.css"
 import { loadCategoryStats } from "../utils"
 import StackedBarChart from "../components/stackedBarChart"
 import { OfficialWebsite, InOfficeDate } from "../components/profile"
 import PeopleCardMini from "../components/peopleCardMini"
 import PeopleCard from "../components/peopleCard"
+
+import "../styles/profile-book.css"
 
 export const query = graphql`
   query {
@@ -125,8 +127,7 @@ const SenatePage = props => {
     return selectedMembers.length
   }
 
-  const getSortedMembers = filter => {
-    filter = filter || memberFilter
+  const getSortedMembers = () => {
     // filter member by senator_method
     let selectedMembers = members.filter(
       member =>
@@ -178,24 +179,27 @@ const SenatePage = props => {
 
   const { gender, age, education, occupation_group } = loadCategoryStats(data)
 
-  const keyMembers = [
-    {
-      name: "speaker",
-      label: "ประธานสภา",
-    },
-    {
-      name: "first_deputy_speaker",
-      label: "รองประธานสภา คนที่ 1",
-    },
-    {
-      name: "second_deputy_speaker",
-      label: "รองประธานสภา คนที่ 2",
-    },
-  ].map((keyPos, id) => {
-    const [name, lastname] = senate[keyPos.name].split(" ")
-    const position = keyPos.label
-    return { id, name, lastname, position }
-  })
+  const keyMembers = _.compact(
+    [
+      {
+        name: "speaker",
+        label: "ประธานสภา",
+      },
+      {
+        name: "first_deputy_speaker",
+        label: "รองประธานสภา คนที่ 1",
+      },
+      {
+        name: "second_deputy_speaker",
+        label: "รองประธานสภา คนที่ 2",
+      },
+    ].map((keyPos, id) => {
+      if (!senate[keyPos.name]) return null
+      const [name, lastname] = senate[keyPos.name].split(" ")
+      const position = keyPos.label
+      return { id, name, lastname, position }
+    })
+  )
 
   return (
     <Layout pageStyles={{ background: "#edf087" }}>

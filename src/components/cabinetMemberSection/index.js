@@ -11,9 +11,10 @@ const CabinetMemberSection = () => {
         edges {
           node {
             id
-            cabinet_position
-            lastname
+            title
             name
+            lastname
+            cabinet_position
             party
             party_group
             mp_type

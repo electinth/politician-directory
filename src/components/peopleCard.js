@@ -1,50 +1,104 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { useState } from "react"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
 import { politicianPicture } from "../utils"
 
-const MPInfo = props => (
-  <div>
+export const ProfilePicture = props => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(
+        relativePath: { eq: "images/people/placeholder@3x.png" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 84) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  const [imageStyle, setImageStyle] = useState({ display: "display" })
+  const [placeholderStyle, setPlaceholderStyle] = useState({ display: "none" })
+
+  const onImageError = e => {
+    setImageStyle({ display: "none" })
+    setPlaceholderStyle({ display: "block" })
+  }
+
+  return (
     <div
       css={{
-        fontFamily: "var(--ff-title)",
-        fontSize: "2.4rem",
+        flex: "0 0 84px",
+        borderRadius: 84,
+        width: 84,
+        height: 84,
+        float: "left",
+        marginBottom: 0,
+        marginRight: "2rem",
+        border: "2px solid var(--cl-black)",
+        background: "var(--cl-gray-2) no-repeat",
+        backgroundSize: "cover",
+        overflow: "hidden",
       }}
+      style={
+        {
+          // backgroundImage: `url(${politicianPicture(props)})`,
+        }
+      }
     >
-      {`${props.title} ${props.name} ${props.lastname}`}
+      <img
+        src={politicianPicture(props)}
+        alt={`${props.title} ${props.name} ${props.lastname}`}
+        css={{ width: "100%" }}
+        style={imageStyle}
+        onError={onImageError}
+      ></img>
+      <Img
+        fluid={data.placeholderImage.childImageSharp.fluid}
+        style={placeholderStyle}
+      />
     </div>
+  )
+}
+
+const cssName = {
+  fontFamily: "var(--ff-title)",
+  fontSize: "2.4rem",
+  lineHeight: 1.2,
+  marginBottom: "0.5rem",
+}
+
+const MPInfo = props => (
+  <div>
+    <div css={cssName}>{`${props.title} ${props.name} ${props.lastname}`}</div>
     <div>
       {props.mp_type === "บัญชีรายชื่อ"
-        ? `ส.ส. ${props.mp_type} ลำดับที่ ${props.mp_list}`
-        : `ส.ส. ${props.mp_type} จังหวัด${props.mp_province} เขต ${props.mp_zone}`}
+        ? `ส.ส. ${props.mp_type}` +
+          (props.mp_list ? ` ลำดับที่ ${props.mp_list}` : ``)
+        : `ส.ส. ${props.mp_type} จังหวัด${props.mp_province} เขต ${props.mp_zone}`}{" "}
+      พรรค{`${props.party}`}
     </div>
-    <div>พรรค{`${props.party}`}</div>
   </div>
 )
 
 const SenatorInfo = props => (
   <div>
-    <div
-      css={{
-        fontFamily: "var(--ff-title)",
-        fontSize: "2.4rem",
-      }}
-    >
-      {`${props.title} ${props.name} ${props.lastname}`}
-    </div>
+    <div css={cssName}>{`${props.title} ${props.name} ${props.lastname}`}</div>
   </div>
 )
 
+const memberDetailsCss = {
+  fontSize: "1.8rem",
+  fontFamily: "var(--ff-text)",
+}
+
 const CabinetInfo = props => (
   <div>
-    <div
-      css={{
-        fontFamily: "var(--ff-title)",
-        fontSize: "2.4rem",
-      }}
-    >
-      {`${props.title} ${props.name} ${props.lastname}`}
-    </div>
+    <div css={cssName}>{`${props.title} ${props.name} ${props.lastname}`}</div>
+    <div css={memberDetailsCss}>{props.cabinet_position}</div>
+    {props.party ? <div css={memberDetailsCss}>พรรค{props.party}</div> : null}
   </div>
 )
 
@@ -64,7 +118,7 @@ const PeopleCard = ({ type, ...props }) => {
       key={props.id}
       css={{
         display: "flex",
-        flex: "1 1 360px",
+        flex: "0 1 455px",
         padding: "4rem",
         paddingRight: "2rem",
         border: "1px solid var(--cl-gray-2)",
@@ -80,23 +134,9 @@ const PeopleCard = ({ type, ...props }) => {
           textDecoration: "none",
         },
       }}
+      style={{ ...(props.style || {}) }}
     >
-      <div
-        css={{
-          borderRadius: 84,
-          width: 84,
-          height: 84,
-          float: "left",
-          marginBottom: 0,
-          marginRight: "2rem",
-          border: "2px solid var(--cl-black)",
-          background: "var(--cl-gray-2) no-repeat",
-          backgroundSize: "cover",
-        }}
-        style={{
-          backgroundImage: `url(${politicianPicture(props)})`,
-        }}
-      ></div>
+      <ProfilePicture {...props}></ProfilePicture>
       <div
         css={{
           display: "flex",

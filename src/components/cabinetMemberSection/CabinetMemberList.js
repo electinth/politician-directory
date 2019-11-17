@@ -1,6 +1,6 @@
 import React from "react"
 
-import { CabinetMember } from "./CabinetMember"
+import PeopleCard from "../peopleCard"
 import { sortThaiLocale } from "../../utils"
 
 export const CabinetMemberList = ({ members, title }) => {
@@ -12,7 +12,18 @@ export const CabinetMemberList = ({ members, title }) => {
       .filter(pos => pos.indexOf(title) >= 0)
       .join(", ")
     return (
-      <CabinetMember {...member} cabinet_position={position} key={member.id} />
+      <div>
+        <PeopleCard
+          key={member.id}
+          {...member}
+          cabinet_position={position}
+          type="cabinet"
+          style={{
+            width: "47rem",
+            height: "15.5rem",
+          }}
+        ></PeopleCard>
+      </div>
     )
   })
 
