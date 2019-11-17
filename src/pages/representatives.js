@@ -1,75 +1,87 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { partyLogo } from "../utils"
-import PeopleCardMini from "../components/peopleCardMini"
-import "./cabinet.css"
-import {
-  calculateBackground,
-  combineCategory,
-  padCategory,
-  birthdayToAgeHistogram,
-} from "../utils"
+import { loadCategoryStats } from "../utils"
 import StackedBarChart from "../components/stackedBarChart"
+import { OfficialWebsite, InOfficeDate } from "../components/profile"
+import PeopleCardMini from "../components/peopleCardMini"
 import PartyGroupList from "../components/partyGroupList"
+
+import "./cabinet.css"
 
 export const query = graphql`
   query {
-    mp_type: allPeopleYaml(filter: { is_mp: { eq: true } }) {
+    house: partyYaml(party_type: { eq: "สส" }, is_active: { eq: true }) {
+      name
+      party_ordinal
+      description
+      established_date
+      dissolved_date
+      total_member
+      speaker
+      first_deputy_speaker
+      second_deputy_speaker
+      opposition_leader
+      website
+      facebook
+      twitter
+      email
+      phone
+      ratchakitcha
+      is_active
+    }
+    allPeopleYaml(filter: { is_mp: { eq: true }, is_active: { eq: true } }) {
+      totalCount
+    }
+    mp_type: allPeopleYaml(
+      filter: { is_mp: { eq: true }, is_active: { eq: true } }
+    ) {
       group(field: mp_type) {
         value: totalCount
         name: fieldValue
       }
     }
-    gender: allPeopleYaml(filter: { is_mp: { eq: true } }) {
+    gender: allPeopleYaml(
+      filter: { is_mp: { eq: true }, is_active: { eq: true } }
+    ) {
       group(field: gender) {
         value: totalCount
         name: fieldValue
       }
     }
-    education: allPeopleYaml(filter: { is_mp: { eq: true } }) {
+    education: allPeopleYaml(
+      filter: { is_mp: { eq: true }, is_active: { eq: true } }
+    ) {
       group(field: education) {
         value: totalCount
         name: fieldValue
       }
     }
-    occupation_group: allPeopleYaml(filter: { is_mp: { eq: true } }) {
+    occupation_group: allPeopleYaml(
+      filter: { is_mp: { eq: true }, is_active: { eq: true } }
+    ) {
       group(field: occupation_group) {
         value: totalCount
         name: fieldValue
       }
     }
-    age: allPeopleYaml(filter: { is_mp: { eq: true } }) {
+    age: allPeopleYaml(
+      filter: { is_mp: { eq: true }, is_active: { eq: true } }
+    ) {
       edges {
         node {
           birthdate
         }
       }
     }
-    keyMembers: allPeopleYaml(
-      filter: { id: { in: ["105", "707", "442", "408"] } }
-    ) {
-      edges {
-        node {
-          id
-          title
-          name
-          lastname
-          party
-          party_group
-          mp_type
-          mp_province
-          mp_zone
-          mp_list
-        }
-      }
-    }
   }
 `
 
-const cssH1 = { fontSize: "4.8rem" }
+const cssH1 = {
+  fontSize: "4rem",
+}
 
 const cssSection = {
   paddingTop: "3rem",
@@ -86,106 +98,66 @@ const cssEngTitle = {
   margin: "1.5rem 0 1.2rem 0",
 }
 
-const cssPageP = {
-  fontSize: "1.7rem",
-}
+const cssPageP = {}
 
 const cssBarChart = {
   margin: "1rem 0",
 }
 
-const cssLinkBox = {
-  fontSize: "1.7rem",
-  fontFamily: "var(--ff-title)",
-  fontWeight: "bold",
-  border: "1px solid var(--cl-black)",
-  marginRight: "1rem",
-  padding: "0 1rem",
-  textDecoration: "none",
-  color: "var(--cl-black)",
-  "&:hover": {
-    textDecoration: "none",
-  },
-}
+const RepresentativesPage = props => {
+  const { house, ...data } = props.data
 
-const RepresentativesPage = ({ data }) => {
-  let mp_type = data.mp_type.group
-  mp_type = calculateBackground(mp_type)
+  const {
+    mp_type,
+    gender,
+    age,
+    education,
+    occupation_group,
+  } = loadCategoryStats(data)
 
-  let education = data.education.group
-  education = calculateBackground(education)
-
-  let occupation_group = data.occupation_group.group
-  occupation_group = padCategory(occupation_group)
-  occupation_group = combineCategory(occupation_group)
-  occupation_group = calculateBackground(occupation_group)
-
-  let gender = data.gender.group
-  gender = calculateBackground(gender)
-
-  let birthdate = data.age.edges
-  const ageBin = [39, 52, 65]
-  let age = birthdayToAgeHistogram(birthdate, ageBin)
-  age = calculateBackground(age)
-
-  let keyMembers = data.keyMembers.edges
-  const newOrder = [0, 2, 3, 1]
-  keyMembers = newOrder.map(i => keyMembers[i])
-  let keyPosition = [
-    "ประธาน",
-    "รองประธานคนที่ 1",
-    "รองประธานคนที่ 2",
-    "ผู้นำฝ่ายค้าน",
-  ]
-  let k = []
-  keyMembers.map((x, idx) => {
-    let aPerson = x.node
-    aPerson.pos = keyPosition[idx]
-    k.push(aPerson)
-    return x
+  const keyMembers = [
+    {
+      name: "speaker",
+      label: "ประธานสภา",
+    },
+    {
+      name: "first_deputy_speaker",
+      label: "รองประธานสภา คนที่ 1",
+    },
+    {
+      name: "second_deputy_speaker",
+      label: "รองประธานสภา คนที่ 2",
+    },
+    {
+      name: "opposition_leader",
+      label: "ผู้นำฝ่ายค้าน",
+    },
+  ].map((keyPos, id) => {
+    const [name, lastname] = house[keyPos.name].split(" ")
+    const position = keyPos.label
+    return { id, name, lastname, position }
   })
-  keyMembers = k
 
   return (
-    <Layout>
+    <Layout pageStyles={{ background: "#eeeeee" }}>
       <SEO title="สมาชิกสภาผู้แทนราษฎรไทย" />
-      <section className="section" css={{ background: "#eeeeee" }}>
+      <section className="section">
         <div className="book">
           <div className="page leftPage">
-            <h1 css={{ ...cssH1, margin: "1rem 0 0 0", fontSize: "3.6rem" }}>
-              สมาชิกสภาผู้แทนราษฎรไทย ชุดที่ 25
+            <h1 css={{ ...cssH1, margin: "1rem 0 0 0" }}>
+              {house.name} ชุดที่ {house.party_ordinal}
             </h1>
             <h2 style={{ ...cssEngTitle }}>25th House of Representative</h2>
             <h2 style={{ ...cssEngTitle }}>About</h2>
-            <p style={{ ...cssPageP }}>
-              เป็นส่วนหนึ่งของฝ่ายนิติบัญญัติ ที่ได้มาจากการเลือกตั้งทั่วไป พ.ศ.
-              2562 ประกอบด้วยสมาชิก (ส.ส.) 500 คนตามระบบจัดสรรปันส่วนผสม โดย 350
-              คนเป็นผู้แทนเขต และอีก 150 คนมาจากระบบบัญชีรายชื่อ
-              ฝ่ายรัฐบาลเป็นรัฐบาลผสมพรรคพลังประชารัฐ
-              ส่วนฝ่ายค้านคือพรรคเพื่อไทยและพรรคร่วมฝ่ายค้านอีก 6 พรรค
-            </p>
-            <h2 style={{ ...cssEngTitle }}>Official Website</h2>
-            <div style={{ display: "block" }}>
-              <a css={{ ...cssLinkBox }} href="https://www.thaigov.go.th/">
-                Website
-              </a>
-              <a
-                css={{ ...cssLinkBox }}
-                href="https://www.facebook.com/%E0%B8%AA%E0%B8%B3%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%B2%E0%B8%98%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B8%93%E0%B8%B0%E0%B8%A3%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5-136289490069836/"
-              >
-                Facebook
-              </a>
-            </div>
-            <h2 style={{ ...cssEngTitle }}>Since</h2>
-            <p>01.04.2562</p>
+            <p css={{ ...cssPageP }}>{house.description}</p>
+            <h2 css={{ ...cssEngTitle }}>Official Website</h2>
+            <OfficialWebsite {...house}></OfficialWebsite>
+            <h2 css={{ ...cssEngTitle }}>In Office</h2>
+            <InOfficeDate {...house}></InOfficeDate>
             <h2 style={{ ...cssEngTitle }}>Key Members</h2>
             {keyMembers.map(x => {
               return (
-                <div
-                  className="peopleCard"
-                  key={x.id}
-                  style={{ marginBottom: "1rem" }}
-                >
+                <div className="peopleCard" key={x.id}>
                   <PeopleCardMini key={x.id} {...x} />
                 </div>
               )
@@ -195,7 +167,7 @@ const RepresentativesPage = ({ data }) => {
             <h2
               style={{
                 ...cssEngTitle,
-                marginTop: "2.2rem",
+                marginTop: "11.1rem",
                 marginBottom: "0rem",
               }}
             >
@@ -208,7 +180,7 @@ const RepresentativesPage = ({ data }) => {
                 fontWeight: "normal",
               }}
             >
-              จำนวนสมาชิกผู้แทนราษฏร 500 คน
+              สมาชิกสภาผู้แทนราษฏรจำนวน {data.allPeopleYaml.totalCount} คน
             </h2>
             <div css={{ width: "100%" }}>
               <div style={{ ...cssBarChart }}>
@@ -229,7 +201,6 @@ const RepresentativesPage = ({ data }) => {
             </div>
           </div>
         </div>
-        <h2 className="lastUpdate">Last Update: 30.10.2019</h2>
       </section>
       <section css={{ ...cssSection, background: "var(--cl-white)" }}>
         <div className="container">

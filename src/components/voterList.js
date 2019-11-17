@@ -43,15 +43,14 @@ class ListCard extends Component {
                   margin: 2rem 2rem;
                 `}
               >
-                <Link to={member.fields.slug}>
-                  <a
-                    css={css`
-                      font-weight: bold;
-                      color: var(--cl-black);
-                    `}
-                  >
-                    {member.name} {member.lastname}
-                  </a>
+                <Link
+                  to={member.fields.slug}
+                  css={css`
+                    font-weight: bold;
+                    color: var(--cl-black);
+                  `}
+                >
+                  {member.name} {member.lastname}
                 </Link>
 
                 <p>{member.is_senator ? "สมาชิกวุฒิสภา" : member.party}</p>

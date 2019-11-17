@@ -1,11 +1,21 @@
 import React from "react"
 
 import { CabinetMember } from "./CabinetMember"
+import { sortThaiLocale } from "../../utils"
 
 export const CabinetMemberList = ({ members, title }) => {
-  const list = members.map(member => (
-    <CabinetMember {...member} key={member.id} />
-  ))
+  let list = [...members]
+  list.sort(sortThaiLocale)
+  list = list.map(member => {
+    // keep only 'cabinet_position' of the current section title
+    const position = member.cabinet_position
+      .filter(pos => pos.indexOf(title) >= 0)
+      .join(", ")
+    return (
+      <CabinetMember {...member} cabinet_position={position} key={member.id} />
+    )
+  })
+
   return (
     <div
       css={{
@@ -15,7 +25,7 @@ export const CabinetMemberList = ({ members, title }) => {
       <h2
         css={{
           textAlign: "center",
-          fontSize: "30px",
+          fontSize: "3.6rem",
           margin: "3rem",
         }}
       >

@@ -1,5 +1,21 @@
 /* @import "~@fortawesome/fontawesome-svg-core/styles.css"; */
 
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap");
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSansThaiUI-Regular.woff2") format("woff2"),
+    url("fonts/NotoSansThaiUI-Regular.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSansThaiUI-Bold.woff2") format("woff2"),
+    url("fonts/NotoSansThaiUI-Bold.woff") format("woff");
+  font-weight: bold;
+}
+
 @font-face {
   font-family: "Noto Sans Thai";
   src: url("fonts/NotoSansThaiUI-Regular.woff2") format("woff2"),

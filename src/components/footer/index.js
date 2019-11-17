@@ -33,18 +33,7 @@ const Footer = () => {
           }
         }
       }
-      skooldio: file(
-        relativePath: { eq: "images/partner-logo/logo-skooldio.png" }
-      ) {
-        childImageSharp {
-          fixed(height: 28) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      matter: file(
-        relativePath: { eq: "images/partner-logo/logo-white-matter.png" }
-      ) {
+      fnf: file(relativePath: { eq: "images/partner-logo/logo-fnf.png" }) {
         childImageSharp {
           fixed(height: 28) {
             ...GatsbyImageSharpFixed
@@ -57,9 +46,32 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-elect">
-          <h2>ELECT</h2>
-          <h3>In VOTE We TRUST</h3>
-          <span>
+          <div css={{ marginBottom: "4rem" }}>
+            <h2
+              css={{
+                color: "var(--cl-white)",
+                fontSize: "3.2rem",
+                fontFamily: "var(--ff-footer)",
+                lineHeight: "5rem",
+                textAlign: "left",
+                margin: "0 0 0 1rem",
+              }}
+            >
+              ELECT
+            </h2>
+            <h3
+              css={{
+                color: "var(--cl-white)",
+                fontSize: "2.4rem",
+                fontFamily: "var(--ff-title)",
+                lineHeight: "3rem",
+                margin: "0 0 0 1rem",
+              }}
+            >
+              In VOTE We TRUST
+            </h3>
+          </div>
+          <div>
             <ExternalLink
               className="link-text"
               href="https://elect.in.th/about/"
@@ -67,17 +79,27 @@ const Footer = () => {
             >
               เราคือใคร.. ทำไมต้อง ELECT?
             </ExternalLink>
-          </span>
+          </div>
         </div>
         <div className="footer-contact">
-          <h2>CONTACT US</h2>
-          <ul>
+          <h2
+            css={{
+              color: "var(--cl-white)",
+              fontSize: "2.4rem",
+              fontFamily: "var(--ff-title)",
+              lineHeight: "5rem",
+              textAlign: "left",
+            }}
+          >
+            CONTACT US
+          </h2>
+          <ul css={{ listStyle: "none", margin: 0 }}>
             <li>
               <ExternalLink
                 className="link-text"
                 href="mailto: contact@elect.in.th"
               >
-                contact@elect.in.th
+                Email: contact [at] elect.in.th
               </ExternalLink>
             </li>
             <li>
@@ -117,19 +139,14 @@ const Footer = () => {
             <Img fixed={data.ilaw.childImageSharp.fixed}></Img>
           </ExternalLink>
         </div>
-        <div className="footer-logo" style={{ gridArea: "skooldio" }}>
-          <ExternalLink href="https://www.skooldio.com">
-            <Img fixed={data.skooldio.childImageSharp.fixed}></Img>
-          </ExternalLink>
-        </div>
-        <div className="footer-logo" style={{ gridArea: "matter" }}>
-          <ExternalLink href="https://thematter.co">
-            <Img fixed={data.matter.childImageSharp.fixed}></Img>
+        <div className="footer-logo" style={{ gridArea: "fnf" }}>
+          <ExternalLink href="https://thailand.fnst.org/">
+            <Img fixed={data.fnf.childImageSharp.fixed}></Img>
           </ExternalLink>
         </div>
 
         <div className="footer-copyright" style={{ gridArea: "copyright" }}>
-          ©{new Date().getFullYear()} ELECT.IN.TH
+          ©{new Date().getFullYear()} ELECT.IN.TH. All rights reserved.
         </div>
       </div>
     </footer>

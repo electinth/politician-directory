@@ -13,10 +13,14 @@ import PartyGroupList from "../components/partyGroupList"
 
 export const query = graphql`
   query {
-    cabinet: allPeopleYaml(filter: { is_cabinet: { eq: true } }) {
+    cabinet: allPeopleYaml(
+      filter: { is_cabinet: { eq: true }, is_active: { eq: true } }
+    ) {
       totalCount
     }
-    senator: allPeopleYaml(filter: { is_senator: { eq: true } }) {
+    senator: allPeopleYaml(
+      filter: { is_senator: { eq: true }, is_active: { eq: true } }
+    ) {
       totalCount
     }
     allPeopleYaml {
@@ -37,22 +41,11 @@ export const query = graphql`
         }
       }
     }
-    allPartyYaml(filter: { party_type: { eq: "พรรค" } }) {
-      totalCount
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          name
-          short_name
-          party_group
-          total_member
-        }
-      }
-    }
-    allVotelogYaml(limit: 6) {
+    allVotelogYaml(
+      filter: { is_active: { eq: true } }
+      limit: 6
+      sort: { fields: vote_date, order: DESC }
+    ) {
       totalCount
       edges {
         node {
@@ -152,38 +145,6 @@ const cssPartyTypeCard = {
     fontWeight: "normal",
   },
 }
-const cssMPColumn = {
-  display: "block",
-  // flexDirection: "column",
-  // justifyContent: "center",
-  // // alignItems: "center",
-  // // minWidth: 300,
-  // // minHeight: 350,
-  padding: "2rem",
-  // borderRadius: "10px",
-  // color: "var(--cl-white)",
-  // background: "var(--cl-black)",
-
-  width: `calc(${100 / 2}% - 2rem)`,
-  marginBottom: "2rem",
-  "&:nth-of-type(2n+1)": {
-    marginRight: "2rem",
-  },
-  // h3: {
-  //   color: "var(--cl-white)",
-  //   fontSize: "3.6rem",
-  // },
-  // h4: {
-  //   color: "var(--cl-white)",
-  //   fontSize: "2.4rem",
-  //   fontFamily: "var(--ff-text)",
-  //   fontWeight: "normal",
-  // },
-  h3: {
-    textAlign: "center",
-    fontSize: "2.4rem",
-  },
-}
 
 const IndexPage = ({ data }) => {
   let prop_of_interest = {
@@ -196,17 +157,6 @@ const IndexPage = ({ data }) => {
   let data_the_rest = data.allPeopleYaml.edges.filter(
     ({ node }) => !node[prop_of_interest.prop]
   )
-  let coalition_data = data.allPartyYaml.edges.filter(
-    ({ node }) => node.party_group === "ร่วมรัฐบาล"
-  )
-  let opposition_data = data.allPartyYaml.edges.filter(
-    ({ node }) => node.party_group === "ฝ่ายค้าน"
-  )
-
-  const sortByNumberOfSeat = ({ node: a }, { node: b }) =>
-    b.total_member - a.total_member
-  coalition_data.sort(sortByNumberOfSeat)
-  opposition_data.sort(sortByNumberOfSeat)
 
   return (
     <Layout
@@ -393,7 +343,7 @@ const IndexPage = ({ data }) => {
                 margin: "4.8rem 0 0 0",
               }}
             >
-              <Button to="/representatives">ดูส.ส.ทั้งหมด</Button>
+              <Button to="/representatives">ดู ส.ส. ทั้งหมด</Button>
             </div>
           </div>
         </div>

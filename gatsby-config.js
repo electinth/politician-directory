@@ -4,6 +4,7 @@ const config = {
     description: `Site description`,
     author: `@electinth`,
   },
+  pathPrefix: process.env.BASE_PATH || '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

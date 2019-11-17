@@ -21,10 +21,12 @@
     ฝ่ายรัฐบาลเป็นรัฐบาลผสมพรรคพลังประชารัฐ
     ส่วนฝ่ายค้านคือพรรคเพื่อไทยและพรรคร่วมฝ่ายค้านอีก 6 พรรค
   established_date: '2019-03-24'
+  dissolved_date: ''
   total_member: 500
   speaker: ชวน หลีกภัย
   first_deputy_speaker: สุชาติ ตันเจริญ
   second_deputy_speaker: ศุภชัย โพธิ์สุ
+  opposition_leader: สมพงษ์ อมรวิวัฒน์
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: ''
@@ -35,6 +37,7 @@
   email: webmaster@parliament.go.th
   phone: 0-2244-2500
   ratchakitcha: ''
+  is_active: true
 - id: '2'
   name: วุฒิสภาไทย
   en:
@@ -59,10 +62,12 @@
     คนเป็นสมาชิกโดยตำแหน่ง
     วุฒิสภาชุดดังกล่าวมีอำนาจเพิ่มเติมตามบทเฉพาะกาลของรัฐธรรมนูญให้ร่วมเลือกนายกรัฐมนตรีและเร่งรัดการปฏิรูปประเทศของคณะรัฐมนตรีตลอดจนพิจารณากฎหมายที่เห็นว่าเกี่ยวข้อง
   established_date: '2019-05-28'
+  dissolved_date: ''
   total_member: 250
   speaker: พรเพชร วิชิตชลชัย
   first_deputy_speaker: สิงห์ศึก สิงห์ไพร
   second_deputy_speaker: ศุภชัย สมเจริญ
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: ''
@@ -73,6 +78,7 @@
   email: webmaster@senate.go.th
   phone: 0-2831-5888-9
   ratchakitcha: ''
+  is_active: true
 - id: '3'
   name: คณะรัฐมนตรีไทย
   en:
@@ -96,10 +102,12 @@
     เป็นนายกรัฐมนตรีต่ออีกสมัย ทำให้ ครม.
     ชุดนี้มีอีกชื่อเรียกว่าคณะรัฐมนตรีประยุทธ์ 2
   established_date: '2019-07-10'
+  dissolved_date: ''
   total_member: 36
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: พลเอก ประยุทธ์ จันทร์โอชา
   deputy_prime_minister: |-
     พลเอก ประวิตร วงษ์สุวรรณ
@@ -115,6 +123,7 @@
   email: ''
   phone: ''
   ratchakitcha: ''
+  is_active: true
 - id: '4'
   name: ครูไทยเพื่อประชาชน
   en:
@@ -133,10 +142,12 @@
     จัดตั้งขึ้นโดยเครือข่ายองค์กรครู
     เพื่อนำเสนอนโยบายแนวทางการแก้ปัญหาวิกฤติของชาติโดยเน้นเรื่องการศึกษาและบุคลากรทางการศึกษา
   established_date: '2011-06-28'
+  dissolved_date: ''
   total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย ปรีดา บุญเพลิง
@@ -147,6 +158,7 @@
   email: ''
   phone: 085-467-5922
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2554/D/132/183.PDF'
+  is_active: true
 - id: '5'
   name: ชาติไทยพัฒนา
   en:
@@ -167,10 +179,12 @@
     มีฐานเสียงหลักอยู่ที่จังหวัดสุพรรณบุรี
     และมีจุดยืนที่ปรับตัวได้กับทุกฝ่ายจึงมักได้ร่วมรัฐบาลอยู่เสมอ
   established_date: '2008-04-18'
+  dissolved_date: ''
   total_member: 10
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นางสาว กัญจนา ศิลปอาชา
@@ -181,6 +195,7 @@
   email: chartthaipattana@chartthaipattana.or.th
   phone: 02-2438072-3
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2551/D/064/66.PDF'
+  is_active: true
 - id: '6'
   name: ชาติพัฒนา
   en:
@@ -203,10 +218,12 @@
     ฐานเสียงหลักอยู่ที่จังหวัดนครราชสีมา
     มีจุดยืนที่ปรับตัวได้กับทุกฝ่ายจึงมักได้ร่วมรัฐบาลอยู่เสมอ
   established_date: '2007-10-03'
+  dissolved_date: ''
   total_member: 3
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย เทวัญ ลิปตพัลลภ
@@ -217,6 +234,7 @@
   email: Office.cpn@gmail.com
   phone: 02-241-8275
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2554/D/179/121.PDF'
+  is_active: true
 - id: '7'
   name: ไทยศรีวิไลย์
   en:
@@ -237,10 +255,12 @@
     เลขาธิการภาคีเครือข่ายต่อต้านการทุจริตคอร์รัปชั่นแห่งชาติ หลังการเลือกตั้งปี
     62 ได้เข้าเป็นพรรคร่วมรัฐบาลระยะหนึ่ง ก่อนประกาศถอนตัวและขอเป็นฝ่ายค้านอิสระ
   established_date: '2018-10-24'
+  dissolved_date: ''
   total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย มงคลกิตติ์ สุขสินธารานนท์
@@ -251,6 +271,7 @@
   email: ''
   phone: 02-961-0380-5
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/003/T_0176.PDF'
+  is_active: true
 - id: '8'
   name: ไทรักธรรม
   en:
@@ -271,10 +292,12 @@
     เนื่องจากมีการเลือกตั้งซ่อมในจังหวัดเชียงใหม่ เขต 8
     ส่งผลให้มีการคำนวณคะแนนใหม่
   established_date: '2013-08-16'
+  dissolved_date: ''
   total_member: 0
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย พีระวิทย์ เรื่องลือดลภาค
@@ -285,6 +308,7 @@
   email: tairaktham_party@outlook.com
   phone: 099-308-5545
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/106/116.PDF'
+  is_active: true
 - id: '9'
   name: ประชาชาติ
   en:
@@ -306,10 +330,12 @@
     โดย 6 ที่นั่งของ ส.ส. เขตที่ได้รับเลือกในการเลือกตั้งปี 62
     เป็นเขตเลือกตั้งในพื้นที่สามจังหวัดชายแดนภาคใต้ทั้งหมด
   established_date: '2018-10-31'
+  dissolved_date: ''
   total_member: 7
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย วันมูหะมัดนอร์ มะทา
@@ -320,6 +346,7 @@
   email: PeoplesNation2561@gmail.com
   phone: 063-269-9487
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0395.PDF'
+  is_active: true
 - id: '10'
   name: ประชาธรรมไทย
   en:
@@ -340,10 +367,12 @@
     และผอ. ขสมก. หลังการเลือกตั้งปี 62 ได้เข้าเป็นพรรคร่วมรัฐบาลระยะหนึ่ง
     ก่อนประกาศถอนตัวและขอเป็นฝ่ายค้านอิสระ
   established_date: '2018-11-02'
+  dissolved_date: ''
   total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย พิเชษฐ สถิรชวาล
@@ -354,6 +383,7 @@
   email: dr.chaiwut@gmail.com
   phone: 097-998-7865
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0488.PDF'
+  is_active: true
 - id: '11'
   name: ประชาธิปไตยใหม่
   en:
@@ -372,10 +402,12 @@
     เคยส่งผู้สมัครรับเลือกตั้งในปี 54 และมี ส.ส. เขต ได้รับเลือกตั้ง 1 คน
     ทำงานเป็นพรรคร่วมรัฐบาลยิ่งลักษณ์
   established_date: '2011-04-21'
+  dissolved_date: ''
   total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย สุรทิน พิจารณ์
@@ -386,6 +418,7 @@
   email: ''
   phone: ''
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2554/E/062/61.PDF'
+  is_active: true
 - id: '12'
   name: ประชาธิปัตย์
   en:
@@ -407,10 +440,12 @@
     เคยมีฐานเสียงสำคัญอยู่ในภาคใต้ ปัจจุบันมีอุดมการณ์แบบประชาธิปไตยเสรีนิยม
     และมีจุดยืนต่อต้านระบอบทักษิณ
   established_date: '1946-04-06'
+  dissolved_date: ''
   total_member: 53
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย จุรินทร์ ลักษณวิศิษฏ์
@@ -421,6 +456,7 @@
   email: public@democrat.or.th
   phone: 02-828-1000
   ratchakitcha: ''
+  is_active: true
 - id: '13'
   name: ประชานิยม
   en:
@@ -441,10 +477,12 @@
     ถูกมองว่าเป็นพรรคการเมืองที่เป็นนอมินีของพรรคเพื่อไทย
     แต่หัวหน้าพรรคได้ออกมาปฏิเสธพร้อมกับกล่าวว่านโยบายของพรรคตรงกับนโยบายของรัฐบาล
   established_date: '2018-11-07'
+  dissolved_date: ''
   total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: พล.ต.อ. ยงยุทธ เทพจำนงค์
@@ -455,6 +493,7 @@
   email: info@prachaniyom.or.th
   phone: 063-195-5511
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/005/T_0099.PDF'
+  is_active: true
 - id: '14'
   name: ประชาภิวัฒน์
   en:
@@ -475,10 +514,12 @@
     มีฐานเสียงจากพื้นที่อำเภอหันคา จังหวัดชัยนาท และมวลชนธรรมกาย
     ชูนโยบายขับเคลื่อนประเทศด้วยศาสนา
   established_date: '2018-08-10'
+  dissolved_date: ''
   total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย สมเกียรติ ศรลัมพ์
@@ -489,6 +530,7 @@
   email: prachapiwat01@gmail.com
   phone: 056-881-326
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/070/T81.PDF'
+  is_active: true
 - id: '15'
   name: พลเมืองไทย
   en:
@@ -506,10 +548,12 @@
     เดิมชื่อพรรคพลังพลเมือง เกิดจากการรวมตัวกันของอดีตรัฐมนตรีและอดีต ส.ส.
     จากทั่วทุกภาค
   established_date: '2018-08-10'
+  dissolved_date: ''
   total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นางสาว ศิลัมพา เลิศนุวัฒน์
@@ -520,6 +564,7 @@
   email: ''
   phone: 02-060-8688
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/070/T137.PDF'
+  is_active: true
 - id: '16'
   name: พลังชาติไทย
   en:
@@ -538,10 +583,12 @@
     พรรคภายใต้การนำของพล.ต.ทรงกลด ทิพย์รัตน์ อดีตคณะทำงานของ คสช.
     มุ่งสนับสนุนให้ พลเอก ประยุทธ์ จันทร์โอชา เป็นนายกรัฐมนตรี
   established_date: '2018-10-31'
+  dissolved_date: ''
   total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: พล.ต. ทรงกลด ทิพย์รัตน์
@@ -552,6 +599,7 @@
   email: ppct_power@gmail.com
   phone: 081-409-9998
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0265.PDF'
+  is_active: true
 - id: '17'
   name: พลังท้องถิ่นไท
   en:
@@ -571,10 +619,12 @@
     ผู้มีอิทธิพลในพื้นที่ กทม.
     มีจุดยืนที่จะทำงานร่วมกับพรรครัฐบาลไม่ว่าจะเป็นขั้วไหน
   established_date: '2012-03-30'
+  dissolved_date: ''
   total_member: 3
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย ชัชวาลล์ คงอุดม
@@ -585,6 +635,7 @@
   email: ''
   phone: thailocalpowerparty@gmail.com
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2555/D/053/143.PDF'
+  is_active: true
 - id: '18'
   name: พลังไทยรักไทย
   en:
@@ -603,10 +654,12 @@
     เกิดจากกลุ่มลูกหลานชาวนาเพื่อเป็นปากเป็นเสียงให้กับชาวนา
     ชูนโยบายการแก้ปัญหาขาดแคลนแหล่งน้ำทำการเกษตร
   established_date: '2018-10-30'
+  dissolved_date: ''
   total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย คฑาเทพ เตชะเดชเรืองกุล
@@ -617,6 +670,7 @@
   email: ''
   phone: ''
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0200.PDF'
+  is_active: true
 - id: '19'
   name: พลังธรรมใหม่
   en:
@@ -638,10 +692,12 @@
     อดีตหัวหน้าพรรคและแกนนำพันธมิตรประชาชนเพื่อประชาธิปไตย (พธม.)
     โดยมีอดีตสมาชิกพรรคพลังธรรมและภาคประชาชนบางส่วนร่วมจัดตั้ง
   established_date: '2018-09-14'
+  dissolved_date: ''
   total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย ระวี มาศฉมาดล
@@ -652,6 +708,7 @@
   email: wtn_fm99@hotmail.com
   phone: 092-808-9265
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/080/T_0043.PDF'
+  is_active: true
 - id: '20'
   name: พลังประชารัฐ
   en:
@@ -673,10 +730,12 @@
     และอดีตไทยรักไทยที่แยกตัวออกมาโดยเฉพาะกลุ่มสามมิตร มุ่งสนับสนุนให้ พลเอก
     ประยุทธ์ จันทร์โอชา เป็นนายกรัฐมนตรี
   established_date: '2018-11-07'
+  dissolved_date: ''
   total_member: 115
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย อุตตม สาวนายน
@@ -687,6 +746,7 @@
   email: Info@pprp.or.th
   phone: 02-152-9999
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/003/T_0221.PDF'
+  is_active: true
 - id: '21'
   name: พลังปวงชนไทย
   en:
@@ -707,10 +767,12 @@
     มีการเชื่อมโยงว่าเป็นพรรคสาขาของพรรคเพื่อไทย เนื่องจากคณะผู้ก่อตั้ง
     หัวหน้าพรรค และที่ปรึกษา มีความสนิทสนมกับ ทักษิณ ชินวัตร และพรรคเพื่อไทย
   established_date: '2018-10-29'
+  dissolved_date: ''
   total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย นิคม บุญวิเศษ
@@ -721,6 +783,7 @@
   email: thaipeoplepowerparty@gmail.com
   phone: ''
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0125.PDF'
+  is_active: true
 - id: '22'
   name: เพื่อชาติ
   en:
@@ -742,10 +805,12 @@
     แนวร่วมประชาธิปไตยต่อต้านเผด็จการแห่งชาติ (นปช.) เพราะมีกระแสข่าวว่าแกนนำ
     นปช. เป็นผู้สนับสนุน
   established_date: '2013-09-18'
+  dissolved_date: ''
   total_member: 5
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย สงคราม กิจเลิศไพโรจน์
@@ -756,6 +821,7 @@
   email: pueachatparty@gmail.com
   phone: ''
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/116/86.PDF'
+  is_active: true
 - id: '23'
   name: เพื่อไทย
   en:
@@ -778,10 +844,12 @@
     จนมาเป็นพรรคเพื่อไทยในปัจจุบัน เป็นพรรคที่ถูกรัฐประหารถึง 2 ครั้งซ้อน
     คือในปี 2549 ยุคไทยรักไทย และในปี 2557 ยุคเพื่อไทย
   established_date: '2007-09-20'
+  dissolved_date: ''
   total_member: 136
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย สมพงษ์ อมรวิวัฒน์
@@ -792,6 +860,7 @@
   email: ''
   phone: 02-653-4000-1
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2550/E/174/1.PDF'
+  is_active: true
 - id: '24'
   name: ภูมิใจไทย
   en:
@@ -812,10 +881,12 @@
     และกลุ่มเพื่อนเนวิน มีฐานเสียงหนาแน่นในพื้นที่อีสานใต้
     มีจุดยืนที่พร้อมจะร่วมรัฐบาลกับทุกขั้ว
   established_date: '2008-11-05'
+  dissolved_date: ''
   total_member: 51
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย อนุทิน ชาญวีรกูล
@@ -826,6 +897,7 @@
   email: info.bhumjaithai@gmail.com
   phone: 02-940-6740
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2552/D/003/107.PDF'
+  is_active: true
 - id: '25'
   name: รวมพลังประชาชาติไทย
   en:
@@ -844,10 +916,12 @@
     เป็นพรรคที่ต่อยอดการเคลื่อนไหวของกลุ่ม กปปส. มุ่งสนับสนุนให้ พลเอก ประยุทธ์
     จันทร์โอชา เป็นนายกรัฐมนตรี และต่อต้านระบอบทักษิณ
   established_date: '2118-10-26'
+  dissolved_date: ''
   total_member: 5
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: หม่อมราชวงศ์ จัตุมงคล โสณกุล
@@ -858,6 +932,7 @@
   email: info@act-party.org
   phone: 093-254-9419
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0324.PDF'
+  is_active: true
 - id: '26'
   name: รักษ์ผืนป่าประเทศไทย
   en:
@@ -875,13 +950,15 @@
   party_group: ร่วมรัฐบาล
   description: >-
     เดิมชื่อพรรคทวงคืน เป็นพรรคในกำกับของนาย ดำรงค์ พิเดช
-    อดีตอธิบดีกรมอุทยานแห่งชาติ สัตว์ป่า และพันธุ์พืช
+    อดีตอธิบดีกรมอุทยานแห่งชาติ สัตว์ป่า และพันธุ์พืช 
     ชูนโยบายอนุรักษ์ทรัพยากรและสิ่งแวดล้อม
   established_date: '2013-01-09'
+  dissolved_date: ''
   total_member: 2
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย ดำรงค์ พิเดช
@@ -892,6 +969,7 @@
   email: ''
   phone: 02-931-0065
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/022/113.PDF'
+  is_active: true
 - id: '27'
   name: เศรษฐกิจใหม่
   en:
@@ -912,10 +990,12 @@
     เพราะเป็ช่วงเศรษฐกิจของชนชั้นกลางลงมาย่ำแย่ ระบุจุดยืนประชาธิปไตย
     เน้นเศรษฐกิจ ไม่เน้นขัดแย้ง
   established_date: '2018-11-08'
+  dissolved_date: ''
   total_member: 6
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย มนูญ สิวาภิรมย์รัตน์
@@ -926,6 +1006,7 @@
   email: pr@nep.or.th
   phone: 02-285-2975
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/003/T_0139.PDF'
+  is_active: true
 - id: '28'
   name: เสรีรวมไทย
   en:
@@ -946,10 +1027,12 @@
     อดีตผู้บัญชาการตำรวจแห่งชาติ ประกาศจุดยืนไม่เห็นด้วยกับรัฐประหาร
     สนับสนุนการปฏิรูปกองทัพ และต่อต้านเผด็จการอย่างชัดเจน
   established_date: '2013-08-29'
+  dissolved_date: ''
   total_member: 10
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: พล.ต.อ. เสรีพิศุทธ์ เตมียเวส
@@ -960,11 +1043,12 @@
   email: ''
   phone: 02-433-9484
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/112/48.PDF'
+  is_active: true
 - id: '29'
   name: อนาคตใหม่
   en:
     name: Future Forward
-    short_name: FWP.
+    short_name: FWP
     description: >-
       Future Forward Party aims to build a new political culture, support
       democracy, and end the vicious cycle of the military coup in Thailand. It
@@ -980,10 +1064,12 @@
     และต้องการยุติวงจรอุบาทว์ของรัฐประหาร
     พร้อมประกาศชัดเจนว่าจะคัดค้านอิทธิพลของกองทัพในการเมือง
   established_date: '2018-10-03'
+  dissolved_date: ''
   total_member: 80
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย ธนาธร จึงรุ่งเรืองกิจ
@@ -994,3 +1080,40 @@
   email: office@futureforwardparty.org
   phone: 02-821-5688
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/087/T_0104.PDF'
+  is_active: true
+- id: '30'
+  name: ประชาชนปฏิรูป
+  en:
+    name: People Reform Party
+    short_name: PPR
+    description: >-
+      In the 2019 general election, the party won only a single seat. Later, the
+      party executive committee decided to dissolve the party and its only MP,
+      Paiboon, Paiboon became a member of Palang Pracharath.
+  short_name: ปชช.
+  color: '#f1ee56'
+  party_type: พรรค
+  party_ordinal: null
+  party_group: ร่วมรัฐบาล
+  description: >-
+    พรรคภายใต้การนำของนายไพบูลย์ นิติตะวัน ได้รับเลือก ส.ส. บัญชีรายชื่อ 1 คน
+    ต่อมานายไพบูลย์ ได้ยื่นเรื่องขอเลิกกิจการพรรค
+    และย้ายไปสังกัดพรรคพลังประชารัฐ
+  established_date: '2018-10-03'
+  dissolved_date: '2562-09-06'
+  total_member: 0
+  speaker: ''
+  first_deputy_speaker: ''
+  second_deputy_speaker: ''
+  opposition_leader: ''
+  prime_minister: ''
+  deputy_prime_minister: ''
+  party_leader: นายไพบูลย์ นิติตะวัน
+  party_secretary: ''
+  website: 'https://www.pprparty.com/'
+  facebook: ''
+  twitter: ''
+  email: ''
+  phone: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/A/095/T_0001.PDF'
+  is_active: false

@@ -162,9 +162,9 @@ export default ({ peopleVoteYaml, allVotelogYaml }) => {
     }
   })
 
-  const sortedAllVotes = allVote.sort( (a, b) => {
+  const sortedAllVotes = allVote.sort((a, b) => {
     return b.vote_date.localeCompare(a.vote_date)
   })
 
-  return <PeopleVote allVote={sortedAllVotes}/>
+  return <PeopleVote allVote={sortedAllVotes} />
 }

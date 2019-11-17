@@ -1,8 +1,10 @@
 <h1 align="center">
-  Politician Directory
+  They Work For Us?
 </h1>
 
-สมุดพกนักการเมือง (Politician Directory) is an open-source project for listing and tracking activities of members of the Cabinet and National Assembly of Thailand. It's run on [Gatsby](https://www.gatsbyjs.org).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1165ad17-98ee-45b6-acb3-f552ed565abf/deploy-status)](https://app.netlify.com/sites/quirky-hodgkin-ae5fd3/deploys)
+
+**They Work For Us?** is an open-source politician directory project for listing and tracking activities of members of the Cabinet and National Assembly of Thailand. It's run on [Gatsby](https://www.gatsbyjs.org).
 
 ## Table of Contents
 
@@ -10,6 +12,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Development](#development)
+  - [Environments](#environments)
 - [Getting Started for Contributers](#getting-started-for-contributers)
 - [Reference](#reference)
   - [Design & Architecture](#design--architecture)
@@ -23,18 +26,18 @@
 After installing Node 8+ and `npm install`, you can start in development mode by
 
 ```
-npm run develop
+npm start
 ```
 
 Your site is running on `http://localhost:8000` and GraphQL tool helper on `http://localhost:8000/___graphql`.
 
 ### Environments
-| Environment        | Description | 
-| :----------: |:-------------:| 
-| Dev | Each PR will be built and hosted on Netlify. |
-| [Staging](https://pedantic-edison-3897de.netlify.com/) | new features awaiting for release. |
-| [Production](#) | not available yet. |
 
+|                      Environment                       |                 Description                  |
+| :----------------------------------------------------: | :------------------------------------------: |
+|                          Dev                           | Each PR will be built and hosted on Netlify. |
+| [Staging](https://pedantic-edison-3897de.netlify.com/) |      new features awaiting for release.      |
+|                    [Production](#)                     |              not available yet.              |
 
 ## Getting Started for Contributers
 

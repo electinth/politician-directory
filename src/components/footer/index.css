@@ -1,9 +1,16 @@
 .footer {
+  letter-spacing: 0.92px;
   display: grid;
   grid-template-columns: 7vw 1fr 7vw;
   grid-auto-rows: auto auto;
   background-color: black;
   padding: 50px 0;
+}
+.footer a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .footer-container {
@@ -17,40 +24,28 @@
   grid-template-rows: auto auto;
   grid-template-areas:
     "elect elect elect elect contact contact contact contact"
-    "partner bml punchup ilaw skooldio matter copyright copyright";
+    "partner fnf punchup bml ilaw . copyright copyright";
 }
 
 .footer-elect {
   grid-area: elect;
   justify-self: left;
-}
-
-.footer-elect h2,
-.footer-elect h3 {
-  margin-left: 10px;
-}
-
-.footer-elect h2 {
-  color: white;
-  font-size: 22px;
-  margin-top: -3.5px;
-}
-
-.footer-elect h3 {
-  color: white;
+  margin-bottom: 3rem;
 }
 
 .footer-elect::before {
   background-color: #ef314a;
   content: "";
   position: absolute;
-  height: 45px;
+  height: 63px;
   width: 4px;
+  margin-top: 15px;
 }
 
 .footer-contact {
   grid-area: contact;
   justify-self: right;
+  margin-bottom: 3rem;
 }
 
 .footer * {
@@ -59,10 +54,6 @@
 
 .footer-partner {
   grid-area: partner;
-}
-
-.link-text {
-  border-bottom: 0.1rem solid white;
 }
 
 .footer-copyright {
@@ -77,7 +68,7 @@
     grid-template-rows: auto auto auto;
     grid-template-areas:
       "elect elect elect contact contact contact"
-      "partner bml punchup ilaw skooldio matter"
+      "partner fnf punchup bml ilaw ."
       ". . copyright copyright . .";
   }
 
@@ -94,8 +85,9 @@
       "elect elect elect"
       "contact contact contact"
       ". partner ."
-      "bml punchup ilaw"
-      "skooldio copyright matter";
+      "fnf punchup ."
+      "bml ilaw ."
+      "copyright copyright copyright";
   }
 
   .footer-elect {
@@ -121,11 +113,10 @@
       "elect"
       "contact"
       "partner"
-      "bml"
+      "fnf"
       "punchup"
+      "bml"
       "ilaw"
-      "skooldio"
-      "matter"
       "copyright";
   }
 }

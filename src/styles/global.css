@@ -3,6 +3,7 @@
 
   --ff-text: "Noto Sans Thai", "Thonburi", sans-serif;
   --ff-title: "The Matter";
+  --ff-footer: "Noto Sans", "Noto Sans Thai", "Thonburi", sans-serif;
 
   --cl-white: #ffffff;
   --cl-black: #272727;
@@ -19,6 +20,14 @@
   --cl-vote-abstained: #cccccc;
   --cl-vote-yes: #329a2e;
   --cl-vote-no: #ec2627;
+
+  --cl-theme-0: #fcf1f6;
+  --cl-theme-1: #f8d7e5;
+  --cl-theme-2: #fcbbdd;
+  --cl-theme-3: #c9a8b8;
+  --cl-theme-4: #9a8a93;
+  --cl-theme-5: #222222;
+  --cl-theme-unknown: #cccccc;
 
   --container-width: 920px;
 }

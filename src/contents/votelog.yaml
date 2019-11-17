@@ -1,50 +1,51 @@
-# - id: '1'
-#   title: ลงมติเลือกนายกรัฐมนตรี
-#   en:
-#     title: Prime Minister Approval
-#     legal_title: >-
-#       An approval of a person suitable to be appointed as the Prime Minister
-#       shall be done in accordance with section 272 of Constitution of the
-#       Kingdom of Thailand
-#   legal_title: >-
-#     พิจารณาให้ความเห็นชอบบุคคลซึ่งสมควรได้รับแต่งตั้งเป็นนายกรัฐมนตรี ตามมาตรา
-#     272 ของรัฐธรรมนูญแห่งราชอาณาจักรไทย
-#   meeting: ประชุมร่วมสองสภา
-#   type: เลือกนายกรัฐมนตรี
-#   vote_date: '2019-06-05'
-#   prayuth: '500'
-#   thanathorn: '244'
-#   passed: false
-#   approve: null
-#   disprove: null
-#   abstained: 3
-#   total_voter: 747
-#   absent: 1
-#   total_member: 748
-#   description_th: >-
-#     การประชุมร่วมกันของทั้ง ส.ส. และ ส.ว. ครั้งแรก
-#     เพื่อพิจารณาและลงมติเลือกคนที่จะมาเป็นนายกรัฐมนตรี โดยมีสองชื่อที่ถูกเสนอ
-#     คือ พล.อ.ประยุทธ์ จันทร์โอชา เสนอโดยพรรคพลังประชารัฐ และ ธนาธร
-#     จึงรุ่งเรืองกิจ เสนอโดยพรรคอนาคตใหม่
-#     ก่อนการลงมติได้เปิดให้อภิปรายคุณสมบัติของทั้งสองคนก่อน ผลการลงมติ
-#     พล.อ.ประยุทธ์ ได้คะแนนมากกว่าที่ 500 ต่อ 244 เสียง งดออกเสียง 3 เสียง
-#   description_en: >-
-#     The first meeting of the Parliament consists of the House of Representatives
-#     and the Senate in order to consider and vote for a person who shall become
-#     Prime Minister. There were two names proposed; Gen.Prayuth Chan-o-cha from
-#     Palangpracharat Party and Thanathorn Jungroongruangkit from Future Forward
-#     Party. Members of parliament were allowed to discussed before casting their
-#     votes. The result came up as Gen.Prayuth recieved majority vote at 500:244
-#     with 3 abstentions.
-#   document:
-#     - title: ใบประมวลผลการลงมติ
-#       link: >-
-#         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190606122944A1.pdf
-#     - title: ผลการนับคะแนน
-#       link: >-
-#         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190606122944A0.pdf
-#   reference: >-
-#     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4135#!
+- id: '1'
+  title: ลงมติเลือกนายกรัฐมนตรี
+  en:
+    title: Prime Minister Approval
+    legal_title: >-
+      An approval of a person suitable to be appointed as the Prime Minister
+      shall be done in accordance with section 272 of Constitution of the
+      Kingdom of Thailand
+  legal_title: >-
+    พิจารณาให้ความเห็นชอบบุคคลซึ่งสมควรได้รับแต่งตั้งเป็นนายกรัฐมนตรี ตามมาตรา
+    272 ของรัฐธรรมนูญแห่งราชอาณาจักรไทย
+  meeting: ประชุมร่วมสองสภา
+  type: เลือกนายกรัฐมนตรี
+  vote_date: '2019-06-05'
+  prayuth: '500'
+  thanathorn: '244'
+  passed: false
+  approve: null
+  disprove: null
+  abstained: 3
+  total_voter: 747
+  absent: 1
+  total_member: 748
+  description_th: >-
+    การประชุมร่วมกันของทั้ง ส.ส. และ ส.ว. ครั้งแรก
+    เพื่อพิจารณาและลงมติเลือกคนที่จะมาเป็นนายกรัฐมนตรี โดยมีสองชื่อที่ถูกเสนอ
+    คือ พล.อ.ประยุทธ์ จันทร์โอชา เสนอโดยพรรคพลังประชารัฐ และ ธนาธร
+    จึงรุ่งเรืองกิจ เสนอโดยพรรคอนาคตใหม่
+    ก่อนการลงมติได้เปิดให้อภิปรายคุณสมบัติของทั้งสองคนก่อน ผลการลงมติ
+    พล.อ.ประยุทธ์ ได้คะแนนมากกว่าที่ 500 ต่อ 244 เสียง งดออกเสียง 3 เสียง
+  description_en: >-
+    The first meeting of the Parliament consists of the House of Representatives
+    and the Senate in order to consider and vote for a person who shall become
+    Prime Minister. There were two names proposed; Gen.Prayuth Chan-o-cha from
+    Palangpracharat Party and Thanathorn Jungroongruangkit from Future Forward
+    Party. Members of parliament were allowed to discussed before casting their
+    votes. The result came up as Gen.Prayuth recieved majority vote at 500:244
+    with 3 abstentions.
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190606122944A1.pdf
+    - title: ผลการนับคะแนน
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190606122944A0.pdf
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4135#!
+  is_active: false
 - id: '2'
   title: ตั้งคณะกรรมาธิการผู้มีความหลากหลายทางเพศ
   en:
@@ -98,6 +99,7 @@
         https://library2.parliament.go.th/giventake/content_give/force-hr2562.pdf
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4154
+  is_active: true
 - id: '3'
   title: ขยายสัญญาสัมปทานทางด่วนและรถไฟฟ้าบีทีเอส
   en:
@@ -146,6 +148,7 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4156#!
+  is_active: true
 - id: '4'
   title: ตั้งคณะกรรมาธิการวิสามัญพิจารณาผลกระทบโครงการอีอีซี
   en:
@@ -197,7 +200,7 @@
     east, Chonburi, Rayong and Chacherngsao. The obvious effect of the EECP
     project is the rise of properties price in the area and the trade of lands.
     Farmers and fishers who rent the lands for long time was abandoned and
-    canceled the rent contract where land owners want to sell to new investors. 
+    canceled the rent contract where land owners want to sell to new investors.
     The effect to environment and communities will follow.
 
 
@@ -217,6 +220,7 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4158#!
+  is_active: true
 - id: '5'
   title: พิจารณาพ.ร.ก.โอนกำลังพลและงบประมาณฯ
   en:
@@ -247,7 +251,7 @@
     เฉพาะในส่วนที่เกี่ยวกับกรมทหารราบที่ 1 มหาดเล็กราชวัลลภรักษาพระองค์
     และกรมทหารราบที่ 1 มหาดเล็กราชวัลลภรักษาพระองค์
     ไปเป็นของหน่วยบัญชาการถวายความปลอดภัยรักษาพระองค์
-    ซึ่งเป็นส่วนราชการในพระองค์ 
+    ซึ่งเป็นส่วนราชการในพระองค์
 
 
 
@@ -266,7 +270,7 @@
     NCPO2 cabinet has signed an executive decree to trasfer forces and budget of
     army units under ministry of defense, 1st Infantry Regiment of the Ratcha
     Wallop Royal Guards and the 11th Infantry Regiment of the Ratcha Wallop
-    Royal Guards  to the royal security command unit. 
+    Royal Guards  to the royal security command unit.
 
 
 
@@ -290,6 +294,7 @@
       link: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/A/103/T_0001.PDF'
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4162
+  is_active: true
 - id: '6'
   title: พ.ร.บ.งบประมาณฯ วาระที่ 1
   en:
@@ -338,7 +343,7 @@
     of the government is very unclear. If some MPs tuned against the government,
     the proposed budget can be failed and will effect the government
     administration. If so, the government should resign from positions or
-    dissolve the parliament as a political tradition.  
+    dissolve the parliament as a political tradition.
 
 
 
@@ -358,3 +363,4 @@
       link: 'http://bbstore.bb.go.th/cms/1570699357_1282.pdf'
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4162
+  is_active: true

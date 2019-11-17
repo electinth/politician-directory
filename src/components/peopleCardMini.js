@@ -10,7 +10,8 @@ const MPInfo = props => (
       fontWeight: "bold",
       fontSize: "1.6rem",
       a: { color: "inherit" },
-      verticalAlign: "center", height: "100%"
+      verticalAlign: "center",
+      height: "100%",
     }}
   >
     <Link to={`/people/${props.name}-${props.lastname}`}>
@@ -19,7 +20,7 @@ const MPInfo = props => (
   </div>
 )
 
-const PeopleCardMini = (props) => {
+const PeopleCardMini = props => {
   // console.log(props)
   let peopleInfo = MPInfo(props)
 
@@ -30,11 +31,11 @@ const PeopleCardMini = (props) => {
         display: "block",
         flex: "1 1 360px",
         fontSize: "1.8rem",
-        marginBottom: "2rem"
+        marginBottom: "2rem",
       }}
     >
-      <div style={{marginBottom: "1rem", fontWeight: "medium"}}>
-        {props.pos}
+      <div style={{ marginBottom: "1rem", fontWeight: "medium" }}>
+        {props.position}
       </div>
       <div>
         <Link to={`/people/${props.name}-${props.lastname}`}>
@@ -56,7 +57,7 @@ const PeopleCardMini = (props) => {
           ></div>
         </Link>
       </div>
-      <div style={{marginTop: "2rem"}}>{peopleInfo}</div>
+      <div style={{ marginTop: "2rem" }}>{peopleInfo}</div>
     </div>
   )
 }

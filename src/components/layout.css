@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-size: 1.6rem;
+  line-height: 1.5;
   font-family: var(--ff-text);
   color: var(--cl-black);
   background: var(--cl-white);
@@ -14,4 +15,10 @@ h1,
 h2,
 h3 {
   font-family: var(--ff-title);
+}
+
+p,
+ol,
+ul {
+  margin-bottom: 2.4rem;
 }
