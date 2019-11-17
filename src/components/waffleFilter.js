@@ -94,7 +94,7 @@ class WaffleFilter extends Component {
       <>
         <Global
           styles={css`
-            i {
+            .arrow-down {
               margin-top: 5px;
               width: 0;
               height: 0;
@@ -103,30 +103,29 @@ class WaffleFilter extends Component {
               border-top: 10px solid var(--cl-black);
               float: right;
             }
-            button {
-              text-align: left;
-              background: var(--cl-pink);
-              border: 1px var(--cl-black) solid;
-              cursor: pointer;
-              width: 165px;
-              height: 40px;
-              margin: 1px 7.5px;
-            }
-            .currentFilter {
-              border-radius: 7.5px;
-            }
-            button:focus {
-              outline: none;
-            }
 
-            ul {
+            .current-filter-list {
               text-align: center;
               list-style: none;
-            }
-
-            li {
-              display: inline-block;
-              position: relative;
+              button {
+                text-align: left;
+                background: var(--cl-pink);
+                border: 1px var(--cl-black) solid;
+                cursor: pointer;
+                width: 165px;
+                height: 40px;
+                margin: 1px 7.5px;
+              }
+              .currentFilter {
+                border-radius: 7.5px;
+              }
+              button:focus {
+                outline: none;
+              }
+              li {
+                display: inline-block;
+                position: relative;
+              }
             }
 
             .menuItems {
@@ -181,7 +180,7 @@ class WaffleFilter extends Component {
           </span>
         </h2>
         <div css={{ margin: "50px auto 0 auto" }}>
-          <ul>
+          <ul className="current-filter-list">
             <li>
               <button
                 onClick={() => this.setState({ showMenu: 0 })}
@@ -189,7 +188,7 @@ class WaffleFilter extends Component {
               >
                 {this.state.currentFilter.house}
                 <span>
-                  <i></i>
+                  <i className="arrow-down"></i>
                 </span>
               </button>
               {this.state.showMenu === 0 ? (
@@ -212,7 +211,7 @@ class WaffleFilter extends Component {
               >
                 {this.state.currentFilter.gender}
                 <span>
-                  <i></i>
+                  <i className="arrow-down"></i>
                 </span>
               </button>
               {this.state.showMenu === 1 ? (
@@ -235,7 +234,7 @@ class WaffleFilter extends Component {
               >
                 {this.state.currentFilter.generation}
                 <span>
-                  <i></i>
+                  <i className="arrow-down"></i>
                 </span>
               </button>
               {this.state.showMenu === 2 ? (
@@ -258,7 +257,7 @@ class WaffleFilter extends Component {
               >
                 {this.state.currentFilter.education}
                 <span>
-                  <i></i>
+                  <i className="arrow-down"></i>
                 </span>
               </button>
               {this.state.showMenu === 3 ? (
@@ -281,7 +280,7 @@ class WaffleFilter extends Component {
               >
                 {this.state.currentFilter.occupation_group}
                 <span>
-                  <i></i>
+                  <i className="arrow-down"></i>
                 </span>
               </button>
               {this.state.showMenu === 4 ? (
