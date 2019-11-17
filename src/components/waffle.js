@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { css } from "@emotion/core"
 
 import "../styles/global.css"
 import "./waffle.css"

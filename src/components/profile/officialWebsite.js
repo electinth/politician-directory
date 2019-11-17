@@ -23,7 +23,7 @@ const OfficialWebsite = profile => {
       const official = profile[key]
       if (!official) return null
       return (
-        <ExternalLink href={official} css={{ ...cssLinkBox }}>
+        <ExternalLink key={key} href={official} css={{ ...cssLinkBox }}>
           {_.startCase(key)}
         </ExternalLink>
       )

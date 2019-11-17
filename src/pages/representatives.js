@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import _ from "lodash"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -9,7 +10,7 @@ import { OfficialWebsite, InOfficeDate } from "../components/profile"
 import PeopleCardMini from "../components/peopleCardMini"
 import PartyGroupList from "../components/partyGroupList"
 
-import "./cabinet.css"
+import "../styles/profile-book.css"
 
 export const query = graphql`
   query {
@@ -115,28 +116,31 @@ const RepresentativesPage = props => {
     occupation_group,
   } = loadCategoryStats(data)
 
-  const keyMembers = [
-    {
-      name: "speaker",
-      label: "ประธานสภา",
-    },
-    {
-      name: "first_deputy_speaker",
-      label: "รองประธานสภา คนที่ 1",
-    },
-    {
-      name: "second_deputy_speaker",
-      label: "รองประธานสภา คนที่ 2",
-    },
-    {
-      name: "opposition_leader",
-      label: "ผู้นำฝ่ายค้าน",
-    },
-  ].map((keyPos, id) => {
-    const [name, lastname] = house[keyPos.name].split(" ")
-    const position = keyPos.label
-    return { id, name, lastname, position }
-  })
+  const keyMembers = _.compact(
+    [
+      {
+        name: "speaker",
+        label: "ประธานสภา",
+      },
+      {
+        name: "first_deputy_speaker",
+        label: "รองประธานสภา คนที่ 1",
+      },
+      {
+        name: "second_deputy_speaker",
+        label: "รองประธานสภา คนที่ 2",
+      },
+      {
+        name: "opposition_leader",
+        label: "ผู้นำฝ่ายค้าน",
+      },
+    ].map((keyPos, id) => {
+      if (!house[keyPos.name]) return null
+      const [name, lastname] = house[keyPos.name].split(" ")
+      const position = keyPos.label
+      return { id, name, lastname, position }
+    })
+  )
 
   return (
     <Layout pageStyles={{ background: "#eeeeee" }}>

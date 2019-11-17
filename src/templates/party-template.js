@@ -1,19 +1,29 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
+import _ from "lodash"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ExternalLink from "../components/externalLink"
+import { loadCategoryStats } from "../utils"
+import StackedBarChart from "../components/stackedBarChart"
+import { OfficialWebsite, InOfficeDate } from "../components/profile"
+import PeopleCardMini from "../components/peopleCardMini"
 import PeopleCard from "../components/peopleCard"
-import { partyLogo } from "../utils"
+
+import "../styles/profile-book.css"
 
 export const query = graphql`
   query($slug: String!, $party: String!) {
-    partyYaml(party_type: { eq: "พรรค" }, fields: { slug: { eq: $slug } }) {
+    party: partyYaml(
+      party_type: { eq: "พรรค" }
+      fields: { slug: { eq: $slug } }
+    ) {
       id
       name
       short_name
       description
+      established_date
+      dissolved_date
       color
       en {
         name
@@ -22,15 +32,29 @@ export const query = graphql`
       party_group
       total_member
       party_leader
-      established_date(formatString: "D MMM YYYY")
+      party_secretary
       website
       facebook
       twitter
+      email
+      phone
+      ratchakitcha
+      is_active
     }
-    allPeopleYaml(filter: { party: { eq: $party } }) {
+    allPeopleYaml(
+      filter: {
+        is_mp: { eq: true }
+        party: { eq: $party }
+        is_active: { eq: true }
+      }
+    ) {
+      totalCount
       edges {
         node {
           id
+          fields {
+            slug
+          }
           title
           name
           lastname
@@ -43,142 +67,254 @@ export const query = graphql`
         }
       }
     }
+    mp_type: allPeopleYaml(
+      filter: {
+        is_mp: { eq: true }
+        party: { eq: $party }
+        is_active: { eq: true }
+      }
+    ) {
+      group(field: mp_type) {
+        value: totalCount
+        name: fieldValue
+      }
+    }
+    gender: allPeopleYaml(
+      filter: {
+        is_mp: { eq: true }
+        party: { eq: $party }
+        is_active: { eq: true }
+      }
+    ) {
+      group(field: gender) {
+        value: totalCount
+        name: fieldValue
+      }
+    }
+    education: allPeopleYaml(
+      filter: {
+        is_mp: { eq: true }
+        party: { eq: $party }
+        is_active: { eq: true }
+      }
+    ) {
+      group(field: education) {
+        value: totalCount
+        name: fieldValue
+      }
+    }
+    occupation_group: allPeopleYaml(
+      filter: {
+        is_mp: { eq: true }
+        party: { eq: $party }
+        is_active: { eq: true }
+      }
+    ) {
+      group(field: occupation_group) {
+        value: totalCount
+        name: fieldValue
+      }
+    }
+    age: allPeopleYaml(
+      filter: {
+        is_mp: { eq: true }
+        party: { eq: $party }
+        is_active: { eq: true }
+      }
+    ) {
+      edges {
+        node {
+          birthdate
+        }
+      }
+    }
   }
 `
 
-const cssH1 = { fontSize: "4.8rem" }
-const cssH2 = { fontSize: "2.4rem" }
-const cssSection = { paddingBottom: "8rem" }
+const cssH1 = {
+  fontSize: "4rem",
+}
 
-const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
+const cssSection = {
+  paddingTop: "3rem",
+  paddingBottom: "8rem",
+  h2: {
+    fontSize: "4.8rem",
+    textAlign: "center",
+  },
+}
+
+const cssEngTitle = {
+  fontSize: "2.4rem",
+  textAlign: "left",
+  margin: "1.5rem 0 1.2rem 0",
+}
+
+const cssPageP = {}
+
+const cssBarChart = {
+  margin: "1rem 0",
+}
+
+const PartyPage = props => {
+  const { party, ...data } = props.data
+
   const [memberFilter, setMemberFilter] = useState({})
-  const [partyMembers] = useState(allPeopleYaml.edges.map(e => e.node))
+  const [members] = useState(data.allPeopleYaml.edges.map(e => e.node))
   const selectMemberFilter = filter => () => setMemberFilter(filter)
 
+  const countMembers = filter => {
+    // filter member by mp_type
+    let selectedMembers = members.filter(
+      member => !filter.mp_type || member.mp_type === filter.mp_type
+    )
+    return selectedMembers.length
+  }
   const getSortedMembers = () => {
     // filter party member by mp_type
-    let members = partyMembers.filter(
+    let selectedMembers = members.filter(
       member => !memberFilter.mp_type || member.mp_type === memberFilter.mp_type
     )
     if (memberFilter.mp_type === "บัญชีรายชื่อ") {
       // sort by party list
-      members.sort((a, b) => a.mp_list - b.mp_list)
+      selectedMembers.sort((a, b) => a.mp_list - b.mp_list)
     } else if (memberFilter.mp_type === "แบ่งเขต") {
       // sort by province and zone
-      members.sort((a, b) =>
+      selectedMembers.sort((a, b) =>
         a.mp_province === b.mp_province
           ? a.mp_zone - b.mp_zone
           : a.mp_province.localeCompare(b.mp_province, "th")
       )
     } else {
       // sort by name and lastname
-      members.sort((a, b) =>
+      selectedMembers.sort((a, b) =>
         a.name === b.name
           ? a.lastname.localeCompare(b.lastname, "th")
           : a.name.localeCompare(b.name, "th")
       )
     }
-    return members
+    return selectedMembers
   }
 
+  const tabList = [
+    {
+      id: "ทั้งหมด",
+      label: "ทั้งหมด",
+      count: countMembers({}),
+      filter: {},
+      getClass: memberFilter => (!memberFilter.mp_type ? "active" : ""),
+    },
+    {
+      id: "บัญชีรายชื่อ",
+      label: "บัญชีรายชื่อ",
+      count: countMembers({ mp_type: "บัญชีรายชื่อ" }),
+      filter: { mp_type: "บัญชีรายชื่อ" },
+      getClass: memberFilter =>
+        memberFilter.mp_type === "บัญชีรายชื่อ" ? "active" : "",
+    },
+    {
+      id: "แบ่งเขต",
+      label: "แบ่งเขต",
+      count: countMembers({ mp_type: "แบ่งเขต" }),
+      filter: { mp_type: "แบ่งเขต" },
+      getClass: memberFilter =>
+        memberFilter.mp_type === "แบ่งเขต" ? "active" : "",
+    },
+  ]
+
+  const {
+    mp_type,
+    gender,
+    age,
+    education,
+    occupation_group,
+  } = loadCategoryStats(data)
+
+  const keyMembers = _.compact(
+    [
+      {
+        name: "party_leader",
+        label: "หัวหน้าพรรค",
+      },
+      {
+        name: "party_secretary",
+        label: "เลขาธิการพรรค",
+      },
+    ].map((keyPos, id) => {
+      if (!party[keyPos.name]) return null
+      const [name, lastname] = party[keyPos.name].split(" ").slice(-2)
+      const position = keyPos.label
+      return { id, name, lastname, position }
+    })
+  )
+
   return (
-    <Layout
-      pageStyles={{
-        background: partyYaml.color,
-      }}
-    >
-      <SEO title="พรรค" />
-      <section css={{ ...cssSection }}>
-        <div className="container">
-          <div
-            css={{
-              display: "flex",
-              alignItems: "flex-start",
-              paddingTop: "6rem",
-            }}
-          >
-            <div css={{ flex: "1 0 0" }}>
-              <h1
-                css={{
-                  marginTop: 0,
-                  marginBottom: "1rem",
-                  ...cssH1,
-                }}
-              >
-                พรรค{`${partyYaml.name}`}{" "}
-                {partyYaml.short_name ? `(${partyYaml.short_name})` : null}
-              </h1>
-              <div css={{ marginBottom: "4rem", ...cssH2 }}>
-                {partyYaml.en.name} Party
-              </div>
-            </div>
-            <div css={{ width: 100 }}>
-              <img
-                css={{ width: "100%" }}
-                src={partyLogo(partyYaml.name)}
-                alt={partyYaml.name}
-              ></img>
-            </div>
+    <Layout pageStyles={{ background: party.color }}>
+      <SEO title={`พรรค${party.name}`} />
+      <section className="section">
+        <div className="book">
+          <div className="page leftPage">
+            <h1 css={{ ...cssH1, margin: "1rem 0 0 0" }}>พรรค{party.name}</h1>
+            <h2 style={{ ...cssEngTitle }}>{party.en.name} Party</h2>
+            <h2 style={{ ...cssEngTitle }}>About</h2>
+            <p css={{ ...cssPageP }}>{party.description}</p>
+            <h2 css={{ ...cssEngTitle }}>Official Website</h2>
+            <OfficialWebsite {...party}></OfficialWebsite>
+            <h2 css={{ ...cssEngTitle }}>In Office</h2>
+            <InOfficeDate {...party}></InOfficeDate>
+            <h2 style={{ ...cssEngTitle }}>Key Members</h2>
+            {keyMembers.map(x => {
+              return (
+                <div className="peopleCard" key={x.id}>
+                  <PeopleCardMini key={x.id} {...x} />
+                </div>
+              )
+            })}
           </div>
-
-          <div
-            css={{
-              display: "flex",
-              alignItems: "flex-start",
-              paddingTop: "6rem",
-            }}
-          >
-            <div css={{ width: "50%" }}>
-              <hr></hr>
-              <h2 css={{ ...cssH2 }}>เกี่ยวกับพรรค{partyYaml.name}</h2>
-              <p>{partyYaml.description || "ไม่มีข้อมูล"}</p>
-
-              {partyYaml.website ? (
-                <div>
-                  <h2>Official Website</h2>
-                  <p>
-                    <ExternalLink href={partyYaml.website}>
-                      {partyYaml.website}
-                    </ExternalLink>
-                  </p>
-                </div>
-              ) : null}
-
-              {partyYaml.established_date ? (
-                <div>
-                  <h2>ก่อตั้งเมื่อ</h2>
-                  <p>{partyYaml.established_date}</p>
-                </div>
-              ) : null}
-
-              {partyYaml.party_leader ? (
-                <div>
-                  <h2>หัวหน้าพรรค</h2>
-                  <p>{partyYaml.party_leader}</p>
-                </div>
-              ) : null}
-            </div>
-
-            <div css={{ width: "50%" }}>
-              <h2 css={{ ...cssH2 }}>สมาชิกพรรค</h2>
-              <p>จำนวนสมาชิกสภาผู้แทนราษฎร {partyYaml.total_member} คน</p>
-
-              <h2>ส.ส. บัญชีรายชื่อ / แบ่งเขต</h2>
-              <h2>เพศ</h2>
-              <h2>ช่วงอายุ</h2>
-              <h2>การศึกษา</h2>
+          <div className="page">
+            <h2
+              style={{
+                ...cssEngTitle,
+                marginTop: "11.1rem",
+                marginBottom: "0rem",
+              }}
+            >
+              Members
+            </h2>
+            <h2
+              style={{
+                ...cssEngTitle,
+                fontFamily: "var(--ff-text)",
+                fontWeight: "normal",
+              }}
+            >
+              สมาชิกสภาผู้แทนราษฎรจำนวน {data.allPeopleYaml.totalCount} คน
+            </h2>
+            <div css={{ width: "100%" }}>
+              <div style={{ ...cssBarChart }}>
+                <StackedBarChart data={mp_type}></StackedBarChart>
+              </div>
+              <div style={{ ...cssBarChart }}>
+                <StackedBarChart data={gender}></StackedBarChart>
+              </div>
+              <div style={{ ...cssBarChart }}>
+                <StackedBarChart data={age}></StackedBarChart>
+              </div>
+              <div style={{ ...cssBarChart }}>
+                <StackedBarChart data={education}></StackedBarChart>
+              </div>
+              <div style={{ ...cssBarChart }}>
+                <StackedBarChart data={occupation_group}></StackedBarChart>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
       <section css={{ ...cssSection, background: "var(--cl-white)" }}>
         <div className="container">
           <h2 css={{ ...cssH1 }}>สรุปการลงมติล่าสุด</h2>
-          <div>Latest vote logs by {partyYaml.en.name} party</div>
         </div>
       </section>
-
       <section css={{ ...cssSection, background: "#eeeeee" }}>
         <div className="container">
           <h2
@@ -207,33 +343,16 @@ const PartyPage = ({ data: { partyYaml, allPeopleYaml } }) => {
               },
             }}
           >
-            <li
-              className={[!memberFilter.mp_type ? "active" : ""].join(" ")}
-              role="tab"
-              onClick={selectMemberFilter({})}
-            >
-              ทั้งหมด
-            </li>
-            <li
-              className={[
-                memberFilter.mp_type === "บัญชีรายชื่อ" ? "active" : "",
-              ].join(" ")}
-              role="tab"
-              onClick={() => {
-                setMemberFilter({ mp_type: "บัญชีรายชื่อ" })
-              }}
-            >
-              บัญชีรายชื่อ
-            </li>
-            <li
-              className={[
-                memberFilter.mp_type === "แบ่งเขต" ? "active" : "",
-              ].join(" ")}
-              role="tab"
-              onClick={selectMemberFilter({ mp_type: "แบ่งเขต" })}
-            >
-              แบ่งเขต
-            </li>
+            {tabList.map(tab => (
+              <li
+                key={tab.id}
+                className={[tab.getClass(memberFilter)].join(" ")}
+                role="tab"
+                onClick={selectMemberFilter(tab.filter)}
+              >
+                {tab.label} ({tab.count})
+              </li>
+            ))}
           </ul>
           <div
             css={{

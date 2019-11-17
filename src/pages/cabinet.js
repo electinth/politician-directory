@@ -8,7 +8,7 @@ import StackedBarChart from "../components/stackedBarChart"
 import { OfficialWebsite, InOfficeDate } from "../components/profile"
 import CabinetMemberSection from "../components/cabinetMemberSection"
 
-import "./cabinet.css"
+import "../styles/profile-book.css"
 
 export const query = graphql`
   query {
