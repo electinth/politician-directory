@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import _ from "lodash"
+import ExternalLink from "../externalLink"
 
 const cssLinkBox = {
   fontSize: "1.7rem",
@@ -23,9 +23,9 @@ const OfficialWebsite = profile => {
       const official = profile[key]
       if (!official) return null
       return (
-        <Link to={official} css={{ ...cssLinkBox }}>
+        <ExternalLink href={official} css={{ ...cssLinkBox }}>
           {_.startCase(key)}
-        </Link>
+        </ExternalLink>
       )
     })
   )

@@ -199,51 +199,74 @@ export function arrangeData(data, template, options = {}) {
 }
 
 export function loadCategoryStats(data) {
-  let education = [...data.education.group]
-  education = arrangeData(education, [
-    { name: "ต่ำกว่าปริญญาตรี", background: "var(--cl-theme-1)" },
-    { name: "สถาบันทหาร", background: "var(--cl-theme-2)" },
-    { name: "ปริญญาตรี", background: "var(--cl-theme-3)" },
-    { name: "ปริญญาโท", background: "var(--cl-theme-4)" },
-    { name: "ปริญญาเอก", background: "var(--cl-theme-5)" },
-    { name: "ไม่พบข้อมูล", background: "var(--cl-theme-unknown)" },
-  ])
+  let education
+  if (_.get(data, "education.group")) {
+    education = [..._.get(data, "education.group")]
+    education = arrangeData(education, [
+      { name: "ต่ำกว่าปริญญาตรี", background: "var(--cl-theme-1)" },
+      { name: "สถาบันทหาร", background: "var(--cl-theme-2)" },
+      { name: "ปริญญาตรี", background: "var(--cl-theme-3)" },
+      { name: "ปริญญาโท", background: "var(--cl-theme-4)" },
+      { name: "ปริญญาเอก", background: "var(--cl-theme-5)" },
+      { name: "ไม่พบข้อมูล", background: "var(--cl-theme-unknown)" },
+    ])
+  }
 
-  let occupation_group = [...data.occupation_group.group]
-  occupation_group = padCategory(occupation_group)
-  occupation_group = combineCategory(occupation_group)
-  const main_occupation_group = occupation_group.filter(
-    oc => !["อื่นๆ", "ไม่พบข้อมูล"].includes(oc.name)
-  )
-  occupation_group = arrangeData(occupation_group, [
-    ...main_occupation_group.slice(0, 3).map((group, i) => ({
-      name: group.name,
-      background: `var(--cl-theme-${2 + i})`,
-    })),
-    { name: "อื่นๆ", background: "var(--cl-theme-5)" },
-    { name: "ไม่พบข้อมูล", background: "var(--cl-theme-unknown)" },
-  ])
+  let occupation_group
+  if (_.get(data, "occupation_group.group")) {
+    occupation_group = [..._.get(data, "occupation_group.group")]
+    occupation_group = padCategory(occupation_group)
+    occupation_group = combineCategory(occupation_group)
+    const main_occupation_group = occupation_group.filter(
+      oc => !["อื่นๆ", "ไม่พบข้อมูล"].includes(oc.name)
+    )
+    occupation_group = arrangeData(occupation_group, [
+      ...main_occupation_group.slice(0, 3).map((group, i) => ({
+        name: group.name,
+        background: `var(--cl-theme-${2 + i})`,
+      })),
+      { name: "อื่นๆ", background: "var(--cl-theme-5)" },
+      { name: "ไม่พบข้อมูล", background: "var(--cl-theme-unknown)" },
+    ])
+  }
 
-  let gender = [...data.gender.group]
-  gender = arrangeData(gender, [
-    { name: "ชาย", background: "var(--cl-theme-2)" },
-    { name: "หญิง", background: "var(--cl-theme-5)" },
-    { name: "ไม่พบข้อมูล", background: "var(--cl-theme-unknown)" },
-  ])
+  let gender
+  if (_.get(data, "gender.group")) {
+    gender = [..._.get(data, "gender.group")]
+    gender = arrangeData(gender, [
+      { name: "ชาย", background: "var(--cl-theme-2)" },
+      { name: "หญิง", background: "var(--cl-theme-5)" },
+      { name: "ไม่พบข้อมูล", background: "var(--cl-theme-unknown)" },
+    ])
+  }
 
-  let birthdate = [...data.age.edges]
-  let age = birthdayToAgeHistogram(birthdate)
-  age = arrangeData(age, [
-    { name: "25-38 ปี", background: "var(--cl-theme-2)" },
-    { name: "39-54 ปี", background: "var(--cl-theme-3)" },
-    { name: "55-73 ปี", background: "var(--cl-theme-4)" },
-    { name: "74 ปีขึ้นไป", background: "var(--cl-theme-5)" },
-    { name: "ไม่พบข้อมูล", background: "var(--cl-theme-unknown)" },
-  ])
+  let age
+  if (_.get(data, "age.edges")) {
+    age = [..._.get(data, "age.edges")]
+    age = birthdayToAgeHistogram(age)
+    age = arrangeData(age, [
+      { name: "25-38 ปี", background: "var(--cl-theme-2)" },
+      { name: "39-54 ปี", background: "var(--cl-theme-3)" },
+      { name: "55-73 ปี", background: "var(--cl-theme-4)" },
+      { name: "74 ปีขึ้นไป", background: "var(--cl-theme-5)" },
+      { name: "ไม่พบข้อมูล", background: "var(--cl-theme-unknown)" },
+    ])
+  }
+
+  let mp_type
+  if (_.get(data, "mp_type.group")) {
+    mp_type = [..._.get(data, "mp_type.group")]
+    mp_type = arrangeData(mp_type, [
+      { name: "บัญชีรายชื่อ", background: "var(--cl-theme-2)" },
+      { name: "แบ่งเขต", background: "var(--cl-theme-5)" },
+    ])
+  }
+
   return {
     gender,
     age,
     education,
     occupation_group,
+    mp_type,
   }
 }

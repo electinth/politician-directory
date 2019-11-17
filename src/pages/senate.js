@@ -7,8 +7,8 @@ import "./cabinet.css"
 import { loadCategoryStats } from "../utils"
 import StackedBarChart from "../components/stackedBarChart"
 import { OfficialWebsite, InOfficeDate } from "../components/profile"
-import PeopleCard from "../components/peopleCard"
 import PeopleCardMini from "../components/peopleCardMini"
+import PeopleCard from "../components/peopleCard"
 
 export const query = graphql`
   query {

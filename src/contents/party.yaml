@@ -26,6 +26,7 @@
   speaker: ชวน หลีกภัย
   first_deputy_speaker: สุชาติ ตันเจริญ
   second_deputy_speaker: ศุภชัย โพธิ์สุ
+  opposition_leader: สมพงษ์ อมรวิวัฒน์
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: ''
@@ -66,6 +67,7 @@
   speaker: พรเพชร วิชิตชลชัย
   first_deputy_speaker: สิงห์ศึก สิงห์ไพร
   second_deputy_speaker: ศุภชัย สมเจริญ
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: ''
@@ -105,6 +107,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: พลเอก ประยุทธ์ จันทร์โอชา
   deputy_prime_minister: |-
     พลเอก ประวิตร วงษ์สุวรรณ
@@ -144,6 +147,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย ปรีดา บุญเพลิง
@@ -180,6 +184,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นางสาว กัญจนา ศิลปอาชา
@@ -218,6 +223,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย เทวัญ ลิปตพัลลภ
@@ -254,6 +260,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย มงคลกิตติ์ สุขสินธารานนท์
@@ -290,6 +297,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย พีระวิทย์ เรื่องลือดลภาค
@@ -327,6 +335,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย วันมูหะมัดนอร์ มะทา
@@ -363,6 +372,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย พิเชษฐ สถิรชวาล
@@ -397,6 +407,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย สุรทิน พิจารณ์
@@ -434,6 +445,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย จุรินทร์ ลักษณวิศิษฏ์
@@ -470,6 +482,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: พล.ต.อ. ยงยุทธ เทพจำนงค์
@@ -506,6 +519,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย สมเกียรติ ศรลัมพ์
@@ -539,6 +553,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นางสาว ศิลัมพา เลิศนุวัฒน์
@@ -573,6 +588,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: พล.ต. ทรงกลด ทิพย์รัตน์
@@ -608,6 +624,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย ชัชวาลล์ คงอุดม
@@ -642,6 +659,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย คฑาเทพ เตชะเดชเรืองกุล
@@ -679,6 +697,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย ระวี มาศฉมาดล
@@ -716,6 +735,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย อุตตม สาวนายน
@@ -752,6 +772,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย นิคม บุญวิเศษ
@@ -789,6 +810,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย สงคราม กิจเลิศไพโรจน์
@@ -827,6 +849,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย สมพงษ์ อมรวิวัฒน์
@@ -863,6 +886,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย อนุทิน ชาญวีรกูล
@@ -897,6 +921,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: หม่อมราชวงศ์ จัตุมงคล โสณกุล
@@ -925,7 +950,7 @@
   party_group: ร่วมรัฐบาล
   description: >-
     เดิมชื่อพรรคทวงคืน เป็นพรรคในกำกับของนาย ดำรงค์ พิเดช
-    อดีตอธิบดีกรมอุทยานแห่งชาติ สัตว์ป่า และพันธุ์พืช
+    อดีตอธิบดีกรมอุทยานแห่งชาติ สัตว์ป่า และพันธุ์พืช 
     ชูนโยบายอนุรักษ์ทรัพยากรและสิ่งแวดล้อม
   established_date: '2013-01-09'
   dissolved_date: ''
@@ -933,6 +958,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย ดำรงค์ พิเดช
@@ -969,6 +995,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย มนูญ สิวาภิรมย์รัตน์
@@ -1005,6 +1032,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: พล.ต.อ. เสรีพิศุทธ์ เตมียเวส
@@ -1041,6 +1069,7 @@
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นาย ธนาธร จึงรุ่งเรืองกิจ
@@ -1057,29 +1086,34 @@
   en:
     name: People Reform Party
     short_name: PPR
-    description: ''
+    description: >-
+      In the 2019 general election, the party won only a single seat. Later, the
+      party executive committee decided to dissolve the party and its only MP,
+      Paiboon, Paiboon became a member of Palang Pracharath.
   short_name: ปชช.
   color: '#f1ee56'
   party_type: พรรค
   party_ordinal: null
   party_group: ร่วมรัฐบาล
   description: >-
-    ได้รับเลือก ส.ส. บัญชีรายชื่อ 1 คน ต่อมานายไพบูลย์ นิติตะวัน
-    ได้ยื่นเรื่องขอเลิกกิจการพรรค และย้ายมาสังกัดพรรคพลังประชารัฐ
+    พรรคภายใต้การนำของนายไพบูลย์ นิติตะวัน ได้รับเลือก ส.ส. บัญชีรายชื่อ 1 คน
+    ต่อมานายไพบูลย์ ได้ยื่นเรื่องขอเลิกกิจการพรรค
+    และย้ายไปสังกัดพรรคพลังประชารัฐ
   established_date: '2018-10-03'
   dissolved_date: '2562-09-06'
   total_member: 0
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
+  opposition_leader: ''
   prime_minister: ''
   deputy_prime_minister: ''
   party_leader: นายไพบูลย์ นิติตะวัน
   party_secretary: ''
-  website: ''
+  website: 'https://www.pprparty.com/'
   facebook: ''
   twitter: ''
   email: ''
   phone: ''
-  ratchakitcha: ''
+  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/A/095/T_0001.PDF'
   is_active: false

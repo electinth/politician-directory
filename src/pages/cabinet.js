@@ -29,7 +29,7 @@ export const query = graphql`
       ratchakitcha
       is_active
     }
-    allMember: allPeopleYaml(
+    allPeopleYaml(
       filter: { is_cabinet: { eq: true }, is_active: { eq: true } }
     ) {
       totalCount
@@ -125,7 +125,7 @@ const CabinetPage = props => {
                 fontWeight: "normal",
               }}
             >
-              คณะรัฐมนตรีจำนวน {data.allMember.totalCount} คน
+              คณะรัฐมนตรีจำนวน {data.allPeopleYaml.totalCount} คน
             </h2>
             <div css={{ width: "100%" }}>
               <div css={{ ...cssBarChart }}>

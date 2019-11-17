@@ -337,7 +337,7 @@ const IndexPage = ({ data }) => {
                 margin: "4.8rem 0 0 0",
               }}
             >
-              <Button to="/representatives">ดูส.ส.ทั้งหมด</Button>
+              <Button to="/representatives">ดู ส.ส. ทั้งหมด</Button>
             </div>
           </div>
         </div>

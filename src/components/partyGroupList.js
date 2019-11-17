@@ -14,7 +14,7 @@ const cssMPColumn = {
   },
   h3: {
     textAlign: "left",
-    fontSize: "4rem",
+    fontSize: "3.2rem",
     padding: "2rem",
   },
   img: {
