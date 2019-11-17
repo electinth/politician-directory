@@ -154,17 +154,6 @@ const cssPartyTypeCard = {
 }
 
 const IndexPage = ({ data }) => {
-  let prop_of_interest = {
-    prop: `is_cabinet`,
-    name: "รัฐมนตรี",
-  }
-  let data_of_interest = data.allPeopleYaml.edges.filter(
-    ({ node }) => node[prop_of_interest.prop]
-  )
-  let data_the_rest = data.allPeopleYaml.edges.filter(
-    ({ node }) => !node[prop_of_interest.prop]
-  )
-
   return (
     <Layout
       pageStyles={{
@@ -212,25 +201,10 @@ const IndexPage = ({ data }) => {
         }}
       >
         <div className="container">
-          <h2 css={{ ...cssH1 }}>สัดส่วนผู้แทนของเรา พวกเขาเป็นใครบ้าง</h2>
-          <h2>
-            <span css={{ fontSize: "7.2rem", verticalAlign: "middle" }}>
-              {(
-                (100 * data_of_interest.length) /
-                data.allPeopleYaml.edges.length
-              ).toFixed(2)}
-              %
-            </span>
-            <span css={{ fontFamily: "var(--ff-text)", fontSize: "2.4rem" }}>
-              ของผู้แทนในสภาทั้งหมดเป็น{prop_of_interest.name}
-            </span>
-          </h2>
-          <div css={{ margin: "50px auto 0 auto" }}>
-            <WaffleFilter
-              // key="parliament"
-              data={data.allPeopleYaml.edges}
-            />
-          </div>
+          <WaffleFilter
+            // key="parliament"
+            data={data.allPeopleYaml.edges}
+          />
         </div>
       </section>
 
