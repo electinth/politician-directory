@@ -22,6 +22,7 @@ const VoteLogCard = ({
   const approveBar = (approve * 100) / total_voter + "%"
   const disproveBar = (disprove * 100) / total_voter + "%"
   const abstainedBar = (abstained * 100) / total_voter + "%"
+  const absentBar = (absent * 100) / total_voter + "%"
   return (
     <div
       className={className}
@@ -71,6 +72,15 @@ const VoteLogCard = ({
             width: abstainedBar,
             height: "100%",
             backgroundColor: "var(--cl-vote-abstained)",
+            borderRight: "1px solid var(--cl-black)",
+            boxSizing: "unset",
+          }}
+        />
+        <div
+          style={{
+            width: absentBar,
+            height: "100%",
+            backgroundColor: "var(--cl-white)",
             boxSizing: "unset",
           }}
         />
@@ -141,9 +151,60 @@ const VoteLogCard = ({
             {passed ? "ผ่าน" : "ไม่ผ่าน"}
           </div>
         </div>
-        <p style={{ paddingTop: "1rem" }}>
-          เห็นด้วย {approve} ไม่เห็นด้วย {disprove} งดออกเสียง {abstained}
-        </p>
+        <div
+          style={{
+            padding: "1rem 0",
+            fontSize: "14px",
+          }}
+        >
+          <div
+            style={{
+              width: "9px",
+              height: "9px",
+              backgroundColor: "var(--cl-vote-yes)",
+              border: "1px solid var(--cl-black)",
+              boxSizing: "unset",
+              display: "inline-block",
+            }}
+          />{" "}
+          เห็นด้วย {approve}
+          <div
+            style={{
+              width: "9px",
+              height: "9px",
+              backgroundColor: "var(--cl-vote-no)",
+              border: "1px solid var(--cl-black)",
+              boxSizing: "unset",
+              display: "inline-block",
+              marginLeft: "15px",
+            }}
+          />{" "}
+          ไม่เห็นด้วย {disprove}
+          <div
+            style={{
+              width: "9px",
+              height: "9px",
+              backgroundColor: "var(--cl-vote-abstained)",
+              border: "1px solid var(--cl-black)",
+              boxSizing: "unset",
+              display: "inline-block",
+              marginLeft: "15px",
+            }}
+          />{" "}
+          งดออกเสียง {abstained}
+          <div
+            style={{
+              width: "9px",
+              height: "9px",
+              backgroundColor: "var(--cl-white)",
+              border: "1px solid var(--cl-black)",
+              boxSizing: "unset",
+              display: "inline-block",
+              marginLeft: "15px",
+            }}
+          />{" "}
+          ไม่ลงคะแนน {abstained}
+        </div>
         <h3 style={{ fontSize: "2rem" }}>
           {moment(vote_date).format("D.M.YYYY")}
         </h3>
