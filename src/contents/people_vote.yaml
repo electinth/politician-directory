@@ -152,7 +152,7 @@
     - key: '6'
       value: ''
 - id: '10'
-  title: นาย
+  title: ดร.
   name: สุวิทย์
   lastname: เมษินทรีย์
   votelog:
@@ -322,7 +322,7 @@
     - key: '6'
       value: ''
 - id: '20'
-  title: คุณหญิง
+  title: ดร. คุณหญิง
   name: กัลยา
   lastname: โสภณพนิช
   votelog:
@@ -1189,7 +1189,7 @@
     - key: '6'
       value: '3'
 - id: '71'
-  title: ร้อยเอก
+  title: ร้อยเอก ดร.
   name: จองชัย
   lastname: วงศ์ทรายทอง
   votelog:
@@ -1325,7 +1325,7 @@
     - key: '6'
       value: '1'
 - id: '79'
-  title: นาย
+  title: ดร.
   name: จาตุรงค์
   lastname: เพ็งนรพัฒน์
   votelog:
@@ -2209,7 +2209,7 @@
     - key: '6'
       value: '3'
 - id: '131'
-  title: พันตำรวจโท
+  title: พันตำรวจโท ดร.
   name: ฐนภัทร
   lastname: กิตติวงศา
   votelog:
@@ -2906,7 +2906,7 @@
     - key: '6'
       value: '1'
 - id: '172'
-  title: นาย
+  title: ดร.
   name: ธนกร
   lastname: ไชยกุล
   votelog:
@@ -3110,7 +3110,7 @@
     - key: '6'
       value: '1'
 - id: '184'
-  title: นางสาว
+  title: ดร.
   name: ธีรรัตน์
   lastname: สำเร็จวาณิชย์
   votelog:
@@ -3212,7 +3212,7 @@
     - key: '6'
       value: '3'
 - id: '190'
-  title: นาย
+  title: ดร.
   name: นพดล
   lastname: แก้วสุพัฒน์
   votelog:
@@ -3263,7 +3263,7 @@
     - key: '6'
       value: '3'
 - id: '193'
-  title: นางสาว
+  title: ดร.
   name: นภาพร
   lastname: เพ็ชร์จินดา
   votelog:
@@ -3348,7 +3348,7 @@
     - key: '6'
       value: '1'
 - id: '198'
-  title: นาง
+  title: ดร.
   name: นาที
   lastname: รัชกิจประการ
   votelog:
@@ -3467,7 +3467,7 @@
     - key: '6'
       value: '3'
 - id: '205'
-  title: นาย
+  title: ดร.
   name: นิยม
   lastname: เวชกามา
   votelog:
@@ -3688,7 +3688,7 @@
     - key: '6'
       value: '3'
 - id: '218'
-  title: นาย
+  title: ดร.
   name: บุญลือ
   lastname: ประเสริฐโสภา
   votelog:
@@ -3858,7 +3858,7 @@
     - key: '6'
       value: '1'
 - id: '228'
-  title: นาย
+  title: ดร.
   name: ประภัตร
   lastname: โพธสุธน
   votelog:
@@ -4096,7 +4096,7 @@
     - key: '6'
       value: '1'
 - id: '242'
-  title: นาย
+  title: ดร.
   name: ปิยบุตร
   lastname: แสงกนกกุล
   votelog:
@@ -4181,7 +4181,7 @@
     - key: '6'
       value: '1'
 - id: '247'
-  title: พลโท
+  title: พลโท ดร.
   name: พงศกร
   lastname: รอดชมภู
   votelog:
@@ -4334,7 +4334,7 @@
     - key: '6'
       value: '4'
 - id: '256'
-  title: นาง
+  title: ดร.
   name: พรรณสิริ
   lastname: กุลนาถศิริ
   votelog:
@@ -4385,7 +4385,7 @@
     - key: '6'
       value: '4'
 - id: '259'
-  title: นางสาว
+  title: ดร.
   name: พัชรินทร์
   lastname: ซำศิริพงษ์
   votelog:
@@ -4419,7 +4419,7 @@
     - key: '6'
       value: '3'
 - id: '261'
-  title: นาย
+  title: ดร.
   name: พาณุวัฒณ์
   lastname: สะสมทรัพย์
   votelog:
@@ -4487,7 +4487,7 @@
     - key: '6'
       value: '1'
 - id: '265'
-  title: นาย
+  title: ดร.
   name: พิเชษฐ์
   lastname: เชื้อเมืองพาน
   votelog:
@@ -4623,7 +4623,7 @@
     - key: '6'
       value: '1'
 - id: '273'
-  title: นาย
+  title: ดร.
   name: พีระเพชร
   lastname: ศิริกุล
   votelog:
@@ -4708,7 +4708,7 @@
     - key: '6'
       value: '1'
 - id: '278'
-  title: นาย
+  title: ดร.
   name: เพชรวรรต
   lastname: วัฒนพงศศิริกุล
   votelog:
@@ -4759,7 +4759,7 @@
     - key: '6'
       value: '1'
 - id: '281'
-  title: นาย
+  title: ดร.
   name: ไพโรจน์
   lastname: โล่ห์สุนทร
   votelog:
@@ -4793,7 +4793,7 @@
     - key: '6'
       value: '1'
 - id: '283'
-  title: นาย
+  title: ดร.
   name: ภณณัฏฐ์
   lastname: ศรีอินทร์สุทธิ์
   votelog:
@@ -4929,7 +4929,7 @@
     - key: '6'
       value: '3'
 - id: '291'
-  title: นาย
+  title: ดร.
   name: ภิญโญ
   lastname: นิโรจน์
   votelog:
@@ -4980,7 +4980,7 @@
     - key: '6'
       value: '1'
 - id: '294'
-  title: นาย
+  title: ดร.
   name: มงคลกิตติ์
   lastname: สุขสินธารานนท์
   votelog:
@@ -5082,7 +5082,7 @@
     - key: '6'
       value: '3'
 - id: '300'
-  title: นาย
+  title: ดร.
   name: มนูญ
   lastname: สิวาภิรมย์รัตน์
   votelog:
@@ -5201,7 +5201,7 @@
     - key: '6'
       value: '3'
 - id: '307'
-  title: นาย
+  title: ดร.
   name: มิ่งขวัญ
   lastname: แสงสุวรรณ์
   votelog:
@@ -5252,7 +5252,7 @@
     - key: '6'
       value: '1'
 - id: '310'
-  title: นาย
+  title: ดร.
   name: ยงยุทธ
   lastname: สุวรรณบุตร
   votelog:
@@ -5337,7 +5337,7 @@
     - key: '6'
       value: '3'
 - id: '315'
-  title: รองศาสตราจารย์
+  title: รองศาสตราจารย์ ดร.
   name: รงค์
   lastname: บุญสวยขวัญ
   votelog:
@@ -5507,7 +5507,7 @@
     - key: '6'
       value: '1'
 - id: '325'
-  title: นาย
+  title: ดร.
   name: เรวัต
   lastname: วิศรุตเวช
   votelog:
@@ -5694,7 +5694,7 @@
     - key: '6'
       value: '3'
 - id: '336'
-  title: นาย
+  title: ดร.
   name: วราวุธ
   lastname: ศิลปอาชา
   votelog:
@@ -6000,7 +6000,7 @@
     - key: '6'
       value: '3'
 - id: '354'
-  title: นาย
+  title: ดร.
   name: วิโรจน์
   lastname: ลักขณาอดิศร
   votelog:
@@ -6170,7 +6170,7 @@
     - key: '6'
       value: '1'
 - id: '364'
-  title: นาย
+  title: ดร.
   name: วีระชัย
   lastname: วีระเมธีกุล
   votelog:
@@ -6221,7 +6221,7 @@
     - key: '6'
       value: '3'
 - id: '367'
-  title: นาย
+  title: ดร.
   name: วุฒิชัย
   lastname: กิตติธเนศวร
   votelog:
@@ -6646,7 +6646,7 @@
     - key: '6'
       value: '3'
 - id: '392'
-  title: นาย
+  title: ดร.
   name: สงคราม
   lastname: กิจเลิศไพโรจน์
   votelog:
@@ -7122,7 +7122,7 @@
     - key: '6'
       value: '1'
 - id: '420'
-  title: นาย
+  title: ดร.
   name: สฤษฏ์พงษ์
   lastname: เกี่ยวข้อง
   votelog:
@@ -7139,7 +7139,7 @@
     - key: '6'
       value: '1'
 - id: '421'
-  title: นาย
+  title: ดร.
   name: สฤษดิ์
   lastname: บุตรเนียร
   votelog:
@@ -7156,7 +7156,7 @@
     - key: '6'
       value: '1'
 - id: '422'
-  title: นาย
+  title: ดร.
   name: สะถิระ
   lastname: เผือกประพันธุ์
   votelog:
@@ -7207,7 +7207,7 @@
     - key: '6'
       value: '1'
 - id: '425'
-  title: นาย
+  title: ดร.
   name: สันติ
   lastname: กีระนันทน์
   votelog:
@@ -7394,7 +7394,7 @@
     - key: '6'
       value: '3'
 - id: '436'
-  title: พันโท
+  title: พันโท ดร.
   name: สินธพ
   lastname: แก้วพิจิตร
   votelog:
@@ -7462,7 +7462,7 @@
     - key: '6'
       value: '3'
 - id: '440'
-  title: นาย
+  title: ดร.
   name: สิริพงศ์
   lastname: อังคสกุลเกียรติ
   votelog:
@@ -7598,7 +7598,7 @@
     - key: '6'
       value: '1'
 - id: '448'
-  title: นาย
+  title: ดร.
   name: สุทิน
   lastname: คลังแสง
   votelog:
@@ -7666,7 +7666,7 @@
     - key: '6'
       value: '1'
 - id: '452'
-  title: พลตำรวจตรี
+  title: พลตำรวจตรี ดร.
   name: สุพิศาล
   lastname: ภักดีนฤนาถ
   votelog:
@@ -7717,7 +7717,7 @@
     - key: '6'
       value: '3'
 - id: '455'
-  title: นาย
+  title: ดร.
   name: สุรชัย
   lastname: ศรีสารคาม
   votelog:
@@ -7768,7 +7768,7 @@
     - key: '6'
       value: '1'
 - id: '458'
-  title: นาย
+  title: ดร.
   name: สุรเชษฐ์
   lastname: ประวีณวงศ์วุฒิ
   votelog:
@@ -7819,7 +7819,7 @@
     - key: '6'
       value: '3'
 - id: '461'
-  title: รองศาสตราจารย์
+  title: รองศาสตราจารย์ ดร.
   name: สุรวาท
   lastname: ทองบุ
   votelog:
@@ -7836,7 +7836,7 @@
     - key: '6'
       value: '3'
 - id: '462'
-  title: นาย
+  title: ดร.
   name: สุรวิทย์
   lastname: คนสมบูรณ์
   votelog:
@@ -7955,7 +7955,7 @@
     - key: '6'
       value: '1'
 - id: '469'
-  title: นาย
+  title: ดร.
   name: สุริยะ
   lastname: จึงรุ่งเรืองกิจ
   votelog:
@@ -8210,7 +8210,7 @@
     - key: '6'
       value: '3'
 - id: '484'
-  title: นาย
+  title: ดร.
   name: อนุทิน
   lastname: ชาญวีรกูล
   votelog:
@@ -8329,7 +8329,7 @@
     - key: '6'
       value: '1'
 - id: '491'
-  title: นาย
+  title: ดร.
   name: อภิชัย
   lastname: เตชะอุบล
   votelog:
@@ -8363,7 +8363,7 @@
     - key: '6'
       value: '1'
 - id: '493'
-  title: นาย
+  title: ดร.
   name: อภิชาติ
   lastname: ตีรสวัสดิชัย
   votelog:
@@ -8805,7 +8805,7 @@
     - key: '6'
       value: '3'
 - id: '519'
-  title: นาย
+  title: ดร.
   name: เอกราช
   lastname: ช่างเหลา
   votelog:
@@ -9128,7 +9128,7 @@
     - key: '6'
       value: ''
 - id: '538'
-  title: นาย
+  title: ดร.
   name: ไกรสิทธิ์
   lastname: ตันติศิรินทร์
   votelog:
@@ -9179,7 +9179,7 @@
     - key: '6'
       value: ''
 - id: '541'
-  title: นาย
+  title: ดร.
   name: จเด็จ
   lastname: อินสว่าง
   votelog:
@@ -9281,7 +9281,7 @@
     - key: '6'
       value: ''
 - id: '547'
-  title: นาย
+  title: ดร.
   name: จิรชัย
   lastname: มูลทองโร่ย
   votelog:
@@ -9349,7 +9349,7 @@
     - key: '6'
       value: ''
 - id: '551'
-  title: นาย
+  title: ดร.
   name: เจตน์
   lastname: ศิรธรานนท์
   votelog:
@@ -9366,7 +9366,7 @@
     - key: '6'
       value: ''
 - id: '552'
-  title: นาย
+  title: ดร.
   name: เจน
   lastname: นำชัยศิริ
   votelog:
@@ -9383,7 +9383,7 @@
     - key: '6'
       value: ''
 - id: '553'
-  title: นาง
+  title: ดร.
   name: ฉวีรัตน์
   lastname: เกษตรสุนทร
   votelog:
@@ -9468,7 +9468,7 @@
     - key: '6'
       value: ''
 - id: '558'
-  title: นาย
+  title: ผู้ช่วยศาสตราจารย์
   name: เฉลิมชัย
   lastname: บุญยะลีพรรณ
   votelog:
@@ -9536,7 +9536,7 @@
     - key: '6'
       value: ''
 - id: '562'
-  title: พลเอก
+  title: พลเอก ดร.
   name: ชยุติ
   lastname: สุวรรณมาศ
   votelog:
@@ -9621,7 +9621,7 @@
     - key: '6'
       value: ''
 - id: '567'
-  title: นาย
+  title: ดร.
   name: ชาญวิทย์
   lastname: ผลชีวิน
   votelog:
@@ -9893,7 +9893,7 @@
     - key: '6'
       value: ''
 - id: '583'
-  title: นางสาว
+  title: ดร.
   name: ดาวน้อย
   lastname: สุทธินิภาพันธ์
   votelog:
@@ -9910,7 +9910,7 @@
     - key: '6'
       value: ''
 - id: '584'
-  title: นาย
+  title: ดร.
   name: ดิเรกฤทธิ์
   lastname: เจนครองธรรม
   votelog:
@@ -9995,7 +9995,7 @@
     - key: '6'
       value: ''
 - id: '589'
-  title: นาย
+  title: ดร.
   name: ตวง
   lastname: อันทะไชย
   votelog:
@@ -10131,7 +10131,7 @@
     - key: '6'
       value: ''
 - id: '597'
-  title: นาย
+  title: นายแพทย์
   name: ทวีวงษ์
   lastname: จุลกมนตรี
   votelog:
@@ -10165,7 +10165,7 @@
     - key: '6'
       value: ''
 - id: '599'
-  title: ร้อยเอก
+  title: ร้อยเอก ดร.
   name: ทินพันธุ์
   lastname: นาคะตะ
   votelog:
@@ -10216,7 +10216,7 @@
     - key: '6'
       value: ''
 - id: '602'
-  title: พลเอก
+  title: พลเอก ดร.
   name: ธนะศักดิ์
   lastname: ปฏิมาประกร
   votelog:
@@ -10403,7 +10403,7 @@
     - key: '6'
       value: ''
 - id: '613'
-  title: นาง
+  title: ดร.
   name: นิสดารก์
   lastname: เวชยานนท์
   votelog:
@@ -10505,7 +10505,7 @@
     - key: '6'
       value: ''
 - id: '619'
-  title: นาย
+  title: ดร.
   name: บุญส่ง
   lastname: ไข่เกษ
   votelog:
@@ -10522,7 +10522,7 @@
     - key: '6'
       value: ''
 - id: '620'
-  title: พลเอก
+  title: พลเอก ดร.
   name: บุญสร้าง
   lastname: เนียมประดิษฐ์
   votelog:
@@ -10573,7 +10573,7 @@
     - key: '6'
       value: ''
 - id: '623'
-  title: พลอากาศเอก
+  title: พลอากาศเอก ดร.
   name: ประจิน
   lastname: จั่นตอง
   votelog:
@@ -10692,7 +10692,7 @@
     - key: '6'
       value: ''
 - id: '630'
-  title: พลเอก
+  title: พลเอก ดร.
   name: ประสาท
   lastname: สุขเกษตร
   votelog:
@@ -10709,7 +10709,7 @@
     - key: '6'
       value: ''
 - id: '631'
-  title: รองศาสตราจารย์
+  title: รองศาสตราจารย์ ดร.
   name: ประเสริฐ
   lastname: ปิ่นปฐมรัฐ
   votelog:
@@ -10828,7 +10828,7 @@
     - key: '6'
       value: ''
 - id: '638'
-  title: นางสาว
+  title: ดร.
   name: ปิยฉัฏฐ์
   lastname: วันเฉลิม
   votelog:
@@ -11304,7 +11304,7 @@
     - key: '6'
       value: ''
 - id: '666'
-  title: พันตำรวจตรี
+  title: พันตำรวจตรี ดร.
   name: ยงยุทธ
   lastname: สาระสมบัติ
   votelog:
@@ -11321,7 +11321,7 @@
     - key: '6'
       value: ''
 - id: '667'
-  title: พลเอก
+  title: พลเอก ดร.
   name: ยอดยุทธ
   lastname: บุญญาธิการ
   votelog:
@@ -11372,7 +11372,7 @@
     - key: '6'
       value: ''
 - id: '670'
-  title: ดร.
+  title: นาย
   name: รณวริทธิ์
   lastname: ปริยฉัตรตระกูล
   votelog:
@@ -11508,7 +11508,7 @@
     - key: '6'
       value: ''
 - id: '678'
-  title: พลเอก
+  title: พลเอก ดร.
   name: วรพงษ์
   lastname: สง่าเนตร
   votelog:
@@ -11644,7 +11644,7 @@
     - key: '6'
       value: ''
 - id: '686'
-  title: พลเอก
+  title: พลเอก ดร.
   name: วิชิต
   lastname: ยาทิพย์
   votelog:
@@ -11916,7 +11916,7 @@
     - key: '6'
       value: ''
 - id: '702'
-  title: นาย
+  title: ดร.
   name: ศักดิ์ไทย
   lastname: สุรกิจบวร
   votelog:
@@ -11967,7 +11967,7 @@
     - key: '6'
       value: ''
 - id: '705'
-  title: นาง
+  title: ดร.
   name: ศิรินา
   lastname: ปวโรฬารวิทยา
   votelog:
@@ -12086,7 +12086,7 @@
     - key: '6'
       value: ''
 - id: '712'
-  title: นาย
+  title: ดร.
   name: สถิตย์
   lastname: ลิ่มพงศ์พันธุ์
   votelog:
@@ -12154,7 +12154,7 @@
     - key: '6'
       value: ''
 - id: '716'
-  title: นาย
+  title: ดร.
   name: สม
   lastname: จาตุศรีพิทักษ์
   votelog:
@@ -12239,7 +12239,7 @@
     - key: '6'
       value: ''
 - id: '721'
-  title: นาย
+  title: ดร.
   name: สมชาย
   lastname: หาญหิรัญ
   votelog:
@@ -12426,7 +12426,7 @@
     - key: '6'
       value: ''
 - id: '732'
-  title: นาย
+  title: ดร.
   name: สังศิต
   lastname: พิริยะรังสรรค์
   votelog:
@@ -12647,7 +12647,7 @@
     - key: '6'
       value: ''
 - id: '745'
-  title: นาย
+  title: ดร.
   name: สุรเดช
   lastname: จิรัฐิติเจริญ
   votelog:
@@ -13072,7 +13072,7 @@
     - key: '6'
       value: ''
 - id: '770'
-  title: นาย
+  title: ดร.
   name: อุดม
   lastname: คชินทร
   votelog:
@@ -13177,6 +13177,23 @@
   title: นาย
   name: อภิชาติ
   lastname: โตดิลกเวชช์
+  votelog:
+    - key: '1'
+      value: ''
+    - key: '2'
+      value: ''
+    - key: '3'
+      value: ''
+    - key: '4'
+      value: ''
+    - key: '5'
+      value: ''
+    - key: '6'
+      value: ''
+- id: '777'
+  title: พลอากาศเอก
+  name: มานัต
+  lastname: วงษ์วาทย์
   votelog:
     - key: '1'
       value: ''

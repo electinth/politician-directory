@@ -50,14 +50,11 @@
   th: ทหาร
   en: Military Officer
 - category: กลุ่มอาชีพ
-  th: นักกฎหมาย
-  en: Lawyer
+  th: กฎหมาย/ยุติธรรม
+  en: Lawyer/Justice
 - category: กลุ่มอาชีพ
   th: ตำรวจ
   en: Police
-- category: กลุ่มอาชีพ
-  th: ยุติธรรม
-  en: Department of Justice
 - category: กลุ่มอาชีพ
   th: การศึกษา
   en: Educational Officer
@@ -66,7 +63,7 @@
   en: Medical Officer
 - category: กลุ่มอาชีพ
   th: เกษตรกร
-  en: Farmer
+  en: Agriculturist
 - category: กลุ่มอาชีพ
   th: เอกชน
   en: Private Organization
