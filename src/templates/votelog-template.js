@@ -328,6 +328,7 @@ const VotelogPage = ({
         >
           {votelogYaml.document.map(doc => (
             <ExternalLink
+              key={doc.link}
               href={doc.link}
               css={css`
                 color: var(--cl-black);
@@ -338,13 +339,13 @@ const VotelogPage = ({
             >
               <span
                 css={css`
-                  font-family: var(--ff-title);
-                  font-size: 2.4rem;
+                  font-size: 1.8rem;
                   line-height: 3rem;
                   cursor: pointer;
                   border-radius: 5px;
                   padding: 1rem 1rem;
                   margin-right: 1rem;
+                  margin-bottom: 1rem;
                   display: block;
                   background-color: var(--cl-pink);
                   pointer-events: auto;

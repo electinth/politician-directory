@@ -21,7 +21,7 @@ const filterChoice = [
 const voteColor = {
   "1": "#329a2e",
   "2": "#ec2627",
-  "3": "#cccccc",
+  "3": "#aaaaaa",
   "4": "#272727",
   "": "-",
 }
@@ -115,26 +115,30 @@ class PeopleVote extends Component {
           </h2>
           <ul
             css={{
+              display: "block",
               listStyle: "none",
               textAlign: "center",
-              li: {
+              "> li": {
                 display: "inline-block",
-                margin: 10,
+                fontSize: "2.4rem",
+                padding: "1rem 0 0",
+                margin: "0 1rem",
                 cursor: "pointer",
-                fontSize: "2.5rem",
+                "&.active": {
+                  borderBottom: "8px solid var(--cl-black)",
+                },
               },
             }}
           >
             {filterChoice.map(({ text, choice }) => (
               <li
                 key={choice}
+                className={activeFilter === choice ? "active" : ""}
                 onClick={() => this.handleFilter(choice)}
-                css={
+                style={
                   activeFilter === choice
                     ? {
-                        color: voteColor[choice],
-                        borderBottom: `3px ${voteColor[choice]} solid`,
-                        fontWeight: 600,
+                        borderBottomColor: voteColor[choice],
                       }
                     : null
                 }
@@ -143,9 +147,22 @@ class PeopleVote extends Component {
               </li>
             ))}
           </ul>
-          {allVote.map(vote => (
-            <PeopleVoteCard key={vote.id} {...vote}></PeopleVoteCard>
-          ))}
+          {allVote.length > 0 ? (
+            allVote.map(vote => (
+              <PeopleVoteCard key={vote.id} {...vote}></PeopleVoteCard>
+            ))
+          ) : (
+            <div
+              css={{
+                fontFamily: "var(--ff-title)",
+                fontSize: "3.2rem",
+                textAlign: "center",
+                margin: "6rem 0",
+              }}
+            >
+              ยังไม่เคยลงมติประเภทนี้
+            </div>
+          )}
         </div>
       </section>
     )

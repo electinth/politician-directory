@@ -201,6 +201,8 @@ const SenatePage = props => {
     })
   )
 
+  const showingMembers = getSortedMembers()
+
   return (
     <Layout pageStyles={{ background: "#edf087" }}>
       <SEO title="สมาชิกวุฒิสภา" />
@@ -306,21 +308,34 @@ const SenatePage = props => {
               </li>
             ))}
           </ul>
-          <div
-            css={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "space-evenly",
-            }}
-          >
-            {getSortedMembers().map((member, index) => (
-              <PeopleCard
-                key={member.id}
-                {...member}
-                type="senator"
-              ></PeopleCard>
-            ))}
-          </div>
+          {showingMembers.length > 0 ? (
+            <div
+              css={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "space-evenly",
+              }}
+            >
+              {showingMembers.map((member, index) => (
+                <PeopleCard
+                  key={member.id}
+                  {...member}
+                  type="senator"
+                ></PeopleCard>
+              ))}
+            </div>
+          ) : (
+            <div
+              css={{
+                fontFamily: "var(--ff-title)",
+                fontSize: "3.2rem",
+                textAlign: "center",
+                margin: "6rem 0",
+              }}
+            >
+              ไม่มีสมาชิก
+            </div>
+          )}
         </div>
       </section>
     </Layout>
