@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import Button from "../components/button"
 import Hero from "../components/hero"
 import VoteLogCard from "../components/voteLogCard"
-import Waffle from "../components/waffle"
+import WaffleFilter from "../components/waffleFilter"
 import PartyGroupList from "../components/partyGroupList"
 
 export const query = graphql`
@@ -31,9 +31,16 @@ export const query = graphql`
           fields {
             slug
           }
-          title
+          birthdate(fromNow: true)
+          degree
+          education
+          ex_occupation
+          graduation
+          gender
+          occupation_group
           name
           lastname
+          title
           cabinet_position
           is_cabinet
           is_senator
@@ -147,17 +154,6 @@ const cssPartyTypeCard = {
 }
 
 const IndexPage = ({ data }) => {
-  let prop_of_interest = {
-    prop: `is_cabinet`,
-    name: "รัฐมนตรี",
-  }
-  let data_of_interest = data.allPeopleYaml.edges.filter(
-    ({ node }) => node[prop_of_interest.prop]
-  )
-  let data_the_rest = data.allPeopleYaml.edges.filter(
-    ({ node }) => !node[prop_of_interest.prop]
-  )
-
   return (
     <Layout
       pageStyles={{
@@ -205,26 +201,10 @@ const IndexPage = ({ data }) => {
         }}
       >
         <div className="container">
-          <h2 css={{ ...cssH1 }}>สัดส่วนผู้แทนของเรา พวกเขาเป็นใครบ้าง</h2>
-          <h2>
-            <span css={{ fontSize: "7.2rem", verticalAlign: "middle" }}>
-              {(
-                (100 * data_of_interest.length) /
-                data.allPeopleYaml.edges.length
-              ).toFixed(2)}
-              %
-            </span>
-            <span css={{ fontFamily: "var(--ff-text)", fontSize: "2.4rem" }}>
-              ของผู้แทนในสภาทั้งหมดเป็น{prop_of_interest.name}
-            </span>
-          </h2>
-          <div css={{ margin: "50px auto 0 auto" }}>
-            <Waffle
-              // key="parliament"
-              data={[data_of_interest, data_the_rest]}
-              colors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
-            />
-          </div>
+          <WaffleFilter
+            // key="parliament"
+            data={data.allPeopleYaml.edges}
+          />
         </div>
       </section>
 
