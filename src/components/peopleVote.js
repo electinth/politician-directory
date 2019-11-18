@@ -1,7 +1,8 @@
 import React, { Component } from "react"
-
-import { css } from "@emotion/core"
+import { Link } from "gatsby"
 import _ from "lodash"
+
+import { formatDate } from "../utils"
 
 const cssSection = { paddingBottom: "8rem" }
 const cssSectionWhite = {
@@ -14,13 +15,13 @@ const filterChoice = [
   { text: "เห็นด้วย", choice: 1 },
   { text: "ไม่เห็นด้วย", choice: 2 },
   { text: "งดออกเสียง", choice: 3 },
-  { text: "ไม่เข้าประชุม", choice: 4 },
+  { text: "ไม่ลงคะแนน", choice: 4 },
 ]
 
 const voteColor = {
-  "1": "#2dc453",
-  "2": "#ef314b",
-  "3": "grey",
+  "1": "#329a2e",
+  "2": "#ec2627",
+  "3": "#cccccc",
   "4": "#272727",
   "": "-",
 }
@@ -29,9 +30,51 @@ const voteText = {
   "1": "เห็นด้วย",
   "2": "ไม่เห็นด้วย",
   "3": "งดออกเสียง",
-  "4": "ไม่เข้าประชุม",
+  "4": "ไม่ลงคะแนน",
   "": "-",
 }
+
+const PeopleVoteCard = ({ choice, fields, title, legal_title, vote_date }) => (
+  <Link
+    to={fields.slug}
+    css={{
+      display: "block",
+      color: "var(--cl-black)",
+      padding: "0.5rem 2rem",
+      fontSize: "2.4rem",
+      borderRadius: 4,
+      border: "1px solid black",
+      borderLeft: `1rem solid ${voteColor[choice]}`,
+      margin: "20px 0px",
+      "&:hover": {
+        textDecoration: "none",
+      },
+    }}
+  >
+    <div
+      css={{
+        color: voteColor[choice],
+        margin: "15px 0px",
+        fontSize: "2.4rem",
+      }}
+    >
+      <div
+        css={{
+          display: "inline-block",
+          height: 15,
+          width: 15,
+          marginRight: 10,
+          backgroundColor: voteColor[choice],
+        }}
+      ></div>
+      {voteText[choice]}
+    </div>
+    <p css={{ fontFamily: "var(--ff-title)", fontSize: "2.4rem" }}>{title}</p>
+    <p css={{ fontSize: "1.5rem", margin: "15px 0px" }}>
+      {formatDate(vote_date)}
+    </p>
+  </Link>
+)
 
 class PeopleVote extends Component {
   state = {
@@ -57,6 +100,7 @@ class PeopleVote extends Component {
       <section
         css={{
           ...cssSectionWhite,
+          paddingTop: "6rem",
         }}
       >
         <div className="container">
@@ -64,21 +108,22 @@ class PeopleVote extends Component {
             css={{
               fontSize: "4.8rem",
               textAlign: "center",
+              marginBottom: "3rem",
             }}
           >
             สรุปการลงมติในสภา
           </h2>
           <ul
-            css={css`
-              list-style: none;
-              text-align: center;
-              li {
-                display: inline-block;
-                margin: 10px;
-                cursor: pointer;
-                font-size: 2.5rem;
-              }
-            `}
+            css={{
+              listStyle: "none",
+              textAlign: "center",
+              li: {
+                display: "inline-block",
+                margin: 10,
+                cursor: "pointer",
+                fontSize: "2.5rem",
+              },
+            }}
           >
             {filterChoice.map(({ text, choice }) => (
               <li
@@ -86,11 +131,11 @@ class PeopleVote extends Component {
                 onClick={() => this.handleFilter(choice)}
                 css={
                   activeFilter === choice
-                    ? css`
-                        color: ${voteColor[choice]};
-                        border-bottom: 3px ${voteColor[choice]} solid;
-                        font-weight: 600;
-                      `
+                    ? {
+                        color: voteColor[choice],
+                        borderBottom: `3px ${voteColor[choice]} solid`,
+                        fontWeight: 600,
+                      }
                     : null
                 }
               >
@@ -98,52 +143,8 @@ class PeopleVote extends Component {
               </li>
             ))}
           </ul>
-          {allVote.map(({ choice, title, legal_title, vote_date }) => (
-            <div
-              key={title}
-              css={css`
-                padding: 0.5rem 2rem;
-                font-size: 24px;
-                border-radius: 10px;
-                border: 1px solid black;
-                border-left: 15px solid ${voteColor[choice]};
-                margin: 20px 0px;
-              `}
-            >
-              <div
-                css={css`
-                  color: ${voteColor[choice]};
-                  margin: 15px 0px;
-                `}
-              >
-                <div
-                  css={css`
-                    display: inline-block;
-                    height: 15px;
-                    width: 15px;
-                    margin-right: 10px;
-                    background-color: ${voteColor[choice]};
-                  `}
-                ></div>
-                {voteText[choice]}
-              </div>
-              <p>{title}</p>
-              <p
-                css={css`
-                  font-size: 2rem;
-                `}
-              >
-                {legal_title}
-              </p>
-              <p
-                css={css`
-                  font-size: 1.5rem;
-                  margin: 15 px 0px;
-                `}
-              >
-                {vote_date}
-              </p>
-            </div>
+          {allVote.map(vote => (
+            <PeopleVoteCard key={vote.id} {...vote}></PeopleVoteCard>
           ))}
         </div>
       </section>
@@ -153,18 +154,19 @@ class PeopleVote extends Component {
 
 export default ({ peopleVoteYaml, allVotelogYaml }) => {
   const voteLogs = peopleVoteYaml.votelog
-  const allVote = allVotelogYaml.nodes
+  const allVotes = [...allVotelogYaml.nodes]
   // merge allVote and voteLog into allVote
-  allVote.forEach(vote => {
+  allVotes.forEach(vote => {
     const matchedVotelog = _.find(voteLogs, ["key", vote.id])
     if (matchedVotelog) {
       vote.choice = matchedVotelog.value
     }
   })
-
-  const sortedAllVotes = allVote.sort((a, b) => {
-    return b.vote_date.localeCompare(a.vote_date)
-  })
+  const sortedAllVotes = allVotes
+    .filter(vote => vote.choice)
+    .sort((a, b) => {
+      return b.vote_date.localeCompare(a.vote_date)
+    })
 
   return <PeopleVote allVote={sortedAllVotes} />
 }

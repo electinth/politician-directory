@@ -10,7 +10,6 @@ const cssLinkBox = {
   border: "1px solid var(--cl-black)",
   marginRight: "1rem",
   padding: "0 1rem",
-  textDecoration: "none",
   color: "var(--cl-black)",
   "&:hover": {
     textDecoration: "none",

@@ -36,6 +36,7 @@ export const query = graphql`
       mp_zone
       mp_list
       vote
+      senator_method
       committee {
         set
         position
@@ -57,10 +58,14 @@ export const query = graphql`
     partyYaml(name: { eq: $party }) {
       color
     }
-    allVotelogYaml {
+    allVotelogYaml(filter: { is_active: { eq: true } }) {
       nodes {
         id
+        fields {
+          slug
+        }
         title
+        description_th
         legal_title
         vote_date
       }
@@ -81,10 +86,6 @@ const cssSection = {
     fontSize: "4.8rem",
     textAlign: "center",
   },
-}
-const cssSectionWhite = {
-  ...cssSection,
-  background: "var(--cl-white)",
 }
 const cssSectionBlack = {
   ...cssSection,
@@ -110,12 +111,6 @@ const cssEngTitle = {
   margin: "1.5rem 0 1.2rem 0",
 }
 
-const cssPageP = {}
-
-const cssBarChart = {
-  margin: "1rem 0",
-}
-
 const cssRightPage = {
   fontSize: "1.8rem",
   p: {
@@ -131,13 +126,17 @@ const cssRightPage = {
 }
 
 const MPParty = person => (
-  <p css={{ fontWeight: "bold" }}>
-    {person.party ? (
-      <Link to={`/party/${person.party}`}>พรรค {person.party}</Link>
-    ) : (
-      "ไม่สังกัดพรรค"
-    )}
-  </p>
+  <div>
+    {person.is_mp ? (
+      <p css={{ fontWeight: "bold" }}>
+        {person.party ? (
+          <Link to={`/party/${person.party}`}>พรรค {person.party}</Link>
+        ) : (
+          "ไม่สังกัดพรรค"
+        )}
+      </p>
+    ) : null}
+  </div>
 )
 
 const PersonAffiliation = person => (
@@ -147,7 +146,7 @@ const PersonAffiliation = person => (
     )}
 
     {!person.is_senator ? null : (
-      <p css={{ fontWeight: "bold" }}>สมาชิกวุฒิสภา</p>
+      <p css={{ fontWeight: "bold" }}>สมาชิกวุฒิสภา {person.senator_method}</p>
     )}
 
     {!person.is_mp ? null : person.mp_type === "แบ่งเขต" ? (
@@ -236,13 +235,7 @@ const PersonFinance = person => (
 )
 
 const PeoplePage = props => {
-  const {
-    person,
-    peopleVoteYaml,
-    partyYaml,
-    allVotelogYaml,
-    ...data
-  } = props.data
+  const { person, peopleVoteYaml, partyYaml, allVotelogYaml } = props.data
 
   const pageBGColor = partyYaml !== null ? partyYaml.color : "var(--cl-gray-4)"
   const personFullName = `${person.title} ${person.name} ${person.lastname}`
@@ -339,8 +332,9 @@ const PeoplePage = props => {
             <div css={{ display: "flex", marginBottom: "3.6rem" }}>
               <div
                 css={{
-                  fontSize: "4.8rem",
-                  fontFamily: "var(--ff-title)",
+                  fontSize: "12rem",
+                  fontFamily: "var(--ff-text)",
+                  marginTop: "-3rem",
                   marginRight: "1.6rem",
                 }}
               >
@@ -358,8 +352,8 @@ const PeoplePage = props => {
             >
               <div css={{ marginRight: "4rem" }}>⎯⎯</div>
               <div>
-                <div css={{ marginBottom: "0.5rem" }}>
-                  {`${person.title} ${person.name} ${person.lastname}`}
+                <div css={{ marginBottom: "0.5rem", lineHeight: 1 }}>
+                  {personFullName}
                 </div>
                 <div>
                   <ExternalLink
@@ -377,6 +371,13 @@ const PeoplePage = props => {
             </div>
           </div>
         </section>
+      ) : null}
+
+      {person.is_mp ? (
+        <PeopleVote
+          peopleVoteYaml={peopleVoteYaml}
+          allVotelogYaml={allVotelogYaml}
+        />
       ) : null}
 
       {/*
@@ -398,11 +399,6 @@ const PeoplePage = props => {
         </div>
       </section>
       */}
-
-      <PeopleVote
-        peopleVoteYaml={peopleVoteYaml}
-        allVotelogYaml={allVotelogYaml}
-      />
     </Layout>
   )
 }
