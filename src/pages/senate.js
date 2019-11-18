@@ -201,6 +201,8 @@ const SenatePage = props => {
     })
   )
 
+  const showingMembers = getSortedMembers()
+
   return (
     <Layout pageStyles={{ background: "#edf087" }}>
       <SEO title="สมาชิกวุฒิสภา" />
@@ -213,7 +215,7 @@ const SenatePage = props => {
             <h2 style={{ ...cssEngTitle }}>Senate</h2>
             <h2 style={{ ...cssEngTitle }}>About</h2>
             <p css={{ ...cssPageP }}>{senate.description}</p>
-            <h2 css={{ ...cssEngTitle }}>Official Website</h2>
+            <h2 css={{ ...cssEngTitle }}>Official Link</h2>
             <OfficialWebsite {...senate}></OfficialWebsite>
             <h2 css={{ ...cssEngTitle }}>In Office</h2>
             <InOfficeDate {...senate}></InOfficeDate>
@@ -306,21 +308,34 @@ const SenatePage = props => {
               </li>
             ))}
           </ul>
-          <div
-            css={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "space-evenly",
-            }}
-          >
-            {getSortedMembers().map((member, index) => (
-              <PeopleCard
-                key={member.id}
-                {...member}
-                type="senator"
-              ></PeopleCard>
-            ))}
-          </div>
+          {showingMembers.length > 0 ? (
+            <div
+              css={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "space-evenly",
+              }}
+            >
+              {showingMembers.map((member, index) => (
+                <PeopleCard
+                  key={member.id}
+                  {...member}
+                  type="senator"
+                ></PeopleCard>
+              ))}
+            </div>
+          ) : (
+            <div
+              css={{
+                fontFamily: "var(--ff-title)",
+                fontSize: "3.2rem",
+                textAlign: "center",
+                margin: "6rem 0",
+              }}
+            >
+              ไม่มีสมาชิก
+            </div>
+          )}
         </div>
       </section>
     </Layout>

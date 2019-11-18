@@ -10,6 +10,14 @@ export function formatDate(dt) {
 }
 
 /**
+ * Format number with thousans
+ * @param {Number} num
+ */
+export function formatNumber(num) {
+  return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
+}
+
+/**
  * Comparator function to use in Array.sort(sortThaiLocale)
  * @param {People} a Person object
  * @param {People} b Person object

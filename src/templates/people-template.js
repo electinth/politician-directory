@@ -1,34 +1,26 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import { css } from "@emotion/core"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { formatNumber, ageFromBirthdate, politicianPicture } from "../utils"
 import ExternalLink from "../components/externalLink"
-import { ageFromBirthdate, politicianPicture } from "../utils"
+import OfficialWebsite from "../components/profile/officialWebsite"
 import PeopleVote from "../components/peopleVote"
 import PeopleStatus from "../components/peopleStatus"
 
 import styles from "./people-template.module.css"
-
-const LinkPoliticsAndBusiness = (name, lastname, party) => {
-  return (
-    <ExternalLink
-      href={`https://elect.in.th/politics-and-business/#/p/${party}/person/${name} ${lastname}`}
-    >
-      ตรวจสอบประวัติทางธุรกิจ
-    </ExternalLink>
-  )
-}
+import "../styles/profile-book.css"
 
 export const query = graphql`
   query($slug: String!, $name: String!, $lastname: String!, $party: String!) {
-    peopleYaml(fields: { slug: { eq: $slug } }) {
+    person: peopleYaml(fields: { slug: { eq: $slug } }) {
       id
       title
       name
       lastname
       gender
+      bio
       birthdate
       education
       graduation
@@ -42,16 +34,20 @@ export const query = graphql`
       mp_type
       mp_province
       mp_zone
+      mp_list
+      vote
+      senator_method
       committee {
         set
         position
       }
-      vote
       party
       asset
       debt
       quotes
       quotes_url
+      facebook
+      twitter
     }
     peopleVoteYaml(name: { eq: $name }, lastname: { eq: $lastname }) {
       votelog {
@@ -62,10 +58,14 @@ export const query = graphql`
     partyYaml(name: { eq: $party }) {
       color
     }
-    allVotelogYaml {
+    allVotelogYaml(filter: { is_active: { eq: true } }) {
       nodes {
         id
+        fields {
+          slug
+        }
         title
+        description_th
         legal_title
         vote_date
       }
@@ -73,12 +73,19 @@ export const query = graphql`
   }
 `
 
-// const cssH1 = { fontSize: "4.8rem" }
+const cssH1 = {
+  fontSize: "4rem",
+}
+
 const cssH2 = { fontSize: "2.4rem" }
-const cssSection = { paddingBottom: "8rem" }
-const cssSectionWhite = {
-  ...cssSection,
-  background: "var(--cl-white)",
+
+const cssSection = {
+  paddingTop: "3rem",
+  paddingBottom: "8rem",
+  h2: {
+    fontSize: "4.8rem",
+    textAlign: "center",
+  },
 }
 const cssSectionBlack = {
   ...cssSection,
@@ -98,214 +105,302 @@ const cssSectionBlack = {
   },
 }
 
-const PeoplePage = ({
-  data: { peopleYaml, peopleVoteYaml, partyYaml, allVotelogYaml },
-}) => (
-  <Layout
-    pageStyles={{
-      background: partyYaml !== null ? partyYaml.color : "var(--cl-gray-4)",
-    }}
-  >
-    <SEO
-      title={`${peopleYaml.title} ${peopleYaml.name} ${peopleYaml.lastname}`}
-    />
-    <section css={{ ...cssSection, paddingTop: "6rem" }}>
-      <div className="container">
-        <div className={`${styles.card}`}>
-          <div
-            css={{
-              width: "50%",
-              textAlign: "center",
-              padding: "50px 0",
-              background: "linear-gradient(to right, #FFFFFF, #EAEAEA)",
-            }}
-          >
-            <div
-              css={css`
-                height: 160px;
-                width: 160px;
-                border-radius: 80px;
-                margin: 0 auto;
-                overflow: hidden;
-                margin-bottom: 20px;
-              `}
-            >
-              <img
-                css={css`
-                  max-height: 240px;
-                `}
-                alt=""
-                src={politicianPicture(peopleYaml)}
-              />
-            </div>
-            <h1
-              css={{
-                marginTop: 0,
-                fontSize: "3.2rem",
-              }}
-            >{`${peopleYaml.title} ${peopleYaml.name} ${peopleYaml.lastname}`}</h1>
-            <PeopleStatus isActive={peopleYaml.is_active} />
-            <h3>ตำแหน่งปัจจุบัน:</h3>
-            <ul>
-              {peopleYaml.cabinet_position.map(position => (
-                <li key={position}>{`${position}`}</li>
-              ))}
-            </ul>
-            <h3>
-              คณะรัฐมนตรี: {`${peopleYaml.is_cabinet ? "ใช่" : "ไม่ใช่"}`}
-            </h3>
-            <h3>ส.ว.: {`${peopleYaml.is_senator ? "ใช่" : "ไม่ใช่"}`}</h3>
-            <h3>ส.ส.: {`${peopleYaml.is_mp ? "ใช่" : "ไม่ใช่"}`}</h3>
-          </div>
-          <div css={{ width: "50%" }}>
-            <div css={{ padding: "10px" }}>
-              <h2 css={{ ...cssH2, textAlign: "center" }}>ข้อมูลพื้นฐาน</h2>
-              <hr className={`${styles.hr}`} />
-              <div>
-                <p>
-                  {peopleYaml.party ? (
-                    <Link to={`/party/${peopleYaml.party}`}>
-                      พรรค {peopleYaml.party}
-                    </Link>
-                  ) : (
-                    "ไม่สังกัดพรรค"
-                  )}
-                </p>
-              </div>
-              <div>
-                {peopleYaml.mp_type === "แบ่งเขต" ? (
-                  <p>
-                    สมาชิกสภาผู้แทนราษฎร แบ่งเขต จังหวัด{" "}
-                    {peopleYaml.mp_province} เขต {peopleYaml.mp_zone}
-                  </p>
-                ) : (
-                  <p>
-                    สมาชิกสภาผู้แทนราษฎร บัญชีรายชื่อ ลำดับที่
-                    {peopleYaml.mp_zone}
-                  </p>
-                )}
-              </div>
-              <div>
-                {peopleYaml.committee.map((com, i) => (
-                  <span key={`${com.set}${i}`}>
-                    {com.set} {com.position}
-                  </span>
-                ))}
-              </div>
+const cssEngTitle = {
+  fontSize: "2.4rem",
+  textAlign: "left",
+  margin: "1.5rem 0 1.2rem 0",
+}
 
-              <hr className={`${styles.hr}`} />
-              <div>
-                <span>เพศ {peopleYaml.gender}</span>
-                {" / "}
-                <span>อายุ {ageFromBirthdate(peopleYaml.birthdate)} ปี</span>
-                {" / "}
-                <span>การศึกษา {peopleYaml.education}</span>{" "}
-                <span>
-                  {peopleYaml.graduation}
-                  {peopleYaml.degree ? ` (${peopleYaml.degree})` : null}
-                </span>
-                {" / "}
-                <span>อาชีพเดิม {peopleYaml.ex_occupation}</span>
-              </div>
+const cssRightPage = {
+  fontSize: "1.8rem",
+  p: {
+    marginBottom: "1rem",
+  },
+  a: {
+    color: "var(--cl-black)",
+    textDecoration: "underline",
+  },
+  ".official-website a": {
+    textDecoration: "none",
+  },
+}
 
-              <hr className={`${styles.hr}`} />
-              <div>
-                <span>ทรัพย์สิน {peopleYaml.asset}</span>
-                {" / "}
-                <span>หนี้สิน {peopleYaml.deby}</span>
-                {" / "}
-                {peopleYaml.mp_type !== "" &&
-                  LinkPoliticsAndBusiness(
-                    peopleYaml.name,
-                    peopleYaml.lastname,
-                    peopleYaml.party
-                  )}
-              </div>
+const MPParty = person => (
+  <div>
+    {person.is_mp ? (
+      <p css={{ fontWeight: "bold" }}>
+        {person.party ? (
+          <Link to={`/party/${person.party}`}>พรรค {person.party}</Link>
+        ) : (
+          "ไม่สังกัดพรรค"
+        )}
+      </p>
+    ) : null}
+  </div>
+)
 
-              <hr className={`${styles.hr}`} />
-              <div>Official Link</div>
-              <div>Facebook | Twitter | Website | Instagram</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+const PersonAffiliation = person => (
+  <div>
+    {!person.is_cabinet ? null : (
+      <p css={{ fontWeight: "bold" }}>คณะรัฐมนตรี</p>
+    )}
 
-    {peopleYaml.quotes ? (
-      <section
-        css={{
-          ...cssSectionBlack,
-          paddingTop: "6.4rem",
-          paddingBottom: "5.2rem",
-        }}
-      >
-        <div className="container">
-          <div css={{ display: "flex", marginBottom: "3.6rem" }}>
-            <div
-              css={{
-                fontSize: "4.8rem",
-                fontFamily: "var(--ff-title)",
-                marginRight: "1.6rem",
-              }}
-            >
-              “
-            </div>
-            <blockquote>{peopleYaml.quotes}</blockquote>
-          </div>
-          <div
-            css={{
-              display: "flex",
-              justifyContent: "flex-end",
-              fontFamily: "var(--ff-title)",
-              fontSize: "3.6rem",
-            }}
-          >
-            <div css={{ marginRight: "4rem" }}>⎯⎯</div>
-            <div>
-              <div css={{ marginBottom: "0.5rem" }}>
-                {`${peopleYaml.title} ${peopleYaml.name} ${peopleYaml.lastname}`}
-              </div>
-              <div>
-                <ExternalLink
-                  href={peopleYaml.quotes_url}
+    {!person.is_senator ? null : (
+      <p css={{ fontWeight: "bold" }}>สมาชิกวุฒิสภา {person.senator_method}</p>
+    )}
+
+    {!person.is_mp ? null : person.mp_type === "แบ่งเขต" ? (
+      <p css={{ fontWeight: "bold" }}>
+        สมาชิกสภาผู้แทนราษฎร แบ่งเขต จังหวัด {person.mp_province}
+        เขต {person.mp_zone} จากคะแนนโหวต {formatNumber(person.vote)} คะแนน
+      </p>
+    ) : (
+      <p css={{ fontWeight: "bold" }}>
+        สมาชิกสภาผู้แทนราษฎร บัญชีรายชื่อ ลำดับที่ {person.mp_list}
+      </p>
+    )}
+  </div>
+)
+
+const PersonPosition = person => (
+  <div css={{ fontSize: "1.4rem" }}>
+    {person.cabinet_position.length > 0 ? (
+      <p>
+        {person.cabinet_position.map((pos, i) => (
+          <span key={pos}>
+            {i > 0 && ", "}
+            {pos}{" "}
+          </span>
+        ))}
+      </p>
+    ) : null}
+
+    {person.committee.length > 0 ? (
+      <p>
+        {person.committee
+          .filter(pos => pos.set && pos.position)
+          .map((pos, i) => (
+            <span key={`${pos.set} ${pos.position}`}>
+              {i > 0 && ", "}
+              {pos.position} {pos.set}{" "}
+            </span>
+          ))}
+      </p>
+    ) : null}
+  </div>
+)
+
+const PersonRecord = person => (
+  <p>
+    <span>
+      <strong>เพศ</strong> {person.gender}
+    </span>{" "}
+    <span>
+      <strong>อายุ</strong> {ageFromBirthdate(person.birthdate)} ปี
+    </span>{" "}
+    <span>
+      <strong>การศึกษา</strong> {person.education}
+    </span>{" "}
+    <span>
+      {person.graduation}
+      {person.degree ? ` (${person.degree})` : null}
+    </span>{" "}
+    <span>
+      <strong>อาชีพเดิม</strong> {person.ex_occupation}
+    </span>
+  </p>
+)
+
+const LinkPoliticsAndBusiness = (name, lastname, party) => {
+  return (
+    <ExternalLink
+      href={`https://elect.in.th/politics-and-business/#/p/${party}/person/${name} ${lastname}`}
+    >
+      <strong>ตรวจสอบประวัติทางธุรกิจ</strong>
+    </ExternalLink>
+  )
+}
+
+const PersonFinance = person => (
+  <p>
+    {/**
+    <span><strong>ทรัพย์สิน</strong> {person.asset}</span>
+    {" "}
+    <span><strong>หนี้สิน</strong> {person.deby}</span>
+    {" "}
+     */}
+    {person.mp_type !== "" &&
+      LinkPoliticsAndBusiness(person.name, person.lastname, person.party)}
+  </p>
+)
+
+const PeoplePage = props => {
+  const { person, peopleVoteYaml, partyYaml, allVotelogYaml } = props.data
+
+  const pageBGColor = partyYaml !== null ? partyYaml.color : "var(--cl-gray-4)"
+  const personFullName = `${person.title} ${person.name} ${person.lastname}`
+
+  return (
+    <Layout
+      pageStyles={{
+        background: pageBGColor,
+      }}
+    >
+      <SEO title={personFullName} />
+
+      <section className="section">
+        <div className="book">
+          <div className="page leftPage">
+            <div css={{ textAlign: "center", marginTop: "5rem" }}>
+              <div
+                css={{
+                  height: 160,
+                  width: 160,
+                  borderRadius: 80,
+                  margin: "0 auto",
+                  overflow: "hidden",
+                  marginBottom: 20,
+                }}
+              >
+                <img
                   css={{
-                    textDecoration: "underline",
-                    fontSize: "2.4rem",
-                    color: "white",
+                    maxHeight: 240,
                   }}
-                >
-                  อ้างอิง
-                </ExternalLink>
+                  alt=""
+                  src={politicianPicture(person)}
+                />
               </div>
+              <h1 css={{ ...cssH1, margin: "1rem 0 0 0" }}>{personFullName}</h1>
+              <PeopleStatus isActive={person.is_active} />
             </div>
+            <p css={{ marginTop: "3rem", marginBottom: "5rem" }}>
+              {person.bio}
+            </p>
+
+            {/*
+            <h2 style={{ ...cssEngTitle }}>25th House of Representative</h2>
+            <h2 style={{ ...cssEngTitle }}>About</h2>
+            <p css={{ ...cssPageP }}>{house.description}</p>
+            <h2 css={{ ...cssEngTitle }}>Official Website</h2>
+            <OfficialWebsite {...house}></OfficialWebsite>
+            <h2 css={{ ...cssEngTitle }}>In Office</h2>
+            <InOfficeDate {...house}></InOfficeDate>
+            <h2 style={{ ...cssEngTitle }}>Key Members</h2>
+            {keyMembers.map(x => {
+              return (
+                <div className="peopleCard" key={x.id}>
+                  <PeopleCardMini key={x.id} {...x} />
+                </div>
+              )
+            })}
+             */}
+          </div>
+          <div className="page" css={cssRightPage}>
+            <h2 css={{ ...cssH2, marginTop: "1rem", textAlign: "center" }}>
+              ข้อมูลพื้นฐาน
+            </h2>
+            <hr className={`${styles.hr}`} />
+            <MPParty {...person}></MPParty>
+            <PersonAffiliation {...person}></PersonAffiliation>
+            <PersonPosition {...person}></PersonPosition>
+
+            <hr className={`${styles.hr}`} />
+
+            <PersonRecord {...person}></PersonRecord>
+
+            <hr className={`${styles.hr}`} />
+
+            <PersonFinance {...person}></PersonFinance>
+
+            <hr className={`${styles.hr}`} />
+
+            <h2 css={{ ...cssEngTitle }}>Official Website</h2>
+            <OfficialWebsite {...person}></OfficialWebsite>
           </div>
         </div>
       </section>
-    ) : null}
 
-    <section
-      css={{
-        ...cssSectionWhite,
-      }}
-    >
-      <div className="container">
-        <h2
+      {person.quotes ? (
+        <section
           css={{
-            fontSize: "4.8rem",
-            textAlign: "center",
+            ...cssSectionBlack,
+            paddingTop: "6.4rem",
+            paddingBottom: "5.2rem",
           }}
         >
-          การปรากฏตัวบนข่าวล่าสุด
-        </h2>
-        <div></div>
-      </div>
-    </section>
-    <hr />
-    <PeopleVote
-      peopleVoteYaml={peopleVoteYaml}
-      allVotelogYaml={allVotelogYaml}
-    />
-  </Layout>
-)
+          <div className="container">
+            <div css={{ display: "flex", marginBottom: "3.6rem" }}>
+              <div
+                css={{
+                  fontSize: "12rem",
+                  fontFamily: "var(--ff-text)",
+                  marginTop: "-3rem",
+                  marginRight: "1.6rem",
+                }}
+              >
+                “
+              </div>
+              <blockquote>{person.quotes}</blockquote>
+            </div>
+            <div
+              css={{
+                display: "flex",
+                justifyContent: "flex-end",
+                fontFamily: "var(--ff-title)",
+                fontSize: "3.6rem",
+              }}
+            >
+              <div css={{ marginRight: "4rem" }}>⎯⎯</div>
+              <div>
+                <div css={{ marginBottom: "0.5rem", lineHeight: 1 }}>
+                  {personFullName}
+                </div>
+                <div>
+                  <ExternalLink
+                    href={person.quotes_url}
+                    css={{
+                      textDecoration: "underline",
+                      fontSize: "2.4rem",
+                      color: "white",
+                    }}
+                  >
+                    อ้างอิง
+                  </ExternalLink>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {person.is_mp ? (
+        <PeopleVote
+          peopleVoteYaml={peopleVoteYaml}
+          allVotelogYaml={allVotelogYaml}
+        />
+      ) : null}
+
+      {/*
+      <section
+        css={{
+          ...cssSectionWhite,
+        }}
+      >
+        <div className="container">
+          <h2
+            css={{
+              fontSize: "4.8rem",
+              textAlign: "center",
+            }}
+          >
+            การปรากฏตัวบนข่าวล่าสุด
+          </h2>
+          <div></div>
+        </div>
+      </section>
+      */}
+    </Layout>
+  )
+}
 
 export default PeoplePage

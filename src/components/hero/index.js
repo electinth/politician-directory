@@ -56,17 +56,17 @@ const Hero = () => {
     >
       <HeroFeature
         title="ค้นประวัติบุคคล"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+        subtitle="รู้หน้า รู้ชื่อ แต่ไม่รู้จัก ลองค้นหาประวัติผู้แทนในสภาของเรากันดู อายุเท่าไหร่ เรียนจบอะไรมา ก่อนหน้าเคยทำงานอะไร ตอนนี้นั่งตำแหน่งไหน รวมถึงว่าเคยโหวตอะไรในสภาบ้าง"
         image={data.biograpyImage}
       />
       <HeroFeature
         title="ดูภาพรวมพรรคการเมือง"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+        subtitle="หนึ่งคณะ สองสภา ยี่สิบกว่าพรรค ใครอยู่ทีมไหน กับใคร เห็นเหมือนหรือเห็นต่างกันอย่างไร ลองดูภาพรวม รายชื่อ และการโหวต ของแต่ละสภาและพรรคการเมือง"
         image={data.partySummaryImage}
       />
       <HeroFeature
         title="สรุปการลงคะแนนเสียง"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+        subtitle="ประชุมสภามาหลายครั้ง มีการโหวตครั้งสำคัญอะไรเกิดขึ้นในสภาบ้าง? ใครยกมือสนับสนุนหรือคัดค้านมติไหน? สรุปแบบเข้าใจง่ายๆ พร้อมรายละเอียดให้ตรวจสอบได้ที่นี่"
         image={data.voteSummaryImage}
       />
     </div>

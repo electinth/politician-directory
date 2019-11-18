@@ -103,7 +103,7 @@ const CabinetPage = props => {
             <h2 css={{ ...cssEngTitle }}>Cabinet</h2>
             <h2 css={{ ...cssEngTitle }}>About</h2>
             <p css={{ ...cssPageP }}>{cabinet.description}</p>
-            <h2 css={{ ...cssEngTitle }}>Official Website</h2>
+            <h2 css={{ ...cssEngTitle }}>Official Link</h2>
             <OfficialWebsite {...cabinet}></OfficialWebsite>
             <h2 css={{ ...cssEngTitle }}>In Office</h2>
             <InOfficeDate {...cabinet}></InOfficeDate>

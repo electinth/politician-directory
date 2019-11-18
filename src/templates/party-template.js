@@ -248,6 +248,8 @@ const PartyPage = props => {
     })
   )
 
+  const showingMembers = getSortedMembers()
+
   return (
     <Layout pageStyles={{ background: party.color }}>
       <SEO title={`พรรค${party.name}`} />
@@ -258,7 +260,7 @@ const PartyPage = props => {
             <h2 style={{ ...cssEngTitle }}>{party.en.name} Party</h2>
             <h2 style={{ ...cssEngTitle }}>About</h2>
             <p css={{ ...cssPageP }}>{party.description}</p>
-            <h2 css={{ ...cssEngTitle }}>Official Website</h2>
+            <h2 css={{ ...cssEngTitle }}>Official Link</h2>
             <OfficialWebsite {...party}></OfficialWebsite>
             <h2 css={{ ...cssEngTitle }}>In Office</h2>
             <InOfficeDate {...party}></InOfficeDate>
@@ -354,17 +356,30 @@ const PartyPage = props => {
               </li>
             ))}
           </ul>
-          <div
-            css={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "space-evenly",
-            }}
-          >
-            {getSortedMembers().map((member, index) => (
-              <PeopleCard key={member.id} {...member} type="mp"></PeopleCard>
-            ))}
-          </div>
+          {showingMembers.length > 0 ? (
+            <div
+              css={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "space-evenly",
+              }}
+            >
+              {showingMembers.map((member, index) => (
+                <PeopleCard key={member.id} {...member} type="mp"></PeopleCard>
+              ))}
+            </div>
+          ) : (
+            <div
+              css={{
+                fontFamily: "var(--ff-title)",
+                fontSize: "3.2rem",
+                textAlign: "center",
+                margin: "6rem 0",
+              }}
+            >
+              ไม่มีสมาชิก
+            </div>
+          )}
         </div>
       </section>
     </Layout>
