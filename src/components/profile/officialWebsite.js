@@ -6,6 +6,7 @@ const cssLinkBox = {
   fontSize: "1.7rem",
   fontFamily: "var(--ff-title)",
   fontWeight: "bold",
+  textDecoration: "none",
   border: "1px solid var(--cl-black)",
   marginRight: "1rem",
   padding: "0 1rem",
@@ -29,7 +30,11 @@ const OfficialWebsite = profile => {
       )
     })
   )
-  return <div>{items.length > 0 ? items : "ไม่มีข้อมูล"}</div>
+  return (
+    <div className="official-website">
+      {items.length > 0 ? items : "ไม่มีข้อมูล"}
+    </div>
+  )
 }
 
 export default OfficialWebsite

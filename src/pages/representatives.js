@@ -154,7 +154,7 @@ const RepresentativesPage = props => {
             <h2 style={{ ...cssEngTitle }}>25th House of Representative</h2>
             <h2 style={{ ...cssEngTitle }}>About</h2>
             <p css={{ ...cssPageP }}>{house.description}</p>
-            <h2 css={{ ...cssEngTitle }}>Official Website</h2>
+            <h2 css={{ ...cssEngTitle }}>Official Link</h2>
             <OfficialWebsite {...house}></OfficialWebsite>
             <h2 css={{ ...cssEngTitle }}>In Office</h2>
             <InOfficeDate {...house}></InOfficeDate>
