@@ -121,7 +121,7 @@ const VotelogPage = ({
           }
         `}
       />
-      <SEO title="มติ" imageUrl="/seo/votelog.png" />
+      <SEO title={votelogYaml.title} imageUrl="/seo/votelog.png" />
       <section
         css={css`
           padding-bottom: 1rem !important;
