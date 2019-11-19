@@ -74,7 +74,7 @@ const VoteLogPage = ({
 
   return (
     <Layout>
-      <SEO title="บันทึกการประชุมและการลงมติ" />
+      <SEO title="บันทึกการประชุมและการลงมติ" imageUrl="/seo/votelog.png" />
       <section
         css={{
           backgroundColor: "#222222",
