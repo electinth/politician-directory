@@ -1,7 +1,7 @@
 const config = {
   siteMetadata: {
-    title: `They Work For Us?`,
-    description: `Site description`,
+    title: `They Work For You`,
+    description: `ใครเป็นใคร เคยทำอะไรมาบ้าง ตอนนี้อยู่ตำแหน่งไหน และยกมือสนับสนุนอะไรในสภา`,
     author: `@electinth`,
   },
   pathPrefix: process.env.BASE_PATH || '/',
