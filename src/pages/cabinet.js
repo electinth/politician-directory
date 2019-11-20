@@ -67,6 +67,15 @@ export const query = graphql`
         }
       }
     }
+    asset: allPeopleYaml(
+      filter: { is_cabinet: { eq: true }, is_active: { eq: true } }
+    ) {
+      edges {
+        node {
+          asset
+        }
+      }
+    }
   }
 `
 
@@ -88,7 +97,9 @@ const cssBarChart = {
 
 const CabinetPage = props => {
   const { cabinet, ...data } = props.data
-  const { gender, age, education, occupation_group } = loadCategoryStats(data)
+  const { gender, age, education, occupation_group, asset } = loadCategoryStats(
+    data
+  )
 
   return (
     <Layout pageStyles={{ background: "#c0e4ff" }}>
@@ -139,6 +150,9 @@ const CabinetPage = props => {
               </div>
               <div css={{ ...cssBarChart }}>
                 <StackedBarChart data={occupation_group}></StackedBarChart>
+              </div>
+              <div style={{ ...cssBarChart }}>
+                <StackedBarChart data={asset}></StackedBarChart>
               </div>
             </div>
           </div>

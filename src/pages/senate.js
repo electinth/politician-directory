@@ -82,6 +82,15 @@ export const query = graphql`
         }
       }
     }
+    asset: allPeopleYaml(
+      filter: { is_senator: { eq: true }, is_active: { eq: true } }
+    ) {
+      edges {
+        node {
+          asset
+        }
+      }
+    }
   }
 `
 
@@ -177,7 +186,9 @@ const SenatePage = props => {
     },
   ]
 
-  const { gender, age, education, occupation_group } = loadCategoryStats(data)
+  const { gender, age, education, occupation_group, asset } = loadCategoryStats(
+    data
+  )
 
   const keyMembers = _.compact(
     [
@@ -259,6 +270,9 @@ const SenatePage = props => {
               </div>
               <div style={{ ...cssBarChart }}>
                 <StackedBarChart data={occupation_group}></StackedBarChart>
+              </div>
+              <div style={{ ...cssBarChart }}>
+                <StackedBarChart data={asset}></StackedBarChart>
               </div>
             </div>
           </div>

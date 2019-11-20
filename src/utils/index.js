@@ -141,6 +141,41 @@ export function padCategory(input) {
   return input
 }
 
+export function assetHistogram(edges, bins = [10, 100, 1000]) {
+  const unknown = { name: "ไม่พบข้อมูล", value: 0 }
+  let lowerbound = -1
+  let prev_lowerbound
+  const assets = [
+    ...bins.map(max => {
+      prev_lowerbound = lowerbound + 1
+      lowerbound = max
+      return {
+        name: `${prev_lowerbound}-${max} ล้านบาท`,
+        value: 0,
+        max: max * 1e6,
+      }
+    }),
+    {
+      name: `${bins[bins.length - 1] + 1} ล้านบาทขึ้นไป`,
+      value: 0,
+      max: Number.POSITIVE_INFINITY,
+    },
+  ]
+  edges.forEach(({ node }) => {
+    if (typeof node.asset === "number" && node.asset >= 0) {
+      for (const bin of assets) {
+        if (node.asset <= bin.max) {
+          bin.value++
+          break
+        }
+      }
+    } else {
+      unknown.value++
+    }
+  })
+  return [...assets, unknown]
+}
+
 export function birthdayToAgeHistogram(birthdate, ageBin = [39, 55, 74]) {
   let age = []
   age.push({
@@ -261,6 +296,19 @@ export function loadCategoryStats(data) {
     ])
   }
 
+  let asset
+  if (_.get(data, "asset.edges")) {
+    asset = [..._.get(data, "asset.edges")]
+    asset = assetHistogram(asset)
+    asset = arrangeData(asset, [
+      { name: "0-10 ล้านบาท", background: "var(--cl-theme-2)" },
+      { name: "11-100 ล้านบาท", background: "var(--cl-theme-3)" },
+      { name: "101-1000 ล้านบาท", background: "var(--cl-theme-4)" },
+      { name: "1001 ล้านบาทขึ้นไป", background: "var(--cl-theme-5)" },
+      { name: "ไม่พบข้อมูล", background: "var(--cl-theme-unknown)" },
+    ])
+  }
+
   let mp_type
   if (_.get(data, "mp_type.group")) {
     mp_type = [..._.get(data, "mp_type.group")]
@@ -272,6 +320,7 @@ export function loadCategoryStats(data) {
 
   return {
     gender,
+    asset,
     age,
     education,
     occupation_group,

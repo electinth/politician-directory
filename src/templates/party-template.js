@@ -128,6 +128,19 @@ export const query = graphql`
         }
       }
     }
+    asset: allPeopleYaml(
+      filter: {
+        is_mp: { eq: true }
+        party: { eq: $party }
+        is_active: { eq: true }
+      }
+    ) {
+      edges {
+        node {
+          asset
+        }
+      }
+    }
   }
 `
 
@@ -228,6 +241,7 @@ const PartyPage = props => {
     age,
     education,
     occupation_group,
+    asset,
   } = loadCategoryStats(data)
 
   const keyMembers = _.compact(
@@ -307,6 +321,9 @@ const PartyPage = props => {
               </div>
               <div style={{ ...cssBarChart }}>
                 <StackedBarChart data={occupation_group}></StackedBarChart>
+              </div>
+              <div style={{ ...cssBarChart }}>
+                <StackedBarChart data={asset}></StackedBarChart>
               </div>
             </div>
           </div>
