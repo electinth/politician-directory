@@ -135,7 +135,6 @@ const VoteLogPage = ({
                 css={{
                   width: `calc((var(--container-width) - 4rem) / 2)`,
                   margin: "0 1rem 2rem 1rem",
-                  border: "2px solid var(--cl-black)",
                 }}
                 title={node.title}
                 description_th={node.description_th}
