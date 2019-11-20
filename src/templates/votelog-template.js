@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import { css, Global } from "@emotion/core"
+import { css } from "@emotion/core"
 import _ from "lodash"
 
 import ExternalLink from "../components/externalLink"
@@ -67,6 +67,23 @@ export const query = graphql`
   }
 `
 
+const cssSection = {
+  borderBottom: "0.5rem solid black",
+  paddingTop: "3rem",
+  paddingBottom: "3rem",
+  h2: {
+    fontSize: "4.8rem",
+    textAlign: "center",
+  },
+  ".dot": {
+    margin: "0 1rem",
+    height: "2rem",
+    width: "2rem",
+    display: "inline-block",
+    borderRadius: "50%",
+  },
+}
+
 const filterVote = (combined, key, value) =>
   _.filter(combined, o => {
     return _.find(o.votelog, p => p.key === key).value === value
@@ -98,37 +115,15 @@ const VotelogPage = ({
         padding: "3rem",
       }}
     >
-      <Global
-        styles={css`
-          section:not(:last-child) {
-            border-bottom: 0.5rem solid black;
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-            h2 {
-              font-size: 4.8rem;
-              text-align: center;
-            }
-            .dot {
-              margin: 0 1rem;
-              height: 2rem;
-              width: 2rem;
-              display: inline-block;
-              border-radius: 50%;
-              background-color: ${votelogYaml.passed
-                ? "var(--cl-vote-yes)"
-                : "var(--cl-vote-no)"};
-            }
-          }
-        `}
-      />
       <SEO title={votelogYaml.title} imageUrl="/seo/votelog.png" />
       <section
-        css={css`
-          padding-bottom: 1rem !important;
-          span {
-            font-size: 3rem;
-          }
-        `}
+        css={{
+          ...cssSection,
+          paddingBottom: "1rem !important",
+          span: {
+            fontSize: "3rem",
+          },
+        }}
       >
         <div className="container">
           <span>
@@ -151,12 +146,13 @@ const VotelogPage = ({
         </div>
       </section>
       <section
-        css={css`
-          padding-bottom: 1rem !important;
-          span {
-            font-size: 3rem;
-          }
-        `}
+        css={{
+          ...cssSection,
+          paddingBottom: "1rem !important",
+          span: {
+            fontSize: "3rem",
+          },
+        }}
       >
         <div
           className="container"
@@ -186,7 +182,13 @@ const VotelogPage = ({
                 color: var(--cl-vote-yes);
               `}
             >
-              <span className="dot"></span>ผ่าน
+              <span
+                className="dot"
+                css={{
+                  backgroundColor: "var(--cl-vote-yes)",
+                }}
+              ></span>
+              ผ่าน
             </span>
           ) : (
             <span
@@ -194,7 +196,13 @@ const VotelogPage = ({
                 color: var(--cl-vote-no);
               `}
             >
-              <span className="dot"></span>ไม่ผ่าน
+              <span
+                className="dot"
+                css={{
+                  backgroundColor: "var(--cl-vote-no)",
+                }}
+              ></span>
+              ไม่ผ่าน
             </span>
           )}
           <span
@@ -206,7 +214,7 @@ const VotelogPage = ({
           </span>
         </span>
       </section>
-      <section>
+      <section css={cssSection}>
         <Waffle
           // key="parliament"
           data={[
@@ -278,9 +286,10 @@ const VotelogPage = ({
         </div>
       </section>
       <section
-        css={css`
-          font-size: 2rem;
-        `}
+        css={{
+          ...cssSection,
+          fontSize: "2rem",
+        }}
       >
         <h1>เนื้อหา</h1>
         <p>{votelogYaml.description_th}</p>

@@ -249,7 +249,7 @@ const SenatePage = props => {
     data.allPeopleYaml,
     data.allPeopleVoteYaml,
     data.allVotelogYaml
-  )
+  ).filter(vote => vote.total_voter > 0)
 
   return (
     <Layout pageStyles={{ background: "#edf087" }}>
@@ -316,41 +316,43 @@ const SenatePage = props => {
         </div>
       </section>
 
-      <section css={{ ...cssSection, background: "var(--cl-white)" }}>
-        <div className="container">
-          <h2 css={{ ...cssH1 }}>การลงมติล่าสุดของวุฒิสภา</h2>
-          <div
-            css={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "flex-start",
-              flexWrap: "wrap",
-              marginTop: "6rem",
-            }}
-          >
-            {votelogs.map(node => (
-              <VoteLogCard
-                key={node.id}
-                view={"compact"}
-                css={{
-                  width: `calc((var(--container-width) - 4rem) / 2)`,
-                  margin: "0 1rem 2rem 1rem",
-                }}
-                title={node.title}
-                description_th={node.description_th}
-                passed={node.passed}
-                approve={node.approve}
-                disprove={node.disprove}
-                abstained={node.abstained}
-                absent={node.absent}
-                total_voter={node.total_voter}
-                vote_date={node.vote_date}
-                slug={node.fields.slug}
-              />
-            ))}
+      {votelogs.length > 0 ? (
+        <section css={{ ...cssSection, background: "var(--cl-white)" }}>
+          <div className="container">
+            <h2 css={{ ...cssH1 }}>การลงมติล่าสุดของวุฒิสภา</h2>
+            <div
+              css={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "flex-start",
+                flexWrap: "wrap",
+                marginTop: "6rem",
+              }}
+            >
+              {votelogs.map(node => (
+                <VoteLogCard
+                  key={node.id}
+                  view={"compact"}
+                  css={{
+                    width: `calc((var(--container-width) - 4rem) / 2)`,
+                    margin: "0 1rem 2rem 1rem",
+                  }}
+                  title={node.title}
+                  description_th={node.description_th}
+                  passed={node.passed}
+                  approve={node.approve}
+                  disprove={node.disprove}
+                  abstained={node.abstained}
+                  absent={node.absent}
+                  total_voter={node.total_voter}
+                  vote_date={node.vote_date}
+                  slug={node.fields.slug}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : null}
 
       <section css={{ ...cssSection, background: "#eeeeee" }}>
         <div className="container">

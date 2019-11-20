@@ -87,15 +87,17 @@ const VoteLogCard = ({
           }}
         />
       </div>
-      <h2
-        style={{
+      <h4
+        css={{
+          fontSize: "4.8rem",
           color: "var(--cl-black)",
           textAlign: "left",
           marginTop: "2rem",
         }}
       >
-        {parseInt((approve / total_voter) * 100)}% เห็นด้วย
-      </h2>
+        {total_voter > 0 ? parseInt((approve / total_voter) * 100) : 0}%
+        เห็นด้วย
+      </h4>
       <Link
         to={slug}
         css={css`
@@ -104,7 +106,7 @@ const VoteLogCard = ({
           }
         `}
       >
-        <h3
+        <h5
           style={{
             fontSize: "2.4rem",
             paddingTop: "1rem",
@@ -112,7 +114,7 @@ const VoteLogCard = ({
           }}
         >
           {title}
-        </h3>
+        </h5>
       </Link>
       {view !== "compact" ? (
         <p
@@ -209,9 +211,9 @@ const VoteLogCard = ({
           />{" "}
           ไม่ลงคะแนน {absent}
         </div>
-        <h3 style={{ fontSize: "2rem" }}>
+        <h6 style={{ fontSize: "2rem" }}>
           {moment(vote_date).format("D.M.YYYY")}
-        </h3>
+        </h6>
       </div>
     </div>
   )

@@ -63,6 +63,11 @@ const cssExtLinkButton = {
 
 export const query = graphql`
   query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allContributor {
       edges {
         node {
@@ -76,34 +81,114 @@ export const query = graphql`
 
 const allDesigners = [
   {
-    login: "Pitshaya Chonato",
+    login: "พิชญา โชนะโต",
     html_url: "https://www.instagram.com/messymachine/",
   },
   {
-    login: "Namsai Supavong",
+    login: "น้ำใส ศุภวงศ์",
     html_url: "https://www.instagram.com/namsaisupavong/",
   },
 ]
 
 const allDataGatherers = [
   {
-    login: "Pitshaya Chonato",
-    html_url: "https://www.instagram.com/messymachine/",
+    login: "เอกพล เธียรถาวร",
   },
   {
-    login: "Namsai Supavong",
-    html_url: "https://www.instagram.com/namsaisupavong/",
+    login: "นันทวัณ หวังอุดมสุข",
+  },
+  {
+    login: "พรรัตน์ วชิราชัย",
+  },
+  {
+    login: "ปรารถนา อึ้งชูศักดิ์",
+  },
+  {
+    login: "จักรภัทร วัฒนอังกูร",
+  },
+  {
+    login: "เศวตโชติ วิชาชัย",
+  },
+  {
+    login: "กันต์ ว่องประเสริฐกุล",
+  },
+  {
+    login: "นันทิพัฒน์ พรเลิศ",
+  },
+  {
+    login: "รวิสรา รัตนวรรณนุกูล",
+  },
+  {
+    login: "ศตพล  อำนวยสกุล",
+  },
+  {
+    login: "ทัชภูมิ ทุมสวัสดิ์",
+  },
+  {
+    login: "ภูมิพัฒน์ พรเจริญสุข",
+  },
+  {
+    login: "มาพร เลิศสุริย์เดช",
+  },
+  {
+    login: "ทัตเทพ เทพบริรักษ์",
+  },
+  {
+    login: "ลีลา จันสว่าง",
+  },
+  {
+    login: "วริษา พิพัฒน์ธราวงศ์",
+  },
+  {
+    login: "ปวิตา แก้วพรหมมาลย์",
+  },
+  {
+    login: "ณัฐินี ณ เชียงใหม่",
+  },
+  {
+    login: "ณัฐพงศ์ เปรมพูลสวัสดิ์",
+  },
+  {
+    login: "ธัญญาภรณ์ สุรภักดี",
+  },
+  {
+    login: "จุฑาวุฒิ แพตทริค เศวตอัศวนนท์",
+  },
+  {
+    login: "ธนบดี ยังหอม",
+  },
+  {
+    login: "วรลักษณ์ เชื้อบุญมี",
+  },
+  {
+    login: "นัทธพงศ์ ไกรทองสุข",
+  },
+  {
+    login: "ยศกร มีทรัพย์",
+  },
+  {
+    login: "รชต สนิท",
+  },
+  {
+    login: "ปรเมศวร์ ไมตรีโสภณ",
+  },
+  {
+    login: "ปุญญิศา ศัพทเสน",
+  },
+  {
+    login: "วรุตม์ อุดมรัตน์",
+  },
+  {
+    login: "ภัทชา ด้วงกลัด",
   },
 ]
 
 const allEditors = [
   {
-    login: "Pitshaya Chonato",
-    html_url: "https://www.instagram.com/messymachine/",
+    login: "ยิ่งชีพ อัชฌานนท์",
   },
   {
-    login: "Namsai Supavong",
-    html_url: "https://www.instagram.com/namsaisupavong/",
+    login: "ธนิสรา เรืองเดช",
   },
 ]
 
@@ -111,7 +196,6 @@ const allProducers = [
   { login: "Punch Up", html_url: "https://punchup.world/" },
   { login: "Boonmee Lab", html_url: "https://www.boonmeelab.com/" },
   { login: "iLaw", html_url: "https://ilaw.or.th/" },
-  { login: "Minimore", html_url: "https://minimore.com/" },
 ]
 
 const AboutPage = ({ data }) => (
@@ -126,7 +210,7 @@ const AboutPage = ({ data }) => (
     >
       <div className="container">
         <h1 css={h1}>About Us</h1>
-        <h2 css={h2}>เกี่ยวกับ They Work for Us?</h2>
+        <h2 css={h2}>{data.site.siteMetadata.title}</h2>
       </div>
     </section>
     <section css={{ ...cssSection }}>
@@ -152,7 +236,7 @@ const AboutPage = ({ data }) => (
             ต้องมาตกหนักอยู่ที่ประชาชนและสื่อมวลชน
           </p>
           <p>
-            ELECT จึงตั้งใจพัฒนาแพลตฟอร์ม They Work For Us
+            ELECT จึงตั้งใจพัฒนาแพลตฟอร์ม {data.site.siteMetadata.title}{" "}
             ที่จะทำให้ประชาชนทั่วไปรวมถึงสื่อมวลชน สามารถทำความรู้จักและติดตาม
             'ผู้แทน' ของเราได้ง่ายขึ้น พวกเขาคือใคร เคยทำอะไรมาบ้าง พูดอะไรในสภา
             และเลือกที่จะสนับสนุนอะไร เพื่อเปลี่ยนข้อมูลที่เป็นของเราทุกคน
@@ -291,11 +375,11 @@ const AboutPage = ({ data }) => (
         <h1 css={cssSectionHead}>อาสาสมัครร่วมพัฒนา</h1>
         <div css={cssSubSection}>
           <div css={cssSubSectionHead}>
-            เขียนโปรแกรม <Emoji symbol="💻" label="programmer"></Emoji>
+            เขียนโปรแกรม <Emoji symbol="👩‍💻" label="programmer"></Emoji>
           </div>
           <div>
             {data.allContributor.edges.map(({ node }, i) => (
-              <span>
+              <span key={i}>
                 {i === 0 ? "" : ", "}
                 <ExternalLink href={node.html_url} css={cssExtLink}>
                   {node.login}
@@ -306,11 +390,11 @@ const AboutPage = ({ data }) => (
         </div>
         <div css={cssSubSection}>
           <div css={cssSubSectionHead}>
-            ออกแบบ <Emoji symbol="🎨" label="designer"></Emoji>
+            ออกแบบ <Emoji symbol="👩‍🎨" label="designer"></Emoji>
           </div>
           <div>
             {allDesigners.map((node, i) => (
-              <span>
+              <span key={i}>
                 {i === 0 ? "" : ", "}
                 <ExternalLink href={node.html_url} css={cssExtLink}>
                   {node.login}
@@ -320,10 +404,12 @@ const AboutPage = ({ data }) => (
           </div>
         </div>
         <div css={cssSubSection}>
-          <div css={cssSubSectionHead}>สืบค้นและรวบรวมข้อมูล</div>
+          <div css={cssSubSectionHead}>
+            สืบค้นและรวบรวมข้อมูล <Emoji symbol="🕵️‍♀️" label="detective"></Emoji>
+          </div>
           <div>
             {allDataGatherers.map((node, i) => (
-              <span>
+              <span key={i}>
                 {i === 0 ? "" : ", "}
                 <ExternalLink href={node.html_url} css={cssExtLink}>
                   {node.login}
@@ -333,10 +419,12 @@ const AboutPage = ({ data }) => (
           </div>
         </div>
         <div css={cssSubSection}>
-          <div css={cssSubSectionHead}>บรรณาธิการ</div>
+          <div css={cssSubSectionHead}>
+            บรรณาธิการ <Emoji symbol="👩‍🍳" label="chef"></Emoji>
+          </div>
           <div>
             {allEditors.map((node, i) => (
-              <span>
+              <span key={i}>
                 {i === 0 ? "" : ", "}
                 <ExternalLink href={node.html_url} css={cssExtLink}>
                   {node.login}
@@ -346,10 +434,12 @@ const AboutPage = ({ data }) => (
           </div>
         </div>
         <div css={cssSubSection}>
-          <div css={cssSubSectionHead}>ประสานงานและจัดการอื่นๆ</div>
+          <div css={cssSubSectionHead}>
+            ประสานงานและจัดการอื่นๆ <Emoji symbol="🧙‍♀️" label="magic"></Emoji>
+          </div>
           <div>
             {allProducers.map((node, i) => (
-              <span>
+              <span key={i}>
                 {i === 0 ? "" : ", "}
                 <ExternalLink href={node.html_url} css={cssExtLink}>
                   {node.login}
@@ -360,8 +450,8 @@ const AboutPage = ({ data }) => (
         </div>
         <div css={cssSubSection}>
           <p>
-            They Work for Us ได้รับการสนับสนุนทุนในการดำเนินงานจาก Friedrich
-            Naumann Foundation
+            {data.site.siteMetadata.title} ได้รับการสนับสนุนทุนในการดำเนินงานจาก
+            Friedrich Naumann Foundation
             ซึ่งนำมาใช้เป็นต้นทุนในการประสานงานและบริหารจัดการ การจัด Meetup
             เพื่อดำเนินโครงการ การผลิตของที่ระลึก และแบ่งเป็นค่าเสียเวลาเล็กๆ
             น้อยๆ ให้กับอาสาสมัคร
