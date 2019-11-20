@@ -8927,7 +8927,7 @@
     degree: Master of Science in Global Finance
     ex_occupation:
       - Business Person
-    bio: ''
+    bio: Lost MP's status as being disqualified by the Constitutional Court
   is_mp: true
   is_senator: false
   is_cabinet: false
@@ -8961,8 +8961,10 @@
   debt: 683303.45
   facebook: ''
   twitter: 'https://twitter.com/thanathorn_fwp'
-  is_active: true
-  bio: ''
+  is_active: false
+  bio: >-
+    พ้นจากตำแหน่ง ส.ส. จากคำตัดสินของศาลรัฐธรรมนูญ ในกรณีถือหุ้นสื่อ
+    (ตัดสินเมื่อวันที่ 20 พ.ย. 62)
 - id: '178'
   title: นาย
   name: ถาวร
