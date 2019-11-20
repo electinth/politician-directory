@@ -1,5 +1,4 @@
 import React from "react"
-import moment from "moment"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
@@ -13,6 +12,7 @@ export const query = graphql`
       filter: { is_active: { eq: true } }
       limit: $limit
       skip: $skip
+      sort: { fields: vote_date, order: DESC }
     ) {
       totalCount
       edges {
@@ -34,7 +34,7 @@ export const query = graphql`
       }
     }
     voteRecordImage: file(
-      relativePath: { eq: "images/votelog/VoteRecord.png" }
+      relativePath: { eq: "images/icons/votelog/votelog.png" }
     ) {
       childImageSharp {
         fixed(width: 48) {
@@ -42,7 +42,7 @@ export const query = graphql`
         }
       }
     }
-    updateImage: file(relativePath: { eq: "images/update/Update.png" }) {
+    updateImage: file(relativePath: { eq: "images/icons/update/update.png" }) {
       childImageSharp {
         fixed(width: 17) {
           ...GatsbyImageSharpFixed
@@ -68,9 +68,7 @@ const VoteLogPage = ({
   pageContext,
 }) => {
   const { currentPage, numPages } = pageContext
-  const votelogs = allVotelogYaml.edges.sort(({ node: a }, { node: b }) =>
-    moment(b.vote_date).diff(moment(a.vote_date), "days")
-  )
+  const votelogs = allVotelogYaml.edges
 
   return (
     <Layout>
@@ -133,6 +131,7 @@ const VoteLogPage = ({
             {votelogs.map(({ node }) => (
               <VoteLogCard
                 key={node.id}
+                view={"full"}
                 css={{
                   width: `calc((var(--container-width) - 4rem) / 2)`,
                   margin: "0 1rem 2rem 1rem",

@@ -4,7 +4,7 @@ const config = {
     description: `ใครเป็นใคร เคยทำอะไรมาบ้าง ตอนนี้อยู่ตำแหน่งไหน และยกมือสนับสนุนอะไรในสภา`,
     author: `@electinth`,
   },
-  pathPrefix: process.env.BASE_PATH || '/',
+  pathPrefix: process.env.BASE_PATH || "/",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -40,13 +40,13 @@ const config = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Politician Directory`,
-        short_name: `Politician`,
+        name: `They Work For You`,
+        short_name: `They Work`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#fcbbdd`,
+        theme_color: `#fcbbdd`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/hero/biography.png`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

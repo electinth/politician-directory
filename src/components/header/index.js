@@ -109,7 +109,7 @@ const Header = ({ siteTitle }) => {
           }
         }
       }
-      searchIcon: file(relativePath: { eq: "images/icons/search/Search.png" }) {
+      searchIcon: file(relativePath: { eq: "images/icons/search/search.png" }) {
         childImageSharp {
           fluid(maxWidth: 31) {
             ...GatsbyImageSharpFluid
@@ -168,7 +168,7 @@ const Header = ({ siteTitle }) => {
           }}
         >
           <HiddenOnMobile>
-            <div css={cssLanguageMenu}>
+            <div css={cssLanguageMenu} style={{ display: "none" }}>
               <a href="/?lang=th" className="active">
                 TH
               </a>{" "}
@@ -183,7 +183,7 @@ const Header = ({ siteTitle }) => {
               alignItems: "center",
             }}
           >
-            <div>
+            <div style={{ display: "none" }}>
               <Link to="/" css={cssMenuIcon}>
                 <Img {...staticData.searchIcon.childImageSharp} />
               </Link>

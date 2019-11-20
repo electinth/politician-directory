@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -68,6 +69,13 @@ export const query = graphql`
         description_th
         legal_title
         vote_date
+      }
+    }
+    infoImage: file(relativePath: { eq: "images/icons/info/info.png" }) {
+      childImageSharp {
+        fixed(height: 24) {
+          ...GatsbyImageSharpFixed
+        }
       }
     }
   }
@@ -223,19 +231,27 @@ const LinkPoliticsAndBusiness = (name, lastname, party) => {
 
 const PersonFinance = person => (
   <p>
-    {/**
-    <span><strong>ทรัพย์สิน</strong> {person.asset}</span>
-    {" "}
-    <span><strong>หนี้สิน</strong> {person.deby}</span>
-    {" "}
-     */}
+    <span>
+      <strong>ทรัพย์สิน</strong>{" "}
+      {person.asset === null ? "ไม่มีข้อมูล" : formatNumber(person.asset)}
+    </span>{" "}
+    <span>
+      <strong>หนี้สิน</strong>{" "}
+      {person.debt === null ? "ไม่มีข้อมูล" : formatNumber(person.debt)}
+    </span>{" "}
     {person.mp_type !== "" &&
       LinkPoliticsAndBusiness(person.name, person.lastname, person.party)}
   </p>
 )
 
 const PeoplePage = props => {
-  const { person, peopleVoteYaml, partyYaml, allVotelogYaml } = props.data
+  const {
+    person,
+    peopleVoteYaml,
+    partyYaml,
+    allVotelogYaml,
+    ...data
+  } = props.data
 
   const pageBGColor = partyYaml !== null ? partyYaml.color : "var(--cl-gray-4)"
   const personFullName = `${person.title} ${person.name} ${person.lastname}`
@@ -276,27 +292,13 @@ const PeoplePage = props => {
             <p css={{ marginTop: "3rem", marginBottom: "5rem" }}>
               {person.bio}
             </p>
-
-            {/*
-            <h2 style={{ ...cssEngTitle }}>25th House of Representative</h2>
-            <h2 style={{ ...cssEngTitle }}>About</h2>
-            <p css={{ ...cssPageP }}>{house.description}</p>
-            <h2 css={{ ...cssEngTitle }}>Official Website</h2>
-            <OfficialWebsite {...house}></OfficialWebsite>
-            <h2 css={{ ...cssEngTitle }}>In Office</h2>
-            <InOfficeDate {...house}></InOfficeDate>
-            <h2 style={{ ...cssEngTitle }}>Key Members</h2>
-            {keyMembers.map(x => {
-              return (
-                <div className="peopleCard" key={x.id}>
-                  <PeopleCardMini key={x.id} {...x} />
-                </div>
-              )
-            })}
-             */}
           </div>
           <div className="page" css={cssRightPage}>
             <h2 css={{ ...cssH2, marginTop: "1rem", textAlign: "center" }}>
+              <Img
+                fixed={data.infoImage.childImageSharp.fixed}
+                style={{ verticalAlign: "bottom", margin: "0 0.8rem" }}
+              />
               ข้อมูลพื้นฐาน
             </h2>
             <hr className={`${styles.hr}`} />

@@ -17,6 +17,7 @@ const VoteLogCard = ({
   total_voter,
   vote_date,
   slug,
+  view, // "full", "compact"
 }) => {
   const resultColor = passed ? "green" : "red"
   const approveBar = (approve * 100) / total_voter + "%"
@@ -31,9 +32,10 @@ const VoteLogCard = ({
         flexDirection: "column",
         width: 300,
         minWidth: 300,
-        height: 450,
-        minHeight: 450,
+        height: view !== "compact" ? 450 : 370,
+        minHeight: view !== "compact" ? 450 : 370,
         padding: "2rem",
+        border: "2px solid var(--cl-black)",
         borderRadius: "10px",
         backgroundColor: "var(--cl-white)",
         color: "var(--cl-black)",
@@ -112,16 +114,18 @@ const VoteLogCard = ({
           {title}
         </h3>
       </Link>
-      <p
-        style={{
-          paddingTop: "1rem",
-          textOverflow: "ellipsis",
-          whiteSpace: "nowrap",
-          overflow: "hidden",
-        }}
-      >
-        {description_th}
-      </p>
+      {view !== "compact" ? (
+        <p
+          style={{
+            paddingTop: "1rem",
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+            overflow: "hidden",
+          }}
+        >
+          {description_th}
+        </p>
+      ) : null}
 
       <div
         style={{
