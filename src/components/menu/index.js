@@ -10,6 +10,14 @@ const menuHeader = {
   padding: 0,
   fontSize: "2rem",
   color: "var(--cl-paper-gray)",
+  a: {
+    color: "inherit",
+    "&:hover, &.active": {
+      textDecoration: "underline",
+      // Works only on Safari, Firefox
+      textDecorationThickness: 2,
+    },
+  },
 }
 
 const menuList = {
@@ -109,7 +117,9 @@ const Menu = ({ siteTitle }) => {
 
   return (
     <div className="menu-wrapper">
-      <h2 css={menuHeader}>{siteTitle}</h2>
+      <h2 css={menuHeader}>
+        <Link to={"/"}>{siteTitle}</Link>
+      </h2>
 
       <ul css={menuList}>
         <li>
