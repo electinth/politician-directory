@@ -252,7 +252,7 @@ const PartyPage = props => {
 
   return (
     <Layout pageStyles={{ background: party.color }}>
-      <SEO title={`พรรค${party.name}`} />
+      <SEO title={`พรรค${party.name}`} imageUrl="/seo/party.png" />
       <section className="section">
         <div className="book">
           <div className="page leftPage">
