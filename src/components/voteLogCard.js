@@ -94,7 +94,8 @@ const VoteLogCard = ({
           marginTop: "2rem",
         }}
       >
-        {parseInt((approve / total_voter) * 100)}% เห็นด้วย
+        {total_voter > 0 ? parseInt((approve / total_voter) * 100) : 0}%
+        เห็นด้วย
       </h2>
       <Link
         to={slug}

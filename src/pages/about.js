@@ -63,6 +63,11 @@ const cssExtLinkButton = {
 
 export const query = graphql`
   query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allContributor {
       edges {
         node {
@@ -126,7 +131,7 @@ const AboutPage = ({ data }) => (
     >
       <div className="container">
         <h1 css={h1}>About Us</h1>
-        <h2 css={h2}>เกี่ยวกับ They Work for Us?</h2>
+        <h2 css={h2}>{data.site.siteMetadata.title}</h2>
       </div>
     </section>
     <section css={{ ...cssSection }}>
@@ -152,7 +157,7 @@ const AboutPage = ({ data }) => (
             ต้องมาตกหนักอยู่ที่ประชาชนและสื่อมวลชน
           </p>
           <p>
-            ELECT จึงตั้งใจพัฒนาแพลตฟอร์ม They Work For Us
+            ELECT จึงตั้งใจพัฒนาแพลตฟอร์ม {data.site.siteMetadata.title}{" "}
             ที่จะทำให้ประชาชนทั่วไปรวมถึงสื่อมวลชน สามารถทำความรู้จักและติดตาม
             'ผู้แทน' ของเราได้ง่ายขึ้น พวกเขาคือใคร เคยทำอะไรมาบ้าง พูดอะไรในสภา
             และเลือกที่จะสนับสนุนอะไร เพื่อเปลี่ยนข้อมูลที่เป็นของเราทุกคน
@@ -360,8 +365,8 @@ const AboutPage = ({ data }) => (
         </div>
         <div css={cssSubSection}>
           <p>
-            They Work for Us ได้รับการสนับสนุนทุนในการดำเนินงานจาก Friedrich
-            Naumann Foundation
+            {data.site.siteMetadata.title} ได้รับการสนับสนุนทุนในการดำเนินงานจาก
+            Friedrich Naumann Foundation
             ซึ่งนำมาใช้เป็นต้นทุนในการประสานงานและบริหารจัดการ การจัด Meetup
             เพื่อดำเนินโครงการ การผลิตของที่ระลึก และแบ่งเป็นค่าเสียเวลาเล็กๆ
             น้อยๆ ให้กับอาสาสมัคร

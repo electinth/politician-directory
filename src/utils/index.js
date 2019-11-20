@@ -336,7 +336,6 @@ export function filterVote(peopleVotelog, key, value) {
 
 export function joinPeopleVotelog(people, peopleVotelogs, votelogs) {
   const votelogByPeople = peopleVotelogs.edges.map(({ node }) => node)
-  console.log("people", people)
   const allPeople = people.edges.map(({ node: person }) => {
     const vote = _.find(votelogByPeople, ["id", person.id])
     return {

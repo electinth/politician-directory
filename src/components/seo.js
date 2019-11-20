@@ -34,7 +34,10 @@ function SEO({ description, lang, meta, title, imageUrl }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title} รู้จักและติดตาม 'ผู้แทน' ในสภาของเรา`}
+      titleTemplate={
+        (title === "Home" ? `` : `%s | `) +
+        `${site.siteMetadata.title} รู้จักและติดตาม 'ผู้แทน' ในสภาของเรา`
+      }
       meta={[
         {
           name: `description`,

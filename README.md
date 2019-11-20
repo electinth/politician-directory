@@ -1,10 +1,10 @@
 <h1 align="center">
-  They Work For Us?
+  They Work For Us
 </h1>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1165ad17-98ee-45b6-acb3-f552ed565abf/deploy-status)](https://app.netlify.com/sites/quirky-hodgkin-ae5fd3/deploys)
 
-**They Work For Us?** is an open-source politician directory project for listing and tracking activities of members of the Cabinet and National Assembly of Thailand. It's run on [Gatsby](https://www.gatsbyjs.org).
+**They Work For Us** is an open-source politician directory project for listing and tracking activities of members of the Cabinet and National Assembly of Thailand. It's run on [Gatsby](https://www.gatsbyjs.org).
 
 ## Table of Contents
 
@@ -36,8 +36,8 @@ Your site is running on `http://localhost:8000` and GraphQL tool helper on `http
 |                      Environment                       |                 Description                  |
 | :----------------------------------------------------: | :------------------------------------------: |
 |                          Dev                           | Each PR will be built and hosted on Netlify. |
-| [Staging](https://pedantic-edison-3897de.netlify.com/) |      new features awaiting for release.      |
-|                    [Production](#)                     |              not available yet.              |
+| [Staging](https://pedantic-edison-3897de.netlify.com/) |      New features awaiting for release.      |
+|    [Production](https://theyworkforus.elect.in.th)     |                Public website                |
 
 ## Getting Started for Contributers
 

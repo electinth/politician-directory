@@ -1,6 +1,6 @@
 const config = {
   siteMetadata: {
-    title: `They Work For You`,
+    title: `They Work For Us`,
     description: `ใครเป็นใคร เคยทำอะไรมาบ้าง ตอนนี้อยู่ตำแหน่งไหน และยกมือสนับสนุนอะไรในสภา`,
     author: `@electinth`,
   },
@@ -40,8 +40,8 @@ const config = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `They Work For You`,
-        short_name: `They Work`,
+        name: `They Work For Us`,
+        short_name: `They Work For Us`,
         start_url: `/`,
         background_color: `#fcbbdd`,
         theme_color: `#fcbbdd`,
