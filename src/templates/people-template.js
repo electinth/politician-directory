@@ -233,11 +233,15 @@ const PersonFinance = person => (
   <p>
     <span>
       <strong>ทรัพย์สิน</strong>{" "}
-      {person.asset === null ? "ไม่มีข้อมูล" : formatNumber(person.asset)}
+      {person.asset === null
+        ? "ไม่มีข้อมูล"
+        : `${formatNumber(person.asset)} บาท`}
     </span>{" "}
     <span>
       <strong>หนี้สิน</strong>{" "}
-      {person.debt === null ? "ไม่มีข้อมูล" : formatNumber(person.debt)}
+      {person.debt === null
+        ? "ไม่มีข้อมูล"
+        : `${formatNumber(person.debt)} บาท`}
     </span>{" "}
     {person.mp_type !== "" &&
       LinkPoliticsAndBusiness(person.name, person.lastname, person.party)}
