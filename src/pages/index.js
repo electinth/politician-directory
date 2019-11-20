@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import moment from "moment"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -224,29 +223,26 @@ const IndexPage = ({ data }) => {
               marginTop: "6rem",
             }}
           >
-            {data.allVotelogYaml.edges
-              .sort(({ node: a }, { node: b }) =>
-                moment(b.vote_date).diff(moment(a.vote_date), "days")
-              )
-              .map(({ node }) => (
-                <VoteLogCard
-                  key={node.id}
-                  css={{
-                    width: `calc((var(--container-width) - 4rem) / 2)`,
-                    margin: "0 1rem 2rem 1rem",
-                  }}
-                  title={node.title}
-                  description_th={node.description_th}
-                  passed={node.passed}
-                  approve={node.approve}
-                  disprove={node.disprove}
-                  abstained={node.abstained}
-                  absent={node.absent}
-                  total_voter={node.total_voter}
-                  vote_date={node.vote_date}
-                  slug={node.fields.slug}
-                />
-              ))}
+            {data.allVotelogYaml.edges.map(({ node }) => (
+              <VoteLogCard
+                key={node.id}
+                view={"full"}
+                css={{
+                  width: `calc((var(--container-width) - 4rem) / 2)`,
+                  margin: "0 1rem 2rem 1rem",
+                }}
+                title={node.title}
+                description_th={node.description_th}
+                passed={node.passed}
+                approve={node.approve}
+                disprove={node.disprove}
+                abstained={node.abstained}
+                absent={node.absent}
+                total_voter={node.total_voter}
+                vote_date={node.vote_date}
+                slug={node.fields.slug}
+              />
+            ))}
           </div>
           <div
             css={{

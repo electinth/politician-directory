@@ -327,3 +327,39 @@ export function loadCategoryStats(data) {
     mp_type,
   }
 }
+
+export function filterVote(peopleVotelog, key, value) {
+  return _.filter(peopleVotelog, o => {
+    return _.find(o.votelog, p => p.key === key).value === value
+  })
+}
+
+export function joinPeopleVotelog(people, peopleVotelogs, votelogs) {
+  const votelogByPeople = peopleVotelogs.edges.map(({ node }) => node)
+  console.log("people", people)
+  const allPeople = people.edges.map(({ node: person }) => {
+    const vote = _.find(votelogByPeople, ["id", person.id])
+    return {
+      ...person,
+      ...vote,
+    }
+  })
+
+  return votelogs.edges.map(({ node: votelog }) => {
+    const approve = filterVote(allPeople, votelog.id, "1").length
+    const disprove = filterVote(allPeople, votelog.id, "2").length
+    const abstained = filterVote(allPeople, votelog.id, "3").length
+    const absent = filterVote(allPeople, votelog.id, "4").length
+    const filteredVoteResult = {
+      approve,
+      disprove,
+      abstained,
+      absent,
+      total_voter: approve + disprove + abstained + absent,
+    }
+    return {
+      ...votelog,
+      ...filteredVoteResult,
+    }
+  })
+}

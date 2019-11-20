@@ -4,11 +4,12 @@ import _ from "lodash"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { loadCategoryStats } from "../utils"
+import { loadCategoryStats, joinPeopleVotelog } from "../utils"
 import StackedBarChart from "../components/stackedBarChart"
 import { OfficialWebsite, InOfficeDate } from "../components/profile"
 import PeopleCardMini from "../components/peopleCardMini"
 import PeopleCard from "../components/peopleCard"
+import VoteLogCard from "../components/voteLogCard"
 
 import "../styles/profile-book.css"
 
@@ -88,6 +89,36 @@ export const query = graphql`
       edges {
         node {
           asset
+        }
+      }
+    }
+    allVotelogYaml(
+      filter: { is_active: { eq: true } }
+      limit: 6
+      sort: { fields: vote_date, order: DESC }
+    ) {
+      totalCount
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          title
+          description_th
+          passed
+          vote_date
+        }
+      }
+    }
+    allPeopleVoteYaml {
+      edges {
+        node {
+          id
+          votelog {
+            key
+            value
+          }
         }
       }
     }
@@ -214,6 +245,12 @@ const SenatePage = props => {
 
   const showingMembers = getSortedMembers()
 
+  const votelogs = joinPeopleVotelog(
+    data.allPeopleYaml,
+    data.allPeopleVoteYaml,
+    data.allVotelogYaml
+  )
+
   return (
     <Layout pageStyles={{ background: "#edf087" }}>
       <SEO title="สมาชิกวุฒิสภา" />
@@ -278,11 +315,43 @@ const SenatePage = props => {
           </div>
         </div>
       </section>
+
       <section css={{ ...cssSection, background: "var(--cl-white)" }}>
         <div className="container">
-          <h2 css={{ ...cssH1 }}>สรุปการลงมติล่าสุด</h2>
+          <h2 css={{ ...cssH1 }}>การลงมติล่าสุดของวุฒิสภา</h2>
+          <div
+            css={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "flex-start",
+              flexWrap: "wrap",
+              marginTop: "6rem",
+            }}
+          >
+            {votelogs.map(node => (
+              <VoteLogCard
+                key={node.id}
+                view={"compact"}
+                css={{
+                  width: `calc((var(--container-width) - 4rem) / 2)`,
+                  margin: "0 1rem 2rem 1rem",
+                }}
+                title={node.title}
+                description_th={node.description_th}
+                passed={node.passed}
+                approve={node.approve}
+                disprove={node.disprove}
+                abstained={node.abstained}
+                absent={node.absent}
+                total_voter={node.total_voter}
+                vote_date={node.vote_date}
+                slug={node.fields.slug}
+              />
+            ))}
+          </div>
         </div>
       </section>
+
       <section css={{ ...cssSection, background: "#eeeeee" }}>
         <div className="container">
           <h2
