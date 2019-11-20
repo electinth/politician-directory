@@ -4,7 +4,7 @@ import _ from "lodash"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { loadCategoryStats, joinPeopleVotelog } from "../utils"
+import { loadCategoryStats, joinPeopleVotelog, peopleSlug } from "../utils"
 import StackedBarChart from "../components/stackedBarChart"
 import { OfficialWebsite, InOfficeDate } from "../components/profile"
 import PeopleCardMini from "../components/peopleCardMini"
@@ -237,9 +237,12 @@ const SenatePage = props => {
       },
     ].map((keyPos, id) => {
       if (!senate[keyPos.name]) return null
-      const [name, lastname] = senate[keyPos.name].split(" ")
+      const nameParts = senate[keyPos.name].split(" ").slice(1)
+      const slug = peopleSlug(nameParts.join(" "))
+      const name = nameParts[0]
+      const lastname = nameParts.slice(1).join(" ")
       const position = keyPos.label
-      return { id, name, lastname, position }
+      return { id, name, lastname, position, fields: { slug } }
     })
   )
 
