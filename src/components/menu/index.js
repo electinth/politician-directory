@@ -38,10 +38,13 @@ const menuList = {
   },
 }
 
-const menuIconStyle = {
+const cssMenuIcon = {
   position: "absolute",
   top: -3,
   left: -40,
+  width: 32,
+  height: 32,
+  textAlign: "center",
 }
 
 const languageMenu = {
@@ -64,7 +67,7 @@ const Menu = ({ siteTitle }) => {
   const staticData = useStaticQuery(graphql`
     query {
       voteRecordImage: file(
-        relativePath: { eq: "images/icons/vote-record.png" }
+        relativePath: { eq: "images/icons/votelog/votelog-white.png" }
       ) {
         childImageSharp {
           fixed(height: 32) {
@@ -73,7 +76,7 @@ const Menu = ({ siteTitle }) => {
         }
       }
       cabinetImage: file(
-        relativePath: { eq: "images/icons/cabinet/Cabinet@2x.png" }
+        relativePath: { eq: "images/icons/cabinet/cabinet-white.png" }
       ) {
         childImageSharp {
           fixed(width: 32) {
@@ -82,7 +85,7 @@ const Menu = ({ siteTitle }) => {
         }
       }
       senateImage: file(
-        relativePath: { eq: "images/icons/senate/Senate.png" }
+        relativePath: { eq: "images/icons/senate/senate-white.png" }
       ) {
         childImageSharp {
           fixed(width: 32) {
@@ -92,7 +95,7 @@ const Menu = ({ siteTitle }) => {
       }
       representativeImage: file(
         relativePath: {
-          eq: "images/icons/representative/Representative@2x.png"
+          eq: "images/icons/representative/representative-white.png"
         }
       ) {
         childImageSharp {
@@ -111,37 +114,38 @@ const Menu = ({ siteTitle }) => {
       <ul css={menuList}>
         <li>
           <span>
-            <Img
-              fixed={staticData.cabinetImage.childImageSharp.fixed}
-              style={menuIconStyle}
-            />
+            <span css={cssMenuIcon}>
+              <Img fixed={staticData.cabinetImage.childImageSharp.fixed} />
+            </span>
             <Link to={"/cabinet"}>คณะรัฐมนตรี</Link>
           </span>
         </li>
         <li>
           <span>
-            <Img
-              fixed={staticData.senateImage.childImageSharp.fixed}
-              style={menuIconStyle}
-            />
+            <span css={cssMenuIcon}>
+              <Img fixed={staticData.senateImage.childImageSharp.fixed} />
+            </span>
             <Link to={"/senate"}>สมาชิกวุฒิสภา</Link>
           </span>
         </li>
         <li>
           <span>
-            <Img
-              fixed={staticData.representativeImage.childImageSharp.fixed}
-              style={menuIconStyle}
-            />
+            <span css={cssMenuIcon}>
+              <Img
+                fixed={staticData.representativeImage.childImageSharp.fixed}
+              />
+            </span>
             <Link to={"/representatives"}>สมาชิกสภาผู้แทนราษฎร</Link>
           </span>
         </li>
         <li>
           <span>
-            <Img
-              fixed={staticData.voteRecordImage.childImageSharp.fixed}
-              style={menuIconStyle}
-            />
+            <span css={cssMenuIcon}>
+              <Img
+                fixed={staticData.voteRecordImage.childImageSharp.fixed}
+                style={{ transform: "translate(2px, 0)" }}
+              />
+            </span>
             <Link to={"/votelog"}>สรุปวาระการลงมติ</Link>
           </span>
         </li>
@@ -152,7 +156,7 @@ const Menu = ({ siteTitle }) => {
         </li>
       </ul>
 
-      <div css={languageMenu}>
+      <div css={languageMenu} style={{ display: "none" }}>
         <a className="active" href="/">
           TH
         </a>

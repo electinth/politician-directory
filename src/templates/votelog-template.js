@@ -33,7 +33,7 @@ export const query = graphql`
     }
 
     voteRecordIcon: file(
-      relativePath: { eq: "images/votelog/VoteRecord.png" }
+      relativePath: { eq: "images/icons/votelog/votelog.png" }
     ) {
       childImageSharp {
         fixed(height: 30) {

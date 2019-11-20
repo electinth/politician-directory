@@ -34,7 +34,7 @@ export const query = graphql`
       }
     }
     voteRecordImage: file(
-      relativePath: { eq: "images/votelog/VoteRecord.png" }
+      relativePath: { eq: "images/icons/votelog/votelog.png" }
     ) {
       childImageSharp {
         fixed(width: 48) {
@@ -42,7 +42,7 @@ export const query = graphql`
         }
       }
     }
-    updateImage: file(relativePath: { eq: "images/update/Update.png" }) {
+    updateImage: file(relativePath: { eq: "images/icons/update/update.png" }) {
       childImageSharp {
         fixed(width: 17) {
           ...GatsbyImageSharpFixed

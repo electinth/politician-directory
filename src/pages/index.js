@@ -73,7 +73,7 @@ export const query = graphql`
       }
     }
     cabinetImage: file(
-      relativePath: { eq: "images/icons/cabinet/Cabinet@2x.png" }
+      relativePath: { eq: "images/icons/cabinet/cabinet.png" }
     ) {
       childImageSharp {
         fixed(width: 60) {
@@ -81,7 +81,7 @@ export const query = graphql`
         }
       }
     }
-    senateImage: file(relativePath: { eq: "images/icons/senate/Senate.png" }) {
+    senateImage: file(relativePath: { eq: "images/icons/senate/senate.png" }) {
       childImageSharp {
         fixed(width: 60) {
           ...GatsbyImageSharpFixed
@@ -89,7 +89,7 @@ export const query = graphql`
       }
     }
     representativeImage: file(
-      relativePath: { eq: "images/icons/representative/Representative@2x.png" }
+      relativePath: { eq: "images/icons/representative/representative.png" }
     ) {
       childImageSharp {
         fixed(width: 60) {
