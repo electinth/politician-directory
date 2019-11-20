@@ -182,7 +182,7 @@ const RepresentativesPage = props => {
       },
     ].map((keyPos, id) => {
       if (!house[keyPos.name]) return null
-      const nameParts = house[keyPos.name].split(" ").slice(1)
+      const nameParts = house[keyPos.name].split(" ")
       const slug = peopleSlug(nameParts.join(" "))
       const name = nameParts[0]
       const lastname = nameParts.slice(1).join(" ")

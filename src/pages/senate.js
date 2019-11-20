@@ -237,7 +237,7 @@ const SenatePage = props => {
       },
     ].map((keyPos, id) => {
       if (!senate[keyPos.name]) return null
-      const nameParts = senate[keyPos.name].split(" ").slice(1)
+      const nameParts = senate[keyPos.name].split(" ")
       const slug = peopleSlug(nameParts.join(" "))
       const name = nameParts[0]
       const lastname = nameParts.slice(1).join(" ")
