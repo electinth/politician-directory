@@ -7,6 +7,7 @@ import { loadCategoryStats, formatOrdinalNumber } from "../utils"
 import StackedBarChart from "../components/stackedBarChart"
 import { OfficialWebsite, InOfficeDate } from "../components/profile"
 import CabinetMemberSection from "../components/cabinetMemberSection"
+import { media } from "../styles"
 
 import "../styles/profile-book.css"
 
@@ -130,8 +131,10 @@ const CabinetPage = props => {
             <h2
               css={{
                 ...cssEngTitle,
-                marginTop: "11.1rem",
-                marginBottom: "0rem",
+                [media(767)]: {
+                  marginTop: "11rem",
+                  marginBottom: "0rem",
+                },
               }}
             >
               Members

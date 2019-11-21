@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
 
+import { media } from "../styles"
+
 class ListCard extends Component {
   state = {
     voter: this.props.voter,
@@ -10,15 +12,19 @@ class ListCard extends Component {
   render() {
     return (
       <div
-        css={css`
-          width: calc(50% - 2rem);
-          min-height: 500px;
-          border-radius: 10px;
-          overflow: hidden;
-          :nth-child(odd) {
-            margin-right: 2rem;
-          }
-        `}
+        css={{
+          width: "100%",
+          minHeight: 500,
+          borderRadius: 10,
+          overflow: "hidden",
+
+          [media(767)]: {
+            width: "calc(50% - 2rem)",
+            ":nth-child(odd)": {
+              marginRight: "2rem",
+            },
+          },
+        }}
       >
         <h2
           css={css`

@@ -23,7 +23,7 @@ const cssSectionHead = {
 
 const cssSection = {
   fontSize: "1.8rem",
-  padding: "4rem 0 0 0",
+  padding: "4rem 2rem 0",
 }
 
 const cssSubSection = {

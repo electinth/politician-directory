@@ -12,18 +12,12 @@ export const CabinetMemberList = ({ members, title }) => {
       .filter(pos => pos.indexOf(title) >= 0)
       .join(", ")
     return (
-      <div>
-        <PeopleCard
-          key={member.id}
-          {...member}
-          cabinet_position={position}
-          type="cabinet"
-          style={{
-            width: "47rem",
-            height: "15.5rem",
-          }}
-        ></PeopleCard>
-      </div>
+      <PeopleCard
+        key={member.id}
+        {...member}
+        cabinet_position={position}
+        type="cabinet"
+      ></PeopleCard>
     )
   })
 
@@ -44,10 +38,6 @@ export const CabinetMemberList = ({ members, title }) => {
       </h2>
       <div
         css={{
-          width: "100rem",
-          [`@media only screen and (max-width: 65rem)`]: {
-            width: "50rem",
-          },
           display: "flex",
           flexWrap: "wrap",
           margin: "0 auto",

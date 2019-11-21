@@ -14,6 +14,7 @@ import { OfficialWebsite, InOfficeDate } from "../components/profile"
 import PeopleCardMini from "../components/peopleCardMini"
 import PeopleCard from "../components/peopleCard"
 import VoteLogCard from "../components/voteLogCard"
+import { media } from "../styles"
 
 import "../styles/profile-book.css"
 
@@ -291,8 +292,10 @@ const SenatePage = props => {
             <h2
               style={{
                 ...cssEngTitle,
-                marginTop: "11.1rem",
-                marginBottom: "0rem",
+                [media(767)]: {
+                  marginTop: "11rem",
+                  marginBottom: "0rem",
+                },
               }}
             >
               Members

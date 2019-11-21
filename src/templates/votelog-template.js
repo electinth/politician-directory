@@ -11,6 +11,7 @@ import VoterList from "../components/voterList"
 import Waffle from "../components/waffle"
 import VoteLogLegend from "../components/voteLogLegend"
 import { calculateVoteLog } from "../utils"
+import { media } from "../styles"
 
 export const query = graphql`
   query($slug: String!) {
@@ -128,9 +129,15 @@ const VotelogPage = ({
       }}
       mainStyles={{
         background: "#fff",
-        width: "920px",
         borderRadius: "10px",
         padding: "3rem",
+        margin: "0 1rem",
+      }}
+      css={{
+        width: "auto",
+        [media(767)]: {
+          width: "920px",
+        },
       }}
     >
       <SEO title={votelogYaml.title} imageUrl="/seo/votelog.png" />
@@ -223,9 +230,12 @@ const VotelogPage = ({
             </span>
           )}
           <span
-            css={css`
-              float: right;
-            `}
+            css={{
+              display: "block",
+              [media(767)]: {
+                float: "right",
+              },
+            }}
           >
             ผู้มีสิทธิ์ลงคะแนน {total_voter} คน
           </span>

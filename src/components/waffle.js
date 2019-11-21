@@ -74,8 +74,8 @@ const waffle = (data, color, borderColor, add_separator) => {
   return result
 }
 
-const Waffle = ({ data, colors, borderColors }) => (
-  <div className="waffle">
+const Waffle = ({ data, colors, borderColors, style, css }) => (
+  <div className="waffle" css={css} style={style}>
     {data.map((group, group_idx) =>
       waffle(
         group,
