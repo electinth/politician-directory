@@ -137,6 +137,7 @@ const VotelogPage = ({
         width: "auto",
         [media(767)]: {
           width: "920px",
+          margin: "0 auto",
         },
       }}
     >
