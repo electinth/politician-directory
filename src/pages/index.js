@@ -61,12 +61,10 @@ export const query = graphql`
           }
           title
           description_th
-          passed
           approve
           disprove
           abstained
           absent
-          total_voter
           vote_date
         }
       }
@@ -233,12 +231,10 @@ const IndexPage = ({ data }) => {
                 }}
                 title={node.title}
                 description_th={node.description_th}
-                passed={node.passed}
                 approve={node.approve}
                 disprove={node.disprove}
                 abstained={node.abstained}
                 absent={node.absent}
-                total_voter={node.total_voter}
                 vote_date={node.vote_date}
                 slug={node.fields.slug}
               />
@@ -305,7 +301,14 @@ const IndexPage = ({ data }) => {
                 textAlign: "center",
               }}
             >
-              สมาชิกสภาผู้แทนราษฎร
+              <Link
+                to={"/representatives"}
+                css={{
+                  color: "var(--cl-black)",
+                }}
+              >
+                สมาชิกสภาผู้แทนราษฎร
+              </Link>
             </h3>
             <PartyGroupList
               paneHeaderStyle={{

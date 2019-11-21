@@ -21,14 +21,23 @@ const VoteLogCard = votelog => {
     slug,
     view, // "full", "compact"
   } = votelog
+  let { passed } = votelog
   // Total members who're eligible to vote at that time
-  const { passed, total_voter } = calculateVoteLog(votelog)
+  const { passed: calcPassed, total_voter: calcTotalVoter } = calculateVoteLog(
+    votelog
+  )
+
+  // user may pass "passed" props to show global result
+  // if not, use calculated value
+  if (typeof passed === "undefined") {
+    passed = calcPassed
+  }
 
   const resultColor = passed ? "var(--cl-vote-yes)" : "var(--cl-vote-no)"
-  const approveBar = (approve * 100) / total_voter + "%"
-  const disproveBar = (disprove * 100) / total_voter + "%"
-  const abstainedBar = (abstained * 100) / total_voter + "%"
-  const absentBar = (absent * 100) / total_voter + "%"
+  const approveBar = (approve * 100) / calcTotalVoter + "%"
+  const disproveBar = (disprove * 100) / calcTotalVoter + "%"
+  const abstainedBar = (abstained * 100) / calcTotalVoter + "%"
+  const absentBar = (absent * 100) / calcTotalVoter + "%"
 
   return (
     <div
@@ -101,7 +110,7 @@ const VoteLogCard = votelog => {
           marginTop: "2rem",
         }}
       >
-        {total_voter > 0 ? parseInt((approve / total_voter) * 100) : 0}%
+        {calcTotalVoter > 0 ? parseInt((approve / calcTotalVoter) * 100) : 0}%
         เห็นด้วย
       </h4>
       <Link
