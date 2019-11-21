@@ -135,7 +135,7 @@ export default ({ data }) => {
           <ListCard voter={data[0]} choice="เห็นด้วย" />
           <ListCard voter={data[1]} choice="ไม่เห็นด้วย" />
           <ListCard voter={data[2]} choice="งดออกเสียง" />
-          <ListCard voter={data[3]} choice="ไม่เข้าร่วมประชุม" />
+          <ListCard voter={data[3]} choice="ไม่ลงคะแนน" />
         </div>
       </div>
     </section>

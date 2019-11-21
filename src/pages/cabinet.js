@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { loadCategoryStats } from "../utils"
+import { loadCategoryStats, formatOrdinalNumber } from "../utils"
 import StackedBarChart from "../components/stackedBarChart"
 import { OfficialWebsite, InOfficeDate } from "../components/profile"
 import CabinetMemberSection from "../components/cabinetMemberSection"
@@ -111,7 +111,14 @@ const CabinetPage = props => {
             <h1 css={{ ...cssH1, margin: "1rem 0 0 0" }}>
               {cabinet.name} ชุดที่ {cabinet.party_ordinal}
             </h1>
-            <h2 css={{ ...cssEngTitle }}>Cabinet</h2>
+            <h2 style={{ ...cssEngTitle }}>
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: formatOrdinalNumber(cabinet.party_ordinal),
+                }}
+              />{" "}
+              Cabinet
+            </h2>
             <h2 css={{ ...cssEngTitle }}>About</h2>
             <p css={{ ...cssPageP }}>{cabinet.description}</p>
             <h2 css={{ ...cssEngTitle }}>Official Link</h2>

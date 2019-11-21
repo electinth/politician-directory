@@ -4,7 +4,11 @@ import _ from "lodash"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { loadCategoryStats, joinPeopleVotelog } from "../utils"
+import {
+  loadCategoryStats,
+  joinPeopleVotelog,
+  formatOrdinalNumber,
+} from "../utils"
 import StackedBarChart from "../components/stackedBarChart"
 import { OfficialWebsite, InOfficeDate } from "../components/profile"
 import PeopleCardMini from "../components/peopleCardMini"
@@ -260,7 +264,14 @@ const SenatePage = props => {
             <h1 css={{ ...cssH1, margin: "1rem 0 0 0" }}>
               {senate.name} ชุดที่ {senate.party_ordinal}
             </h1>
-            <h2 style={{ ...cssEngTitle }}>Senate</h2>
+            <h2 style={{ ...cssEngTitle }}>
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: formatOrdinalNumber(senate.party_ordinal),
+                }}
+              />{" "}
+              Senate
+            </h2>
             <h2 style={{ ...cssEngTitle }}>About</h2>
             <p css={{ ...cssPageP }}>{senate.description}</p>
             <h2 css={{ ...cssEngTitle }}>Official Link</h2>
