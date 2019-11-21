@@ -8,11 +8,11 @@ const cssH1 = { fontSize: "4.8rem", marginTop: "4rem" }
 
 const formatHouse = house => {
   if (house === "ทั้งหมด") {
-    return "ทั้งหมด"
+    return "ผู้แทนทั้งหมด"
   } else if (house === "ส.ส.") {
-    return "จากสภาผู้แทนราษฎร"
+    return "สมาชิกสภาผู้แทนราษฎร"
   } else if (house === "ส.ว.") {
-    return "จากสมาชิกวุฒิสภา"
+    return "สมาชิกวุฒิสภา"
   } else {
     return "ที่เป็นคนนอก"
   }
@@ -21,8 +21,8 @@ const formatHouse = house => {
 class WaffleFilter extends Component {
   state = {
     house: this.props.data,
-    data_of_interest: this.props.data,
-    data_the_rest: this.props.data,
+    data_of_interest: [],
+    data_the_rest: [],
     showMenu: null,
     currentFilter: {
       house: "ทั้งหมด",
@@ -104,17 +104,11 @@ class WaffleFilter extends Component {
   uniqueChoices = group => [...new Set(this.props.data.map(x => x.node[group]))]
 
   componentDidMount() {
-    let currentFilter = { ...this.state.currentFilter }
-    currentFilter["gender"] = "หญิง"
-    let [data_of_interest, data_the_rest] = this.filterData(
-      this.props.data,
-      currentFilter
-    )
-    this.setState({ currentFilter, data_of_interest, data_the_rest })
+    this.handleFilter({ target: { innerText: "หญิง" } }, "gender")
   }
 
   render() {
-    console.log(this.props.data)
+    console.log(this.state.data_of_interest)
     return (
       <>
         <Global
@@ -177,12 +171,12 @@ class WaffleFilter extends Component {
           <span css={{ fontSize: "7.2rem", verticalAlign: "middle" }}>
             {(
               (100 * this.state.data_of_interest.length) /
-              this.props.data.length
+              this.state.house.length
             ).toFixed(2)}
             %
           </span>
           <span css={{ fontFamily: "var(--ff-text)", fontSize: "2.4rem" }}>
-            {`ของผู้แทน${formatHouse(this.state.currentFilter.house)} ${
+            {`ของ${formatHouse(this.state.currentFilter.house)} ${
               this.state.currentFilter.gender === "ทุกเพศ"
                 ? ""
                 : "เป็นเพศ" + this.state.currentFilter.gender
