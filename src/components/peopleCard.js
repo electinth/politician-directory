@@ -115,7 +115,7 @@ const PeopleCard = ({ type, ...props }) => {
 
   return (
     <Link
-      to={`/people/${props.name}-${props.lastname}`}
+      to={props.fields.slug}
       key={props.id}
       css={{
         display: "flex",

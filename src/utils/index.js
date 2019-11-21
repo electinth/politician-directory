@@ -53,12 +53,23 @@ export function sortThaiLocale(a, b) {
 }
 
 /**
+ * Create people profile slug
+ * @param {String} fullname
+ */
+export function peopleSlug(fullname) {
+  if (!fullname) return ""
+  return `/people/${fullname.replace(/ /g, "-")}`
+}
+
+/**
  * Create poltician profile image URL
  * @param {People} profile
  */
 export function politicianPicture(profile) {
   if (!profile.name || !profile.lastname) return ""
-  return `https://elect.thematter.co/data/politicians/${profile.name}-${profile.lastname}.jpg`
+  return `https://elect.thematter.co/data/politicians/${
+    profile.name
+  }-${profile.lastname.replace(/ /g, "-")}.jpg`
 }
 /**
  * Create poltician profile image URL

@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import {
   loadCategoryStats,
   joinPeopleVotelog,
+  peopleSlug,
   formatOrdinalNumber,
 } from "../utils"
 import StackedBarChart from "../components/stackedBarChart"
@@ -242,9 +243,12 @@ const SenatePage = props => {
       },
     ].map((keyPos, id) => {
       if (!senate[keyPos.name]) return null
-      const [name, lastname] = senate[keyPos.name].split(" ")
+      const nameParts = senate[keyPos.name].split(" ")
+      const slug = peopleSlug(nameParts.join(" "))
+      const name = nameParts[0]
+      const lastname = nameParts.slice(1).join(" ")
       const position = keyPos.label
-      return { id, name, lastname, position }
+      return { id, name, lastname, position, fields: { slug } }
     })
   )
 
