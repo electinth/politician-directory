@@ -4,21 +4,24 @@ import { Link } from "gatsby"
 import "../styles/global.css"
 import "./waffle.css"
 
-let cellStyle = color => ({
+let cellStyle = (color, borderColor) => ({
   position: "relative",
-  width: "12px",
-  height: "12px",
+  width: 8,
+  height: 8,
+  boxSizing: "border-box",
   margin: "0 3px 3px 0",
-  border: "0px",
+  border: "1px solid var(--cl-black)",
+  borderColor,
   backgroundColor: color,
   "&:hover": {
-    border: "2px solid #222222",
+    border: "2px solid var(--cl-black)",
   },
   "&:hover .tooltip-text": {
     display: "block",
     zIndex: 10,
   },
 })
+
 const tooltipTextStyle = {
   display: "none",
   position: "absolute",
@@ -43,7 +46,7 @@ const split_array = (array, size, callback) =>
     .map(start => array.slice(start, start + size))
     .map(callback)
 
-const waffle = (data, color, add_separator) => {
+const waffle = (data, color, borderColor, add_separator) => {
   let result = split_array(data, 100, (hundred, hi) => (
     <div key={hi} className="hundred">
       {split_array(hundred, 25, (quarter, qi) => (
@@ -52,7 +55,7 @@ const waffle = (data, color, add_separator) => {
             <div
               key={node.id}
               // title={full_name(node)}
-              css={cellStyle(color)}
+              css={cellStyle(color, borderColor)}
             >
               <div className="tooltip-text" css={tooltipTextStyle}>
                 <div>
@@ -71,10 +74,15 @@ const waffle = (data, color, add_separator) => {
   return result
 }
 
-const Waffle = ({ data, colors }) => (
-  <div className="waffle">
+const Waffle = ({ data, colors, borderColors, style, css }) => (
+  <div className="waffle" css={css} style={style}>
     {data.map((group, group_idx) =>
-      waffle(group, colors[group_idx], group_idx < data.length - 1)
+      waffle(
+        group,
+        colors[group_idx],
+        borderColors[group_idx],
+        group_idx < data.length - 1
+      )
     )}
   </div>
 )

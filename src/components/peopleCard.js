@@ -3,12 +3,13 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import { politicianPicture } from "../utils"
+import { media } from "../styles"
 
 export const ProfilePicture = props => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(
-        relativePath: { eq: "images/people/placeholder@3x.png" }
+        relativePath: { eq: "images/people/placeholder.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 84) {
@@ -126,8 +127,10 @@ const PeopleCard = ({ type, ...props }) => {
         background: "var(--cl-white)",
         marginBottom: "1rem",
         fontSize: "1.8rem",
-        "&:nth-of-type(2n+1)": {
-          marginRight: "1rem",
+        [media(767)]: {
+          "&:nth-of-type(2n+1)": {
+            marginRight: "1rem",
+          },
         },
         color: "inherit",
         "&:hover": {

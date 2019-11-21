@@ -13,7 +13,7 @@ import Header from "./header/index"
 import Footer from "./footer/index"
 import "./layout.css"
 
-const Layout = ({ children, pageStyles, mainStyles }) => {
+const Layout = ({ children, pageStyles, mainStyles, className }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -37,11 +37,11 @@ const Layout = ({ children, pageStyles, mainStyles }) => {
       >
         <main
           style={{
-            // maxWidth: 960,
             margin: "0 auto",
             padding: 0,
             ...mainStyles,
           }}
+          className={className}
         >
           {children}
         </main>

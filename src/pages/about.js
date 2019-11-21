@@ -23,7 +23,7 @@ const cssSectionHead = {
 
 const cssSection = {
   fontSize: "1.8rem",
-  padding: "4rem 0 0 0",
+  padding: "4rem 2rem 0",
 }
 
 const cssSubSection = {
@@ -215,7 +215,7 @@ const AboutPage = ({ data }) => (
     </section>
     <section css={{ ...cssSection }}>
       <div className="container">
-        <h1 css={cssSectionHead}>เกี่ยวกับโปรเจ็คท์นี้</h1>
+        <h1 css={cssSectionHead}>เกี่ยวกับโปรเจ็คต์นี้</h1>
         <div css={cssSubSection}>
           <p>
             หลายคนอาจจะมีคำถามในใจว่า เลือกตั้งผ่านมาแล้วเราได้อะไร? ELECT

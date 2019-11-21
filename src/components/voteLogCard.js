@@ -1,29 +1,44 @@
 import React from "react"
 import moment from "moment"
-
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
+
+import { calculateVoteLog } from "../utils"
+import VoteLogLegend from "./voteLogLegend"
+
 import "../styles/global.css"
 
-const VoteLogCard = ({
-  className,
-  title,
-  description_th,
-  passed,
-  approve,
-  disprove,
-  abstained,
-  absent,
-  total_voter,
-  vote_date,
-  slug,
-  view, // "full", "compact"
-}) => {
-  const resultColor = passed ? "green" : "red"
-  const approveBar = (approve * 100) / total_voter + "%"
-  const disproveBar = (disprove * 100) / total_voter + "%"
-  const abstainedBar = (abstained * 100) / total_voter + "%"
-  const absentBar = (absent * 100) / total_voter + "%"
+const VoteLogCard = votelog => {
+  const {
+    className,
+    title,
+    description_th,
+    approve,
+    disprove,
+    abstained,
+    absent,
+    vote_date,
+    slug,
+    view, // "full", "compact"
+  } = votelog
+  let { passed } = votelog
+  // Total members who're eligible to vote at that time
+  const { passed: calcPassed, total_voter: calcTotalVoter } = calculateVoteLog(
+    votelog
+  )
+
+  // user may pass "passed" props to show global result
+  // if not, use calculated value
+  if (typeof passed === "undefined") {
+    passed = calcPassed
+  }
+
+  const resultColor = passed ? "var(--cl-vote-yes)" : "var(--cl-vote-no)"
+  const approveBar = (approve * 100) / calcTotalVoter + "%"
+  const disproveBar = (disprove * 100) / calcTotalVoter + "%"
+  const abstainedBar = (abstained * 100) / calcTotalVoter + "%"
+  const absentBar = (absent * 100) / calcTotalVoter + "%"
+
   return (
     <div
       className={className}
@@ -95,7 +110,7 @@ const VoteLogCard = ({
           marginTop: "2rem",
         }}
       >
-        {total_voter > 0 ? parseInt((approve / total_voter) * 100) : 0}%
+        {calcTotalVoter > 0 ? parseInt((approve / calcTotalVoter) * 100) : 0}%
         เห็นด้วย
       </h4>
       <Link
@@ -163,53 +178,7 @@ const VoteLogCard = ({
             fontSize: "14px",
           }}
         >
-          <div
-            style={{
-              width: "9px",
-              height: "9px",
-              backgroundColor: "var(--cl-vote-yes)",
-              border: "1px solid var(--cl-black)",
-              boxSizing: "unset",
-              display: "inline-block",
-            }}
-          />{" "}
-          เห็นด้วย {approve}
-          <div
-            style={{
-              width: "9px",
-              height: "9px",
-              backgroundColor: "var(--cl-vote-no)",
-              border: "1px solid var(--cl-black)",
-              boxSizing: "unset",
-              display: "inline-block",
-              marginLeft: "15px",
-            }}
-          />{" "}
-          ไม่เห็นด้วย {disprove}
-          <div
-            style={{
-              width: "9px",
-              height: "9px",
-              backgroundColor: "var(--cl-vote-abstained)",
-              border: "1px solid var(--cl-black)",
-              boxSizing: "unset",
-              display: "inline-block",
-              marginLeft: "15px",
-            }}
-          />{" "}
-          งดออกเสียง {abstained}
-          <div
-            style={{
-              width: "9px",
-              height: "9px",
-              backgroundColor: "var(--cl-white)",
-              border: "1px solid var(--cl-black)",
-              boxSizing: "unset",
-              display: "inline-block",
-              marginLeft: "15px",
-            }}
-          />{" "}
-          ไม่ลงคะแนน {absent}
+          <VoteLogLegend {...votelog} />
         </div>
         <h6 style={{ fontSize: "2rem" }}>
           {moment(vote_date).format("D.M.YYYY")}

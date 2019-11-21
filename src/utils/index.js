@@ -10,11 +10,35 @@ export function formatDate(dt) {
 }
 
 /**
- * Format number with thousans
+ * Format number with thousands
  * @param {Number} num
  */
 export function formatNumber(num) {
   return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
+}
+
+/**
+ * Format ordinal number e.g. 2 => 2nd, 3 => 3rd
+ * @param {Number} num
+ */
+export function formatOrdinalNumber(num) {
+  const s = num.toString()
+  const n = s.slice(-1)
+  let ord
+  switch (n) {
+    case "1":
+      ord = "st"
+      break
+    case "2":
+      ord = "nd"
+      break
+    case "3":
+      ord = "rd"
+      break
+    default:
+      ord = "th"
+  }
+  return `${s}<sup>${ord}</sup>`
 }
 
 /**
@@ -372,4 +396,18 @@ export function joinPeopleVotelog(people, peopleVotelogs, votelogs) {
       ...filteredVoteResult,
     }
   })
+}
+
+export function calculateVoteLog(votelog) {
+  const { approve, disprove, abstained, absent } = votelog
+  const total_voter = approve + disprove + abstained + absent
+  const passed = (total_voter > 0 ? approve / total_voter : 0) >= 0.5
+  return {
+    passed,
+    total_voter,
+    approve,
+    disprove,
+    abstained,
+    absent,
+  }
 }
