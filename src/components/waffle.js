@@ -71,8 +71,8 @@ const waffle = (data, color, add_separator) => {
   return result
 }
 
-const Waffle = ({ data, colors }) => (
-  <div className="waffle">
+const Waffle = ({ data, colors, ...props }) => (
+  <div className="waffle" {...props}>
     {data.map((group, group_idx) =>
       waffle(group, colors[group_idx], group_idx < data.length - 1)
     )}

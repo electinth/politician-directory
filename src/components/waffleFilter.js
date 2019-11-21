@@ -20,6 +20,7 @@ const formatHouse = house => {
 
 class WaffleFilter extends Component {
   state = {
+    house: this.props.data,
     data_of_interest: this.props.data,
     data_the_rest: this.props.data,
     showMenu: null,
@@ -30,6 +31,29 @@ class WaffleFilter extends Component {
       education: "การศึกษาทั้งหมด",
       occupation_group: "ทุกกลุ่มอาชีพ (เดิม)",
     },
+  }
+
+  handleHouse = e => {
+    let currentFilter = { ...this.state.currentFilter }
+    let filter = e.target.innerText
+    currentFilter["house"] = filter
+    let house = [...this.props.data]
+    if (filter !== "ทั้งหมด") {
+      house = house.filter(
+        x => x.node["house"] === filter && x.node["is_active"] === true
+      )
+    }
+    let [data_of_interest, data_the_rest] = this.filterData(
+      house,
+      currentFilter
+    )
+    this.setState({
+      showMenu: null,
+      currentFilter,
+      house,
+      data_of_interest,
+      data_the_rest,
+    })
   }
 
   filterData = (data, filter) => {
@@ -66,7 +90,7 @@ class WaffleFilter extends Component {
     let currentFilter = { ...this.state.currentFilter }
     currentFilter[field] = e.target.innerText
     let [data_of_interest, data_the_rest] = this.filterData(
-      this.props.data,
+      this.state.house,
       currentFilter
     )
     this.setState({
@@ -90,6 +114,7 @@ class WaffleFilter extends Component {
   }
 
   render() {
+    console.log(this.props.data)
     return (
       <>
         <Global
@@ -193,13 +218,9 @@ class WaffleFilter extends Component {
               </button>
               {this.state.showMenu === 0 ? (
                 <div className="menuItems">
-                  <button onClick={e => this.handleFilter(e, "house")}>
-                    ทั้งหมด
-                  </button>
+                  <button onClick={e => this.handleHouse(e)}>ทั้งหมด</button>
                   {this.uniqueChoices("house").map(choice => (
-                    <button onClick={e => this.handleFilter(e, "house")}>
-                      {choice}
-                    </button>
+                    <button onClick={e => this.handleHouse(e)}>{choice}</button>
                   ))}
                 </div>
               ) : null}
@@ -304,6 +325,7 @@ class WaffleFilter extends Component {
           <Waffle
             data={[this.state.data_of_interest, this.state.data_the_rest]}
             colors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
+            style={{ justifyContent: "center" }}
           />
         </div>
       </>

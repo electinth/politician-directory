@@ -41,6 +41,7 @@ export const query = graphql`
           lastname
           title
           cabinet_position
+          is_active
           is_cabinet
           is_senator
           is_mp
