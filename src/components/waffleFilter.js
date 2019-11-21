@@ -304,6 +304,7 @@ class WaffleFilter extends Component {
           <Waffle
             data={[this.state.data_of_interest, this.state.data_the_rest]}
             colors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
+            borderColors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
           />
         </div>
       </>

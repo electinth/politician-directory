@@ -17,9 +17,10 @@
   --cl-gray-3: #cccccc;
   --cl-gray-4: #eeeeee;
 
-  --cl-vote-abstained: #cccccc;
   --cl-vote-yes: #329a2e;
   --cl-vote-no: #ec2627;
+  --cl-vote-abstained: #cccccc;
+  --cl-vote-absent: #ffffff;
 
   --cl-theme-0: #fcf1f6;
   --cl-theme-1: #f8d7e5;

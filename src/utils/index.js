@@ -386,3 +386,17 @@ export function joinPeopleVotelog(people, peopleVotelogs, votelogs) {
     }
   })
 }
+
+export function calculateVoteLog(votelog) {
+  const { approve, disprove, abstained, absent } = votelog
+  const total_voter = approve + disprove + abstained + absent
+  const passed = (total_voter > 0 ? approve / total_voter : 0) >= 0.5
+  return {
+    passed,
+    total_voter,
+    approve,
+    disprove,
+    abstained,
+    absent,
+  }
+}
