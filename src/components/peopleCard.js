@@ -9,7 +9,7 @@ export const ProfilePicture = props => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(
-        relativePath: { eq: "images/people/placeholder@3x.png" }
+        relativePath: { eq: "images/people/placeholder.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 84) {
