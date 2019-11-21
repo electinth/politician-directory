@@ -5,6 +5,8 @@ import Img from "gatsby-image"
 import { politicianPicture } from "../utils"
 import { media } from "../styles"
 
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
+
 export const ProfilePicture = props => {
   const data = useStaticQuery(graphql`
     query {
@@ -49,17 +51,19 @@ export const ProfilePicture = props => {
         }
       }
     >
-      <img
-        src={politicianPicture(props)}
-        alt={`${props.title} ${props.name} ${props.lastname}`}
-        css={{ width: "100%" }}
-        style={imageStyle}
-        onError={onImageError}
-      ></img>
-      <Img
-        fluid={data.placeholderImage.childImageSharp.fluid}
-        style={placeholderStyle}
-      />
+      <LazyLoadComponent>
+        <img
+          src={politicianPicture(props)}
+          alt={`${props.title} ${props.name} ${props.lastname}`}
+          css={{ width: "100%" }}
+          style={imageStyle}
+          onError={onImageError}
+        ></img>
+        <Img
+          fluid={data.placeholderImage.childImageSharp.fluid}
+          style={placeholderStyle}
+        />
+      </LazyLoadComponent>
     </div>
   )
 }
