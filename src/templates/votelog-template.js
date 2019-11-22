@@ -137,13 +137,11 @@ const VotelogPage = ({
         background: "#fff",
         borderRadius: "10px",
         padding: "3rem",
-        margin: "0 1rem",
       }}
       css={{
-        width: "auto",
+        maxWidth: "calc(100% - 2rem)",
         [media(767)]: {
           width: "920px",
-          margin: "0 auto",
         },
       }}
     >
