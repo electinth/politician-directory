@@ -32,7 +32,7 @@ export const query = graphql`
       }
     }
     voteRecordImage: file(
-      relativePath: { eq: "images/icons/votelog/votelog.png" }
+      relativePath: { eq: "images/icons/votelog/votelog-white.png" }
     ) {
       childImageSharp {
         fixed(width: 48) {
