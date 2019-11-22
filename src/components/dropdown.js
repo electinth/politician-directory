@@ -35,7 +35,10 @@ class DropDown extends Component {
         >
           {this.props.currentFilter[this.props.filter]}
           <span>
-            <i className="arrow-down"></i>
+            <i
+              className="arrow-down"
+              style={this.state.show ? { transform: "rotate(180deg)" } : {}}
+            ></i>
           </span>
         </button>
         {this.state.show ? (
@@ -68,6 +71,7 @@ export default ({ choices, currentFilter, handleFilter }) => {
             border-right: 5px solid transparent;
             border-top: 10px solid var(--cl-black);
             float: right;
+            margin-left: 1rem;
           }
 
           .current-filter-list {
@@ -78,7 +82,7 @@ export default ({ choices, currentFilter, handleFilter }) => {
               background: var(--cl-pink);
               border: 1px var(--cl-black) solid;
               cursor: pointer;
-              width: 165px;
+              min-width: 165px;
               height: 40px;
               margin: 1px 7.5px;
             }
@@ -98,7 +102,7 @@ export default ({ choices, currentFilter, handleFilter }) => {
             position: absolute;
             z-index: 1;
             border: 1px solid var(--cl-black);
-            width: 165px;
+            min-width: 165px;
             margin: 1px 7.5px;
             button {
               display: block;

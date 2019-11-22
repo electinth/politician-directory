@@ -1,10 +1,8 @@
 import React, { Component } from "react"
 
-import { css, Global } from "@emotion/core"
-
 import _ from "lodash"
 
-import DropDown from "../components/dropDown"
+import Dropdown from "./dropdown"
 import Waffle from "../components/waffle"
 
 const cssH1 = { fontSize: "4.8rem", marginTop: "4rem" }
@@ -118,7 +116,8 @@ class WaffleFilter extends Component {
             } ${
               this.state.currentFilter.generation === "ทุกช่วงวัย"
                 ? ""
-                : "เกิดในยุค " + this.state.currentFilter.generation
+                : "เกิดในยุค " +
+                  this.state.currentFilter.generation.match(/([A-Za-z ]*) |/)[1]
             } ${
               this.state.currentFilter.education === "ทุกระดับการศึกษา"
                 ? ""
@@ -134,7 +133,7 @@ class WaffleFilter extends Component {
           </span>
         </h2>
         <div css={{ margin: "50px auto 0 auto" }}>
-          <DropDown
+          <Dropdown
             choices={this.props.choices}
             currentFilter={this.state.currentFilter}
             handleFilter={this.handleFilter}
@@ -152,10 +151,10 @@ class WaffleFilter extends Component {
 
 export default ({ data }) => {
   const generationList = [
-    [74, "Silent"],
-    [55, "Baby Boomer"],
-    [39, "Gen X"],
-    [25, "Millenial"],
+    [74, "Silent | 74 ปีขึ้นไป"],
+    [55, "Baby Boomer | 55 - 73 ปี"],
+    [39, "Gen X | 39 - 54 ปี"],
+    [25, "Millenial | 25 - 38 ปี"],
   ]
 
   data.forEach(person => {
