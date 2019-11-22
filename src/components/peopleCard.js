@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import { politicianPicture } from "../utils"
 import { media } from "../styles"
 
-import { LazyLoadComponent } from 'react-lazy-load-image-component';
+import { LazyLoadComponent } from "react-lazy-load-image-component"
 
 export const ProfilePicture = props => {
   const data = useStaticQuery(graphql`

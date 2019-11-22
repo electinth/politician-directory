@@ -116,7 +116,7 @@ const PartyGroupList = ({ paneHeaderStyle }) => {
           {getSortedParties("ร่วมรัฐบาล").map(({ node }) => (
             <div key={node.name} css={{ fontSize: "2.2rem" }}>
               <Link to={node.fields.slug}>
-                <LazyLoadImage src={partyLogo(node.name)} alt={node.name}/>{" "}
+                <LazyLoadImage src={partyLogo(node.name)} alt={node.name} />{" "}
                 {node.name}&nbsp;
               </Link>
               ({totalActiveMember(node.name)})
@@ -132,7 +132,7 @@ const PartyGroupList = ({ paneHeaderStyle }) => {
           {getSortedParties("ฝ่ายค้าน").map(({ node }) => (
             <div key={node.name} css={{ fontSize: "2.2rem" }}>
               <Link to={node.fields.slug}>
-                <LazyLoadImage src={partyLogo(node.name)} alt={node.name}/>{" "}
+                <LazyLoadImage src={partyLogo(node.name)} alt={node.name} />{" "}
                 {node.name}&nbsp;
               </Link>
               ({totalActiveMember(node.name)})
