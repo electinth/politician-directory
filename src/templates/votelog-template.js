@@ -67,11 +67,17 @@ export const query = graphql`
     allPeopleYaml {
       nodes {
         id
-        is_senator
-        party
         fields {
           slug
         }
+        is_mp
+        is_senator
+        is_cabinet
+        mp_type
+        mp_list
+        mp_province
+        mp_zone
+        party
       }
     }
   }

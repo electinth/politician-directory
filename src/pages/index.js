@@ -45,6 +45,11 @@ export const query = graphql`
           is_cabinet
           is_senator
           is_mp
+          mp_type
+          mp_list
+          mp_province
+          mp_zone
+          party
         }
       }
     }
