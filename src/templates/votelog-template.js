@@ -147,7 +147,7 @@ const VotelogPage = ({
         },
       }}
     >
-      <SEO title={votelogYaml.title} imageUrl="/seo/votelog.png" />
+      <SEO title={votelogYaml.title} imageUrl="/seo/share/votelog.png" />
       <section
         css={{
           ...cssSection,

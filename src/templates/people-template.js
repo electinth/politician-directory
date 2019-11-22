@@ -266,7 +266,7 @@ const PeoplePage = props => {
         background: pageBGColor,
       }}
     >
-      <SEO title={personFullName} imageUrl="/seo/people.png" />
+      <SEO title={personFullName} imageUrl="/seo/share/people.png" />
 
       <section className="section">
         <div className="book">
