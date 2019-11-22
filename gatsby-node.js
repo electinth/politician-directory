@@ -11,7 +11,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `PeopleYaml`) {
-    const slug = `/people/${node.name}-${node.lastname.replace(/ /g, '-')}`
+    const slug = `/people/${node.name}-${node.lastname}`
     createNodeField({
       node,
       name: `slug`,
@@ -121,7 +121,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const allVotelogs = votelogs.data.allVotelogYaml.edges
   const votelogPerPage = 4
   const numPages = Math.ceil(allVotelogs.length / votelogPerPage)
-  Array.from({ length: numPages }).forEach((_, i) => {
+  Array.from({ length: numPages}).forEach((_, i) => {
     createPage({
       path: i === 0 ? `/votelog` : `/votelog/page/${i + 1}`,
       component: path.resolve("./src/templates/votelog-list-template.js"),
@@ -134,6 +134,16 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 }
+
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions
+
+  if (page.path.match(/^\/votelog/)) {
+    page.matchPath = "/votelog/*"
+    createPage(page)
+  }
+}
+
 
 exports.sourceNodes = async ({
   actions,

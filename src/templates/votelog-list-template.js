@@ -1,10 +1,11 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import VoteLogCard from "../components/voteLogCard"
+import { Router } from "@reach/router"
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
@@ -23,10 +24,12 @@ export const query = graphql`
           }
           title
           description_th
+          passed
           approve
           disprove
           abstained
           absent
+          total_voter
           vote_date
         }
       }
@@ -59,6 +62,42 @@ const paginationStyle = {
   "&:hover": {
     textDecoration: "none",
   },
+}
+
+const VoteLogWrapper = votelogs => {
+  const { data } = votelogs
+  return (
+    <div
+      css={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "flex-start",
+        flexWrap: "wrap",
+        marginTop: "6rem",
+      }}
+    >
+      {data.map(({ node }) => (
+        <VoteLogCard
+          key={node.id}
+          view={"full"}
+          css={{
+            width: `calc((var(--container-width) - 4rem) / 2)`,
+            margin: "0 1rem 2rem 1rem",
+          }}
+          title={node.title}
+          description_th={node.description_th}
+          passed={node.passed}
+          approve={node.approve}
+          disprove={node.disprove}
+          abstained={node.abstained}
+          absent={node.absent}
+          total_voter={node.total_voter}
+          vote_date={node.vote_date}
+          slug={node.fields.slug}
+        />
+      ))}
+    </div>
+  )
 }
 
 const VoteLogPage = ({
@@ -117,34 +156,16 @@ const VoteLogPage = ({
           >
             สรุปผลการลงมติล่าสุด
           </h1>
-          <div
-            css={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "flex-start",
-              flexWrap: "wrap",
-              marginTop: "6rem",
-            }}
-          >
-            {votelogs.map(({ node }) => (
-              <VoteLogCard
-                key={node.id}
-                view={"full"}
-                css={{
-                  width: `calc((var(--container-width) - 4rem) / 2)`,
-                  margin: "0 1rem 2rem 1rem",
-                }}
-                title={node.title}
-                description_th={node.description_th}
-                approve={node.approve}
-                disprove={node.disprove}
-                abstained={node.abstained}
-                absent={node.absent}
-                vote_date={node.vote_date}
-                slug={node.fields.slug}
+          <Router>
+            {votelogs ? (
+              <VoteLogWrapper
+                path={currentPage == 1 ? "/votelog" : "/votelog/page/:id"}
+                data={votelogs}
               />
-            ))}
-          </div>
+            ) : (
+              ""
+            )}
+          </Router>
         </div>
       </section>
       <section css={{ padding: "8rem 0" }}>
