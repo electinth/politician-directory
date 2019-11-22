@@ -32,6 +32,7 @@ export const ProfilePicture = props => {
 
   return (
     <div
+      className="profile-picture"
       css={{
         flex: "0 0 84px",
         borderRadius: 84,
@@ -76,9 +77,12 @@ const cssName = {
 }
 
 const MPInfo = props => (
-  <div>
-    <div css={cssName}>{`${props.title} ${props.name} ${props.lastname}`}</div>
-    <div>
+  <div className="card-info">
+    <div
+      className="card-name"
+      css={cssName}
+    >{`${props.title} ${props.name} ${props.lastname}`}</div>
+    <div className="card-description">
       {props.mp_type === "บัญชีรายชื่อ"
         ? `ส.ส. ${props.mp_type}` +
           (props.mp_list ? ` ลำดับที่ ${props.mp_list}` : ``)
@@ -89,8 +93,12 @@ const MPInfo = props => (
 )
 
 const SenatorInfo = props => (
-  <div>
-    <div css={cssName}>{`${props.title} ${props.name} ${props.lastname}`}</div>
+  <div className="card-info">
+    <div
+      className="card-name"
+      css={cssName}
+    >{`${props.title} ${props.name} ${props.lastname}`}</div>
+    <div className="card-description">สมาชิกวุฒิสภา</div>
   </div>
 )
 
@@ -100,9 +108,14 @@ const memberDetailsCss = {
 }
 
 const CabinetInfo = props => (
-  <div>
-    <div css={cssName}>{`${props.title} ${props.name} ${props.lastname}`}</div>
-    <div css={memberDetailsCss}>{props.cabinet_position}</div>
+  <div className="card-info">
+    <div
+      className="card-name"
+      css={cssName}
+    >{`${props.title} ${props.name} ${props.lastname}`}</div>
+    <div className="card-description" css={memberDetailsCss}>
+      {props.cabinet_position}
+    </div>
     {props.party ? <div css={memberDetailsCss}>พรรค{props.party}</div> : null}
   </div>
 )
@@ -121,6 +134,7 @@ const PeopleCard = ({ type, ...props }) => {
     <Link
       to={props.fields.slug}
       key={props.id}
+      className={props.className}
       css={{
         display: "flex",
         flex: "0 1 455px",

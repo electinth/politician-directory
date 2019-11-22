@@ -21,10 +21,11 @@ const MPInfo = props => (
 const PeopleCardMini = props => {
   // console.log(props)
   let peopleInfo = MPInfo(props)
-
+  console.log("props", props)
   return (
     <div
       key={props.id}
+      className={props.className}
       css={{
         display: "block",
         flex: "1 1 360px",
@@ -38,6 +39,7 @@ const PeopleCardMini = props => {
       <div>
         <Link to={props.fields.slug}>
           <div
+            className="profile-picture"
             css={{
               borderRadius: 84,
               width: 41,

@@ -142,7 +142,7 @@ class WaffleFilter extends Component {
             data={[this.state.data_of_interest, this.state.data_the_rest]}
             colors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
             borderColors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
-            style={{ margin: "0 auto" }}
+            style={{ justifyContent: "center" }}
           />
         </div>
       </>

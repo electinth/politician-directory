@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+
+import PeopleCard from "./peopleCard"
 
 import "../styles/global.css"
 import "./waffle.css"
@@ -25,19 +26,15 @@ let cellStyle = (color, borderColor) => ({
 const tooltipTextStyle = {
   display: "none",
   position: "absolute",
-  top: "8px",
+  top: "5px",
   left: "-2px",
-  width: "250px",
-  padding: "20px",
-  color: "var(--cl-black)",
-  fontSize: "1.8rem",
+  width: 350,
+  padding: 0,
   lineHeight: "1.8rem",
-  border: "2px solid #222222",
+  border: "none",
   borderRadius: "0 5px 5px 5px",
-  backgroundColor: "white",
+  backgroundColor: "transparent",
 }
-
-const full_name = node => `${node.title}${node.name} ${node.lastname}`
 
 const split_array = (array, size, callback) =>
   Array(Math.ceil(array.length / size))
@@ -52,15 +49,32 @@ const waffle = (data, color, borderColor, add_separator) => {
       {split_array(hundred, 25, (quarter, qi) => (
         <div key={qi} className="quarter">
           {quarter.map(({ node }) => (
-            <div
-              key={node.id}
-              // title={full_name(node)}
-              css={cellStyle(color, borderColor)}
-            >
+            <div key={node.id} css={cellStyle(color, borderColor)}>
               <div className="tooltip-text" css={tooltipTextStyle}>
-                <div>
-                  <Link to={node.fields.slug}>{full_name(node)}</Link>
-                </div>
+                <PeopleCard
+                  {...node}
+                  css={{
+                    padding: "1rem 1rem",
+                    margin: 0,
+                    alignItems: "center",
+                    border: "2px solid var(--cl-black)",
+                    ".card-info": {
+                      ".card-name": {
+                        fontSize: "1.8rem",
+                        fontWeight: "bold",
+                        fontFamily: "var(--ff-text)",
+                      },
+                      ".card-description": {
+                        fontSize: "1.6rem",
+                        fontFamily: "var(--ff-text)",
+                      },
+                    },
+                    ".profile-picture": {
+                      height: "5rem",
+                      flexBasis: "5rem",
+                    },
+                  }}
+                ></PeopleCard>
               </div>
             </div>
           ))}
