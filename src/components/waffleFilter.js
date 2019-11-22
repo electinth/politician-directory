@@ -174,18 +174,34 @@ export default ({ data }) => {
   })
   const uniqueChoices = group => [...new Set(data.map(x => x.node[group]))]
   const choices = {
-    house: { default: "ทั้งหมด", others: uniqueChoices("house") },
+    // house: { default: "ทั้งหมด", others: uniqueChoices("house") },
+    house: {
+      default: "ทั้งหมด",
+      others: ["ส.ส.", "ส.ว.", "ไม่ใช่ ส.ส. หรือ ส.ว."],
+    },
     gender: { default: "ทุกเพศ", others: uniqueChoices("gender") },
-    generation: { default: "ทุกช่วงวัย", others: uniqueChoices("generation") },
+    generation: {
+      default: "ทุกช่วงวัย",
+      others: _.sortBy(uniqueChoices("generation"), x =>
+        parseInt(x.match(/\d+/)[0])
+      ),
+    },
     education: {
       default: "ทุกระดับการศึกษา",
-      others: uniqueChoices("education"),
+      others: [
+        "ต่ำกว่าปริญญาตรี",
+        "สถาบันทหาร",
+        "ปริญญาตรี",
+        "ปริญญาโท",
+        "ปริญญาเอก",
+        "ไม่พบข้อมูล",
+      ],
     },
     occupation_group: {
       default: "ทุกกลุ่มอาชีพ (เดิม)",
       others: uniqueChoices("occupation_group"),
     },
   }
-
+  console.log(choices)
   return <WaffleFilter data={data} choices={choices} />
 }
