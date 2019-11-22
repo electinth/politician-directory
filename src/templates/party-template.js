@@ -4,7 +4,7 @@ import _ from "lodash"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { loadCategoryStats, joinPeopleVotelog } from "../utils"
+import { loadCategoryStats, joinPeopleVotelog, peopleSlug } from "../utils"
 import StackedBarChart from "../components/stackedBarChart"
 import { OfficialWebsite, InOfficeDate } from "../components/profile"
 import PeopleCardMini from "../components/peopleCardMini"
@@ -287,9 +287,12 @@ const PartyPage = props => {
       },
     ].map((keyPos, id) => {
       if (!party[keyPos.name]) return null
-      const [name, lastname] = party[keyPos.name].split(" ").slice(-2)
+      const nameParts = party[keyPos.name].split(" ").slice(1)
+      const slug = peopleSlug(nameParts.join(" "))
+      const name = nameParts[0]
+      const lastname = nameParts.slice(1).join(" ")
       const position = keyPos.label
-      return { id, name, lastname, position }
+      return { id, name, lastname, position, fields: { slug } }
     })
   )
 
@@ -395,7 +398,6 @@ const PartyPage = props => {
                   disprove={node.disprove}
                   abstained={node.abstained}
                   absent={node.absent}
-                  total_voter={node.total_voter}
                   vote_date={node.vote_date}
                   slug={node.fields.slug}
                 />

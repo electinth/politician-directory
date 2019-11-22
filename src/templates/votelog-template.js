@@ -9,6 +9,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import VoterList from "../components/voterList"
 import Waffle from "../components/waffle"
+import VoteLogLegend from "../components/voteLogLegend"
+import { calculateVoteLog } from "../utils"
+import { media } from "../styles"
 
 export const query = graphql`
   query($slug: String!) {
@@ -24,8 +27,6 @@ export const query = graphql`
         link
       }
       meeting
-      passed
-      total_voter
       approve
       disprove
       abstained
@@ -37,6 +38,15 @@ export const query = graphql`
     ) {
       childImageSharp {
         fixed(height: 30) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    downloadIcon: file(
+      relativePath: { eq: "images/icons/download/download.png" }
+    ) {
+      childImageSharp {
+        fixed(height: 20) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -90,8 +100,17 @@ const filterVote = (combined, key, value) =>
   })
 
 const VotelogPage = ({
-  data: { votelogYaml, voteRecordIcon, allPeopleVoteYaml, allPeopleYaml },
+  data: {
+    votelogYaml,
+    voteRecordIcon,
+    downloadIcon,
+    allPeopleVoteYaml,
+    allPeopleYaml,
+  },
 }) => {
+  // Total members who're eligible to vote at that time
+  const { passed, total_voter } = calculateVoteLog(votelogYaml)
+
   let combined = []
   allPeopleVoteYaml.nodes.forEach(votelog => {
     const matched = _.find(allPeopleYaml.nodes, ["id", votelog.id])
@@ -110,9 +129,16 @@ const VotelogPage = ({
       }}
       mainStyles={{
         background: "#fff",
-        width: "920px",
         borderRadius: "10px",
         padding: "3rem",
+        margin: "0 1rem",
+      }}
+      css={{
+        width: "auto",
+        [media(767)]: {
+          width: "920px",
+          margin: "0 auto",
+        },
       }}
     >
       <SEO title={votelogYaml.title} imageUrl="/seo/votelog.png" />
@@ -130,7 +156,6 @@ const VotelogPage = ({
             <Img
               fixed={voteRecordIcon.childImageSharp.fixed}
               css={css`
-                -webkit-filter: invert(100%);
                 vertical-align: middle;
               `}
             />
@@ -176,7 +201,7 @@ const VotelogPage = ({
         </div>
         <span>
           สถานะ{" "}
-          {votelogYaml.passed ? (
+          {passed ? (
             <span
               css={css`
                 color: var(--cl-vote-yes);
@@ -206,17 +231,19 @@ const VotelogPage = ({
             </span>
           )}
           <span
-            css={css`
-              float: right;
-            `}
+            css={{
+              display: "block",
+              [media(767)]: {
+                float: "right",
+              },
+            }}
           >
-            ผู้ลงคะแนน {votelogYaml.total_voter} คน
+            ผู้มีสิทธิ์ลงคะแนน {total_voter} คน
           </span>
         </span>
       </section>
       <section css={cssSection}>
         <Waffle
-          // key="parliament"
           data={[
             approve.map(p => ({ node: p })),
             disprove.map(p => ({ node: p })),
@@ -227,62 +254,17 @@ const VotelogPage = ({
             `var(--cl-vote-yes)`,
             `var(--cl-vote-no)`,
             `var(--cl-vote-abstained)`,
+            `var(--cl-vote-absent)`,
+          ]}
+          borderColors={[
+            `var(--cl-vote-yes)`,
+            `var(--cl-vote-no)`,
             `var(--cl-vote-abstained)`,
+            `var(--cl-black)`,
           ]}
         />
-        <div
-          style={{
-            padding: "1rem 0",
-            fontSize: "14px",
-          }}
-        >
-          <div
-            style={{
-              width: "9px",
-              height: "9px",
-              backgroundColor: "var(--cl-vote-yes)",
-              border: "1px solid var(--cl-black)",
-              boxSizing: "unset",
-              display: "inline-block",
-            }}
-          />{" "}
-          เห็นด้วย {approve.length}
-          <div
-            style={{
-              width: "9px",
-              height: "9px",
-              backgroundColor: "var(--cl-vote-no)",
-              border: "1px solid var(--cl-black)",
-              boxSizing: "unset",
-              display: "inline-block",
-              marginLeft: "15px",
-            }}
-          />{" "}
-          ไม่เห็นด้วย {disprove.length}
-          <div
-            style={{
-              width: "9px",
-              height: "9px",
-              backgroundColor: "var(--cl-vote-abstained)",
-              border: "1px solid var(--cl-black)",
-              boxSizing: "unset",
-              display: "inline-block",
-              marginLeft: "15px",
-            }}
-          />{" "}
-          งดออกเสียง {abstained.length}
-          <div
-            style={{
-              width: "9px",
-              height: "9px",
-              backgroundColor: "var(--cl-white)",
-              border: "1px solid var(--cl-black)",
-              boxSizing: "unset",
-              display: "inline-block",
-              marginLeft: "15px",
-            }}
-          />{" "}
-          ไม่ลงคะแนน {absent.length}
+        <div>
+          <VoteLogLegend {...votelogYaml} />
         </div>
       </section>
       <section
@@ -335,35 +317,42 @@ const VotelogPage = ({
             text-align: left;
           `}
         >
-          {votelogYaml.document.map(doc => (
-            <ExternalLink
-              key={doc.link}
-              href={doc.link}
-              css={css`
-                color: var(--cl-black);
-                :hover {
-                  color: var(--cl-black);
-                }
-              `}
-            >
-              <span
+          {votelogYaml.document
+            .filter(doc => doc.link)
+            .map(doc => (
+              <ExternalLink
+                key={doc.link}
+                href={doc.link}
                 css={css`
-                  font-size: 1.8rem;
-                  line-height: 3rem;
-                  cursor: pointer;
-                  border-radius: 5px;
-                  padding: 1rem 1rem;
-                  margin-right: 1rem;
-                  margin-bottom: 1rem;
-                  display: block;
-                  background-color: var(--cl-pink);
-                  pointer-events: auto;
+                  color: var(--cl-black);
+                  :hover {
+                    color: var(--cl-black);
+                  }
                 `}
               >
-                {doc.title}
-              </span>
-            </ExternalLink>
-          ))}
+                <span
+                  css={css`
+                    font-size: 2.4rem;
+                    font-family: var(--ff-title);
+                    line-height: 3rem;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    padding: 1rem 1rem;
+                    margin-right: 1rem;
+                    margin-bottom: 1rem;
+                    display: block;
+                    background-color: var(--cl-pink);
+                    pointer-events: auto;
+                  `}
+                >
+                  <Img
+                    fixed={downloadIcon.childImageSharp.fixed}
+                    css={{ marginRight: "1rem" }}
+                  />
+                  {doc.title || "เอกสาร"}
+                </span>
+              </ExternalLink>
+            ))}
         </button>
       </section>
       <VoterList data={[approve, disprove, abstained, absent]} />

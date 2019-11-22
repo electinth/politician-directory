@@ -45,7 +45,10 @@ function SEO({ description, lang, meta, title, imageUrl }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content:
+            title === "Home"
+              ? `${site.siteMetadata.title} รู้จักและติดตาม 'ผู้แทน' ในสภาของเรา`
+              : title,
         },
         {
           property: `og:description`,

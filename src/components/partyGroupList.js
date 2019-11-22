@@ -2,6 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import _ from "lodash"
 
+import { LazyLoadImage } from "react-lazy-load-image-component"
+
 import { partyLogo } from "../utils"
 
 const cssMPColumn = {
@@ -114,7 +116,7 @@ const PartyGroupList = ({ paneHeaderStyle }) => {
           {getSortedParties("ร่วมรัฐบาล").map(({ node }) => (
             <div key={node.name} css={{ fontSize: "2.2rem" }}>
               <Link to={node.fields.slug}>
-                <img src={partyLogo(node.name)} alt={node.name}></img>{" "}
+                <LazyLoadImage src={partyLogo(node.name)} alt={node.name} />{" "}
                 {node.name}&nbsp;
               </Link>
               ({totalActiveMember(node.name)})
@@ -130,7 +132,7 @@ const PartyGroupList = ({ paneHeaderStyle }) => {
           {getSortedParties("ฝ่ายค้าน").map(({ node }) => (
             <div key={node.name} css={{ fontSize: "2.2rem" }}>
               <Link to={node.fields.slug}>
-                <img src={partyLogo(node.name)} alt={node.name}></img>{" "}
+                <LazyLoadImage src={partyLogo(node.name)} alt={node.name} />{" "}
                 {node.name}&nbsp;
               </Link>
               ({totalActiveMember(node.name)})

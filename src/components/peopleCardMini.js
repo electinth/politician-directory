@@ -14,9 +14,7 @@ const MPInfo = props => (
       height: "100%",
     }}
   >
-    <Link to={`/people/${props.name}-${props.lastname}`}>
-      {`${props.name} ${props.lastname}`}
-    </Link>
+    <Link to={props.fields.slug}>{`${props.name} ${props.lastname}`}</Link>
   </div>
 )
 
@@ -38,7 +36,7 @@ const PeopleCardMini = props => {
         {props.position}
       </div>
       <div>
-        <Link to={`/people/${props.name}-${props.lastname}`}>
+        <Link to={props.fields.slug}>
           <div
             css={{
               borderRadius: 84,
