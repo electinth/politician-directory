@@ -24,12 +24,10 @@ export const query = graphql`
           }
           title
           description_th
-          passed
           approve
           disprove
           abstained
           absent
-          total_voter
           vote_date
         }
       }
@@ -86,12 +84,10 @@ const VoteLogWrapper = votelogs => {
           }}
           title={node.title}
           description_th={node.description_th}
-          passed={node.passed}
           approve={node.approve}
           disprove={node.disprove}
           abstained={node.abstained}
           absent={node.absent}
-          total_voter={node.total_voter}
           vote_date={node.vote_date}
           slug={node.fields.slug}
         />
