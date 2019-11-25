@@ -72,7 +72,13 @@ function SEO({ description, lang, meta, title, imageUrl }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
+        },
+        {
+          name: `twitter:image`,
+          content: metaImageUrl.includes("http")
+            ? metaImageUrl
+            : `https://theyworkforus.elect.in.th${metaImageUrl}`,
         },
         {
           name: `twitter:creator`,
@@ -80,7 +86,10 @@ function SEO({ description, lang, meta, title, imageUrl }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content:
+            title === "Home"
+              ? `${site.siteMetadata.title} รู้จักและติดตาม 'ผู้แทน' ในสภาของเรา`
+              : title,
         },
         {
           name: `twitter:description`,
