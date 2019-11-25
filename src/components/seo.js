@@ -27,6 +27,10 @@ function SEO({ description, lang, meta, title, imageUrl }) {
 
   const metaDescription = description || site.siteMetadata.description
   const metaImageUrl = imageUrl || "/seo/share/default.png"
+  const sharableTitle =
+    title === "Home"
+      ? `${site.siteMetadata.title} รู้จักและติดตาม 'ผู้แทน' ในสภาของเรา`
+      : title
 
   return (
     <Helmet
@@ -45,10 +49,7 @@ function SEO({ description, lang, meta, title, imageUrl }) {
         },
         {
           property: `og:title`,
-          content:
-            title === "Home"
-              ? `${site.siteMetadata.title} รู้จักและติดตาม 'ผู้แทน' ในสภาของเรา`
-              : title,
+          content: sharableTitle,
         },
         {
           property: `og:description`,
@@ -86,10 +87,7 @@ function SEO({ description, lang, meta, title, imageUrl }) {
         },
         {
           name: `twitter:title`,
-          content:
-            title === "Home"
-              ? `${site.siteMetadata.title} รู้จักและติดตาม 'ผู้แทน' ในสภาของเรา`
-              : title,
+          content: sharableTitle,
         },
         {
           name: `twitter:description`,
