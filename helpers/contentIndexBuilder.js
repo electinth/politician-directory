@@ -2,7 +2,9 @@ const yaml = require('js-yaml')
 const fs = require('fs')
 
 const config = [
-  { fileName: 'party.yaml', getQ: record => record.name, type: 'party', getPage: record => `/party/${record.name}` },
+  { fileName: 'party.yaml', getQ: record => record.name, type: 'party', getUrl: record => `/party/${record.name}` },
+  { fileName: 'people.yaml', getQ: record => `${record.title} ${record.name} ${record.lastname}`, type: 'people', getUrl: record => `/people/${record.name}-${record.lastName}` },
+  { fileName: 'votelog.yaml', getQ: record => record.title, type: 'votelog', getUrl: record => `/votelog/${record.id}` },
 ]
 
 try {
@@ -11,7 +13,7 @@ try {
     ...yaml.safeLoad(fs.readFileSync(`../src/contents/${content.fileName}`, 'utf8')).map(record => ({
       q: content.getQ(record),
       type: content.type,
-      page: content.getPage(record),
+      url: content.getUrl(record),
     }))
   ], [])
 
