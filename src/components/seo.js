@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title, imageUrl }) {
             title
             description
             author
+            baseUrl
           }
         }
       }
@@ -79,7 +80,7 @@ function SEO({ description, lang, meta, title, imageUrl }) {
           name: `twitter:image`,
           content: metaImageUrl.includes("http")
             ? metaImageUrl
-            : `https://theyworkforus.elect.in.th${metaImageUrl}`,
+            : `${site.siteMetadata.baseUrl}${metaImageUrl}`,
         },
         {
           name: `twitter:creator`,

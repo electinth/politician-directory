@@ -3,6 +3,7 @@ const config = {
     title: `They Work For Us`,
     description: `ใครเป็นใคร เคยทำอะไรมาบ้าง ตอนนี้อยู่ตำแหน่งไหน และยกมือสนับสนุนอะไรในสภา`,
     author: `@electinth`,
+    baseUrl: process.env.BASE_URL || "",
   },
   pathPrefix: process.env.BASE_PATH || "/",
   plugins: [
