@@ -5,9 +5,13 @@
  */
 const path = require(`path`)
 const axios = require(`axios`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const { buildContentIndex } = require('./helpers/contentIndexBuilder')
 
-// You can delete this file if you're not using it
+exports.onPreInit = () => {
+  console.log('Building content index...')
+  buildContentIndex('./src/contents/index.yaml')
+}
+
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `PeopleYaml`) {
