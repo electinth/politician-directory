@@ -53,7 +53,7 @@ const PeopleVoteCard = ({ choice, fields, title, legal_title, vote_date }) => (
   >
     <div
       css={{
-        color: voteColor[choice],
+        color: choice === "3" ? "var(--cl-black)" : voteColor[choice],
         margin: "15px 0px",
         fontSize: "2.4rem",
       }}
