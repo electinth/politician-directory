@@ -19,9 +19,9 @@ const filterChoice = [
 ]
 
 const voteColor = {
-  "1": "#329a2e",
-  "2": "#ec2627",
-  "3": "#aaaaaa",
+  "1": "var(--cl-vote-yes)",
+  "2": "var(--cl-vote-no)",
+  "3": "var(--cl-vote-abstained)",
   "4": "#272727",
   "": "-",
 }
