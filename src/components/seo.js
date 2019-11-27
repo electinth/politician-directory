@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title, imageUrl }) {
             title
             description
             author
+            baseUrl
           }
         }
       }
@@ -27,6 +28,10 @@ function SEO({ description, lang, meta, title, imageUrl }) {
 
   const metaDescription = description || site.siteMetadata.description
   const metaImageUrl = imageUrl || "/seo/share/default.png"
+  const sharableTitle =
+    title === "Home"
+      ? `${site.siteMetadata.title} รู้จักและติดตาม 'ผู้แทน' ในสภาของเรา`
+      : title
 
   return (
     <Helmet
@@ -45,10 +50,7 @@ function SEO({ description, lang, meta, title, imageUrl }) {
         },
         {
           property: `og:title`,
-          content:
-            title === "Home"
-              ? `${site.siteMetadata.title} รู้จักและติดตาม 'ผู้แทน' ในสภาของเรา`
-              : title,
+          content: sharableTitle,
         },
         {
           property: `og:description`,
@@ -72,7 +74,13 @@ function SEO({ description, lang, meta, title, imageUrl }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
+        },
+        {
+          name: `twitter:image`,
+          content: metaImageUrl.includes("http")
+            ? metaImageUrl
+            : `${site.siteMetadata.baseUrl}${metaImageUrl}`,
         },
         {
           name: `twitter:creator`,
@@ -80,7 +88,7 @@ function SEO({ description, lang, meta, title, imageUrl }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: sharableTitle,
         },
         {
           name: `twitter:description`,
