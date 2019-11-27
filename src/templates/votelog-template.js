@@ -246,7 +246,14 @@ const VotelogPage = ({
           </span>
         </span>
       </section>
-      <section css={cssSection}>
+      <section
+        css={{
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+          ...cssSection,
+        }}
+      >
         <Waffle
           data={[
             approve.map(p => ({ node: p })),
@@ -267,7 +274,7 @@ const VotelogPage = ({
             `var(--cl-black)`,
           ]}
         />
-        <div>
+        <div css={{ marginTop: "4rem" }}>
           <VoteLogLegend {...votelogYaml} />
         </div>
       </section>

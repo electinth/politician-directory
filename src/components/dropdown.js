@@ -60,7 +60,7 @@ class DropDown extends Component {
 
 export default ({ choices, currentFilter, handleFilter }) => {
   return (
-    <ul className="current-filter-list">
+    <ul className="current-filter-list" css={{ marginLeft: 0 }}>
       <Global
         styles={css`
           .arrow-down {
