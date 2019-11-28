@@ -9,7 +9,7 @@ const { buildContentIndex } = require('./helpers/contentIndexBuilder')
 
 exports.onPreInit = () => {
   console.log('Building content index...')
-  buildContentIndex('./src/contents/index.yaml')
+  buildContentIndex('./src/contents/search_index.yaml')
 }
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
