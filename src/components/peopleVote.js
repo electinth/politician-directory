@@ -19,9 +19,9 @@ const filterChoice = [
 ]
 
 const voteColor = {
-  "1": "#329a2e",
-  "2": "#ec2627",
-  "3": "#aaaaaa",
+  "1": "var(--cl-vote-yes)",
+  "2": "var(--cl-vote-no)",
+  "3": "var(--cl-vote-abstained)",
   "4": "#272727",
   "": "-",
 }
@@ -53,7 +53,7 @@ const PeopleVoteCard = ({ choice, fields, title, legal_title, vote_date }) => (
   >
     <div
       css={{
-        color: voteColor[choice],
+        color: choice === "3" ? "var(--cl-black)" : voteColor[choice],
         margin: "15px 0px",
         fontSize: "2.4rem",
       }}

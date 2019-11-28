@@ -171,7 +171,9 @@ const CabinetPage = props => {
 
       <section className="section" css={{ background: "var(--cl-white)" }}>
         <h1 css={{ fontSize: "4.8rem", textAlign: "center" }}>สมาชิกทั้งหมด</h1>
-        <CabinetMemberSection />
+        <div className="container">
+          <CabinetMemberSection />
+        </div>
       </section>
     </Layout>
   )

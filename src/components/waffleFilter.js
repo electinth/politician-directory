@@ -132,7 +132,14 @@ class WaffleFilter extends Component {
             }`}
           </span>
         </h2>
-        <div css={{ margin: "50px auto 0 auto" }}>
+        <div
+          css={{
+            margin: "50px auto 0 auto",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
           <Dropdown
             choices={this.props.choices}
             currentFilter={this.state.currentFilter}
@@ -142,7 +149,6 @@ class WaffleFilter extends Component {
             data={[this.state.data_of_interest, this.state.data_the_rest]}
             colors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
             borderColors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
-            style={{ justifyContent: "center" }}
           />
         </div>
       </>

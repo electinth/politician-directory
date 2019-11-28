@@ -192,7 +192,23 @@ const IndexPage = ({ data }) => {
             <Hero />
 
             <div css={{ textAlign: "center" }}>
-              <Button to="/about">เกี่ยวกับเรา</Button>
+              <Link
+                to="/about"
+                css={{
+                  padding: "1rem 4rem",
+                  fontFamily: "var(--ff-title)",
+                  fontSize: "2.4rem",
+                  color: "var(--cc-white)",
+                  textDecoration: "underline",
+                  border: "none",
+                  background: "none",
+                  "&:hover": {
+                    color: "gray",
+                  },
+                }}
+              >
+                เกี่ยวกับเรา
+              </Link>
             </div>
           </div>
         </div>
