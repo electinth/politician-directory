@@ -8,6 +8,7 @@
     "build": "gatsby clean && GATSBY_ENV=production gatsby build",
     "develop": "gatsby clean && gatsby develop",
     "format": "prettier --write \"**/*.{js,json,md}\"",
+    "sync": "cd tools; ./sync_google_sheets.sh",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
@@ -42,8 +43,11 @@
     "typography-theme-kirkham": "^0.16.19"
   },
   "devDependencies": {
+    "csvtojson": "^2.0.10",
+    "esm": "^3.2.25",
     "doctoc": "^1.4.0",
     "husky": "^3.0.9",
+    "js-yaml": "^3.13.1",
     "lint-staged": "^9.4.2",
     "prettier": "^1.18.2"
   },

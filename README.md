@@ -12,6 +12,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Development](#development)
+- [Sync Data](#sync-data)
   - [Environments](#environments)
 - [Getting Started for Contributers](#getting-started-for-contributers)
 - [Reference](#reference)
@@ -30,6 +31,14 @@ npm start
 ```
 
 Your site is running on `http://localhost:8000` and GraphQL tool helper on `http://localhost:8000/___graphql`.
+
+## Sync Data
+
+Data sources are maintained on Google Sheets by contributors. To sync data and append latest changes to `src/contents/*.yaml`, run:
+
+```
+npm run sync
+```
 
 ### Environments
 
