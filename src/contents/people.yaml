@@ -1743,8 +1743,10 @@
   ex_occupation:
     - สมาชิกสภากรุงเทพมหานคร
   occupation_group: การเมือง
-  quotes: ''
-  quotes_url: ''
+  quotes: >-
+    อยากเรียกร้องสิทธิเท่าเทียมกัน คนเราเกิดมาไม่มีทางเท่าเทียมกันครับ
+    หน้าตาก็ไม่เหมือนกันแล้วครับ
+  quotes_url: 'https://www.youtube.com/watch?v=nSg1k8KEaNI'
   asset: 301648486
   debt: 14859.66
   facebook: 'https://www.facebook.com/kasidejc'
@@ -2300,8 +2302,8 @@
     - รองนายกองค์การบริหารส่วนจังหวัดมหาสารคาม
     - นายกเทศมนตรีเมืองมหาสารคาม
   occupation_group: การเมือง
-  quotes: ''
-  quotes_url: ''
+  quotes: ถ้าผมจะกล่าวบ้างว่า ผู้อภิปรายเป็นส.ส.ขี้ข้าโจร...
+  quotes_url: 'https://www.youtube.com/watch?v=k4hwR7ITPb8'
   asset: 1530042683.11
   debt: 67487.03
   facebook: 'https://www.facebook.com/Ting25050314'
@@ -3355,8 +3357,10 @@
   ex_occupation:
     - ทนายความ
   occupation_group: กฎหมาย
-  quotes: ''
-  quotes_url: ''
+  quotes: >-
+    เรียนท่านนายกฯ ที่นี้ไม่ใช่ค่ายทหาร  ที่ท่านจะมาห้ามมาพูดมาสั่ง
+    ที่นี่คือรัฐสภา
+  quotes_url: 'https://www.youtube.com/watch?v=GL9rgfDdU2Q'
   asset: 28768041.06
   debt: 8613343.76
   facebook: 'https://www.facebook.com/lawyerkarom/'
@@ -4548,8 +4552,8 @@
     - สมาชิกสภาผู้แทนราษฎร
     - ผู้ประกาศข่าว
   occupation_group: การเมือง
-  quotes: ''
-  quotes_url: ''
+  quotes: ผมขอถอนคำว่าผู้ชื่นชอบเผด็จการ เป็นผู้ที่ชื่นชอบผู้ที่มีบุญคุณก็แล้วกันครับ
+  quotes_url: 'https://www.youtube.com/watch?v=Lux4iCKK1-k'
   asset: 42274521.05
   debt: 9421565.02
   facebook: 'https://www.facebook.com/profile.php?id=731332146'
@@ -5348,8 +5352,8 @@
     - สมาชิกสภาผู้แทนราษฎร
     - นายกรัฐมนตรี
   occupation_group: การเมือง
-  quotes: ''
-  quotes_url: ''
+  quotes: ท่านนายกฯ ท่านอย่าไปชี้คนอื่นครับ
+  quotes_url: 'https://www.youtube.com/watch?v=ui-Pe6LSsz0'
   asset: 8189114.1
   debt: 0
   facebook: 'https://www.facebook.com/ChuanLeekpaiOfficial/'
@@ -5550,8 +5554,8 @@
     - สมาชิกวุฒิสภา
     - สมาชิกสภาผู้แทนราษฎร
   occupation_group: การเมือง
-  quotes: ''
-  quotes_url: ''
+  quotes: ทำไมถึงแก้มติได้ เข้าห้องน้ำ(มา)หรือเปล่า
+  quotes_url: 'https://www.youtube.com/watch?v=ui-Pe6LSsz0'
   asset: 94872105.59
   debt: 0
   facebook: ''
@@ -7059,8 +7063,12 @@
     - สมาชิกสภาผู้แทนราษฎร
     - รัฐมนตรีช่วยว่าการกระทรวงคมนาคม
   occupation_group: การเมือง
-  quotes: ''
-  quotes_url: ''
+  quotes: >-
+    การดูแลพะยูน 2 ชีวิตไม่อยากให้เรียกว่าผิดพลาด แต่เป็นบทเรียนที่ทีมสัตวแพทย์
+    ต้องเก็บไว้เป็นประสบการณ์เพื่อใช้เป็นบทเรียน
+    และขอให้ทุกคนให้กำลังทีมงานสัตวแพทย์ทุกคนทำงานหนักตลอดเวลาหลายเดือน
+    ทุกคนก็เศร้าไม่แพ้กัน ดูแลลูกพะยูนเหมือนคนในครอบครัว
+  quotes_url: 'https://news.thaipbs.or.th/content/283290'
   asset: 758425485.2
   debt: null
   facebook: ''
@@ -7864,7 +7872,7 @@
   quotes_url: ''
   asset: 1190927937.52
   debt: 160812109.9
-  facebook: ''
+  facebook: 'https://www.facebook.com/TewanLiptapallop/'
   twitter: ''
   is_active: true
   bio: ''
@@ -8409,7 +8417,7 @@
   quotes_url: ''
   asset: 923133331.02
   debt: 0
-  facebook: ''
+  facebook: 'https://www.facebook.com/theptai.theptai'
   twitter: ''
   is_active: true
   bio: ''
@@ -8926,7 +8934,7 @@
     graduation: 'New York University, US'
     degree: Master of Science in Global Finance
     ex_occupation:
-      - Business Person
+      - Businessman
     bio: Lost MP's status as being disqualified by the Constitutional Court
   is_mp: true
   is_senator: false
@@ -8955,11 +8963,14 @@
   ex_occupation:
     - นักธุรกิจ
   occupation_group: เอกชน
-  quotes: ''
-  quotes_url: ''
+  quotes: >-
+    พ่อแม่พี่น้องประชาชนที่รักประชาธิปไตย อย่าสิ้นหวัง ความหวังยังอยู่กับเรา
+    เวลายังอยู่กับเรา
+  quotes_url: >-
+    https://www.facebook.com/themomentumco/photos/a.1636533129971718/2147406462217713/?type=3&theater
   asset: 5628118852.01
   debt: 683303.45
-  facebook: ''
+  facebook: 'https://www.facebook.com/ThanathornOfficial/'
   twitter: 'https://twitter.com/thanathorn_fwp'
   is_active: false
   bio: >-
@@ -9016,7 +9027,7 @@
   quotes_url: ''
   asset: 124853181.23
   debt: 25118795.1
-  facebook: ''
+  facebook: 'https://www.facebook.com/thawornsenneam/'
   twitter: ''
   is_active: true
   bio: ''
@@ -9112,8 +9123,11 @@
   ex_occupation:
     - นักร้อง นักแสดง
   occupation_group: อื่นๆ
-  quotes: ''
-  quotes_url: ''
+  quotes: >-
+    จะขออาสาเป็นตัวแทนของกลุ่มคนที่มีความหลากหลายทางเพศของไทย
+    เพราะที่ผ่านมาจะเห็นว่าเราไม่เคยมีผู้แทนที่เป็นกะเทยแต่งหญิงมาก่อน
+    เราอยากจะเป็นคนแรกที่อาสาเป็นตัวแทนของคนกลุ่มนี้
+  quotes_url: 'https://twitter.com/thestandardth/status/1063099535440916479'
   asset: 2901341.78
   debt: 1888367.36
   facebook: 'https://www.facebook.com/TanwarinOfficial/'
@@ -9167,7 +9181,7 @@
   quotes_url: ''
   asset: 6776588.77
   debt: 289234
-  facebook: ''
+  facebook: 'https://www.facebook.com/tunyawaj.kamolwongwat.1'
   twitter: 'https://twitter.com/TUNYAWAJ'
   is_active: true
   bio: ''
@@ -12159,8 +12173,8 @@
   ex_occupation:
     - สมาชิกสภาผู้แทนราษฎร
   occupation_group: การเมือง
-  quotes: ''
-  quotes_url: ''
+  quotes: คุณช่อเขาไม่สวยทั้งภายในทั้งภายนอก ดิฉันตอนเด็กๆจนตอนนี้แก่มีแต่คนชมว่าสวย
+  quotes_url: 'https://www.youtube.com/watch?v=-AqtEXdc2bE'
   asset: 169666795.97
   debt: 29731411.89
   facebook: 'https://www.facebook.com/pareena.k'
@@ -12210,8 +12224,10 @@
     - อาจารย์ประจำมหาวิทยาลัย
     - สมาชิกคณะนิติราษฎร์
   occupation_group: การศึกษา
-  quotes: ''
-  quotes_url: ''
+  quotes: >-
+    นี่หรือครับการเมืองแบบใหม่ แวะเวียนมาฉวัดเฉวียนกัน...
+    ไอประเภทอภิปรายแล้วแอบมาชกใต้เข็มขัดกันแบบนี้ไม่เป็นที่นิยมนะครับ
+  quotes_url: 'https://www.youtube.com/watch?v=-AqtEXdc2bE'
   asset: 9984857.8
   debt: 2310236.65
   facebook: 'https://www.facebook.com/PiyabutrOfficial/'
@@ -12965,8 +12981,12 @@
   ex_occupation:
     - บรรณาธิการฝ่ายต่างประเทศ สถานีโทรทัศน์วอยซ์ทีวี
   occupation_group: สื่อมวลชน
-  quotes: ''
-  quotes_url: ''
+  quotes: >-
+    ไม่อยากให้นำสถาบันกษัตริย์มาเป็นเครื่องมือโจมตีทางการเมือง
+    ซึ่งดิฉันไม่ใช่คนแรกและคงไม่ใช่คนสุดท้ายที่โดนโจมตีด้วยข้อหาแบบนี้
+    ซึ่งทุกเห็นแล้วว่า ไม่ได้ส่งผลแค่ตัวดิฉันคนเดียว แต่ถึงพ่อ ถึงเพื่อน
+    ซึ่งไม่ได้เตรียมใจจะต้องรับเรื่องนี้
+  quotes_url: 'https://www.khaosod.co.th/politics/news_2631838'
   asset: 3319567.78
   debt: 710512
   facebook: 'https://www.facebook.com/profile.php?id=100039048104036'
@@ -13414,8 +13434,12 @@
   ex_occupation:
     - นักธุรกิจ
   occupation_group: เอกชน
-  quotes: ''
-  quotes_url: ''
+  quotes: >-
+    ที่ดินคือคอขวดของปัญหาเกษตรกรรมเกือบทั้งหมด ที่ดินคือชีวิต
+    ที่ดินคือสิทธิมนุษยชนขั้นพื้นฐาน ที่ดินคือกระดุมเม็ดแรก
+    เมื่อเราติดให้ถูกต้อง ปัญหาที่เหลือจะแก้ได้ง่ายมาก แต่ถ้าเกิดเราติดผิด
+    ปัญหาอื่นที่เราพยายามที่จะแก้ก็จะไม่สามารถแก้ได้อย่างยั่งยืน...
+  quotes_url: 'https://thestandard.co/prayut-cabinet-debate-policies/'
   asset: 137785190.85
   debt: 22954064
   facebook: 'https://www.facebook.com/timpitaofficial/'
@@ -14804,8 +14828,16 @@
   ex_occupation:
     - เลขาธิการคณะกรรมการภาคีเครือข่ายต่อต้านการทุจริตคอร์รัปชั่นแห่งชาติ
   occupation_group: เอกชน
-  quotes: ''
-  quotes_url: ''
+  quotes: >-
+    จากที่ผมเรียบเรียงทั้งหมด 3 บรรทัดแล้ว มีทั้งอักษร สระ วรรณยุกต์ทั้งหมด 205
+    ตัวด้วยกัน
+
+    ท่านนายกกล่าวเพียง 137 ตัว เกินไป 6 ตัว ขาดไป 63 ตัว
+
+    คิดเป็นสัดส่วนทางคณิตศาสตร์คือ ถวายสัตย์ครบ 66.829%
+
+    ถวายสัตย์ไม่ครบขาดไป 33.171%
+  quotes_url: 'https://www.facebook.com/TPchannelFan/videos/1344388039070310/'
   asset: 192902325.29
   debt: 19168813.02
   facebook: 'https://www.facebook.com/ajanmongkolkit'
@@ -15751,8 +15783,8 @@
   ex_occupation:
     - สมาชิกสภาผู้แทนราษฎร
   occupation_group: การเมือง
-  quotes: ''
-  quotes_url: ''
+  quotes: ผมนี่มาจากการเลือกตั้ง ไม่เหมือนท่านหรอกครับ เลียรองเท้าทหารมา
+  quotes_url: 'https://www.facebook.com/TPchannelFan/videos/426189337979927'
   asset: 28578590.81
   debt: 74651.7
   facebook: ''
@@ -16908,11 +16940,12 @@
   ex_occupation:
     - สมาชิกสภาผู้แทนราษฎร
   occupation_group: การเมือง
-  quotes: ''
-  quotes_url: ''
+  quotes: โค่นผมได้ ก็เท่ากับล้มรัฐบาลได้
+  quotes_url: >-
+    https://themomentum.co/thammarat-prompao-and-his-words/?fbclid=IwAR1jh7NZ8vX-YAcHMCYCaSQswYcsU-3JPM-eqnUcWhlF7kJfWded7r9ak7I
   asset: 859316182.73
   debt: 79261936.12
-  facebook: ''
+  facebook: 'https://www.facebook.com/ThamanatPhayao/'
   twitter: ''
   is_active: true
   bio: ''
@@ -17407,8 +17440,8 @@
   ex_occupation:
     - สมาชิกสภาผู้แทนราษฎร
   occupation_group: การเมือง
-  quotes: ''
-  quotes_url: ''
+  quotes: ผมขอถามวันนี้ว่า "ผมเตรียมการมาสามปีกว่า ท่านหมายความว่าอย่างไร
+  quotes_url: 'https://www.youtube.com/watch?v=l2wGEQyTMxs'
   asset: 47368677.87
   debt: 0
   facebook: 'https://www.facebook.com/WanMuHaMadNorMaTha/?fref=nf&_rdc=1&_rdr'
@@ -18702,8 +18735,11 @@
   ex_occupation:
     - สมาชิกสภาผู้แทนราษฎร
   occupation_group: การเมือง
-  quotes: ''
-  quotes_url: ''
+  quotes: >-
+    ถ้ายังดันทุรังต่อไป นรก is coming หรือ นรกกำลังจะมาเยือน
+    เมกะโปรเจกต์ก็เอื้อทุนใหญ่ พร้อมบอกว่า “เจ้าสัว รวยจนจุก คนจน จนจนตาย ...
+    ถ้าทำไม่ได้ ไม่มั่นใจจะทำ ก็ขอให้ลาออกไป
+  quotes_url: 'https://www.thairath.co.th/news/politic/1623100'
   asset: 211856248.62
   debt: 3030404.38
   facebook: ''
@@ -19056,8 +19092,14 @@
   ex_occupation:
     - สมาชิกสภาผู้แทนราษฎร
   occupation_group: การเมือง
-  quotes: ''
-  quotes_url: ''
+  quotes: >-
+    ส่วนในทางการเมืองก็มีการยุยงกัน ซึ่งแท้จริงแล้ว ฝ่ายค้านก็อาจจะไม่ได้ทำ
+    ฝ่ายรัฐบาลก็อาจจะไม่ได้ทำ แต่มีใครไม่รู้เป็นคนทำ
+    แล้วคนก็แชร์กันจนเกิดความเสียหาย เกิดความเข้าใจผิดกันทั้งสองฝ่าย
+    สร้างความเกลียดชังแก่ประชาชน
+    เหล่านี้เห็นชัดเจนว่าสร้างความเสียหายต่อบ้านเมืองเป็นอย่างมาก
+    ซึ่งเราจะจัดการตามกฏหมายอย่างเด็ดขาด แต่ก็ไม่ได้ไปลิดรอนสิทธิส่วนบุคคลของใคร
+  quotes_url: 'https://www.nationweekend.com/content/detail/1553'
   asset: 194296604.73
   debt: 1369500
   facebook: 'https://www.facebook.com/BeePunnakanta'
@@ -21999,8 +22041,12 @@
   ex_occupation:
     - นักธุรกิจ
   occupation_group: เอกชน
-  quotes: ''
-  quotes_url: ''
+  quotes: >-
+    ผมไม่ได้ขู่นะ ที่อื่นเขาดูแล ว่ามาทำงาน ส.ส.มาทำงานให้เกียรติ ส.ส.
+    ผมไม่ได้ใหญ่จากไหน แต่ควรจะทำไหมว่าวันนี้เรามาทำเพื่อบ้านเมือง
+    ผมไม่ได้มาเที่ยว
+  quotes_url: >-
+    https://www.youtube.com/watch?v=p8C-W1RNhvo&fbclid=IwAR26EOxZ2sj25BviNnh4c1IttRd4lqux-EWApW2De7ywIYIC74_G2nICgVc
   asset: 547694338.94
   debt: 4971601.89
   facebook: >-
@@ -22495,8 +22541,12 @@
   ex_occupation:
     - สมาชิกสภาผู้แทนราษฎร
   occupation_group: การเมือง
-  quotes: ''
-  quotes_url: ''
+  quotes: >-
+    ..เก่งอย่างไรผมเชื่อว่าท่านอยู่ไม่เกิน 4 ปี ถ้ามีเลือกตั้งเมื่อไหร่
+    พวกผมไม่รอศาลรัฐธรรมนูญหรอกครับ ไม่รอองค์กรอื่นใดหรอกครับ
+    ประชาชนคือที่หวังของพวกเรา พฤติกรรมของท่านวันนี้ ความอหังการ์ของท่านนายกฯ
+    เจอกันตอนเลือกตั้ง..
+  quotes_url: 'https://prachatai.com/journal/2019/09/84401'
   asset: 39004159.71
   debt: 9040838.36
   facebook: >-
@@ -23646,8 +23696,12 @@
   ex_occupation:
     - ผู้บัญชาการตำรวจแห่งชาติ
   occupation_group: ตำรวจ
-  quotes: ''
-  quotes_url: ''
+  quotes: >-
+    มีส่งคนมาคุยกับผมขอให้ไปอยู่พรรคที่สนับสนุนคุณประยุทธ์ ผมบอกไปได้ไงอะ
+    ในเมื่อผมไม่เห็นชอบกับการยึดอำนาจ
+    ไม่เห็นชอบกับการกระทำของคุณประยุทธ์มาโดยตลอด ผมไปผมก็เสียหมาสิ
+    ผมเป็นคนดีกว่า ดีกว่าจะเป็นหมานะครับ
+  quotes_url: 'https://www.thaismiletopic.com/archives/18445'
   asset: 135476212
   debt: 0
   facebook: 'https://www.facebook.com/sereepisutht/'
@@ -24304,8 +24358,9 @@
     - รัฐมนตรีช่วยว่าการกระทรวงสาธารณสุข
     - สมาชิกสภาผู้แทนราษฎร
   occupation_group: การเมือง
-  quotes: ''
-  quotes_url: ''
+  quotes: กระทรวงมีไว้ให้คนเข้าไปทำงาน ไม่ใช่มีไว้ให้เที่ยวแลกไปแลกมา ..
+  quotes_url: >-
+    https://twitter.com/search?q=%E0%B8%AD%E0%B8%99%E0%B8%B8%E0%B8%97%E0%B8%B4%E0%B8%99%20%09%E0%B8%8A%E0%B8%B2%E0%B8%8D%E0%B8%A7%E0%B8%B5%E0%B8%A3%E0%B8%81%E0%B8%B9%E0%B8%A5&src=typd
   asset: 4248828812.03
   debt: 50255070.3
   facebook: 'https://www.facebook.com/AnutinC/'
@@ -25973,7 +26028,7 @@
   is_active: true
   bio: ''
 - id: '518'
-  title: นายแพทย์์
+  title: นายแพทย์
   name: เอกภพ
   lastname: เพียรพิเศษ
   en:
@@ -27145,7 +27200,7 @@
   is_active: true
   bio: ''
 - id: '541'
-  title: ดร.
+  title: นาย
   name: จเด็จ
   lastname: อินสว่าง
   en:
@@ -27181,7 +27236,7 @@
       set: ''
   gender: ชาย
   birthdate: '1947-03-17'
-  education: ปริญญาเอก
+  education: ปริญญาโท
   graduation: มหาวิทยาลัยธรรมศาสตร์
   degree: รัฐศาสตรมหาบัณฑิต
   ex_occupation:
@@ -37921,8 +37976,10 @@
     - สมาชิกวุฒิสภา
     - รองประธานสภาร่างรัฐธรรมนูญ
   occupation_group: การเมือง
-  quotes: ''
-  quotes_url: ''
+  quotes: >-
+    สิ่งทีท่านกล่าวหาผมว่านิยมเผด็จการ ผมนิยมเผ็จการประชาธิปไตย
+    แต่ไม่ได้นิยมประชาธิปไตยจอมปลอม
+  quotes_url: 'https://www.youtube.com/watch?v=fvjdTUiM-N0'
   asset: 529931444.21
   debt: 7693433.03
   facebook: 'https://www.facebook.com/sereelaw'
