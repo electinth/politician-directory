@@ -1064,7 +1064,7 @@
     และต้องการยุติวงจรอุบาทว์ของรัฐประหาร
     พร้อมประกาศชัดเจนว่าจะคัดค้านอิทธิพลของกองทัพในการเมือง
   established_date: '2018-10-03'
-  dissolved_date: ''
+  dissolved_date: '2563-02-21'
   total_member: 80
   speaker: ''
   first_deputy_speaker: ''
@@ -1080,7 +1080,7 @@
   email: office@futureforwardparty.org
   phone: 02-821-5688
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/087/T_0104.PDF'
-  is_active: true
+  is_active: false
 - id: '30'
   name: ประชาชนปฏิรูป
   en:

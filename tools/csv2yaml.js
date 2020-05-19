@@ -13,6 +13,30 @@ if (process.argv.length < 3) {
   process.exit()
 }
 
+function splitPeopleName(people_name) {
+  people_name = _.trim(people_name) ;
+  let title = '';
+  let name = people_name;
+  let last_name = '';
+  // TODO: #171 support split name fields semantically
+  const r = /^(นาย|นางสาว|นาง)/gm;
+  const matches = r.exec(people_name);
+  if (matches) {
+    if (matches.index === 0) {
+      title = matches[0];
+      const name_starts = matches.index + matches[0].length;
+      const full_name = _.compact(people_name.slice(name_starts).split(' '));
+      name = full_name[0];
+      last_name = full_name.slice(1).join(' ');
+    }
+  }
+  return {
+    title,
+    name,
+    last_name
+  };
+}
+
 function clean(val, key, object) {
   if (key === "deputy_prime_minister") console.log(object.name, val)
   try {
@@ -71,9 +95,15 @@ function clean(val, key, object) {
       "established_date",
       // votelog
       "vote_date",
+      // motion
+      "proposal_date",
     ]
     if (dateKeys.includes(key)) {
       if (val === "-") return null
+      // convert DD/MM/YYYY to YYYY-MM-DD
+      if (/^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/.test(val)) {
+        val = `${val.slice(6, 10)}-${val.slice(3, 5)}-${val.slice(0, 2)}`;
+      }
       let dt
       if (val) {
         dt = moment(val)
@@ -122,6 +152,22 @@ function clean(val, key, object) {
       // convert: * = { '1': a, '2': b, ... }
       // to: * = [{ key: '1', value: a }, { key: '2', value: b }, ...]
       val = _.map(val, (v, k) => ({ key: k, value: v }))
+    }
+    // parse purposers and seconders
+    const purposerKeys = [
+      // motion
+      "purposers",
+      "seconders",
+      "adhoc_committee_members",
+    ]
+    if (purposerKeys.includes(key)) {
+      // remove those without name
+      val = val.filter(people => !!people.name);
+      // TODO: split name into title, name, last_name
+      val = val.map(people => ({
+        ...people,
+        ...splitPeopleName(people.name)
+      }))
     }
   } catch (err) {
     console.error(`Error cleaning: [id=${object.id}] ${key}=${val}`)
