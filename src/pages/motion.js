@@ -16,7 +16,7 @@ const MotionPage = ({ data }) => {
   return (
     <Layout
       pageStyles={{
-        background: "var(--cl-pink)",
+        background: "var(--cl-motion-section)",
       }}
     >
       <SEO title="Home" />

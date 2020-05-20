@@ -160,7 +160,7 @@ const PeoplePage = ({ data }) => {
   return (
     <Layout
       pageStyles={{
-        background: "var(--cl-pink)",
+        background: "var(--cl-people-section)",
       }}
     >
       <SEO title="Home" />

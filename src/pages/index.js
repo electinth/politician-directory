@@ -1,9 +1,30 @@
 import React from "react"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { media } from "../styles"
+import ArrowRightIcon from "../images/svg/arrow-right.svg"
+
+export const query = graphql`
+  query {
+    peopleImage: file(relativePath: { eq: "images/hero/partySummary.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    motionImage: file(relativePath: { eq: "images/hero/voteSummary.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 const cssMainSection = {
   display: "flex",
@@ -11,6 +32,7 @@ const cssMainSection = {
   padding: "0 0",
   [media(767)]: {
     flexDirection: "row",
+    justifyContent: "space-between",
   },
 }
 
@@ -22,6 +44,7 @@ const cssContentSection = {
   gridTemplateAreas: `"content link" "content image"`,
   justifyItems: "stretch",
   padding: "0 0",
+  overflow: "hidden",
 
   ".content": {
     gridArea: "content",
@@ -49,7 +72,7 @@ const cssContentSection = {
   [media(767)]: {
     width: "50vw",
     gridTemplateColumns: "1fr",
-    gridTemplateRows: "1fr 1fr 1fr",
+    gridTemplateRows: "40vh 1fr 20vh",
     gap: "1rem 0",
     gridTemplateAreas: `"image" "content" "link"`,
 
@@ -88,17 +111,84 @@ const cssMotionSection = {
 }
 
 const cssNextButton = {
-  width: "10rem",
-  height: "10rem",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "4.8rem",
+  height: "4.8rem",
   borderRadius: "10rem",
-  color: "var(--cl-white)",
-  backgroundColor: "var(--cl-black)",
-  display: "block",
-  textAlign: "center",
-  lineHeight: "10rem",
+  color: "var(--cl-black)",
+  border: "2px solid var(--cl-black)",
+  textDecoration: "none",
+  transition: "all .2s ease-out",
+  span: {
+    display: "none",
+    fontFamily: "var(--ff-title)",
+  },
+  i: {
+    svg: {
+      display: "block",
+    },
+  },
+  ":hover": {
+    color: "var(--cl-white)",
+    backgroundColor: "var(--cl-black)",
+    textDecoration: "none",
+    i: {
+      svg: {
+        path: {
+          fill: "var(--cl-white)",
+        },
+      },
+    },
+  },
+  [media(767)]: {
+    width: "auto",
+    height: "6.4rem",
+    padding: "0 2rem",
+    borderWidth: "3px",
+    span: {
+      display: "inline-block",
+      fontSize: "1.8rem",
+      letterSpacing: "2px",
+    },
+    i: {
+      marginLeft: "1.5rem",
+    },
+  },
 }
 
-const IndexPage = () => {
+const cssPeopleImage = {
+  display: "block",
+  width: "12rem",
+  height: "12rem",
+  borderRadius: "12rem",
+  backgroundColor: "var(--cl-black)",
+  transform: "translate(2rem, 2rem)",
+  [media(767)]: {
+    transform: "none",
+    width: "20rem",
+    height: "20rem",
+    borderRadius: "20rem",
+  },
+}
+
+const cssMotionImage = {
+  display: "block",
+  width: "12rem",
+  height: "12rem",
+  borderRadius: "12rem",
+  backgroundColor: "var(--cl-black)",
+  transform: "translate(2rem, 2rem)",
+  [media(767)]: {
+    transform: "none",
+    width: "20rem",
+    height: "20rem",
+    borderRadius: "20rem",
+  },
+}
+
+const IndexPage = ({ data }) => {
   return (
     <Layout
       pageStyles={{
@@ -119,11 +209,16 @@ const IndexPage = () => {
             </p>
           </div>
           <div className="link">
-            <Link to={"/people"} css={cssNextButton}>
-              Link
+            <Link to={"/people"} css={{ ...cssNextButton }}>
+              <span>ดูข้อมูลผู้แทน</span>
+              <i>
+                <ArrowRightIcon></ArrowRightIcon>
+              </i>
             </Link>
           </div>
-          <div className="image">Image</div>
+          <div className="image" css={{ ...cssPeopleImage }}>
+            <Img fluid={data.peopleImage.childImageSharp.fluid} />
+          </div>
         </div>
         <div
           className="container"
@@ -137,11 +232,16 @@ const IndexPage = () => {
             </p>
           </div>
           <div className="link">
-            <Link to={"/motion"} css={cssNextButton}>
-              Link
+            <Link to={"/motion"} css={{ ...cssNextButton }}>
+              <span>ดูข้อมูลญัตติ</span>
+              <i>
+                <ArrowRightIcon></ArrowRightIcon>
+              </i>
             </Link>{" "}
           </div>
-          <div className="image">Image</div>
+          <div className="image" css={{ ...cssMotionImage }}>
+            <Img fluid={data.motionImage.childImageSharp.fluid} />
+          </div>
         </div>
       </section>
     </Layout>
