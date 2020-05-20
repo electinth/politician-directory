@@ -682,3 +682,79 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
+- id: '15'
+  title: ตั้ง กมธ.วิสามัญ ตรวจสอบละเมิดสิทธิมนุษยชน
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญเพื่อตรวจ สอบและศึกษา
+    ติดตามการทำงานของหน่วยงานภาครัฐ
+    ต่อการถูกละเมิดสิทธิมนุษยชนและถูกประทุษร้ายของประชาชน
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-12-19'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  approve: 411
+  disprove: 0
+  abstained: 3
+  total_voter: 414
+  absent: 84
+  total_member: 498
+  description_th: >-
+    จากกรณีการถูกละเมิดสิทธิมนุษยชนและถูกประทุษร้ายของประชาชน
+    โดยเฉพาะปัญหาความรุนแรงในพื้นที่จังหวัดชายแดนใต้ ส.ส.
+    หลายพรรคเห็นว่าเกิดจากข้อผิดพลาดเรื่องการกำหนดนโยบายรัฐบาลทั้งอดีตและปัจจุบัน
+    รวมถึงการละเมิดสิทธิมนุษยชน ที่มีการละเมิดสิทธิการเคลื่อนไหวการต่อสู้
+    เพื่อเรียกร้องสิทธิเสรีภาพตามรัฐธรรมนูญทั่วประเทศนั้นก็เกิดขึ้นบ่อยครั้ง
+    แต่กลับหาตัวผู้ทำผิดหรือผู้อยู่เบื้องหลังมาลงโทษไม่ได้
+
+
+    สภาผู้แทนราษฎร จึงเห็นชอบตั้งคณะกรรมาธิการวิสามัญเพื่อตรวจ สอบและศึกษา
+    ติดตามการทำงานของหน่วยงานภาครัฐต่อการถูกละเมิดสิทธิมนุษยชนและถูกประทุษร้ายของประชาชน
+    เพื่อตรวจสอบและติดตาม
+  description_en: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191219171121A1.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4175
+- id: '16'
+  title: >-
+    ตั้ง กมธ. วิสามัญ
+    เพื่อศึกษาแนวทางป้องกันไม่ให้เกิดการรัฐประหารขึ้นอีกในอนาคต
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญ
+    เพื่อศึกษาแนวทางป้องกันไม่ให้เกิดการรัฐประหารขึ้นอีกในอนาคต
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2020-02-20'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  approve: 216
+  disprove: 242
+  abstained: 2
+  total_voter: 460
+  absent: 38
+  total_member: 498
+  description_th: ''
+  description_en: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20200220141311A1.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4193
