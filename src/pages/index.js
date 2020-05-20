@@ -44,6 +44,7 @@ const cssContentSection = {
   gridTemplateAreas: `"content link" "content image"`,
   justifyItems: "stretch",
   padding: "0 0",
+  margin: "0 0",
   overflow: "hidden",
 
   ".content": {
