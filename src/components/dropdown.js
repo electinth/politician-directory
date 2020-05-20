@@ -46,8 +46,11 @@ class DropDown extends Component {
             <button onClick={e => this.handleFilter(e, this.props.filter)}>
               {this.props.choices.default}
             </button>
-            {this.props.choices.others.map(choice => (
-              <button onClick={e => this.handleFilter(e, this.props.filter)}>
+            {this.props.choices.others.map((choice, index) => (
+              <button
+                key={index}
+                onClick={e => this.handleFilter(e, this.props.filter)}
+              >
                 {choice}
               </button>
             ))}
@@ -119,6 +122,7 @@ export default ({ choices, currentFilter, handleFilter }) => {
       />
       {Object.entries(choices).map(([filter, choices]) => (
         <DropDown
+          key={filter}
           currentFilter={currentFilter}
           handleFilter={handleFilter}
           filter={filter}

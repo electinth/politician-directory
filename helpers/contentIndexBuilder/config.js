@@ -9,7 +9,7 @@ module.exports = [
     type: "people",
     path: "./src/contents/people.yaml",
     getQ: record => `${record.title} ${record.name} ${record.lastname}`,
-    getUrl: record => `/people/${record.name}-${record.lastName}`,
+    getUrl: record => `/people/${record.name}-${record.lastname}`,
   },
   {
     type: "votelog",
