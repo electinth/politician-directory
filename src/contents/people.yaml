@@ -1180,8 +1180,8 @@
     ex_occupation:
       - Member of Parliament
       - Minister of Science and Technology
-    bio: Former Democrat's Party-List no. 5 - resigned as MP on 8 Aug 19
-  is_mp: false
+    bio: ''
+  is_mp: true
   is_senator: false
   is_cabinet: true
   is_committee: false
@@ -1224,9 +1224,7 @@
   debt: null
   facebook: 'https://www.facebook.com/KhunyingKalaya'
   twitter: ''
-  bio: >-
-    ลาออกจาก ส.ส. บัญชีรายชื่อลำดับที่ 5 พรรคประชาธิปัตย์ เมื่อวันที่ 8 สิงหาคม
-    62
+  bio: ''
 - id: '21'
   title: ดร.
   name: กนกวรรณ

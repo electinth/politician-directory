@@ -14,27 +14,27 @@ if (process.argv.length < 3) {
 }
 
 function splitPeopleName(people_name) {
-  people_name = _.trim(people_name) ;
-  let title = '';
-  let name = people_name;
-  let last_name = '';
+  people_name = _.trim(people_name)
+  let title = ""
+  let name = people_name
+  let last_name = ""
   // TODO: #171 support split name fields semantically
-  const r = /^(นาย|นางสาว|นาง)/gm;
-  const matches = r.exec(people_name);
+  const r = /^(นาย|นางสาว|นาง)/gm
+  const matches = r.exec(people_name)
   if (matches) {
     if (matches.index === 0) {
-      title = matches[0];
-      const name_starts = matches.index + matches[0].length;
-      const full_name = _.compact(people_name.slice(name_starts).split(' '));
-      name = full_name[0];
-      last_name = full_name.slice(1).join(' ');
+      title = matches[0]
+      const name_starts = matches.index + matches[0].length
+      const full_name = _.compact(people_name.slice(name_starts).split(" "))
+      name = full_name[0]
+      last_name = full_name.slice(1).join(" ")
     }
   }
   return {
     title,
     name,
-    last_name
-  };
+    last_name,
+  }
 }
 
 function clean(val, key, object) {
@@ -58,11 +58,6 @@ function clean(val, key, object) {
       val = _.filter(val, s => !["", "-", " "].includes(s))
       // clean items in array
       val = _.map(val, (v, i) => clean(v, i, val))
-    }
-    // handle object
-    if (_.isPlainObject(val)) {
-      // clean values for each key
-      val = _.mapValues(val, clean)
     }
     // trim keys
     const trimKeys = [
@@ -102,7 +97,7 @@ function clean(val, key, object) {
       if (val === "-") return null
       // convert DD/MM/YYYY to YYYY-MM-DD
       if (/^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/.test(val)) {
-        val = `${val.slice(6, 10)}-${val.slice(3, 5)}-${val.slice(0, 2)}`;
+        val = `${val.slice(6, 10)}-${val.slice(3, 5)}-${val.slice(0, 2)}`
       }
       let dt
       if (val) {
@@ -146,9 +141,9 @@ function clean(val, key, object) {
       "votelog",
     ]
     if (votelogKeys.includes(key)) {
-      // convert: * = { 'key__1': a }
+      // convert: * = { '__1': a }
       // to: * = { '1': a }
-      val = _.mapKeys(val, (v, k) => k.replace(/^key__/gi, ""))
+      val = _.mapKeys(val, (v, k) => k.replace(/^__/gi, ""))
       // convert: * = { '1': a, '2': b, ... }
       // to: * = [{ key: '1', value: a }, { key: '2', value: b }, ...]
       val = _.map(val, (v, k) => ({ key: k, value: v }))
@@ -162,18 +157,33 @@ function clean(val, key, object) {
     ]
     if (purposerKeys.includes(key)) {
       // remove those without name
-      val = val.filter(people => !!people.name);
+      val = val.filter(people => !!people.name)
       // TODO: split name into title, name, last_name
       val = val.map(people => ({
         ...people,
-        ...splitPeopleName(people.name)
+        ...splitPeopleName(people.name),
       }))
+    }
+
+    // Lastly, handle object
+    if (_.isPlainObject(val)) {
+      // clean values for each key
+      val = _.omitBy(_.mapValues(val, clean), omit)
     }
   } catch (err) {
     console.error(`Error cleaning: [id=${object.id}] ${key}=${val}`)
   }
 
   return val
+}
+
+// Exclude some field by its key or value
+function omit(val, key) {
+  if (key.indexOf("__") === 0) {
+    console.log("omit:", key)
+    return true
+  }
+  return false
 }
 
 const inputPath = path.resolve(process.argv[2])
@@ -185,7 +195,9 @@ async function start() {
   try {
     const csvOptions = { trim: true, checkColumn: true }
     const data = await csv(csvOptions).fromFile(inputPath)
-    const clean_data = data.map(item => _.mapValues(item, clean))
+    const clean_data = data.map(item =>
+      _.omitBy(_.mapValues(item, clean), omit)
+    )
     const yamlOptions = {}
     const yaml = jsYaml.safeDump(clean_data, yamlOptions)
 

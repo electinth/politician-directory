@@ -365,119 +365,6 @@
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4162
 - id: '7'
-  title: ตั้ง กมธ.วิสามัญ ศึกษาผลกระทบจาก ม. 44
-  is_active: true
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: >-
-    พิจารณาตั้งคณะกรรมาธิการวิสามัญ เพื่อศึกษาผลกระทบจากการกระทำ ประกาศ
-    และคำสั่งของคณะรักษาความสงบแห่งชาติ
-    และการใช้อำนาจของหัวหน้าคณะรักษาความสงบแห่งชาติ ตามมาตรา 44
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2019-12-04'
-  prayuth: ''
-  thanathorn: ''
-  passed: false
-  approve: 5
-  disprove: 244
-  abstained: 6
-  total_voter: 255
-  absent: 243
-  total_member: 498
-  description_th: ''
-  description_en: ''
-  document:
-    - title: ใบประมวลผลการลงมติ
-      link: >-
-        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191206075729A1.pdf
-    - title: ''
-      link: ''
-  reference: ''
-- id: '8'
-  title: ตั้ง กมธ.วิสามัญ ศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
-  is_active: true
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: พิจารณาตั้งคณะกรรมาธิการวิสามัญ เพื่อศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2019-07-04'
-  prayuth: ''
-  thanathorn: ''
-  passed: true
-  approve: null
-  disprove: null
-  abstained: null
-  total_voter: null
-  absent: null
-  total_member: null
-  description_th: >-
-    จากญัตติด่วนที่ ส.ส. ทั้งฝ่ายรัฐบาลและฝ่ายค้าน
-    พูดถึงปัญหาราคาผลผลิตทางการเกษตรที่ตกต่ำประจำทุกปี รวมถึงสินค้าการประมง
-    จึงมีการให้แต่งตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
-    โดยให้กรรมาธิการได้รวบรวมปัญหาพิจารณาลงลึกถึงพื้นที่ที่มีความแตกต่างกัน
-    รวมทั้งให้ภาครัฐเข้ามากำกับบาทบาทของล้งด้วย
-
-
-    ประธานสภาผู้แทนราษฎร ถามมติต่อที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
-    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมมีมติเห็นชอบ ตามข้อบังคับ
-    การประชุมสภาผู้แทนราษฎร พ.ศ. 2551 ข้อ 80 โดยผลสรุป
-    มีการตั้งคณะกรรรมาธิการวิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
-    จำนวน 39 คน แบ่งเป็นสัดส่วน ส.ส.รัฐบาลจำนวน 20 คน และส.ส.ฝ่ายค้าน 19 คน
-    โดยมีกรอบระยะเวลาการศึกษาภายใน 60
-  description_en: ''
-  document:
-    - title: ''
-      link: ''
-    - title: ''
-      link: ''
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4142
-- id: '9'
-  title: ตั้ง กมธ.วิสามัญ ศึกษาการต่อสัญญาสัมปทานทางด่วนและรถไฟฟ้าบีทีเอส
-  is_active: true
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: >-
-    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษากรณีการต่อสัญญาสัมปทานให้กับบริษัททางด่วนและรถไฟฟ้ากรุงเทพ
-    จำกัด (มหาชน)
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2019-07-11'
-  prayuth: ''
-  thanathorn: ''
-  passed: true
-  approve: null
-  disprove: null
-  abstained: null
-  total_voter: null
-  absent: null
-  total_member: null
-  description_th: >-
-    กรณีที่คณะกรรมการการทางพิเศษแห่งประเทศไทย (กทพ.)
-    มีมติต่อสัญญาสัมปทานให้บริษัททางด่วนและรถไฟฟ้ากรุงเทพ จำกัด (มหาชน) อีก 30
-    ปี ใน 3 โครงการ เพื่อแลกกับการยุติข้อพิพาท 137,000 ล้านบาท
-    ส.ส.ทั้งฝ่ายรัฐบาล และฝ่ายค้าน
-    ต่างอภิปรายสนับสนุนญัตติเพื่อให้ที่ประชุมตั้งคณะกรรมาธิการวิสามัญฯ
-    ขึ้นมาศึกษากรณีดังกล่าว ก่อนที่จะมีการต่อสัญญา 
-
-
-    ประธานสภาผู้แทนราษฎร ถามมติต่อที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
-    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมมีมติเห็นชอบ ตามข้อบังคับ
-    การประชุมสภาผู้แทนราษฎร  พ.ศ. 2551 ข้อ 80
-  description_en: ''
-  document:
-    - title: ''
-      link: ''
-    - title: ''
-      link: ''
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4144
-- id: '10'
   title: ตั้ง กมธ.วิสามัญศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
   is_active: true
   en:
@@ -511,7 +398,191 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4158
+- id: '8'
+  title: ตั้ง กมธ. วิสามัญ ศึกษาโครงการผันน้ำ โขง เลย ชี มูล ป่าสัก
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาโครงการผันน้ำ โขง เลย ชี มูล ป่าสัก
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-11-22'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  approve: 392
+  disprove: 0
+  abstained: 2
+  total_voter: 394
+  absent: 104
+  total_member: 498
+  description_th: ''
+  description_en: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191122170454A1.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4169
+- id: '9'
+  title: ตั้ง กมธ.วิสามัญ ศึกษาผลกระทบจาก ม. 44
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    พิจารณาตั้งคณะกรรมาธิการวิสามัญ เพื่อศึกษาผลกระทบจากการกระทำ ประกาศ
+    และคำสั่งของคณะรักษาความสงบแห่งชาติ
+    และการใช้อำนาจของหัวหน้าคณะรักษาความสงบแห่งชาติ ตามมาตรา 44
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-12-04'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  approve: 5
+  disprove: 244
+  abstained: 6
+  total_voter: 255
+  absent: 243
+  total_member: 498
+  description_th: ''
+  description_en: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191206075729A1.pdf
+    - title: ''
+      link: ''
+  reference: ''
+- id: '10'
+  title: ตั้ง กมธ.วิสามัญ ตรวจสอบละเมิดสิทธิมนุษยชน
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญเพื่อตรวจ สอบและศึกษา
+    ติดตามการทำงานของหน่วยงานภาครัฐ
+    ต่อการถูกละเมิดสิทธิมนุษยชนและถูกประทุษร้ายของประชาชน
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-12-19'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  approve: 411
+  disprove: 0
+  abstained: 3
+  total_voter: 414
+  absent: 84
+  total_member: 498
+  description_th: >-
+    จากกรณีการถูกละเมิดสิทธิมนุษยชนและถูกประทุษร้ายของประชาชน
+    โดยเฉพาะปัญหาความรุนแรงในพื้นที่จังหวัดชายแดนใต้ ส.ส.
+    หลายพรรคเห็นว่าเกิดจากข้อผิดพลาดเรื่องการกำหนดนโยบายรัฐบาลทั้งอดีตและปัจจุบัน
+    รวมถึงการละเมิดสิทธิมนุษยชน ที่มีการละเมิดสิทธิการเคลื่อนไหวการต่อสู้
+    เพื่อเรียกร้องสิทธิเสรีภาพตามรัฐธรรมนูญทั่วประเทศนั้นก็เกิดขึ้นบ่อยครั้ง
+    แต่กลับหาตัวผู้ทำผิดหรือผู้อยู่เบื้องหลังมาลงโทษไม่ได้
+
+
+    สภาผู้แทนราษฎร จึงเห็นชอบตั้งคณะกรรมาธิการวิสามัญเพื่อตรวจ สอบและศึกษา
+    ติดตามการทำงานของหน่วยงานภาครัฐต่อการถูกละเมิดสิทธิมนุษยชนและถูกประทุษร้ายของประชาชน
+    เพื่อตรวจสอบและติดตาม
+  description_en: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191219171121A1.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4175
 - id: '11'
+  title: >-
+    ขอถอนญัตติ ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบกฎอัยการศึก และพรก.ฉุกเฉินในพื้นที่
+    3 จังหวัดชายแดนภาคใต้
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ขอถอนญัตติ
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาเพื่อศึกษาผลกระทบการบังคับใช้พระราชบัญญัติกฎอัยการศึก
+    พ.ศ. 2547 และพระราชกำหนดการบริหารราชการในสถานการณ์ฉุกเฉิน พ.ศ. 2548
+    ในพื้นที่ 3 จังหวัดชายแดนภาคใต้
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-11-27'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  approve: 411
+  disprove: 0
+  abstained: 3
+  total_voter: 414
+  absent: 85
+  total_member: 499
+  description_th: ''
+  description_en: ''
+  document:
+    - title: ''
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191219171121A1.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4170
+- id: '12'
+  title: ตั้ง กมธ. วิสามัญ ตรวจสอบโครงการก่อสร้างอาคารรัฐสภาแห่งใหม่
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: ตั้งคณะกรรมาธิการวิสามัญตรวจสอบโครงการก่อสร้างอาคารรัฐสภาแห่งใหม่
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-12-21'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  approve: 354
+  disprove: 0
+  abstained: 2
+  total_voter: 356
+  absent: 142
+  total_member: 498
+  description_th: >-
+    จากกรณีที่สังคมตั้งคำถามว่า การก่อสร้างรัฐสภาใหม่ ที่สำนักงานเลขาธิการสภาฯ
+    ว่าจ้างบริษัท ซิโน-ไทย เอ็นจีเนียริ่ง แอนด์คอนสตรัคชั่น จำกัด (มหาชน) วงเงิน
+    1.2 หมื่นล้านบาท สัญญาหลัก 900 วัน ที่ต้องแล้วเสร็จ 24 พ.ย. 2558 นั้น
+    มีเหตุผลอย่างไรที่ทำการก่อสร้างไม่แล้วเสร็จและต้องต่อสัญญาไปอีก 4 ครั้ง
+    ทำให้รวมเวลาก่อสร้างอาคารทั้งหมดกว่า 2,000 วัน ทั้งนี้ มีผู้ตั้งข้อสังเกตว่า
+    เหตุผลที่อ้างเพื่อขยายสัญญาก่อสร้างให้ผู้รับจ้างนั้น เพราะมีการแก้ไขแบบ
+    ทั้งๆ ที่เทคโนโลยีสมัยใหม่สามารถแก้ไขแบบได้โดยใช้เวลาไม่นาน
+    มีเจตนาทำให้แบบมีปัญหาหรือไม่
+    เพื่อใช้เป็นข้ออ้างให้ผู้ว่าจ้างขยายสัญญาโดยผู้รับจ้างไม่ได้กระทำผิดกฎหมาย
+
+
+    ที่ประชุมสภาฯ
+    มีมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญตรวจสอบโครงการก่อสร้างอาคารรัฐสภาแห่งใหม่
+    354 เสียง และงดออกเสียง 2 เสียง โดยมีกรอบระยะเวลาดำเนินงาน 60 วัน ทั้งนี้
+    นายชวน หลีกภัย ประธานสภาฯ ได้แจ้งให้ทราบด้วยว่า ตนให้เลขาธิการสภาฯ
+    ศึกษากระบวนการใช้พื้นที่อาคารรัฐสภา
+    ซึ่งเป็นเรื่องของการเตรียมการไว้ในอนาคตด้วย
+  description_en: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191220131329A1.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4176
+- id: '13'
   title: ตั้ง กมธ.วิสามัญศึกษาโครงการจัดตั้งกระทรวงการข้าว
   is_active: true
   en:
@@ -555,9 +626,238 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
-- id: '12'
-  title: ตั้ง กมธ.วิสามัญ พิจารณาศึกษาการขุดคลองไทย
+- id: '14'
+  title: ตั้ง กมธ. วิสามัญ ศึกษาแนวทางป้องกันไม่ให้เกิดการรัฐประหารขึ้นอีกในอนาคต
   is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญ
+    เพื่อศึกษาแนวทางป้องกันไม่ให้เกิดการรัฐประหารขึ้นอีกในอนาคต
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2020-02-20'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  approve: 216
+  disprove: 242
+  abstained: 2
+  total_voter: 460
+  absent: 38
+  total_member: 498
+  description_th: >-
+    จากกรณี ส.ส. พรรคฝ่ายค้าน ยกประเด็นว่าการรัฐประหาร 2
+    ครั้งล่าสุดเป็นต้นเหตุของการเกิดวิกฤติการการเมือง
+    ที่ผ่านมาประเทศไทยไม่ใช้วิถีทางประชาธิปไตยในการแก้ไขปัญหาการเมือง
+    แต่กลับใช้การรัฐประหาร เกิดการแตกขั้วทำลาย
+    ความชอบธรรมจากการเลือกตั้งและความชอบธรรมจากการตรวจสอบการใช้อำนาจรัฐ
+    ดังนั้นจึงอยากให้พิจารณาตั้งคณะกรรมาธิการวิสามัญเพื่อศึกษาแนวทางป้องกันไม่ให้เกิดรัฐประหารขึ้นอีกในอนาคต
+    ประกาศศักดิ์ศรีของผู้แทนราษฎรว่าจะไม่ยอมจำนนต่อคณะรัฐประหาร
+    และไม่ใช่ผู้แทนของคณะรัฐประหาร อีกทั้งญัตตินี้ไม่มีผลต่อความมั่นคงของรัฐบาล
+    ไม่กระทบการทำงานของรัฐบาลที่ยังบริหารงานต่อไปได้
+
+
+    ที่ประชุมสภาผู้แทนราษฎร มีมติเสียงข้างมาก 242 เสียง ไม่เห็นชอบให้มีการตั้ง
+    กมธ.ศึกษาแนวทางป้องกันรัฐประหารฯ ดังกล่าว โดยมีผู้เห็นชอบจำนวน 216 เสียง
+    งดออกเสียง 2 ราย จากจำนวนผู้เข้าประชุม 460 ราย
+  description_en: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20200220141311A1.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4193
+- id: '15'
+  title: ตั้ง กมธ.วิสามัญ ศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: พิจารณาตั้งคณะกรรมาธิการวิสามัญ เพื่อศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-07-04'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  approve: null
+  disprove: null
+  abstained: null
+  total_voter: null
+  absent: null
+  total_member: null
+  description_th: >-
+    จากญัตติด่วนที่ ส.ส. ทั้งฝ่ายรัฐบาลและฝ่ายค้าน
+    พูดถึงปัญหาราคาผลผลิตทางการเกษตรที่ตกต่ำประจำทุกปี รวมถึงสินค้าการประมง
+    จึงมีการให้แต่งตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
+    โดยให้กรรมาธิการได้รวบรวมปัญหาพิจารณาลงลึกถึงพื้นที่ที่มีความแตกต่างกัน
+    รวมทั้งให้ภาครัฐเข้ามากำกับบาทบาทของล้งด้วย
+
+
+    ประธานสภาผู้แทนราษฎร ถามมติต่อที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
+    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมมีมติเห็นชอบ ตามข้อบังคับ
+    การประชุมสภาผู้แทนราษฎร พ.ศ. 2551 ข้อ 80 โดยผลสรุป
+    มีการตั้งคณะกรรรมาธิการวิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
+    จำนวน 39 คน แบ่งเป็นสัดส่วน ส.ส.รัฐบาลจำนวน 20 คน และส.ส.ฝ่ายค้าน 19 คน
+    โดยมีกรอบระยะเวลาการศึกษาภายใน 60
+  description_en: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4142
+- id: '16'
+  title: ตั้ง กมธ.วิสามัญ ศึกษาการต่อสัญญาสัมปทานทางด่วนและรถไฟฟ้าบีทีเอส
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษากรณีการต่อสัญญาสัมปทานให้กับบริษัททางด่วนและรถไฟฟ้ากรุงเทพ
+    จำกัด (มหาชน)
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-07-11'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  approve: null
+  disprove: null
+  abstained: null
+  total_voter: null
+  absent: null
+  total_member: null
+  description_th: >-
+    กรณีที่คณะกรรมการการทางพิเศษแห่งประเทศไทย (กทพ.)
+    มีมติต่อสัญญาสัมปทานให้บริษัททางด่วนและรถไฟฟ้ากรุงเทพ จำกัด (มหาชน) อีก 30
+    ปี ใน 3 โครงการ เพื่อแลกกับการยุติข้อพิพาท 137,000 ล้านบาท
+    ส.ส.ทั้งฝ่ายรัฐบาล และฝ่ายค้าน
+    ต่างอภิปรายสนับสนุนญัตติเพื่อให้ที่ประชุมตั้งคณะกรรมาธิการวิสามัญฯ
+    ขึ้นมาศึกษากรณีดังกล่าว ก่อนที่จะมีการต่อสัญญา 
+
+
+    ประธานสภาผู้แทนราษฎร ถามมติต่อที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
+    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมมีมติเห็นชอบ ตามข้อบังคับ
+    การประชุมสภาผู้แทนราษฎร  พ.ศ. 2551 ข้อ 80
+  description_en: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4144
+- id: '17'
+  title: ตั้ง กมธ. วิสามัญ ศึกษาปัญหาหนี้ กยศ.
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญเพื่อศึกษา ตรวจสอบ
+    และหาแนวทางแก้ไขปัญหาลูกหนี้กองทุนเงินให้กู้ยืมเพื่อการศึกษา (กยศ.)
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-12-20'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  approve: null
+  disprove: null
+  abstained: null
+  total_voter: null
+  absent: null
+  total_member: null
+  description_th: >-
+    จากการดำเนินการกองทุน กยศ. ซึ่งมีผู้กู้กว่า 5.6 ล้านราย
+    แต่มีการชำระหนี้ร้อยละ 40 มีจำนวนผู้ผิดนัดเกือบ 3 ล้านคน
+    คิดเป็นจำนวนเงินที่ยังไม่ได้รับการชำระกว่า 4 แสนล้านบาท สภาฯ
+    เห็นว่าควรศึกษาหาแนวทางแก้ไข ทั้งแนวทางให้กับกองทุนให้ได้รับการชำระหนี้
+    และหาทางออกให้กับลูกหนี้มีโอกาสใช้หนี้ให้กับกองทุน
+    ภายใต้ภาวะเศรษฐกิจปัจจุบันที่อาจทำให้ความสามารถในการชำระหนี้ลดลง 
+
+
+    หลังการอภิปราย สภาฯ ได้ใช้ข้อบังคับการประชุมสภาฯ ข้อที่ 88
+    ให้ตั้งกมธ.วิสามัญฯคณะดังกล่าว โดยไม่ต้องลงมติ
+    เนื่องจากที่ประชุมอภิปรายสนับสนุนกันอย่างถ้วนหน้า ซึ่งที่ประชุมเห็นชอบ
+    ก่อนตั้งคณะกรรมาธิการวิสามัญเพื่อ พิจารณาศึกษาข้อเท็จจริง
+    และแนวทางการบริหารจัดการกองทุนกยศ.ต่อไป
+  description_en: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4176
+- id: '18'
+  title: ตั้ง กมธ. วิสามัญ ศึกษาปัญหาการข่มขืนกระทำชำเรา
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาหาแนวทางป้องกันและแก้ไขปัญหาเกี่ยวกับการข่มขืนกระทำชำเรา
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-12-26'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  approve: null
+  disprove: null
+  abstained: null
+  total_voter: null
+  absent: null
+  total_member: null
+  description_th: ''
+  description_en: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4179
+- id: '19'
+  title: ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบของการใช้กัญชาในประเทศไทย
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาความเป็นไปได้และตรวจสอบผลกระทบของการใช้กัญชาในรูปแบบต่าง
+    ๆ ในประเทศไทย
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-12-26'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  approve: null
+  disprove: null
+  abstained: null
+  total_voter: null
+  absent: null
+  total_member: null
+  description_th: ''
+  description_en: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4180
+- id: '20'
+  title: ตั้ง กมธ.วิสามัญ พิจารณาศึกษาการขุดคลองไทย
+  is_active: false
   en:
     title: ''
     legal_title: ''
@@ -603,9 +903,9 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
-- id: '13'
+- id: '21'
   title: ตั้ง กมธ.วิสามัญ พิจารณาราคาหนังสัตว์ โค – กระบือ ตกต่ำ
-  is_active: true
+  is_active: false
   en:
     title: ''
     legal_title: ''
@@ -642,9 +942,9 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
-- id: '14'
+- id: '22'
   title: ตั้ง กมธ.วิสามัญ พิจารณาปัญหาหนี้และค่าครองชีพสูงจากราคาน้ำมัน แก๊ส ไฟฟ้า
-  is_active: true
+  is_active: false
   en:
     title: ''
     legal_title: ''
@@ -682,79 +982,65 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
-- id: '15'
-  title: ตั้ง กมธ.วิสามัญ ตรวจสอบละเมิดสิทธิมนุษยชน
-  is_active: true
+- id: '23'
+  title: ตั้ง กมธ. วิสามัญศึกษาปัญหาฝุ่น PM 2.5
+  is_active: false
   en:
     title: ''
     legal_title: ''
   legal_title: >-
-    ตั้งคณะกรรมาธิการวิสามัญเพื่อตรวจ สอบและศึกษา
-    ติดตามการทำงานของหน่วยงานภาครัฐ
-    ต่อการถูกละเมิดสิทธิมนุษยชนและถูกประทุษร้ายของประชาชน
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการป้องกันและแก้ไขปัญหาฝุ่นละอองขนาดเล็ก
+    (PM 2.5) อย่างเป็นระบบ
   meeting: ประชุมส.ส.
   type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2019-12-19'
+  vote_date: '2020-01-22'
   prayuth: ''
   thanathorn: ''
   passed: true
-  approve: 411
-  disprove: 0
-  abstained: 3
-  total_voter: 414
-  absent: 84
-  total_member: 498
-  description_th: >-
-    จากกรณีการถูกละเมิดสิทธิมนุษยชนและถูกประทุษร้ายของประชาชน
-    โดยเฉพาะปัญหาความรุนแรงในพื้นที่จังหวัดชายแดนใต้ ส.ส.
-    หลายพรรคเห็นว่าเกิดจากข้อผิดพลาดเรื่องการกำหนดนโยบายรัฐบาลทั้งอดีตและปัจจุบัน
-    รวมถึงการละเมิดสิทธิมนุษยชน ที่มีการละเมิดสิทธิการเคลื่อนไหวการต่อสู้
-    เพื่อเรียกร้องสิทธิเสรีภาพตามรัฐธรรมนูญทั่วประเทศนั้นก็เกิดขึ้นบ่อยครั้ง
-    แต่กลับหาตัวผู้ทำผิดหรือผู้อยู่เบื้องหลังมาลงโทษไม่ได้
-
-
-    สภาผู้แทนราษฎร จึงเห็นชอบตั้งคณะกรรมาธิการวิสามัญเพื่อตรวจ สอบและศึกษา
-    ติดตามการทำงานของหน่วยงานภาครัฐต่อการถูกละเมิดสิทธิมนุษยชนและถูกประทุษร้ายของประชาชน
-    เพื่อตรวจสอบและติดตาม
+  approve: null
+  disprove: null
+  abstained: null
+  total_voter: null
+  absent: null
+  total_member: null
+  description_th: ''
   description_en: ''
   document:
-    - title: ใบประมวลผลการลงมติ
-      link: >-
-        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191219171121A1.pdf
+    - title: ''
+      link: ''
     - title: ''
       link: ''
   reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4175
-- id: '16'
-  title: >-
-    ตั้ง กมธ. วิสามัญ
-    เพื่อศึกษาแนวทางป้องกันไม่ให้เกิดการรัฐประหารขึ้นอีกในอนาคต
-  is_active: true
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4183
+- id: '24'
+  title: ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบจาก พรบ. e-Payment
+  is_active: false
   en:
     title: ''
     legal_title: ''
   legal_title: >-
-    ตั้งคณะกรรมาธิการวิสามัญ
-    เพื่อศึกษาแนวทางป้องกันไม่ให้เกิดการรัฐประหารขึ้นอีกในอนาคต
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาในเรื่องผลกระทบจากการประกาศใช้พระราชบัญญัติแก้ไขเพิ่มเติมประมวลรัษฎากร
+
+    (ฉบับที่ 48) พ.ศ. 2562 ประเด็นการทำธุรกรรมผ่านช่องทางอิเล็กทรอนิกส์
+    (e-Payment)
   meeting: ประชุมส.ส.
   type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2020-02-20'
+  vote_date: '2020-02-05'
   prayuth: ''
   thanathorn: ''
-  passed: false
-  approve: 216
-  disprove: 242
-  abstained: 2
-  total_voter: 460
-  absent: 38
-  total_member: 498
+  passed: true
+  approve: null
+  disprove: null
+  abstained: null
+  total_voter: null
+  absent: null
+  total_member: null
   description_th: ''
   description_en: ''
   document:
     - title: ใบประมวลผลการลงมติ
-      link: >-
-        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20200220141311A1.pdf
+      link: ''
     - title: ''
       link: ''
   reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4193
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4188

@@ -102,7 +102,7 @@ const cssSection = {
 
 const filterVote = (combined, key, value) =>
   _.filter(combined, o => {
-    return _.find(o.votelog, p => p.key === key).value === value
+    return _.find(o.votelog || [], p => p.key === key).value === value
   })
 
 const VotelogPage = ({

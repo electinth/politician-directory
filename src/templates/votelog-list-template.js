@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
@@ -158,7 +158,7 @@ const VoteLogPage = ({
           <Router>
             {votelogs ? (
               <VoteLogWrapper
-                path={currentPage == 1 ? "/votelog" : "/votelog/page/:id"}
+                path={currentPage === 1 ? "/votelog" : "/votelog/page/:id"}
                 data={votelogs}
               />
             ) : (
