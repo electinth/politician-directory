@@ -2,7 +2,7 @@
   They Work For Us
 </h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1165ad17-98ee-45b6-acb3-f552ed565abf/deploy-status)](https://app.netlify.com/sites/quirky-hodgkin-ae5fd3/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1165ad17-98ee-45b6-acb3-f552ed565abf/deploy-status)](https://app.netlify.com/sites/quirky-hodgkin-ae5fd3/deploys) [![](https://circleci.com/gh/codeforthailand/politician-directory.svg?style=svg)](https://circleci.com/gh/codeforthailand/politician-directory)
 
 **They Work For Us** is an open-source politician directory project for listing and tracking activities of members of the Cabinet and National Assembly of Thailand. It's run on [Gatsby](https://www.gatsbyjs.org).
 

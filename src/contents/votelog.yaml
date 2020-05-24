@@ -1,5 +1,6 @@
 - id: '1'
   title: ลงมติเลือกนายกรัฐมนตรี
+  is_active: false
   en:
     title: Prime Minister Approval
     legal_title: >-
@@ -45,9 +46,9 @@
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190606122944A0.pdf
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4135#!
-  is_active: false
 - id: '2'
   title: ตั้งคณะกรรมาธิการผู้มีความหลากหลายทางเพศ
+  is_active: true
   en:
     title: Vote to set up separate Standing Committee on LGBT rights
     legal_title: >-
@@ -99,9 +100,9 @@
         https://library2.parliament.go.th/giventake/content_give/force-hr2562.pdf
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4154
-  is_active: true
 - id: '3'
   title: ขยายสัญญาสัมปทานทางด่วนและรถไฟฟ้าบีทีเอส
+  is_active: true
   en:
     title: Extend the concessions of expressway and BTS
     legal_title: >-
@@ -148,9 +149,9 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4156#!
-  is_active: true
 - id: '4'
   title: ตั้งคณะกรรมาธิการวิสามัญพิจารณาผลกระทบโครงการอีอีซี
+  is_active: true
   en:
     title: Agenda to set up committee on EEC
     legal_title: Extend the concessions of expressway and BTS
@@ -220,9 +221,9 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4158#!
-  is_active: true
 - id: '5'
   title: พิจารณาพ.ร.ก.โอนกำลังพลและงบประมาณฯ
+  is_active: true
   en:
     title: >-
       An approval of executive decree on the transfer of army units, and budget,
@@ -294,9 +295,9 @@
       link: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/A/103/T_0001.PDF'
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4162
-  is_active: true
 - id: '6'
   title: พ.ร.บ.งบประมาณฯ วาระที่ 1
+  is_active: true
   en:
     title: The First Reading of 2020 budget
     legal_title: ''
@@ -363,4 +364,321 @@
       link: 'http://bbstore.bb.go.th/cms/1570699357_1282.pdf'
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4162
+- id: '7'
+  title: ตั้ง กมธ.วิสามัญ ศึกษาผลกระทบจาก ม. 44
   is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    พิจารณาตั้งคณะกรรมาธิการวิสามัญ เพื่อศึกษาผลกระทบจากการกระทำ ประกาศ
+    และคำสั่งของคณะรักษาความสงบแห่งชาติ
+    และการใช้อำนาจของหัวหน้าคณะรักษาความสงบแห่งชาติ ตามมาตรา 44
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-12-04'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  approve: 5
+  disprove: 244
+  abstained: 6
+  total_voter: 255
+  absent: 243
+  total_member: 498
+  description_th: ''
+  description_en: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191206075729A1.pdf
+    - title: ''
+      link: ''
+  reference: ''
+- id: '8'
+  title: ตั้ง กมธ.วิสามัญ ศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: พิจารณาตั้งคณะกรรมาธิการวิสามัญ เพื่อศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-07-04'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  approve: null
+  disprove: null
+  abstained: null
+  total_voter: null
+  absent: null
+  total_member: null
+  description_th: >-
+    จากญัตติด่วนที่ ส.ส. ทั้งฝ่ายรัฐบาลและฝ่ายค้าน
+    พูดถึงปัญหาราคาผลผลิตทางการเกษตรที่ตกต่ำประจำทุกปี รวมถึงสินค้าการประมง
+    จึงมีการให้แต่งตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
+    โดยให้กรรมาธิการได้รวบรวมปัญหาพิจารณาลงลึกถึงพื้นที่ที่มีความแตกต่างกัน
+    รวมทั้งให้ภาครัฐเข้ามากำกับบาทบาทของล้งด้วย
+
+
+    ประธานสภาผู้แทนราษฎร ถามมติต่อที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
+    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมมีมติเห็นชอบ ตามข้อบังคับ
+    การประชุมสภาผู้แทนราษฎร พ.ศ. 2551 ข้อ 80 โดยผลสรุป
+    มีการตั้งคณะกรรรมาธิการวิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
+    จำนวน 39 คน แบ่งเป็นสัดส่วน ส.ส.รัฐบาลจำนวน 20 คน และส.ส.ฝ่ายค้าน 19 คน
+    โดยมีกรอบระยะเวลาการศึกษาภายใน 60
+  description_en: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4142
+- id: '9'
+  title: ตั้ง กมธ.วิสามัญ ศึกษาการต่อสัญญาสัมปทานทางด่วนและรถไฟฟ้าบีทีเอส
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษากรณีการต่อสัญญาสัมปทานให้กับบริษัททางด่วนและรถไฟฟ้ากรุงเทพ
+    จำกัด (มหาชน)
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-07-11'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  approve: null
+  disprove: null
+  abstained: null
+  total_voter: null
+  absent: null
+  total_member: null
+  description_th: >-
+    กรณีที่คณะกรรมการการทางพิเศษแห่งประเทศไทย (กทพ.)
+    มีมติต่อสัญญาสัมปทานให้บริษัททางด่วนและรถไฟฟ้ากรุงเทพ จำกัด (มหาชน) อีก 30
+    ปี ใน 3 โครงการ เพื่อแลกกับการยุติข้อพิพาท 137,000 ล้านบาท
+    ส.ส.ทั้งฝ่ายรัฐบาล และฝ่ายค้าน
+    ต่างอภิปรายสนับสนุนญัตติเพื่อให้ที่ประชุมตั้งคณะกรรมาธิการวิสามัญฯ
+    ขึ้นมาศึกษากรณีดังกล่าว ก่อนที่จะมีการต่อสัญญา 
+
+
+    ประธานสภาผู้แทนราษฎร ถามมติต่อที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
+    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมมีมติเห็นชอบ ตามข้อบังคับ
+    การประชุมสภาผู้แทนราษฎร  พ.ศ. 2551 ข้อ 80
+  description_en: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4144
+- id: '10'
+  title: ตั้ง กมธ.วิสามัญศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-09-13'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  approve: 400
+  disprove: 0
+  abstained: 0
+  total_voter: 400
+  absent: 97
+  total_member: 497
+  description_th: >-
+    จากประเด็นสารเคมี 3 ตัว ประกอบด้วย พาราควอต ไกลโฟเซต และคลอร์ไพริฟอส
+    ถูกใช้ในภาคเกษตรกรรมและเป็นอันตรายต่อสุขภาพของคนไทยจำนวนมาก
+    ส.ส.จากทุกพรรคการเมืองอภิปรายไปในทางเดียวกันว่าเห็นด้วยกับการยกเลิกสารเคมีดังกล่าว
+    จากนั้นที่ประชุมลงมติเป็นเอกฉันท์ให้ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
+  description_en: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190917112227A5.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4158
+- id: '11'
+  title: ตั้ง กมธ.วิสามัญศึกษาโครงการจัดตั้งกระทรวงการข้าว
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาโครงการจัดตั้งกระทรวงการข้าว
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2020-01-16'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  approve: 10
+  disprove: 343
+  abstained: 2
+  total_voter: 355
+  absent: 142
+  total_member: 497
+  description_th: >-
+    ด้วยปัจจุบันประชากรส่วนใหญ่ของประเทศประกอบอาชีพเกษตรกรรม
+    แต่กลับมีฐานะยากจนและถูกเอารัดเอาเปรียบมาโดยตลอด
+    อีกทั้งการบริหารจัดการข้าวในอดีตเป็นภารกิจที่อยู่ในความรับผิดชอบของหลายหน่วยงาน
+    ทำให้ไม่สามารถบริหารจัดการข้าวได้อย่างมีระบบและครบวงจร
+    จนเกิดช่องว่างระหว่างภาคการผลิต การแปรรูป และการจำหน่าย
+    ซึ่งกรณีดังกล่าวเป็นเรื่องที่ส่งผลกระทบ ทั้งในด้านเศรษฐกิจ
+    คุณภาพชีวิตความเป็นอยู่ของประชาชน และความมั่นคงของประเทศ
+
+
+    จึงมีญัตติขอเสนอให้ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาโครงการจัดตั้งกระทรวงการข้าว
+    แต่เนื่องจากสมาชิกมีความเห็นต่าง
+    ให้ส่งเรื่องไปยังคณะกรรมาธิการการเกษตรและสหกรณ์ ประธานได้ขอมติที่ประชุม
+
+    ซึ่งที่ประชุมลงมติเห็นด้วย 343 เสียง
+    ให้ส่งคณะกรรมาธิการการเกษตรและสหกรณ์ต่อไป
+  description_en: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20200116150748A3.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
+- id: '12'
+  title: ตั้ง กมธ.วิสามัญ พิจารณาศึกษาการขุดคลองไทย
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: ตั้งคณะกรรมาธิการวิสามัญ พิจารณาศึกษาการขุดคลองไทย
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2020-01-16'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  approve: null
+  disprove: null
+  abstained: null
+  total_voter: null
+  absent: null
+  total_member: null
+  description_th: >-
+    การขุดคลองไทยนับเป็นคลองหนึ่งที่มีความสาคัญ ทางยุทธศาสตร์การเดินเรือ
+    ซึ่งจะเป็นโครงการที่สร้างรายได้ให้แก่ประเทศชาติอย่างมหาศาล และได้รับ
+    ผลประโยชน์ทั้งทางตรงและทางอ้อม
+    ก่อให้เกิดประโยชน์ต่อประเทศชาติในด้านความมั่นคง โดยใช้เป็นเส้นทางเดินเรือรบ
+    เรือขนส่งน้ำมัน เรือขนสินค้า
+    และเรือประมงสามารถเข้าออกได้โดยไม่ต้องผ่านน่านน้ำประเทศเพื่อนบ้าน
+    หากมีความขัดแย้งทางด้านอ่าวไทยจะสามารถสร้างอานาจทางทหารและความอิสระในการขนส่งทางทะเลได้อย่างไม่มีข้อจำกัด 
+
+
+    ด้านเศรษฐกิจจะช่วยให้ประเทศที่เดินเรือทั่วโลก สามารถประหยัดพลังงาน
+    ประหยัดการใช้น้ำมันในการส่งสินค้าทางทะเลได้เป็นจำนวนมาก
+    ทำให้ผู้ประกอบการมีรายได้เพิ่มมากขึ้นและสามารถเป็นแหล่งท่องเที่ยวทางทะเลระหว่างประเทศได้อีกด้วย 
+
+
+    เนื่องจากรองประธานสภาผู้แทนราษฎร คนที่หนึ่ง ถามที่ประชุมว่ามีผู้เห็นเป็น
+    อย่างอื่นหรือไม่ เมื่อไม่มีผู้เห็นเป็นอย่างอื่น
+    จึงถือว่าที่ประชุมลงมติเห็นชอบ กับญัตติดังกล่าว ตามข้อบังคับฯ ข้อ 88
+    ให้ตั้งคณะกรรมาธิการวิสามัญพิจารณา ศึกษาขุดคลองไทย และ
+    การพัฒนาพื้นที่ระเบียงเศรษฐกิจภาคใต้ จานวน 49 คน ใช้ระยะเวลาในการพิจารณา 120
+    วัน
+  description_en: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
+- id: '13'
+  title: ตั้ง กมธ.วิสามัญ พิจารณาราคาหนังสัตว์ โค – กระบือ ตกต่ำ
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: ตั้งคณะกรรมาธิการวิสามัญ พิจารณาเรื่องราคาหนังสัตว์ โค – กระบือ ตกต่ำ
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2020-01-16'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  approve: null
+  disprove: null
+  abstained: null
+  total_voter: null
+  absent: null
+  total_member: null
+  description_th: >-
+    ราคาหนังโคกระบือตกต่ำมาก เนื่องจากโรงงานฟอกหนังที่อยู่ในจังหวัด สมุทรปราการ
+    นำหนังโคกระบือเข้ามาจากต่างประเทศเป็นจำนวนมาก
+    และมีการยกเว้นภาษีการนำเข้าหนังโคกระบือมาใช้ในการอุตสาหกรรม
+    ซึ่งกลายเป็นที่รองรับขยะพิษจากการฟอกหนัง และปล่อยน้ำเสียไหลลงอ่าวไทย
+    อีกทั้งไม่ให้ความสนใจซื้อหนังโคกระบือในประเทศไทยจึงทำให้ราคาหนังโคกระบือตกต่ำลง
+
+
+    ที่ประชุมมีมติให้ส่งคณะกรรมาธิการการเกษตรและสหกรณ์ต่อไป
+    ประธานสภาผู้แทนราษฎรถามที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
+    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมลงมติเห็นชอบ ตามข้อบังคับฯ
+    ข้อ 88
+  description_en: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
+- id: '14'
+  title: ตั้ง กมธ.วิสามัญ พิจารณาปัญหาหนี้และค่าครองชีพสูงจากราคาน้ำมัน แก๊ส ไฟฟ้า
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณา ศึกษา ปัญหาหนี้สินในครัวเรือน หนี้สินภาครัฐ
+    รวมทั้งค่าครองชีพสูงจากราคาน้ำมัน แก๊ส ไฟฟ้า
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2020-01-16'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  approve: null
+  disprove: null
+  abstained: null
+  total_voter: null
+  absent: null
+  total_member: null
+  description_th: >-
+    ปัญหาหนี้สินในครัวเรือนเพิ่มขึ้นอย่างต่อเนื่องทุกปี นอกจากนี้
+    ประชาชนยังต้องแบกภาระค่าบริการโครงการพื้นฐาน
+    ซึ่งใช้เงินลงทุนจากภาษีของประชาชน ที่ผ่านมารัฐบาลใช้งบประมาณ 17 ล้านล้านบาท
+    แต่กลับ ส่งผลให้หนี้สินภาคครัวเรือนสูงขึ้นเป็น 3.1 แสนล้านบาท
+    ภาครัฐจึงต้องมีมาตรการในการแก้ไขปัญหาที่ส่งผลกระทบต่อการดำเนินชีวิตของประชาชนอย่างเร่งด่วน
+
+
+    ที่ประชุมขอส่งญัตติไปยังคณะกรรมาธิการแก้ไขปัญหาหนี้สินแห่งชาติ
+    จากนั้นประธานได้ใช้ข้อบังคับการประชุมสภาผู้แทนราษฎร ข้อ 88
+    ถือว่าที่ประชุมมีมติเห็นชอบให้ส่งญัตติไปให้คณะกรรมาธิการแก้ไขปัญหาหนี้สินแห่งชาติพิจารณาศึกษา
+  description_en: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182

@@ -25,6 +25,11 @@ curl -s 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRyM5D8LOVvjGICiUdbQ4pP
   | sed '1d' > tmp/people_vote.csv
 node -r esm csv2yaml tmp/people_vote.csv >> build.log
 
+# Motion
+curl -s 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRyM5D8LOVvjGICiUdbQ4pPGdudulFq-uoek_ATkLOTi7AI9qMH7FhlwONC4N-TVLjokombSYfDu6G5/pub?gid=396727430&single=true&output=csv' \
+  | sed '1d' > tmp/motion.csv
+node -r esm csv2yaml tmp/motion.csv >> build.log
+
 # Translations
 curl -s 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRyM5D8LOVvjGICiUdbQ4pPGdudulFq-uoek_ATkLOTi7AI9qMH7FhlwONC4N-TVLjokombSYfDu6G5/pub?gid=348578468&single=true&output=csv' \
   | sed '1d' > tmp/translation.csv
