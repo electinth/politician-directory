@@ -6,12 +6,14 @@ import FloatingCard from "../components/floatingCard"
 import HiddenOnMobile from "../components/hiddenOnMobile"
 import { media } from "../styles"
 import ExternalLink from "../components/externalLink"
+import MotionSubCatCard from "../components/motionSubCatCard"
 
 const cssH1 = { fontSize: "4.8rem", margin: "0", color: "var(--cl-black)" }
-const cssH3 = { fontSize: "2rem", marginBottom: "2rem" }
+const cssH2 = { fontSize: "3.6rem", marginBottom: "2.4rem" }
+const cssH3 = { fontSize: "2.4rem", margin: "5.2rem 0 2.8rem 0" }
 const cssP = { lineHeight: "1.8" }
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   return (
     <Layout
       pageStyles={{
@@ -21,13 +23,12 @@ const IndexPage = () => {
       <SEO title="Motions" />
       <section>
         <div className="container-motion">
-          <FloatingCard cardStyles={{ padding: "4rem" }}>
+          <FloatingCard style={{ padding: "4rem" }}>
             <div
               css={{
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                marginBottom: "4rem",
                 [media(767)]: {
                   justifyContent: "space-between",
                 },
@@ -84,6 +85,44 @@ const IndexPage = () => {
               </HiddenOnMobile>
             </div>
           </FloatingCard>
+        </div>
+      </section>
+      <section style={{ marginTop: "8rem" }}>
+        <div className="container-motion">
+          <div>
+            <h2 css={cssH2}>ประเด็นญัตติ</h2>
+            <p>
+              คลิกเพื่อดูญัตติทั้งหมดในประเด็นต่างๆ
+              ที่นำเสนอโดยคณะกรรมธิการสามัญ
+            </p>
+          </div>
+          <div css={{ marginBottom: "8rem" }}>
+            <h3 style={cssH3}>สังคม</h3>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+              }}
+            >
+              <MotionSubCatCard
+                slug={"/motions/category/1"}
+                id={"1"}
+                title={"วิทยาศาสตร์ เทคโนโลยี ดิจิทัล วิจัย และนวัตกรรม"}
+                count={12}
+                css={{
+                  margin: "0 0 2rem 0",
+                  width: "100%",
+                  [media(767)]: {
+                    width: "calc((100% - 4rem) / 3)",
+                    margin: "0 2rem 2rem 0",
+                    "&:nth-of-type(2n+3)": {
+                      margin: "0 0 2rem 0",
+                    },
+                  },
+                }}
+              ></MotionSubCatCard>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>
