@@ -36,6 +36,7 @@ const MotionSubCatCard = ({ type, ...props }) => {
         style={{
           padding: "2rem",
           display: "flex",
+          flex: "0 1 4.5rem",
           justifyContent: "space-between",
           height: "100px",
           alignItems: "center",
@@ -44,9 +45,11 @@ const MotionSubCatCard = ({ type, ...props }) => {
       >
         <Img
           fixed={data.placeholderImage.childImageSharp.fixed}
-          style={{ marginRight: "16px", flexShrink: "0" }}
+          css={{ marginRight: "16px", flexShrink: "0" }}
         />
-        <h2 style={{ margin: "0" }}>{props.title}</h2>
+        <div css={{ flexGrow: "1" }}>
+          <h2 style={{ margin: "0" }}>{props.title}</h2>
+        </div>
         <div
           css={{
             display: "flex",
