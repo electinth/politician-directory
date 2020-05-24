@@ -23,6 +23,19 @@ const IndexPage = ({ data }) => {
       <SEO title="Motions" />
       <section>
         <div className="container-motion">
+          <div
+            css={{
+              color: "var(--cl-gray-2)",
+              textAlign: "right",
+              margin: "1rem 0 3.2rem 0",
+            }}
+          >
+            ข้อมูลล่าสุดวันที่ 29 กุมภาพันธ์ 2562
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container-motion">
           <FloatingCard style={{ padding: "4rem" }}>
             <div
               css={{
