@@ -1,5 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
+import styled from "@emotion/styled"
+
+import Layout from "../components/layout"
 
 export const query = graphql`
   query($id: String!) {
@@ -34,13 +37,45 @@ export const query = graphql`
   }
 `
 
+const Member = ({ motion: { purposers, seconders } }) => {
+  return (
+    <ul>
+      <li>
+        ผู้เสนอ
+        <ul>
+          {purposers.map(({ title, name, last_name, party }) => (
+            <li key={name + last_name}>
+              {name} {last_name}
+            </li>
+          ))}
+        </ul>
+      </li>
+      <li>
+        ผู้รับรอง
+        <ul>
+          {seconders.map(({ title, name, last_name, party }) => (
+            <li key={name + last_name}>
+              {name} {last_name}
+            </li>
+          ))}
+        </ul>
+      </li>
+    </ul>
+  )
+}
+
 const MotionPage = props => {
   const {
     data: { motion },
   } = props
 
   console.log(props)
-  return <h1>Motion Detail Pages {motion.name}</h1>
+  return (
+    <Layout>
+      Motion Detail Pages {motion.name}
+      <Member motion={motion} />
+    </Layout>
+  )
 }
 
 export default MotionPage
