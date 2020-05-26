@@ -19,6 +19,7 @@
   approve: null
   disprove: null
   abstained: 3
+  field16: '0'
   total_voter: 747
   absent: 1
   total_member: 748
@@ -69,6 +70,7 @@
   approve: 101
   disprove: 365
   abstained: 13
+  field16: '0'
   total_voter: 479
   absent: 20
   total_member: 499
@@ -120,6 +122,7 @@
   approve: 412
   disprove: 25
   abstained: 20
+  field16: '0'
   total_voter: 457
   absent: 40
   total_member: 497
@@ -168,6 +171,7 @@
   approve: 224
   disprove: 231
   abstained: 2
+  field16: '0'
   total_voter: 457
   absent: 40
   total_member: 497
@@ -220,7 +224,7 @@
     - title: ''
       link: ''
   reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4158#!
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4158
 - id: '5'
   title: พิจารณาพ.ร.ก.โอนกำลังพลและงบประมาณฯ
   is_active: true
@@ -242,6 +246,7 @@
   approve: 374
   disprove: 70
   abstained: 2
+  field16: '0'
   total_voter: 446
   absent: 40
   total_member: 486
@@ -313,6 +318,7 @@
   approve: 251
   disprove: 0
   abstained: 234
+  field16: '0'
   total_voter: 485
   absent: 12
   total_member: 497
@@ -381,6 +387,7 @@
   approve: 400
   disprove: 0
   abstained: 0
+  field16: '0'
   total_voter: 400
   absent: 97
   total_member: 497
@@ -413,11 +420,24 @@
   passed: true
   approve: 392
   disprove: 0
-  abstained: 2
+  abstained: 1
+  field16: '1'
   total_voter: 394
   absent: 104
   total_member: 498
-  description_th: ''
+  description_th: >-
+    เนื่องจากภาคตะวันออกเฉียงเหนือเป็นภูมิภาคที่มีพื้นที่การเกษตรจำนวนเกือบ
+    70,000,000 ไร่ แต่มีพื้นที่ชลประทานน้อยที่สุดเพียง 8.06 ล้านไร่
+    หรือคิดเป็นร้อยละ 11.53 ของพื้นที่การเกษตร ทำให้พื้นที่อีก 60 ล้านไร่
+    ต้องอาศัยน้ำฝนเพื่อทำการเกษตร ทำให้ขาดความมั่นคงในเรื่องน้ำ
+    ในช่วงฤดูฝนพื้นที่ดังกล่าวต้องประสบปัญหาน้ำท่วม
+    และในฤดูแล้งต้องประสานงานการผลิตและน้ำเป็นประจำเกือบทุกปี
+    ทำให้ผลผลิตข้าวนาปีและผลผลิตทางการเกษตรต่างๆ
+    มีปริมาณการผลิตที่ค่อนข้างต่ำกว่าทุกภูมิภาคของประเทศ
+    ส่งผลให้เกษตรกรในพื้นที่มีรายได้ไม่เพียงพอต่อการยังชีพ
+    จึงได้รับความเดือดร้อน ดังนั้น ที่ประชุมจึงพิจารณาตั้งกรรมาธิการวิสามัญ
+    เพื่อศึกษาว่าหากพื้นที่ดังกล่าวมีการก่อสร้างโครงการผันน้ำโขง เลย ชี มูล
+    ป่าสัก จะก่อให้เกิดประโยชน์ต่อประชาชนหรือไม่
   description_en: ''
   document:
     - title: ใบประมวลผลการลงมติ
@@ -446,10 +466,33 @@
   approve: 5
   disprove: 244
   abstained: 6
+  field16: '0'
   total_voter: 255
   absent: 243
   total_member: 498
-  description_th: ''
+  description_th: >-
+    จากญัตติด่วนให้ตั้งคณะกรรมาธิการวิสามัญเพื่อศึกษาผลกระทบจาก ม.44
+    ที่คงอยู่หลังช่วงรัฐประหาร ในวันที่ 27 พ.ย. 2562 ที่ประชุมได้ลงมติให้ตั้ง
+    กมธ. วิสามัญเพื่อพิจารณาญัตติดังกล่าว ผลการลงมติ
+
+    เห็นชอบด้วยคะแนนเสียง 236 เสียง ไม่เห็นชอบด้วยคะแนนเสียง 231 เสียง
+    และงดออกเสียง 2 เสียง แต่นายวิรัช รัตนเศรษฐ (พรรคพลังประชารัฐ)
+    เสนอญัตติขอให้นับคะแนนใหม่ โดยมีผู้รับรองถูกต้อง นายชวน
+
+    หลีกภัย ประธานสภาผู้แทนราษฎร
+    แจ้งต่อที่ประชุมว่าสมาชิกสามารถใช้สิทธิให้นับคะแนนใหม่ได้ ตามข้อบังคับฯ ข้อ
+    85
+    โดยเปลี่ยนวิธีการนับคะแนนใหม่เป็นวิธีเรียกชื่อสมาชิกตามหมายเลขประจำตัวสมาชิก
+    ตาม
+
+    ข้อบังคับฯ ข้อ 83 (2) ซึ่งพรรคร่วมฝ่ายค้านได้อภิปรายไม่เห็นด้วย
+    และมีการเดินออกจากห้องประชุม (walk out) ทำให้องค์ประชุมไม่ครบ
+    ญัตติดังกล่าวได้รับการพิจารณาอีกครั้งในวันรุ่นขึ้น แต่ก็ไม่ครบองค์ประชุม
+    เพราะฝ่ายค้านขอคงจุดยืนไม่ร่วมนับใหม่ ทำให้ไม่สามารถลงมติได้ ญัตติดังกล่าว
+    ได้รับการพิจารณาอีกครั้งในวันที่ 4 ธันวาคม 2562 ผลการนับคะแนนปรากฎว่า
+    ที่ประชุมลงมติเห็นด้วย  5  คน ไม่เห็นด้วย 244 คน  และงดออกเสียงอีก 6 คน 
+    ทำให้ที่ประชุมมีมติ ไม่ตั้ง กมธ.วิสามัญศึกษาผลกระทบจากประกาศ และคำสั่งของ
+    คสช. และการใช้อำนาจของหัวหน้าคสช. ตามมาตรา 44
   description_en: ''
   document:
     - title: ใบประมวลผลการลงมติ
@@ -457,7 +500,8 @@
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191206075729A1.pdf
     - title: ''
       link: ''
-  reference: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4172
 - id: '10'
   title: ตั้ง กมธ.วิสามัญ ตรวจสอบละเมิดสิทธิมนุษยชน
   is_active: true
@@ -476,7 +520,8 @@
   passed: true
   approve: 411
   disprove: 0
-  abstained: 3
+  abstained: 2
+  field16: '1'
   total_voter: 414
   absent: 84
   total_member: 498
@@ -520,18 +565,19 @@
   prayuth: ''
   thanathorn: ''
   passed: true
-  approve: 411
-  disprove: 0
-  abstained: 3
-  total_voter: 414
-  absent: 85
+  approve: 240
+  disprove: 78
+  abstained: 150
+  field16: '1'
+  total_voter: 469
+  absent: 30
   total_member: 499
   description_th: ''
   description_en: ''
   document:
     - title: ''
       link: >-
-        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191219171121A1.pdf
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191128082252A1.pdf
     - title: ''
       link: ''
   reference: >-
@@ -552,6 +598,7 @@
   approve: 354
   disprove: 0
   abstained: 2
+  field16: '0'
   total_voter: 356
   absent: 142
   total_member: 498
@@ -598,6 +645,7 @@
   approve: 10
   disprove: 343
   abstained: 2
+  field16: '0'
   total_voter: 355
   absent: 142
   total_member: 497
@@ -644,6 +692,7 @@
   approve: 216
   disprove: 242
   abstained: 2
+  field16: '0'
   total_voter: 460
   absent: 38
   total_member: 498
@@ -687,6 +736,7 @@
   approve: null
   disprove: null
   abstained: null
+  field16: ''
   total_voter: null
   absent: null
   total_member: null
@@ -730,6 +780,7 @@
   approve: null
   disprove: null
   abstained: null
+  field16: ''
   total_voter: null
   absent: null
   total_member: null
@@ -771,6 +822,7 @@
   approve: null
   disprove: null
   abstained: null
+  field16: ''
   total_voter: null
   absent: null
   total_member: null
@@ -813,6 +865,7 @@
   approve: null
   disprove: null
   abstained: null
+  field16: ''
   total_voter: null
   absent: null
   total_member: null
@@ -843,6 +896,7 @@
   approve: null
   disprove: null
   abstained: null
+  field16: ''
   total_voter: null
   absent: null
   total_member: null
@@ -871,6 +925,7 @@
   approve: null
   disprove: null
   abstained: null
+  field16: ''
   total_voter: null
   absent: null
   total_member: null
@@ -919,6 +974,7 @@
   approve: null
   disprove: null
   abstained: null
+  field16: ''
   total_voter: null
   absent: null
   total_member: null
@@ -960,6 +1016,7 @@
   approve: null
   disprove: null
   abstained: null
+  field16: ''
   total_voter: null
   absent: null
   total_member: null
@@ -1000,6 +1057,7 @@
   approve: null
   disprove: null
   abstained: null
+  field16: ''
   total_voter: null
   absent: null
   total_member: null
@@ -1032,6 +1090,7 @@
   approve: null
   disprove: null
   abstained: null
+  field16: ''
   total_voter: null
   absent: null
   total_member: null
