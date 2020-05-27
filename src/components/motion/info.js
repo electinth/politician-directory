@@ -1,8 +1,9 @@
 import React from "react"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
+import MotionResult from "./motionResult"
 
-const info = function({ motion, className }) {
+const info = function({ motion, members, className }) {
   return (
     <div className={className}>
       <h2 css={css``}>
@@ -39,7 +40,7 @@ const info = function({ motion, className }) {
         `}
       />
       <div>{motion.content}</div>
-      <div>hello</div>
+      <MotionResult members={members} />
     </div>
   )
 }
