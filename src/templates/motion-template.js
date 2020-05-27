@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import styled from "@emotion/styled"
 
 import Layout from "../components/layout"
+import { css } from "@emotion/core"
 
 export const query = graphql`
   query($id: String!) {
@@ -83,10 +84,23 @@ const member = ({ className, motion: { purposers, seconders } }) => {
       </li>
       <li>
         ผู้รับรอง
-        <ul>
+        <ul
+          css={css`
+            height: 50vh;
+            overflow-y: scroll;
+            list-style: none;
+
+            & .party {
+              color: grey;
+            }
+          `}
+        >
           {seconders.map(({ title, name, last_name, party }) => (
             <li key={name + last_name}>
-              {name} {last_name}
+              <div>
+                {name} {last_name}
+              </div>
+              <div className="party">{party}</div>
             </li>
           ))}
         </ul>
@@ -96,6 +110,7 @@ const member = ({ className, motion: { purposers, seconders } }) => {
 }
 const Member = styled(member)`
   flex: 0 0 300px;
+  height: 80vh;
 `
 
 const Container = styled.div`
