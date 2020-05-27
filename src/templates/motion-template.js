@@ -4,6 +4,9 @@ import styled from "@emotion/styled"
 
 import Layout from "../components/layout"
 import { css } from "@emotion/core"
+import Info from "../components/motion/info"
+import Nominator from "../components/motion/nominator"
+import MotionMenu from "../components/motion/motionmenu"
 
 export const query = graphql`
   query($id: String!, $select_committee: String!) {
@@ -49,113 +52,6 @@ export const query = graphql`
   }
 `
 
-const motionselector = ({ motion, className }) => {
-  return (
-    <div className={className}>
-      MotionList
-      <ul></ul>
-    </div>
-  )
-}
-const MotionSelector = styled(motionselector)`
-  flex: 0 0 300px;
-`
-
-const maincontent = function({ motion, className }) {
-  return (
-    <div className={className}>
-      <h2 css={css``}>
-        <div
-          css={css`
-            font-size: 30px;
-            line-height: 50px;
-          `}
-        >
-          {motion.name}
-        </div>
-        <div>
-          <div>
-            <div className="date">
-              <span>เลขทะเบียนรับ</span>
-              <span>{motion.registration_no}</span>
-            </div>
-            <div className="date">
-              <span>วันที่เสนอ</span>
-              <span>{motion.proposal_date}</span>
-            </div>
-            <div className="date">
-              <span>วันที่ประชุม</span>
-              <span></span>
-            </div>
-          </div>
-          <div className="status">{motion.status}</div>
-        </div>
-      </h2>
-      <hr
-        css={css`
-          height: 2px;
-          background-color: lightgrey;
-        `}
-      />
-      <div>{motion.content}</div>
-      <div>hello</div>
-    </div>
-  )
-}
-
-const MainContent = styled(maincontent)`
-  margin: 50px 300px;
-  padding: 40px;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
-  min-height: 100vh;
-`
-
-const nominator = ({ className, motion: { purposers, seconders } }) => {
-  return (
-    <ul className={className}>
-      <li>
-        ผู้เสนอ
-        <ul>
-          {purposers.map(({ title, name, last_name, party }) => (
-            <li key={name + last_name}>
-              {name} {last_name}
-            </li>
-          ))}
-        </ul>
-      </li>
-      <li>
-        ผู้รับรอง
-        <ul
-          css={css`
-            height: 50vh;
-            overflow-y: scroll;
-            list-style: none;
-
-            & .party {
-              color: grey;
-            }
-          `}
-        >
-          {seconders.map(({ title, name, last_name, party }) => (
-            <li key={name + last_name}>
-              <div>
-                {name} {last_name}
-              </div>
-              <div className="party">{party}</div>
-            </li>
-          ))}
-        </ul>
-      </li>
-    </ul>
-  )
-}
-const Nominator = styled(nominator)`
-  flex: 0 0 300px;
-  height: 80vh;
-`
-
 const Container = styled.div`
   display: flex;
   flex-flow: row;
@@ -175,10 +71,10 @@ const MotionPage = props => {
   return (
     <Layout>
       <Container>
-        <MotionSelector motion={motion} />
+        <MotionMenu motion={motion} />
         <Nominator motion={motion} />
       </Container>
-      <MainContent motion={motion} />
+      <Info motion={motion} members={members} />
     </Layout>
   )
 }
