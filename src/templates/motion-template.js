@@ -112,7 +112,7 @@ const MainContent = styled(maincontent)`
   min-height: 100vh;
 `
 
-const member = ({ className, motion: { purposers, seconders } }) => {
+const nominator = ({ className, motion: { purposers, seconders } }) => {
   return (
     <ul className={className}>
       <li>
@@ -151,7 +151,7 @@ const member = ({ className, motion: { purposers, seconders } }) => {
     </ul>
   )
 }
-const Member = styled(member)`
+const Nominator = styled(nominator)`
   flex: 0 0 300px;
   height: 80vh;
 `
@@ -176,7 +176,7 @@ const MotionPage = props => {
     <Layout>
       <Container>
         <MotionSelector motion={motion} />
-        <Member motion={motion} />
+        <Nominator motion={motion} />
       </Container>
       <MainContent motion={motion} />
     </Layout>
