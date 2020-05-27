@@ -36,6 +36,19 @@ export const query = graphql`
     }
   }
 `
+
+const motionselector = ({ motion, className }) => {
+  return (
+    <div className={className}>
+      MotionList
+      <ul></ul>
+    </div>
+  )
+}
+const MotionSelector = styled(motionselector)`
+  flex: 0 0 300px;
+`
+
 const maincontent = function({ motion, className }) {
   return (
     <div className={className}>
@@ -46,11 +59,18 @@ const maincontent = function({ motion, className }) {
   )
 }
 
-const MainContent = styled(maincontent)``
+const MainContent = styled(maincontent)`
+  margin: 50px 300px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+  min-height: 100vh;
+`
 
-const Member = ({ motion: { purposers, seconders } }) => {
+const member = ({ className, motion: { purposers, seconders } }) => {
   return (
-    <ul>
+    <ul className={className}>
       <li>
         ผู้เสนอ
         <ul>
@@ -74,10 +94,16 @@ const Member = ({ motion: { purposers, seconders } }) => {
     </ul>
   )
 }
+const Member = styled(member)`
+  flex: 0 0 300px;
+`
 
 const Container = styled.div`
   display: flex;
   flex-flow: row;
+  position: absolute;
+  justify-content: space-between;
+  width: 100vw;
 `
 const MotionPage = props => {
   const {
@@ -88,9 +114,10 @@ const MotionPage = props => {
   return (
     <Layout>
       <Container>
-        <MainContent motion={motion} />
+        <MotionSelector motion={motion} />
         <Member motion={motion} />
       </Container>
+      <MainContent motion={motion} />
     </Layout>
   )
 }
