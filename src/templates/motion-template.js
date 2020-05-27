@@ -57,9 +57,20 @@ export const query = graphql`
 const Container = styled.div`
   display: flex;
   flex-flow: row;
-  position: absolute;
   justify-content: space-between;
   width: 100vw;
+
+  ${MotionMenu} {
+    flex: 0 0 300px;
+  }
+
+  ${Info} {
+    flex: 1;
+  }
+
+  ${Nominator} {
+    flex: 0 0 300px;
+  }
 `
 const MotionPage = props => {
   const {
@@ -74,9 +85,9 @@ const MotionPage = props => {
     <Layout>
       <Container>
         <MotionMenu motion={motion} />
+        <Info motion={motion} members={members} />
         <Nominator motion={motion} />
       </Container>
-      <Info motion={motion} members={members} />
     </Layout>
   )
 }

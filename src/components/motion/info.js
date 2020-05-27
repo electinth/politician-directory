@@ -46,7 +46,6 @@ const info = function({ motion, members, className }) {
 }
 
 const Info = styled(info)`
-  margin: 50px 300px;
   padding: 40px;
   border-radius: 10px;
   background-color: white;

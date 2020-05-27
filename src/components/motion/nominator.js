@@ -43,7 +43,6 @@ const nominator = ({ className, motion: { purposers, seconders } }) => {
   )
 }
 const Nominator = styled(nominator)`
-  flex: 0 0 300px;
   height: 80vh;
 `
 

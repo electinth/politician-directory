@@ -11,8 +11,6 @@ const motionmenu = ({ motion, className }) => {
     </div>
   )
 }
-const MotionMenu = styled(motionmenu)`
-  flex: 0 0 300px;
-`
+const MotionMenu = styled(motionmenu)``
 
 export default MotionMenu
