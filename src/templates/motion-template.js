@@ -31,10 +31,10 @@ export const query = graphql`
       select_committee
       status
       sub_cat
-      vote_date(formatString: "")
+      vote_date(formatString: "DD/MM/YYYY")
       vote_result
       registration_no
-      proposal_date(formatString: "")
+      proposal_date(formatString: "DD/MM/YYYY")
       page_url
       main_cat
     }
