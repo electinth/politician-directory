@@ -53,7 +53,39 @@ const MotionSelector = styled(motionselector)`
 const maincontent = function({ motion, className }) {
   return (
     <div className={className}>
-      <h2>{motion.name}</h2>
+      <h2 css={css``}>
+        <div
+          css={css`
+            font-size: 30px;
+            line-height: 50px;
+          `}
+        >
+          {motion.name}
+        </div>
+        <div>
+          <div>
+            <div className="date">
+              <span>เลขทะเบียนรับ</span>
+              <span>{motion.registration_no}</span>
+            </div>
+            <div className="date">
+              <span>วันที่เสนอ</span>
+              <span>{motion.proposal_date}</span>
+            </div>
+            <div className="date">
+              <span>วันที่ประชุม</span>
+              <span></span>
+            </div>
+          </div>
+          <div className="status">{motion.status}</div>
+        </div>
+      </h2>
+      <hr
+        css={css`
+          height: 2px;
+          background-color: lightgrey;
+        `}
+      />
       <div>{motion.content}</div>
       <div>hello</div>
     </div>
