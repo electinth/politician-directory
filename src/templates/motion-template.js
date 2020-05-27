@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import { css } from "@emotion/core"
 
 export const query = graphql`
-  query($id: String!) {
+  query($id: String!, $select_committee: String!) {
     motion: motionYaml(id: { glob: $id }) {
       id
       content
@@ -34,6 +34,17 @@ export const query = graphql`
       proposal_date(formatString: "")
       page_url
       main_cat
+    }
+
+    committee: allPeopleYaml(
+      filter: { committee: { elemMatch: { set: { eq: $select_committee } } } }
+    ) {
+      nodes {
+        id
+        name
+        lastname
+        party
+      }
     }
   }
 `
@@ -154,10 +165,13 @@ const Container = styled.div`
 `
 const MotionPage = props => {
   const {
-    data: { motion },
+    data: {
+      motion,
+      committee: { nodes: members },
+    },
   } = props
 
-  console.log(props)
+  console.log(motion, members)
   return (
     <Layout>
       <Container>

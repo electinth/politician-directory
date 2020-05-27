@@ -154,6 +154,7 @@ exports.createPages = async ({ graphql, actions }) => {
         edges {
           node {
             id
+            select_committee
             fields {
               slug
             }
@@ -168,6 +169,7 @@ exports.createPages = async ({ graphql, actions }) => {
       component: path.resolve("./src/templates/motion-template.js"),
       context: {
         id: node.id,
+        select_committee: node.select_committee,
       },
     })
   })
