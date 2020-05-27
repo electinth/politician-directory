@@ -36,6 +36,17 @@ export const query = graphql`
     }
   }
 `
+const maincontent = function({ motion, className }) {
+  return (
+    <div className={className}>
+      <h2>{motion.name}</h2>
+      <div>{motion.content}</div>
+      <div>hello</div>
+    </div>
+  )
+}
+
+const MainContent = styled(maincontent)``
 
 const Member = ({ motion: { purposers, seconders } }) => {
   return (
@@ -64,6 +75,10 @@ const Member = ({ motion: { purposers, seconders } }) => {
   )
 }
 
+const Container = styled.div`
+  display: flex;
+  flex-flow: row;
+`
 const MotionPage = props => {
   const {
     data: { motion },
@@ -72,8 +87,10 @@ const MotionPage = props => {
   console.log(props)
   return (
     <Layout>
-      Motion Detail Pages {motion.name}
-      <Member motion={motion} />
+      <Container>
+        <MainContent motion={motion} />
+        <Member motion={motion} />
+      </Container>
     </Layout>
   )
 }
