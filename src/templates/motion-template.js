@@ -40,7 +40,9 @@ export const query = graphql`
     }
 
     committee: allPeopleYaml(
-      filter: { committee: { elemMatch: { set: { eq: $select_committee } } } }
+      filter: {
+        committee: { elemMatch: { set: { eq: $select_committee, ne: "" } } }
+      }
     ) {
       nodes {
         id

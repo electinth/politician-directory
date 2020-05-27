@@ -20,7 +20,7 @@ const MotionResult = ({ members }) => {
               ))}
             </ul>
           </div>
-          <div className="party-proportion"></div>
+          <div className="party-proportion">{members.length}</div>
         </div>
       </section>
     </div>
