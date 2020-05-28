@@ -68,6 +68,11 @@ const Container = styled.div`
   top: 0;
   left: 0;
 
+  pointer-events: none;
+  & * {
+    pointer-events: all;
+  }
+
   ${MotionMenu} {
     flex: 0 0 300px;
   }
