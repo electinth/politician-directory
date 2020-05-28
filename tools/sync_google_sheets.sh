@@ -26,7 +26,7 @@ curl -s 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRyM5D8LOVvjGICiUdbQ4pP
 node -r esm csv2yaml tmp/people_vote.csv >> build.log
 
 # Motion
-curl -s 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRyM5D8LOVvjGICiUdbQ4pPGdudulFq-uoek_ATkLOTi7AI9qMH7FhlwONC4N-TVLjokombSYfDu6G5/pub?gid=396727430&single=true&output=csv' \
+curl -s 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRXuBDf_n-vm78RYeLJKTmeIY-zwXg43zuFOBqd3IFYWskzkgPnVQY5BA9rkbX6NiXpUWrdkwfqL7-j/pub?gid=1593490955&single=true&output=csv' \
   | sed '1d' > tmp/motion.csv
 node -r esm csv2yaml tmp/motion.csv >> build.log
 

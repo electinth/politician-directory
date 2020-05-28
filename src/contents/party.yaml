@@ -1117,3 +1117,41 @@
   phone: ''
   ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/A/095/T_0001.PDF'
   is_active: false
+- id: '31'
+  name: ก้าวไกล
+  en:
+    name: Move Forward Party
+    short_name: MFP
+    description: >-
+      a social-democratic and progressive political party opposing the remaining
+      influence of the military junta which ruled the country from 2014 to 2019.
+      It obtained its current name in 2020 after becoming the de-facto successor
+      to the dissolved Future Forward Party.
+  short_name: กก.
+  color: '#ef7824'
+  party_type: พรรค
+  party_ordinal: null
+  party_group: ฝ่ายค้าน
+  description: >-
+    เดิมคือพรรคร่วมพัฒนาชาติไทย ต่อมาปี 2562 ได้เปลี่ยนชื่อเป็น พรรคผึ้งหลวง
+    และเปลี่ยนมาใช้ชื่อปัจจุบันในเดือนมกราคม 2563 พรรคฯ รับอดีต ส.ส.
+    สมาชิกพรรคอนาคตใหม่ที่ถูกศาลรัฐธรรมนูญสั่งยุบพรรคเมื่อกุมภาพันธ์ ปี 2563
+    ทำให้มีที่นั่งในสภาผู้แทนราษฎร
+  established_date: '2020-01-19'
+  dissolved_date: ''
+  total_member: 54
+  speaker: ''
+  first_deputy_speaker: ''
+  second_deputy_speaker: ''
+  opposition_leader: ''
+  prime_minister: ''
+  deputy_prime_minister: ''
+  party_leader: นาย พิธา ลิ้มเจริญรัตน์
+  party_secretary: นาย ชัยธวัช ตุลาธน
+  website: 'https://moveforwardparty.org/'
+  facebook: 'https://www.facebook.com/MoveForwardPartyThailand/'
+  twitter: 'https://twitter.com/MFPThailand'
+  email: ''
+  phone: ''
+  ratchakitcha: ''
+  is_active: true

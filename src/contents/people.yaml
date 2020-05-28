@@ -1666,7 +1666,7 @@
   is_senator: false
   is_cabinet: false
   is_committee: false
-  is_active: true
+  is_active: false
   party: พลังประชารัฐ
   party_group: ร่วมรัฐบาล
   mp_type: แบ่งเขต
@@ -1731,7 +1731,7 @@
   is_cabinet: false
   is_committee: false
   is_active: true
-  party: อนาคตใหม่
+  party: ภูมิใจไทย
   party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: แพร่
@@ -2494,7 +2494,7 @@
   is_cabinet: false
   is_committee: false
   is_active: true
-  party: อนาคตใหม่
+  party: ภูมิใจไทย
   party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: ฉะเชิงเทรา
@@ -5601,7 +5601,7 @@
   is_cabinet: false
   is_committee: false
   is_active: true
-  party: อนาคตใหม่
+  party: ชาติไทยพัฒนา
   party_group: ฝ่ายค้าน
   mp_type: บัญชีรายชื่อ
   mp_province: ''
@@ -7370,7 +7370,7 @@
   is_cabinet: false
   is_committee: false
   is_active: true
-  party: อนาคตใหม่
+  party: ภูมิใจไทย
   party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: กรุงเทพมหานคร
@@ -7887,7 +7887,7 @@
   is_cabinet: false
   is_committee: false
   is_active: true
-  party: อนาคตใหม่
+  party: ภูมิใจไทย
   party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: ขอนแก่น
@@ -17313,7 +17313,7 @@
   is_cabinet: false
   is_committee: false
   is_active: true
-  party: อนาคตใหม่
+  party: ภูมิใจไทย
   party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: กรุงเทพมหานคร
@@ -20555,7 +20555,7 @@
   is_cabinet: false
   is_committee: false
   is_active: true
-  party: อนาคตใหม่
+  party: ภูมิใจไทย
   party_group: ฝ่ายค้าน
   mp_type: บัญชีรายชื่อ
   mp_province: ''
@@ -24157,7 +24157,7 @@
   is_cabinet: false
   is_committee: false
   is_active: true
-  party: อนาคตใหม่
+  party: ชาติพัฒนา
   party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: สมุทรสาคร
@@ -25383,7 +25383,7 @@
   is_cabinet: false
   is_committee: false
   is_active: true
-  party: อนาคตใหม่
+  party: ภูมิใจไทย
   party_group: ฝ่ายค้าน
   mp_type: บัญชีรายชื่อ
   mp_province: ''
@@ -28064,7 +28064,7 @@
   is_cabinet: false
   is_committee: false
   is_active: true
-  party: อนาคตใหม่
+  party: ภูมิใจไทย
   party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: ปทุมธานี
@@ -29931,7 +29931,7 @@
   is_senator: false
   is_cabinet: false
   is_committee: false
-  is_active: true
+  is_active: false
   party: เพื่อไทย
   party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
@@ -29969,7 +29969,9 @@
   facebook: >-
     https://www.facebook.com/pages/category/Politician/Ittirat-Chandrasurin-%E0%B8%AD%E0%B8%B4%E0%B8%97%E0%B8%98%E0%B8%B4%E0%B8%A3%E0%B8%B1%E0%B8%95%E0%B8%99%E0%B9%8C-%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%AA%E0%B8%B8%E0%B8%A3%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C-2228742453851740/
   twitter: ''
-  bio: ''
+  bio: >-
+    ถึงแก่อนิจกรรมด้วยอาการติดเชื้อในกระแสเลือด ที่โรงพยาบาลพระมงกุฎเกล้า
+    เมื่อวันที่ 7 พฤษภาคม พ.ศ. 2563 สิริอายุรวม 56 ปี
 - id: '513'
   title: นาย
   name: อิสสระ
@@ -30111,7 +30113,7 @@
   is_cabinet: false
   is_committee: false
   is_active: true
-  party: อนาคตใหม่
+  party: ภูมิใจไทย
   party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: แพร่
