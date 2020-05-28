@@ -49,6 +49,9 @@ export const query = graphql`
         name
         lastname
         party
+        fields {
+          slug
+        }
       }
     }
   }

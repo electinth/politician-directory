@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const MotionResult = ({ members }) => {
   return (
@@ -15,7 +16,9 @@ const MotionResult = ({ members }) => {
             <ul>
               {members.map(member => (
                 <li key={member.name + member.lastname}>
-                  {member.name} {member.lastname} {member.party}
+                  <Link to={member.fields.slug}>
+                    {member.name} {member.lastname} {member.party}
+                  </Link>
                 </li>
               ))}
             </ul>
