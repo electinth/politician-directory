@@ -88,6 +88,9 @@
 - q: ประชาชนปฏิรูป
   type: party
   url: /party/ประชาชนปฏิรูป
+- q: ก้าวไกล
+  type: party
+  url: /party/ก้าวไกล
 - q: พลเอก ประยุทธ์ จันทร์โอชา
   type: people
   url: /people/ประยุทธ์-จันทร์โอชา

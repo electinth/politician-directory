@@ -15,7 +15,7 @@ export const query = graphql`
       content
       name
       votelog_id
-      vote_url
+      voting_url
       purposers {
         last_name
         name
@@ -31,8 +31,8 @@ export const query = graphql`
       select_committee
       status
       sub_cat
-      vote_date(formatString: "DD/MM/YYYY")
-      vote_result
+      voting_date
+      voting_result
       registration_no
       proposal_date(formatString: "DD/MM/YYYY")
       page_url

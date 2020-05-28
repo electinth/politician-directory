@@ -27,7 +27,7 @@ const info = function({ motion, members, className }) {
             </div>
             <div className="date">
               <span>วันที่ประชุม</span>
-              <span>{motion.vote_date}</span>
+              <span>{motion.voting_date}</span>
             </div>
           </div>
           <div className="status">{motion.status}</div>
