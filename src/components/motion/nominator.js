@@ -20,8 +20,8 @@ const nominator = ({ className, motion: { purposers, seconders } }) => {
         ผู้รับรอง
         <ul
           css={css`
-            height: 50vh;
-            overflow-y: scroll;
+            /* height: 50vh;
+            overflow-y: scroll; */
             list-style: none;
 
             & .party {
@@ -44,6 +44,7 @@ const nominator = ({ className, motion: { purposers, seconders } }) => {
 }
 const Nominator = styled(nominator)`
   height: 80vh;
+  overflow-y: scroll;
 `
 
 export default Nominator

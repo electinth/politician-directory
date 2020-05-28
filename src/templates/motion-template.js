@@ -62,6 +62,11 @@ const Container = styled.div`
   flex-flow: row;
   justify-content: space-between;
   width: 100vw;
+  height: 100vh;
+
+  position: sticky;
+  top: 0;
+  left: 0;
 
   ${MotionMenu} {
     flex: 0 0 300px;
@@ -88,9 +93,15 @@ const MotionPage = props => {
     <Layout>
       <Container>
         <MotionMenu motion={motion} />
-        <Info motion={motion} members={members} />
         <Nominator motion={motion} />
       </Container>
+      <Info
+        css={css`
+          margin: -100vh 300px 100px 300px;
+        `}
+        motion={motion}
+        members={members}
+      />
     </Layout>
   )
 }
