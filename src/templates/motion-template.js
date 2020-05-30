@@ -72,6 +72,7 @@ const Container = styled.div`
   flex-flow: row;
   justify-content: space-between;
   width: 100vw;
+  max-width: 100%;
   height: 100vh;
 
   position: sticky;
@@ -87,12 +88,31 @@ const Container = styled.div`
     flex: 0 0 300px;
   }
 
-  ${Info} {
-    flex: 1;
-  }
-
   ${Nominator} {
     flex: 0 0 300px;
+  }
+
+  & > * {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 60vh;
+      left: 0;
+      pointer-events: none;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 1) 90%
+      );
+      width: 100%;
+      height: 20vh;
+    }
   }
 `
 const MotionPage = props => {

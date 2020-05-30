@@ -35,6 +35,10 @@ const Motion = styled.li`
     background-color: var(--cl-gray-4);
     opacity: 1;
   }
+
+  &:last-child {
+    margin-bottom: 20vh;
+  }
 `
 
 const Motionmenu = ({ name, motionCat, className }) => {
@@ -49,32 +53,7 @@ const Motionmenu = ({ name, motionCat, className }) => {
   }, [listRef])
 
   return (
-    <div
-      className={className}
-      css={css`
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-
-        position: relative;
-
-        &:after {
-          content: "";
-          position: absolute;
-          z-index: 1;
-          top: 60vh;
-          left: 0;
-          pointer-events: none;
-          background-image: linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0),
-            rgba(255, 255, 255, 1) 90%
-          );
-          width: 100%;
-          height: 20vh;
-        }
-      `}
-    >
+    <div className={className} css={css``}>
       <MotionList ref={listRef}>
         {motionCat.map(motion => (
           <Motion
