@@ -155,6 +155,7 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             id
             select_committee
+            main_cat
             fields {
               slug
             }
@@ -170,6 +171,7 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         id: node.id,
         select_committee: node.select_committee,
+        main_cat: node.main_cat,
       },
     })
   })

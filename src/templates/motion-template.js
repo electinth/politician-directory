@@ -9,7 +9,7 @@ import Nominator from "../components/motion/nominator"
 import MotionMenu from "../components/motion/motionmenu"
 
 export const query = graphql`
-  query($id: String!, $select_committee: String!) {
+  query($id: String!, $select_committee: String!, $main_cat: String!) {
     motion: motionYaml(id: { glob: $id }) {
       id
       content
@@ -54,6 +54,13 @@ export const query = graphql`
         }
       }
     }
+
+    motions: allMotionYaml(filter: { main_cat: { eq: $main_cat } }) {
+      nodes {
+        name
+        registration_no
+      }
+    }
   }
 `
 
@@ -90,14 +97,15 @@ const MotionPage = props => {
     data: {
       motion,
       committee: { nodes: members },
+      motions: { nodes: motionCat },
     },
   } = props
 
-  console.log(motion, members)
+  console.log(motion, members, motionCat)
   return (
     <Layout>
       <Container>
-        <MotionMenu motion={motion} />
+        <MotionMenu motionCat={motionCat} />
         <Nominator motion={motion} />
       </Container>
       <Info
