@@ -55,6 +55,24 @@ const Motionmenu = ({ name, motionCat, className }) => {
         width: 100%;
         height: 100%;
         overflow: hidden;
+
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          top: 60vh;
+          left: 0;
+          pointer-events: none;
+          background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 1) 90%
+          );
+          width: 100%;
+          height: 20vh;
+        }
       `}
     >
       <MotionList ref={listRef}>

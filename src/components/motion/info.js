@@ -51,6 +51,9 @@ const Info = styled(info)`
   background-color: white;
   box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
   min-height: 100vh;
+
+  position: relative;
+  z-index: 10;
 `
 
 export default Info
