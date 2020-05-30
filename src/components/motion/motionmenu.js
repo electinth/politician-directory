@@ -2,6 +2,7 @@ import React from "react"
 
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
+import { Link } from "gatsby"
 
 const MotionList = styled.ul`
   list-style: none;
@@ -15,8 +16,10 @@ const motionmenu = ({ name, motionCat, className }) => {
       <MotionList>
         {motionCat.map(motion => (
           <li key={motion.name}>
-            <div>{motion.registration_no}</div>
-            <div>{motion.name}</div>
+            <Link to={motion.fields.slug}>
+              <div>{motion.registration_no}</div>
+              <div>{motion.name}</div>
+            </Link>
           </li>
         ))}
       </MotionList>

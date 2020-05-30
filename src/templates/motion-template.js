@@ -59,6 +59,9 @@ export const query = graphql`
       nodes {
         name
         registration_no
+        fields {
+          slug
+        }
       }
     }
   }
