@@ -1,9 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
+import Profile from "./profile"
+import styled from "@emotion/styled"
 
-const MotionResult = ({ members }) => {
+const motionresult = ({ className, members }) => {
   return (
-    <div>
+    <div className={className}>
       <h3>ผลการลงมติ</h3>
       <section>
         <h3>แต่งตั้งคณะกรรมาธิการ</h3>
@@ -17,7 +19,11 @@ const MotionResult = ({ members }) => {
               {members.map(member => (
                 <li key={member.name + member.lastname}>
                   <Link to={member.fields.slug}>
-                    {member.name} {member.lastname} {member.party}
+                    <Profile
+                      name={member.name}
+                      last_name={member.lastname}
+                      party={member.party}
+                    />
                   </Link>
                 </li>
               ))}
@@ -29,5 +35,10 @@ const MotionResult = ({ members }) => {
     </div>
   )
 }
+const MotionResult = styled(motionresult)`
+  & ul {
+    list-style: none;
+  }
+`
 
 export default MotionResult
