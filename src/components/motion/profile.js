@@ -55,6 +55,14 @@ const ProfileContainer = styled.li`
     margin-right: 15px;
   }
 
+  & .name a {
+    color: var(--cl-black);
+  }
+
+  & .party a {
+    color: var(--cl-gray-1);
+  }
+
   & .oneline {
     display: flex;
     width: 100%;
