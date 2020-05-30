@@ -21,7 +21,6 @@ const MotionList = styled.ul`
 const Motion = styled.li`
   background-color: ${({ active }) => active && "var(--cl-gray-4)"};
   opacity: ${({ active }) => (active ? 1 : 0.5)};
-  padding: 22.5px 20px;
   margin: 0;
 
   box-sizing: border-box;
@@ -65,7 +64,13 @@ const Motionmenu = ({ name, motionCat, className }) => {
             id={motion.name === name ? "current-motion" : ""}
             active={motion.name === name}
           >
-            <Link to={motion.fields.slug}>
+            <Link
+              to={motion.fields.slug}
+              css={css`
+                display: block;
+                padding: 22.5px 20px;
+              `}
+            >
               <div
                 css={css`
                   margin-bottom: 5px;
