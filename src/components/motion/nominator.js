@@ -65,7 +65,7 @@ const Nominator = styled(nominator)`
     border-bottom: 1px solid var(--cl-black);
   }
 
-  & li:last-child {
+  & li:last-child li:last-child {
     margin-bottom: 20vh;
   }
 `
