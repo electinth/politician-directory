@@ -3,7 +3,7 @@ import React from "react"
 import styled from "@emotion/styled"
 
 import { politicianPicture } from "../../utils"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import { useState } from "react"
 
@@ -41,7 +41,7 @@ const ProfilePic = ({ name, last_name }) => {
   )
 }
 
-const ProfileContainer = styled.div`
+const ProfileContainer = styled.li`
   list-style: none;
   display: flex;
   align-items: center;
@@ -69,7 +69,7 @@ const ProfileContainer = styled.div`
   }
 `
 
-const profile = ({ name, last_name, party, oneline }) => {
+const profile = ({ name, last_name, party, slug, oneline }) => {
   return (
     <ProfileContainer oneline>
       <div className="profile-pic">
@@ -77,9 +77,13 @@ const profile = ({ name, last_name, party, oneline }) => {
       </div>
       <div className={oneline && "oneline"}>
         <div className="name">
-          {name} {last_name}
+          <Link to={slug || `/people/${name}-${last_name}`}>
+            {name} {last_name}
+          </Link>
         </div>
-        <div className="party">{party}</div>
+        <div className="party">
+          <Link to={`/party/${party}`}>{party}</Link>
+        </div>
       </div>
     </ProfileContainer>
   )
