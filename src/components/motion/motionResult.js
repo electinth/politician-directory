@@ -17,15 +17,13 @@ const motionresult = ({ className, members }) => {
           <div className="member-list">
             <ul>
               {members.map(member => (
-                <li key={member.name + member.lastname}>
-                  <Link to={member.fields.slug}>
-                    <Profile
-                      name={member.name}
-                      last_name={member.lastname}
-                      party={member.party}
-                    />
-                  </Link>
-                </li>
+                <Profile
+                  key={member.name + member.lastname}
+                  name={member.name}
+                  last_name={member.lastname}
+                  party={member.party}
+                  oneline
+                />
               ))}
             </ul>
           </div>

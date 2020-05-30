@@ -41,7 +41,7 @@ const ProfilePic = ({ name, last_name }) => {
   )
 }
 
-const ProfileContainer = styled.li`
+const ProfileContainer = styled.div`
   list-style: none;
   display: flex;
   align-items: center;
@@ -54,15 +54,28 @@ const ProfileContainer = styled.li`
     clip-path: circle(50%);
     margin-right: 15px;
   }
+
+  & .oneline {
+    display: flex;
+    width: 100%;
+
+    & .name {
+      flex: 1;
+    }
+
+    & .party {
+      flex: 0 0 200px;
+    }
+  }
 `
 
-const profile = ({ name, last_name, party }) => {
+const profile = ({ name, last_name, party, oneline }) => {
   return (
-    <ProfileContainer>
+    <ProfileContainer oneline>
       <div className="profile-pic">
         <ProfilePic name={name} last_name={last_name} />
       </div>
-      <div className="detail">
+      <div className={oneline && "oneline"}>
         <div className="name">
           {name} {last_name}
         </div>
