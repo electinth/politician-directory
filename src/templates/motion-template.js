@@ -7,6 +7,7 @@ import { css } from "@emotion/core"
 import Info from "../components/motion/info"
 import Nominator from "../components/motion/nominator"
 import MotionMenu from "../components/motion/motionmenu"
+import Breadcrumb from "../components/motion/breadcrumb"
 
 export const query = graphql`
   query($id: String!, $select_committee: String!, $main_cat: String!) {
@@ -127,6 +128,10 @@ const MotionPage = props => {
   console.log(motion, members, motionCat)
   return (
     <Layout>
+      <Breadcrumb
+        main_cat={motion.main_cat}
+        registration_no={motion.registration_no}
+      />
       <Container>
         <MotionMenu name={motion.name} motionCat={motionCat} />
         <Nominator motion={motion} />
