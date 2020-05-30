@@ -105,7 +105,7 @@ const MotionPage = props => {
   return (
     <Layout>
       <Container>
-        <MotionMenu motionCat={motionCat} />
+        <MotionMenu name={motion.name} motionCat={motionCat} />
         <Nominator motion={motion} />
       </Container>
       <Info
