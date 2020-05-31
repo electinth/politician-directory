@@ -24,10 +24,11 @@ const info = function({ motion, members, className }) {
           <div
             css={css`
               display: flex;
+              margin: 20px 0;
               margin-right: auto;
 
-              & .datebox {
-                flex: 0 0 100px;
+              & .datebox + .datebox {
+                margin-left: 30px;
               }
 
               & .label {
@@ -81,8 +82,23 @@ const info = function({ motion, members, className }) {
           background-color: lightgrey;
         `}
       />
-      <h3>สาระและวัตถุประสงค์</h3>
-      <div>{motion.content}</div>
+      <h3
+        css={css`
+          font-size: 20px;
+          margin: 20px 0;
+        `}
+      >
+        สาระและวัตถุประสงค์
+      </h3>
+      <div
+        css={css`
+          font-family: var(--ff-text);
+          font-size: 16px;
+          font-weight: 100;
+        `}
+      >
+        {motion.content}
+      </div>
       <MotionResult members={members} />
     </div>
   )
