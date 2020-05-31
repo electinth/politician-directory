@@ -55,9 +55,9 @@ const Motionmenu = ({ name, motionCat, className }) => {
   return (
     <div className={className} css={css``}>
       <MotionList ref={listRef}>
-        {motionCat.map(motion => (
+        {motionCat.map((motion, i) => (
           <Motion
-            key={motion.name}
+            key={i}
             id={motion.name === name ? "current-motion" : ""}
             active={motion.name === name}
           >
