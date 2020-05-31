@@ -15,19 +15,47 @@ const info = function({ motion, members, className }) {
         >
           {motion.name}
         </div>
-        <div>
-          <div>
-            <div className="date">
-              <span>เลขทะเบียนรับ</span>
-              <span>{motion.registration_no}</span>
+        <div
+          css={css`
+            display: flex;
+            align-items: center;
+          `}
+        >
+          <div
+            css={css`
+              display: flex;
+              margin-right: auto;
+
+              & .datebox {
+                flex: 0 0 100px;
+              }
+
+              & .label {
+                font-size: 12px;
+                color: var(--cl-gray-3);
+                font-family: var(--ff-text);
+                font-weight: 100;
+                margin: 10px 0;
+              }
+
+              & .date {
+                font-size: 14px;
+                font-family: var(--ff-text);
+                font-weight: 100;
+              }
+            `}
+          >
+            <div className="datebox">
+              <div className="label">เลขทะเบียนรับ</div>
+              <div className="date">{motion.registration_no}</div>
             </div>
-            <div className="date">
-              <span>วันที่เสนอ</span>
-              <span>{motion.proposal_date}</span>
+            <div className="datebox">
+              <div className="label">วันที่เสนอ</div>
+              <div className="date">{motion.proposal_date}</div>
             </div>
-            <div className="date">
-              <span>วันที่ประชุม</span>
-              <span>{motion.voting_date}</span>
+            <div className="datebox">
+              <div className="label">วันที่ประชุม</div>
+              <div className="date">{motion.voting_date}</div>
             </div>
           </div>
           <div className="status">{motion.status}</div>
