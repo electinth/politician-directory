@@ -1,13 +1,34 @@
 import React from "react"
 import Profile from "./profile"
 import styled from "@emotion/styled"
+import { css } from "@emotion/core"
 import _ from "lodash"
+
+const Waffle = ({ party, partyMember }) => {
+  return (
+    <div
+      css={css`
+        display: flex;
+        flex-flow: row wrap;
+      `}
+    >
+      {partyMember.map(member => (
+        <div
+          css={css`
+            width: 10%;
+            padding-top: 10%;
+            background-color: var(--cl-gray-2);
+            margin: 1.5px;
+          `}
+        ></div>
+      ))}
+    </div>
+  )
+}
 
 const motionresult = ({ className, members }) => {
   const by_party = _.groupBy(members, "party")
 
-  console.log(by_party)
-  window._ = _
   return (
     <div className={className}>
       <h3>ผลการลงมติ</h3>
@@ -44,9 +65,16 @@ const motionresult = ({ className, members }) => {
                   if (p === "") return
                   return (
                     <div key={p}>
-                      <span>
-                        {p} {m.length}
-                      </span>
+                      <h5
+                        css={css`
+                          margin-top: 8px;
+                          margin-bottom: 2px;
+                          font-size: 12px;
+                        `}
+                      >
+                        {p} ({m.length})
+                      </h5>
+                      <Waffle party={p} partyMember={m} />
                     </div>
                   )
                 })}
