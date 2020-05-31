@@ -15,10 +15,14 @@ const Waffle = ({ party, partyMember }) => {
       {partyMember.map(member => (
         <div
           css={css`
-            width: 10%;
-            padding-top: 10%;
+            width: 8.8%;
+            padding-top: 8.8%;
             background-color: var(--cl-gray-2);
-            margin: 1.5px;
+            margin-right: 1%;
+
+            &:nth-child(15n + 5) {
+              margin-right: 2%;
+            }
           `}
         ></div>
       ))}
