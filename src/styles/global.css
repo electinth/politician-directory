@@ -49,6 +49,12 @@ a:hover {
 }
 
 .container-motion {
-  max-width: var(--container-motion-width);
   margin: 0 auto;
+  padding: 0 32px 0 32px;
+}
+
+@media screen and (min-width: 767px) {
+  .container-motion {
+    max-width: var(--container-motion-width);
+  }
 }
