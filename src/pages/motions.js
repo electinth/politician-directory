@@ -21,13 +21,33 @@ const IndexPage = ({ data }) => {
       }}
     >
       <SEO title="Motions" />
+      <div style={{ backgroundColor: "var(--cl-black)", padding: "1.6rem" }}>
+        <div
+          className="container-motion"
+          style={{ color: "var(--cl-white)", textAlign: "center" }}
+        >
+          เนื่องจากข้อมูลอยู่ระหว่างการรวบรวมและบันทึก
+          ส่วนที่แสดงในเว็บไซต์จึงเป็นแค่ส่วนหนึ่งจากข้อมูลทั้งหมด
+          หากต้องการท่านสามารถดูข้อมูลทั้งหมดได้
+          <ExternalLink
+            href="https://lis.parliament.go.th/index/search_advance_detail.php?S_SYSTEM=8"
+            style={{
+              marginLeft: "0.5rem",
+              color: "var(--cl-white)",
+              textDecoration: "underline",
+            }}
+          >
+            ที่นี่
+          </ExternalLink>
+        </div>
+      </div>
       <section>
         <div className="container-motion">
           <div
             css={{
               color: "var(--cl-gray-2)",
               textAlign: "right",
-              margin: "1rem 0 3.2rem 0",
+              margin: "2rem 0 3.2rem 0",
             }}
           >
             ข้อมูลล่าสุดวันที่ 29 กุมภาพันธ์ 2562
