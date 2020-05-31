@@ -58,7 +58,21 @@ const info = function({ motion, members, className }) {
               <div className="date">{motion.voting_date}</div>
             </div>
           </div>
-          <div className="status">{motion.status}</div>
+          <div
+            className="status"
+            css={css`
+              border: 1px solid var(--cl-gray-3);
+              border-radius: 20px;
+              padding: 3px 15px;
+
+              font-size: 14px;
+              font-family: var(--ff-text);
+              font-weight: 100;
+              color: var(--cl-gray-1);
+            `}
+          >
+            {motion.status}
+          </div>
         </div>
       </h2>
       <hr
@@ -67,6 +81,7 @@ const info = function({ motion, members, className }) {
           background-color: lightgrey;
         `}
       />
+      <h3>สาระและวัตถุประสงค์</h3>
       <div>{motion.content}</div>
       <MotionResult members={members} />
     </div>
