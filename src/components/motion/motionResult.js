@@ -1,8 +1,13 @@
 import React from "react"
 import Profile from "./profile"
 import styled from "@emotion/styled"
+import _ from "lodash"
 
 const motionresult = ({ className, members }) => {
+  const by_party = _.groupBy(members, "party")
+
+  console.log(by_party)
+  window._ = _
   return (
     <div className={className}>
       <h3>ผลการลงมติ</h3>
@@ -15,8 +20,8 @@ const motionresult = ({ className, members }) => {
           <h4>
             คณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการบริหารจัดการลุ่มน้ำทั้งระบบ
           </h4>
-          <div>
-            <div className="member-list">
+          <div className="committee">
+            <div className="committee-member">
               <h4>สมาชิก ({members.length})</h4>
               <ul>
                 {members.map(member => (
@@ -31,7 +36,21 @@ const motionresult = ({ className, members }) => {
                 ))}
               </ul>
             </div>
-            <div className="party-proportion">{members.length}</div>
+            <div className="committee-party">
+              <h4>สัดส่วน</h4>
+              {Object.entries(by_party)
+                .sort((a, b) => b[1].length - a[1].length)
+                .map(([p, m]) => {
+                  if (p === "") return
+                  return (
+                    <div key={p}>
+                      <span>
+                        {p} {m.length}
+                      </span>
+                    </div>
+                  )
+                })}
+            </div>
           </div>
         </div>
       </section>
@@ -39,8 +58,23 @@ const motionresult = ({ className, members }) => {
   )
 }
 const MotionResult = styled(motionresult)`
-  & ul {
-    list-style: none;
+  & .committee {
+    display: flex;
+
+    &-member {
+      flex: 1;
+    }
+
+    &-party {
+      width: 30%;
+    }
+
+    & h4 {
+      font-size: 15px;
+    }
+    & ul {
+      list-style: none;
+    }
   }
 `
 
