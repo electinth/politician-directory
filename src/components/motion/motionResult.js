@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 import _ from "lodash"
 
-const Waffle = ({ party, partyMember }) => {
+const Waffle = ({ group, members }) => {
   return (
     <div
       css={css`
@@ -12,19 +12,15 @@ const Waffle = ({ party, partyMember }) => {
         flex-flow: row wrap;
       `}
     >
-      {partyMember.map(member => (
+      {members.map((member, i) => (
         <div
           key={member.name + member.last_name}
           css={css`
             width: 8.8%;
             padding-top: 8.8%;
             background-color: var(--cl-gray-2);
-            margin-right: 1%;
+            margin-right: ${i % 5 === 4 ? "2%" : "1%"};
             margin-bottom: 1%;
-
-            &:nth-of-type(15n + 5) {
-              margin-right: 2%;
-            }
           `}
         ></div>
       ))}
@@ -120,7 +116,7 @@ const motionresult = ({ className, members }) => {
                         >
                           {p} ({m.length})
                         </h5>
-                        <Waffle party={p} partyMember={m} />
+                        <Waffle group={p} members={m} />
                       </div>
                     )
                   })}
