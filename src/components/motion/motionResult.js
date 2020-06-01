@@ -14,13 +14,15 @@ const Waffle = ({ party, partyMember }) => {
     >
       {partyMember.map(member => (
         <div
+          key={member.name + member.last_name}
           css={css`
             width: 8.8%;
             padding-top: 8.8%;
             background-color: var(--cl-gray-2);
             margin-right: 1%;
+            margin-bottom: 1%;
 
-            &:nth-child(15n + 5) {
+            &:nth-of-type(15n + 5) {
               margin-right: 2%;
             }
           `}
