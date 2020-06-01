@@ -48,8 +48,8 @@ const ProfileContainer = styled.li`
   margin-bottom: 1.08rem;
 
   & .profile-pic {
-    width: 40px;
-    height: 40px;
+    width: ${({ oneline }) => (oneline ? "24px" : "40px")};
+    height: ${({ oneline }) => (oneline ? "24px" : "40px")};
 
     clip-path: circle(50%);
     margin-right: 15px;
