@@ -79,7 +79,7 @@ const ProfileContainer = styled.li`
 
 const profile = ({ name, last_name, party, slug, oneline }) => {
   return (
-    <ProfileContainer oneline>
+    <ProfileContainer oneline={oneline}>
       <div className="profile-pic">
         <ProfilePic name={name} last_name={last_name} />
       </div>

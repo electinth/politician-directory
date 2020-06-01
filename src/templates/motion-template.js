@@ -125,7 +125,6 @@ const MotionPage = props => {
     },
   } = props
 
-  console.log(motion, members, motionCat)
   return (
     <Layout>
       <Breadcrumb
