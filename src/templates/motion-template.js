@@ -10,7 +10,12 @@ import MotionMenu from "../components/motion/motionmenu"
 import Breadcrumb from "../components/motion/breadcrumb"
 
 export const query = graphql`
-  query($id: String!, $select_committee: String!, $main_cat: String!) {
+  query(
+    $id: String!
+    $select_committee: String!
+    $main_cat: String!
+    $votelog_id: String!
+  ) {
     motion: motionYaml(id: { glob: $id }) {
       id
       content
@@ -64,6 +69,14 @@ export const query = graphql`
           slug
         }
       }
+    }
+
+    votelog: votelogYaml(id: { glob: $votelog_id }) {
+      disprove
+      approve
+      passed
+      absent
+      abstained
     }
   }
 `
@@ -122,9 +135,11 @@ const MotionPage = props => {
       motion,
       committee: { nodes: members },
       motions: { nodes: motionCat },
+      votelog,
     },
   } = props
 
+  console.log(votelog)
   return (
     <Layout>
       <Breadcrumb
