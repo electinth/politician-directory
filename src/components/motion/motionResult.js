@@ -45,7 +45,14 @@ const motionresult = ({ className, members }) => {
 
   return (
     <>
-      <h3>ผลการลงมติ</h3>
+      <h3
+        css={css`
+          font-size: 20px;
+          margin: 15px 0;
+        `}
+      >
+        ผลการลงมติ
+      </h3>
       <Card className={className}>
         <ResultStatus>แต่งตั้งคณะกรรมาธิการ</ResultStatus>
         <section
@@ -53,15 +60,35 @@ const motionresult = ({ className, members }) => {
             padding: 20px 30px;
           `}
         >
-          <h3>ข้อมูลแต่งตั้งคณะกรรมาธิการ</h3>
-          <div>
-            <h4>
+          <h3
+            css={css`
+              font-size: 18px;
+            `}
+          >
+            ข้อมูลแต่งตั้งคณะกรรมาธิการ
+          </h3>
+          <div
+            css={css`
+              background-color: white;
+              padding: 25px 15px;
+            `}
+          >
+            <h4
+              css={css`
+                font-size: 16px;
+                margin-bottom: 25px;
+              `}
+            >
               คณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการบริหารจัดการลุ่มน้ำทั้งระบบ
             </h4>
             <div className="committee">
               <div className="committee-member">
                 <h4>สมาชิก ({members.length})</h4>
-                <ul>
+                <ul
+                  css={css`
+                    margin: 30px 0;
+                  `}
+                >
                   {members.map(member => (
                     <Profile
                       key={member.name + member.lastname}
