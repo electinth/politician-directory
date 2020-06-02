@@ -53,6 +53,54 @@ const Waffle = ({ partyMember }) => {
   )
 }
 
+const VoteWaffle = ({ members, color }) => (
+  <div
+    css={css`
+      display: flex;
+      flex-flow: row wrap;
+    `}
+  >
+    {split_array(members, 100, (hundred, hi) => (
+      <div
+        key={hi}
+        css={css`
+          display: flex;
+          flex-flow: row wrap;
+          margin-right: 2px;
+          width: 92px;
+          align-items: flex-start;
+        `}
+      >
+        {split_array(hundred, 25, (quarter, qi) => (
+          <div
+            key={qi}
+            css={css`
+              display: flex;
+              flex-flow: row wrap;
+              width: 45px;
+              margin-right: 1px;
+              margin-bottom: 1px;
+            `}
+          >
+            {quarter.map((_, i) => (
+              <div
+                key={i}
+                css={css`
+                  width: 8px;
+                  height: 8px;
+                  background-color: ${color};
+                  margin-right: 1px;
+                  margin-bottom: 1px;
+                `}
+              ></div>
+            ))}
+          </div>
+        ))}
+      </div>
+    ))}
+  </div>
+)
+
 const Card = styled.div`
   background-color: rgb(250, 250, 250);
   border: 1px solid var(--cl-gray-4);
@@ -102,17 +150,36 @@ const motionresult = ({ className, votelog, members }) => {
       </h3>
       <Card className={className}>
         <ResultStatus>แต่งตั้งคณะกรรมาธิการ</ResultStatus>
-        <section>
+        <section
+          css={css`
+            padding: 20px 30px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+          `}
+        >
           {VOTELOG_MAP.map(({ en, th, color }) => {
             return (
               <div key={en}>
-                <h5>{th}</h5>
-                {/* <Waffle
-                  group={th}
+                <h5
+                  css={css`
+                    font-size: 14px;
+                    margin: 10px 0;
+                  `}
+                >
+                  {th}{" "}
+                  <span
+                    css={css`
+                      color: var(--cl-gray-1);
+                    `}
+                  >
+                    {votelog[en]}
+                  </span>
+                </h5>
+                <VoteWaffle
                   members={[...Array(votelog[en]).keys()]}
                   color={color}
-                  nrows={50}
-                /> */}
+                />
               </div>
             )
           })}
