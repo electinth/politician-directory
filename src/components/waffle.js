@@ -44,6 +44,7 @@ const split_array = (array, size, callback) =>
     .map(callback)
 
 const waffle = (data, color, borderColor, add_separator) => {
+  console.log(data)
   let result = split_array(data, 100, (hundred, hi) => (
     <div key={hi} className="hundred">
       {split_array(hundred, 25, (quarter, qi) => (
@@ -109,3 +110,4 @@ const Waffle = ({ data, colors, borderColors, style, css }) => (
 )
 
 export default Waffle
+export { split_array }

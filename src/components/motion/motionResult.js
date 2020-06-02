@@ -3,6 +3,7 @@ import Profile from "./profile"
 import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 import _ from "lodash"
+import { split_array } from "../waffle"
 
 const Waffle = ({ party, partyMember }) => {
   return (
@@ -12,21 +13,41 @@ const Waffle = ({ party, partyMember }) => {
         flex-flow: row wrap;
       `}
     >
-      {partyMember.map(member => (
+      {split_array(partyMember, 10, (tenth, ti) => (
         <div
-          key={member.name + member.last_name}
+          key={ti}
+          className="tenth"
           css={css`
-            width: 8.8%;
-            padding-top: 8.8%;
-            background-color: var(--cl-gray-2);
-            margin-right: 1%;
-            margin-bottom: 1%;
-
-            &:nth-of-type(15n + 5) {
-              margin-right: 2%;
-            }
+            display: flex;
+            flex-flow: row wrap;
+            margin-right: 1px;
           `}
-        ></div>
+        >
+          {split_array(tenth, 5, (fifth, fi) => (
+            <div
+              key={fi}
+              className="fifth"
+              css={css`
+                display: flex;
+                flex-flow: row nowrap;
+                margin-right: 1px;
+              `}
+            >
+              {fifth.map((_, i) => (
+                <div
+                  key={i}
+                  css={css`
+                    width: 8px;
+                    height: 8px;
+                    background-color: var(--cl-gray-3);
+                    margin-right: 1px;
+                    margin-bottom: 1px;
+                  `}
+                ></div>
+              ))}
+            </div>
+          ))}
+        </div>
       ))}
     </div>
   )
