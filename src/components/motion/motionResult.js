@@ -53,7 +53,7 @@ const Waffle = ({ partyMember }) => {
   )
 }
 
-const VoteWaffle = ({ members, color }) => (
+const VoteWaffle = ({ en, members, color }) => (
   <div
     css={css`
       display: flex;
@@ -91,6 +91,7 @@ const VoteWaffle = ({ members, color }) => (
                   background-color: ${color};
                   margin-right: 1px;
                   margin-bottom: 1px;
+                  border: ${en === "absent" && `1px solid black`};
                 `}
               ></div>
             ))}
@@ -177,6 +178,7 @@ const motionresult = ({ className, votelog, members }) => {
                   </span>
                 </h5>
                 <VoteWaffle
+                  en={en}
                   members={[...Array(votelog[en]).keys()]}
                   color={color}
                 />
