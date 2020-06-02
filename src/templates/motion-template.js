@@ -154,6 +154,7 @@ const MotionPage = props => {
         css={css`
           margin: -100vh 300px 100px 300px;
         `}
+        votelog={votelog}
         motion={motion}
         members={members}
       />

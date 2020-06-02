@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 import _ from "lodash"
 
-const Waffle = ({ group, members }) => {
+const Waffle = ({ group, members, nrows }) => {
   return (
     <div
       css={css`
@@ -12,18 +12,21 @@ const Waffle = ({ group, members }) => {
         flex-flow: row wrap;
       `}
     >
-      {members.map((member, i) => (
-        <div
-          key={member.name + member.last_name}
-          css={css`
-            width: 8.8%;
-            padding-top: 8.8%;
-            background-color: var(--cl-gray-2);
-            margin-right: ${i % 5 === 4 ? "2%" : "1%"};
-            margin-bottom: 1%;
-          `}
-        ></div>
-      ))}
+      {members.map((member, i) => {
+        const side = 100 / nrows - 1 - 2 / nrows
+        return (
+          <div
+            key={i}
+            css={css`
+              width: ${side}%;
+              padding-top: ${side}%;
+              background-color: var(--cl-gray-2);
+              margin-right: ${i % 5 === 4 ? "2%" : "1%"};
+              margin-bottom: 1%;
+            `}
+          ></div>
+        )
+      })}
     </div>
   )
 }
@@ -38,7 +41,27 @@ const ResultStatus = styled.h3`
   font-size: 26px;
   padding: 20px 15px;
 `
-const motionresult = ({ className, members }) => {
+
+const VOTELOG_MAP = [
+  {
+    en: "approve",
+    th: "เห็นด้วย",
+  },
+  {
+    en: "disprove",
+    th: "ไม่เห็นด้วย",
+  },
+  {
+    en: "abstained",
+    th: "ไม่ออกเสียง",
+  },
+  {
+    en: "absent",
+    th: "ไม่ลงคะแนน",
+  },
+]
+
+const motionresult = ({ className, votelog, members }) => {
   const by_party = _.groupBy(members, "party")
 
   return (
@@ -53,6 +76,20 @@ const motionresult = ({ className, members }) => {
       </h3>
       <Card className={className}>
         <ResultStatus>แต่งตั้งคณะกรรมาธิการ</ResultStatus>
+        <section>
+          {VOTELOG_MAP.map(({ en, th }) => {
+            return (
+              <div key={en}>
+                <h5>{th}</h5>
+                <Waffle
+                  group={th}
+                  members={[...Array(votelog[en]).keys()]}
+                  nrows={50}
+                />
+              </div>
+            )
+          })}
+        </section>
         <section
           css={css`
             padding: 20px 30px;
@@ -116,7 +153,7 @@ const motionresult = ({ className, members }) => {
                         >
                           {p} ({m.length})
                         </h5>
-                        <Waffle group={p} members={m} />
+                        <Waffle group={p} members={m} nrows={10} />
                       </div>
                     )
                   })}
