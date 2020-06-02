@@ -112,7 +112,7 @@ const Info = styled(info)`
   min-height: 100vh;
 
   position: relative;
-  z-index: 10;
+  z-index: 1;
 `
 
 export default Info
