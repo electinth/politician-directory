@@ -3,7 +3,7 @@ import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import MotionResult from "./motionResult"
 
-const info = function({ motion, members, className }) {
+const info = function({ votelog, motion, members, className }) {
   return (
     <div className={className}>
       <h2 css={css``}>
@@ -99,7 +99,7 @@ const info = function({ motion, members, className }) {
       >
         {motion.content}
       </div>
-      <MotionResult members={members} />
+      <MotionResult votelog={votelog} members={members} />
     </div>
   )
 }

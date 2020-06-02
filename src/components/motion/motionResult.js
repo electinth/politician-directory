@@ -5,7 +5,7 @@ import { css } from "@emotion/core"
 import _ from "lodash"
 import { split_array } from "../waffle"
 
-const Waffle = ({ party, partyMember }) => {
+const Waffle = ({ partyMember }) => {
   return (
     <div
       css={css`
@@ -63,7 +63,31 @@ const ResultStatus = styled.h3`
   font-size: 26px;
   padding: 20px 15px;
 `
-const motionresult = ({ className, members }) => {
+
+const VOTELOG_MAP = [
+  {
+    en: "approve",
+    th: "เห็นด้วย",
+    color: "var(--cl-vote-yes)",
+  },
+  {
+    en: "disprove",
+    th: "ไม่เห็นด้วย",
+    color: "var(--cl-vote-no)",
+  },
+  {
+    en: "abstained",
+    th: "ไม่ออกเสียง",
+    color: "var(--cl-vote-abstained)",
+  },
+  {
+    en: "absent",
+    th: "ไม่ลงคะแนน",
+    color: "var(--cl-vote-absent)",
+  },
+]
+
+const motionresult = ({ className, votelog, members }) => {
   const by_party = _.groupBy(members, "party")
 
   return (
@@ -78,6 +102,21 @@ const motionresult = ({ className, members }) => {
       </h3>
       <Card className={className}>
         <ResultStatus>แต่งตั้งคณะกรรมาธิการ</ResultStatus>
+        <section>
+          {VOTELOG_MAP.map(({ en, th, color }) => {
+            return (
+              <div key={en}>
+                <h5>{th}</h5>
+                {/* <Waffle
+                  group={th}
+                  members={[...Array(votelog[en]).keys()]}
+                  color={color}
+                  nrows={50}
+                /> */}
+              </div>
+            )
+          })}
+        </section>
         <section
           css={css`
             padding: 20px 30px;
@@ -141,7 +180,7 @@ const motionresult = ({ className, members }) => {
                         >
                           {p} ({m.length})
                         </h5>
-                        <Waffle party={p} partyMember={m} />
+                        <Waffle partyMember={m} />
                       </div>
                     )
                   })}
