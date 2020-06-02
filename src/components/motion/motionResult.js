@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 import _ from "lodash"
 
-const Waffle = ({ group, members, nrows }) => {
+const Waffle = ({ group, members, color, nrows }) => {
   return (
     <div
       css={css`
@@ -20,7 +20,7 @@ const Waffle = ({ group, members, nrows }) => {
             css={css`
               width: ${side}%;
               padding-top: ${side}%;
-              background-color: var(--cl-gray-2);
+              background-color: ${color || "var(--cl-gray-2)"};
               margin-right: ${i % 5 === 4 ? "2%" : "1%"};
               margin-bottom: 1%;
             `}
@@ -46,18 +46,22 @@ const VOTELOG_MAP = [
   {
     en: "approve",
     th: "เห็นด้วย",
+    color: "var(--cl-vote-yes)",
   },
   {
     en: "disprove",
     th: "ไม่เห็นด้วย",
+    color: "var(--cl-vote-no)",
   },
   {
     en: "abstained",
     th: "ไม่ออกเสียง",
+    color: "var(--cl-vote-abstained)",
   },
   {
     en: "absent",
     th: "ไม่ลงคะแนน",
+    color: "var(--cl-vote-absent)",
   },
 ]
 
@@ -77,13 +81,14 @@ const motionresult = ({ className, votelog, members }) => {
       <Card className={className}>
         <ResultStatus>แต่งตั้งคณะกรรมาธิการ</ResultStatus>
         <section>
-          {VOTELOG_MAP.map(({ en, th }) => {
+          {VOTELOG_MAP.map(({ en, th, color }) => {
             return (
               <div key={en}>
                 <h5>{th}</h5>
                 <Waffle
                   group={th}
                   members={[...Array(votelog[en]).keys()]}
+                  color={color}
                   nrows={50}
                 />
               </div>
