@@ -189,11 +189,11 @@ const MotionPage = props => {
           css={css`
             margin: -100vh 250px 100px 250px;
 
-            @media ${device.tablet} {
+            @media ${device.hideMotion} {
               margin-left: 0;
             }
 
-            @media ${device.mobile} {
+            @media ${device.hideNominator} {
               margin-right: 0;
             }
           `}

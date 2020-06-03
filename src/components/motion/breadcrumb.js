@@ -12,7 +12,7 @@ const Breadcrumb = ({ main_cat, registration_no }) => {
         padding: 30px 20px;
         border-top: 1px solid var(--cl-gray-4);
 
-        @media ${device.tablet} {
+        @media ${device.hideMotion} {
           background-color: var(--cl-gray-4);
         }
       `}
@@ -31,7 +31,7 @@ const Breadcrumb = ({ main_cat, registration_no }) => {
         css={css`
           visibility: hidden;
 
-          @media ${device.tablet} {
+          @media ${device.hideMotion} {
             visibility: visible;
           }
         `}

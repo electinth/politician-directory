@@ -1,12 +1,14 @@
-const TABLET_BREAKPOINT = 1100
-const MOBILE_BREAKPOINT = 1100 - 250
+const HIDE_MOTION = 1100
+const HIDE_NOMINATOR = 1100 - 250
+const MOTION_RESULT_BREAK = 700
 
-const is_tablet = () => window.innerWidth <= TABLET_BREAKPOINT
-const is_mobile = () => window.innerWidth <= MOBILE_BREAKPOINT
+const is_tablet = () => window.innerWidth <= HIDE_MOTION
+const is_mobile = () => window.innerWidth <= HIDE_NOMINATOR
 
 const device = {
-  tablet: `(max-width: ${TABLET_BREAKPOINT}px)`,
-  mobile: `(max-width: ${MOBILE_BREAKPOINT}px)`,
+  hideMotion: `(max-width: ${HIDE_MOTION}px)`,
+  hideNominator: `(max-width: ${HIDE_NOMINATOR}px)`,
+  motionResultBreak: `(max-width: ${MOTION_RESULT_BREAK}px)`,
 }
 
 export { is_tablet, is_mobile, device }

@@ -89,7 +89,7 @@ const NominatorMenu = ({ purposers, n_seconders }) => {
         display: none;
         padding: 10px 20px;
 
-        @media ${device.mobile} {
+        @media ${device.hideNominator} {
           display: flex;
         }
       `}

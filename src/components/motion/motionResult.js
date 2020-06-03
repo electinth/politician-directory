@@ -4,6 +4,7 @@ import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 import _ from "lodash"
 import { split_array } from "../waffle"
+import { device } from "./size"
 
 const Waffle = ({ partyMember }) => {
   return (
@@ -276,6 +277,9 @@ const motionresult = ({ className, votelog, members }) => {
 const MotionResult = styled(motionresult)`
   & .committee {
     display: flex;
+    @media ${device.motionResultBreak} {
+      flex-flow: column-reverse;
+    }
 
     &-member {
       flex: 1;
@@ -283,6 +287,20 @@ const MotionResult = styled(motionresult)`
 
     &-party {
       width: 30%;
+
+      @media ${device.motionResultBreak} {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 30px;
+        & > h4 {
+          flex: 0 0 100%;
+        }
+
+        & > div {
+          flex: 0 0 50%;
+        }
+      }
     }
 
     & h4 {
