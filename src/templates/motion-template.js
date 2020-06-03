@@ -8,6 +8,9 @@ import Info from "../components/motion/info"
 import Nominator from "../components/motion/nominator"
 import MotionMenu from "../components/motion/motionmenu"
 import Breadcrumb from "../components/motion/breadcrumb"
+import { createContext } from "react"
+import { useState } from "react"
+import { useContext } from "react"
 
 export const query = graphql`
   query(
@@ -129,6 +132,7 @@ const Container = styled.div`
     }
   }
 `
+export const MenuContext = createContext()
 const MotionPage = props => {
   const {
     data: {
@@ -139,26 +143,29 @@ const MotionPage = props => {
     },
   } = props
 
-  console.log(votelog)
+  const [menu, setMenu] = useState(null)
+
   return (
-    <Layout>
-      <Breadcrumb
-        main_cat={motion.main_cat}
-        registration_no={motion.registration_no}
-      />
-      <Container>
-        <MotionMenu name={motion.name} motionCat={motionCat} />
-        <Nominator motion={motion} />
-      </Container>
-      <Info
-        css={css`
-          margin: -100vh 250px 100px 250px;
-        `}
-        votelog={votelog}
-        motion={motion}
-        members={members}
-      />
-    </Layout>
+    <MenuContext.Provider value={{ menu, setMenu }}>
+      <Layout>
+        <Breadcrumb
+          main_cat={motion.main_cat}
+          registration_no={motion.registration_no}
+        />
+        <Container>
+          <MotionMenu name={motion.name} motionCat={motionCat} />
+          <Nominator motion={motion} />
+        </Container>
+        <Info
+          css={css`
+            margin: -100vh 250px 100px 250px;
+          `}
+          votelog={votelog}
+          motion={motion}
+          members={members}
+        />
+      </Layout>
+    </MenuContext.Provider>
   )
 }
 
