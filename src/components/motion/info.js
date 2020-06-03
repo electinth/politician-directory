@@ -2,6 +2,7 @@ import React from "react"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import MotionResult from "./motionResult"
+import { device } from "./size"
 
 const info = function({ votelog, motion, members, className }) {
   return (
@@ -113,6 +114,10 @@ const Info = styled(info)`
 
   position: relative;
   z-index: 1;
+
+  @media ${device.tablet} {
+    box-shadow: none;
+  }
 `
 
 export default Info

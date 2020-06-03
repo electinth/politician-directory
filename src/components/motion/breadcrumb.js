@@ -11,6 +11,10 @@ const Breadcrumb = ({ main_cat, registration_no }) => {
         display: flex;
         padding: 30px 20px;
         border-top: 1px solid var(--cl-gray-4);
+
+        @media ${device.tablet} {
+          background-color: var(--cl-gray-4);
+        }
       `}
     >
       <div

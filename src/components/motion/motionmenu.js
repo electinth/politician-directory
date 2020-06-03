@@ -16,6 +16,10 @@ const MotionList = styled.ul`
   padding-right: 17px;
   box-sizing: content-box;
   margin: 0;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 `
 
 const Motion = styled.li`
@@ -24,7 +28,14 @@ const Motion = styled.li`
   margin: 0;
 
   box-sizing: border-box;
-  width: 250px;
+
+  ${({ popup }) =>
+    popup
+      ? `
+    width: 100%;
+    max-width: 500px;
+  `
+      : "width: 250px;"}
 
   & a {
     color: black;
@@ -41,7 +52,7 @@ const Motion = styled.li`
   }
 `
 
-const Motionmenu = ({ name, motionCat, className }) => {
+const Motionmenu = ({ name, motionCat, className, popup }) => {
   const listRef = useRef(null)
   useEffect(() => {
     if (!listRef) return
@@ -54,12 +65,13 @@ const Motionmenu = ({ name, motionCat, className }) => {
 
   return (
     <div className={className} css={css``}>
-      <MotionList ref={listRef}>
+      <MotionList ref={listRef} popup={popup}>
         {motionCat.map((motion, i) => (
           <Motion
             key={i}
             id={motion.name === name ? "current-motion" : ""}
             active={motion.name === name}
+            popup={popup}
           >
             <Link
               to={motion.fields.slug}

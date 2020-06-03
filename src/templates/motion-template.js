@@ -106,18 +106,26 @@ const Container = styled.div`
   }
 
   ${MotionMenu} {
-    flex: 0 0 250px;
+    flex: ${({ popup }) => (popup ? "1" : "0 0 250px")};
   }
 
   ${Nominator} {
     flex: 0 0 250px;
   }
 
-  & > * {
+  & > button {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 5;
+  }
+
+  & > div {
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
+    margin-top: ${({ popup }) => (popup ? "10vh" : "0")};
 
     &:after {
       content: "";
@@ -161,12 +169,21 @@ const MotionPage = props => {
           registration_no={motion.registration_no}
         />
         <Container popup={!!menu}>
-          <MotionMenu
-            name={motion.name}
-            motionCat={motionCat}
-            popup={menu === MenuChoice.motion}
-          />
-          <Nominator motion={motion} popup={menu === MenuChoice.nominator} />
+          {!!menu && <button onClick={() => setMenu(null)}>X</button>}
+          {menu === MenuChoice.nominator ? (
+            <></>
+          ) : (
+            <MotionMenu
+              name={motion.name}
+              motionCat={motionCat}
+              popup={menu === MenuChoice.motion}
+            />
+          )}
+          {menu === MenuChoice.motion ? (
+            <></>
+          ) : (
+            <Nominator motion={motion} popup={menu === MenuChoice.nominator} />
+          )}
         </Container>
         <Info
           css={css`
