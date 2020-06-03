@@ -37,6 +37,7 @@ const info = function({ votelog, motion, members, className }) {
                 display: flex;
                 margin: 20px 0;
                 margin-right: auto;
+                flex-flow: row wrap;
 
                 & .datebox + .datebox {
                   margin-left: 30px;
