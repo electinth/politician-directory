@@ -83,15 +83,14 @@ const NominatorMenu = ({ purposers, n_seconders }) => {
       css={css`
         background-color: rgb(250, 250, 250);
 
-        display: flex;
         justify-content: space-between;
         align-items: center;
 
-        visibility: hidden;
+        display: none;
         padding: 10px 20px;
 
         @media ${device.mobile} {
-          visibility: visible;
+          display: flex;
         }
       `}
     >
