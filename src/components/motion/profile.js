@@ -72,7 +72,7 @@ const ProfileContainer = styled.li`
     }
 
     & .party {
-      flex: 0 0 200px;
+      flex: 0 0 100px;
     }
   }
 `

@@ -24,7 +24,7 @@ const Motion = styled.li`
   margin: 0;
 
   box-sizing: border-box;
-  width: 300px;
+  width: 250px;
 
   & a {
     color: black;

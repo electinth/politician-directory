@@ -99,11 +99,11 @@ const Container = styled.div`
   }
 
   ${MotionMenu} {
-    flex: 0 0 300px;
+    flex: 0 0 250px;
   }
 
   ${Nominator} {
-    flex: 0 0 300px;
+    flex: 0 0 250px;
   }
 
   & > * {
@@ -152,7 +152,7 @@ const MotionPage = props => {
       </Container>
       <Info
         css={css`
-          margin: -100vh 300px 100px 300px;
+          margin: -100vh 250px 100px 250px;
         `}
         votelog={votelog}
         motion={motion}
