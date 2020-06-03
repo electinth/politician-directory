@@ -125,10 +125,6 @@ const Info = styled(info)`
 
   position: relative;
   z-index: 1;
-
-  @media ${device.tablet} {
-    box-shadow: none;
-  }
 `
 
 export default Info
