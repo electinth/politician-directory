@@ -1,9 +1,9 @@
 const HIDE_MOTION = 1100
 const HIDE_NOMINATOR = 1100 - 250
 const MOTION_RESULT_BREAK = 700
+const MOTION_RESULT_PROFILE_BREAK = 500
 
-const is_tablet = () => window.innerWidth <= HIDE_MOTION
-const is_mobile = () => window.innerWidth <= HIDE_NOMINATOR
+const is_breakpoint = breakpoint => () => window.innerWidth <= breakpoint
 
 const device = {
   hideMotion: `(max-width: ${HIDE_MOTION}px)`,
@@ -11,4 +11,8 @@ const device = {
   motionResultBreak: `(max-width: ${MOTION_RESULT_BREAK}px)`,
 }
 
-export { is_tablet, is_mobile, device }
+const breakpoint = {
+  motionResultProfileBreak: is_breakpoint(MOTION_RESULT_PROFILE_BREAK),
+}
+
+export { device, breakpoint }

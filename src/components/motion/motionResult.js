@@ -4,7 +4,9 @@ import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 import _ from "lodash"
 import { split_array } from "../waffle"
-import { device } from "./size"
+import { device, breakpoint } from "./size"
+import { useState } from "react"
+import { useEffect } from "react"
 
 const Waffle = ({ partyMember }) => {
   return (
@@ -138,13 +140,20 @@ const VOTELOG_MAP = [
   },
 ]
 
-const motionresult = ({ className, votelog, members }) => {
+const Motionresult = ({ className, votelog, members }) => {
   const by_party = _.groupBy(members, "party")
   const status = votelog
     ? votelog.passed
       ? "แต่งตั้งคณะกรรมาธิการ"
       : "ไม่แต่งตั้งคณะกรรมาธิการ"
     : "ยังไม่ได้ลงมติ"
+
+  const [motionResultProfileBreak, setMotionResultProfileBreak] = useState(
+    false
+  )
+  window.addEventListener("resize", () =>
+    setMotionResultProfileBreak(!breakpoint.motionResultProfileBreak())
+  )
 
   return (
     <>
@@ -237,7 +246,7 @@ const motionresult = ({ className, votelog, members }) => {
                             last_name={member.lastname}
                             party={member.party}
                             slug={member.fields.slug}
-                            oneline
+                            oneline={motionResultProfileBreak}
                           />
                         ))}
                       </ul>
@@ -274,7 +283,7 @@ const motionresult = ({ className, votelog, members }) => {
     </>
   )
 }
-const MotionResult = styled(motionresult)`
+const MotionResult = styled(Motionresult)`
   & .committee {
     display: flex;
     @media ${device.motionResultBreak} {
