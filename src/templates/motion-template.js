@@ -11,6 +11,7 @@ import Breadcrumb from "../components/motion/breadcrumb"
 import { createContext } from "react"
 import { useState } from "react"
 import { useContext } from "react"
+import { device } from "../components/motion/size"
 
 export const query = graphql`
   query(
@@ -92,9 +93,12 @@ const Container = styled.div`
   max-width: 100%;
   height: 100vh;
 
-  position: sticky;
+  position: ${({ popup }) => (popup ? "absolute" : "sticky")};
   top: 0;
   left: 0;
+  ${({ popup }) => popup && `z-index: 3;`}
+  background-color: ${({ popup }) =>
+    popup ? "var(--cl-white)" : "transparent"};
 
   pointer-events: none;
   & * {
@@ -133,6 +137,10 @@ const Container = styled.div`
   }
 `
 export const MenuContext = createContext()
+export const MenuChoice = {
+  motion: "motion",
+  nominator: "nominator",
+}
 const MotionPage = props => {
   const {
     data: {
@@ -152,13 +160,25 @@ const MotionPage = props => {
           main_cat={motion.main_cat}
           registration_no={motion.registration_no}
         />
-        <Container>
-          <MotionMenu name={motion.name} motionCat={motionCat} />
-          <Nominator motion={motion} />
+        <Container popup={!!menu}>
+          <MotionMenu
+            name={motion.name}
+            motionCat={motionCat}
+            popup={menu === MenuChoice.motion}
+          />
+          <Nominator motion={motion} popup={menu === MenuChoice.nominator} />
         </Container>
         <Info
           css={css`
             margin: -100vh 250px 100px 250px;
+
+            @media ${device.tablet} {
+              margin-left: 0;
+            }
+
+            @media ${device.mobile} {
+              margin-right: 0;
+            }
           `}
           votelog={votelog}
           motion={motion}

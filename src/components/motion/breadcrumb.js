@@ -2,7 +2,7 @@ import React from "react"
 import { css } from "@emotion/core"
 import { is_tablet, device } from "./size"
 import { useContext } from "react"
-import { MenuContext } from "../../templates/motion-template"
+import { MenuContext, MenuChoice } from "../../templates/motion-template"
 const Breadcrumb = ({ main_cat, registration_no }) => {
   const { setMenu } = useContext(MenuContext)
   return (
@@ -23,7 +23,7 @@ const Breadcrumb = ({ main_cat, registration_no }) => {
         <span>{registration_no}</span>
       </div>
       <span
-        onClick={() => setMenu("motion")}
+        onClick={() => setMenu(MenuChoice.motion)}
         css={css`
           visibility: hidden;
 
