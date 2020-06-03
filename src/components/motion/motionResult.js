@@ -111,6 +111,7 @@ const ResultStatus = styled.h3`
   border-left: 6px solid var(--cl-black);
   font-size: 26px;
   padding: 20px 15px;
+  margin: 0;
 `
 
 const VOTELOG_MAP = [
@@ -138,12 +139,12 @@ const VOTELOG_MAP = [
 
 const motionresult = ({ className, votelog, members }) => {
   const by_party = _.groupBy(members, "party")
-  const status =
-    votelog === "approve"
+  const status = votelog
+    ? votelog.passed
       ? "แต่งตั้งคณะกรรมาธิการ"
-      : votelog
-      ? "ไม่แต่งตั้งคณะกรรมาธิการ"
-      : "ยังไม่ได้ลงมติ"
+      : "ไม่แต่งตั้งคณะกรรมาธิการ"
+    : "ยังไม่ได้ลงมติ"
+
   return (
     <>
       <h3
@@ -156,7 +157,7 @@ const motionresult = ({ className, votelog, members }) => {
       </h3>
       <Card className={className}>
         <ResultStatus>{status}</ResultStatus>
-        {votelog === "approve" && (
+        {votelog && (
           <>
             <section
               css={css`
@@ -193,77 +194,79 @@ const motionresult = ({ className, votelog, members }) => {
                 )
               })}
             </section>
-            <section
-              css={css`
-                padding: 20px 30px;
-              `}
-            >
-              <h3
+            {votelog.passed && (
+              <section
                 css={css`
-                  font-size: 18px;
+                  padding: 20px 30px;
                 `}
               >
-                ข้อมูลแต่งตั้งคณะกรรมาธิการ
-              </h3>
-              <div
-                css={css`
-                  background-color: white;
-                  padding: 25px 15px;
-                `}
-              >
-                <h4
+                <h3
                   css={css`
-                    font-size: 16px;
-                    margin-bottom: 25px;
+                    font-size: 18px;
                   `}
                 >
-                  คณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการบริหารจัดการลุ่มน้ำทั้งระบบ
-                </h4>
-                <div className="committee">
-                  <div className="committee-member">
-                    <h4>สมาชิก ({members.length})</h4>
-                    <ul
-                      css={css`
-                        margin: 30px 0;
-                      `}
-                    >
-                      {members.map(member => (
-                        <Profile
-                          key={member.name + member.lastname}
-                          name={member.name}
-                          last_name={member.lastname}
-                          party={member.party}
-                          slug={member.fields.slug}
-                          oneline
-                        />
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="committee-party">
-                    <h4>สัดส่วน</h4>
-                    {Object.entries(by_party)
-                      .sort((a, b) => b[1].length - a[1].length)
-                      .map(([p, m]) => {
-                        if (p === "") return
-                        return (
-                          <div key={p}>
-                            <h5
-                              css={css`
-                                margin-top: 8px;
-                                margin-bottom: 2px;
-                                font-size: 12px;
-                              `}
-                            >
-                              {p} ({m.length})
-                            </h5>
-                            <Waffle partyMember={m} />
-                          </div>
-                        )
-                      })}
+                  ข้อมูลแต่งตั้งคณะกรรมาธิการ
+                </h3>
+                <div
+                  css={css`
+                    background-color: white;
+                    padding: 25px 15px;
+                  `}
+                >
+                  <h4
+                    css={css`
+                      font-size: 16px;
+                      margin-bottom: 25px;
+                    `}
+                  >
+                    คณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการบริหารจัดการลุ่มน้ำทั้งระบบ
+                  </h4>
+                  <div className="committee">
+                    <div className="committee-member">
+                      <h4>สมาชิก ({members.length})</h4>
+                      <ul
+                        css={css`
+                          margin: 30px 0;
+                        `}
+                      >
+                        {members.map(member => (
+                          <Profile
+                            key={member.name + member.lastname}
+                            name={member.name}
+                            last_name={member.lastname}
+                            party={member.party}
+                            slug={member.fields.slug}
+                            oneline
+                          />
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="committee-party">
+                      <h4>สัดส่วน</h4>
+                      {Object.entries(by_party)
+                        .sort((a, b) => b[1].length - a[1].length)
+                        .map(([p, m]) => {
+                          if (p === "") return
+                          return (
+                            <div key={p}>
+                              <h5
+                                css={css`
+                                  margin-top: 8px;
+                                  margin-bottom: 2px;
+                                  font-size: 12px;
+                                `}
+                              >
+                                {p} ({m.length})
+                              </h5>
+                              <Waffle partyMember={m} />
+                            </div>
+                          )
+                        })}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            )}
           </>
         )}
       </Card>
