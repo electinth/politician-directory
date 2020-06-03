@@ -5,6 +5,8 @@ import styled from "@emotion/styled"
 import { Link } from "gatsby"
 import { useEffect } from "react"
 import { useRef } from "react"
+import { useContext } from "react"
+import { MenuContext } from "../../templates/motion-template"
 
 const MotionList = styled.ul`
   list-style: none;
@@ -54,6 +56,7 @@ const Motion = styled.li`
 
 const Motionmenu = ({ name, motionCat, className, popup }) => {
   const listRef = useRef(null)
+  const { menu } = useContext(MenuContext)
   useEffect(() => {
     if (!listRef) return
     // when component did mount
@@ -61,7 +64,7 @@ const Motionmenu = ({ name, motionCat, className, popup }) => {
     const currentMotion = document.getElementById("current-motion")
     listRef.current.scrollTop =
       currentMotion.offsetTop - currentMotion.offsetHeight
-  }, [listRef])
+  }, [listRef, menu])
 
   return (
     <div className={className} css={css``}>
