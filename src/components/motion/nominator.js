@@ -4,6 +4,9 @@ import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 
 import Profile from "./profile"
+import { useContext } from "react"
+import { MenuContext, MenuChoice } from "../../templates/motion-template"
+import { device } from "./size"
 
 const nominator = ({ className, motion: { purposers, seconders } }) => {
   return (
@@ -71,3 +74,45 @@ const Nominator = styled(nominator)`
 `
 
 export default Nominator
+
+const NominatorMenu = ({ purposers, n_seconders }) => {
+  const { setMenu } = useContext(MenuContext)
+  return (
+    <div
+      className="nominator-menu"
+      css={css`
+        background-color: rgb(250, 250, 250);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        visibility: hidden;
+        padding: 10px 20px;
+
+        @media ${device.mobile} {
+          visibility: visible;
+        }
+      `}
+    >
+      <Profile {...purposers[0]} />
+      <button
+        onClick={() => setMenu(MenuChoice.nominator)}
+        css={css`
+          border: none;
+          background-color: var(--cl-white);
+          border: 1px solid var(--cl-gray-3);
+          border-radius: 5px;
+          padding: 7.5px;
+
+          color: var(--cl-gray-1);
+        `}
+      >
+        <div>{n_seconders}</div>
+        <div>ผู้รับรอง</div>
+      </button>
+    </div>
+  )
+}
+
+export { NominatorMenu }

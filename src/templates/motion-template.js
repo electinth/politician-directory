@@ -10,7 +10,6 @@ import MotionMenu from "../components/motion/motionmenu"
 import Breadcrumb from "../components/motion/breadcrumb"
 import { createContext } from "react"
 import { useState } from "react"
-import { useContext } from "react"
 import { device } from "../components/motion/size"
 
 export const query = graphql`
@@ -110,7 +109,8 @@ const Container = styled.div`
   }
 
   ${Nominator} {
-    flex: 0 0 250px;
+    flex: ${({ popup }) => (popup ? "1" : "0 0 250px")};
+    ${({ popup }) => popup && "margin: 10vh auto;"}
   }
 
   & > button {
