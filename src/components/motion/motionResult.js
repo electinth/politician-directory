@@ -138,7 +138,12 @@ const VOTELOG_MAP = [
 
 const motionresult = ({ className, votelog, members }) => {
   const by_party = _.groupBy(members, "party")
-
+  const status =
+    votelog === "approve"
+      ? "แต่งตั้งคณะกรรมาธิการ"
+      : votelog
+      ? "ไม่แต่งตั้งคณะกรรมาธิการ"
+      : "ยังไม่ได้ลงมติ"
   return (
     <>
       <h3
@@ -150,113 +155,117 @@ const motionresult = ({ className, votelog, members }) => {
         ผลการลงมติ
       </h3>
       <Card className={className}>
-        <ResultStatus>แต่งตั้งคณะกรรมาธิการ</ResultStatus>
-        <section
-          css={css`
-            padding: 20px 30px;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-evenly;
-          `}
-        >
-          {VOTELOG_MAP.map(({ en, th, color }) => {
-            return (
-              <div key={en}>
-                <h5
-                  css={css`
-                    font-size: 14px;
-                    margin: 10px 0;
-                  `}
-                >
-                  {th}{" "}
-                  <span
-                    css={css`
-                      color: var(--cl-gray-1);
-                    `}
-                  >
-                    {votelog[en]}
-                  </span>
-                </h5>
-                <VoteWaffle
-                  en={en}
-                  members={[...Array(votelog[en]).keys()]}
-                  color={color}
-                />
-              </div>
-            )
-          })}
-        </section>
-        <section
-          css={css`
-            padding: 20px 30px;
-          `}
-        >
-          <h3
-            css={css`
-              font-size: 18px;
-            `}
-          >
-            ข้อมูลแต่งตั้งคณะกรรมาธิการ
-          </h3>
-          <div
-            css={css`
-              background-color: white;
-              padding: 25px 15px;
-            `}
-          >
-            <h4
+        <ResultStatus>{status}</ResultStatus>
+        {votelog === "approve" && (
+          <>
+            <section
               css={css`
-                font-size: 16px;
-                margin-bottom: 25px;
+                padding: 20px 30px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
               `}
             >
-              คณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการบริหารจัดการลุ่มน้ำทั้งระบบ
-            </h4>
-            <div className="committee">
-              <div className="committee-member">
-                <h4>สมาชิก ({members.length})</h4>
-                <ul
+              {VOTELOG_MAP.map(({ en, th, color }) => {
+                return (
+                  <div key={en}>
+                    <h5
+                      css={css`
+                        font-size: 14px;
+                        margin: 10px 0;
+                      `}
+                    >
+                      {th}{" "}
+                      <span
+                        css={css`
+                          color: var(--cl-gray-1);
+                        `}
+                      >
+                        {votelog[en]}
+                      </span>
+                    </h5>
+                    <VoteWaffle
+                      en={en}
+                      members={[...Array(votelog[en]).keys()]}
+                      color={color}
+                    />
+                  </div>
+                )
+              })}
+            </section>
+            <section
+              css={css`
+                padding: 20px 30px;
+              `}
+            >
+              <h3
+                css={css`
+                  font-size: 18px;
+                `}
+              >
+                ข้อมูลแต่งตั้งคณะกรรมาธิการ
+              </h3>
+              <div
+                css={css`
+                  background-color: white;
+                  padding: 25px 15px;
+                `}
+              >
+                <h4
                   css={css`
-                    margin: 30px 0;
+                    font-size: 16px;
+                    margin-bottom: 25px;
                   `}
                 >
-                  {members.map(member => (
-                    <Profile
-                      key={member.name + member.lastname}
-                      name={member.name}
-                      last_name={member.lastname}
-                      party={member.party}
-                      slug={member.fields.slug}
-                      oneline
-                    />
-                  ))}
-                </ul>
+                  คณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการบริหารจัดการลุ่มน้ำทั้งระบบ
+                </h4>
+                <div className="committee">
+                  <div className="committee-member">
+                    <h4>สมาชิก ({members.length})</h4>
+                    <ul
+                      css={css`
+                        margin: 30px 0;
+                      `}
+                    >
+                      {members.map(member => (
+                        <Profile
+                          key={member.name + member.lastname}
+                          name={member.name}
+                          last_name={member.lastname}
+                          party={member.party}
+                          slug={member.fields.slug}
+                          oneline
+                        />
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="committee-party">
+                    <h4>สัดส่วน</h4>
+                    {Object.entries(by_party)
+                      .sort((a, b) => b[1].length - a[1].length)
+                      .map(([p, m]) => {
+                        if (p === "") return
+                        return (
+                          <div key={p}>
+                            <h5
+                              css={css`
+                                margin-top: 8px;
+                                margin-bottom: 2px;
+                                font-size: 12px;
+                              `}
+                            >
+                              {p} ({m.length})
+                            </h5>
+                            <Waffle partyMember={m} />
+                          </div>
+                        )
+                      })}
+                  </div>
+                </div>
               </div>
-              <div className="committee-party">
-                <h4>สัดส่วน</h4>
-                {Object.entries(by_party)
-                  .sort((a, b) => b[1].length - a[1].length)
-                  .map(([p, m]) => {
-                    if (p === "") return
-                    return (
-                      <div key={p}>
-                        <h5
-                          css={css`
-                            margin-top: 8px;
-                            margin-bottom: 2px;
-                            font-size: 12px;
-                          `}
-                        >
-                          {p} ({m.length})
-                        </h5>
-                        <Waffle partyMember={m} />
-                      </div>
-                    )
-                  })}
-              </div>
-            </div>
-          </div>
-        </section>
+            </section>
+          </>
+        )}
       </Card>
     </>
   )
