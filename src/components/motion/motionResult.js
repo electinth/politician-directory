@@ -151,8 +151,10 @@ const Motionresult = ({ className, votelog, members }) => {
   const [motionResultProfileBreak, setMotionResultProfileBreak] = useState(
     false
   )
-  window.addEventListener("resize", () =>
-    setMotionResultProfileBreak(!breakpoint.motionResultProfileBreak())
+  useEffect(() =>
+    window.addEventListener("resize", () =>
+      setMotionResultProfileBreak(!breakpoint.motionResultProfileBreak())
+    )
   )
 
   return (
