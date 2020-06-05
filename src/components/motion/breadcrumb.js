@@ -30,13 +30,44 @@ const Breadcrumb = ({ main_cat, registration_no }) => {
         onClick={() => setMenu(MenuChoice.motion)}
         css={css`
           visibility: hidden;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
 
           @media ${device.hideMotion} {
             visibility: visible;
           }
         `}
       >
-        รายการญัตติ
+        <span>รายการญัตติ</span>
+        <span
+          className="icon"
+          css={css`
+            display: inline-block;
+            .menu-bar {
+              width: 15px;
+              height: 2px;
+              margin: 3px 0;
+              background-color: var(--cl-black);
+              position: relative;
+              margin-left: 10px;
+
+              &::before {
+                content: "";
+                width: 2px;
+                height: 2px;
+                position: absolute;
+                left: -4px;
+                border-radius: 100%;
+                background-color: var(--cl-black);
+              }
+            }
+          `}
+        >
+          <div className="menu-bar"></div>
+          <div className="menu-bar"></div>
+          <div className="menu-bar"></div>
+        </span>
       </span>
     </div>
   )
