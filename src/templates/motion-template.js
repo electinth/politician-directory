@@ -113,11 +113,18 @@ const Container = styled.div`
     ${({ popup }) => popup && "margin: 10vh auto;"}
   }
 
-  & > button {
-    position: fixed;
-    right: 0;
+  & > .menu-title {
+    position: absolute;
+    left: 50%;
     top: 0;
     z-index: 5;
+    transform: translateX(-50%);
+    margin: 0;
+
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
   }
 
   & > div {
@@ -172,7 +179,57 @@ const MotionPage = props => {
           popup={!!menu}
           style={{ pointerEvents: !!menu ? "all" : "none" }}
         >
-          {!!menu && <button onClick={() => setMenu(null)}>X</button>}
+          {!!menu && (
+            <div
+              className="menu-title"
+              style={{
+                maxWidth: menu === MenuChoice.motion && "500px",
+                padding: menu === MenuChoice.nominator && "0 20px",
+              }}
+            >
+              <h4
+                css={css`
+                  font-size: 15px;
+                `}
+              >
+                {menu === MenuChoice.nominator
+                  ? "ผู้เสนอและผู้รับรอง"
+                  : "รายการญัตติ"}
+              </h4>
+              <button
+                css={css`
+                  width: 30px;
+                  height: 30px;
+                  background-color: transparent;
+                  border: 2px solid var(--cl-black);
+                  border-radius: 50%;
+                  outline: none;
+                  cursor: pointer;
+                  position: relative;
+
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  &:before,
+                  &:after {
+                    content: " ";
+                    height: 15px;
+                    width: 2px;
+                    margin: 0 -0.5px;
+                    background-color: var(--cl-black);
+                  }
+                  &:before {
+                    transform: rotate(45deg);
+                  }
+                  &:after {
+                    transform: rotate(-45deg);
+                  }
+                `}
+                onClick={() => setMenu(null)}
+              ></button>
+            </div>
+          )}
           {menu === MenuChoice.nominator ? (
             <></>
           ) : (
