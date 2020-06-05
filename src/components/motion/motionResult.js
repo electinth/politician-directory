@@ -140,7 +140,12 @@ const VOTELOG_MAP = [
   },
 ]
 
-const Motionresult = ({ className, votelog, members }) => {
+const Motionresult = ({
+  className,
+  votelog,
+  members,
+  url: { voteLink, pageLink },
+}) => {
   const by_party = _.groupBy(members, "party")
   const status = votelog
     ? votelog.passed
@@ -163,9 +168,47 @@ const Motionresult = ({ className, votelog, members }) => {
         css={css`
           font-size: 20px;
           margin: 15px 0;
+
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .download {
+            font-family: var(--ff-text);
+            font-weight: 100;
+            font-size: 16px;
+            border: 1px solid var(--cl-gray-4);
+            border-radius: 4px;
+            padding: 5px 10px;
+            color: var(--cl-gray-1);
+
+            & + .download {
+              margin-left: 10px;
+            }
+
+            &-container {
+              display: flex;
+            }
+          }
         `}
       >
-        ผลการลงมติ
+        <div>ผลการลงมติ</div>
+        <div className="download-container">
+          <a
+            href={pageLink}
+            target="_blank"
+            className="download download-detail"
+          >
+            รายละเอียดมติ
+          </a>
+          <a
+            href={voteLink}
+            target="_blank"
+            className="download download-record"
+          >
+            บันทึกการลงมติ
+          </a>
+        </div>
       </h3>
       <Card className={className}>
         <ResultStatus>{status}</ResultStatus>

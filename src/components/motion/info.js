@@ -111,7 +111,11 @@ const info = function({ votelog, motion, members, className }) {
         >
           {motion.content}
         </div>
-        <MotionResult votelog={votelog} members={members} />
+        <MotionResult
+          votelog={votelog}
+          members={members}
+          url={{ voteLink: motion.voting_url, pageLink: motion.page_url }}
+        />
       </div>
     </div>
   )

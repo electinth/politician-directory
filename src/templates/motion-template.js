@@ -45,6 +45,7 @@ export const query = graphql`
       registration_no
       proposal_date(formatString: "DD/MM/YYYY")
       page_url
+      voting_url
       main_cat
     }
 
