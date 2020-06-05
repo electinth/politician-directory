@@ -168,7 +168,10 @@ const MotionPage = props => {
           main_cat={motion.main_cat}
           registration_no={motion.registration_no}
         />
-        <Container popup={!!menu}>
+        <Container
+          popup={!!menu}
+          style={{ pointerEvents: !!menu ? "all" : "none" }}
+        >
           {!!menu && <button onClick={() => setMenu(null)}>X</button>}
           {menu === MenuChoice.nominator ? (
             <></>
