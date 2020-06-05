@@ -231,7 +231,7 @@ const Motionresult = ({ className, votelog, members }) => {
                       margin-bottom: 25px;
                     `}
                   >
-                    คณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการบริหารจัดการลุ่มน้ำทั้งระบบ
+                    คณะกรรมาธิการ
                   </h4>
                   <div className="committee">
                     <div className="committee-member">
