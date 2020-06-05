@@ -99,12 +99,14 @@ const NominatorMenu = ({ purposers, n_seconders }) => {
         onClick={() => setMenu(MenuChoice.nominator)}
         css={css`
           border: none;
+          outline: none;
           background-color: var(--cl-white);
           border: 1px solid var(--cl-gray-3);
           border-radius: 5px;
           padding: 7.5px;
 
           color: var(--cl-gray-1);
+          cursor: pointer;
         `}
       >
         <div>{n_seconders}</div>
