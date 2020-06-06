@@ -9,13 +9,7 @@ function extent(arr) {
   return [Math.min(...arr), Math.max(...arr)]
 }
 
-const padding = {
-  top: 50,
-  right: 50,
-  bottom: 50,
-  left: 150,
-}
-const StatusBarChart = ({ data }) => {
+const StatusBarChart = ({ data, width }) => {
   const Y = scaleLinear()
     .domain([0, extent(data.map(d => d.count))[1]])
     .range([0, 100])
@@ -23,10 +17,9 @@ const StatusBarChart = ({ data }) => {
     <div
       className="statusbar-container"
       css={css`
-        width: 25%;
+        width: ${width};
         height: 200px;
         background-color: white;
-        padding: 20px;
 
         display: flex;
         flex-flow: column nowrap;
@@ -42,7 +35,7 @@ const StatusBarChart = ({ data }) => {
             flex: 1;
           }
           &--bararea {
-            flex: 0 0 33%;
+            flex: 0 0 ${100 / data.length}%;
           }
           &--bar {
             width: 33%;
@@ -51,7 +44,7 @@ const StatusBarChart = ({ data }) => {
             border-radius: 3px;
           }
           &--label {
-            flex: 0 0 33%;
+            flex: 0 0 ${100 / data.length}%;
             text-align: center;
             align-self: flex-start;
           }

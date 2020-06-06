@@ -37,10 +37,21 @@ const MotionPage = ({ data }) => {
           xTicks={[0, 5, 10, 15, 20, 25]}
         />
         <StatusBarChart
+          width={`${25}%`}
           data={[
             { status: "วาระพิจารณาในกมธ.", count: 30 },
             { status: "รอบรรจุ", count: 20 },
             { status: "ระหว่างการพิจารณา", count: 23 },
+          ]}
+        />
+
+        <StatusBarChart
+          width={`${(25 * 4) / 3}%`}
+          data={[
+            { status: "ส่งรมต", count: 30 },
+            { status: "ตั้งกมธ.วิสามัญ", count: 17 },
+            { status: "ไม่ผ่าน", count: 12 },
+            { status: "อื่นๆ", count: 23 },
           ]}
         />
       </section>
