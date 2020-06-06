@@ -19,9 +19,7 @@ const MPInfo = props => (
 )
 
 const PeopleCardMini = props => {
-  // console.log(props)
   let peopleInfo = MPInfo(props)
-  console.log("props", props)
   return (
     <div
       key={props.id}

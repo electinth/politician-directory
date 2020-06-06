@@ -209,6 +209,6 @@ export default ({ data }) => {
       others: uniqueChoices("occupation_group"),
     },
   }
-  console.log(choices)
+
   return <WaffleFilter data={data} choices={choices} />
 }

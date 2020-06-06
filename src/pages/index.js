@@ -1,158 +1,191 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Button from "../components/button"
-import Hero from "../components/hero"
-import VoteLogCard from "../components/voteLogCard"
-import WaffleFilter from "../components/waffleFilter"
-import PartyGroupList from "../components/partyGroupList"
+import { media } from "../styles"
+import ArrowRightIcon from "../images/svg/arrow-right.svg"
 
 export const query = graphql`
   query {
-    cabinet: allPeopleYaml(
-      filter: { is_cabinet: { eq: true }, is_active: { eq: true } }
-    ) {
-      totalCount
-    }
-    senator: allPeopleYaml(
-      filter: { is_senator: { eq: true }, is_active: { eq: true } }
-    ) {
-      totalCount
-    }
-    allPeopleYaml {
-      totalCount
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          birthdate(fromNow: true)
-          degree
-          education
-          ex_occupation
-          graduation
-          gender
-          occupation_group
-          name
-          lastname
-          title
-          cabinet_position
-          is_active
-          is_cabinet
-          is_senator
-          is_mp
-          mp_type
-          mp_list
-          mp_province
-          mp_zone
-          party
-        }
-      }
-    }
-    allVotelogYaml(
-      filter: { is_active: { eq: true } }
-      limit: 6
-      sort: { fields: vote_date, order: DESC }
-    ) {
-      totalCount
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          title
-          description_th
-          approve
-          disprove
-          abstained
-          absent
-          vote_date
-        }
-      }
-    }
-    cabinetImage: file(
-      relativePath: { eq: "images/icons/cabinet/cabinet.png" }
-    ) {
+    peopleImage: file(relativePath: { eq: "images/hero/partySummary.png" }) {
       childImageSharp {
-        fixed(width: 60) {
-          ...GatsbyImageSharpFixed
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
     }
-    senateImage: file(relativePath: { eq: "images/icons/senate/senate.png" }) {
+    motionImage: file(relativePath: { eq: "images/hero/voteSummary.png" }) {
       childImageSharp {
-        fixed(width: 60) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    representativeImage: file(
-      relativePath: { eq: "images/icons/representative/representative.png" }
-    ) {
-      childImageSharp {
-        fixed(width: 60) {
-          ...GatsbyImageSharpFixed
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
     }
   }
 `
 
-const cssH1 = { fontSize: "4.8rem", marginTop: "4rem" }
-
-const cssSection = {
-  paddingTop: "3rem",
-  paddingBottom: "8rem",
-  h2: {
-    fontSize: "4.8rem",
-    textAlign: "center",
-  },
-}
-const cssSectionWhite = {
-  ...cssSection,
-  background: "var(--cl-white)",
-}
-const cssSectionBlack = {
-  ...cssSection,
-  color: "var(--cl-white)",
-  background: "var(--cl-black)",
-  h2: {
-    ...cssSection.h2,
-    color: "var(--cl-white)",
-  },
-}
-
-const cssPartyTypeCard = {
+const cssMainSection = {
   display: "flex",
   flexDirection: "column",
+  padding: "0 0",
+  [media(767)]: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+}
+
+const cssContentSection = {
+  display: "grid",
+  gridTemplateColumns: "1fr 12rem",
+  gridTemplateRows: "1fr 12rem",
+  gap: "0 2rem",
+  gridTemplateAreas: `"content link" "content image"`,
+  justifyItems: "stretch",
+  padding: "0 0",
+  margin: "0 0",
+  overflow: "hidden",
+
+  ".content": {
+    gridArea: "content",
+    padding: "2rem 0 2rem 2rem",
+    h2: {
+      fontSize: "2.8rem",
+      textAlign: "left",
+    },
+    "p:last-child": { marginBottom: 0 },
+  },
+
+  ".link": {
+    gridArea: "link",
+    justifySelf: "end",
+    alignSelf: "start",
+    padding: "2rem 2rem 2rem 0",
+  },
+
+  ".image": {
+    gridArea: "image",
+    justifySelf: "end",
+    alignSelf: "end",
+  },
+
+  [media(767)]: {
+    width: "50vw",
+    gridTemplateColumns: "1fr",
+    gridTemplateRows: "40vh 1fr 20vh",
+    gap: "1rem 0",
+    gridTemplateAreas: `"image" "content" "link"`,
+
+    ".content": {
+      h2: {
+        fontSize: "6.2rem",
+        textAlign: "center",
+        margin: "0 auto 3rem",
+      },
+      p: {
+        width: "40rem",
+        maxWidth: "80%",
+        margin: "0 auto",
+      },
+    },
+
+    ".image": {
+      justifySelf: "center",
+      alignSelf: "end",
+    },
+
+    ".link": {
+      justifySelf: "center",
+      alignSelf: "start",
+      padding: "0 0",
+    },
+  },
+}
+
+const cssPeopleSection = {
+  backgroundColor: "var(--cl-people-section)",
+}
+
+const cssMotionSection = {
+  backgroundColor: "var(--cl-motion-section)",
+}
+
+const cssNextButton = {
+  display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  minHeight: "300px",
-  padding: "2rem",
-  borderRadius: "10px",
-  color: "var(--cl-white)",
-  background: "var(--cl-black)",
-
-  width: `calc((var(--container-width) - 4rem) / 2)`,
-  margin: "1rem",
-  "&:hover": {
-    background: "var(--cl-gray-0)",
+  width: "4.8rem",
+  height: "4.8rem",
+  borderRadius: "10rem",
+  color: "var(--cl-black)",
+  border: "2px solid var(--cl-black)",
+  textDecoration: "none",
+  transition: "all .2s ease-out",
+  span: {
+    display: "none",
+    fontFamily: "var(--ff-title)",
+  },
+  i: {
+    svg: {
+      display: "block",
+    },
+  },
+  ":hover": {
+    color: "var(--cl-white)",
+    backgroundColor: "var(--cl-black)",
     textDecoration: "none",
+    i: {
+      svg: {
+        path: {
+          fill: "var(--cl-white)",
+        },
+      },
+    },
   },
-  h3: {
-    color: "var(--cl-white)",
-    fontSize: "3.6rem",
+  [media(767)]: {
+    width: "auto",
+    height: "6.4rem",
+    padding: "0 2rem",
+    borderWidth: "3px",
+    span: {
+      display: "inline-block",
+      fontSize: "1.8rem",
+      letterSpacing: "2px",
+    },
+    i: {
+      marginLeft: "1.5rem",
+    },
   },
-  h4: {
-    color: "var(--cl-white)",
-    fontSize: "2.4rem",
-    fontFamily: "var(--ff-text)",
-    fontWeight: "normal",
+}
+
+const cssPeopleImage = {
+  display: "block",
+  width: "12rem",
+  height: "12rem",
+  borderRadius: "12rem",
+  backgroundColor: "var(--cl-black)",
+  transform: "translate(2rem, 2rem)",
+  [media(767)]: {
+    transform: "none",
+    width: "20rem",
+    height: "20rem",
+    borderRadius: "20rem",
+  },
+}
+
+const cssMotionImage = {
+  display: "block",
+  width: "12rem",
+  height: "12rem",
+  borderRadius: "12rem",
+  backgroundColor: "var(--cl-black)",
+  transform: "translate(2rem, 2rem)",
+  [media(767)]: {
+    transform: "none",
+    width: "20rem",
+    height: "20rem",
+    borderRadius: "20rem",
   },
 }
 
@@ -164,188 +197,51 @@ const IndexPage = ({ data }) => {
       }}
     >
       <SEO title="Home" />
-      <section css={{ ...cssSection }}>
-        <div className="container">
-          <h1
-            css={{
-              fontSize: "6rem",
-              fontWeight: "bold",
-              textAlign: "center",
-              marginTop: 0,
-              marginBottom: "1rem",
-              paddingTop: "6rem",
-            }}
-          >
-            ใครคือผู้แทนของเรา
-          </h1>
-          <h2
-            css={{
-              fontSize: "4.8rem",
-              textAlign: "center",
-              marginBottom: "8rem",
-            }}
-          >
-            ค้นหา ตรวจสอบ โปร่งใส
-          </h2>
-
-          <div css={{ margin: `0 auto 1.45rem` }}>
-            <Hero />
-
-            <div css={{ textAlign: "center" }}>
-              <Link
-                to="/about"
-                css={{
-                  padding: "1rem 4rem",
-                  fontFamily: "var(--ff-title)",
-                  fontSize: "2.4rem",
-                  color: "var(--cc-white)",
-                  textDecoration: "underline",
-                  border: "none",
-                  background: "none",
-                  "&:hover": {
-                    color: "gray",
-                  },
-                }}
-              >
-                เกี่ยวกับเรา
-              </Link>
-            </div>
+      <section css={{ ...cssMainSection }}>
+        <div
+          className="container"
+          css={{ ...cssContentSection, ...cssPeopleSection }}
+        >
+          <div className="content">
+            <h2>ใครคือผู้แทนของเรา?</h2>
+            <p>
+              รู้จักและติดตามนักการเมืองในสภา พวกเขาคือใคร เคยทำอะไรมาบ้าง
+              หนุนหรือค้านการโหวตอะไรในสภา
+            </p>
           </div>
-        </div>
-      </section>
-
-      <section
-        css={{
-          ...cssSectionWhite,
-        }}
-      >
-        <div className="container">
-          <WaffleFilter
-            // key="parliament"
-            data={data.allPeopleYaml.edges}
-          />
-        </div>
-      </section>
-
-      <section
-        css={{
-          ...cssSectionBlack,
-        }}
-      >
-        <div className="container">
-          <h2 css={{ ...cssH1 }}>สรุปผลการลงมติล่าสุด</h2>
-          <div
-            css={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "flex-start",
-              flexWrap: "wrap",
-              marginTop: "6rem",
-            }}
-          >
-            {data.allVotelogYaml.edges.map(({ node }) => (
-              <VoteLogCard
-                key={node.id}
-                view={"full"}
-                css={{
-                  width: `calc((var(--container-width) - 4rem) / 2)`,
-                  margin: "0 1rem 2rem 1rem",
-                }}
-                title={node.title}
-                description_th={node.description_th}
-                approve={node.approve}
-                disprove={node.disprove}
-                abstained={node.abstained}
-                absent={node.absent}
-                vote_date={node.vote_date}
-                slug={node.fields.slug}
-              />
-            ))}
-          </div>
-          <div
-            css={{
-              textAlign: "center",
-              margin: "4.8rem 0 0 0",
-            }}
-          >
-            <Button to="/votelog">ดูทั้งหมด</Button>
-          </div>
-        </div>
-      </section>
-
-      <section
-        css={{
-          ...cssSectionWhite,
-        }}
-      >
-        <div className="container">
-          <h2 css={{ ...cssH1 }}>สำรวจตามชนิดและสังกัดผู้แทน</h2>
-
-          <div
-            css={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "flex-start",
-              flexWrap: "wrap",
-              marginTop: "6rem",
-            }}
-          >
-            <Link to={"/cabinet"} css={cssPartyTypeCard}>
-              <Img
-                css={{ marginBottom: "1.2rem" }}
-                fixed={data.cabinetImage.childImageSharp.fixed}
-              />
-              <h3>คณะรัฐมนตรี</h3>
-              <h4>{data.cabinet.totalCount} คน</h4>
-            </Link>
-            <Link to={"/senate"} css={cssPartyTypeCard}>
-              <Img
-                css={{ marginBottom: "1.2rem" }}
-                fixed={data.senateImage.childImageSharp.fixed}
-              />
-              <h3>สมาชิกวุฒิสภา</h3>
-              <h4>{data.senator.totalCount} คน</h4>
+          <div className="link">
+            <Link to={"/people"} css={{ ...cssNextButton }}>
+              <span>ดูข้อมูลผู้แทน</span>
+              <i>
+                <ArrowRightIcon></ArrowRightIcon>
+              </i>
             </Link>
           </div>
-
-          <div css={{ marginTop: "4rem" }}>
-            <div
-              css={{
-                marginBottom: "1.2rem",
-                textAlign: "center",
-              }}
-            >
-              <Img fixed={data.representativeImage.childImageSharp.fixed} />
-            </div>
-            <h3
-              css={{
-                fontSize: "3.6rem",
-                textAlign: "center",
-              }}
-            >
-              <Link
-                to={"/representatives"}
-                css={{
-                  color: "var(--cl-black)",
-                }}
-              >
-                สมาชิกสภาผู้แทนราษฎร
-              </Link>
-            </h3>
-            <PartyGroupList
-              paneHeaderStyle={{
-                textAlign: "center",
-                fontSize: "2.4rem",
-              }}
-            />
-            <div
-              css={{
-                textAlign: "center",
-                margin: "4.8rem 0 0 0",
-              }}
-            >
-              <Button to="/representatives">ดู ส.ส. ทั้งหมด</Button>
-            </div>
+          <div className="image" css={{ ...cssPeopleImage }}>
+            <Img fluid={data.peopleImage.childImageSharp.fluid} />
+          </div>
+        </div>
+        <div
+          className="container"
+          css={{ ...cssContentSection, ...cssMotionSection }}
+        >
+          <div className="content">
+            <h2>ในสภาทำอะไรกันอยู่?</h2>
+            <p>
+              ประเด็นอะไรที่ถูกหยิบมาเสนอบ้าง เรื่องไหนได้รับการพิจารณาเร็ว-ช้า
+              ติดตามการทำงานผ่านญัตติของ กมธ.
+            </p>
+          </div>
+          <div className="link">
+            <Link to={"/motion"} css={{ ...cssNextButton }}>
+              <span>ดูข้อมูลญัตติ</span>
+              <i>
+                <ArrowRightIcon></ArrowRightIcon>
+              </i>
+            </Link>{" "}
+          </div>
+          <div className="image" css={{ ...cssMotionImage }}>
+            <Img fluid={data.motionImage.childImageSharp.fluid} />
           </div>
         </div>
       </section>

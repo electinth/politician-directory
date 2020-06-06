@@ -265,7 +265,7 @@ export function arrangeData(data, template, options = {}) {
   }
   return _.compact(
     template.map((col, i) => {
-      const item = _.find(data, [options.valueKey, col.name])
+      const item = _.find(data || [], [options.valueKey, col.name])
       if (!item) return null
       return {
         ...item,
@@ -365,7 +365,7 @@ export function loadCategoryStats(data) {
 
 export function filterVote(peopleVotelog, key, value) {
   return _.filter(peopleVotelog, o => {
-    return _.find(o.votelog, p => p.key === key).value === value
+    return _.find(o.votelog || [], p => p.key === key).value === value
   })
 }
 

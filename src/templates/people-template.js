@@ -379,7 +379,7 @@ const PeoplePage = props => {
         </section>
       ) : null}
 
-      {person.is_mp ? (
+      {person.is_mp && peopleVoteYaml ? (
         <PeopleVote
           peopleVoteYaml={peopleVoteYaml}
           allVotelogYaml={allVotelogYaml}

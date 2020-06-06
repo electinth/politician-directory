@@ -170,7 +170,7 @@ class PeopleVote extends Component {
 }
 
 export default ({ peopleVoteYaml, allVotelogYaml }) => {
-  const voteLogs = peopleVoteYaml.votelog
+  const voteLogs = peopleVoteYaml.votelog || []
   const allVotes = [...allVotelogYaml.nodes]
   // merge allVote and voteLog into allVote
   allVotes.forEach(vote => {
