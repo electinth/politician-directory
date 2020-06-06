@@ -16,32 +16,9 @@ const padding = {
   left: 150,
 }
 const StatusBarChart = ({ data }) => {
-  const barchartRef = useRef(null)
-  const tickRange = extent(data.map(d => d.count))
-
-  const [w, setW] = useState(0)
-  const [h, setH] = useState(0)
-
-  useEffect(() => {
-    const { clientHeight, clientWidth } = barchartRef.current
-    setW(clientWidth)
-    setH(clientHeight)
-    window.addEventListener("resize", () => {
-      const { clientHeight, clientWidth } = barchartRef.current
-      setW(clientWidth)
-      setH(clientHeight)
-    })
-  }, [])
-
-  const X = scaleLinear()
-    .domain(tickRange)
-    .range([padding.left, w - padding.right])
-
-  const Y = scaleBand()
-    .domain(data.map(d => d.status))
-    .range([h - padding.top, padding.bottom])
-    .paddingInner(0.5)
-    .paddingOuter(0.5)
+  const Y = scaleLinear()
+    .domain([0, extent(data.map(d => d.count))[1]])
+    .range([0, 100])
   return (
     <div
       className="statusbar-container"
@@ -49,25 +26,65 @@ const StatusBarChart = ({ data }) => {
         width: 25%;
         height: 200px;
         background-color: white;
+        padding: 20px;
+
+        display: flex;
+        flex-flow: column nowrap;
+
+        & > div {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: flex-end;
+        }
+
+        & .statusbar {
+          &--bars {
+            flex: 1;
+          }
+          &--bararea {
+            flex: 0 0 33%;
+          }
+          &--bar {
+            width: 33%;
+            margin: 0 auto;
+            height: 100%;
+            border-radius: 3px;
+          }
+          &--label {
+            flex: 0 0 33%;
+            text-align: center;
+            align-self: flex-start;
+          }
+        }
       `}
-      ref={barchartRef}
     >
-      <svg width="100%" height="100%">
-        <g className="statusbar--bars">
-          {data.map(d => (
-            <g
-              className="statusbar--bars"
+      <div className="statusbar--bars">
+        {data.map(d => (
+          <div
+            key={d.status}
+            className="statusbar--bararea"
+            style={{
+              height: Y(d.count) + "%",
+            }}
+          >
+            <div
+              className="statusbar--bar"
               style={{
-                transform: `translate(${Y(d.status)}px, ${h -
-                  padding.bottom}px)`,
+                backgroundColor: d.color || "steelblue",
               }}
-            >
-              <text>{d.status}</text>
-              <rect />
-            </g>
-          ))}
-        </g>
-      </svg>
+            ></div>
+          </div>
+        ))}
+      </div>
+      <div className="statusbar--labels">
+        {data.map(d => {
+          return (
+            <div key={d.status} className="statusbar--label">
+              {d.status}
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }
