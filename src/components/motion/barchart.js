@@ -13,7 +13,7 @@ const padding = {
   top: 50,
   right: 50,
   bottom: 50,
-  left: 50,
+  left: 150,
 }
 
 const BarChart = ({ data, xTicks }) => {
@@ -56,6 +56,10 @@ const BarChart = ({ data, xTicks }) => {
           & text {
             text-anchor: middle;
           }
+        }
+
+        & text {
+          fill: var(--cl-gray-2);
         }
       `}
       ref={barchartRef}
@@ -110,14 +114,27 @@ const BarChart = ({ data, xTicks }) => {
           {data
             .sort((a, b) => a.count - b.count)
             .map((d, i) => (
-              <rect
+              <g
                 key={d.category}
-                x={padding.left}
-                y={Y(d.category)}
-                width={X(d.count) - padding.left}
-                height={Y.bandwidth()}
-                fill="var(--cl-pink)"
-              />
+                className="bar-label"
+                style={{
+                  transform: `translate(${padding.left}px,${Y(d.category)}px)`,
+                }}
+              >
+                <text
+                  dy={Y.bandwidth() / 2}
+                  dx="-20"
+                  textAnchor="end"
+                  dominantBaseline="middle"
+                >
+                  {d.category}
+                </text>
+                <rect
+                  width={X(d.count) - padding.left}
+                  height={Y.bandwidth()}
+                  fill="var(--cl-pink)"
+                />
+              </g>
             ))}
         </g>
       </svg>
