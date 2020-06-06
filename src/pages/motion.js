@@ -33,7 +33,7 @@ const MotionPage = ({ data }) => {
             { category: "สังคม", count: 10 },
             { category: "อื่นๆ", count: 7 },
           ]}
-          xTicks={[0, 5, 10, 15, 20, 25, 30]}
+          xTicks={[0, 5, 10, 15, 20, 25]}
         />
       </section>
     </Layout>

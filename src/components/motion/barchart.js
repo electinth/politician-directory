@@ -1,6 +1,6 @@
 import React from "react"
 import { css } from "@emotion/core"
-import { scaleLinear } from "d3-scale"
+import { scaleLinear, scaleBand } from "d3-scale"
 import { useRef } from "react"
 import { useState } from "react"
 import { useEffect } from "react"
@@ -38,6 +38,12 @@ const BarChart = ({ data, xTicks }) => {
     .domain(tickRange)
     .range([padding.left, w - padding.right])
 
+  const Y = scaleBand()
+    .domain(data.map(d => d.category))
+    .range([h - padding.top, padding.bottom])
+    .paddingInner(0.5)
+    .paddingOuter(0.5)
+
   return (
     <div
       className="bar-container"
@@ -63,20 +69,57 @@ const BarChart = ({ data, xTicks }) => {
         >
           {xTicks.map(tick => (
             <g
+              key={tick}
               className={`tick tick-${tick}`}
               style={{
                 transform: `translate(${X(tick)}px, 0)`,
               }}
             >
               <text dy="20">{tick}</text>
-              <line y2="-100%" stroke="var(--cl-black)"></line>
+              <line
+                y1={-h + padding.top + padding.bottom}
+                y2={0}
+                stroke="var(--cl-gray-3)"
+              ></line>
             </g>
           ))}
         </g>
 
-        <g className="y-axis"></g>
+        <g className="y-axis">
+          {data.map(({ category: tick }) => {
+            return (
+              <g
+                className={`tick tick-${tick}`}
+                style={{
+                  transform: `translate(0, ${Y(tick) -
+                    Y.step() +
+                    (Y.step() - Y.bandwidth() / 2)}px)`,
+                }}
+              >
+                <line
+                  x1={padding.left}
+                  x2={w - padding.right}
+                  stroke="var(--cl-gray-3)"
+                ></line>
+              </g>
+            )
+          })}
+        </g>
 
-        <g className="motion-bar"></g>
+        <g className="motion-bar">
+          {data
+            .sort((a, b) => a.count - b.count)
+            .map((d, i) => (
+              <rect
+                key={d.category}
+                x={padding.left}
+                y={Y(d.category)}
+                width={X(d.count) - padding.left}
+                height={Y.bandwidth()}
+                fill="var(--cl-pink)"
+              />
+            ))}
+        </g>
       </svg>
     </div>
   )
