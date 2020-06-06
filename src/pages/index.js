@@ -233,7 +233,7 @@ const IndexPage = ({ data }) => {
             </p>
           </div>
           <div className="link">
-            <Link to={"/motion"} css={{ ...cssNextButton }}>
+            <Link to={"/motions"} css={{ ...cssNextButton }}>
               <span>ดูข้อมูลญัตติ</span>
               <i>
                 <ArrowRightIcon></ArrowRightIcon>
