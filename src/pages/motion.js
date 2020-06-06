@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { media } from "../styles"
 import BarChart from "../components/motion/barchart"
+import StatusBarChart from "../components/motion/statusBarChart"
 
 const cssMainSection = {
   display: "block",
@@ -25,15 +26,22 @@ const MotionPage = ({ data }) => {
         <h1>Motion</h1>
         <BarChart
           data={[
-            { category: "การเกษตร", count: 25 },
-            { category: "การศึกษา", count: 20 },
+            { category: "การเกษตร", count: 24 },
+            { category: "การศึกษา", count: 21 },
             { category: "กฎหมาย", count: 17 },
-            { category: "เศรษฐกิจ", count: 15 },
+            { category: "เศรษฐกิจ", count: 16 },
             { category: "สิทธิมนุษยชน", count: 13 },
             { category: "สังคม", count: 10 },
-            { category: "อื่นๆ", count: 7 },
+            { category: "อื่นๆ", count: 6 },
           ]}
           xTicks={[0, 5, 10, 15, 20, 25]}
+        />
+        <StatusBarChart
+          data={[
+            { status: "วาระพิจารณาในกมธ.", count: 30 },
+            { status: "รอบรรจุ", count: 20 },
+            { status: "ระหว่างการพิจารณา", count: 23 },
+          ]}
         />
       </section>
     </Layout>
