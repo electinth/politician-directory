@@ -1,4 +1,5 @@
 import React from "react"
+import _ from "lodash"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,12 +9,58 @@ import { media } from "../styles"
 import ExternalLink from "../components/externalLink"
 import MotionSubCatCard from "../components/motionSubCatCard"
 
+export const query = graphql`
+  query {
+    categories: allMotionCatYaml {
+      edges {
+        node {
+          main_cat
+          sub_cat
+        }
+      }
+    }
+
+    motions: allMotionYaml {
+      edges {
+        node {
+          sub_cat
+        }
+      }
+    }
+  }
+`
+
 const cssH1 = { fontSize: "4.8rem", margin: "0", color: "var(--cl-black)" }
 const cssH2 = { fontSize: "3.6rem", marginBottom: "2.4rem" }
 const cssH3 = { fontSize: "2.4rem", margin: "5.2rem 0 2.8rem 0" }
 const cssP = { lineHeight: "1.8" }
 
 const IndexPage = ({ data }) => {
+  const getCategoryGroups = () => {
+    let subCats = data.categories.edges.map(({ node }) =>
+      convertToSubCategory(node)
+    )
+    let grouped = _.groupBy(subCats, node => node.mainCat)
+    let catGroups = []
+    for (const key in grouped) {
+      catGroups.push({
+        title: key,
+        subCats: grouped[key],
+      })
+    }
+
+    return catGroups
+  }
+
+  const convertToSubCategory = category => ({
+    title: category.sub_cat,
+    mainCat: category.main_cat,
+    totalCount: getTotalCountOfSubCategory(category.sub_cat),
+  })
+
+  const getTotalCountOfSubCategory = subCategory =>
+    data.motions.edges.filter(({ node }) => node.sub_cat === subCategory).length
+
   return (
     <Layout
       pageStyles={{
@@ -134,31 +181,35 @@ const IndexPage = ({ data }) => {
             </p>
           </div>
           <div css={{ marginBottom: "8rem" }}>
-            <h3 style={cssH3}>สังคม</h3>
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-              }}
-            >
-              <MotionSubCatCard
-                slug={"/motions/category/1"}
-                id={"1"}
-                title={"วิทยาศาสตร์ เทคโนโลยี ดิจิทัล วิจัย และนวัตกรรม"}
-                count={12}
-                css={{
-                  margin: "0 0 2rem 0",
-                  width: "100%",
-                  [media(767)]: {
-                    width: "calc((100% - 4rem) / 3)",
-                    margin: "0 2rem 2rem 0",
-                    "&:nth-of-type(2n+3)": {
-                      margin: "0 0 2rem 0",
-                    },
-                  },
-                }}
-              ></MotionSubCatCard>
-            </div>
+            {getCategoryGroups().map(catGroup => (
+              <div>
+                <h3 style={cssH3}>{catGroup.title}</h3>
+                <div
+                  style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                  }}
+                >
+                  {catGroup.subCats.map(subCat => (
+                    <MotionSubCatCard
+                      title={subCat.title}
+                      count={subCat.totalCount}
+                      css={{
+                        margin: "0 0 2rem 0",
+                        width: "100%",
+                        [media(767)]: {
+                          width: "calc((100% - 4rem) / 3)",
+                          margin: "0 2rem 2rem 0",
+                          "&:nth-of-type(3n)": {
+                            margin: "0 0 2rem 0",
+                          },
+                        },
+                      }}
+                    ></MotionSubCatCard>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

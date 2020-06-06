@@ -2,6 +2,7 @@ import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import FloatingCard from "./floatingCard"
+import { categorySlug } from "../utils"
 
 const MotionSubCatCard = ({ type, ...props }) => {
   const data = useStaticQuery(graphql`
@@ -20,7 +21,7 @@ const MotionSubCatCard = ({ type, ...props }) => {
 
   return (
     <Link
-      to={props.slug}
+      to={categorySlug(props.title)}
       key={props.id}
       className={props.className}
       css={{

@@ -122,6 +122,15 @@ export function getThaiName(number) {
   return _.map(digits, d => mapping(d)).join("")
 }
 
+/**
+ * Create motion category slug
+ * @param {String} subCategroy
+ */
+export function categorySlug(subCategroy) {
+  if (!subCategroy) return ""
+  return `/motions/category/${subCategroy.replace(/ /g, "-")}`
+}
+
 export function float2Grey(x) {
   x = 1 - x
   x = parseInt(x * 15)
