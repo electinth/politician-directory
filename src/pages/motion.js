@@ -25,14 +25,15 @@ const MotionPage = ({ data }) => {
         <h1>Motion</h1>
         <BarChart
           data={[
-            { category: "การเกษตร", count: 24 },
-            { category: "การศึกษา", count: 21 },
+            { category: "การเกษตร", count: 25 },
+            { category: "การศึกษา", count: 20 },
             { category: "กฎหมาย", count: 17 },
-            { category: "เศรษฐกิจ", count: 16 },
+            { category: "เศรษฐกิจ", count: 15 },
             { category: "สิทธิมนุษยชน", count: 13 },
             { category: "สังคม", count: 10 },
             { category: "อื่นๆ", count: 7 },
           ]}
+          xTicks={[0, 5, 10, 15, 20, 25, 30]}
         />
       </section>
     </Layout>

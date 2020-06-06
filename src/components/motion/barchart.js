@@ -1,8 +1,43 @@
 import React from "react"
 import { css } from "@emotion/core"
+import { scaleLinear } from "d3-scale"
+import { useRef } from "react"
+import { useState } from "react"
+import { useEffect } from "react"
 
-const BarChart = ({ data }) => {
-  const xTicks = [0, 5, 10, 15, 20, 25, 30]
+function extent(arr) {
+  return [Math.min(...arr), Math.max(...arr)]
+}
+
+const padding = {
+  top: 50,
+  right: 50,
+  bottom: 50,
+  left: 50,
+}
+
+const BarChart = ({ data, xTicks }) => {
+  const barchartRef = useRef(null)
+  const tickRange = extent(xTicks)
+
+  const [w, setW] = useState(0)
+  const [h, setH] = useState(0)
+
+  useEffect(() => {
+    const { clientHeight, clientWidth } = barchartRef.current
+    setW(clientWidth)
+    setH(clientHeight)
+    window.addEventListener("resize", () => {
+      const { clientHeight, clientWidth } = barchartRef.current
+      setW(clientWidth)
+      setH(clientHeight)
+    })
+  }, [])
+
+  const X = scaleLinear()
+    .domain(tickRange)
+    .range([padding.left, w - padding.right])
+
   return (
     <div
       className="bar-container"
@@ -10,68 +45,39 @@ const BarChart = ({ data }) => {
         width: 50%;
         height: 500px;
         background-color: white;
-        padding: 40px;
-        position: relative;
-
-        & .motion-bars {
-          display: flex;
-          flex-flow: column nowrap;
-          justify-content: space-evenly;
-          height: 100%;
-
-          &--bar {
-            height: 3%;
-            background-color: pink;
-            border-radius: 2px;
-          }
-        }
 
         & .x-axis {
-          display: flex;
-          justify-content: space-between;
+          & text {
+            text-anchor: middle;
+          }
         }
       `}
+      ref={barchartRef}
     >
-      {/* x-axis */}
-
-      {/* y-axis */}
-      <div className="y-axis"></div>
-
-      {/* bar */}
-      <div className="motion-bars">
-        {data.map(d => (
-          <div
-            className="motion-bars--bar"
-            style={{ width: d.count + "%" }}
-          ></div>
-        ))}
-      </div>
-
-      <div className="x-axis">
-        {xTicks.map(tick => (
-          <div className={`tick-${tick}`} key={tick}>
-            <span
-              css={css`
-                display: block;
-                transform: translateX(-50%);
-              `}
+      <svg width="100%" height="100%">
+        <g
+          className="x-axis"
+          style={{
+            transform: `translate(0, ${h - padding.bottom}px)`,
+          }}
+        >
+          {xTicks.map(tick => (
+            <g
+              className={`tick tick-${tick}`}
+              style={{
+                transform: `translate(${X(tick)}px, 0)`,
+              }}
             >
-              {tick}
-            </span>
-            <span
-              css={css`
-                width: 1px;
-                height: 100%;
-                background-color: black;
-                display: block;
-                position: absolute;
-                bottom: 40px;
-                height: calc(100% - 80px);
-              `}
-            ></span>
-          </div>
-        ))}
-      </div>
+              <text dy="20">{tick}</text>
+              <line y2="-100%" stroke="var(--cl-black)"></line>
+            </g>
+          ))}
+        </g>
+
+        <g className="y-axis"></g>
+
+        <g className="motion-bar"></g>
+      </svg>
     </div>
   )
 }
