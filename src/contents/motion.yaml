@@ -781,10 +781,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: สุธีรชัย
-    - name: รองศาสตราจารย์สุรวาท  ทองบุ
+    - name: สุรวาท
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: รองศาสตราจารย์
+      last_name: ทองบุ
     - name: กัญจน์พงศ์
       party: อนาคตใหม่
       title: นาย
@@ -917,10 +917,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: รักสุทธี
-    - name: พลตำรวจตรีสุพิศาล  ภักดีนฤนาถ
+    - name: สุพิศาล
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ภักดีนฤนาถ
     - name: พีรเดช
       party: อนาคตใหม่
       title: นาย
@@ -929,10 +929,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: อัศวรุ่งเรือง
-    - name: พลโทพงศกร  รอดชมภู
+    - name: พงศกร
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลโท
+      last_name: รอดชมภู
     - name: ปดิพัทธ์
       party: อนาคตใหม่
       title: นาย
@@ -993,10 +993,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: สุขะพิสิษฐ์
-    - name: พลตำรวจเอกเสรีพิศุทธ์  เตมียเวส
+    - name: เสรีพิศุทธ์
       party: เสรีรวมไทย
-      title: ''
-      last_name: ''
+      title: พลตำรวจเอก
+      last_name: เตมียเวส
     - name: วิรัตน์
       party: เสรีรวมไทย
       title: นาย
@@ -1009,10 +1009,10 @@
       party: เสรีรวมไทย
       title: นางสาว
       last_name: โสมทองแดง
-    - name: พลตำรวจโทวิศณุ  ม่วงแพรสี
+    - name: วิศณุ
       party: เสรีรวมไทย
-      title: ''
-      last_name: ''
+      title: พลตำรวจโท
+      last_name: ม่วงแพรสี
     - name: นิคม
       party: พลังปวงชนไทย
       title: นาย
@@ -1045,10 +1045,10 @@
       party: ภูมิใจไทย
       title: นาย
       last_name: ใจสมุทร
-    - name: พันตำรวจตรีชวลิต  เลาหอุดมพันธ์
+    - name: ชวลิต
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พันตำรวจตรี
+      last_name: เลาหอุดมพันธ์
   adhoc_committee:
     name: ''
     members:
@@ -2431,10 +2431,10 @@
       title: นาย
       last_name: บูรณ์พงศ์
   seconders:
-    - name: พลตำรวจเอกเสรีพิศุทธ์  เตมียเวส
+    - name: เสรีพิศุทธ์
       party: เสรีรวมไทย
-      title: ''
-      last_name: ''
+      title: พลตำรวจเอก
+      last_name: เตมียเวส
     - name: วิรัตน์
       party: เสรีรวมไทย
       title: นาย
@@ -2467,10 +2467,10 @@
       party: เพื่อไทย
       title: นาง
       last_name: บัวบุตร
-    - name: พลตำรวจโทวิศณุ  ม่วงแพรสี
+    - name: วิศณุ
       party: เสรีรวมไทย
-      title: ''
-      last_name: ''
+      title: พลตำรวจโท
+      last_name: ม่วงแพรสี
     - name: เพชร
       party: เสรีรวมไทย
       title: นาย
@@ -2757,10 +2757,10 @@
       party: เพื่อไทย
       title: นาย
       last_name: ไตรสรณกุล
-    - name: นาวาอากาศเอกอนุดิษฐ์  นาครทรรพ
+    - name: อนุดิษฐ์
       party: เพื่อไทย
-      title: ''
-      last_name: ''
+      title: นาวาอากาศเอก
+      last_name: นาครทรรพ
     - name: ดะนัย
       party: เพื่อไทย
       title: นาย
@@ -3406,10 +3406,10 @@
       party: อนาคตใหม่
       title: นางสาว
       last_name: รุ่งเรืองเกียรติ
-    - name: พันตำรวจโทฐนภัทร  กิตติวงศา
+    - name: ฐนภัทร
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พันตำรวจโท
+      last_name: กิตติวงศา
     - name: วรรณวรี
       party: อนาคตใหม่
       title: นางสาว
@@ -4263,10 +4263,10 @@
       party: เพื่อไทย
       title: นาง
       last_name: บัวบุตร
-    - name: นาวาอากาศเอกอนุดิษฐ์  นาครทรรพ
+    - name: อนุดิษฐ์
       party: เพื่อไทย
-      title: ''
-      last_name: ''
+      title: นาวาอากาศเอก
+      last_name: นาครทรรพ
     - name: โกศล
       party: เพื่อไทย
       title: นาย
@@ -5226,10 +5226,10 @@
       party: ภูมิใจไทย
       title: นาย
       last_name: ลิมปะพันธุ์
-    - name: ศาสตราจารย์โกวิทย์  พวงงาม
+    - name: โกวิทย์
       party: พลังท้องถิ่นไท
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: พวงงาม
     - name: สุชาติ
       party: พลังประชารัฐ
       title: นาย
@@ -5246,10 +5246,10 @@
       party: ชาติพัฒนา
       title: นาย
       last_name: โตมรศักดิ์
-    - name: พลตำรวจตรีสุรินทร์  ปาลาเร่
+    - name: สุรินทร์
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
   adhoc_committee:
     name: ''
     members:
@@ -5713,10 +5713,10 @@
       title: นาง
       last_name: ขาวขำ
   seconders:
-    - name: ศาสตราจารย์โกวิทย์  พวงงาม
+    - name: โกวิทย์
       party: พลังท้องถิ่นไท
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: พวงงาม
     - name: ดะนัย
       party: เพื่อไทย
       title: นาย
@@ -6019,10 +6019,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: เจนจาคะ
-    - name: ศาสตราจารย์โกวิทย์  พวงงาม
+    - name: โกวิทย์
       party: พลังท้องถิ่นไท
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: พวงงาม
     - name: ธรรมวิชญ์
       party: พลังประชารัฐ
       title: นาย
@@ -7545,10 +7545,10 @@
       party: ประชาธิปัตย์
       title: นางสาว
       last_name: กาญจนะ
-    - name: ศาสตราจารย์กนก  วงษ์ตระหง่าน
+    - name: กนก
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
     - name: สาคร
       party: ประชาธิปัตย์
       title: นาย
@@ -9002,14 +9002,14 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: อนุวัฒน์
-    - name: พลตรีทรงกลด  ทิพย์รัตน์
+    - name: ทรงกลด
       party: พลังชาติไทย
-      title: ''
-      last_name: ''
-    - name: พลตำรวจเอกยงยุทธ  เทพจำนงค์
+      title: พลตรี
+      last_name: ทิพย์รัตน์
+    - name: ยงยุทธ
       party: ประชานิยม
-      title: ''
-      last_name: ''
+      title: พลตำรวจเอก
+      last_name: เทพจำนงค์
     - name: พิเชษฐ
       party: ประชาธรรมไทย
       title: นาย
@@ -9022,10 +9022,10 @@
       party: เศรษฐกิจใหม่
       title: นาง
       last_name: ขจรเรืองโรจน์
-    - name: ศาสตราจารย์โกวิทย์  พวงงาม
+    - name: โกวิทย์
       party: พลังท้องถิ่นไท
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: พวงงาม
     - name: สุพล
       party: รวมพลังประชาชาติไทย
       title: นาย
@@ -9054,10 +9054,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: สุขศรีเมือง
-    - name: รองศาสตราจารย์รงค์  บุญสวยขวัญ
+    - name: รงค์
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: รองศาสตราจารย์
+      last_name: บุญสวยขวัญ
     - name: ดล
       party: ชาติพัฒนา
       title: นาย
@@ -9265,10 +9265,10 @@
       party: เสรีรวมไทย
       title: นางสาว
       last_name: โสมทองแดง
-    - name: พลตำรวจโทวิศณุ  ม่วงแพรสี
+    - name: วิศณุ
       party: เสรีรวมไทย
-      title: ''
-      last_name: ''
+      title: พลตำรวจโท
+      last_name: ม่วงแพรสี
     - name: เพชรวรรต
       party: เพื่อชาติ
       title: นาย
@@ -9563,10 +9563,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: เบ็ญจะปัก
-    - name: พลโทพงศกร  รอดชมภู
+    - name: พงศกร
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลโท
+      last_name: รอดชมภู
     - name: สฤษดิ์
       party: ภูมิใจไทย
       title: นาย
@@ -10038,10 +10038,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: ศิริลัทธยากร
-    - name: พันตำรวจโทไวพจน์  อาภรณ์รัตน์
+    - name: ไวพจน์
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: พันตำรวจโท
+      last_name: อาภรณ์รัตน์
     - name: เพชรภูมิ
       party: พลังประชารัฐ
       title: นาย
@@ -10604,10 +10604,10 @@
       party: ประชาธิปัตย์
       title: นาง
       last_name: ตันเถียร
-    - name: ศาสตราจารย์กนก  วงษ์ตระหง่าน
+    - name: กนก
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
     - name: เทพไท
       party: ประชาธิปัตย์
       title: นาย
@@ -10620,10 +10620,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: สาและ
-    - name: พลตำรวจตรีสุรินทร์  ปาลาเร่
+    - name: สุรินทร์
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
     - name: ชุมพล
       party: ประชาธิปัตย์
       title: นาย
@@ -11096,10 +11096,10 @@
   voting_result: ''
   select_committee: ''
   purposers:
-    - name: รองศาสตราจารย์รงค์  บุญสวยขวัญ
+    - name: รงค์
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: รองศาสตราจารย์
+      last_name: บุญสวยขวัญ
     - name: สายัณห์
       party: พลังประชารัฐ
       title: นาย
@@ -11113,10 +11113,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: ช่างเหลา
-    - name: ร้อยตำรวจเอกอรุณ  สวัสดี
+    - name: อรุณ
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ร้อยตำรวจเอก
+      last_name: สวัสดี
     - name: พยม
       party: พลังประชารัฐ
       title: นาย
@@ -11149,10 +11149,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: โสภณ
-    - name: ผู้ช่วยศาสตราจารย์พรชัย  อินทร์สุข
+    - name: พรชัย
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ผู้ช่วยศาสตราจารย์
+      last_name: อินทร์สุข
     - name: ภูดิท
       party: พลังประชารัฐ
       title: นาย
@@ -11173,10 +11173,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: นิโรจน์
-    - name: พันตำรวจโทฐนภัทร  กิตติวงศา
+    - name: ฐนภัทร
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: พันตำรวจโท
+      last_name: กิตติวงศา
     - name: ปารีณา
       party: พลังประชารัฐ
       title: นางสาว
@@ -11691,10 +11691,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: รักสุทธี
-    - name: พันตำรวจโทฐนภัทร  กิตติวงศา
+    - name: ฐนภัทร
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: พันตำรวจโท
+      last_name: กิตติวงศา
   adhoc_committee:
     name: ''
     members:
@@ -12513,10 +12513,10 @@
       party: ''
       title: นางสาว
       last_name: บุญลือ
-    - name: พันตำรวจตรีชวลิต  เลาหอุดมพันธ์
+    - name: ชวลิต
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พันตำรวจตรี
+      last_name: เลาหอุดมพันธ์
     - name: ปดิพัทธ์
       party: อนาคตใหม่
       title: นาย
@@ -12569,10 +12569,10 @@
       party: อนาคตใหม่
       title: นางสาว
       last_name: แสงจันทร์
-    - name: พลตำรวจตรีสุพิศาล  ภักดีนฤนาถ
+    - name: สุพิศาล
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ภักดีนฤนาถ
     - name: สมเกียรติ
       party: อนาคตใหม่
       title: นาย
@@ -13054,10 +13054,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: สาและ
-    - name: พันโทสินธพ  แก้วพิจิตร
+    - name: สินธพ
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พันโท
+      last_name: แก้วพิจิตร
     - name: มนตรี
       party: ประชาธิปัตย์
       title: นาย
@@ -13078,10 +13078,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: จาติกวณิช
-    - name: พลตำรวจตรีสุรินทร์  ปาลาเร่
+    - name: สุรินทร์
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
     - name: ภานุ
       party: ประชาธิปัตย์
       title: นาย
@@ -13329,10 +13329,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: ลี้อาธรรม
-    - name: พลตำรวจตรีสุรินทร์  ปาลาเร่
+    - name: สุรินทร์
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
     - name: เดชอิศม์
       party: ประชาธิปัตย์
       title: นาย
@@ -14847,10 +14847,10 @@
   voting_result: ''
   select_committee: ''
   purposers:
-    - name: ศาสตราจารย์กนก วงษ์ตระหง่าน
+    - name: กนก
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
   seconders: []
   adhoc_committee:
     name: ''
@@ -15856,10 +15856,10 @@
       party: เพื่อไทย
       title: นาย
       last_name: ศิริพานิชย์
-    - name: นาวาอากาศเอกอนุดิษฐ์  นาครทรรพ
+    - name: อนุดิษฐ์
       party: เพื่อไทย
-      title: ''
-      last_name: ''
+      title: นาวาอากาศเอก
+      last_name: นาครทรรพ
     - name: กฤษฎา
       party: เพื่อไทย
       title: นาย
@@ -16569,10 +16569,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: ประทีป ณ ถลาง
-    - name: ร้อยตำรวจเอกอรุณ  สวัสดี
+    - name: อรุณ
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ร้อยตำรวจเอก
+      last_name: สวัสดี
     - name: อาดิลัน
       party: พลังประชารัฐ
       title: นาย
@@ -16633,10 +16633,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: ยุติธรรม
-    - name: รองศาสตราจารย์รงค์  บุญสวยขวัญ
+    - name: รงค์
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: รองศาสตราจารย์
+      last_name: บุญสวยขวัญ
   adhoc_committee:
     name: ''
     members:
@@ -16818,10 +16818,10 @@
       title: นาย
       last_name: คำประกอบ
   seconders:
-    - name: ร้อยเอกจองชัย  วงศ์ทรายทอง
+    - name: จองชัย
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ร้อยเอก
+      last_name: วงศ์ทรายทอง
     - name: กรุงศรีวิไล
       party: พลังประชารัฐ
       title: นาย
@@ -17143,10 +17143,10 @@
       party: เพื่อไทย
       title: นาย
       last_name: วิสุทธิ์วัฒนศักดิ์
-    - name: พลตำรวจเอกเสรีพิศุทธ์  เตมียเวส
+    - name: เสรีพิศุทธ์
       party: เสรีรวมไทย
-      title: ''
-      last_name: ''
+      title: พลตำรวจเอก
+      last_name: เตมียเวส
     - name: วิรัตน์
       party: เสรีรวมไทย
       title: นาย
@@ -17427,10 +17427,10 @@
       party: เพื่อไทย
       title: นาย
       last_name: วิชยสุทธิ์
-    - name: นาวาอากาศเอกอนุดิษฐ์  นาครทรรพ
+    - name: อนุดิษฐ์
       party: เพื่อไทย
-      title: ''
-      last_name: ''
+      title: นาวาอากาศเอก
+      last_name: นาครทรรพ
     - name: อนุสรณ์
       party: เพื่อไทย
       title: นาย
@@ -18483,14 +18483,14 @@
       party: เพื่อไทย
       title: นางสาว
       last_name: สำเร็จวาณิชย์
-    - name: นาวาอากาศเอกอนุดิษฐ์  นาครทรรพ
+    - name: อนุดิษฐ์
       party: เพื่อไทย
-      title: ''
-      last_name: ''
-    - name: พลโทพงศกร  รอดชมภู
+      title: นาวาอากาศเอก
+      last_name: นาครทรรพ
+    - name: พงศกร
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลโท
+      last_name: รอดชมภู
     - name: ขจิตร
       party: เพื่อไทย
       title: นาย
@@ -18535,10 +18535,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: แสงกนกกุล
-    - name: พลตำรวจเอกเสรีพิศุทธ์  เตมียเวส
+    - name: เสรีพิศุทธ์
       party: เสรีรวมไทย
-      title: ''
-      last_name: ''
+      title: พลตำรวจเอก
+      last_name: เตมียเวส
     - name: วิรัตน์
       party: เสรีรวมไทย
       title: นาย
@@ -18547,10 +18547,10 @@
       party: เสรีรวมไทย
       title: นางสาว
       last_name: เพ็ชร์จินดา
-    - name: พลตำรวจโทวิศณุ  ม่วงแพรสี
+    - name: วิศณุ
       party: เสรีรวมไทย
-      title: ''
-      last_name: ''
+      title: พลตำรวจโท
+      last_name: ม่วงแพรสี
     - name: อำไพ
       party: เสรีรวมไทย
       title: นาย
@@ -18816,10 +18816,10 @@
       party: เพื่อไทย
       title: นาย
       last_name: ช่างพินิจ
-    - name: นาวาอากาศเอกอนุดิษฐ์  นาครทรรพ
+    - name: อนุดิษฐ์
       party: เพื่อไทย
-      title: ''
-      last_name: ''
+      title: นาวาอากาศเอก
+      last_name: นาครทรรพ
     - name: กิตติศักดิ์
       party: เพื่อไทย
       title: นาย
@@ -19327,10 +19327,10 @@
   voting_result: ''
   select_committee: ''
   purposers:
-    - name: พลตำรวจตรีสุพิศาล  ภักดีนฤนาถ
+    - name: สุพิศาล
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ภักดีนฤนาถ
   seconders:
     - name: โชติพิพัฒน์
       party: อนาคตใหม่
@@ -19561,10 +19561,10 @@
       title: นาย
       last_name: ขำนุรักษ์
   seconders:
-    - name: พลตำรวจตรีสุรินทร์  ปาลาเร่
+    - name: สุรินทร์
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
     - name: ชัยชนะ
       party: ประชาธิปัตย์
       title: นาย
@@ -19807,10 +19807,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: ฤกษ์หร่าย
-    - name: พันตำรวจโทไวพจน์  อาภรณ์รัตน์
+    - name: ไวพจน์
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: พันตำรวจโท
+      last_name: อาภรณ์รัตน์
     - name: สัมพันธ์
       party: พลังประชารัฐ
       title: นาย
@@ -19839,10 +19839,10 @@
       party: ภูมิใจไทย
       title: นาย
       last_name: เทพอักษรณรงค์
-    - name: ศาสตราจารย์โกวิทย์  พวงงาม
+    - name: โกวิทย์
       party: พลังท้องถิ่นไท
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: พวงงาม
     - name: ภูมิศิษฏ์
       party: ภูมิใจไทย
       title: นาย
@@ -20222,19 +20222,19 @@
     กมธ.วิสามัญ พิจารณาศึกษาการขุดคลองไทยและพัฒนาพื้นที่ระเบียงเศรษฐกิจภาคใต้
     สภาผู้แทนฯ
   purposers:
-    - name: พลตรีทรงกลด ทิพย์รัตน์
+    - name: ทรงกลด
       party: พลังชาติไทย
-      title: ''
-      last_name: ''
+      title: พลตรี
+      last_name: ทิพย์รัตน์
   seconders:
-    - name: พลตรีทรงกลด  ทิพย์รัตน์
+    - name: ทรงกลด
       party: พลังชาติไทย
-      title: ''
-      last_name: ''
-    - name: พลตำรวจเอกยงยุทธ  เทพจำนงค์
+      title: พลตรี
+      last_name: ทิพย์รัตน์
+    - name: ยงยุทธ
       party: ประชานิยม
-      title: ''
-      last_name: ''
+      title: พลตำรวจเอก
+      last_name: เทพจำนงค์
     - name: สุรทิน
       party: ประชาธิปไตยใหม่
       title: นาย
@@ -20259,10 +20259,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: ชมกลิ่น
-    - name: พันตำรวจโทไวพจน์  อาภรณ์รัตน์
+    - name: ไวพจน์
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: พันตำรวจโท
+      last_name: อาภรณ์รัตน์
     - name: ชัยวุฒิ
       party: พลังประชารัฐ
       title: นาย
@@ -20496,10 +20496,10 @@
       title: นาย
       last_name: ลิ้มจิตรกร
   seconders:
-    - name: รองศาสตราจารย์สุรวาท  ทองบุ
+    - name: สุรวาท
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: รองศาสตราจารย์
+      last_name: ทองบุ
     - name: ประเสริฐพงษ์
       party: อนาคตใหม่
       title: นาย
@@ -20564,10 +20564,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: คีรีภูวดล
-    - name: พลตำรวจตรีสุพิศาล  ภักดีนฤนาถ
+    - name: สุพิศาล
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ภักดีนฤนาถ
     - name: สมเกียรติ
       party: อนาคตใหม่
       title: นาย
@@ -21048,10 +21048,10 @@
       party: อนาคตใหม่
       title: นางสาว
       last_name: บัวเผื่อน
-    - name: พลโทพงศกร  รอดชมภู
+    - name: พงศกร
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลโท
+      last_name: รอดชมภู
     - name: ไกลก้อง
       party: อนาคตใหม่
       title: นาย
@@ -22932,10 +22932,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: อรัณยกานนท์
-    - name: พลตำรวจตรีสุพิศาล  ภักดีนฤนาถ
+    - name: สุพิศาล
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ภักดีนฤนาถ
     - name: องค์การ
       party: อนาคตใหม่
       title: นาย
@@ -22992,10 +22992,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: พลพรกลาง
-    - name: รองศาสตราจารย์สุรวาท  ทองบุ
+    - name: สุรวาท
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: รองศาสตราจารย์
+      last_name: ทองบุ
     - name: สำลี
       party: อนาคตใหม่
       title: นาย
@@ -23228,10 +23228,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: ไชยวิสุทธิกุล
-    - name: พลตำรวจตรีสุพิศาล  ภักดีนฤนาถ
+    - name: สุพิศาล
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ภักดีนฤนาถ
     - name: องค์การ
       party: อนาคตใหม่
       title: นาย
@@ -23260,10 +23260,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: โนนศรีชัย
-    - name: รองศาสตราจารย์สุรวาท  ทองบุ
+    - name: สุรวาท
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: รองศาสตราจารย์
+      last_name: ทองบุ
     - name: สำลี
       party: อนาคตใหม่
       title: นาย
@@ -23726,10 +23726,10 @@
   voting_result: ''
   select_committee: ''
   purposers:
-    - name: ศาสตราจารย์โกวิทย์  พวงงาม
+    - name: โกวิทย์
       party: พลังท้องถิ่นไท
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: พวงงาม
   seconders:
     - name: วัชรพล
       party: ชาติพัฒนา
@@ -23803,10 +23803,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: บูลย์ประมุข
-    - name: รองศาสตราจารย์รงค์  บุญสวยขวัญ
+    - name: รงค์
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: รองศาสตราจารย์
+      last_name: บุญสวยขวัญ
     - name: ระวี
       party: พลังธรรมใหม่
       title: นาย
@@ -24030,10 +24030,10 @@
       party: เพื่อไทย
       title: นาย
       last_name: โล่ห์สุนทร
-    - name: พลตำรวจโทวิศณุ  ม่วงแพรสี
+    - name: วิศณุ
       party: เสรีรวมไทย
-      title: ''
-      last_name: ''
+      title: พลตำรวจโท
+      last_name: ม่วงแพรสี
     - name: วัชรา
       party: เสรีรวมไทย
       title: นาย
@@ -25870,10 +25870,10 @@
       party: ''
       title: นางสาว
       last_name: บุญลือ
-    - name: ศาสตราจารย์กนก  วงษ์ตระหง่าน
+    - name: กนก
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
     - name: ชินวรณ์
       party: ประชาธิปัตย์
       title: นาย
@@ -25922,10 +25922,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: เลิศไกร
-    - name: ร้อยเอกจองชัย  วงศ์ทรายทอง
+    - name: จองชัย
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ร้อยเอก
+      last_name: วงศ์ทรายทอง
     - name: พงศ์กวิน
       party: พลังประชารัฐ
       title: นาย
@@ -26137,10 +26137,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: อุดมพิพัฒน์สกุล
-    - name: พันตำรวจตรีชวลิต  เลาหอุดมพันธ์
+    - name: ชวลิต
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พันตำรวจตรี
+      last_name: เลาหอุดมพันธ์
     - name: อภิชาติ
       party: อนาคตใหม่
       title: นาย
@@ -26161,18 +26161,18 @@
       party: อนาคตใหม่
       title: นาย
       last_name: โนนศรีชัย
-    - name: พลโทพงศกร  รอดชมภู
+    - name: พงศกร
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลโท
+      last_name: รอดชมภู
     - name: สุรชัย
       party: อนาคตใหม่
       title: นาย
       last_name: ศรีสารคาม
-    - name: พลตำรวจตรีสุพิศาล  ภักดีนฤนาถ
+    - name: สุพิศาล
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ภักดีนฤนาถ
     - name: ไกลก้อง
       party: อนาคตใหม่
       title: นาย
@@ -26193,10 +26193,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: พลพรกลาง
-    - name: พันโทสินธพ  แก้วพิจิตร
+    - name: สินธพ
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พันโท
+      last_name: แก้วพิจิตร
     - name: ปิยบุตร
       party: อนาคตใหม่
       title: นาย
@@ -26410,10 +26410,10 @@
       title: นาย
       last_name: เทพาคำ
   seconders:
-    - name: พลตำรวจตรีสุพิศาล  ภักดีนฤนาถ
+    - name: สุพิศาล
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ภักดีนฤนาถ
     - name: ณัฐวุฒิ
       party: อนาคตใหม่
       title: นาย
@@ -26502,10 +26502,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: ประวีณวงศ์วุฒิ
-    - name: พลโทพงศกร  รอดชมภู
+    - name: พงศกร
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลโท
+      last_name: รอดชมภู
     - name: โชติพิพัฒน์
       party: อนาคตใหม่
       title: นาย
@@ -26704,10 +26704,10 @@
   voting_result: ''
   select_committee: ''
   purposers:
-    - name: รองศาสตราจารย์รงค์  บุญสวยขวัญ
+    - name: รงค์
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: รองศาสตราจารย์
+      last_name: บุญสวยขวัญ
   seconders:
     - name: วันชัย
       party: พลังประชารัฐ
@@ -26745,10 +26745,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: อนุวัฒน์
-    - name: พลเอกสมชาย  วิษณุวงศ์
+    - name: สมชาย
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: พลเอก
+      last_name: วิษณุวงศ์
     - name: นัทธี
       party: พลังประชารัฐ
       title: นาย
@@ -26785,10 +26785,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: รัสมี
-    - name: ผู้ช่วยศาสตราจารย์พรชัย  อินทร์สุข
+    - name: พรชัย
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ผู้ช่วยศาสตราจารย์
+      last_name: อินทร์สุข
     - name: ปารีณา
       party: พลังประชารัฐ
       title: นางสาว
@@ -27384,10 +27384,10 @@
   voting_result: ''
   select_committee: ''
   purposers:
-    - name: รองศาสตราจารย์รงค์  บุญสวยขวัญ
+    - name: รงค์
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: รองศาสตราจารย์
+      last_name: บุญสวยขวัญ
   seconders:
     - name: อาดิลัน
       party: พลังประชารัฐ
@@ -27397,18 +27397,18 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: อุ๋ยตระกูล
-    - name: ศาสตราจารย์โกวิทย์  พวงงาม
+    - name: โกวิทย์
       party: พลังท้องถิ่นไท
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: พวงงาม
     - name: ปัญญา
       party: พลังประชารัฐ
       title: นาย
       last_name: จีนาคำ
-    - name: ร้อยตำรวจเอกอรุณ  สวัสดี
+    - name: อรุณ
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ร้อยตำรวจเอก
+      last_name: สวัสดี
     - name: สัญญา
       party: พลังประชารัฐ
       title: นาย
@@ -28035,10 +28035,10 @@
   voting_result: ''
   select_committee: กมธ.วิสามัญ พิจารณาศึกษาแนวทางการบริหารจัดการลุ่มน้ำทั้งระบบ สภาผู้แทนฯ
   purposers:
-    - name: พันตำรวจโทไวพจน์  อาภรณ์รัตน์
+    - name: ไวพจน์
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: พันตำรวจโท
+      last_name: อาภรณ์รัตน์
     - name: ภาคภูมิ
       party: พลังประชารัฐ
       title: นาย
@@ -28068,10 +28068,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: จีนาคำ
-    - name: พลเอกสมชาย  วิษณุวงศ์
+    - name: สมชาย
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: พลเอก
+      last_name: วิษณุวงศ์
     - name: จีรเดช
       party: พลังประชารัฐ
       title: นาย
@@ -28116,10 +28116,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: แก้วอยู่
-    - name: ศาสตราจารย์นฤมล  ภิญโญสินวัฒน์
+    - name: นฤมล
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: ภิญโญสินวัฒน์
     - name: บุญสิงห์
       party: พลังประชารัฐ
       title: นาย
@@ -28324,10 +28324,10 @@
       party: ประชาธิปัตย์
       title: นางสาว
       last_name: ตั๊น กฤดากร
-    - name: พันโทสินธพ  แก้วพิจิตร
+    - name: สินธพ
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พันโท
+      last_name: แก้วพิจิตร
     - name: ธีรภัทร
       party: ประชาธิปัตย์
       title: นาย
@@ -28772,10 +28772,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: สมชัย
-    - name: ศาสตราจารย์กนก  วงษ์ตระหง่าน
+    - name: กนก
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
     - name: บัญญัติ
       party: ประชาธิปัตย์
       title: นาย
@@ -28816,10 +28816,10 @@
       party: ประชาธิปัตย์
       title: นาง
       last_name: ตันเถียร
-    - name: พันโทสินธพ  แก้วพิจิตร
+    - name: สินธพ
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พันโท
+      last_name: แก้วพิจิตร
     - name: องอาจ
       party: ประชาธิปัตย์
       title: นาย
@@ -29023,10 +29023,10 @@
   voting_result: ''
   select_committee: ''
   purposers:
-    - name: ศาสตราจารย์กนก  วงษ์ตระหง่าน
+    - name: กนก
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
   seconders: []
   adhoc_committee:
     name: ''
@@ -29220,10 +29220,10 @@
       title: นาย
       last_name: วงษ์พิทักษ์โรจน์
   seconders:
-    - name: ศาสตราจารย์กนก  วงษ์ตระหง่าน
+    - name: กนก
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
     - name: เทอดพงษ์
       party: ประชาธิปัตย์
       title: นาย
@@ -29252,10 +29252,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: นามบุตร
-    - name: พันโทสินธพ  แก้วพิจิตร
+    - name: สินธพ
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พันโท
+      last_name: แก้วพิจิตร
     - name: เทพไท
       party: ประชาธิปัตย์
       title: นาย
@@ -29535,10 +29535,10 @@
       party: พลังประชารัฐ
       title: นาง
       last_name: พร้อมพัฒน์
-    - name: พันตำรวจโทฐนภัทร  กิตติวงศา
+    - name: ฐนภัทร
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: พันตำรวจโท
+      last_name: กิตติวงศา
     - name: สะถิระ
       party: พลังประชารัฐ
       title: นาย
@@ -29792,10 +29792,10 @@
       party: ประชาธรรมไทย
       title: นาย
       last_name: สถิรชวาล
-    - name: พลตรีทรงกลด  ทิพย์รัตน์
+    - name: ทรงกลด
       party: พลังชาติไทย
-      title: ''
-      last_name: ''
+      title: พลตรี
+      last_name: ทิพย์รัตน์
     - name: ศิลัมพา
       party: พลเมืองไทย
       title: นางสาว
@@ -29824,18 +29824,18 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: ศรีวิราช
-    - name: ศาสตราจารย์นฤมล  ภิญโญสินวัฒน์
+    - name: นฤมล
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: ภิญโญสินวัฒน์
     - name: มงคลกิตติ์
       party: ไทยศรีวิไลย์
       title: นาย
       last_name: สุขสินธารานนท์
-    - name: พลตำรวจเอกยงยุทธ  เทพจำนงค์
+    - name: ยงยุทธ
       party: ประชานิยม
-      title: ''
-      last_name: ''
+      title: พลตำรวจเอก
+      last_name: เทพจำนงค์
     - name: คฑาเทพ
       party: พลังไทยรักไทย
       title: นาย
@@ -30024,10 +30024,10 @@
       party: พลังท้องถิ่นไท
       title: นาย
       last_name: คงอุดม
-    - name: ศาสตราจารย์โกวิทย์  พวงงาม
+    - name: โกวิทย์
       party: พลังท้องถิ่นไท
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: พวงงาม
   seconders:
     - name: พงศ์กวิน
       party: พลังประชารัฐ
@@ -30241,10 +30241,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: ฟองงาม
-    - name: พลเอกสมชาย  วิษณุวงศ์
+    - name: สมชาย
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: พลเอก
+      last_name: วิษณุวงศ์
     - name: สิระ
       party: พลังประชารัฐ
       title: นาย
@@ -30261,10 +30261,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: ศุภรานนท์
-    - name: พลตำรวจตรีสุรินทร์  ปาลาเร่
+    - name: สุรินทร์
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
     - name: อัครเดช
       party: ประชาธิปัตย์
       title: นาย
@@ -30500,10 +30500,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: นิลสุพรรณ
-    - name: พันโทสินธพ  แก้วพิจิตร
+    - name: สินธพ
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พันโท
+      last_name: แก้วพิจิตร
     - name: จักรัตน์
       party: พลังประชารัฐ
       title: นาย
@@ -30540,10 +30540,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: รัตนพันธ์
-    - name: ศาสตราจารย์กนก  วงษ์ตระหง่าน
+    - name: กนก
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
     - name: อรรถกร
       party: พลังประชารัฐ
       title: นาย
@@ -30752,10 +30752,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: วิภูศิริ
-    - name: พลตำรวจตรีสุรินทร์  ปาลาเร่
+    - name: สุรินทร์
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
     - name: ชุมพล
       party: ประชาธิปัตย์
       title: นาย
@@ -31034,10 +31034,10 @@
       party: รักษ์ผืนป่าประเทศไทย
       title: นาย
       last_name: พิเดช
-    - name: ศาสตราจารย์โกวิทย์  พวงงาม
+    - name: โกวิทย์
       party: พลังท้องถิ่นไท
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: พวงงาม
     - name: มงคลกิตติ์
       party: ไทยศรีวิไลย์
       title: นาย
@@ -31074,10 +31074,10 @@
       party: ''
       title: นาย
       last_name: ศรีอ่อน
-    - name: พลตำรวจเอกยงยุทธ  เทพจำนงค์
+    - name: ยงยุทธ
       party: ประชานิยม
-      title: ''
-      last_name: ''
+      title: พลตำรวจเอก
+      last_name: เทพจำนงค์
     - name: ยรรยงก์
       party: รักษ์ผืนป่าประเทศไทย
       title: นาย
@@ -31743,10 +31743,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: ศรนุวัตร์
-    - name: รองศาสตราจารย์สุรวาท  ทองบุ
+    - name: สุรวาท
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: รองศาสตราจารย์
+      last_name: ทองบุ
     - name: ณัฐชา
       party: อนาคตใหม่
       title: นาย
@@ -32837,10 +32837,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: บุณยเกียรติ
-    - name: ศาสตราจารย์กนก  วงษ์ตระหง่าน
+    - name: กนก
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
     - name: นริศ
       party: ประชาธิปัตย์
       title: นาย
@@ -34700,10 +34700,10 @@
       party: ไทรักธรรม
       title: นาย
       last_name: เรื่องลือดลภาค
-    - name: พลตำรวจเอกยงยุทธ  เทพจำนงค์
+    - name: ยงยุทธ
       party: ประชานิยม
-      title: ''
-      last_name: ''
+      title: พลตำรวจเอก
+      last_name: เทพจำนงค์
     - name: นันทนา
       party: ประชาภิวัฒน์
       title: นาง
@@ -34736,10 +34736,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: บรรทัดฐาน
-    - name: พลตรีทรงกลด  ทิพย์รัตน์
+    - name: ทรงกลด
       party: พลังชาติไทย
-      title: ''
-      last_name: ''
+      title: พลตรี
+      last_name: ทิพย์รัตน์
     - name: ดำรงค์
       party: รักษ์ผืนป่าประเทศไทย
       title: นาย
@@ -35365,10 +35365,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: ลิ้มเจริญรัตน์
-    - name: พันตำรวจโทฐนภัทร กิตติวงศา
+    - name: ฐนภัทร
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พันตำรวจโท
+      last_name: กิตติวงศา
     - name: วรรณวรี
       party: อนาคตใหม่
       title: นางสาว
@@ -35578,10 +35578,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: พั้วช่วย
-    - name: ร้อยตำรวจเอกอรุณ  สวัสดี
+    - name: อรุณ
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ร้อยตำรวจเอก
+      last_name: สวัสดี
     - name: ปริญญา
       party: พลังประชารัฐ
       title: นาย
@@ -36283,10 +36283,10 @@
   voting_result: ''
   select_committee: ''
   purposers:
-    - name: ศาสตราจารย์โกวิทย์  พวงงาม
+    - name: โกวิทย์
       party: พลังท้องถิ่นไท
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: พวงงาม
   seconders:
     - name: ชัชวาลล์
       party: พลังท้องถิ่นไท
@@ -36954,26 +36954,26 @@
       party: ประชาธรรมไทย
       title: นาย
       last_name: สถิรชวาล
-    - name: พลตำรวจเอกยงยุทธ  เทพจำนงค์
+    - name: ยงยุทธ
       party: ประชานิยม
-      title: ''
-      last_name: ''
+      title: พลตำรวจเอก
+      last_name: เทพจำนงค์
     - name: สมเกียรติ
       party: ประชาภิวัฒน์
       title: นาย
       last_name: ศรลัมพ์
-    - name: พลตรีทรงกลด  ทิพย์รัตน์
+    - name: ทรงกลด
       party: พลังชาติไทย
-      title: ''
-      last_name: ''
+      title: พลตรี
+      last_name: ทิพย์รัตน์
     - name: ชัชวาลล์
       party: พลังท้องถิ่นไท
       title: นาย
       last_name: คงอุดม
-    - name: ศาสตราจารย์โกวิทย์  พวงงาม
+    - name: โกวิทย์
       party: พลังท้องถิ่นไท
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: พวงงาม
     - name: นพดล
       party: พลังท้องถิ่นไท
       title: นาย
@@ -36982,10 +36982,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: ศุภรานนท์
-    - name: รองศาสตราจารย์รงค์  บุญสวยขวัญ
+    - name: รงค์
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: รองศาสตราจารย์
+      last_name: บุญสวยขวัญ
     - name: วันชัย
       party: พลังประชารัฐ
       title: นาย
@@ -37688,10 +37688,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: สูญจันทร์
-    - name: พลตรีทรงกลด  ทิพย์รัตน์
+    - name: ทรงกลด
       party: พลังชาติไทย
-      title: ''
-      last_name: ''
+      title: พลตรี
+      last_name: ทิพย์รัตน์
     - name: พิชชารัตน์
       party: พลังประชารัฐ
       title: นาง
@@ -37720,10 +37720,10 @@
       party: ชาติไทยพัฒนา
       title: นาย
       last_name: มาตรศรี
-    - name: พันโทสินธพ  แก้วพิจิตร
+    - name: สินธพ
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พันโท
+      last_name: แก้วพิจิตร
     - name: กุลวลี
       party: พลังประชารัฐ
       title: นางสาว
@@ -37949,10 +37949,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: โพธิพิพิธ
-    - name: พลเอกสมชาย  วิษณุวงศ์
+    - name: สมชาย
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: พลเอก
+      last_name: วิษณุวงศ์
     - name: กฤษณ์
       party: พลังประชารัฐ
       title: นาย
@@ -38286,10 +38286,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: เจตนจันทร์
-    - name: ศาสตราจารย์กนก  วงษ์ตระหง่าน
+    - name: กนก
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
   adhoc_committee:
     name: ''
     members:
@@ -39085,10 +39085,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: ศรนุวัตร์
-    - name: ศาสตราจารย์โกวิทย์  พวงงาม
+    - name: โกวิทย์
       party: พลังท้องถิ่นไท
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: พวงงาม
     - name: ภูมิศิษฏ์
       party: ภูมิใจไทย
       title: นาย
@@ -39377,10 +39377,10 @@
       party: ภูมิใจไทย
       title: นาย
       last_name: เกี่ยวข้อง
-    - name: พลตำรวจตรีสุรินทร์  ปาลาเร่
+    - name: สุรินทร์
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
     - name: ประเดิมชัย
       party: เพื่อไทย
       title: นาย
@@ -41119,10 +41119,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: เผือกประพันธุ์
-    - name: ร้อยเอกจองชัย  วงศ์ทรายทอง
+    - name: จองชัย
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ร้อยเอก
+      last_name: วงศ์ทรายทอง
   seconders:
     - name: กษิดิ์เดช
       party: พลังประชารัฐ
@@ -41336,10 +41336,10 @@
       title: นาย
       last_name: ผลอำนวย
   seconders:
-    - name: พันตำรวจโทไวพจน์  อาภรณ์รัตน์
+    - name: ไวพจน์
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: พันตำรวจโท
+      last_name: อาภรณ์รัตน์
     - name: ภูดิท
       party: พลังประชารัฐ
       title: นาย
@@ -41372,10 +41372,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: ทวีเกื้อกูลกิจ
-    - name: ร้อยเอกจองชัย  วงศ์ทรายทอง
+    - name: จองชัย
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ร้อยเอก
+      last_name: วงศ์ทรายทอง
     - name: รณเทพ
       party: พลังประชารัฐ
       title: นาย
@@ -41396,14 +41396,14 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: นิโรจน์
-    - name: รองศาสตราจารย์รงค์  บุญสวยขวัญ
+    - name: รงค์
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
-    - name: ร้อยตำรวจเอกอรุณ  สวัสดี
+      title: รองศาสตราจารย์
+      last_name: บุญสวยขวัญ
+    - name: อรุณ
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ร้อยตำรวจเอก
+      last_name: สวัสดี
     - name: บุญสิงห์
       party: พลังประชารัฐ
       title: นาย
@@ -41808,10 +41808,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: รักสุทธี
-    - name: พลตำรวจตรีสุรินทร์  ปาลาเร่
+    - name: สุรินทร์
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
     - name: เชิงชาย
       party: พลังประชารัฐ
       title: นาย
@@ -41820,10 +41820,10 @@
       party: เพื่อไทย
       title: นาง
       last_name: เจริญศรี
-    - name: พลตรีทรงกลด  ทิพย์รัตน์
+    - name: ทรงกลด
       party: พลังชาติไทย
-      title: ''
-      last_name: ''
+      title: พลตรี
+      last_name: ทิพย์รัตน์
     - name: พิเชษฐ
       party: ประชาธรรมไทย
       title: นาย
@@ -41852,10 +41852,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: ศุภรานนท์
-    - name: ศาสตราจารย์โกวิทย์  พวงงาม
+    - name: โกวิทย์
       party: พลังท้องถิ่นไท
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: พวงงาม
     - name: ธีระ
       party: ชาติไทยพัฒนา
       title: นาย
@@ -42293,10 +42293,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: ทองศิริ
-    - name: พลโทพงศกร  รอดชมภู
+    - name: พงศกร
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลโท
+      last_name: รอดชมภู
     - name: เอกการ
       party: อนาคตใหม่
       title: นาย
@@ -42309,10 +42309,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: จงสุทธนามณี
-    - name: รองศาสตราจารย์สุรวาท  ทองบุ
+    - name: สุรวาท
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: รองศาสตราจารย์
+      last_name: ทองบุ
     - name: วรรณวิภา
       party: อนาคตใหม่
       title: นางสาว
@@ -42511,31 +42511,31 @@
   voting_result: ''
   select_committee: ''
   purposers:
-    - name: พลตรีทรงกลด  ทิพย์รัตน์
+    - name: ทรงกลด
       party: พลังชาติไทย
-      title: ''
-      last_name: ''
+      title: พลตรี
+      last_name: ทิพย์รัตน์
   seconders:
-    - name: พลตำรวจเอกยงยุทธ  เทพจำนงค์
+    - name: ยงยุทธ
       party: ประชานิยม
-      title: ''
-      last_name: ''
+      title: พลตำรวจเอก
+      last_name: เทพจำนงค์
     - name: คฑาเทพ
       party: พลังไทยรักไทย
       title: นาย
       last_name: เตชะเดชเรืองกุล
-    - name: พลตำรวจเอกเสรีพิศุทธ์  เตมียเวส
+    - name: เสรีพิศุทธ์
       party: เสรีรวมไทย
-      title: ''
-      last_name: ''
+      title: พลตำรวจเอก
+      last_name: เตมียเวส
     - name: วิรัตน์
       party: เสรีรวมไทย
       title: นาย
       last_name: วรศสิริน
-    - name: ศาสตราจารย์โกวิทย์  พวงงาม
+    - name: โกวิทย์
       party: พลังท้องถิ่นไท
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: พวงงาม
     - name: ชัชวาลล์
       party: พลังท้องถิ่นไท
       title: นาย
@@ -42560,10 +42560,10 @@
       party: รักษ์ผืนป่าประเทศไทย
       title: นาย
       last_name: ถนอมพิชัยธำรง
-    - name: พลตำรวจโทวิศณุ  ม่วงแพรสี
+    - name: วิศณุ
       party: เสรีรวมไทย
-      title: ''
-      last_name: ''
+      title: พลตำรวจโท
+      last_name: ม่วงแพรสี
     - name: นันทนา
       party: ประชาภิวัฒน์
       title: นาง
@@ -43052,10 +43052,10 @@
       party: ชาติไทยพัฒนา
       title: นาย
       last_name: เที่ยงธรรม
-    - name: ร้อยตำรวจเอกอรุณ  สวัสดี
+    - name: อรุณ
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ร้อยตำรวจเอก
+      last_name: สวัสดี
     - name: สะถิระ
       party: พลังประชารัฐ
       title: นาย
@@ -44958,10 +44958,10 @@
     กมธ.วิสามัญ พิจารณาศึกษาการขุดคลองไทยและพัฒนาพื้นที่ระเบียงเศรษฐกิจภาคใต้
     สภาผู้แทนฯ
   purposers:
-    - name: ร้อยตำรวจเอกอรุณ  สวัสดี
+    - name: อรุณ
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ร้อยตำรวจเอก
+      last_name: สวัสดี
   seconders:
     - name: จอมขวัญ
       party: พลังประชารัฐ
@@ -44999,10 +44999,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: อ่อนอ้าย
-    - name: พลเอกสมชาย  วิษณุวงศ์
+    - name: สมชาย
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: พลเอก
+      last_name: วิษณุวงศ์
     - name: เชิงชาย
       party: พลังประชารัฐ
       title: นาย
@@ -45304,10 +45304,10 @@
       party: เพื่อไทย
       title: นาง
       last_name: ศรีธเรศ
-    - name: พลตำรวจเอกเสรีพิศุทธ์  เตมียเวส
+    - name: เสรีพิศุทธ์
       party: เสรีรวมไทย
-      title: ''
-      last_name: ''
+      title: พลตำรวจเอก
+      last_name: เตมียเวส
     - name: วิรัตน์
       party: เสรีรวมไทย
       title: นาย
@@ -45541,10 +45541,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: ศิริธร
-    - name: ผู้ช่วยศาสตราจารย์พรชัย  อินทร์สุข
+    - name: พรชัย
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ผู้ช่วยศาสตราจารย์
+      last_name: อินทร์สุข
     - name: นัทธี
       party: พลังประชารัฐ
       title: นาย
@@ -47069,10 +47069,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: ลักขณาอดิศร
-    - name: พันตำรวจตรีชวลิต  เลาหอุดมพันธ์
+    - name: ชวลิต
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พันตำรวจตรี
+      last_name: เลาหอุดมพันธ์
     - name: มารศรี
       party: เศรษฐกิจใหม่
       title: นาง
@@ -47524,14 +47524,14 @@
       party: พลเมืองไทย
       title: นางสาว
       last_name: เลิศนุวัฒน์
-    - name: พลตรีทรงกลด  ทิพย์รัตน์
+    - name: ทรงกลด
       party: พลังชาติไทย
-      title: ''
-      last_name: ''
-    - name: พลตำรวจเอกยงยุทธ  เทพจำนงค์
+      title: พลตรี
+      last_name: ทิพย์รัตน์
+    - name: ยงยุทธ
       party: ประชานิยม
-      title: ''
-      last_name: ''
+      title: พลตำรวจเอก
+      last_name: เทพจำนงค์
     - name: ดำรงค์
       party: รักษ์ผืนป่าประเทศไทย
       title: นาย
@@ -47788,10 +47788,10 @@
     พิจารณาศึกษาแนวทางป้องกันและแก้ไขปัญหาการข่มขืนกระทำชำเราและการล่วงละเมิดทางเพศ
     สภาผู้แทนฯ
   purposers:
-    - name: ศาสตราจารย์โกวิทย์  พวงงาม
+    - name: โกวิทย์
       party: พลังท้องถิ่นไท
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: พวงงาม
   seconders:
     - name: กานต์กนิษฐ์
       party: พลังประชารัฐ
@@ -47813,10 +47813,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: ธนาคมานุสรณ์
-    - name: พลตำรวจตรีสุรินทร์  ปาลาเร่
+    - name: สุรินทร์
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
     - name: อาสพลธ์
       party: ภูมิใจไทย
       title: นาย
@@ -48106,10 +48106,10 @@
       party: พลังประชารัฐ
       title: นางสาว
       last_name: แห้วสันตติ
-    - name: ร้อยตำรวจเอกอรุณ  สวัสดี
+    - name: อรุณ
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ร้อยตำรวจเอก
+      last_name: สวัสดี
     - name: ไพลิน
       party: พลังประชารัฐ
       title: นางสาว
@@ -48122,10 +48122,10 @@
       party: เสรีรวมไทย
       title: นาย
       last_name: วรศสิริน
-    - name: พลตำรวจตรีสุรินทร์  ปาลาเร่
+    - name: สุรินทร์
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
     - name: สุรทิน
       party: ประชาธิปไตยใหม่
       title: นาย
@@ -48638,10 +48638,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: เลิศไกร
-    - name: พันโทสินธพ  แก้วพิจิตร
+    - name: สินธพ
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พันโท
+      last_name: แก้วพิจิตร
     - name: ถาวร
       party: ประชาธิปัตย์
       title: นาย
@@ -49185,10 +49185,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: นามบุตร
-    - name: พันโทสินธพ  แก้วพิจิตร
+    - name: สินธพ
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พันโท
+      last_name: แก้วพิจิตร
     - name: วิวรรธน์
       party: ประชาธิปัตย์
       title: นาย
@@ -49201,10 +49201,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: เดชเดโช
-    - name: ศาสตราจารย์กนก  วงษ์ตระหง่าน
+    - name: กนก
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
     - name: นริศ
       party: ประชาธิปัตย์
       title: นาย
@@ -49706,10 +49706,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: เดชเดโช
-    - name: ศาสตราจารย์กนก  วงษ์ตระหง่าน
+    - name: กนก
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
     - name: อันวาร์
       party: ประชาธิปัตย์
       title: นาย
@@ -49774,10 +49774,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: นามบุตร
-    - name: พันโทสินธพ  แก้วพิจิตร
+    - name: สินธพ
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พันโท
+      last_name: แก้วพิจิตร
     - name: วิวรรธน์
       party: ประชาธิปัตย์
       title: นาย
@@ -50005,10 +50005,10 @@
       party: เสรีรวมไทย
       title: นาย
       last_name: กองมณี
-    - name: พลตำรวจเอกเสรีพิศุทธ์  เตมียเวส
+    - name: เสรีพิศุทธ์
       party: เสรีรวมไทย
-      title: ''
-      last_name: ''
+      title: พลตำรวจเอก
+      last_name: เตมียเวส
     - name: เพชร
       party: เสรีรวมไทย
       title: นาย
@@ -50021,10 +50021,10 @@
       party: เสรีรวมไทย
       title: นางสาว
       last_name: เพ็ชร์จินดา
-    - name: พลตำรวจโทวิศณุ  ม่วงแพรสี
+    - name: วิศณุ
       party: เสรีรวมไทย
-      title: ''
-      last_name: ''
+      title: พลตำรวจโท
+      last_name: ม่วงแพรสี
     - name: อนุรักษ์
       party: เพื่อไทย
       title: นาง
@@ -51048,10 +51048,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: สาและ
-    - name: พันโทสินธพ  แก้วพิจิตร
+    - name: สินธพ
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พันโท
+      last_name: แก้วพิจิตร
     - name: วุฒิพงษ์
       party: ประชาธิปัตย์
       title: นาย
@@ -51316,10 +51316,10 @@
       party: ประชาธิปัตย์
       title: นางสาว
       last_name: รอดรัศมี
-    - name: ศาสตราจารย์กนก  วงษ์ตระหง่าน
+    - name: กนก
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
     - name: พิมพ์ภัทรา
       party: ประชาธิปัตย์
       title: นางสาว
@@ -52138,10 +52138,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: จุลใส
-    - name: พลตำรวจตรีสุรินทร์  ปาลาเร่
+    - name: สุรินทร์
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
     - name: สินิตย์
       party: ประชาธิปัตย์
       title: นาย
@@ -52939,10 +52939,10 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: อำนาคะ
-    - name: ร้อยตำรวจเอกอรุณ  สวัสดี
+    - name: อรุณ
       party: พลังประชารัฐ
-      title: ''
-      last_name: ''
+      title: ร้อยตำรวจเอก
+      last_name: สวัสดี
     - name: จักรพันธ์
       party: พลังประชารัฐ
       title: นาย
@@ -53653,10 +53653,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: เพียรพิเศษ
-    - name: พลโทพงศกร รอดชมภู
+    - name: พงศกร
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลโท
+      last_name: รอดชมภู
     - name: คารม
       party: อนาคตใหม่
       title: นาย
@@ -53686,10 +53686,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: ซื่อทรงธรรม
-    - name: พันตำรวจโทฐนภัทร กิตติวงศา
+    - name: ฐนภัทร
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พันตำรวจโท
+      last_name: กิตติวงศา
     - name: ธัญญ์วาริน
       party: อนาคตใหม่
       title: นาย
@@ -53726,10 +53726,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: นุ่มหนู
-    - name: พลตำรวจตรีสุพิศาล  ภักดีนฤนาถ
+    - name: สุพิศาล
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: พลตำรวจตรี
+      last_name: ภักดีนฤนาถ
     - name: จุลพันธ์
       party: อนาคตใหม่
       title: นาย
@@ -53782,10 +53782,10 @@
       party: อนาคตใหม่
       title: นาย
       last_name: ศิริสุนทร
-    - name: รองศาสตราจารย์สุรวาท  ทองบุ
+    - name: สุรวาท
       party: อนาคตใหม่
-      title: ''
-      last_name: ''
+      title: รองศาสตราจารย์
+      last_name: ทองบุ
     - name: ทศพร
       party: อนาคตใหม่
       title: นาย
@@ -55244,10 +55244,10 @@
       party: ภูมิใจไทย
       title: นาย
       last_name: ภุมมะกาญจนะ
-    - name: พันเอกเศรษฐพงค์  มะลิสุวรรณ
+    - name: เศรษฐพงค์
       party: ภูมิใจไทย
-      title: ''
-      last_name: ''
+      title: พันเอก
+      last_name: มะลิสุวรรณ
     - name: สุรศักดิ์
       party: ภูมิใจไทย
       title: นาย
@@ -56613,10 +56613,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: วิกิตเศรษฐ์
-    - name: พันโทสินธพ  แก้วพิจิตร
+    - name: สินธพ
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: พันโท
+      last_name: แก้วพิจิตร
     - name: พิมพ์ภัทรา
       party: ประชาธิปัตย์
       title: นางสาว
@@ -56629,10 +56629,10 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: คล้ามไพบูลย์
-    - name: ศาสตราจารย์กนก  วงษ์ตระหง่าน
+    - name: กนก
       party: ประชาธิปัตย์
-      title: ''
-      last_name: ''
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
     - name: ประกอบ
       party: ประชาธิปัตย์
       title: นาย
