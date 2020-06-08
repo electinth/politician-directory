@@ -38,6 +38,15 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value: slug,
     })
   }
+  if (node.internal.type === `MotionYaml`) {
+    const id = node.id
+    const slug = `/motion/${id}`
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
+  }
 }
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -134,6 +143,37 @@ exports.createPages = async ({ graphql, actions }) => {
         skip: i * votelogPerPage,
         numPages,
         currentPage: i + 1,
+      },
+    })
+  })
+
+  // Motion
+  const motions = await graphql(`
+    query {
+      allMotionYaml {
+        edges {
+          node {
+            id
+            select_committee
+            main_cat
+            votelog_id
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+  motions.data.allMotionYaml.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve("./src/templates/motion-template.js"),
+      context: {
+        id: node.id,
+        select_committee: node.select_committee,
+        main_cat: node.main_cat,
+        votelog_id: node.votelog_id,
       },
     })
   })

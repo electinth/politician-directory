@@ -109,3 +109,4 @@ const Waffle = ({ data, colors, borderColors, style, css }) => (
 )
 
 export default Waffle
+export { split_array }
