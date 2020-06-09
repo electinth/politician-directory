@@ -197,7 +197,14 @@ const IndexPage = ({ data }) => {
                       css={{
                         margin: "0 0 2rem 0",
                         width: "100%",
-                        [media(767)]: {
+                        [media(767, 1022)]: {
+                          width: "calc((100% - 4rem) / 2)",
+                          margin: "0 2rem 2rem 0",
+                          "&:nth-of-type(2n)": {
+                            margin: "0 0 2rem 0",
+                          },
+                        },
+                        [media(1023)]: {
                           width: "calc((100% - 4rem) / 3)",
                           margin: "0 2rem 2rem 0",
                           "&:nth-of-type(3n)": {
