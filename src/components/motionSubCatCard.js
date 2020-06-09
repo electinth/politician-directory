@@ -1,27 +1,12 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { Link } from "gatsby"
 import FloatingCard from "./floatingCard"
-import { categorySlug } from "../utils"
+import { motionCategorySlug } from "../utils"
 
 const MotionSubCatCard = ({ type, ...props }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(
-        relativePath: { eq: "images/people/placeholder.png" }
-      ) {
-        childImageSharp {
-          fixed(height: 48) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <Link
-      to={categorySlug(props.title)}
+      to={`/motions/category/${motionCategorySlug(props.title)}`}
       key={props.id}
       className={props.className}
       css={{
@@ -44,10 +29,19 @@ const MotionSubCatCard = ({ type, ...props }) => {
           textDecoration: "none",
         }}
       >
-        <Img
-          fixed={data.placeholderImage.childImageSharp.fixed}
-          css={{ marginRight: "16px", flexShrink: "0" }}
-        />
+        <div
+          css={{
+            flexShrink: "0",
+            width: "40px",
+            display: "flex",
+            marginRight: "16px",
+          }}
+        >
+          <img
+            src={`/motion/icons/${motionCategorySlug(props.title)}.png`}
+            css={{ marginBottom: "0" }}
+          />
+        </div>
         <div css={{ flexGrow: "1" }}>
           <h2 style={{ margin: "0" }}>{props.title}</h2>
         </div>

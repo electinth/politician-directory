@@ -124,11 +124,11 @@ export function getThaiName(number) {
 
 /**
  * Create motion category slug
- * @param {String} subCategroy
+ * @param {String} subCategory
  */
-export function categorySlug(subCategroy) {
-  if (!subCategroy) return ""
-  return `/motions/category/${subCategroy.replace(/ /g, "-")}`
+export function motionCategorySlug(subCategory) {
+  if (!subCategory) return ""
+  return `${subCategory.replace(/ /g, "-")}`
 }
 
 export function float2Grey(x) {
