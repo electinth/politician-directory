@@ -7,34 +7,11 @@ import fs from "fs"
 import path from "path"
 import _ from "lodash"
 import moment from "moment"
+import { splitPeopleName } from "./split_people_name"
 
 if (process.argv.length < 3) {
   console.log("Usage: node -r esm csv2yaml <file.csv>")
   process.exit()
-}
-
-function splitPeopleName(people_name) {
-  people_name = _.trim(people_name)
-  let title = ""
-  let name = people_name
-  let last_name = ""
-  // TODO: #171 support split name fields semantically
-  const r = /^(นาย|นางสาว|นาง)/gm
-  const matches = r.exec(people_name)
-  if (matches) {
-    if (matches.index === 0) {
-      title = matches[0]
-      const name_starts = matches.index + matches[0].length
-      const full_name = _.compact(people_name.slice(name_starts).split(" "))
-      name = full_name[0]
-      last_name = full_name.slice(1).join(" ")
-    }
-  }
-  return {
-    title,
-    name,
-    last_name,
-  }
 }
 
 function clean(val, key, object) {
