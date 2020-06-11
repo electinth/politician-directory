@@ -34,6 +34,7 @@
   --cl-motion-section: #e7eb75;
 
   --container-width: 920px;
+  --container-motion-width: 1440px;
 }
 
 a {
@@ -48,4 +49,15 @@ a:hover {
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
+}
+
+.container-motion {
+  margin: 0 auto;
+  padding: 0 32px 0 32px;
+}
+
+@media screen and (min-width: 767px) {
+  .container-motion {
+    max-width: var(--container-motion-width);
+  }
 }
