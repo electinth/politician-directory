@@ -209,6 +209,14 @@ const IndexPage = ({ data }) => {
 
                 & .bottomrow {
                   flex: 0 0 250px;
+
+                  &--col {
+                    padding: 0 20px;
+                  }
+
+                  &--col + .bottomrow--col {
+                    border-left: 1px solid black;
+                  }
                 }
               `}
             >
