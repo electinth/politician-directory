@@ -93,6 +93,7 @@ const BarChart = ({ data, xTicks }) => {
           {data.map(({ category: tick }) => {
             return (
               <g
+                key={tick}
                 className={`tick tick-${tick}`}
                 style={{
                   transform: `translate(0, ${Y(tick) -
