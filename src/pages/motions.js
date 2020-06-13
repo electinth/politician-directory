@@ -10,6 +10,7 @@ import ExternalLink from "../components/externalLink"
 import MotionSubCatCard from "../components/motionSubCatCard"
 import BarChart from "../components/motion/barchart"
 import { css } from "@emotion/core"
+import StatusBarChart from "../components/motion/statusBarChart"
 
 export const query = graphql`
   query {
@@ -27,6 +28,7 @@ export const query = graphql`
         node {
           main_cat
           sub_cat
+          status
         }
       }
     }
@@ -47,6 +49,21 @@ const IndexPage = ({ data }) => {
       count: motions.length,
     })
   )
+
+  const statusGroupCount = _.groupBy(data.motions.edges, d => d.node.status)
+  const statusdata = Object.entries(statusGroupCount).map(
+    ([status, motions]) => ({
+      status,
+      count: motions.length,
+    })
+  )
+  const VOTED = [
+    "3. ตั้ง กมธ. วิสามัญ",
+    "4. ไม่ตั้ง กมธ. วิสามัญ",
+    "5. ส่งครม.",
+  ]
+  const voteddata = statusdata.filter(d => VOTED.includes(d.status))
+  const notvoteddata = statusdata.filter(d => !VOTED.includes(d.status))
 
   const getCategoryGroups = () => {
     let subCats = data.categories.edges.map(({ node }) =>
@@ -248,9 +265,11 @@ const IndexPage = ({ data }) => {
               <div className="bottomrow">
                 <div className="bottomrow--col bottomrow--col__notvoted">
                   <h3 css={cssH3Viz}>ยังไม่ลงมติ</h3>
+                  <StatusBarChart width={`100%`} data={notvoteddata} />
                 </div>
                 <div className="bottomrow--col bottomrow--col__voted">
                   <h3 css={cssH3Viz}>ลงมติแล้ว</h3>
+                  <StatusBarChart width="100%" data={voteddata} />
                 </div>
               </div>
             </div>
