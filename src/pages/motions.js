@@ -215,7 +215,7 @@ const IndexPage = ({ data }) => {
                   }
 
                   &--col + .bottomrow--col {
-                    border-left: 1px solid black;
+                    border-left: 1px solid var(--cl-gray-4);
                   }
                 }
               `}
@@ -225,7 +225,7 @@ const IndexPage = ({ data }) => {
                   <h3 css={cssH3Viz}>ญัตติทั้งหมด</h3>
                   <div
                     css={css`
-                      height: calc(100% - 36px - 5.2rem);
+                      flex: 1;
                       display: flex;
                       justify-content: center;
                       align-items: center;

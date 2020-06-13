@@ -49,7 +49,7 @@ const BarChart = ({ data, xTicks }) => {
       className="bar-container"
       css={css`
         width: 100%;
-        height: 100%;
+        height: 200px;
 
         & .x-axis {
           & text {
