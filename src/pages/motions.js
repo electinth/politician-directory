@@ -191,17 +191,53 @@ const IndexPage = ({ data }) => {
                 }
 
                 & .bottomrow {
-                  flex: 0 0 300px;
+                  flex: 0 0 250px;
                 }
               `}
             >
               <div className="toprow">
                 <div className="toprow--col toprow--col__allmotion">
                   <h3 css={cssH3Viz}>ญัตติทั้งหมด</h3>
+                  <div
+                    css={css`
+                      height: calc(100% - 36px - 5.2rem);
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    `}
+                  >
+                    <div
+                      className="allmotion-circle"
+                      css={css`
+                        width: 150px;
+                        height: 150px;
+                        background-color: rgb(250, 250, 250);
+                        border: 1px solid var(--cl-gray-4);
+                        border-radius: 100%;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                      `}
+                    >
+                      <div
+                        className="allmotion-text"
+                        css={css`
+                          font-size: 50px;
+                          font-family: var(--ff-title);
+                        `}
+                      >
+                        {data.motions.edges.length}
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div className="toprow--col toprow--col__motioncount">
                   <h3 css={cssH3Viz}>สัดส่วนประเด็น</h3>
-                  <div className="bar-wrapper" css={{ flex: 1 }}>
+                  <div
+                    className="bar-wrapper"
+                    css={{ height: "calc(100% - 36px - 5.2rem)" }}
+                  >
                     <BarChart
                       data={barchartdata}
                       xTicks={[0, 10, 20, 30, 40, 50, 60, 70]}
