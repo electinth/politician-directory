@@ -10,10 +10,10 @@ function extent(arr) {
 }
 
 const padding = {
-  top: 50,
-  right: 50,
-  bottom: 50,
-  left: 150,
+  top: 20,
+  right: 20,
+  bottom: 30,
+  left: 60,
 }
 
 const BarChart = ({ data, xTicks }) => {
@@ -40,7 +40,7 @@ const BarChart = ({ data, xTicks }) => {
 
   const Y = scaleBand()
     .domain(data.map(d => d.category))
-    .range([h - padding.top, padding.bottom])
+    .range([h - padding.bottom, padding.top])
     .paddingInner(0.5)
     .paddingOuter(0.5)
 
@@ -48,9 +48,8 @@ const BarChart = ({ data, xTicks }) => {
     <div
       className="bar-container"
       css={css`
-        width: 50%;
-        height: 500px;
-        background-color: white;
+        width: 100%;
+        height: 100%;
 
         & .x-axis {
           & text {
@@ -60,6 +59,7 @@ const BarChart = ({ data, xTicks }) => {
 
         & text {
           fill: var(--cl-gray-2);
+          font-size: 10px;
         }
       `}
       ref={barchartRef}
@@ -79,7 +79,7 @@ const BarChart = ({ data, xTicks }) => {
                 transform: `translate(${X(tick)}px, 0)`,
               }}
             >
-              <text dy="20">{tick}</text>
+              <text dy="15">{tick}</text>
               <line
                 y1={-h + padding.top + padding.bottom}
                 y2={0}
@@ -123,7 +123,7 @@ const BarChart = ({ data, xTicks }) => {
               >
                 <text
                   dy={Y.bandwidth() / 2}
-                  dx="-20"
+                  dx="-5"
                   textAnchor="end"
                   dominantBaseline="middle"
                 >

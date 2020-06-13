@@ -8,6 +8,8 @@ import HiddenOnMobile from "../components/hiddenOnMobile"
 import { media } from "../styles"
 import ExternalLink from "../components/externalLink"
 import MotionSubCatCard from "../components/motionSubCatCard"
+import BarChart from "../components/motion/barchart"
+import { css } from "@emotion/core"
 
 export const query = graphql`
   query {
@@ -158,13 +160,40 @@ const IndexPage = ({ data }) => {
             </div>
             <HiddenOnMobile style={{ width: "32%" }}>
               <div>
-                <h3 css={cssH3}>ญัตติทั้งหมด</h3>
-                <h3 css={cssH3}>ยังไม่ลงญัตติ</h3>
+                <div className="wrapper-viz">
+                  <h3 css={cssH3}>ญัตติทั้งหมด</h3>
+                </div>
+                <div className="wrapper-viz">
+                  <h3 css={cssH3}>ยังไม่ลงญัตติ</h3>
+                </div>
               </div>
             </HiddenOnMobile>
             <HiddenOnMobile style={{ width: "32%" }}>
               <div>
-                <h3 css={cssH3}>สัดส่วนประเด็น</h3>
+                <div className="wrapper-viz">
+                  <h3 css={{ ...cssH3, marginBottom: "10px" }}>
+                    สัดส่วนประเด็น
+                  </h3>
+                  <div
+                    className="bar-wrapper"
+                    css={css`
+                      height: 200px;
+                    `}
+                  >
+                    <BarChart
+                      data={[
+                        { category: "การเกษตร", count: 24 },
+                        { category: "การศึกษา", count: 21 },
+                        { category: "กฎหมาย", count: 17 },
+                        { category: "เศรษฐกิจ", count: 16 },
+                        { category: "สิทธิมนุษยชน", count: 13 },
+                        { category: "สังคม", count: 10 },
+                        { category: "อื่นๆ", count: 6 },
+                      ]}
+                      xTicks={[0, 5, 10, 15, 20, 25]}
+                    />
+                  </div>
+                </div>
                 <h3 css={cssH3}>ลงมติแล้ว</h3>
               </div>
             </HiddenOnMobile>
