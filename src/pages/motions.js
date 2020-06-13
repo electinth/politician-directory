@@ -37,6 +37,7 @@ const cssH1 = { fontSize: "4.8rem", margin: "0", color: "var(--cl-black)" }
 const cssH2 = { fontSize: "3.6rem", marginBottom: "2.4rem" }
 const cssH3 = { fontSize: "2.4rem", margin: "5.2rem 0 2.8rem 0" }
 const cssP = { lineHeight: "1.8" }
+const cssH3Viz = { ...cssH3, marginBottom: "10px" }
 
 const IndexPage = ({ data }) => {
   const mainCatGroupCount = _.groupBy(data.motions.edges, d => d.node.main_cat)
@@ -167,37 +168,56 @@ const IndexPage = ({ data }) => {
                 lis.parliament.go.th
               </ExternalLink>
             </div>
-            <HiddenOnMobile style={{ width: "32%" }}>
-              <div>
-                <div className="wrapper-viz">
-                  <h3 css={cssH3}>ญัตติทั้งหมด</h3>
+            <div
+              style={{ width: "64%" }}
+              css={css`
+                display: flex;
+                flex-flow: column nowrap;
+
+                & .toprow,
+                & .bottomrow {
+                  display: flex;
+
+                  &--col {
+                    flex: 0 0 50%;
+                    display: flex;
+
+                    flex-flow: column nowrap;
+                  }
+                }
+
+                & .toprow {
+                  flex: 1;
+                }
+
+                & .bottomrow {
+                  flex: 0 0 300px;
+                }
+              `}
+            >
+              <div className="toprow">
+                <div className="toprow--col toprow--col__allmotion">
+                  <h3 css={cssH3Viz}>ญัตติทั้งหมด</h3>
                 </div>
-                <div className="wrapper-viz">
-                  <h3 css={cssH3}>ยังไม่ลงญัตติ</h3>
-                </div>
-              </div>
-            </HiddenOnMobile>
-            <HiddenOnMobile style={{ width: "32%" }}>
-              <div>
-                <div className="wrapper-viz">
-                  <h3 css={{ ...cssH3, marginBottom: "10px" }}>
-                    สัดส่วนประเด็น
-                  </h3>
-                  <div
-                    className="bar-wrapper"
-                    css={css`
-                      height: 200px;
-                    `}
-                  >
+                <div className="toprow--col toprow--col__motioncount">
+                  <h3 css={cssH3Viz}>สัดส่วนประเด็น</h3>
+                  <div className="bar-wrapper" css={{ flex: 1 }}>
                     <BarChart
                       data={barchartdata}
                       xTicks={[0, 10, 20, 30, 40, 50, 60, 70]}
                     />
                   </div>
                 </div>
-                <h3 css={cssH3}>ลงมติแล้ว</h3>
               </div>
-            </HiddenOnMobile>
+              <div className="bottomrow">
+                <div className="bottomrow--col bottomrow--col__notvoted">
+                  <h3 css={cssH3Viz}>ยังไม่ลงมติ</h3>
+                </div>
+                <div className="bottomrow--col bottomrow--col__voted">
+                  <h3 css={cssH3Viz}>ลงมติแล้ว</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </FloatingCard>
       </section>
