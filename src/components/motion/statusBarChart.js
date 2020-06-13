@@ -37,7 +37,7 @@ const StatusBarChart = ({ data, width }) => {
         className="statusbar-container"
         css={css`
           width: ${width};
-          height: 200px;
+          height: 100px;
           background-color: white;
 
           display: flex;
