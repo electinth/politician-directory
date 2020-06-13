@@ -25,6 +25,7 @@ export const query = graphql`
     motions: allMotionYaml {
       edges {
         node {
+          main_cat
           sub_cat
         }
       }
@@ -38,6 +39,14 @@ const cssH3 = { fontSize: "2.4rem", margin: "5.2rem 0 2.8rem 0" }
 const cssP = { lineHeight: "1.8" }
 
 const IndexPage = ({ data }) => {
+  const mainCatGroupCount = _.groupBy(data.motions.edges, d => d.node.main_cat)
+  const barchartdata = Object.entries(mainCatGroupCount).map(
+    ([category, motions]) => ({
+      category,
+      count: motions.length,
+    })
+  )
+
   const getCategoryGroups = () => {
     let subCats = data.categories.edges.map(({ node }) =>
       convertToSubCategory(node)
@@ -181,16 +190,8 @@ const IndexPage = ({ data }) => {
                     `}
                   >
                     <BarChart
-                      data={[
-                        { category: "การเกษตร", count: 24 },
-                        { category: "การศึกษา", count: 21 },
-                        { category: "กฎหมาย", count: 17 },
-                        { category: "เศรษฐกิจ", count: 16 },
-                        { category: "สิทธิมนุษยชน", count: 13 },
-                        { category: "สังคม", count: 10 },
-                        { category: "อื่นๆ", count: 6 },
-                      ]}
-                      xTicks={[0, 5, 10, 15, 20, 25]}
+                      data={barchartdata}
+                      xTicks={[0, 10, 20, 30, 40, 50, 60, 70]}
                     />
                   </div>
                 </div>
