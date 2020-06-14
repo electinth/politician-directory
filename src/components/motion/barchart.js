@@ -83,7 +83,7 @@ const BarChart = ({ data, xTicks }) => {
               <line
                 y1={-h + padding.top + padding.bottom + Y.bandwidth() / 2}
                 y2={-Y.bandwidth() / 2}
-                stroke="var(--cl-gray-3)"
+                stroke="var(--cl-gray-4)"
               ></line>
             </g>
           ))}
@@ -93,7 +93,7 @@ const BarChart = ({ data, xTicks }) => {
           <line
             x1={padding.left}
             x2={w - padding.right}
-            stroke="var(--cl-gray-3)"
+            stroke="var(--cl-gray-4)"
             style={{
               transform: `translate(0, ${h -
                 padding.bottom -
@@ -114,7 +114,7 @@ const BarChart = ({ data, xTicks }) => {
                 <line
                   x1={padding.left}
                   x2={w - padding.right}
-                  stroke="var(--cl-gray-3)"
+                  stroke="var(--cl-gray-4)"
                 ></line>
               </g>
             )
