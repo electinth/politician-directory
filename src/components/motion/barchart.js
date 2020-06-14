@@ -79,10 +79,10 @@ const BarChart = ({ data, xTicks }) => {
                 transform: `translate(${X(tick)}px, 0)`,
               }}
             >
-              <text dy="15">{tick}</text>
+              <text dy="10">{tick}</text>
               <line
                 y1={-h + padding.top + padding.bottom + Y.bandwidth() / 2}
-                y2={0}
+                y2={-Y.bandwidth() / 2}
                 stroke="var(--cl-gray-3)"
               ></line>
             </g>
@@ -90,6 +90,16 @@ const BarChart = ({ data, xTicks }) => {
         </g>
 
         <g className="y-axis">
+          <line
+            x1={padding.left}
+            x2={w - padding.right}
+            stroke="var(--cl-gray-3)"
+            style={{
+              transform: `translate(0, ${h -
+                padding.bottom -
+                Y.bandwidth() / 2}px)`,
+            }}
+          ></line>
           {data.map(({ category: tick }) => {
             return (
               <g
