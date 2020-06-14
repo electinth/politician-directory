@@ -81,7 +81,7 @@ const BarChart = ({ data, xTicks }) => {
             >
               <text dy="15">{tick}</text>
               <line
-                y1={-h + padding.top + padding.bottom}
+                y1={-h + padding.top + padding.bottom + Y.bandwidth() / 2}
                 y2={0}
                 stroke="var(--cl-gray-3)"
               ></line>
