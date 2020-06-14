@@ -15,7 +15,6 @@ const StatusBarChart = ({ data, width }) => {
     .range([0, 100])
 
   const total = data.reduce((prev, cur) => (prev += cur.count), 0)
-  console.log(data, total)
   return (
     <div
       css={css`

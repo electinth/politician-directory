@@ -60,13 +60,13 @@ const IndexPage = ({ data }) => {
       "5. ส่งครม.": "#99cfcb",
     }[color])
   const statusGroupCount = _.groupBy(data.motions.edges, d => d.node.status)
-  const statusdata = Object.entries(statusGroupCount).map(
-    ([status, motions]) => ({
+  const statusdata = Object.entries(statusGroupCount)
+    .map(([status, motions]) => ({
       status,
       count: motions.length,
       color: STATUS_COLOR(status),
-    })
-  )
+    }))
+    .sort((a, b) => +a.status.slice(0, 1) - +b.status.slice(0, 1))
   const VOTED = [
     "3. ตั้ง กมธ. วิสามัญ",
     "4. ไม่ตั้ง กมธ. วิสามัญ",
