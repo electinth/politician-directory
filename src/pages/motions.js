@@ -50,11 +50,21 @@ const IndexPage = ({ data }) => {
     })
   )
 
+  const STATUS_COLOR = color =>
+    ({
+      ไม่บรรจุวาระ: "lightgrey",
+      "1. รอบรรจุวาระ": "#f0b2d3",
+      "2. สภาผู้แทนพิจารณา": "#aae0a7",
+      "3. ตั้ง กมธ. วิสามัญ": "#bbbdf9",
+      "4. ไม่ตั้ง กมธ. วิสามัญ": "#f2b5b6",
+      "5. ส่งครม.": "#99cfcb",
+    }[color])
   const statusGroupCount = _.groupBy(data.motions.edges, d => d.node.status)
   const statusdata = Object.entries(statusGroupCount).map(
     ([status, motions]) => ({
       status,
       count: motions.length,
+      color: STATUS_COLOR(status),
     })
   )
   const VOTED = [
