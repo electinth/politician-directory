@@ -35,6 +35,8 @@ export const query = graphql`
   }
 `
 
+const mobileBP = "(max-width: 765px)"
+
 const cssH1 = { fontSize: "4.8rem", margin: "0", color: "var(--cl-black)" }
 const cssH2 = { fontSize: "3.6rem", marginBottom: "2.4rem" }
 const cssH3 = { fontSize: "2.4rem", margin: "5.2rem 0 2.8rem 0" }
@@ -196,10 +198,14 @@ const IndexPage = ({ data }) => {
               </ExternalLink>
             </div>
             <div
-              style={{ width: "64%" }}
               css={css`
                 display: flex;
                 flex-flow: column nowrap;
+                width: 64%;
+
+                @media ${mobileBP} {
+                  width: 100%;
+                }
 
                 & .toprow,
                 & .bottomrow {
@@ -210,6 +216,16 @@ const IndexPage = ({ data }) => {
                     display: flex;
 
                     flex-flow: column nowrap;
+
+                    @media ${mobileBP} {
+                      flex: 1;
+                    }
+
+                    &__allmotion {
+                      @media ${mobileBP} {
+                        display: none;
+                      }
+                    }
                   }
                 }
 
@@ -220,12 +236,21 @@ const IndexPage = ({ data }) => {
                 & .bottomrow {
                   flex: 0 0 250px;
 
+                  @media ${mobileBP} {
+                    flex: 1;
+                    flex-flow: row wrap;
+                  }
+
                   &--col {
                     padding: 0 20px;
                   }
 
                   &--col + .bottomrow--col {
                     border-left: 1px solid var(--cl-gray-4);
+
+                    @media ${mobileBP} {
+                      border: none;
+                    }
                   }
                 }
               `}
@@ -271,7 +296,11 @@ const IndexPage = ({ data }) => {
                   <h3 css={cssH3Viz}>สัดส่วนประเด็น</h3>
                   <div
                     className="bar-wrapper"
-                    css={{ height: "calc(100% - 36px - 5.2rem)" }}
+                    css={css`
+                      height: calc(100% - 36px - 5.2rem);
+                      display: flex;
+                      align-items: center;
+                    `}
                   >
                     <BarChart
                       data={barchartdata}
