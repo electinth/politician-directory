@@ -2,6 +2,7 @@ import React from "react"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import { motionCategorySlug } from "../utils"
+import MotionStatusChip from "../components/motionStatusChip"
 
 export const query = graphql`
   query($sub_cat: String!) {
@@ -139,7 +140,7 @@ class MotionCategoryPage extends React.Component {
             </div>
           </div>
         </section>
-        <section style={{ marginTop: "8rem" }}>
+        <section style={{ margin: "8rem 0" }}>
           <div className="container-motion">
             <div css={cssContainer}>
               <div
@@ -174,36 +175,46 @@ class MotionCategoryPage extends React.Component {
                   <option value="to_cabinet">ส่งครม.</option>
                 </select>
               </div>
-              <table css={{ height: "auto" }}>
-                {this.state.motions.map(node => (
-                  <tr css={{ height: "auto" }}>
-                    <td
-                      css={{
-                        color: "var(--cl-gray-1)",
-                        fontSize: "1.6rem",
-                        height: "auto",
-                        verticalAlign: "top",
-                        textAlign: "left",
-                        lineHeight: "3rem",
-                      }}
-                    >
-                      <div css={{ margin: "2rem 1rem" }}>
-                        {node.registration_no}
-                      </div>
-                    </td>
-                    <td
-                      css={{
-                        fontSize: "2rem",
-                        lineHeight: "3rem",
-                        height: "auto",
-                      }}
-                    >
-                      <div css={{ margin: "2rem 1rem" }}>{node.name}</div>
-                    </td>
-                    <td css={{ height: "auto" }}>{node.status}</td>
-                  </tr>
-                ))}
-              </table>
+              {this.state.motions.map(node => (
+                <div
+                  css={{
+                    display: "flex",
+                    width: "100%",
+                    padding: "2.4rem 0",
+                    borderBottom: "var(--cl-gray-3) 1px solid",
+                  }}
+                >
+                  <div
+                    css={{
+                      margin: "0 1rem",
+                      color: "var(--cl-gray-1)",
+                      fontSize: "1.6rem",
+                      lineHeight: "3rem",
+                      minWidth: "100px",
+                    }}
+                  >
+                    {node.registration_no}
+                  </div>
+                  <div
+                    css={{
+                      margin: "0 1rem",
+                      fontSize: "2rem",
+                      lineHeight: "3rem",
+                    }}
+                  >
+                    {node.name}
+                  </div>
+                  <div
+                    css={{
+                      width: "200px",
+                      flexShrink: "0",
+                      marginLeft: "2rem",
+                    }}
+                  >
+                    <MotionStatusChip status={node.status}></MotionStatusChip>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
