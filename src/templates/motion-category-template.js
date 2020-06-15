@@ -25,30 +25,50 @@ class MotionCategoryPage extends React.Component {
   constructor(props) {
     super(props)
     this.allMotions = props.data.allMotionYaml.edges.map(e => e.node)
+    this.sortBy = "asc"
+    this.filterBy = "all"
     this.state = {
       motions: this.allMotions,
     }
   }
 
   sort = event => {
-    const sortBy = event.target.value
-    if (sortBy === "asc") {
-      this.setState({
-        motions: [...this.allMotions].sort(
-          (a, b) => parseInt(a.id) > parseInt(b.id)
-        ),
-      })
-    } else if (sortBy === "desc") {
-      this.setState({
-        motions: [...this.allMotions].sort(
-          (a, b) => parseInt(a.id) < parseInt(b.id)
-        ),
-      })
-    } else if (sortBy === "regis_no_desc") {
-      this.setState({ motions: [...this.allMotions].sort(this.regisNoDesc) })
-    } else if (sortBy === "regis_no_asc") {
-      this.setState({ motions: [...this.allMotions].sort(this.regisNoAsc) })
+    this.sortBy = event.target.value
+    this.updateMotions()
+  }
+
+  filter = event => {
+    this.filterBy = event.target.value
+    this.updateMotions()
+  }
+
+  updateMotions = () => {
+    const motions = [...this.allMotions]
+    if (this.sortBy === "asc") {
+      motions.sort((a, b) => parseInt(a.id) > parseInt(b.id))
+    } else if (this.sortBy === "desc") {
+      motions.sort((a, b) => parseInt(a.id) < parseInt(b.id))
+    } else if (this.sortBy === "regis_no_desc") {
+      motions.sort(this.regisNoDesc)
+    } else if (this.sortBy === "regis_no_asc") {
+      motions.sort(this.regisNoAsc)
     }
+
+    if (this.filterBy === "all") {
+      return this.setState({ motions })
+    }
+
+    const selectToStatus = {
+      agenda_in_line: "1. รอบรรจุวาระ",
+      mp_considering: "2. สภาผู้แทนพิจารณา",
+      committee_formed: "3. ตั้ง กมธ. วิสามัญ",
+      rejected: "4. ไม่ตั้ง กมธ. วิสามัญ",
+      to_cabinet: "5. ส่งครม.",
+    }
+
+    this.setState({
+      motions: motions.filter(e => e.status === selectToStatus[this.filterBy]),
+    })
   }
 
   regisNoAsc = (a, b) => {
@@ -104,11 +124,19 @@ class MotionCategoryPage extends React.Component {
                 </h2>
               ))}
             </div>
-            <select onChange={this.sort}>
+            <select onChange={this.sort} value={this.sortBy}>
               <option value="asc">อัพเดทใหม่ > เก่า</option>
               <option value="desc">อัพเดทเก่า > ใหม่</option>
               <option value="regis_no_desc">เลขรับญัตติมาก > น้อย</option>
               <option value="regis_no_asc">เลขรับญัตติน้อย > มาก</option>
+            </select>
+            <select onChange={this.filter} value={this.filterBy}>
+              <option value="all">ทุกสถานะ</option>
+              <option value="agenda_in_line">รอบรรจุวาระ</option>
+              <option value="mp_considering">สภาผู้แทนพิจารณา</option>
+              <option value="committee_formed">ตั้ง กมธ. วิสามัญ</option>
+              <option value="rejected">ไม่ตั้ง กมธ. วิสามัญ</option>
+              <option value="to_cabinet">ส่งครม.</option>
             </select>
           </div>
         </section>
