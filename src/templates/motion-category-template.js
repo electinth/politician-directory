@@ -209,6 +209,7 @@ class MotionCategoryPage extends React.Component {
                       margin: "0 1rem",
                       fontSize: "2rem",
                       lineHeight: "3rem",
+                      flexGrow: "1",
                     }}
                   >
                     {node.name}
