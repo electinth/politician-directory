@@ -3,6 +3,8 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import { motionCategorySlug } from "../utils"
 import MotionStatusChip from "../components/motionStatusChip"
+import Breadcrumb from "../components/motion/breadcrumb"
+import { Link } from "gatsby"
 
 export const query = graphql`
   query($sub_cat: String!) {
@@ -122,12 +124,26 @@ class MotionCategoryPage extends React.Component {
           <div className="container-motion">
             <div
               css={{
-                color: "var(--cl-gray-2)",
-                textAlign: "right",
+                display: "flex",
                 margin: "2rem 0 3.2rem 0",
               }}
             >
-              ข้อมูลล่าสุดวันที่ 29 กุมภาพันธ์ 2562
+              <div className="path" css={{ flex: "1" }}>
+                <span>
+                  <Link style={{ color: "var(--cl-black)" }} to={"/motions"}>
+                    การพิจารณาญัตติ
+                  </Link>
+                </span>{" "}
+                / <span css={{ fontWeight: "bold" }}>{pageTitle}</span>
+              </div>
+              <div
+                css={{
+                  color: "var(--cl-gray-2)",
+                  textAlign: "right",
+                }}
+              >
+                ข้อมูลล่าสุดวันที่ 29 กุมภาพันธ์ 2562
+              </div>
             </div>
           </div>
         </section>
