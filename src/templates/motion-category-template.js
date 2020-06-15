@@ -127,13 +127,20 @@ class MotionCategoryPage extends React.Component {
             css={{
               display: "flex",
               padding: "2rem 0 2rem 0",
-              maxWidth: "calc(var(--container-motion-width) - 64px)",
+              maxWidth: "100%",
               margin: "0 auto",
               backgroundColor: "var(--cl-gray-4)",
               justifyContent: "center",
               [media(767)]: {
                 backgroundColor: "transparent",
                 justifyContent: "space-between",
+                maxWidth: "calc(100% - 64px)",
+              },
+              [media(1440)]: {
+                backgroundColor: "transparent",
+                justifyContent: "space-between",
+                maxWidth: "calc(var(--container-motion-width) - 64px)",
+                // container-motion-width
               },
             }}
           >
