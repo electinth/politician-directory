@@ -98,7 +98,9 @@ class MotionCategoryPage extends React.Component {
   render() {
     const pageTitle = this.props.pageContext.sub_cat
     const cssTitle = { fontSize: "4.8rem" }
+    const cssH2 = { fontSize: "2.4rem", margin: "0" }
     const cssContainer = { width: "1080px", maxWidth: "100%" }
+    const cssDropdown = { height: "4rem" }
     return (
       <Layout
         pageStyles={{
@@ -140,27 +142,68 @@ class MotionCategoryPage extends React.Component {
         <section style={{ marginTop: "8rem" }}>
           <div className="container-motion">
             <div css={cssContainer}>
-              <div>
-                {this.state.motions.map(node => (
-                  <h2>
-                    {node.name} {node.registration_no}
-                  </h2>
-                ))}
+              <div
+                css={{
+                  display: "flex",
+                  width: "100%",
+                  alignItems: "center",
+                  marginBottom: "2.4rem",
+                }}
+              >
+                <h2 css={{ flexGrow: "1", ...cssH2 }}>รายการญัตติ</h2>
+                <select
+                  onChange={this.sort}
+                  value={this.sortBy}
+                  css={{ marginRight: "1rem", ...cssDropdown }}
+                >
+                  <option value="asc">อัพเดทใหม่ > เก่า</option>
+                  <option value="desc">อัพเดทเก่า > ใหม่</option>
+                  <option value="regis_no_desc">เลขรับญัตติมาก > น้อย</option>
+                  <option value="regis_no_asc">เลขรับญัตติน้อย > มาก</option>
+                </select>
+                <select
+                  onChange={this.filter}
+                  value={this.filterBy}
+                  css={cssDropdown}
+                >
+                  <option value="all">ทุกสถานะ</option>
+                  <option value="agenda_in_line">รอบรรจุวาระ</option>
+                  <option value="mp_considering">สภาผู้แทนพิจารณา</option>
+                  <option value="committee_formed">ตั้ง กมธ. วิสามัญ</option>
+                  <option value="rejected">ไม่ตั้ง กมธ. วิสามัญ</option>
+                  <option value="to_cabinet">ส่งครม.</option>
+                </select>
               </div>
-              <select onChange={this.sort} value={this.sortBy}>
-                <option value="asc">อัพเดทใหม่ > เก่า</option>
-                <option value="desc">อัพเดทเก่า > ใหม่</option>
-                <option value="regis_no_desc">เลขรับญัตติมาก > น้อย</option>
-                <option value="regis_no_asc">เลขรับญัตติน้อย > มาก</option>
-              </select>
-              <select onChange={this.filter} value={this.filterBy}>
-                <option value="all">ทุกสถานะ</option>
-                <option value="agenda_in_line">รอบรรจุวาระ</option>
-                <option value="mp_considering">สภาผู้แทนพิจารณา</option>
-                <option value="committee_formed">ตั้ง กมธ. วิสามัญ</option>
-                <option value="rejected">ไม่ตั้ง กมธ. วิสามัญ</option>
-                <option value="to_cabinet">ส่งครม.</option>
-              </select>
+              <table css={{ height: "auto" }}>
+                {this.state.motions.map(node => (
+                  <tr css={{ height: "auto" }}>
+                    <td
+                      css={{
+                        color: "var(--cl-gray-1)",
+                        fontSize: "1.6rem",
+                        height: "auto",
+                        verticalAlign: "top",
+                        textAlign: "left",
+                        lineHeight: "3rem",
+                      }}
+                    >
+                      <div css={{ margin: "2rem 1rem" }}>
+                        {node.registration_no}
+                      </div>
+                    </td>
+                    <td
+                      css={{
+                        fontSize: "2rem",
+                        lineHeight: "3rem",
+                        height: "auto",
+                      }}
+                    >
+                      <div css={{ margin: "2rem 1rem" }}>{node.name}</div>
+                    </td>
+                    <td css={{ height: "auto" }}>{node.status}</td>
+                  </tr>
+                ))}
+              </table>
             </div>
           </div>
         </section>
