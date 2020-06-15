@@ -1,6 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
+import { motionCategorySlug } from "../utils"
 
 export const query = graphql`
   query($sub_cat: String!) {
@@ -95,6 +96,9 @@ class MotionCategoryPage extends React.Component {
   }
 
   render() {
+    const pageTitle = this.props.pageContext.sub_cat
+    const cssTitle = { fontSize: "4.8rem" }
+    const cssContainer = { width: "1080px", maxWidth: "100%" }
     return (
       <Layout
         pageStyles={{
@@ -115,29 +119,49 @@ class MotionCategoryPage extends React.Component {
             </div>
           </div>
         </section>
+        <section>
+          <div className="container-motion">
+            <div
+              css={{ display: "flex", alignItems: "center", ...cssContainer }}
+            >
+              <img
+                src={`/motion/icons/${motionCategorySlug(pageTitle)}.png`}
+                css={{
+                  marginBottom: "0",
+                  flexShrink: "0",
+                  width: "60px",
+                  marginRight: "2rem",
+                }}
+              />
+              <h1 css={cssTitle}>{pageTitle}</h1>
+            </div>
+          </div>
+        </section>
         <section style={{ marginTop: "8rem" }}>
           <div className="container-motion">
-            <div>
-              {this.state.motions.map(node => (
-                <h2>
-                  {node.name} {node.registration_no}
-                </h2>
-              ))}
+            <div css={cssContainer}>
+              <div>
+                {this.state.motions.map(node => (
+                  <h2>
+                    {node.name} {node.registration_no}
+                  </h2>
+                ))}
+              </div>
+              <select onChange={this.sort} value={this.sortBy}>
+                <option value="asc">อัพเดทใหม่ > เก่า</option>
+                <option value="desc">อัพเดทเก่า > ใหม่</option>
+                <option value="regis_no_desc">เลขรับญัตติมาก > น้อย</option>
+                <option value="regis_no_asc">เลขรับญัตติน้อย > มาก</option>
+              </select>
+              <select onChange={this.filter} value={this.filterBy}>
+                <option value="all">ทุกสถานะ</option>
+                <option value="agenda_in_line">รอบรรจุวาระ</option>
+                <option value="mp_considering">สภาผู้แทนพิจารณา</option>
+                <option value="committee_formed">ตั้ง กมธ. วิสามัญ</option>
+                <option value="rejected">ไม่ตั้ง กมธ. วิสามัญ</option>
+                <option value="to_cabinet">ส่งครม.</option>
+              </select>
             </div>
-            <select onChange={this.sort} value={this.sortBy}>
-              <option value="asc">อัพเดทใหม่ > เก่า</option>
-              <option value="desc">อัพเดทเก่า > ใหม่</option>
-              <option value="regis_no_desc">เลขรับญัตติมาก > น้อย</option>
-              <option value="regis_no_asc">เลขรับญัตติน้อย > มาก</option>
-            </select>
-            <select onChange={this.filter} value={this.filterBy}>
-              <option value="all">ทุกสถานะ</option>
-              <option value="agenda_in_line">รอบรรจุวาระ</option>
-              <option value="mp_considering">สภาผู้แทนพิจารณา</option>
-              <option value="committee_formed">ตั้ง กมธ. วิสามัญ</option>
-              <option value="rejected">ไม่ตั้ง กมธ. วิสามัญ</option>
-              <option value="to_cabinet">ส่งครม.</option>
-            </select>
           </div>
         </section>
       </Layout>
