@@ -146,7 +146,6 @@ const Motionresult = ({
   members,
   url: { voteLink, pageLink },
 }) => {
-  const by_party = _.groupBy(members, "party")
   const status = votelog
     ? votelog.passed
       ? "แต่งตั้งคณะกรรมาธิการ"
@@ -253,46 +252,7 @@ const Motionresult = ({
                 >
                   ข้อมูลแต่งตั้งคณะกรรมาธิการ
                 </h3>
-                <div
-                  css={css`
-                    background-color: white;
-                    padding: 25px 15px;
-                  `}
-                >
-                  <h4
-                    css={css`
-                      font-size: 16px;
-                      margin-bottom: 25px;
-                    `}
-                  >
-                    คณะกรรมาธิการ
-                  </h4>
-                  <div className="committee">
-                    <Committee members={members} />
-                    <div className="committee-party">
-                      <h4>สัดส่วน</h4>
-                      {Object.entries(by_party)
-                        .sort((a, b) => b[1].length - a[1].length)
-                        .map(([p, m]) => {
-                          if (p === "") return
-                          return (
-                            <div key={p}>
-                              <h5
-                                css={css`
-                                  margin-top: 8px;
-                                  margin-bottom: 2px;
-                                  font-size: 12px;
-                                `}
-                              >
-                                {p} ({m.length})
-                              </h5>
-                              <Waffle partyMember={m} />
-                            </div>
-                          )
-                        })}
-                    </div>
-                  </div>
-                </div>
+                <Committee members={members} />
               </section>
             )}
           </>
@@ -340,3 +300,4 @@ const MotionResult = styled(Motionresult)`
 `
 
 export default MotionResult
+export { Waffle }
