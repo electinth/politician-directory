@@ -11,11 +11,16 @@ import { Waffle } from "./motionResult"
 const Button = styled.button`
   position: absolute;
   bottom: 0;
+  left: 0;
 
   outline: none;
   width: 100%;
-  height: 20px;
-  background-color: rgb(250, 250, 250);
+  height: 60px;
+  background-color: white;
+  border: none;
+  box-shadow: 0 -20px 40px 40px rgba(255, 255, 255, 0.75);
+
+  cursor: pointer;
 `
 const Committee = ({ members }) => {
   const [motionResultProfileBreak, setMotionResultProfileBreak] = useState(
@@ -34,6 +39,11 @@ const Committee = ({ members }) => {
       css={css`
         background-color: white;
         padding: 25px 15px;
+        ${!showAll
+          ? `overflow: hidden;
+          height: 500px;
+          position: relative;`
+          : ""}
       `}
     >
       <h4
@@ -50,11 +60,6 @@ const Committee = ({ members }) => {
           <ul
             css={css`
               margin: 30px 0;
-              ${!showAll
-                ? `overflow: hidden;
-          height: 500px;
-          position: relative;`
-                : ""}
             `}
           >
             {members.map(member => (
@@ -67,9 +72,6 @@ const Committee = ({ members }) => {
                 oneline={motionResultProfileBreak}
               />
             ))}
-            <Button hidden={showAll} onClick={() => setShowAll(prev => !prev)}>
-              แสดงทั้งหมด
-            </Button>
           </ul>
         </div>
         <div className="committee-party">
@@ -95,6 +97,9 @@ const Committee = ({ members }) => {
             })}
         </div>
       </div>
+      <Button hidden={showAll} onClick={() => setShowAll(prev => !prev)}>
+        + แสดงทั้งหมด
+      </Button>
     </div>
   )
 }
