@@ -101,7 +101,16 @@ class MotionCategoryPage extends React.Component {
     const cssTitle = { fontSize: "4.8rem" }
     const cssH2 = { fontSize: "2.4rem", margin: "0" }
     const cssContainer = { width: "1080px", maxWidth: "100%" }
-    const cssDropdown = { height: "4rem" }
+    const cssDropdown = {
+      height: "4rem",
+      backgroundColor: "#fff0",
+      border: "var(--cl-gray-4) 1px solid",
+      padding: "4px 32px 4px 4px",
+      borderRadius: "4px",
+      appearance: "none",
+      color: "var(--cl-gray-1)",
+    }
+
     return (
       <Layout
         pageStyles={{
