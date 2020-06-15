@@ -201,45 +201,51 @@ class MotionCategoryPage extends React.Component {
                 </select>
               </div>
               {this.state.motions.map(node => (
-                <div
-                  css={{
-                    display: "flex",
-                    width: "100%",
-                    padding: "2.4rem 0",
-                    borderBottom: "var(--cl-gray-3) 1px solid",
-                  }}
+                <Link
+                  to={`/motion/${node.id}`}
+                  css={{ ":hover": { textDecoration: "none" } }}
                 >
                   <div
                     css={{
-                      margin: "0 1rem",
-                      color: "var(--cl-gray-1)",
-                      fontSize: "1.6rem",
-                      lineHeight: "3rem",
-                      minWidth: "100px",
+                      display: "flex",
+                      width: "100%",
+                      padding: "2.4rem 0",
+                      borderBottom: "var(--cl-gray-3) 1px solid",
                     }}
                   >
-                    {node.registration_no}
+                    <div
+                      css={{
+                        margin: "0 1rem",
+                        color: "var(--cl-gray-1)",
+                        fontSize: "1.6rem",
+                        lineHeight: "3rem",
+                        minWidth: "100px",
+                      }}
+                    >
+                      {node.registration_no}
+                    </div>
+                    <div
+                      css={{
+                        margin: "0 1rem",
+                        fontSize: "2rem",
+                        lineHeight: "3rem",
+                        flexGrow: "1",
+                        color: "var(--cl-black)",
+                      }}
+                    >
+                      {node.name}
+                    </div>
+                    <div
+                      css={{
+                        width: "200px",
+                        flexShrink: "0",
+                        marginLeft: "2rem",
+                      }}
+                    >
+                      <MotionStatusChip status={node.status}></MotionStatusChip>
+                    </div>
                   </div>
-                  <div
-                    css={{
-                      margin: "0 1rem",
-                      fontSize: "2rem",
-                      lineHeight: "3rem",
-                      flexGrow: "1",
-                    }}
-                  >
-                    {node.name}
-                  </div>
-                  <div
-                    css={{
-                      width: "200px",
-                      flexShrink: "0",
-                      marginLeft: "2rem",
-                    }}
-                  >
-                    <MotionStatusChip status={node.status}></MotionStatusChip>
-                  </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>

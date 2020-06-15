@@ -27,6 +27,7 @@ const MotionStatusChip = ({ status, style }) => {
         alignItems: "center",
         padding: "4px 12px",
         fontSize: "1.4rem",
+        color: "var(--cl-gray-1)",
       }}
     >
       <div
