@@ -5,6 +5,8 @@ import { motionCategorySlug } from "../utils"
 import MotionStatusChip from "../components/motionStatusChip"
 import Breadcrumb from "../components/motion/breadcrumb"
 import { Link } from "gatsby"
+import HiddenOnMobile from "../components/hiddenOnMobile"
+import { media } from "../styles"
 
 export const query = graphql`
   query($sub_cat: String!) {
@@ -105,7 +107,7 @@ class MotionCategoryPage extends React.Component {
     const cssContainer = { width: "1080px", maxWidth: "100%" }
     const cssDropdown = {
       height: "4rem",
-      backgroundColor: "#fff0",
+      backgroundColor: "transparent",
       border: "var(--cl-gray-4) 1px solid",
       padding: "4px 32px 4px 4px",
       borderRadius: "4px",
@@ -121,21 +123,29 @@ class MotionCategoryPage extends React.Component {
       >
         <SEO title="Motions" />
         <section>
-          <div className="container-motion">
-            <div
-              css={{
-                display: "flex",
-                margin: "2rem 0 3.2rem 0",
-              }}
-            >
-              <div className="path" css={{ flex: "1" }}>
-                <span>
-                  <Link style={{ color: "var(--cl-black)" }} to={"/motions"}>
-                    การพิจารณาญัตติ
-                  </Link>
-                </span>{" "}
-                / <span css={{ fontWeight: "bold" }}>{pageTitle}</span>
-              </div>
+          <div
+            css={{
+              display: "flex",
+              padding: "2rem 0 2rem 0",
+              maxWidth: "calc(var(--container-motion-width) - 64px)",
+              margin: "0 auto",
+              backgroundColor: "var(--cl-gray-4)",
+              justifyContent: "center",
+              [media(767)]: {
+                backgroundColor: "transparent",
+                justifyContent: "space-between",
+              },
+            }}
+          >
+            <div className="path">
+              <span>
+                <Link style={{ color: "var(--cl-black)" }} to={"/motions"}>
+                  การพิจารณาญัตติ
+                </Link>
+              </span>{" "}
+              / <span css={{ fontWeight: "bold" }}>{pageTitle}</span>
+            </div>
+            <HiddenOnMobile>
               <div
                 css={{
                   color: "var(--cl-gray-2)",
@@ -144,7 +154,7 @@ class MotionCategoryPage extends React.Component {
               >
                 ข้อมูลล่าสุดวันที่ 29 กุมภาพันธ์ 2562
               </div>
-            </div>
+            </HiddenOnMobile>
           </div>
         </section>
         <section>
@@ -209,8 +219,12 @@ class MotionCategoryPage extends React.Component {
                     css={{
                       display: "flex",
                       width: "100%",
+                      flexWrap: "wrap",
                       padding: "2.4rem 0",
                       borderBottom: "var(--cl-gray-3) 1px solid",
+                      [media(767)]: {
+                        flexWrap: "nowrap",
+                      },
                     }}
                   >
                     <div
@@ -239,7 +253,12 @@ class MotionCategoryPage extends React.Component {
                       css={{
                         width: "200px",
                         flexShrink: "0",
-                        marginLeft: "2rem",
+                        marginLeft: "0",
+                        marginTop: "2rem",
+                        [media(767)]: {
+                          marginLeft: "2rem",
+                          marginTop: "0rem",
+                        },
                       }}
                     >
                       <MotionStatusChip status={node.status}></MotionStatusChip>
