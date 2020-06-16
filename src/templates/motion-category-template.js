@@ -3,7 +3,6 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import { motionCategorySlug } from "../utils"
 import MotionStatusChip from "../components/motionStatusChip"
-import Breadcrumb from "../components/motion/breadcrumb"
 import { Link } from "gatsby"
 import HiddenOnMobile from "../components/hiddenOnMobile"
 import { media } from "../styles"
@@ -103,6 +102,13 @@ class MotionCategoryPage extends React.Component {
   render() {
     const pageTitle = this.props.pageContext.sub_cat
     const cssTitle = { fontSize: "4.8rem" }
+    const cssCountChip = {
+      fontSize: "3.2rem",
+      borderRadius: "100px",
+      backgroundColor: "var(--cl-gray-4)",
+      padding: "0 2.4rem",
+      marginLeft: "1.2rem",
+    }
     const cssH2 = { fontSize: "2.4rem", margin: "0" }
     const cssContainer = { width: "1080px", maxWidth: "100%" }
     const cssDropdown = {
@@ -196,7 +202,12 @@ class MotionCategoryPage extends React.Component {
                   marginRight: "2rem",
                 }}
               />
-              <h1 css={cssTitle}>{pageTitle}</h1>
+              <h1 css={cssTitle}>
+                {pageTitle}
+                <span css={cssCountChip}>
+                  {this.props.data.allMotionYaml.totalCount}
+                </span>
+              </h1>
             </div>
           </div>
         </section>
@@ -209,7 +220,6 @@ class MotionCategoryPage extends React.Component {
                   width: "100%",
                   alignItems: "center",
                   marginBottom: "2.4rem",
-                  position: "absolute",
                 }}
               >
                 <h2 css={{ flexGrow: "1", ...cssH2 }}>รายการญัตติ</h2>
