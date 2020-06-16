@@ -108,14 +108,19 @@ class MotionCategoryPage extends React.Component {
     const cssDropdown = {
       height: "4rem",
       backgroundColor: "transparent",
-      border: "var(--cl-gray-4) 1px solid",
+      border: "none",
       padding: "4px 32px 4px 4px",
-      borderRadius: "4px",
       appearance: "none",
       color: "var(--cl-gray-1)",
+      width: "100%",
+      [media(767)]: {
+        width: "auto",
+      },
     }
     const cssDropdownWrapper = {
       position: "relative",
+      border: "var(--cl-gray-4) 1px solid",
+      borderRadius: "4px",
       ":after": {
         content: '"v"',
         fontSize: "2rem",
@@ -204,34 +209,66 @@ class MotionCategoryPage extends React.Component {
                   width: "100%",
                   alignItems: "center",
                   marginBottom: "2.4rem",
+                  position: "absolute",
                 }}
               >
                 <h2 css={{ flexGrow: "1", ...cssH2 }}>รายการญัตติ</h2>
-                <div css={{ marginRight: "1rem", ...cssDropdownWrapper }}>
-                  <select
-                    onChange={this.sort}
-                    value={this.sortBy}
-                    css={cssDropdown}
+                <div
+                  hidden="false"
+                  css={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    flexDirection: "column",
+                    position: "position",
+                    top: "0",
+                    right: "0",
+                    [media(767)]: {
+                      flexWrap: "nowarp",
+                      flexDirection: "row",
+                      position: "inherit",
+                      backgroundColor: "transparent",
+                      border: "none",
+                    },
+                  }}
+                >
+                  <div
+                    css={{
+                      margin: "0 0 1rem 0",
+                      [media(767)]: { margin: "0 1rem 0 0" },
+                      ...cssDropdownWrapper,
+                    }}
                   >
-                    <option value="asc">อัพเดทใหม่ > เก่า</option>
-                    <option value="desc">อัพเดทเก่า > ใหม่</option>
-                    <option value="regis_no_desc">เลขรับญัตติมาก > น้อย</option>
-                    <option value="regis_no_asc">เลขรับญัตติน้อย > มาก</option>
-                  </select>
-                </div>
-                <div css={cssDropdownWrapper}>
-                  <select
-                    onChange={this.filter}
-                    value={this.filterBy}
-                    css={cssDropdown}
-                  >
-                    <option value="all">ทุกสถานะ</option>
-                    <option value="agenda_in_line">รอบรรจุวาระ</option>
-                    <option value="mp_considering">สภาผู้แทนพิจารณา</option>
-                    <option value="committee_formed">ตั้ง กมธ. วิสามัญ</option>
-                    <option value="rejected">ไม่ตั้ง กมธ. วิสามัญ</option>
-                    <option value="to_cabinet">ส่งครม.</option>
-                  </select>
+                    <select
+                      onChange={this.sort}
+                      value={this.sortBy}
+                      css={cssDropdown}
+                    >
+                      <option value="asc">อัพเดทใหม่ > เก่า</option>
+                      <option value="desc">อัพเดทเก่า > ใหม่</option>
+                      <option value="regis_no_desc">
+                        เลขรับญัตติมาก > น้อย
+                      </option>
+                      <option value="regis_no_asc">
+                        เลขรับญัตติน้อย > มาก
+                      </option>
+                    </select>
+                  </div>
+                  <div css={cssDropdownWrapper}>
+                    <select
+                      onChange={this.filter}
+                      value={this.filterBy}
+                      css={cssDropdown}
+                    >
+                      <option value="all">ทุกสถานะ</option>
+                      <option value="agenda_in_line">รอบรรจุวาระ</option>
+                      <option value="mp_considering">สภาผู้แทนพิจารณา</option>
+                      <option value="committee_formed">
+                        ตั้ง กมธ. วิสามัญ
+                      </option>
+                      <option value="rejected">ไม่ตั้ง กมธ. วิสามัญ</option>
+                      <option value="to_cabinet">ส่งครม.</option>
+                    </select>
+                  </div>
                 </div>
               </div>
               {this.state.motions.map(node => (
