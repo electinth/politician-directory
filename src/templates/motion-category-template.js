@@ -29,7 +29,10 @@ export const query = graphql`
 class MotionCategoryPage extends React.Component {
   constructor(props) {
     super(props)
-    this.allMotions = props.data.allMotionYaml.edges.map(e => e.node)
+    this.allMotions = props.data.allMotionYaml.edges.map(({ node }) => {
+      node.parsedRegistrationNo = this.convertDate(node.registration_no)
+      return node
+    })
     this.sortBy = "asc"
     this.filterBy = "all"
     this.state = {
@@ -49,15 +52,13 @@ class MotionCategoryPage extends React.Component {
 
   updateMotions = () => {
     const motions = [...this.allMotions]
-    if (this.sortBy === "asc") {
-      motions.sort((a, b) => parseInt(a.id) > parseInt(b.id))
-    } else if (this.sortBy === "desc") {
-      motions.sort((a, b) => parseInt(a.id) < parseInt(b.id))
-    } else if (this.sortBy === "regis_no_desc") {
-      motions.sort(this.regisNoDesc)
-    } else if (this.sortBy === "regis_no_asc") {
-      motions.sort(this.regisNoAsc)
+    const sorters = {
+      asc: (a, b) => parseInt(a.id) > parseInt(b.id),
+      desc: (a, b) => parseInt(a.id) < parseInt(b.id),
+      regis_no_desc: this.registrationNoSorter((a, b) => a < b),
+      regis_no_asc: this.registrationNoSorter((a, b) => a > b),
     }
+    motions.sort(sorters[this.sortBy])
 
     if (this.filterBy === "all") {
       return this.setState({ motions })
@@ -76,22 +77,16 @@ class MotionCategoryPage extends React.Component {
     })
   }
 
-  regisNoAsc = (a, b) => {
-    const dateA = this.convertDate(a.registration_no)
-    const dateB = this.convertDate(b.registration_no)
-    if (dateA.year === dateB.year) {
-      return dateA.running > dateB.running
+  registrationNoSorter = operator => {
+    return (a, b) => {
+      if (a.parsedRegistrationNo.year === b.parsedRegistrationNo.year) {
+        return operator(
+          a.parsedRegistrationNo.running,
+          b.parsedRegistrationNo.running
+        )
+      }
+      return operator(a.parsedRegistrationNo.year, b.parsedRegistrationNo.year)
     }
-    return dateA.year > dateB.year
-  }
-
-  regisNoDesc = (a, b) => {
-    const dateA = this.convertDate(a.registration_no)
-    const dateB = this.convertDate(b.registration_no)
-    if (dateA.year === dateB.year) {
-      return dateA.running < dateB.running
-    }
-    return dateA.year < dateB.year
   }
 
   convertDate = registration_no => {
