@@ -6,6 +6,7 @@ import MotionStatusChip from "../components/motionStatusChip"
 import { Link } from "gatsby"
 import HiddenOnMobile from "../components/hiddenOnMobile"
 import { media } from "../styles"
+import DownOutlined from "@ant-design/icons/DownOutlined"
 
 export const query = graphql`
   query($sub_cat: String!) {
@@ -122,14 +123,11 @@ class MotionCategoryPage extends React.Component {
       position: "relative",
       border: "var(--cl-gray-4) 1px solid",
       borderRadius: "4px",
-      ":after": {
-        content: '"v"',
-        fontSize: "2rem",
+      ".anticon": {
+        position: "absolute",
         color: "var(--cl-gray-1)",
         right: "1.2rem",
-        top: "0.25rem",
-        padding: "0 0 2px",
-        position: "absolute",
+        top: "1.2rem",
         pointerEvents: "none",
       },
     }
@@ -257,6 +255,7 @@ class MotionCategoryPage extends React.Component {
                         เลขรับญัตติน้อย > มาก
                       </option>
                     </select>
+                    <DownOutlined />
                   </div>
                   <div css={cssDropdownWrapper}>
                     <select
@@ -273,6 +272,7 @@ class MotionCategoryPage extends React.Component {
                       <option value="rejected">ไม่ตั้ง กมธ. วิสามัญ</option>
                       <option value="to_cabinet">ส่งครม.</option>
                     </select>
+                    <DownOutlined />
                   </div>
                 </div>
               </div>
