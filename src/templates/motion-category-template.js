@@ -191,7 +191,11 @@ class MotionCategoryPage extends React.Component {
                 css={{
                   marginBottom: "0",
                   flexShrink: "0",
-                  width: "60px",
+                  display: "block",
+                  maxWidth: "60px",
+                  maxHeight: "60px",
+                  width: "auto",
+                  height: "auto",
                   marginRight: "2rem",
                 }}
               />
