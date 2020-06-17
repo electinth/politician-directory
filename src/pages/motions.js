@@ -8,6 +8,9 @@ import HiddenOnMobile from "../components/hiddenOnMobile"
 import { media } from "../styles"
 import ExternalLink from "../components/externalLink"
 import MotionSubCatCard from "../components/motionSubCatCard"
+import BarChart from "../components/motion/barchart"
+import { css } from "@emotion/core"
+import StatusBarChart from "../components/motion/statusBarChart"
 
 export const query = graphql`
   query {
@@ -23,19 +26,57 @@ export const query = graphql`
     motions: allMotionYaml {
       edges {
         node {
+          main_cat
           sub_cat
+          status
         }
       }
     }
   }
 `
 
+const mobileBP = "(max-width: 765px)"
+
 const cssH1 = { fontSize: "4.8rem", margin: "0", color: "var(--cl-black)" }
 const cssH2 = { fontSize: "3.6rem", marginBottom: "2.4rem" }
 const cssH3 = { fontSize: "2.4rem", margin: "5.2rem 0 2.8rem 0" }
 const cssP = { lineHeight: "1.8" }
+const cssH3Viz = { ...cssH3, marginBottom: "10px" }
 
 const IndexPage = ({ data }) => {
+  const mainCatGroupCount = _.groupBy(data.motions.edges, d => d.node.main_cat)
+  const barchartdata = Object.entries(mainCatGroupCount).map(
+    ([category, motions]) => ({
+      category,
+      count: motions.length,
+    })
+  )
+
+  const STATUS_COLOR = color =>
+    ({
+      ไม่บรรจุวาระ: "lightgrey",
+      "1. รอบรรจุวาระ": "#f0b2d3",
+      "2. สภาผู้แทนพิจารณา": "#aae0a7",
+      "3. ตั้ง กมธ. วิสามัญ": "#bbbdf9",
+      "4. ไม่ตั้ง กมธ. วิสามัญ": "#f2b5b6",
+      "5. ส่งครม.": "#99cfcb",
+    }[color])
+  const statusGroupCount = _.groupBy(data.motions.edges, d => d.node.status)
+  const statusdata = Object.entries(statusGroupCount)
+    .map(([status, motions]) => ({
+      status,
+      count: motions.length,
+      color: STATUS_COLOR(status),
+    }))
+    .sort((a, b) => +a.status.slice(0, 1) - +b.status.slice(0, 1))
+  const VOTED = [
+    "3. ตั้ง กมธ. วิสามัญ",
+    "4. ไม่ตั้ง กมธ. วิสามัญ",
+    "5. ส่งครม.",
+  ]
+  const voteddata = statusdata.filter(d => VOTED.includes(d.status))
+  const notvoteddata = statusdata.filter(d => !VOTED.includes(d.status))
+
   const getCategoryGroups = () => {
     let subCats = data.categories.edges.map(({ node }) =>
       convertToSubCategory(node)
@@ -156,18 +197,129 @@ const IndexPage = ({ data }) => {
                 lis.parliament.go.th
               </ExternalLink>
             </div>
-            <HiddenOnMobile style={{ width: "32%" }}>
-              <div>
-                <h3 css={cssH3}>ญัตติทั้งหมด</h3>
-                <h3 css={cssH3}>ยังไม่ลงญัตติ</h3>
+            <div
+              css={css`
+                display: flex;
+                flex-flow: column nowrap;
+                width: 64%;
+
+                @media ${mobileBP} {
+                  width: 100%;
+                }
+
+                & .toprow,
+                & .bottomrow {
+                  display: flex;
+
+                  &--col {
+                    flex: 0 0 50%;
+                    display: flex;
+
+                    flex-flow: column nowrap;
+
+                    @media ${mobileBP} {
+                      flex: 1;
+                    }
+
+                    &__allmotion {
+                      @media ${mobileBP} {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+
+                & .toprow {
+                  flex: 1;
+                }
+
+                & .bottomrow {
+                  flex: 0 0 250px;
+
+                  @media ${mobileBP} {
+                    flex: 1;
+                    flex-flow: row wrap;
+                  }
+
+                  &--col {
+                    padding: 0 20px;
+                  }
+
+                  &--col + .bottomrow--col {
+                    border-left: 1px solid var(--cl-gray-4);
+
+                    @media ${mobileBP} {
+                      border: none;
+                    }
+                  }
+                }
+              `}
+            >
+              <div className="toprow">
+                <div className="toprow--col toprow--col__allmotion">
+                  <h3 css={cssH3Viz}>ญัตติทั้งหมด</h3>
+                  <div
+                    css={css`
+                      flex: 1;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    `}
+                  >
+                    <div
+                      className="allmotion-circle"
+                      css={css`
+                        width: 150px;
+                        height: 150px;
+                        background-color: rgb(250, 250, 250);
+                        border: 1px solid var(--cl-gray-4);
+                        border-radius: 100%;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                      `}
+                    >
+                      <div
+                        className="allmotion-text"
+                        css={css`
+                          font-size: 50px;
+                          font-family: var(--ff-title);
+                        `}
+                      >
+                        {data.motions.edges.length}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="toprow--col toprow--col__motioncount">
+                  <h3 css={cssH3Viz}>สัดส่วนประเด็น</h3>
+                  <div
+                    className="bar-wrapper"
+                    css={css`
+                      height: calc(100% - 36px - 5.2rem);
+                      display: flex;
+                      align-items: center;
+                    `}
+                  >
+                    <BarChart
+                      data={barchartdata}
+                      xTicks={[0, 10, 20, 30, 40, 50, 60, 70]}
+                    />
+                  </div>
+                </div>
               </div>
-            </HiddenOnMobile>
-            <HiddenOnMobile style={{ width: "32%" }}>
-              <div>
-                <h3 css={cssH3}>สัดส่วนประเด็น</h3>
-                <h3 css={cssH3}>ลงมติแล้ว</h3>
+              <div className="bottomrow">
+                <div className="bottomrow--col bottomrow--col__notvoted">
+                  <h3 css={cssH3Viz}>ยังไม่ลงมติ</h3>
+                  <StatusBarChart width={`100%`} data={notvoteddata} />
+                </div>
+                <div className="bottomrow--col bottomrow--col__voted">
+                  <h3 css={cssH3Viz}>ลงมติแล้ว</h3>
+                  <StatusBarChart width="100%" data={voteddata} />
+                </div>
               </div>
-            </HiddenOnMobile>
+            </div>
           </div>
         </FloatingCard>
       </section>
