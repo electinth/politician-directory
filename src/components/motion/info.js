@@ -4,7 +4,21 @@ import styled from "@emotion/styled"
 import MotionResult from "./motionResult"
 import { device } from "./size"
 import { NominatorMenu } from "./nominator"
+const displayTexts = {
+  "1. รอบรรจุวาระ": "รอบรรจุวาระ",
+  "2. สภาผู้แทนพิจารณา": "สภาผู้แทนพิจารณา",
+  "3. ตั้ง กมธ. วิสามัญ": "ตั้ง กมธ. วิสามัญ",
+  "4. ไม่ตั้ง กมธ. วิสามัญ": "ไม่ตั้ง กมธ. วิสามัญ",
+  "5. ส่งครม.": "ส่งครม.",
+}
 
+const statusColors = {
+  "1. รอบรรจุวาระ": "#E0A4C7",
+  "2. สภาผู้แทนพิจารณา": "#A8DA9C",
+  "3. ตั้ง กมธ. วิสามัญ": "#AFB0F5",
+  "4. ไม่ตั้ง กมธ. วิสามัญ": "#E3A7A8",
+  "5. ส่งครม.": "#94C3BF",
+}
 const info = function({ votelog, motion, members, className }) {
   return (
     <div className={className}>
@@ -75,8 +89,11 @@ const info = function({ votelog, motion, members, className }) {
               className="status"
               css={css`
                 border: 1px solid var(--cl-gray-3);
-                border-radius: 20px;
-                padding: 3px 15px;
+                border-radius: 100px;
+                padding: 4px 12px;
+
+                display: inline-flex;
+                align-items: center;
 
                 font-size: 14px;
                 font-family: var(--ff-text);
@@ -84,7 +101,17 @@ const info = function({ votelog, motion, members, className }) {
                 color: var(--cl-gray-1);
               `}
             >
-              {motion.status}
+              <div
+                style={{
+                  height: "12px",
+                  width: "12px",
+                  marginRight: "10px",
+                  borderRadius: "50%",
+                  backgroundColor: statusColors[motion.status],
+                  flexShrink: "0",
+                }}
+              ></div>
+              {displayTexts[motion.status]}{" "}
             </div>
           </div>
         </h2>
