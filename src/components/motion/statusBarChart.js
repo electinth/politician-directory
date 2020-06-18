@@ -82,7 +82,31 @@ const StatusBarChart = ({ data, width }) => {
                 style={{
                   backgroundColor: d.color || "steelblue",
                 }}
-              ></div>
+                css={css`
+                  position: relative;
+
+                  &:hover .tooltiptext {
+                    visibility: visible;
+                  }
+                `}
+              >
+                <div
+                  className="tooltiptext"
+                  css={css`
+                    visibility: hidden;
+
+                    position: absolute;
+                    top: -20px;
+                    text-align: center;
+
+                    width: 100%;
+                    min-width: 25px;
+                    height: 20px;
+                  `}
+                >
+                  {d.count}
+                </div>
+              </div>
             </div>
           ))}
         </div>
