@@ -69,7 +69,7 @@ if (process.env.GATSBY_ENV === "production") {
   const googleGtagConfig = {
     resolve: "gatsby-plugin-gtag",
     options: {
-      trackingId: "UA-43653558-21",
+      trackingId: "UA-161190279-3",
     },
   }
   config.plugins.push(googleGtagConfig)

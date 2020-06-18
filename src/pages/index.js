@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -191,31 +191,47 @@ const cssMotionImage = {
 
 const IndexPage = ({ data }) => {
   const onPeopleClick = () => {
+    if (process.env.GATSBY_ENV !== "production") {
+      navigate("/people")
+      return
+    }
     if (!localStorage.ladingPageVisited) {
       try {
-        gtag("event", "Click", {
+        window.gtag("event", "Click", {
           event_category: "Topic",
           event_label: "motion",
+          event_callback: function() {
+            localStorage.setItem("ladingPageVisited", true)
+            navigate("/people")
+          },
         })
       } catch (e) {
         console.error(e)
-      } finally {
-        localStorage.setItem("ladingPageVisited", true)
       }
+    } else {
+      navigate("/people")
     }
   }
   const onMotionsClick = () => {
+    if (process.env.GATSBY_ENV !== "production") {
+      navigate("/motions")
+      return
+    }
     if (!localStorage.ladingPageVisited) {
       try {
-        gtag("event", "Click", {
+        window.gtag("event", "Click", {
           event_category: "Topic",
           event_label: "motion",
+          event_callback: function() {
+            localStorage.setItem("ladingPageVisited", true)
+            navigate("/motions")
+          },
         })
       } catch (e) {
         console.error(e)
-      } finally {
-        localStorage.setItem("ladingPageVisited", true)
       }
+    } else {
+      navigate("/motions")
     }
   }
   return (
@@ -238,7 +254,7 @@ const IndexPage = ({ data }) => {
             </p>
           </div>
           <div className="link">
-            <Link to={"/people"} css={{ ...cssNextButton }} onClick={() => onPeopleClick()}>
+            <Link css={{ ...cssNextButton }} onClick={() => onPeopleClick()}>
               <span>ดูข้อมูลผู้แทน</span>
               <i>
                 <ArrowRightIcon></ArrowRightIcon>
@@ -261,7 +277,7 @@ const IndexPage = ({ data }) => {
             </p>
           </div>
           <div className="link">
-            <Link to={"/motions"} css={{ ...cssNextButton }} onClick={() => onMotionsClick()}>
+            <Link css={{ ...cssNextButton }} onClick={() => onMotionsClick()}>
               <span>ดูข้อมูลญัตติ</span>
               <i>
                 <ArrowRightIcon></ArrowRightIcon>
