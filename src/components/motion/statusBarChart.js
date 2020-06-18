@@ -1,6 +1,7 @@
 import React from "react"
 import { css } from "@emotion/core"
 import { scaleLinear } from "d3-scale"
+import { displayTexts } from "../motionStatusChip"
 
 function extent(arr) {
   return [Math.min(...arr), Math.max(...arr)]
@@ -89,7 +90,7 @@ const StatusBarChart = ({ data, width }) => {
           {data.map(d => {
             return (
               <div key={d.status} className="statusbar--label">
-                {d.status}
+                {displayTexts[d.status]}
               </div>
             )
           })}
