@@ -3,7 +3,14 @@ import { css } from "@emotion/core"
 import { is_tablet, device } from "./size"
 import { useContext } from "react"
 import { MenuContext, MenuChoice } from "../../templates/motion-template"
-const Breadcrumb = ({ main_cat, registration_no }) => {
+import { Link } from "gatsby"
+import styled from "@emotion/styled"
+
+const BreadcrumbLink = styled(Link)`
+  color: var(--cl-black);
+`
+
+const Breadcrumb = ({ sub_cat, registration_no }) => {
   const { setMenu } = useContext(MenuContext)
   return (
     <div
@@ -23,8 +30,20 @@ const Breadcrumb = ({ main_cat, registration_no }) => {
           flex: 1;
         `}
       >
-        <span>การพิจารณาญัตติ</span> > <span>{main_cat}</span> >{" "}
-        <span>{registration_no}</span>
+        <span>
+          <BreadcrumbLink to="/motions">การพิจารณาญัตติ</BreadcrumbLink>
+        </span>{" "}
+        /
+        <span>
+          {" "}
+          <BreadcrumbLink to={`/motions/category/${sub_cat}`}>
+            {sub_cat}
+          </BreadcrumbLink>
+        </span>{" "}
+        {">"}{" "}
+        <span>
+          <b>{registration_no}</b>
+        </span>
       </div>
       <span
         onClick={() => setMenu(MenuChoice.motion)}

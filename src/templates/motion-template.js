@@ -173,7 +173,7 @@ const MotionPage = props => {
     <MenuContext.Provider value={{ menu, setMenu }}>
       <Layout>
         <Breadcrumb
-          main_cat={motion.main_cat}
+          sub_cat={motion.sub_cat}
           registration_no={motion.registration_no}
         />
         <Container

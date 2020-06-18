@@ -4,21 +4,8 @@ import styled from "@emotion/styled"
 import MotionResult from "./motionResult"
 import { device } from "./size"
 import { NominatorMenu } from "./nominator"
-const displayTexts = {
-  "1. รอบรรจุวาระ": "รอบรรจุวาระ",
-  "2. สภาผู้แทนพิจารณา": "สภาผู้แทนพิจารณา",
-  "3. ตั้ง กมธ. วิสามัญ": "ตั้ง กมธ. วิสามัญ",
-  "4. ไม่ตั้ง กมธ. วิสามัญ": "ไม่ตั้ง กมธ. วิสามัญ",
-  "5. ส่งครม.": "ส่งครม.",
-}
+import { displayTexts, statusColors } from "../motionStatusChip"
 
-const statusColors = {
-  "1. รอบรรจุวาระ": "#E0A4C7",
-  "2. สภาผู้แทนพิจารณา": "#A8DA9C",
-  "3. ตั้ง กมธ. วิสามัญ": "#AFB0F5",
-  "4. ไม่ตั้ง กมธ. วิสามัญ": "#E3A7A8",
-  "5. ส่งครม.": "#94C3BF",
-}
 const info = function({ votelog, motion, members, className }) {
   return (
     <div className={className}>
