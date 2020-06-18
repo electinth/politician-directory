@@ -16,10 +16,12 @@
   prayuth: '500'
   thanathorn: '244'
   passed: false
+  is_no_vote: false
+  no_vote_description: ''
   approve: null
   disprove: null
   abstained: 3
-  field16: '0'
+  field18: '0'
   total_voter: 747
   absent: 1
   total_member: 748
@@ -67,10 +69,12 @@
   prayuth: ''
   thanathorn: ''
   passed: false
+  is_no_vote: false
+  no_vote_description: ''
   approve: 101
   disprove: 365
   abstained: 13
-  field16: '0'
+  field18: '0'
   total_voter: 479
   absent: 20
   total_member: 499
@@ -119,10 +123,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: false
+  no_vote_description: ''
   approve: 412
   disprove: 25
   abstained: 20
-  field16: '0'
+  field18: '0'
   total_voter: 457
   absent: 40
   total_member: 497
@@ -168,10 +174,12 @@
   prayuth: ''
   thanathorn: ''
   passed: false
+  is_no_vote: false
+  no_vote_description: ''
   approve: 224
   disprove: 231
   abstained: 2
-  field16: '0'
+  field18: '0'
   total_voter: 457
   absent: 40
   total_member: 497
@@ -243,10 +251,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: false
+  no_vote_description: ''
   approve: 374
   disprove: 70
   abstained: 2
-  field16: '0'
+  field18: '0'
   total_voter: 446
   absent: 40
   total_member: 486
@@ -315,10 +325,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: false
+  no_vote_description: ''
   approve: 251
   disprove: 0
   abstained: 234
-  field16: '0'
+  field18: '0'
   total_voter: 485
   absent: 12
   total_member: 497
@@ -384,10 +396,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: 400
   disprove: 0
   abstained: 0
-  field16: '0'
+  field18: '0'
   total_voter: 400
   absent: 97
   total_member: 497
@@ -418,10 +432,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: false
+  no_vote_description: ''
   approve: 392
   disprove: 0
   abstained: 1
-  field16: '1'
+  field18: '1'
   total_voter: 394
   absent: 104
   total_member: 498
@@ -463,10 +479,12 @@
   prayuth: ''
   thanathorn: ''
   passed: false
+  is_no_vote: false
+  no_vote_description: ''
   approve: 5
   disprove: 244
   abstained: 6
-  field16: '0'
+  field18: '0'
   total_voter: 255
   absent: 243
   total_member: 498
@@ -518,10 +536,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: false
+  no_vote_description: ''
   approve: 411
   disprove: 0
   abstained: 2
-  field16: '1'
+  field18: '1'
   total_voter: 414
   absent: 84
   total_member: 498
@@ -565,10 +585,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: false
+  no_vote_description: ''
   approve: 240
   disprove: 78
   abstained: 150
-  field16: '1'
+  field18: '1'
   total_voter: 469
   absent: 30
   total_member: 499
@@ -595,10 +617,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: false
+  no_vote_description: ''
   approve: 354
   disprove: 0
   abstained: 2
-  field16: '0'
+  field18: '0'
   total_voter: 356
   absent: 142
   total_member: 498
@@ -642,10 +666,12 @@
   prayuth: ''
   thanathorn: ''
   passed: false
+  is_no_vote: false
+  no_vote_description: ''
   approve: 10
   disprove: 343
   abstained: 2
-  field16: '0'
+  field18: '0'
   total_voter: 355
   absent: 142
   total_member: 497
@@ -689,10 +715,12 @@
   prayuth: ''
   thanathorn: ''
   passed: false
+  is_no_vote: false
+  no_vote_description: ''
   approve: 216
   disprove: 242
   abstained: 2
-  field16: '0'
+  field18: '0'
   total_voter: 460
   absent: 38
   total_member: 498
@@ -722,7 +750,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4193
 - id: '15'
   title: ตั้ง กมธ.วิสามัญ ศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
-  is_active: false
+  is_active: true
   en:
     title: ''
     legal_title: ''
@@ -733,13 +761,15 @@
   prayuth: ''
   thanathorn: ''
   passed: true
-  approve: null
-  disprove: null
-  abstained: null
-  field16: ''
-  total_voter: null
-  absent: null
-  total_member: null
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
+  approve: 433
+  disprove: 0
+  abstained: 0
+  field18: '0'
+  total_voter: 433
+  absent: 64
+  total_member: 497
   description_th: >-
     จากญัตติด่วนที่ ส.ส. ทั้งฝ่ายรัฐบาลและฝ่ายค้าน
     พูดถึงปัญหาราคาผลผลิตทางการเกษตรที่ตกต่ำประจำทุกปี รวมถึงสินค้าการประมง
@@ -764,7 +794,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4142
 - id: '16'
   title: ตั้ง กมธ.วิสามัญ ศึกษาการต่อสัญญาสัมปทานทางด่วนและรถไฟฟ้าบีทีเอส
-  is_active: false
+  is_active: true
   en:
     title: ''
     legal_title: ''
@@ -777,10 +807,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -806,7 +838,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4144
 - id: '17'
   title: ตั้ง กมธ. วิสามัญ ศึกษาปัญหาหนี้ กยศ.
-  is_active: false
+  is_active: true
   en:
     title: ''
     legal_title: ''
@@ -819,10 +851,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -850,7 +884,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4176
 - id: '18'
   title: ตั้ง กมธ. วิสามัญ ศึกษาปัญหาการข่มขืนกระทำชำเรา
-  is_active: false
+  is_active: true
   en:
     title: ''
     legal_title: ''
@@ -862,10 +896,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -880,7 +916,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4179
 - id: '19'
   title: ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบของการใช้กัญชาในประเทศไทย
-  is_active: false
+  is_active: true
   en:
     title: ''
     legal_title: ''
@@ -893,10 +929,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -911,7 +949,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4180
 - id: '20'
   title: ตั้ง กมธ.วิสามัญ พิจารณาศึกษาการขุดคลองไทย
-  is_active: false
+  is_active: true
   en:
     title: ''
     legal_title: ''
@@ -922,10 +960,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -960,7 +1000,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
 - id: '21'
   title: ตั้ง กมธ.วิสามัญ พิจารณาราคาหนังสัตว์ โค – กระบือ ตกต่ำ
-  is_active: false
+  is_active: true
   en:
     title: ''
     legal_title: ''
@@ -971,10 +1011,13 @@
   prayuth: ''
   thanathorn: ''
   passed: false
+  is_no_vote: true
+  no_vote_description: >-
+    ที่ประชุมลงมติเห็นชอบให้ส่งงคณะกรรมาธิการแก้ไขปัญหาหนี้สินแห่งชาติพิจารณาศึกษาญัตติดังกล่าว
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -1000,7 +1043,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
 - id: '22'
   title: ตั้ง กมธ.วิสามัญ พิจารณาปัญหาหนี้และค่าครองชีพสูงจากราคาน้ำมัน แก๊ส ไฟฟ้า
-  is_active: false
+  is_active: true
   en:
     title: ''
     legal_title: ''
@@ -1013,10 +1056,13 @@
   prayuth: ''
   thanathorn: ''
   passed: false
+  is_no_vote: true
+  no_vote_description: >-
+    ที่ประชุมลงมติเห็นชอบให้ส่งงคณะกรรมาธิการการเกษตรและสหกรณ์พิจารณาศึกษาญัตติดังกล่าว
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -1041,7 +1087,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
 - id: '23'
   title: ตั้ง กมธ. วิสามัญศึกษาปัญหาฝุ่น PM 2.5
-  is_active: false
+  is_active: true
   en:
     title: ''
     legal_title: ''
@@ -1054,10 +1100,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -1072,7 +1120,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4183
 - id: '24'
   title: ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบจาก พรบ. e-Payment
-  is_active: false
+  is_active: true
   en:
     title: ''
     legal_title: ''
@@ -1087,10 +1135,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
