@@ -184,20 +184,24 @@ const Motionresult = ({
       >
         <div>ผลการลงมติ</div>
         <div className="download-container">
-          <a
-            href={pageLink}
-            target="_blank"
-            className="download download-detail"
-          >
-            รายละเอียดมติ
-          </a>
-          <a
-            href={voteLink}
-            target="_blank"
-            className="download download-record"
-          >
-            บันทึกการลงมติ
-          </a>
+          {pageLink && (
+            <a
+              href={pageLink}
+              target="_blank"
+              className="download download-detail"
+            >
+              รายละเอียดมติ
+            </a>
+          )}
+          {voteLink && (
+            <a
+              href={voteLink}
+              target="_blank"
+              className="download download-record"
+            >
+              บันทึกการลงมติ
+            </a>
+          )}
         </div>
       </h3>
       <Card className={className}>

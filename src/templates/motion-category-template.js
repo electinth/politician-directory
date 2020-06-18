@@ -54,10 +54,10 @@ class MotionCategoryPage extends React.Component {
   updateMotions = () => {
     const motions = [...this.allMotions]
     const sorters = {
-      asc: (a, b) => parseInt(a.id) > parseInt(b.id),
-      desc: (a, b) => parseInt(a.id) < parseInt(b.id),
-      regis_no_desc: this.registrationNoSorter((a, b) => a < b),
-      regis_no_asc: this.registrationNoSorter((a, b) => a > b),
+      asc: (a, b) => parseInt(a.id) - parseInt(b.id),
+      desc: (a, b) => parseInt(b.id) - parseInt(a.id),
+      regis_no_asc: this.registrationNoSorter((a, b) => a - b),
+      regis_no_desc: this.registrationNoSorter((a, b) => b - a),
     }
     motions.sort(sorters[this.sortBy])
 
@@ -250,8 +250,8 @@ class MotionCategoryPage extends React.Component {
                       value={this.sortBy}
                       css={cssDropdown}
                     >
-                      <option value="asc">อัพเดทใหม่ > เก่า</option>
-                      <option value="desc">อัพเดทเก่า > ใหม่</option>
+                      <option value="desc">อัพเดทใหม่ > เก่า</option>
+                      <option value="asc">อัพเดทเก่า > ใหม่</option>
                       <option value="regis_no_desc">
                         เลขรับญัตติมาก > น้อย
                       </option>
