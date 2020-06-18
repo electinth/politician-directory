@@ -1,9 +1,6 @@
 import React from "react"
 import { css } from "@emotion/core"
-import { scaleLinear, scaleBand } from "d3-scale"
-import { useRef } from "react"
-import { useState } from "react"
-import { useEffect } from "react"
+import { scaleLinear } from "d3-scale"
 
 function extent(arr) {
   return [Math.min(...arr), Math.max(...arr)]
