@@ -190,6 +190,34 @@ const cssMotionImage = {
 }
 
 const IndexPage = ({ data }) => {
+  const onPeopleClick = () => {
+    if (!localStorage.ladingPageVisited) {
+      try {
+        gtag("event", "Click", {
+          event_category: "Topic",
+          event_label: "motion",
+        })
+      } catch (e) {
+        console.error(e)
+      } finally {
+        localStorage.setItem("ladingPageVisited", true)
+      }
+    }
+  }
+  const onMotionsClick = () => {
+    if (!localStorage.ladingPageVisited) {
+      try {
+        gtag("event", "Click", {
+          event_category: "Topic",
+          event_label: "motion",
+        })
+      } catch (e) {
+        console.error(e)
+      } finally {
+        localStorage.setItem("ladingPageVisited", true)
+      }
+    }
+  }
   return (
     <Layout
       pageStyles={{
@@ -210,7 +238,7 @@ const IndexPage = ({ data }) => {
             </p>
           </div>
           <div className="link">
-            <Link to={"/people"} css={{ ...cssNextButton }}>
+            <Link to={"/people"} css={{ ...cssNextButton }} onClick={() => onPeopleClick()}>
               <span>ดูข้อมูลผู้แทน</span>
               <i>
                 <ArrowRightIcon></ArrowRightIcon>
@@ -233,7 +261,7 @@ const IndexPage = ({ data }) => {
             </p>
           </div>
           <div className="link">
-            <Link to={"/motions"} css={{ ...cssNextButton }}>
+            <Link to={"/motions"} css={{ ...cssNextButton }} onClick={() => onMotionsClick()}>
               <span>ดูข้อมูลญัตติ</span>
               <i>
                 <ArrowRightIcon></ArrowRightIcon>
