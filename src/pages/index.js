@@ -190,50 +190,72 @@ const cssMotionImage = {
 }
 
 const IndexPage = ({ data }) => {
-  const onPeopleClick = () => {
+  const handleTopicClick = topic => {
     if (process.env.GATSBY_ENV !== "production") {
-      navigate("/people")
+      navigate(`/${topic}`)
       return
     }
     if (!localStorage.ladingPageVisited) {
       try {
         window.gtag("event", "Click", {
           event_category: "Topic",
-          event_label: "motion",
+          event_label: `${topic}`,
           event_callback: function() {
             localStorage.setItem("ladingPageVisited", true)
-            navigate("/people")
+            navigate(`/${topic}`)
           },
         })
       } catch (e) {
         console.error(e)
       }
     } else {
-      navigate("/people")
+      navigate(`/${topic}`)
     }
   }
-  const onMotionsClick = () => {
-    if (process.env.GATSBY_ENV !== "production") {
-      navigate("/motions")
-      return
-    }
-    if (!localStorage.ladingPageVisited) {
-      try {
-        window.gtag("event", "Click", {
-          event_category: "Topic",
-          event_label: "motion",
-          event_callback: function() {
-            localStorage.setItem("ladingPageVisited", true)
-            navigate("/motions")
-          },
-        })
-      } catch (e) {
-        console.error(e)
-      }
-    } else {
-      navigate("/motions")
-    }
-  }
+  // const onPeopleClick = () => {
+  //   if (process.env.GATSBY_ENV !== "production") {
+  //     navigate("/people")
+  //     return
+  //   }
+  //   if (!localStorage.ladingPageVisited) {
+  //     try {
+  //       window.gtag("event", "Click", {
+  //         event_category: "Topic",
+  //         event_label: "motion",
+  //         event_callback: function() {
+  //           localStorage.setItem("ladingPageVisited", true)
+  //           navigate("/people")
+  //         },
+  //       })
+  //     } catch (e) {
+  //       console.error(e)
+  //     }
+  //   } else {
+  //     navigate("/people")
+  //   }
+  // }
+  // const onMotionsClick = () => {
+  //   if (process.env.GATSBY_ENV !== "production") {
+  //     navigate("/motions")
+  //     return
+  //   }
+  //   if (!localStorage.ladingPageVisited) {
+  //     try {
+  //       window.gtag("event", "Click", {
+  //         event_category: "Topic",
+  //         event_label: "motion",
+  //         event_callback: function() {
+  //           localStorage.setItem("ladingPageVisited", true)
+  //           navigate("/motions")
+  //         },
+  //       })
+  //     } catch (e) {
+  //       console.error(e)
+  //     }
+  //   } else {
+  //     navigate("/motions")
+  //   }
+  // }
   return (
     <Layout
       pageStyles={{
@@ -254,7 +276,10 @@ const IndexPage = ({ data }) => {
             </p>
           </div>
           <div className="link">
-            <Link css={{ ...cssNextButton }} onClick={() => onPeopleClick()}>
+            <Link
+              css={{ ...cssNextButton }}
+              onClick={() => handleTopicClick("people")}
+            >
               <span>ดูข้อมูลผู้แทน</span>
               <i>
                 <ArrowRightIcon></ArrowRightIcon>
@@ -277,7 +302,10 @@ const IndexPage = ({ data }) => {
             </p>
           </div>
           <div className="link">
-            <Link css={{ ...cssNextButton }} onClick={() => onMotionsClick()}>
+            <Link
+              css={{ ...cssNextButton }}
+              onClick={() => handleTopicClick("motions")}
+            >
               <span>ดูข้อมูลญัตติ</span>
               <i>
                 <ArrowRightIcon></ArrowRightIcon>
