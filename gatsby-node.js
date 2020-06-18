@@ -40,7 +40,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
   if (node.internal.type === `MotionYaml`) {
     const id = node.id
-    const slug = `/motion/${id}`
+    const slug = `/motions/${id}`
     createNodeField({
       node,
       name: `slug`,

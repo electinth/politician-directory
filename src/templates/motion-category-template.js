@@ -167,7 +167,7 @@ class MotionCategoryPage extends React.Component {
                   การพิจารณาญัตติ
                 </Link>
               </span>{" "}
-              / <span css={{ fontWeight: "bold" }}>{pageTitle}</span>
+              {" > "} <span css={{ fontWeight: "bold" }}>{pageTitle}</span>
             </div>
             <HiddenOnMobile>
               <div
@@ -282,7 +282,7 @@ class MotionCategoryPage extends React.Component {
               </div>
               {this.state.motions.map(node => (
                 <Link
-                  to={`/motion/${node.id}`}
+                  to={`/motions/${node.id}`}
                   css={{ ":hover": { textDecoration: "none" } }}
                 >
                   <div

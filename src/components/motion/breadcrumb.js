@@ -11,6 +11,8 @@ const BreadcrumbLink = styled(Link)`
 `
 
 const Breadcrumb = ({ sub_cat, registration_no }) => {
+  const sub_cat_path =
+    typeof sub_cat === "string" ? sub_cat.replace(/ /g, "-") : null
   const { setMenu } = useContext(MenuContext)
   return (
     <div
@@ -32,15 +34,14 @@ const Breadcrumb = ({ sub_cat, registration_no }) => {
       >
         <span>
           <BreadcrumbLink to="/motions">การพิจารณาญัตติ</BreadcrumbLink>
-        </span>{" "}
-        /
+        </span>
+        {" > "}
         <span>
-          {" "}
-          <BreadcrumbLink to={`/motions/category/${sub_cat}`}>
+          <BreadcrumbLink to={`/motions/category/${sub_cat_path}`}>
             {sub_cat}
           </BreadcrumbLink>
-        </span>{" "}
-        {">"}{" "}
+        </span>
+        {" > "}
         <span>
           <b>{registration_no}</b>
         </span>
