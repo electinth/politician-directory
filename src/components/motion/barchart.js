@@ -20,8 +20,8 @@ const BarChart = ({ data, xTicks }) => {
   const barchartRef = useRef(null)
   const tickRange = extent(xTicks)
 
-  const [w, setW] = useState(0)
-  const [h, setH] = useState(0)
+  const [w, setW] = useState(500)
+  const [h, setH] = useState(500)
 
   useEffect(() => {
     const { clientHeight, clientWidth } = barchartRef.current
