@@ -27,6 +27,9 @@ export const query = graphql`
         link
       }
       meeting
+      passed
+      is_no_vote
+      no_vote_description
       approve
       disprove
       abstained
@@ -254,29 +257,42 @@ const VotelogPage = ({
           ...cssSection,
         }}
       >
-        <Waffle
-          data={[
-            approve.map(p => ({ node: p })),
-            disprove.map(p => ({ node: p })),
-            abstained.map(p => ({ node: p })),
-            absent.map(p => ({ node: p })),
-          ]}
-          colors={[
-            `var(--cl-vote-yes)`,
-            `var(--cl-vote-no)`,
-            `var(--cl-vote-abstained)`,
-            `var(--cl-vote-absent)`,
-          ]}
-          borderColors={[
-            `var(--cl-vote-yes)`,
-            `var(--cl-vote-no)`,
-            `var(--cl-vote-abstained)`,
-            `var(--cl-black)`,
-          ]}
-        />
-        <div css={{ marginTop: "4rem" }}>
-          <VoteLogLegend {...votelogYaml} />
-        </div>
+        {votelogYaml.is_no_vote ? (
+          <div
+            css={css`
+              font-size: 2rem;
+              align-self: flex-start;
+            `}
+          >
+            {votelogYaml.no_vote_description || "-"}
+          </div>
+        ) : (
+          <>
+            <Waffle
+              data={[
+                approve.map(p => ({ node: p })),
+                disprove.map(p => ({ node: p })),
+                abstained.map(p => ({ node: p })),
+                absent.map(p => ({ node: p })),
+              ]}
+              colors={[
+                `var(--cl-vote-yes)`,
+                `var(--cl-vote-no)`,
+                `var(--cl-vote-abstained)`,
+                `var(--cl-vote-absent)`,
+              ]}
+              borderColors={[
+                `var(--cl-vote-yes)`,
+                `var(--cl-vote-no)`,
+                `var(--cl-vote-abstained)`,
+                `var(--cl-black)`,
+              ]}
+            />
+            <div css={{ marginTop: "4rem" }}>
+              <VoteLogLegend {...votelogYaml} />
+            </div>
+          </>
+        )}
       </section>
       <section
         css={{
@@ -366,7 +382,22 @@ const VotelogPage = ({
             ))}
         </button>
       </section>
-      <VoterList data={[approve, disprove, abstained, absent]} />
+      <section>
+        <div className="container">
+          <h1>บันทึกคะแนนเสียง</h1>
+          {votelogYaml.is_no_vote ? (
+            <div
+              css={css`
+                font-size: 2rem;
+              `}
+            >
+              ไม่มีข้อมูลการลงคะแนนเสียง
+            </div>
+          ) : (
+            <VoterList data={[approve, disprove, abstained, absent]} />
+          )}
+        </div>
+      </section>
     </Layout>
   )
 }
