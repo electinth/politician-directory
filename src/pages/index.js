@@ -212,50 +212,6 @@ const IndexPage = ({ data }) => {
       navigate(`/${topic}`)
     }
   }
-  // const onPeopleClick = () => {
-  //   if (process.env.GATSBY_ENV !== "production") {
-  //     navigate("/people")
-  //     return
-  //   }
-  //   if (!localStorage.ladingPageVisited) {
-  //     try {
-  //       window.gtag("event", "Click", {
-  //         event_category: "Topic",
-  //         event_label: "motion",
-  //         event_callback: function() {
-  //           localStorage.setItem("ladingPageVisited", true)
-  //           navigate("/people")
-  //         },
-  //       })
-  //     } catch (e) {
-  //       console.error(e)
-  //     }
-  //   } else {
-  //     navigate("/people")
-  //   }
-  // }
-  // const onMotionsClick = () => {
-  //   if (process.env.GATSBY_ENV !== "production") {
-  //     navigate("/motions")
-  //     return
-  //   }
-  //   if (!localStorage.ladingPageVisited) {
-  //     try {
-  //       window.gtag("event", "Click", {
-  //         event_category: "Topic",
-  //         event_label: "motion",
-  //         event_callback: function() {
-  //           localStorage.setItem("ladingPageVisited", true)
-  //           navigate("/motions")
-  //         },
-  //       })
-  //     } catch (e) {
-  //       console.error(e)
-  //     }
-  //   } else {
-  //     navigate("/motions")
-  //   }
-  // }
   return (
     <Layout
       pageStyles={{
