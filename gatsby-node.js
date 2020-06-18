@@ -47,6 +47,15 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value: slug,
     })
   }
+
+  if (node.internal.type === `MotionCatYaml`) {
+    const slug = `/motions/category/${node.sub_cat.replace(/ /g, "-")}`
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
+  }
 }
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -174,6 +183,31 @@ exports.createPages = async ({ graphql, actions }) => {
         select_committee: node.select_committee,
         main_cat: node.main_cat,
         votelog_id: node.votelog_id,
+      },
+    })
+  })
+
+    // Motion Category
+  const motionCats = await graphql(`
+    query {
+      allMotionCatYaml {
+        edges {
+          node {
+            sub_cat
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+  motionCats.data.allMotionCatYaml.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve("./src/templates/motion-category-template.js"),
+      context: {
+        sub_cat: node.sub_cat,
       },
     })
   })
