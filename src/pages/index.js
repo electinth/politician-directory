@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -190,6 +190,28 @@ const cssMotionImage = {
 }
 
 const IndexPage = ({ data }) => {
+  const handleTopicClick = topic => {
+    if (process.env.GATSBY_ENV !== "production") {
+      navigate(`/${topic}`)
+      return
+    }
+    if (!localStorage.ladingPageVisited) {
+      try {
+        window.gtag("event", "Click", {
+          event_category: "Topic",
+          event_label: `${topic}`,
+          event_callback: function() {
+            localStorage.setItem("ladingPageVisited", true)
+            navigate(`/${topic}`)
+          },
+        })
+      } catch (e) {
+        console.error(e)
+      }
+    } else {
+      navigate(`/${topic}`)
+    }
+  }
   return (
     <Layout
       pageStyles={{
@@ -210,7 +232,10 @@ const IndexPage = ({ data }) => {
             </p>
           </div>
           <div className="link">
-            <Link to={"/people"} css={{ ...cssNextButton }}>
+            <Link
+              css={{ ...cssNextButton }}
+              onClick={() => handleTopicClick("people")}
+            >
               <span>ดูข้อมูลผู้แทน</span>
               <i>
                 <ArrowRightIcon></ArrowRightIcon>
@@ -233,7 +258,10 @@ const IndexPage = ({ data }) => {
             </p>
           </div>
           <div className="link">
-            <Link to={"/motions"} css={{ ...cssNextButton }}>
+            <Link
+              css={{ ...cssNextButton }}
+              onClick={() => handleTopicClick("motions")}
+            >
               <span>ดูข้อมูลญัตติ</span>
               <i>
                 <ArrowRightIcon></ArrowRightIcon>
