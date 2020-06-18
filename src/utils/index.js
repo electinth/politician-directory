@@ -374,7 +374,7 @@ export function loadCategoryStats(data) {
 
 export function filterVote(peopleVotelog, key, value) {
   return _.filter(peopleVotelog, o => {
-    return _.find(o.votelog || [], p => p.key === key).value === value
+    return _.get(_.find(o.votelog || [], p => p.key === key), "value") === value
   })
 }
 
