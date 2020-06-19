@@ -200,11 +200,12 @@ const IndexPage = ({ data }) => {
     }
     if (!localStorage.ladingPageVisited) {
       try {
-        window.gtag("config", "UA-161190279-3", {
-          custom_map: { dimension1: "Topic" },
+        window.gtag("set", {
+          custom_map: { dimension1: "focused_topic" },
         })
         window.gtag("event", "Topic", {
-          Topic: `${topic}`,
+          focused_topic: topic, // custom dimension1
+          event_label: topic,
           event_callback: function() {
             localStorage.setItem("ladingPageVisited", true)
             navigate(`/${topic}`)
