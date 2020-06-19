@@ -21,22 +21,26 @@ const nominator = ({ className, motion: { purposers, seconders } }) => {
           </ul>
         </li>
         <li>
-          <h4>ผู้รับรอง</h4>
-          <ul
-            css={css`
-              /* height: 50vh;
-            overflow-y: scroll; */
-              list-style: none;
+          <h4>ผู้รับรอง ({seconders.length})</h4>
+          {seconders.length > 0 ? (
+            <ul
+              css={css`
+                /* height: 50vh;
+                overflow-y: scroll; */
+                list-style: none;
 
-              & .party {
-                color: grey;
-              }
-            `}
-          >
-            {seconders.map(id => (
-              <Profile key={id.name + id.last_name} {...id} />
-            ))}
-          </ul>
+                & .party {
+                  color: grey;
+                }
+              `}
+            >
+              {seconders.map(id => (
+                <Profile key={id.name + id.last_name} {...id} />
+              ))}
+            </ul>
+          ) : (
+            <div>ไม่พบข้อมูล</div>
+          )}
         </li>
       </ul>
     </div>

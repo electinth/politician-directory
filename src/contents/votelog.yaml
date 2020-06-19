@@ -1147,9 +1147,42 @@
   description_th: ''
   description_en: ''
   document:
-    - title: ใบประมวลผลการลงมติ
+    - title: ''
       link: ''
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4188
+- id: '25'
+  title: ตั้ง กมธ. วิสามัญ แก้ไขปัญหาที่ดินทำกิน
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาหามาตรการเพื่อแก้ไขปัญหาที่ดินทำกินของประชาชนอย่างครบถ้วนเป็นระบบ
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2020-01-31'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
+  approve: null
+  disprove: null
+  abstained: null
+  field18: ''
+  total_voter: null
+  absent: null
+  total_member: null
+  description_th: ''
+  description_en: ''
+  document:
+    - title: บันทึกการออกเสียงลงคะแนนของ ส.ส.
+      link: >-
+        https://drive.google.com/file/d/1nN_FFX-0sTRVoIxrQH4aSh0zQVGLWy1D/view?usp=sharing
+    - title: ''
+      link: ''
+  reference: >-
+    https://drive.google.com/file/d/1nN_FFX-0sTRVoIxrQH4aSh0zQVGLWy1D/view?usp=sharing

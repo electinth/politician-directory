@@ -3121,6 +3121,96 @@
 - q: นาย อุดมศักดิ์ ศรีสุทิวา
   type: people
   url: /people/อุดมศักดิ์-ศรีสุทิวา
+- q: นางสาว สุรางค์รัตน์ จำเนียรพล
+  type: people
+  url: /people/สุรางค์รัตน์-จำเนียรพล
+- q: พันตำรวจเอก ประเวศน์ มูลประมุข
+  type: people
+  url: /people/ประเวศน์-มูลประมุข
+- q: นาย มุข สุไลมาน
+  type: people
+  url: /people/มุข-สุไลมาน
+- q: นาย อดิศร เพียงเกษ
+  type: people
+  url: /people/อดิศร-เพียงเกษ
+- q: นาย อุดมเดช รัตนเสถียร
+  type: people
+  url: /people/อุดมเดช-รัตนเสถียร
+- q: นางสาว ชญาวดี ชัยอนันต์
+  type: people
+  url: /people/ชญาวดี-ชัยอนันต์
+- q: นาย ดนุชา พิชยนันท์
+  type: people
+  url: /people/ดนุชา-พิชยนันท์
+- q: นาย ทศพร ศิริสัมพันธ์
+  type: people
+  url: /people/ทศพร-ศิริสัมพันธ์
+- q: นาย ธีรัชย์ อัตนวานิช
+  type: people
+  url: /people/ธีรัชย์-อัตนวานิช
+- q: นาย พรชัย ฐีระเวช
+  type: people
+  url: /people/พรชัย-ฐีระเวช
+- q: นางสาว ศิรสา กันต์พิทยา
+  type: people
+  url: /people/ศิรสา-กันต์พิทยา
+- q: นาย เข้มแข็ง ยุติธรรมดำรง
+  type: people
+  url: /people/เข้มแข็ง-ยุติธรรมดำรง
+- q: นาย ทศพล ทังสุบุตร
+  type: people
+  url: /people/ทศพล-ทังสุบุตร
+- q: นาย ไพศาล ดั่นคุ้ม
+  type: people
+  url: /people/ไพศาล-ดั่นคุ้ม
+- q: นาง อรมน ทรัพย์ทวีธรรม
+  type: people
+  url: /people/อรมน-ทรัพย์ทวีธรรม
+- q: นางสาว กรรณิการ กิจติเวชกุล
+  type: people
+  url: /people/กรรณิการ-กิจติเวชกุล
+- q: นาย เชิดชาย ใช้ไววิทย์
+  type: people
+  url: /people/เชิดชาย-ใช้ไววิทย์
+- q: นาย ธกร เลาหพงศ์ชนะ
+  type: people
+  url: /people/ธกร-เลาหพงศ์ชนะ
+- q: นาย ธีระพงษ์ วัฒนวงษ์ภิญโญ
+  type: people
+  url: /people/ธีระพงษ์-วัฒนวงษ์ภิญโญ
+- q: นาย เนวินธุ์ ช่อชัยทิพฐ์
+  type: people
+  url: /people/เนวินธุ์-ช่อชัยทิพฐ์
+- q: นาย ประเสริฐ ชัยกิจเด่นนภาลัย
+  type: people
+  url: /people/ประเสริฐ-ชัยกิจเด่นนภาลัย
+- q: นาย ปริญญ์ พานิชภักดิ์
+  type: people
+  url: /people/ปริญญ์-พานิชภักดิ์
+- q: นาง รัชฎาภรณ์ แก้วสนิท
+  type: people
+  url: /people/รัชฎาภรณ์-แก้วสนิท
+- q: นาย ศุภกิจ ศิริลักษณ์
+  type: people
+  url: /people/ศุภกิจ-ศิริลักษณ์
+- q: นาย สมเกียรติ ศรลัมพ์
+  type: people
+  url: /people/สมเกียรติ-ศรลัมพ์
+- q: นาย สุนทร รักษ์รงค์
+  type: people
+  url: /people/สุนทร-รักษ์รงค์
+- q: รองศาสตราจารย์ สุรวิช วรรณไกรโรจน์
+  type: people
+  url: /people/สุรวิช-วรรณไกรโรจน์
+- q: นางสาว เสริมสุข สลักเพ็ชร์
+  type: people
+  url: /people/เสริมสุข-สลักเพ็ชร์
+- q: นางสาว อรพินทร์ เพชรทัต
+  type: people
+  url: /people/อรพินทร์-เพชรทัต
+- q: นาย จักรวี วิสุทธิผล
+  type: people
+  url: /people/จักรวี-วิสุทธิผล
 - q: ลงมติเลือกนายกรัฐมนตรี
   type: votelog
   url: /votelog/1
@@ -3195,3 +3285,6 @@
 - q: ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบจาก พรบ. e-Payment
   type: votelog
   url: /votelog/24
+- q: ตั้ง กมธ. วิสามัญ แก้ไขปัญหาที่ดินทำกิน
+  type: votelog
+  url: /votelog/25

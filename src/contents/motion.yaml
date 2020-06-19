@@ -250,7 +250,135 @@
       party: เพื่อไทย
       title: นาย
       last_name: บัวหลวงงาม
-  seconders: []
+  seconders:
+    - name: จุฑาพัตธน์
+      party: เพื่อไทย
+      title: นาง
+      last_name: เมนะสวัสดิ์
+    - name: สุรชาติ
+      party: เพื่อไทย
+      title: นาย
+      last_name: ชาญประดิษฐ์
+    - name: ประเดิมชัย
+      party: เพื่อไทย
+      title: นาย
+      last_name: บุญช่วยเหลือ
+    - name: สุทิน
+      party: เพื่อไทย
+      title: นาย
+      last_name: คลังแสง
+    - name: พิเชษฐ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: เชื้อเมืองพาน
+    - name: นิรมิต
+      party: เพื่อไทย
+      title: นาย
+      last_name: สุจารี
+    - name: อนันต์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ศรีพันธุ์
+    - name: เชิดพงศ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ราชป้องขันธ์
+    - name: ชวลิต
+      party: เพื่อไทย
+      title: นาย
+      last_name: วิชยสุทธิ์
+    - name: ชลน่าน
+      party: เพื่อไทย
+      title: นาย
+      last_name: ศรีแก้ว
+    - name: ตี๋ใหญ่
+      party: เพื่อไทย
+      title: นาย
+      last_name: พูนศรีธนากูล
+    - name: พรเทพ
+      party: เพื่อไทย
+      title: นาย
+      last_name: วิสุทธิ์วัฒนศักดิ์
+    - name: นพ
+      party: เพื่อไทย
+      title: นาย
+      last_name: ชีวานันท์
+    - name: สุชาติ
+      party: เพื่อไทย
+      title: นาย
+      last_name: ภิญโญ
+    - name: สิงหภณ
+      party: เพื่อไทย
+      title: นาย
+      last_name: ดีนาง
+    - name: บัลลังก์
+      party: เพื่อไทย
+      title: นาย
+      last_name: อรรณนพพร
+    - name: จุลพันธ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: อมรวิวัฒน์
+    - name: กิตติศักดิ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: คณาสวัสดิ์
+    - name: วัน
+      party: เพื่อไทย
+      title: นาย
+      last_name: อยู่บำรุง
+    - name: มนพร
+      party: เพื่อไทย
+      title: นาง
+      last_name: เจริญศรี
+    - name: ณัฐพงษ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: สุปริยศิลป์
+    - name: ศรัณย์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ทิมสุวรรณ
+    - name: วิสิษฐ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: เตชะธีราวัฒน์
+    - name: คุณากร
+      party: เพื่อไทย
+      title: นาย
+      last_name: ปรีชาชนะชัย
+    - name: วิสุทธิ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ไชยณรุณ
+    - name: ณัฐวุฒิ
+      party: เพื่อไทย
+      title: นาย
+      last_name: กองจันดี
+    - name: รังสรรค์
+      party: เพื่อไทย
+      title: นาย
+      last_name: วันไชยธนวงศ์
+    - name: ฉลาด
+      party: เพื่อไทย
+      title: นาย
+      last_name: ขามช่วง
+    - name: สมบัติ
+      party: เพื่อไทย
+      title: นาย
+      last_name: ศรีสุรินทร์
+    - name: ละออง
+      party: เพื่อไทย
+      title: นาย
+      last_name: ติยะไพรัช
+    - name: จิรทัศ
+      party: เพื่อไทย
+      title: นาย
+      last_name: ไกรเดชา
+    - name: พีระเพชร
+      party: เพื่อไทย
+      title: นาย
+      last_name: ศิริกุล
   adhoc_committee:
     name: ''
     members:
@@ -2242,7 +2370,87 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: ลี้อาธรรม
-  seconders: []
+  seconders:
+    - name: กนก
+      party: ประชาธิปัตย์
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
+    - name: เทอดพงษ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ไชยนันทน์
+    - name: สาทิตย์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วงศ์หนองเตย
+    - name: นริศ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ขำนุรักษ์
+    - name: ศิริวรรณ
+      party: ประชาธิปัตย์
+      title: นาง
+      last_name: ปราศจากศัตรู
+    - name: พิมพ์ภัทรา
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: วิชัยกุล
+    - name: แนน
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: บุณย์ธิดา สมชัย
+    - name: ศรีสมร
+      party: ประชาธิปัตย์
+      title: นาง
+      last_name: รัศมีฤกษ์เศรษฐ์
+    - name: อิสสระ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: สมชัย
+    - name: สาธิต
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ปิตุเตชะ
+    - name: รังสิมา
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: รอดรัศมี
+    - name: สุรินทร์
+      party: ประชาธิปัตย์
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
+    - name: บัญญัติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เจตนจันทร์
+    - name: บัญญัติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: บรรทัดฐาน
+    - name: สุทัศน์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เงินหมื่น
+    - name: กันตวรรณ
+      party: ประชาธิปัตย์
+      title: นาง
+      last_name: ตันเถียร
+    - name: ประมวล
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: พงศ์ถาวราเดช
+    - name: เดชอิศม์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ขาวทอง
+    - name: ภานุ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ศรีบุศยกาญจน์
+    - name: สาคร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เกี่ยวข้อง
   adhoc_committee:
     name: ''
     members:
@@ -3384,10 +3592,12 @@
     จึงเห็นสมควรให้สภาผู้แทนราษฎรได้พิจารณาและมีมติแต่งตั้งคณะกรรมาธิการวิสามัญเพื่อสืบสวนข้อเท็จจริงกรณีการลอบประทุษร้ายนักกิจกรรมทางการเมือง
     ต่อไป
   proposal_date: '2019-07-03'
-  voting_date: ''
-  votelog_id: ''
+  voting_date: 19/12/2562
+  votelog_id: '10'
   voting_result: ''
-  select_committee: ''
+  select_committee: >-
+    กมธ.วิสามัญ พิจารณาศึกษาและแก้ไขปัญหาการละเมิดสิทธิมนุษยชน
+    และการลอบประทุษร้ายประชาชน สภาผู้แทนฯ
   purposers:
     - name: ปิยบุตร
       party: อนาคตใหม่
@@ -7989,7 +8199,87 @@
       party: เพื่อไทย
       title: นาย
       last_name: ไชยศิวามงคล
-  seconders: []
+  seconders:
+    - name: ปิยวัฒน
+      party: เพื่อไทย
+      title: นาย
+      last_name: พันธ์สายเชื้อ
+    - name: องอาจ
+      party: เพื่อไทย
+      title: นาย
+      last_name: วงษ์ประยูร
+    - name: เจนวิทย์
+      party: อนาคตใหม่
+      title: นาย
+      last_name: ไกรสินธุ์
+    - name: มณฑล
+      party: อนาคตใหม่
+      title: นาย
+      last_name: โพธิ์คาย
+    - name: เกรียงศักดิ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ฝ้ายสีงาม
+    - name: มุกดา
+      party: เพื่อไทย
+      title: นาง
+      last_name: พงษ์สมบัติ
+    - name: จุฑาพัตธน์
+      party: เพื่อไทย
+      title: นาง
+      last_name: เมนะสวัสดิ์
+    - name: คารม
+      party: อนาคตใหม่
+      title: นาย
+      last_name: พลพรกลาง
+    - name: สุชาติ
+      party: เพื่อไทย
+      title: นาย
+      last_name: ภิญโญ
+    - name: เชิดพงศ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ราชป้องขันธ์
+    - name: วิสุทธิ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ไชยณรุณ
+    - name: ผ่องศรี
+      party: เพื่อไทย
+      title: นาง
+      last_name: แซ่จึง
+    - name: อาภรณ์
+      party: เพื่อไทย
+      title: นาง
+      last_name: สาราคำ
+    - name: บุญรื่น
+      party: เพื่อไทย
+      title: นาง
+      last_name: ศรีธเรศ
+    - name: พรเพ็ญ
+      party: เพื่อไทย
+      title: นาง
+      last_name: บุญศิริวัฒนกุล
+    - name: อนุรักษ์
+      party: เพื่อไทย
+      title: นาง
+      last_name: บุญศล
+    - name: กิตติ์ธัญญา
+      party: เพื่อไทย
+      title: นางสาว
+      last_name: วาจาดี
+    - name: บุญแก้ว
+      party: เพื่อไทย
+      title: นาย
+      last_name: สมวงศ์
+    - name: สมคิด
+      party: เพื่อไทย
+      title: นาย
+      last_name: เชื้อคง
+    - name: สมหญิง
+      party: เพื่อไทย
+      title: นาง
+      last_name: บัวบุตร
   adhoc_committee:
     name: ''
     members:
@@ -12758,10 +13048,16 @@
     เพื่อให้เกิดการป้องปรามไม่ให้กล้ากระทำผิด
     ซึ่งขัดแย้งกับงานวิจัยที่ว่าการมีโทษประหารไม่ได้มีส่วนในการเพิ่มหรือลดอัตราการก่ออาชญากรรม
   proposal_date: '2019-07-04'
-  voting_date: ''
-  votelog_id: ''
-  voting_result: ''
-  select_committee: ''
+  voting_date: 26/12/2562
+  votelog_id: '18'
+  voting_result: >-
+    ประธานสภาผู้แทนราษฎร ถามมติต่อที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
+    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมมีมติเห็นชอบ ตามข้อบังคับ
+    การประชุมสภาผู้แทนราษฎร พ.ศ. 2562 ข้อ 88
+  select_committee: >-
+    กมธ.วิสามัญ
+    พิจารณาศึกษาแนวทางป้องกันและแก้ไขปัญหาการข่มขืนกระทำชำเราและการล่วงละเมิดทางเพศ
+    สภาผู้แทนฯ
   purposers:
     - name: พัชรินทร์
       party: พลังประชารัฐ
@@ -13578,16 +13874,98 @@
     และหากผู้ที่เกี่ยวข้องเป็นเจ้าหน้าที่ของรัฐควรต้องมีการสอบสวนข้อเท็จจริงและให้ความเป็นธรรมแก่ผู้เสียหายโดยเร็ว
     โดยให้ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาข้อเท็จจริงในการดำเนินการของเจ้าหน้าที่รัฐที่เกี่ยวข้องกรณีประชาชนที่ถูกทำร้ายและสูญหายต่อไป
   proposal_date: '2019-07-09'
-  voting_date: ''
-  votelog_id: ''
+  voting_date: 19/12/2562
+  votelog_id: '10'
   voting_result: ''
-  select_committee: ''
+  select_committee: >-
+    กมธ.วิสามัญ พิจารณาศึกษาและแก้ไขปัญหาการละเมิดสิทธิมนุษยชน
+    และการลอบประทุษร้ายประชาชน สภาผู้แทนฯ
   purposers:
     - name: อันวาร์
       party: ประชาธิปัตย์
       title: นาย
       last_name: สาและ
-  seconders: []
+  seconders:
+    - name: ถาวร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เสนเนียม
+    - name: สินิตย์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เลิศไกร
+    - name: ภานุ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ศรีบุศยกาญจน์
+    - name: ศรีสมร
+      party: ประชาธิปัตย์
+      title: นาง
+      last_name: รัศมีฤกษ์เศรษฐ์
+    - name: องอาจ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: คล้ามไพบูลย์
+    - name: อัครเดช
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วงษ์พิทักษ์โรจน์
+    - name: เทพไท
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เสนพงศ์
+    - name: อภิชัย
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เตชะอุบล
+    - name: กัลยา
+      party: ประชาธิปัตย์
+      title: คุณหญิง
+      last_name: โสภณพนิช
+    - name: กันตวรรณ
+      party: ประชาธิปัตย์
+      title: นาง
+      last_name: ตันเถียร
+    - name: สุรินทร์
+      party: ประชาธิปัตย์
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
+    - name: สุทัศน์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เงินหมื่น
+    - name: อัศวิน
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วิภูศิริ
+    - name: สาธิต
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ปิตุเตชะ
+    - name: วชิราภรณ์
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: กาญจนะ
+    - name: ประกอบ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: รัตนพันธ์
+    - name: ธีรภัทร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: พริ้งศุลกะ
+    - name: กนก
+      party: ประชาธิปัตย์
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
+    - name: ชัยชนะ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เดชเดโช
+    - name: ชินวรณ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: บุณยเกียรติ
   adhoc_committee:
     name: ''
     members:
@@ -14851,7 +15229,87 @@
       party: ประชาธิปัตย์
       title: ศาสตราจารย์
       last_name: วงษ์ตระหง่าน
-  seconders: []
+  seconders:
+    - name: เทอดพงษ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ไชยนันทน์
+    - name: กรณ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: จาติกวณิช
+    - name: สาคร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เกี่ยวข้อง
+    - name: ถาวร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เสนเนียม
+    - name: แนน
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: บุณย์ธิดา สมชัย
+    - name: สินิตย์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เลิศไกร
+    - name: วุฒิพงษ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: นามบุตร
+    - name: บัญญัติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เจตนจันทร์
+    - name: พิมพ์ภัทรา
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: วิชัยกุล
+    - name: ประกอบ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: รัตนพันธ์
+    - name: อิสสระ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: สมชัย
+    - name: สาทิตย์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วงศ์หนองเตย
+    - name: องอาจ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: คล้ามไพบูลย์
+    - name: เทพไท
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เสนพงศ์
+    - name: สุรินทร์
+      party: ประชาธิปัตย์
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
+    - name: สินธพ
+      party: ประชาธิปัตย์
+      title: พันโท
+      last_name: แก้วพิจิตร
+    - name: ประมวล
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: พงศ์ถาวราเดช
+    - name: จุติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ไกรฤกษ์
+    - name: ภานุ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ศรีบุศยกาญจน์
+    - name: อัครเดช
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วงษ์พิทักษ์โรจน์
   adhoc_committee:
     name: ''
     members:
@@ -16545,7 +17003,7 @@
     กระบือ จากต่างประเทศเข้ามาฟอก
   proposal_date: '2019-06-27'
   voting_date: 16/01/2563
-  votelog_id: ''
+  votelog_id: '21'
   voting_result: >-
     ประธานสภาผู้แทนราษฎร ถามมติต่อที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
     เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมมีมติเห็นชอบ ตามข้อบังคับ
@@ -18752,7 +19210,7 @@
     ซึ่งจะทำให้สามารถแก้ไขปัญหาดังกล่าวได้
   proposal_date: '2019-06-27'
   voting_date: 16/01/2563
-  votelog_id: ''
+  votelog_id: '22'
   voting_result: >-
     ประธานสภาผู้แทนราษฎร ถามมติต่อที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
     เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมมีมติเห็นชอบ ตามข้อบังคับ
@@ -21669,10 +22127,16 @@
     ทำให้ประเทศไทยสูญเสียรายได้จำนวนมหาศาล
     และภาครัฐไม่สามารถตรวจสอบรายได้ที่แท้จริงของผู้ประกอบการได้
   proposal_date: '2019-07-03'
-  voting_date: ''
-  votelog_id: ''
-  voting_result: ที่ประชุมลงมติเห็นชอบกับญัตติดังกล่าวตามข้อบังคับฯ ข้อ 88
-  select_committee: ''
+  voting_date: 05/02/2563
+  votelog_id: '24'
+  voting_result: >-
+    ประธานสภาผู้แทนราษฎร ถามมติต่อที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
+    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมมีมติเห็นชอบ ตามข้อบังคับ
+    การประชุมสภาผู้แทนราษฎร พ.ศ. 2562 ข้อ 88
+  select_committee: >-
+    กมธ.วิสามัญ
+    พิจารณาศึกษาผลกระทบจากการประกอบธุรกิจออนไลน์และการทำธุรกรรมผ่านช่องทางอิเล็กทรอนิกส์
+    สภาผู้แทนฯ
   purposers:
     - name: สิริพงศ์
       party: ภูมิใจไทย
@@ -22381,10 +22845,16 @@
     ลูกหนี้บางรายมีจำนวนยอดการชำระหนี้เพิ่มขึ้น
     หรือในบางรายถูกบังคับคดีตามกฎหมาย
   proposal_date: '2019-07-03'
-  voting_date: ''
-  votelog_id: ''
-  voting_result: ''
-  select_committee: ''
+  voting_date: 20/12/2562
+  votelog_id: '17'
+  voting_result: >-
+    รองประธานสภาผู้แทนราษฎร ถามมติต่อที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
+    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมมีมติเห็นชอบ ตามข้อบังคับ
+    การประชุมสภาผู้แทนราษฎร พ.ศ. 2562 ข้อ 88
+  select_committee: >-
+    กมธ.วิสามัญ
+    พิจารณาศึกษาแนวทางในการบริหารจัดการการชำระหนี้กองทุนเงินให้กู้ยืมเพื่อการศึกษา
+    สภาผู้แทนฯ
   purposers:
     - name: เกียรติ
       party: ภูมิใจไทย
@@ -27660,7 +28130,87 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: เกี่ยวข้อง
-  seconders: []
+  seconders:
+    - name: กัลยา
+      party: ประชาธิปัตย์
+      title: คุณหญิง
+      last_name: โสภณพนิช
+    - name: สุณัฐชา
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: โล่สถาพรพิพิธ
+    - name: สาทิตย์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วงศ์หนองเตย
+    - name: กนก
+      party: ประชาธิปัตย์
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
+    - name: ประกอบ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: รัตนพันธ์
+    - name: เดชอิศม์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ขาวทอง
+    - name: เทพไท
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เสนพงศ์
+    - name: สุทัศน์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เงินหมื่น
+    - name: พิมพ์ภัทรา
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: วิชัยกุล
+    - name: ชินวรณ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: บุณยเกียรติ
+    - name: พีระพันธุ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: สาลีรัฐวิภาค
+    - name: นริศ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ขำนุรักษ์
+    - name: จุติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ไกรฤกษ์
+    - name: บัญญัติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: บรรทัดฐาน
+    - name: รังสิมา
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: รอดรัศมี
+    - name: ธีรภัทร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: พริ้งศุลกะ
+    - name: เทอดพงษ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ไชยนันทน์
+    - name: วีระชัย
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วีระเมธีกุล
+    - name: ศิริวรรณ
+      party: ประชาธิปัตย์
+      title: นาง
+      last_name: ปราศจากศัตรู
+    - name: แนน
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: บุณย์ธิดา สมชัย
   adhoc_committee:
     name: ''
     members:
@@ -29018,16 +29568,96 @@
     แต่การดำเนินการยังมีข้อจำกัดในหลายด้านไม่สามารถบังคับใช้ได้อย่างมีประสิทธิภาพเพียงพอ
     การแก้ปัญหายังไม่เป็นระบบและไม่สอดคล้องกับบริบทของแต่ละพื้นที่
   proposal_date: '2019-07-04'
-  voting_date: ''
-  votelog_id: ''
+  voting_date: 31/01/2563
+  votelog_id: '25'
   voting_result: ''
-  select_committee: ''
+  select_committee: กมธ.วิสามัญ พิจารณาศึกษาปัญหาที่ดินและการออกเอกสารสิทธิในที่ดิน สภาผู้แทนฯ
   purposers:
     - name: กนก
       party: ประชาธิปัตย์
       title: ศาสตราจารย์
       last_name: วงษ์ตระหง่าน
-  seconders: []
+  seconders:
+    - name: กรณ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: จาติกวณิช
+    - name: พิมพ์ภัทรา
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: วิชัยกุล
+    - name: สาทิตย์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วงศ์หนองเตย
+    - name: สาคร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เกี่ยวข้อง
+    - name: ธีรภัทร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: พริ้งศุลกะ
+    - name: บัญญัติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เจตนจันทร์
+    - name: วิวรรธน์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: นิลวัชรมณี
+    - name: ภานุ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ศรีบุศยกาญจน์
+    - name: อันวาร์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: สาและ
+    - name: ชินวรณ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: บุณยเกียรติ
+    - name: ชัยชนะ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เดชเดโช
+    - name: เทพไท
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เสนพงศ์
+    - name: เทอดพงษ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ไชยนันทน์
+    - name: พนิต
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วิกิตเศรษฐ์
+    - name: ศรีสมร
+      party: ประชาธิปัตย์
+      title: นาง
+      last_name: รัศมีฤกษ์เศรษฐ์
+    - name: วชิราภรณ์
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: กาญจนะ
+    - name: สุรินทร์
+      party: ประชาธิปัตย์
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
+    - name: ชุมพล
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: จุลใส
+    - name: องอาจ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: คล้ามไพบูลย์
+    - name: วุฒิพงษ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: นามบุตร
   adhoc_committee:
     name: ''
     members:
@@ -31283,7 +31913,87 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: เสนพงศ์
-  seconders: []
+  seconders:
+    - name: ศรีสมร
+      party: ประชาธิปัตย์
+      title: นาง
+      last_name: รัศมีฤกษ์เศรษฐ์
+    - name: สราวุธ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: อ่อนละมัย
+    - name: ประมวล
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: พงศ์ถาวราเดช
+    - name: อัครเดช
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วงษ์พิทักษ์โรจน์
+    - name: วุฒิพงษ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: นามบุตร
+    - name: แนน
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: บุณย์ธิดา สมชัย
+    - name: กันตวรรณ
+      party: ประชาธิปัตย์
+      title: นาง
+      last_name: ตันเถียร
+    - name: พิสิฐ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ลี้อาธรรม
+    - name: สาคร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เกี่ยวข้อง
+    - name: มนตรี
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ปาน้อยนนท์
+    - name: สมชาติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ประดิษฐพร
+    - name: วีระชัย
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วีระเมธีกุล
+    - name: เกียรติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: สิทธีอมร
+    - name: องอาจ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: คล้ามไพบูลย์
+    - name: ธีรภัทร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: พริ้งศุลกะ
+    - name: นริศ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ขำนุรักษ์
+    - name: วิวรรธน์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: นิลวัชรมณี
+    - name: ประกอบ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: รัตนพันธ์
+    - name: ชินวรณ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: บุณยเกียรติ
+    - name: สุรินทร์
+      party: ประชาธิปัตย์
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
   adhoc_committee:
     name: ''
     members:
@@ -34488,16 +35198,96 @@
     ก่อให้เกิดปัญหาความขัดแย้งระหว่างราษฎรกับรัฐหรือราษฎรด้วยกันเองอย่างต่อเนื่อง
     ซึ่งการขาดการบูรณาการที่มีประสิทธิภาพของภาครัฐส่งผลให้เกิดความไม่เป็นธรรมในการถือครองที่ดินและปัญหาการใช้ประโยชน์สูงสุดจากที่ดินที่มีอยู่อย่างจำกัด
   proposal_date: '2019-07-10'
-  voting_date: ''
-  votelog_id: ''
+  voting_date: 31/01/2563
+  votelog_id: '25'
   voting_result: ''
-  select_committee: ''
+  select_committee: กมธ.วิสามัญ พิจารณาศึกษาปัญหาที่ดินและการออกเอกสารสิทธิในที่ดิน สภาผู้แทนฯ
   purposers:
     - name: ธีรภัทร
       party: ประชาธิปัตย์
       title: นาย
       last_name: พริ้งศุลกะ
-  seconders: []
+  seconders:
+    - name: เดชอิศม์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ขาวทอง
+    - name: อัครเดช
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วงษ์พิทักษ์โรจน์
+    - name: สมชาติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ประดิษฐพร
+    - name: วีระชัย
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วีระเมธีกุล
+    - name: สินิตย์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เลิศไกร
+    - name: องอาจ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: คล้ามไพบูลย์
+    - name: สราวุธ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: อ่อนละมัย
+    - name: ชัยชนะ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เดชเดโช
+    - name: สาทิตย์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วงศ์หนองเตย
+    - name: แนน
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: บุณย์ธิดา สมชัย
+    - name: พนิต
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วิกิตเศรษฐ์
+    - name: รังสิมา
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: รอดรัศมี
+    - name: ประมวล
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: พงศ์ถาวราเดช
+    - name: ภานุ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ศรีบุศยกาญจน์
+    - name: เทอดพงษ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ไชยนันทน์
+    - name: ศรีสมร
+      party: ประชาธิปัตย์
+      title: นาง
+      last_name: รัศมีฤกษ์เศรษฐ์
+    - name: สาคร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เกี่ยวข้อง
+    - name: สาธิต
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ปิตุเตชะ
+    - name: อิสสระ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: สมชัย
+    - name: บัญญัติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: บรรทัดฐาน
   adhoc_committee:
     name: ''
     members:
@@ -35140,10 +35930,12 @@
     จึงเห็นควรให้ตั้งคณะกรรมาธิการวิสามัญฯ เพื่อพิจารณา ศึกษา เกี่ยวกับการสูญหาย
     ตาม บาดเจ็บ ในเรื่องนี้ต่อไป
   proposal_date: '2019-09-12'
-  voting_date: ''
-  votelog_id: ''
+  voting_date: 19/12/2562
+  votelog_id: '10'
   voting_result: ''
-  select_committee: ''
+  select_committee: >-
+    กมธ.วิสามัญ พิจารณาศึกษาและแก้ไขปัญหาการละเมิดสิทธิมนุษยชน
+    และการลอบประทุษร้ายประชาชน สภาผู้แทนฯ
   purposers:
     - name: กมลศักดิ์
       party: ประชาชาติ
@@ -36750,7 +37542,87 @@
       party: ชาติไทยพัฒนา
       title: นาย
       last_name: ประเสริฐสุวรรณ
-  seconders: []
+  seconders:
+    - name: เอกราช
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: ช่างเหลา
+    - name: สุชาติ
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: ชมกลิ่น
+    - name: ปฐมพงศ์
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: สูญจันทร์
+    - name: ศิลัมพา
+      party: พลเมืองไทย
+      title: นางสาว
+      last_name: เลิศนุวัฒน์
+    - name: ทัศนียา
+      party: พลังประชารัฐ
+      title: นาง
+      last_name: รัตนเศรษฐ
+    - name: ทรงกลด
+      party: พลังชาติไทย
+      title: พลตรี
+      last_name: ทิพย์รัตน์
+    - name: พิชชารัตน์
+      party: พลังประชารัฐ
+      title: นาง
+      last_name: เลาหพงศ์ชนะ
+    - name: อรรถกร
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: ศิริลัทธยากร
+    - name: ทวิรัฐ
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: รัตนเศรษฐ
+    - name: จักรัตน์
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: พั้วช่วย
+    - name: ชาญวิทย์
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: วิภูศิริ
+    - name: สัญญา
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: นิลสุพรรณ
+    - name: อนันต์
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: ผลอำนวย
+    - name: เสมอกัน
+      party: ชาติไทยพัฒนา
+      title: นาย
+      last_name: เที่ยงธรรม
+    - name: ตรีนุช
+      party: พลังประชารัฐ
+      title: นางสาว
+      last_name: เทียนทอง
+    - name: บุญสิงห์
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: วรินทร์รักษ์
+    - name: นพดล
+      party: ชาติไทยพัฒนา
+      title: นาย
+      last_name: มาตรศรี
+    - name: สินธพ
+      party: ประชาธิปัตย์
+      title: พันโท
+      last_name: แก้วพิจิตร
+    - name: กุลวลี
+      party: พลังประชารัฐ
+      title: นางสาว
+      last_name: นพอมรบดี
+    - name: ภาดาท์
+      party: พลังประชารัฐ
+      title: นางสาว
+      last_name: วรกานนท์
   adhoc_committee:
     name: ''
     members:
@@ -38482,7 +39354,87 @@
       party: พลังประชารัฐ
       title: นาย
       last_name: อาลีอิสเฮาะ
-  seconders: []
+  seconders:
+    - name: ศาสตรา
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: ศรีปาน
+    - name: สุรชาติ
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: ศรีบุศกร
+    - name: พยม
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: พรหมเพชร
+    - name: ภูดิท
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: อินสุวรรณ์
+    - name: กฤษณ์
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: แก้วอยู่
+    - name: ชูศักดิ์
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: คีรีมาศทอง
+    - name: พรชัย
+      party: พลังประชารัฐ
+      title: ผู้ช่วยศาสตราจารย์
+      last_name: อินทร์สุข
+    - name: สุชาติ
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: อุสาหะ
+    - name: ประทวน
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: สุทธิอำนวยเดช
+    - name: เกษม
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: ศุภรานนท์
+    - name: สมบัติ
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: อำนาคะ
+    - name: สาธิต
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: อุ๋ยตระกูล
+    - name: รณเทพ
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: อนุวัฒน์
+    - name: ไพลิน
+      party: พลังประชารัฐ
+      title: นางสาว
+      last_name: เทียนสุวรรณ
+    - name: อรุณ
+      party: พลังประชารัฐ
+      title: ร้อยตำรวจเอก
+      last_name: สวัสดี
+    - name: มานัส
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: อ่อนอ้าย
+    - name: นัทธี
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: ถิ่นสาคู
+    - name: นิพันธ์
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: ศิริธร
+    - name: สุทา
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: ประทีป ณ ถลาง
+    - name: อัครวัฒน์
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: อัศวเหม
   adhoc_committee:
     name: ''
     members:
@@ -38859,10 +39811,10 @@
     การออกเอกสารสิทธิที่ดินทำกินเพื่อการยังชีพและที่อยู่อาศัยให้กับประชาชนมีความล่าช้า
     ปัญหาความขัดแย้งระหว่างหน่วยงานรัฐกับประชาชนในพื้นที่เรื่องแนวเขตที่ดินที่ทับซ้อนกัน
   proposal_date: '2019-07-11'
-  voting_date: ''
-  votelog_id: ''
+  voting_date: 31/01/2563
+  votelog_id: '25'
   voting_result: ''
-  select_committee: ''
+  select_committee: กมธ.วิสามัญ พิจารณาศึกษาปัญหาที่ดินและการออกเอกสารสิทธิในที่ดิน สภาผู้แทนฯ
   purposers:
     - name: สิริพงศ์
       party: ภูมิใจไทย
@@ -38872,7 +39824,87 @@
       party: ภูมิใจไทย
       title: นาย
       last_name: มาไพศาลสิน
-  seconders: []
+  seconders:
+    - name: รังสิกร
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: ทิมาตฤกะ
+    - name: ปกรณ์
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: มุ่งเจริญพร
+    - name: ณัฏฐ์ชนน
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: ศรีก่อเกื้อ
+    - name: มัลลิกา
+      party: ภูมิใจไทย
+      title: นางสาว
+      last_name: จิระพันธุ์วาณิช
+    - name: พิษณุ
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: พลธี
+    - name: ศิริวัฒน์
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: ขจรประศาสน์
+    - name: ภูมิศิษฏ์
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: คงมี
+    - name: สมบูรณ์
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: ซารัมย์
+    - name: ฉลอง
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: เทอดวีระพงศ์
+    - name: วรศิษฎ์
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: เลียงประสิทธิ์
+    - name: มานพ
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: ศรีผึ้ง
+    - name: อำนาจ
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: วิลาวัลย์
+    - name: ชาดา
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: ไทยเศรษฐ์
+    - name: อาสพลธ์
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: สรรณ์ไตรภพ
+    - name: คงกฤษ
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: ฉัตรมาลีรัตน์
+    - name: จักรกฤษณ์
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: ทองศรี
+    - name: ภราดร
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: ปริศนานันทกุล
+    - name: กรวีร์
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: ปริศนานันทกุล
+    - name: เกียรติ
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: เหลืองขจรวิทย์
+    - name: สนอง
+      party: ภูมิใจไทย
+      title: นาย
+      last_name: เทพอักษรณรงค์
   adhoc_committee:
     name: ''
     members:
@@ -42049,7 +43081,83 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: สมชัย
-  seconders: []
+  seconders:
+    - name: ชัยชนะ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เดชเดโช
+    - name: สราวุธ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: อ่อนละมัย
+    - name: สินธพ
+      party: ประชาธิปัตย์
+      title: พันโท
+      last_name: แก้วพิจิตร
+    - name: สุรินทร์
+      party: ประชาธิปัตย์
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
+    - name: สาทิตย์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วงศ์หนองเตย
+    - name: ชุมพล
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: จุลใส
+    - name: บัญญัติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เจตนจันทร์
+    - name: พิมพ์ภัทรา
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: วิชัยกุล
+    - name: จิตภัสร์
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: ตั๊น กฤดากร
+    - name: กรณ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: จาติกวณิช
+    - name: ธีรภัทร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: พริ้งศุลกะ
+    - name: นริศ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ขำนุรักษ์
+    - name: สาคร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เกี่ยวข้อง
+    - name: พนิต
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วิกิตเศรษฐ์
+    - name: วีระชัย
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วีระเมธีกุล
+    - name: วิวรรธน์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: นิลวัชรมณี
+    - name: ศรีสมร
+      party: ประชาธิปัตย์
+      title: นาง
+      last_name: รัศมีฤกษ์เศรษฐ์
+    - name: เกียรติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: สิทธีอมร
+    - name: กันตวรรณ
+      party: ประชาธิปัตย์
+      title: นาง
+      last_name: ตันเถียร
   adhoc_committee:
     name: คณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการบริหารจัดการลุ่มน้ำทั้งระบบ
     members:
@@ -43298,10 +44406,10 @@
     ซึ่งปัญหาดังกล่าวยังไม่ได้รับการแก้ไขอย่างเป็นรูปธรรมจากหน่วยงานภาครัฐที่เกี่ยวข้อง
     จึงส่งผลกระทบต่อความเป็นอยู่และความมั่นคงในการดำรงชีวิตของประชาชน
   proposal_date: '2019-08-07'
-  voting_date: ''
-  votelog_id: ''
+  voting_date: 31/01/2563
+  votelog_id: '25'
   voting_result: ''
-  select_committee: ''
+  select_committee: กมธ.วิสามัญ พิจารณาศึกษาปัญหาที่ดินและการออกเอกสารสิทธิในที่ดิน สภาผู้แทนฯ
   purposers:
     - name: อุบลศักดิ์
       party: เพื่อไทย
@@ -43335,7 +44443,131 @@
       party: เพื่อไทย
       title: นาย
       last_name: วิชยสุทธิ์
-  seconders: []
+  seconders:
+    - name: สุรวิทย์
+      party: เพื่อไทย
+      title: นาย
+      last_name: คนสมบูรณ์
+    - name: เชิดพงศ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ราชป้องขันธ์
+    - name: จิราพร
+      party: เพื่อไทย
+      title: นางสาว
+      last_name: สินธุไพร
+    - name: สรัสนันท์
+      party: เพื่อไทย
+      title: นางสาว
+      last_name: อรรณนพพร
+    - name: ศรัณย์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ทิมสุวรรณ
+    - name: สงวน
+      party: เพื่อไทย
+      title: นาย
+      last_name: พงษ์มณี
+    - name: รังสรรค์
+      party: เพื่อไทย
+      title: นาย
+      last_name: วันไชยธนวงศ์
+    - name: ศิรสิทธิ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: เลิศด้วยลาภ
+    - name: ประเสริฐ
+      party: เพื่อไทย
+      title: นาย
+      last_name: จันทรรวงทอง
+    - name: มนพร
+      party: เพื่อไทย
+      title: นาง
+      last_name: เจริญศรี
+    - name: โกศล
+      party: เพื่อไทย
+      title: นาย
+      last_name: ปัทมะ
+    - name: พรพิมล
+      party: เพื่อไทย
+      title: นางสาว
+      last_name: ธรรมสาร
+    - name: จิรทัศ
+      party: เพื่อไทย
+      title: นาย
+      last_name: ไกรเดชา
+    - name: ศุภชัย
+      party: เพื่อไทย
+      title: นาย
+      last_name: นพขำ
+    - name: กิตติศักดิ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: คณาสวัสดิ์
+    - name: จิรพงษ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ทรงวัชราภรณ์
+    - name: สกุณา
+      party: เพื่อไทย
+      title: นางสาว
+      last_name: สาระนันท์
+    - name: เอกชัย
+      party: เพื่อไทย
+      title: นาย
+      last_name: ทรงอำนาจเจริญ
+    - name: นพคุณ
+      party: เพื่อไทย
+      title: นาย
+      last_name: รัฐผไท
+    - name: พีระเพชร
+      party: เพื่อไทย
+      title: นาย
+      last_name: ศิริกุล
+    - name: ครูมานิตย์
+      party: เพื่อไทย
+      title: นาย
+      last_name: สังข์พุ่ม
+    - name: ไตรรงค์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ติธรรม
+    - name: ไชยา
+      party: เพื่อไทย
+      title: นาย
+      last_name: พรหมา
+    - name: บุญรื่น
+      party: เพื่อไทย
+      title: นาง
+      last_name: ศรีธเรศ
+    - name: เทียบจุฑา
+      party: เพื่อไทย
+      title: นาง
+      last_name: ขาวขำ
+    - name: อาภรณ์
+      party: เพื่อไทย
+      title: นาง
+      last_name: สาราคำ
+    - name: จุฑาพัตธน์
+      party: เพื่อไทย
+      title: นาง
+      last_name: เมนะสวัสดิ์
+    - name: พรเพ็ญ
+      party: เพื่อไทย
+      title: นาง
+      last_name: บุญศิริวัฒนกุล
+    - name: อนุรักษ์
+      party: เพื่อไทย
+      title: นาง
+      last_name: บุญศล
+    - name: ขจิตร
+      party: เพื่อไทย
+      title: นาย
+      last_name: ชัยนิคม
+    - name: ไพจิต
+      party: เพื่อไทย
+      title: นาย
+      last_name: ศรีวรขาน
   adhoc_committee:
     name: ''
     members:
@@ -47316,7 +48548,87 @@
       party: รวมพลังประชาชาติไทย
       title: นางสาว
       last_name: ทับสุวรรณ
-  seconders: []
+  seconders:
+    - name: เชิงชาย
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: ชาลีรินทร์
+    - name: สมศักดิ์
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: พันธ์เกษม
+    - name: ภูดิท
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: อินสุวรรณ์
+    - name: สะถิระ
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: เผือกประพันธุ์
+    - name: ทวิรัฐ
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: รัตนเศรษฐ
+    - name: อัฏฐพล
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: โพธิพิพิธ
+    - name: ประสิทธิ์
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: มะหะหมัด
+    - name: กานต์กนิษฐ์
+      party: พลังประชารัฐ
+      title: นางสาว
+      last_name: แห้วสันตติ
+    - name: มงคลกิตติ์
+      party: ไทยศรีวิไลย์
+      title: นาย
+      last_name: สุขสินธารานนท์
+    - name: เขตรัฐ
+      party: รวมพลังประชาชาติไทย
+      title: นาย
+      last_name: เหล่าธรรมทัศน์
+    - name: จุฑาฑัตต
+      party: รวมพลังประชาชาติไทย
+      title: นางสาว
+      last_name: เหล่าธรรมทัศน์
+    - name: เพชรชมพู
+      party: รวมพลังประชาชาติไทย
+      title: นางสาว
+      last_name: กิจบูรณะ
+    - name: จองชัย
+      party: พลังประชารัฐ
+      title: ร้อยเอก
+      last_name: วงศ์ทรายทอง
+    - name: สุรชาติ
+      party: พลังประชารัฐ
+      title: นาย
+      last_name: ศรีบุศกร
+    - name: อิสระ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เสรีวัฒนวุฒิ
+    - name: พัชรินทร์
+      party: พลังประชารัฐ
+      title: นางสาว
+      last_name: ซำศิริพงษ์
+    - name: บัญญัติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เจตนจันทร์
+    - name: แนน
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: บุณย์ธิดา สมชัย
+    - name: กนก
+      party: ประชาธิปัตย์
+      title: ศาสตราจารย์
+      last_name: วงษ์ตระหง่าน
+    - name: สาคร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เกี่ยวข้อง
   adhoc_committee:
     name: ''
     members:
@@ -50231,7 +51543,87 @@
       party: ประชาธิปัตย์
       title: นาย
       last_name: พริ้งศุลกะ
-  seconders: []
+  seconders:
+    - name: สาคร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เกี่ยวข้อง
+    - name: มนตรี
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ปาน้อยนนท์
+    - name: สินิตย์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เลิศไกร
+    - name: แนน
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: บุณย์ธิดา สมชัย
+    - name: วิวรรธน์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: นิลวัชรมณี
+    - name: ภานุ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ศรีบุศยกาญจน์
+    - name: วุฒิพงษ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: นามบุตร
+    - name: ชัยชนะ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เดชเดโช
+    - name: สุทัศน์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เงินหมื่น
+    - name: บัญญัติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: บรรทัดฐาน
+    - name: อิสสระ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: สมชัย
+    - name: เดชอิศม์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ขาวทอง
+    - name: ประกอบ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: รัตนพันธ์
+    - name: องอาจ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: คล้ามไพบูลย์
+    - name: อัครเดช
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วงษ์พิทักษ์โรจน์
+    - name: เทอดพงษ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ไชยนันทน์
+    - name: ชัยวุฒิ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: บรรณวัฒน์
+    - name: สุณัฐชา
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: โล่สถาพรพิพิธ
+    - name: นริศ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ขำนุรักษ์
+    - name: พนิต
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วิกิตเศรษฐ์
   adhoc_committee:
     name: ''
     members:
@@ -50854,7 +52246,87 @@
       party: เพื่อไทย
       title: นาย
       last_name: คณาสวัสดิ์
-  seconders: []
+  seconders:
+    - name: ศรัณย์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ทิมสุวรรณ
+    - name: สิงหภณ
+      party: เพื่อไทย
+      title: นาย
+      last_name: ดีนาง
+    - name: ณัฐพงษ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: สุปริยศิลป์
+    - name: คุณากร
+      party: เพื่อไทย
+      title: นาย
+      last_name: ปรีชาชนะชัย
+    - name: สยาม
+      party: เพื่อไทย
+      title: นาย
+      last_name: หัตถสงเคราะห์
+    - name: โอชิษฐ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: เกียรติก้องชูชัย
+    - name: ภาควัต
+      party: เพื่อไทย
+      title: นาย
+      last_name: ศรีสุรพล
+    - name: นพ
+      party: เพื่อไทย
+      title: นาย
+      last_name: ชีวานันท์
+    - name: วันนิวัติ
+      party: เพื่อไทย
+      title: นาย
+      last_name: สมบูรณ์
+    - name: กฤษฎา
+      party: เพื่อไทย
+      title: นาย
+      last_name: ตันเทอดทิตย์
+    - name: ชนก
+      party: เพื่อไทย
+      title: นางสาว
+      last_name: จันทาทอง
+    - name: ชัยยันต์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ผลสุวรรณ์
+    - name: จิรวัฒน์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ศิริพานิชย์
+    - name: เอกธนัช
+      party: เพื่อไทย
+      title: นาย
+      last_name: อินทร์รอด
+    - name: พีระเพชร
+      party: เพื่อไทย
+      title: นาย
+      last_name: ศิริกุล
+    - name: ภณณัฏฐ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ศรีอินทร์สุทธิ์
+    - name: พรเทพ
+      party: เพื่อไทย
+      title: นาย
+      last_name: วิสุทธิ์วัฒนศักดิ์
+    - name: องอาจ
+      party: เพื่อไทย
+      title: นาย
+      last_name: วงษ์ประยูร
+    - name: พรเพ็ญ
+      party: เพื่อไทย
+      title: นาง
+      last_name: บุญศิริวัฒนกุล
+    - name: มนพร
+      party: เพื่อไทย
+      title: นาง
+      last_name: เจริญศรี
   adhoc_committee:
     name: ''
     members:
@@ -51524,7 +52996,87 @@
       party: ประชาธิปัตย์
       title: นางสาว
       last_name: รอดรัศมี
-  seconders: []
+  seconders:
+    - name: เทพไท
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เสนพงศ์
+    - name: พิสิฐ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ลี้อาธรรม
+    - name: อัศวิน
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วิภูศิริ
+    - name: ชัยวุฒิ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: บรรณวัฒน์
+    - name: วิวรรธน์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: นิลวัชรมณี
+    - name: อิสสระ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: สมชัย
+    - name: อัครเดช
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วงษ์พิทักษ์โรจน์
+    - name: ศรีสมร
+      party: ประชาธิปัตย์
+      title: นาง
+      last_name: รัศมีฤกษ์เศรษฐ์
+    - name: อภิชัย
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เตชะอุบล
+    - name: นริศ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ขำนุรักษ์
+    - name: สาคร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เกี่ยวข้อง
+    - name: ธีรภัทร
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: พริ้งศุลกะ
+    - name: ชุมพล
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: จุลใส
+    - name: สินิตย์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เลิศไกร
+    - name: สุทัศน์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เงินหมื่น
+    - name: เทอดพงษ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ไชยนันทน์
+    - name: สาทิตย์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วงศ์หนองเตย
+    - name: องอาจ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: คล้ามไพบูลย์
+    - name: พนิต
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วิกิตเศรษฐ์
+    - name: บัญญัติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: บรรทัดฐาน
   adhoc_committee:
     name: ''
     members:
@@ -54773,16 +56325,106 @@
     และหากรัฐไม่สามารถจับกุมตัวผู้กระทำความผิดมาดำเนินคดีได้
     อาจขยายเป็นความขัดแย้งในสังคม เห็นสมควรให้ตั้งคณะกรรมาธิการวิสามัญฯ
   proposal_date: '2019-07-02'
-  voting_date: ''
-  votelog_id: ''
+  voting_date: 19/12/2562
+  votelog_id: '10'
   voting_result: ''
-  select_committee: ''
+  select_committee: >-
+    กมธ.วิสามัญ พิจารณาศึกษาและแก้ไขปัญหาการละเมิดสิทธิมนุษยชน
+    และการลอบประทุษร้ายประชาชน สภาผู้แทนฯ
   purposers:
     - name: จิรายุ
       party: เพื่อไทย
       title: นาย
       last_name: ห่วงทรัพย์
-  seconders: []
+  seconders:
+    - name: การุณ
+      party: เพื่อไทย
+      title: นาย
+      last_name: โหสกุล
+    - name: ชลน่าน
+      party: เพื่อไทย
+      title: นาย
+      last_name: ศรีแก้ว
+    - name: จิราพร
+      party: เพื่อไทย
+      title: นางสาว
+      last_name: สินธุไพร
+    - name: สรัสนันท์
+      party: เพื่อไทย
+      title: นางสาว
+      last_name: อรรณนพพร
+    - name: เอกธนัช
+      party: เพื่อไทย
+      title: นาย
+      last_name: อินทร์รอด
+    - name: คุณากร
+      party: เพื่อไทย
+      title: นาย
+      last_name: ปรีชาชนะชัย
+    - name: จุลพันธ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: อมรวิวัฒน์
+    - name: จตุพร
+      party: เพื่อไทย
+      title: นาย
+      last_name: เจริญเชื้อ
+    - name: ณัฐพงษ์
+      party: เพื่อไทย
+      title: นาย
+      last_name: สุปริยศิลป์
+    - name: จิรวัฒน์
+      party: เพื่อไทย
+      title: นาย
+      last_name: ศิริพานิชย์
+    - name: นิรมิต
+      party: เพื่อไทย
+      title: นาย
+      last_name: สุจารี
+    - name: ประเสริฐ
+      party: เพื่อไทย
+      title: นาย
+      last_name: จันทรรวงทอง
+    - name: เทียบจุฑา
+      party: เพื่อไทย
+      title: นาง
+      last_name: ขาวขำ
+    - name: บุญรื่น
+      party: เพื่อไทย
+      title: นาง
+      last_name: ศรีธเรศ
+    - name: สงวน
+      party: เพื่อไทย
+      title: นาย
+      last_name: พงษ์มณี
+    - name: ภาควัต
+      party: เพื่อไทย
+      title: นาย
+      last_name: ศรีสุรพล
+    - name: ชวลิต
+      party: เพื่อไทย
+      title: นาย
+      last_name: วิชยสุทธิ์
+    - name: จักรพล
+      party: เพื่อไทย
+      title: นาย
+      last_name: ตั้งสุทธิธรรม
+    - name: ธีรรัตน์
+      party: เพื่อไทย
+      title: นางสาว
+      last_name: สำเร็จวาณิชย์
+    - name: นพ
+      party: เพื่อไทย
+      title: นาย
+      last_name: ชีวานันท์
+    - name: องอาจ
+      party: เพื่อไทย
+      title: นาย
+      last_name: วงษ์ประยูร
+    - name: กฤษฎา
+      party: เพื่อไทย
+      title: นาย
+      last_name: ตันเทอดทิตย์
   adhoc_committee:
     name: ''
     members:
@@ -54961,10 +56603,12 @@
     ตรวจสอบ สอบสวน
     แสงหาแนวทางป้องกันและแก้ไขปัญหาดังกล่าวและส่งผลการพิจารณาให้รัฐบาลรับไปดำเนินการต่อไป
   proposal_date: '2019-07-03'
-  voting_date: ''
-  votelog_id: ''
+  voting_date: 19/12/2562
+  votelog_id: '10'
   voting_result: ''
-  select_committee: ''
+  select_committee: >-
+    กมธ.วิสามัญ พิจารณาศึกษาและแก้ไขปัญหาการละเมิดสิทธิมนุษยชน
+    และการลอบประทุษร้ายประชาชน สภาผู้แทนฯ
   purposers:
     - name: สมมุติ
       party: ประชาชาติ
@@ -55872,16 +57516,96 @@
     ก่อให้เกิดปัญหาความขัดแย้งระหว่างราษฎรกับรัฐหรือราษฎรด้วยกันเองอย่างต่อเนื่อง
     ซึ่งการขาดการบูรณาการที่มีประสิทธิภาพของภาครัฐส่งผลให้เกิดความไม่เป็นธรรมในการถือครองที่ดินและปัญหาการใช้ประโยชน์สูงสุดจากที่ดินที่มีอยู่อย่างจำกัด
   proposal_date: '2019-09-12'
-  voting_date: ''
-  votelog_id: ''
+  voting_date: 31/01/2563
+  votelog_id: '25'
   voting_result: ''
-  select_committee: ''
+  select_committee: กมธ.วิสามัญ พิจารณาศึกษาปัญหาที่ดินและการออกเอกสารสิทธิในที่ดิน สภาผู้แทนฯ
   purposers:
     - name: สาคร
       party: ประชาธิปัตย์
       title: นาย
       last_name: เกี่ยวข้อง
-  seconders: []
+  seconders:
+    - name: วุฒิพงษ์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: นามบุตร
+    - name: ศรีสมร
+      party: ประชาธิปัตย์
+      title: นาง
+      last_name: รัศมีฤกษ์เศรษฐ์
+    - name: พิมพ์ภัทรา
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: วิชัยกุล
+    - name: อัครเดช
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: วงษ์พิทักษ์โรจน์
+    - name: แนน
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: บุณย์ธิดา สมชัย
+    - name: สินธพ
+      party: ประชาธิปัตย์
+      title: พันโท
+      last_name: แก้วพิจิตร
+    - name: วชิราภรณ์
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: กาญจนะ
+    - name: สมชาติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ประดิษฐพร
+    - name: สุรินทร์
+      party: ประชาธิปัตย์
+      title: พลตำรวจตรี
+      last_name: ปาลาเร่
+    - name: วิวรรธน์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: นิลวัชรมณี
+    - name: นริศ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ขำนุรักษ์
+    - name: สินิตย์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เลิศไกร
+    - name: สุณัฐชา
+      party: ประชาธิปัตย์
+      title: นางสาว
+      last_name: โล่สถาพรพิพิธ
+    - name: อันวาร์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: สาและ
+    - name: ธารา
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ปิตุเตชะ
+    - name: ภานุ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ศรีบุศยกาญจน์
+    - name: เดชอิศม์
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: ขาวทอง
+    - name: บัญญัติ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: เจตนจันทร์
+    - name: ศิริวรรณ
+      party: ประชาธิปัตย์
+      title: นาง
+      last_name: ปราศจากศัตรู
+    - name: ชัยวุฒิ
+      party: ประชาธิปัตย์
+      title: นาย
+      last_name: บรรณวัฒน์
   adhoc_committee:
     name: ''
     members:
