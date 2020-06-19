@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, navigate } from "gatsby"
+import { navigate } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -191,15 +191,20 @@ const cssMotionImage = {
 
 const IndexPage = ({ data }) => {
   const handleTopicClick = topic => {
-    if (process.env.GATSBY_ENV !== "production") {
+    if (
+      process.env.GATSBY_ENV !== "production" ||
+      process.env.GATSBY_ENV === "development"
+    ) {
       navigate(`/${topic}`)
       return
     }
     if (!localStorage.ladingPageVisited) {
       try {
-        window.gtag("event", "Click", {
-          event_category: "Topic",
-          event_label: `${topic}`,
+        window.gtag("config", "UA-161190279-3", {
+          custom_map: { dimension1: "Topic" },
+        })
+        window.gtag("event", "Topic", {
+          Topic: `${topic}`,
           event_callback: function() {
             localStorage.setItem("ladingPageVisited", true)
             navigate(`/${topic}`)
@@ -232,15 +237,15 @@ const IndexPage = ({ data }) => {
             </p>
           </div>
           <div className="link">
-            <Link
-              css={{ ...cssNextButton }}
+            <a
+              css={{ ...cssNextButton, cursor: "pointer" }}
               onClick={() => handleTopicClick("people")}
             >
               <span>ดูข้อมูลผู้แทน</span>
               <i>
                 <ArrowRightIcon></ArrowRightIcon>
               </i>
-            </Link>
+            </a>
           </div>
           <div className="image" css={{ ...cssPeopleImage }}>
             <Img fluid={data.peopleImage.childImageSharp.fluid} />
@@ -258,15 +263,15 @@ const IndexPage = ({ data }) => {
             </p>
           </div>
           <div className="link">
-            <Link
-              css={{ ...cssNextButton }}
+            <a
+              css={{ ...cssNextButton, cursor: "pointer" }}
               onClick={() => handleTopicClick("motions")}
             >
               <span>ดูข้อมูลญัตติ</span>
               <i>
                 <ArrowRightIcon></ArrowRightIcon>
               </i>
-            </Link>{" "}
+            </a>{" "}
           </div>
           <div className="image" css={{ ...cssMotionImage }}>
             <Img fluid={data.motionImage.childImageSharp.fluid} />
