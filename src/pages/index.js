@@ -222,7 +222,7 @@ const IndexPage = ({ data }) => {
   function setClientId(callback) {
     window.gtag("config", process.env.GTAG_CODE, {
       custom_map: {
-        dimension2: "clientId",
+        dimension3: "clientId",
       },
     })
     callback()
