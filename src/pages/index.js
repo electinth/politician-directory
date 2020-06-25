@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { navigate } from "gatsby"
 import Img from "gatsby-image"
 
@@ -200,11 +200,12 @@ const IndexPage = ({ data }) => {
     }
     if (!localStorage.ladingPageVisited) {
       try {
-        window.gtag("config", "UA-161190279-3", {
-          custom_map: { dimension1: "Topic" },
+        window.gtag("set", {
+          custom_map: { dimension1: "focused_topic" },
         })
         window.gtag("event", "Topic", {
-          Topic: `${topic}`,
+          focused_topic: topic, // custom dimension1
+          event_label: topic,
           event_callback: function() {
             localStorage.setItem("ladingPageVisited", true)
             navigate(`/${topic}`)
@@ -217,6 +218,28 @@ const IndexPage = ({ data }) => {
       navigate(`/${topic}`)
     }
   }
+
+  function setClientId(callback) {
+    window.gtag("config", process.env.GTAG_CODE, {
+      custom_map: {
+        dimension2: "clientId",
+      },
+    })
+    callback()
+  }
+
+  function setLocalStorageClientId() {
+    localStorage.setItem("setClientId", true)
+  }
+
+  useEffect(() => {
+    if (process.env.GATSBY_ENV === "production") {
+      if (!localStorage.setClientId) {
+        setClientId(setLocalStorageClientId)
+      }
+    }
+  }, [])
+
   return (
     <Layout
       pageStyles={{
