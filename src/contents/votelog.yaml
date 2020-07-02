@@ -1,6 +1,6 @@
 - id: '1'
   title: ลงมติเลือกนายกรัฐมนตรี
-  is_active: false
+  is_active: true
   en:
     title: Prime Minister Approval
     legal_title: >-
@@ -384,7 +384,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4162
 - id: '7'
   title: ตั้ง กมธ.วิสามัญศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
-  is_active: true
+  is_active: false
   en:
     title: ''
     legal_title: ''
@@ -750,7 +750,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4193
 - id: '15'
   title: ตั้ง กมธ.วิสามัญ ศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
-  is_active: true
+  is_active: false
   en:
     title: ''
     legal_title: ''
@@ -794,7 +794,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4142
 - id: '16'
   title: ตั้ง กมธ.วิสามัญ ศึกษาการต่อสัญญาสัมปทานทางด่วนและรถไฟฟ้าบีทีเอส
-  is_active: true
+  is_active: false
   en:
     title: ''
     legal_title: ''
@@ -838,7 +838,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4144
 - id: '17'
   title: ตั้ง กมธ. วิสามัญ ศึกษาปัญหาหนี้ กยศ.
-  is_active: true
+  is_active: false
   en:
     title: ''
     legal_title: ''
@@ -884,7 +884,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4176
 - id: '18'
   title: ตั้ง กมธ. วิสามัญ ศึกษาปัญหาการข่มขืนกระทำชำเรา
-  is_active: true
+  is_active: false
   en:
     title: ''
     legal_title: ''
@@ -916,7 +916,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4179
 - id: '19'
   title: ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบของการใช้กัญชาในประเทศไทย
-  is_active: true
+  is_active: false
   en:
     title: ''
     legal_title: ''
@@ -949,7 +949,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4180
 - id: '20'
   title: ตั้ง กมธ.วิสามัญ พิจารณาศึกษาการขุดคลองไทย
-  is_active: true
+  is_active: false
   en:
     title: ''
     legal_title: ''
@@ -1000,7 +1000,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
 - id: '21'
   title: ตั้ง กมธ.วิสามัญ พิจารณาราคาหนังสัตว์ โค – กระบือ ตกต่ำ
-  is_active: true
+  is_active: false
   en:
     title: ''
     legal_title: ''
@@ -1043,7 +1043,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
 - id: '22'
   title: ตั้ง กมธ.วิสามัญ พิจารณาปัญหาหนี้และค่าครองชีพสูงจากราคาน้ำมัน แก๊ส ไฟฟ้า
-  is_active: true
+  is_active: false
   en:
     title: ''
     legal_title: ''
@@ -1087,7 +1087,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
 - id: '23'
   title: ตั้ง กมธ. วิสามัญศึกษาปัญหาฝุ่น PM 2.5
-  is_active: true
+  is_active: false
   en:
     title: ''
     legal_title: ''
@@ -1120,7 +1120,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4183
 - id: '24'
   title: ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบจาก พรบ. e-Payment
-  is_active: true
+  is_active: false
   en:
     title: ''
     legal_title: ''
@@ -1155,7 +1155,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4188
 - id: '25'
   title: ตั้ง กมธ. วิสามัญ แก้ไขปัญหาที่ดินทำกิน
-  is_active: true
+  is_active: false
   en:
     title: ''
     legal_title: ''
