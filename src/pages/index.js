@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { navigate } from "gatsby"
 import Img from "gatsby-image"
 
@@ -218,6 +218,28 @@ const IndexPage = ({ data }) => {
       navigate(`/${topic}`)
     }
   }
+
+  function setClientId(callback) {
+    window.gtag("config", process.env.GTAG_CODE, {
+      custom_map: {
+        dimension3: "clientId",
+      },
+    })
+    callback()
+  }
+
+  function setLocalStorageClientId() {
+    localStorage.setItem("setClientId", true)
+  }
+
+  useEffect(() => {
+    if (process.env.GATSBY_ENV === "production") {
+      if (!localStorage.setClientId) {
+        setClientId(setLocalStorageClientId)
+      }
+    }
+  }, [])
+
   return (
     <Layout
       pageStyles={{
