@@ -47,6 +47,18 @@ curl -s -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRyM5D8LOVvjGICiUdbQ
   | sed '1d' > tmp/translation.csv
 node -r esm csv2yaml tmp/translation.csv >> build.log
 
+# Senate Votelog
+echo "senate_votelog"
+curl -s -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRyM5D8LOVvjGICiUdbQ4pPGdudulFq-uoek_ATkLOTi7AI9qMH7FhlwONC4N-TVLjokombSYfDu6G5/pub?gid=804641409&single=true&output=csv' \
+  | sed '1d' > tmp/senate_votelog.csv
+node -r esm csv2yaml tmp/senate_votelog.csv >> build.log
+
+# Senate Vote
+echo "senate_vote"
+curl -s -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRyM5D8LOVvjGICiUdbQ4pPGdudulFq-uoek_ATkLOTi7AI9qMH7FhlwONC4N-TVLjokombSYfDu6G5/pub?gid=1224052418&single=true&output=csv' \
+  | sed '1d' > tmp/senate_vote.csv
+node -r esm csv2yaml tmp/senate_vote.csv >> build.log
+
 # Move
 mv tmp/*.yaml ../src/contents
 rm -rf tmp/
