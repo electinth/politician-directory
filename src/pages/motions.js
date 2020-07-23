@@ -53,11 +53,7 @@ const IndexPage = ({ data }) => {
     })
   )
 
-  const STATUS_COLOR = color =>
-    ({
-      ไม่บรรจุวาระ: "lightgrey",
-      ...statusColors,
-    }[color])
+  const STATUS_COLOR = color => statusColors[color]
   const statusGroupCount = _.groupBy(data.motions.edges, d => d.node.status)
   const statusdata = Object.entries(statusGroupCount)
     .map(([status, motions]) => ({

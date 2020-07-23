@@ -9,6 +9,7 @@ export const displayTexts = {
 }
 
 export const statusColors = {
+  ไม่บรรจุวาระ: "lightgrey",
   "1. รอบรรจุวาระ": "#E0A4C7",
   "2. สภาผู้แทนพิจารณา": "#A8DA9C",
   "3. ตั้ง กมธ. วิสามัญ": "#AFB0F5",

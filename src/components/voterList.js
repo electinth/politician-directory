@@ -129,21 +129,16 @@ class ListCard extends Component {
 
 export default ({ data }) => {
   return (
-    <section>
-      <div className="container">
-        <h1>บันทึกคะแนนเสียง</h1>
-        <div
-          css={css`
-            display: flex;
-            flex-wrap: wrap;
-          `}
-        >
-          <ListCard voter={data[0]} choice="เห็นด้วย" />
-          <ListCard voter={data[1]} choice="ไม่เห็นด้วย" />
-          <ListCard voter={data[2]} choice="งดออกเสียง" />
-          <ListCard voter={data[3]} choice="ไม่ลงคะแนน" />
-        </div>
-      </div>
-    </section>
+    <div
+      css={css`
+        display: flex;
+        flex-wrap: wrap;
+      `}
+    >
+      <ListCard voter={data[0]} choice="เห็นด้วย" />
+      <ListCard voter={data[1]} choice="ไม่เห็นด้วย" />
+      <ListCard voter={data[2]} choice="งดออกเสียง" />
+      <ListCard voter={data[3]} choice="ไม่ลงคะแนน" />
+    </div>
   )
 }

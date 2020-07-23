@@ -76,9 +76,11 @@ export const query = graphql`
     }
 
     votelog: votelogYaml(id: { glob: $votelog_id }) {
+      passed
+      is_no_vote
+      no_vote_description
       disprove
       approve
-      passed
       absent
       abstained
     }

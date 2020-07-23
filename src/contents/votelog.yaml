@@ -1,6 +1,6 @@
 - id: '1'
   title: ลงมติเลือกนายกรัฐมนตรี
-  is_active: false
+  is_active: true
   en:
     title: Prime Minister Approval
     legal_title: >-
@@ -16,10 +16,12 @@
   prayuth: '500'
   thanathorn: '244'
   passed: false
+  is_no_vote: false
+  no_vote_description: ''
   approve: null
   disprove: null
   abstained: 3
-  field16: '0'
+  field18: '0'
   total_voter: 747
   absent: 1
   total_member: 748
@@ -67,10 +69,12 @@
   prayuth: ''
   thanathorn: ''
   passed: false
+  is_no_vote: false
+  no_vote_description: ''
   approve: 101
   disprove: 365
   abstained: 13
-  field16: '0'
+  field18: '0'
   total_voter: 479
   absent: 20
   total_member: 499
@@ -119,10 +123,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: false
+  no_vote_description: ''
   approve: 412
   disprove: 25
   abstained: 20
-  field16: '0'
+  field18: '0'
   total_voter: 457
   absent: 40
   total_member: 497
@@ -168,10 +174,12 @@
   prayuth: ''
   thanathorn: ''
   passed: false
+  is_no_vote: false
+  no_vote_description: ''
   approve: 224
   disprove: 231
   abstained: 2
-  field16: '0'
+  field18: '0'
   total_voter: 457
   absent: 40
   total_member: 497
@@ -243,10 +251,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: false
+  no_vote_description: ''
   approve: 374
   disprove: 70
   abstained: 2
-  field16: '0'
+  field18: '0'
   total_voter: 446
   absent: 40
   total_member: 486
@@ -315,10 +325,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: false
+  no_vote_description: ''
   approve: 251
   disprove: 0
   abstained: 234
-  field16: '0'
+  field18: '0'
   total_voter: 485
   absent: 12
   total_member: 497
@@ -372,7 +384,7 @@
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4162
 - id: '7'
   title: ตั้ง กมธ.วิสามัญศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
-  is_active: true
+  is_active: false
   en:
     title: ''
     legal_title: ''
@@ -384,10 +396,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: 400
   disprove: 0
   abstained: 0
-  field16: '0'
+  field18: '0'
   total_voter: 400
   absent: 97
   total_member: 497
@@ -418,10 +432,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: false
+  no_vote_description: ''
   approve: 392
   disprove: 0
   abstained: 1
-  field16: '1'
+  field18: '1'
   total_voter: 394
   absent: 104
   total_member: 498
@@ -463,10 +479,12 @@
   prayuth: ''
   thanathorn: ''
   passed: false
+  is_no_vote: false
+  no_vote_description: ''
   approve: 5
   disprove: 244
   abstained: 6
-  field16: '0'
+  field18: '0'
   total_voter: 255
   absent: 243
   total_member: 498
@@ -518,10 +536,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: false
+  no_vote_description: ''
   approve: 411
   disprove: 0
   abstained: 2
-  field16: '1'
+  field18: '1'
   total_voter: 414
   absent: 84
   total_member: 498
@@ -565,10 +585,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: false
+  no_vote_description: ''
   approve: 240
   disprove: 78
   abstained: 150
-  field16: '1'
+  field18: '1'
   total_voter: 469
   absent: 30
   total_member: 499
@@ -595,10 +617,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: false
+  no_vote_description: ''
   approve: 354
   disprove: 0
   abstained: 2
-  field16: '0'
+  field18: '0'
   total_voter: 356
   absent: 142
   total_member: 498
@@ -642,10 +666,12 @@
   prayuth: ''
   thanathorn: ''
   passed: false
+  is_no_vote: false
+  no_vote_description: ''
   approve: 10
   disprove: 343
   abstained: 2
-  field16: '0'
+  field18: '0'
   total_voter: 355
   absent: 142
   total_member: 497
@@ -689,10 +715,12 @@
   prayuth: ''
   thanathorn: ''
   passed: false
+  is_no_vote: false
+  no_vote_description: ''
   approve: 216
   disprove: 242
   abstained: 2
-  field16: '0'
+  field18: '0'
   total_voter: 460
   absent: 38
   total_member: 498
@@ -733,13 +761,15 @@
   prayuth: ''
   thanathorn: ''
   passed: true
-  approve: null
-  disprove: null
-  abstained: null
-  field16: ''
-  total_voter: null
-  absent: null
-  total_member: null
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
+  approve: 433
+  disprove: 0
+  abstained: 0
+  field18: '0'
+  total_voter: 433
+  absent: 64
+  total_member: 497
   description_th: >-
     จากญัตติด่วนที่ ส.ส. ทั้งฝ่ายรัฐบาลและฝ่ายค้าน
     พูดถึงปัญหาราคาผลผลิตทางการเกษตรที่ตกต่ำประจำทุกปี รวมถึงสินค้าการประมง
@@ -777,10 +807,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -819,10 +851,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -862,10 +896,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -893,10 +929,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -922,10 +960,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -971,10 +1011,13 @@
   prayuth: ''
   thanathorn: ''
   passed: false
+  is_no_vote: true
+  no_vote_description: >-
+    ที่ประชุมลงมติเห็นชอบให้ส่งงคณะกรรมาธิการแก้ไขปัญหาหนี้สินแห่งชาติพิจารณาศึกษาญัตติดังกล่าว
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -1013,10 +1056,13 @@
   prayuth: ''
   thanathorn: ''
   passed: false
+  is_no_vote: true
+  no_vote_description: >-
+    ที่ประชุมลงมติเห็นชอบให้ส่งงคณะกรรมาธิการการเกษตรและสหกรณ์พิจารณาศึกษาญัตติดังกล่าว
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -1054,10 +1100,12 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
@@ -1087,19 +1135,54 @@
   prayuth: ''
   thanathorn: ''
   passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
   approve: null
   disprove: null
   abstained: null
-  field16: ''
+  field18: ''
   total_voter: null
   absent: null
   total_member: null
   description_th: ''
   description_en: ''
   document:
-    - title: ใบประมวลผลการลงมติ
+    - title: ''
       link: ''
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4188
+- id: '25'
+  title: ตั้ง กมธ. วิสามัญ แก้ไขปัญหาที่ดินทำกิน
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาหามาตรการเพื่อแก้ไขปัญหาที่ดินทำกินของประชาชนอย่างครบถ้วนเป็นระบบ
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2020-01-31'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
+  approve: null
+  disprove: null
+  abstained: null
+  field18: ''
+  total_voter: null
+  absent: null
+  total_member: null
+  description_th: ''
+  description_en: ''
+  document:
+    - title: บันทึกการออกเสียงลงคะแนนของ ส.ส.
+      link: >-
+        https://drive.google.com/file/d/1nN_FFX-0sTRVoIxrQH4aSh0zQVGLWy1D/view?usp=sharing
+    - title: ''
+      link: ''
+  reference: >-
+    https://drive.google.com/file/d/1nN_FFX-0sTRVoIxrQH4aSh0zQVGLWy1D/view?usp=sharing

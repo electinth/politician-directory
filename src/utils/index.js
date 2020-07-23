@@ -374,7 +374,7 @@ export function loadCategoryStats(data) {
 
 export function filterVote(peopleVotelog, key, value) {
   return _.filter(peopleVotelog, o => {
-    return _.find(o.votelog || [], p => p.key === key).value === value
+    return _.get(_.find(o.votelog || [], p => p.key === key), "value") === value
   })
 }
 
@@ -410,7 +410,10 @@ export function joinPeopleVotelog(people, peopleVotelogs, votelogs) {
 export function calculateVoteLog(votelog) {
   const { approve, disprove, abstained, absent } = votelog
   const total_voter = approve + disprove + abstained + absent
-  const passed = (total_voter > 0 ? approve / total_voter : 0) >= 0.5
+  // Stop calculating passed flag,
+  // we'll use whatever in the "passed" field to accommodate "is_unanimous" case
+  const passed = votelog.passed
+  // const passed = (total_voter > 0 ? approve / total_voter : 0) >= 0.5
   return {
     passed,
     total_voter,

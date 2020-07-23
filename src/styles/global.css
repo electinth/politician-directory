@@ -1,7 +1,7 @@
 :root {
   font-size: 62.5%;
 
-  --ff-text: "Noto Sans Thai", "Thonburi", sans-serif;
+  --ff-text: "Noto Sans", "Noto Sans Thai", "Thonburi", sans-serif;
   --ff-title: "The Matter";
   --ff-footer: "Noto Sans", "Noto Sans Thai", "Thonburi", sans-serif;
 
