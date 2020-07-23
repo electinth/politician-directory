@@ -1,5 +1,6 @@
 import React from "react"
 import { navigate } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -225,6 +226,23 @@ const IndexPage = ({ data }) => {
       }}
     >
       <SEO title="Home" />
+      <Link
+        to="/senatePage2"
+        css={{
+          padding: "1rem 4rem",
+          fontFamily: "var(--ff-title)",
+          fontSize: "2.4rem",
+          color: "var(--cc-white)",
+          textDecoration: "underline",
+          border: "none",
+          background: "none",
+          "&:hover": {
+            color: "gray",
+          },
+        }}
+      >
+        senatePage2
+      </Link>
       <section css={{ ...cssMainSection }}>
         <div
           className="container"

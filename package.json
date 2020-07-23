@@ -18,6 +18,7 @@
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "axios": "^0.19.0",
+    "d3": "^5.16.0",
     "d3-scale": "^3.2.1",
     "gatsby": "^2.15.29",
     "gatsby-image": "^2.2.24",
