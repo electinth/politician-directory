@@ -13,7 +13,7 @@ const analyticsreporting = google.analyticsreporting("v4")
 const VIEWID = "205558231"
 //Testing
 // const VIEWID = "219009512"
-const csvFilePath = "./25-30June_data.csv"
+const csvFilePath = "./1-20July_data.csv"
 const limiterPerSec = new Bottleneck({
   maxConcurrent: 1,
   minTime: 1200,
@@ -49,7 +49,6 @@ async function getClientIds() {
 
 async function getUserActivityById(clientId) {
   try {
-    console.log("clientId", clientId)
     const { data } = await analyticsreporting.userActivity.search({
       requestBody: {
         viewId: VIEWID,
@@ -96,9 +95,17 @@ async function getUserActivityById(clientId) {
     })
     return userReport
   } catch (e) {
-    console.log(clientId)
     console.log(e.errors)
-    return null
+    return {
+      client_id: clientId,
+      session_id: "",
+      date_time_visit: "",
+      event_type: "",
+      label: "",
+      channel: "",
+      device: "",
+      platform: "",
+    }
   }
 }
 
@@ -115,14 +122,12 @@ async function loginWithOauth() {
 }
 
 const get100UserReports = async arrayGroup => {
-  console.log("arrayGroup", arrayGroup)
   return await Promise.all(
     arrayGroup.map(async arrayOf100Id => await wrappedLimit10User(arrayOf100Id))
   )
 }
 
 const get10UserReports = async arrayOf10Id => {
-  console.log("arrayOf10Id", arrayOf10Id)
   return await Promise.all(arrayOf10Id.map(id => getUserActivityById(id)))
 }
 
@@ -132,7 +137,6 @@ const wrappedLimit100Req = limiterPerUser.wrap(get100UserReports)
 async function getVisitedLog(allClientId) {
   const newAllClientId = _.chunk(allClientId, 10)
   // const newAllClientId = _.chunk(_.chunk(allClientId, 10), 100)
-  console.log("newAllClientId", newAllClientId)
   try {
     let arrayVisitedLogs = await wrappedLimit100Req(newAllClientId)
 
@@ -154,6 +158,10 @@ async function getClientIdFromCsv(csvFilePath) {
       return data.reduce((acc, cur) => [...acc, cur.Client_Id.toString()], [])
     })
   return clientArray
+}
+
+async function getAllVisitedLog(csvFilePath) {
+  return await csv().fromFile(csvFilePath)
 }
 
 async function exportToCSV(vistedLog, fileName) {
@@ -214,7 +222,7 @@ async function start() {
   try {
     await loginWithOauth()
     let allClientId = await getClientIdFromCsv(csvFilePath)
-    allClientId = allClientId.slice(34, 36)
+    // allClientId = allClientId.slice(start, end)
     const vistedLog = await getVisitedLog(allClientId)
     const userReport = await getUserReport(vistedLog)
     await exportToCSV(vistedLog, "vistedLog")
