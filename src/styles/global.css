@@ -64,3 +64,17 @@ a:hover {
     max-width: var(--container-motion-width);
   }
 }
+
+.cssPopupScrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+.cssPopupScrollbar::-webkit-scrollbar-track {
+  border-radius: 10px; 
+}
+.cssPopupScrollbar::-webkit-scrollbar-thumb {
+  background: var(--cl-gray-3); 
+  border-radius: 10px;
+}
+.cssPopupScrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--cl-gray-2);
+}
