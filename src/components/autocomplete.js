@@ -208,7 +208,7 @@ const AutoComplete = ({allSenateVoteYaml, setSenatorId, viewPerson, viewGroup}) 
     disprove: 20,
     abstained: 20,
     absent: 20,
-    no: 20,
+    missing: 20,
   }
   const cssGroup = {
     fontWeight: 'bold',

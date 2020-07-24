@@ -48,7 +48,7 @@ const cssDot = {
 const cssVoteTitle = {
   fontFamily: "var(--ff-title)",
   fontSize: "3.2rem",
-  lineHeight: 1.2,
+  lineHeight: "1.2",
   paddingTop: "23px"
 }
 const cssVoteStatus = {
@@ -59,18 +59,13 @@ const cssVoteStatus = {
 }
 const cssSubTitle = {
   fontSize: "1.8rem",
-  lineHeight: 1.2,
+  lineHeight: "1.2",
   padding: "1.4rem 0",
   borderTop: "3px solid #222222",
 }
 const cssSubstance = {
   fontSize: "1.8rem",
-  lineHeight: 1.4,
-  paddingBottom: "3.6rem"
-}
-const cssRef = {
-  fontSize: "1.2rem",
-  paddingBottom: "5px"
+  lineHeight: "1.4"
 }
 const cssVotingDocs = {
   fontSize: "1.2rem",
@@ -79,6 +74,7 @@ const cssVotingDocs = {
 }
 const cssVotingSheetBtn = {
   fontSize: "1.8rem",
+  color: "black",
   background: "#EEF090",
   borderRadius: "5px",
   width: "fit-content",
@@ -130,7 +126,7 @@ const VoteInfoPopup = ({
     absent: absent.length,
     missing: missing.length,
   }
-
+  
   return (
     <div>
       { popupState && (
@@ -221,18 +217,24 @@ const VoteInfoPopup = ({
             <div css={cssSubstance}>
               {votelogInfo.description_th}
             </div>
-            <div css={cssRef}>
-              <b>อ้างอิง</b> 
-            </div>
-            <div css={cssRef}>
-              {votelogInfo.reference}
-            </div>
             <div css={cssVotingDocs}>
               <b>เอกสารการลงมติ</b> 
             </div>
-            <div css={cssVotingSheetBtn}>
-              <img src={download} style={{marginBottom:"0", marginRight: "14px", width: "20px"}}/>
-              <b>ใบประมวลผลการลงมติ</b>
+            <div style={{display: 'flex'}}>
+              { votelogInfo.document instanceof Array && (
+                votelogInfo.document.map(item => (
+                  item.link && (
+                    <a href={item.link} key={item.link} target="_blank" download style={{textDecoration: 'none'}}>
+                      <div css={cssVotingSheetBtn} style={{marginRight: '10px'}}>
+                        <img src={download} style={{marginBottom:"0", marginRight: "14px", width: "20px"}}/>
+                        <b>
+                          {item.title}
+                        </b>
+                      </div>
+                    </a>
+                  )
+                ))
+              )}
             </div>
           </section>
           
