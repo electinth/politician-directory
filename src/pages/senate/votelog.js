@@ -33,7 +33,6 @@ export const query = graphql`
           title
           link
         }
-        reference
       }
     }
 
@@ -52,11 +51,19 @@ export const query = graphql`
 `
 
 const VotelogPage = ({ data }) => {
-  const voteSelected = _.find(data.allSenateVotelogYaml.nodes, { 'id': '1' })
   const [senatorId, setSenatorId] = useState('0');
+  const [voteId, setVoteId] = useState('');
   const [popupState, setPopupState] = useState(false);
   const [viewPerson, setViewPerson] = useState(true);
   const [viewGroup, setViewGroup] = useState(false);
+  const [voteSelected, setVoteSelected] = useState('');
+  
+  useEffect(()=>{
+    if (voteId) {
+      console.log('voteId',voteId);
+      setVoteSelected(_.find(data.allSenateVotelogYaml.nodes, { 'id': voteId }))
+    }
+  },[voteId])
   
   return (
     <div>
@@ -80,7 +87,9 @@ const VotelogPage = ({ data }) => {
           viewGroup={viewGroup} 
           allSenateVoteYaml={data.allSenateVoteYaml}
         />
-        <MockBarchart setPopupState={setPopupState}/>
+        <MockBarchart 
+          setPopupState={setPopupState}
+          setVoteId={setVoteId} />
       </Layout>
     </div>
   )
