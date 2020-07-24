@@ -19,6 +19,7 @@ const cssWrapper = {
   width: "100%",
   display: "flex",
   flexDirection: "column",
+  alignItems: "center",
   [media(767)]: {
     flexDirection: "row",
   }

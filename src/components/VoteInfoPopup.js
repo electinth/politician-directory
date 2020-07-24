@@ -79,7 +79,6 @@ const cssVotingSheetBtn = {
   borderRadius: "5px",
   width: "fit-content",
   padding: "1rem",
-  marginBottom: "3.6rem",
   cursor: "pointer",
   display: "flex",
   justifyContent: "center",
@@ -126,7 +125,7 @@ const VoteInfoPopup = ({
     absent: absent.length,
     missing: missing.length,
   }
-  
+
   return (
     <div>
       { popupState && (
@@ -220,12 +219,12 @@ const VoteInfoPopup = ({
             <div css={cssVotingDocs}>
               <b>เอกสารการลงมติ</b> 
             </div>
-            <div style={{display: 'flex'}}>
+            <div style={{display: 'flex', marginBottom: '3.6rem'}}>
               { votelogInfo.document instanceof Array && (
                 votelogInfo.document.map(item => (
                   item.link && (
                     <a href={item.link} key={item.link} target="_blank" download style={{textDecoration: 'none'}}>
-                      <div css={cssVotingSheetBtn} style={{marginRight: '10px'}}>
+                      <div css={cssVotingSheetBtn} style={{marginRight: '20px'}}>
                         <img src={download} style={{marginBottom:"0", marginRight: "14px", width: "20px"}}/>
                         <b>
                           {item.title}
