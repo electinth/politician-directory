@@ -50,7 +50,7 @@ const cssLine = {
   paddingBottom: "1.5rem"
 }
 
-const senateChecklistPopOver = () => {
+const senateChecklistPopup = () => {
   return (
     <div css={cssContainer}>
       <div css={cssPopup}>
@@ -108,4 +108,4 @@ const senateChecklistPopOver = () => {
   )
 }
 
-export default senateChecklistPopOver
+export default senateChecklistPopup
