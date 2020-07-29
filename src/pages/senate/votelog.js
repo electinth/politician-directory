@@ -6,6 +6,7 @@ import VotelogHeader from "../../components/votelogHeader"
 import VoteInfoPopup from "../../components/voteInfoPopup"
 import Autocomplete from "../../components/autocomplete"
 import MockBarchart from "../../components/mockBarchart"
+import SenateNavbar from "../../components/senateNavbar"
 
 export const query = graphql`
   query {
@@ -75,6 +76,7 @@ const VotelogPage = ({ data }) => {
         allPeopleYaml={data.allPeopleYaml}
       />
       <Layout style={{position: "relative"}}>
+        <SenateNavbar/>
         <VotelogHeader 
           viewPerson={viewPerson} 
           viewGroup={viewGroup} 
