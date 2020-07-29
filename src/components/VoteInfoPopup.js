@@ -205,7 +205,7 @@ const VoteInfoPopup = ({
               ]}
             />
             <div css={{ marginTop: "4rem" }}>
-              <VoteLogLegend {...countVotelog} />
+              <VoteLogLegend type='popup' {...countVotelog} />
             </div>
           </section>
           

@@ -21,7 +21,7 @@ const cssWrapper = {
   flexDirection: "column",
   alignItems: "center",
   [media(767)]: {
-    flexDirection: "row",
+    flexDirection: "row"
   }
 }
 const Style = styled.div`
@@ -41,6 +41,7 @@ const Style = styled.div`
     font-size: 16px;
     border: none;
     border-bottom: 1px solid #aaa;
+    margin-bottom: 1.8rem;
   }
   .react-autosuggest__input--focused {
     outline: none;
@@ -112,6 +113,12 @@ const cssSearchIcon = {
   top: '8px',
   left: '0',
   width: '15px',
+}
+const cssAvg = {
+  display: "none",
+  [media(767)]: {
+    display: "unset",
+  },
 }
 
 const AutoComplete = ({allSenateVoteYaml, setSenatorId, viewPerson, viewGroup}) => {
@@ -209,7 +216,7 @@ const AutoComplete = ({allSenateVoteYaml, setSenatorId, viewPerson, viewGroup}) 
     disprove: 20,
     abstained: 20,
     absent: 20,
-    missing: 20,
+    missing: 20
   }
   const cssGroup = {
     fontWeight: 'bold',
@@ -234,25 +241,26 @@ const AutoComplete = ({allSenateVoteYaml, setSenatorId, viewPerson, viewGroup}) 
               <img src={download}/>
             </Autosuggest>
           </Style>
-          <span style={{margin: '0 1.5rem'}}>โดยเฉลี่ย</span>
-          <VoteLogLegend {...avgVotelog} />
+          <span css={cssAvg} style={{margin: '0 1.5rem'}}>โดยเฉลี่ย</span>
+            <VoteLogLegend {...avgVotelog} />
         </div>
       )}
       { viewGroup && (
         <div css={cssWrapper}>
           <div>
-            <span css={cssGroup} style={{width: '15%'}}>โดยตำแหน่ง</span>
-            <VoteLogLegend {...avgVotelog} />
+            <span css={cssGroup}>โดยตำแหน่ง</span>
+            <VoteLogLegend type='group' {...avgVotelog} />
           </div>
           <div>
-          <span css={cssGroup} style={{width: '35%'}}>คสช. สรรหา</span>
-            <VoteLogLegend {...avgVotelog} />
+            <span css={cssGroup}>คสช. สรรหา</span>
+            <VoteLogLegend type='group' {...avgVotelog} />
           </div>
           <div>
-            <span css={cssGroup} style={{width: '45%'}}>ตามกลุ่มอาชีพ</span>
-            <VoteLogLegend {...avgVotelog} />
+            <span css={cssGroup}>ตามกลุ่มอาชีพ</span>
+            <VoteLogLegend type='group' {...avgVotelog} />
           </div>
         </div>
+
       )}
     </div>
   )
