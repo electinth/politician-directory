@@ -147,7 +147,7 @@ const AutoComplete = ({allSenateVoteYaml, setSenatorId, viewPerson, viewGroup}) 
   
   const getSuggestions = (value,senator) => {
     const escapedValue = escapeRegexCharacters(value.trim());
-    const regex =  new RegExp('(?<=[\\s,.:;"\']|^)' + escapedValue, 'gi');
+    const regex =  new RegExp(escapedValue, 'gi');
     return senator.filter(person =>
       person.id === '0' || regex.test(getSuggestionValue(person))
     );
@@ -188,8 +188,13 @@ const AutoComplete = ({allSenateVoteYaml, setSenatorId, viewPerson, viewGroup}) 
     setSuggestions([])
   };
 
-  const shouldRenderSuggestions = () => {
-    return true;
+  const shouldRenderSuggestions = (value) => {
+    if (value === '') {
+      return true
+    }
+    else {
+      return value.trim().length > 1;
+    }
   }
 
   const clearInput = () => {
