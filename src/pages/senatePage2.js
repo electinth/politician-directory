@@ -276,12 +276,11 @@ export default ({ data }) => {
         return { ...zip }
       })
       .value()
-
     group_by_value = merge_default(default_value, group_by_value)
     group_by_value = { ...group_by_value, id: s.id }
     count_all_senate.push({ ...s, group_by_value })
   })
-  console.log(count_all_senate)
+  // console.log(count_all_senate)
 
   const count_groupBy = []
   arr_votelog.forEach(s => {
