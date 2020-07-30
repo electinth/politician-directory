@@ -17,10 +17,13 @@
   --cl-gray-3: #cccccc;
   --cl-gray-4: #eeeeee;
 
-  --cl-vote-yes: #74b5b2;
+  --cl-vote-yes: #76c8b8;
   --cl-vote-no: #f0324b;
   --cl-vote-abstained: #cccccc;
   --cl-vote-absent: #ffffff;
+  --cl-senate-vote-abstained: #2d3480;
+  --cl-senate-vote-absent: #7b90d1;
+  --cl-senate-vote-missing: #e3e3e3;
 
   --cl-theme-0: #fcf1f6;
   --cl-theme-1: #f8d7e5;
@@ -60,4 +63,18 @@ a:hover {
   .container-motion {
     max-width: var(--container-motion-width);
   }
+}
+
+.cssPopupScrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+.cssPopupScrollbar::-webkit-scrollbar-track {
+  border-radius: 10px; 
+}
+.cssPopupScrollbar::-webkit-scrollbar-thumb {
+  background: var(--cl-gray-3); 
+  border-radius: 10px;
+}
+.cssPopupScrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--cl-gray-2);
 }
