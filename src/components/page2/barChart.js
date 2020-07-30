@@ -18,6 +18,8 @@ function DrawChart({
   is_On,
   is_all,
   search_id,
+  setVoteId,
+  setPopupState
 }) {
   const ref = useRef()
   const margin = { top: 50, right: 50, bottom: 0, left: 50 },
@@ -142,6 +144,8 @@ function DrawChart({
     const onClick = d => {
       d3.selectAll(".rect" + d.data.id).style("stroke", "black")
       console.log(d.data.id)
+      setVoteId(d.data.id)
+      setPopupState(true)
     }
     rects
       .selectAll("rect")

@@ -7,6 +7,7 @@ import VoteInfoPopup from "../../components/voteInfoPopup"
 import Autocomplete from "../../components/autocomplete"
 import MockBarchart from "../../components/mockBarchart"
 import SenateNavbar from "../../components/senateNavbar"
+import SenateVotelogBarchart from "../../components/senateVotelogBarchart"
 
 export const query = graphql`
   query {
@@ -61,7 +62,7 @@ const VotelogPage = ({ data }) => {
   
   useEffect(()=>{
     if (voteId) {
-      console.log('voteId',voteId);
+      console.log('voteId>',voteId);
       setVoteSelected(_.find(data.allSenateVotelogYaml.nodes, { 'id': voteId }))
     }
   },[voteId])
@@ -89,9 +90,13 @@ const VotelogPage = ({ data }) => {
           viewGroup={viewGroup} 
           allSenateVoteYaml={data.allSenateVoteYaml}
         />
-        <MockBarchart 
+        {/* <MockBarchart 
           setPopupState={setPopupState}
-          setVoteId={setVoteId} />
+          setVoteId={setVoteId} /> */}
+        <SenateVotelogBarchart 
+          setPopupState={setPopupState} 
+          setVoteId={setVoteId} 
+        />
       </Layout>
     </div>
   )
