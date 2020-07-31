@@ -161,6 +161,17 @@ const Menu = ({ siteTitle }) => {
         </li>
         <li>
           <span>
+            <span css={cssMenuIcon}>
+              <Img
+                fixed={staticData.voteRecordImage.childImageSharp.fixed}
+                style={{ transform: "translate(2px, 0)" }}
+              />
+            </span>
+            <Link to={"/senate/score"}>สรุปวาระการลงมติส.ว.</Link>
+          </span>
+        </li>
+        <li>
+          <span>
             <Link to={"/about"}>เกี่ยวกับเรา</Link>
           </span>
         </li>
