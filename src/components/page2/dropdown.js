@@ -1,16 +1,13 @@
 import React, { Component } from "react"
-
 import { css, Global } from "@emotion/core"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-
 class DropDown extends Component {
   container = React.createRef()
   state = {
     show: false,
     is_senate: this.props.is_senate,
   }
-
   handleFilter = (e, field) => {
     this.setState({ show: !this.state.show })
     this.props.handleFilter(e, field)
@@ -62,11 +59,17 @@ class DropDown extends Component {
             </button>
             {this.props.choices.others.map((choice, i) => (
               <button onClick={e => this.handleFilter(e, this.props.filter)}>
-                <div
-                  className="bulletChoice"
-                  style={{ backgroundColor: this.props.colors[i] }}
-                />
-                <div className="cssChoice">{choice}</div>
+                {this.state.is_senate ? (
+                  <>
+                    <div
+                      className="bulletChoice"
+                      style={{ backgroundColor: this.props.colors[i] }}
+                    />
+                    <div className="cssChoice">{choice}</div>
+                  </>
+                ) : (
+                  choice
+                )}
               </button>
             ))}
           </div>
@@ -75,7 +78,6 @@ class DropDown extends Component {
     )
   }
 }
-
 export default ({
   choices,
   currentFilter,
@@ -109,7 +111,6 @@ export default ({
               float: right;
               margin-left: 1rem;
             }
-
             .current-filter-list {
               text-align: center;
               list-style: none;
@@ -141,14 +142,13 @@ export default ({
                 position: relative;
               }
             }
-
             .menuItems {
               position: absolute;
               z-index: 1;
               box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2),
                 0 6px 10px 0 rgba(0, 0, 0, 0.19);
               min-width: 185px;
-              margin: 1px 7.5px;
+              margin: 1px 50px;
               button {
                 display: block;
                 border: none;
@@ -196,7 +196,6 @@ export default ({
               float: right;
               margin-left: 1rem;
             }
-
             .current-filter-list {
               text-align: center;
               list-style: none;
@@ -220,7 +219,6 @@ export default ({
                 position: relative;
               }
             }
-
             .menuItems {
               position: absolute;
               z-index: 1;

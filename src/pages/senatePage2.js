@@ -5,8 +5,6 @@ import DropDown from "../components/page2/dropdown"
 import BarChart from "../components/page2/barChart"
 import ToggleSwitch from "../components/page2/toggleSwitch"
 
-// import data250 from "../contents/all250.yaml"
-
 const cssGroupChart = {
   height: "300px",
   overflowY: "scroll",
@@ -15,26 +13,29 @@ const cssGroupChart = {
 const cssGroupChartAll = {
   height: "300px",
   overflowY: "hidden",
-  marginTop: "50px",
 }
 const cssColumnChart = {
   display: "inline-block",
 }
 
 const Page2 = props => {
-  // console.log(props.count_all_senate,'count_all_senate')
-  // const [data, setData] = useState(data250)
   const [count_all_senate, setCount_all_senate] = useState(
     props.count_all_senate
   )
+  const [count_by_government, setCount_by_government] = useState(
+    props.count_by_government
+  )
+  const [count_by_position, setCount_by_position] = useState(
+    props.count_by_position
+  )
+  const [count_by_yourSelf, setCount_by_yourSelf] = useState(
+    props.count_by_yourSelf
+  )
   const [search_id, setSearch_id] = useState("")
   const [types, setTypes] = useState(props.types)
-  const [is_yAxis, setYAxis] = useState(props.is_yAxis)
-  const [width, setWidth] = useState(props.width)
   const [is_senate, setIs_senate] = useState(true)
   const [is_starter_bars, setStarter] = useState(true)
   const [is_showAll, setShowAll] = useState(true)
-  const [is_showGroup, setShowGroup] = useState(false)
   const [currentFilter, setCurrentFilter] = useState(props.choices)
   const [is_On, setIsOn] = useState(false)
   const [height_svg, setHeightSvg] = useState(count_all_senate.length * 30)
@@ -71,17 +72,14 @@ const Page2 = props => {
 
   const showAll = () => {
     setShowAll(true)
-    setShowGroup(false)
     setIs_all(true)
-    setIsOn(true)
+    setIsOn(false)
   }
   const ShowGroup = () => {
     setShowAll(false)
-    setShowGroup(true)
     setIs_all(false)
     setIsOn(false)
   }
-
   return (
     <div>
       Page 2<button onClick={showAll}>show all</button>
@@ -99,8 +97,8 @@ const Page2 = props => {
           <BarChart
             data={count_all_senate}
             types={types}
-            w={width}
-            is_yAxis={is_yAxis}
+            w={props.width}
+            is_yAxis={props.is_yAxis}
             color_bars={props.colors}
             is_starter_bars={is_starter_bars}
             height_svg={height_svg}
@@ -110,46 +108,30 @@ const Page2 = props => {
           />
         </div>
       ) : (
-        {
-          /* <div>
-          <div css={{ ...cssColumnChart, width: (32 / 250) * width }}>
-            <DropDown
-              choices={props.choices}
-              currentFilter={currentFilter}
-              handleFilter={handleFilter}
-              is_senate={is_senate}
-              colors={props.colors}
-            />
-          </div>
-          <div css={{ ...cssColumnChart, width: (88 / 250) * width }}>
-            <DropDown
-              choices={props.choices}
-              currentFilter={currentFilter}
-              handleFilter={handleFilter}
-              is_senate={is_senate}
-              colors={props.colors}
-            />
-          </div>
-          <div css={{ ...cssColumnChart, width: (130 / 250) * width }}>
-            <DropDown
-              choices={props.choices}
-              currentFilter={currentFilter}
-              handleFilter={handleFilter}
-              is_senate={is_senate}
-              colors={props.colors}
-            />
-          </div>
-          <ToggleSwitch
-              is_On = {is_On}
-              handleToggle = {() => setIsOn(!is_On)}
-          />
-          <div className="group_chart" css={is_On ? cssGroupChartAll : cssGroupChart}>
-            <div css={{ ...cssColumnChart, width: (32 / 250) * width }}>
+        <div>
+          {props.groupWidth.map((width, i) => (
+            <div css={{ ...cssColumnChart, width: width }}>
+              <DropDown
+                choices={props.choices}
+                currentFilter={currentFilter}
+                handleFilter={handleFilter}
+                is_senate={is_senate}
+                colors={props.colors}
+                className={`dropdown${i}`}
+              />
+            </div>
+          ))}
+          <ToggleSwitch is_On={is_On} handleToggle={() => setIsOn(!is_On)} />
+          <div
+            className="group_chart"
+            css={is_On ? cssGroupChartAll : cssGroupChart}
+          >
+            <div css={{ ...cssColumnChart, width: props.groupWidth[0] }}>
               <BarChart
-                data={data}
+                data={count_by_position}
                 types={types}
-                w={(32 / 250) * width}
-                is_yAxis={is_yAxis}
+                w={props.groupWidth[0]}
+                is_yAxis={props.is_yAxis}
                 color_bars={props.colors}
                 is_starter_bars={is_starter_bars}
                 height_svg={height_svg}
@@ -157,22 +139,22 @@ const Page2 = props => {
                 is_all={is_all}
               />
             </div>
-            <div css={{ ...cssColumnChart, width: (88 / 250) * width }}>
+            <div css={{ ...cssColumnChart, width: props.groupWidth[1] }}>
               <BarChart
-                data={data}
+                data={count_by_government}
                 types={types}
-                w={(88 / 250) * width}
+                w={props.groupWidth[1]}
                 color_bars={props.colors}
                 height_svg={height_svg}
                 is_On={is_On}
                 is_all={is_all}
               />
             </div>
-            <div css={{ ...cssColumnChart, width: (130 / 250) * width }}>
+            <div css={{ ...cssColumnChart, width: props.groupWidth[2] }}>
               <BarChart
-                data={data}
+                data={count_by_yourSelf}
                 types={types}
-                w={(130 / 250) * width}
+                w={props.groupWidth[2]}
                 color_bars={props.colors}
                 height_svg={height_svg}
                 is_On={is_On}
@@ -180,8 +162,7 @@ const Page2 = props => {
               />
             </div>
           </div>
-        </div> */
-        }
+        </div>
       )}
     </div>
   )
@@ -277,52 +258,93 @@ export default ({ data }) => {
       })
       .value()
     group_by_value = merge_default(default_value, group_by_value)
-    group_by_value = { ...group_by_value, id: s.id }
-    count_all_senate.push({ ...s, group_by_value })
+    group_by_value = { ...group_by_value, id: s.id, vote_date: s.vote_date }
+    count_all_senate.push(group_by_value)
   })
-  // console.log(count_all_senate)
 
-  const count_groupBy = []
+  const count_by_position = []
+  const count_by_government = []
+  const count_by_yourSelf = []
+  const count_by_group = []
+
   arr_votelog.forEach(s => {
     const by_position = s.voter.filter(m => m.senator_method == "โดยตำแหน่ง")
-    const group_by_position = _(by_position)
+    let group_by_position = _(by_position)
       .groupBy("value")
       .map(function(votes, value) {
-        return { value: value, count: votes.length }
+        return _.zipObject([value], [votes.length])
       })
       .value()
 
     const by_government = s.voter.filter(
       m => m.senator_method == "เลือกโดย คสช."
     )
-    const group_by_government = _(by_government)
+    let group_by_government = _(by_government)
       .groupBy("value")
       .map(function(votes, value) {
-        return { value: value, count: votes.length }
+        return _.zipObject([value], [votes.length])
       })
       .value()
 
     const by_youeSelf = s.voter.filter(m => m.senator_method == "เลือกกันเอง")
-    const group_by_youeSelf = _(by_youeSelf)
+    let group_by_youeSelf = _(by_youeSelf)
       .groupBy("value")
       .map(function(votes, value) {
-        return { value: value, count: votes.length }
+        return _.zipObject([value], [votes.length])
       })
       .value()
+    group_by_government = merge_default(default_value, group_by_government)
+    group_by_position = merge_default(default_value, group_by_position)
+    group_by_youeSelf = merge_default(default_value, group_by_youeSelf)
 
-    const group_of_voters = {
-      group_by_position,
-      group_by_government,
-      group_by_youeSelf,
+    group_by_government = {
+      ...group_by_government,
+      id: s.id,
+      vote_date: s.vote_date,
     }
-    count_groupBy.push({ ...s, group_of_voters })
+    group_by_position = {
+      ...group_by_position,
+      id: s.id,
+      vote_date: s.vote_date,
+    }
+    group_by_youeSelf = {
+      ...group_by_youeSelf,
+      id: s.id,
+      vote_date: s.vote_date,
+    }
+
+    count_by_government.push(group_by_government)
+    count_by_position.push(group_by_position)
+    count_by_yourSelf.push(group_by_youeSelf)
   })
-  // console.log(count_groupBy)
+
+  count_by_group.push({
+    count_by_government: count_by_government,
+    position: count_by_position,
+    you_self: count_by_yourSelf,
+  })
+  console.log(count_by_group, "count_by_group")
 
   const types = ["id", "1", "2", "3", "4", "5"]
   const is_yAxis = true
 
   const width = window.innerWidth
+
+  function count_people(count_type) {
+    const peoples = _.dropRight(Object.values(count_type[0]), 2).reduce(
+      function(a, b) {
+        return parseInt(a) + parseInt(b)
+      },
+      0
+    )
+    return peoples
+  }
+  const all_peoples = count_people(count_all_senate)
+  const groupWidth = [
+    (32 / all_peoples) * width,
+    (88 / all_peoples) * width,
+    (130 / all_peoples) * width,
+  ]
 
   const choices = {
     sort_by: {
@@ -341,6 +363,10 @@ export default ({ data }) => {
       is_yAxis={is_yAxis}
       choices={choices}
       colors={colors}
+      count_by_government={count_by_government}
+      count_by_position={count_by_position}
+      count_by_yourSelf={count_by_yourSelf}
+      groupWidth={groupWidth}
     />
   )
 }
