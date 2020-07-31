@@ -22,10 +22,10 @@ function DrawChart({
   setPopupState
 }) {
   const ref = useRef()
-  const margin = { top: 50, right: 50, bottom: 0, left: 50 },
+  const margin = { top: 0, right: 50, bottom: 0, left: 50 },
     height = is_On ? 300 : height_svg,
     width = w - margin.right - margin.left
-  // console.log(data,"data")
+
   useEffect(() => {
     const chart = d3
       .select(ref.current)
@@ -33,7 +33,7 @@ function DrawChart({
       .attr("width", width + margin.left + margin.right)
       .attr("height", height)
   }, [])
-  //sort
+  // sort
   useEffect(() => {
     if (is_starter_bars) {
       d3.selectAll("g").remove()
@@ -76,14 +76,7 @@ function DrawChart({
       .order(d3.stackOrderNone)
       .offset(d3.stackOffsetNone)
 
-    const all_data = []
-    data.forEach(d => {
-      all_data.push(d.group_by_value)
-    })
-
-    let series = d3.stack().keys(types.slice(1))(all_data)
-    // const series = stack(filtered_data)
-    console.log(series)
+    let series = d3.stack().keys(types.slice(1))(data)
 
     const color = d3
       .scaleOrdinal()
@@ -173,7 +166,6 @@ function DrawChart({
         .join(enter =>
           enter
             .append("rect")
-            .attr("x", d => x(d[0]))
             .attr("y", d => y(d.data.id))
             .attr("width", d => (1 / 250) * width)
             .attr("height", y.bandwidth())
