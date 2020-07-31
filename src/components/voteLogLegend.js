@@ -51,12 +51,14 @@ const VoteLogLegend = ({ approve, disprove, abstained, absent, missing, type }) 
           border: "1px solid var(--cl-vote-yes)",
         }}
       />{" "}
-      { missing 
+      { missing != undefined
         ? ( type === 'group'
-          ? <><b style={{margin: "0 0.3rem"}}></b> {approve}</>
-          : <><b style={{margin: "0 1rem"}}>เห็นด้วย</b> {approve}</>
+          ? <><b style={{margin: "0 0.3rem"}}></b> {approve}%</>
+          : (type === 'popup') 
+            ? <><b style={{margin: "0 1rem"}}>เห็นด้วย</b> {approve}</>
+            : <><b style={{margin: "0 1rem"}}>เห็นด้วย</b> {approve}%</>
         )
-        : `เห็นด้วย ${approve}`}
+        : `เห็นด้วย ${approve}%`}
     </span>
     <span css={cssLegendWrap({missing})}>
       <div
@@ -66,11 +68,13 @@ const VoteLogLegend = ({ approve, disprove, abstained, absent, missing, type }) 
           border: "1px solid var(--cl-vote-no)",
         }}
       />{" "}
-      { missing 
+      { missing != undefined
         ? ( type === 'group'
           ? <><b style={{margin: "0 0.3rem"}}></b> {disprove}</> 
-          : <><b style={{margin: "0 1rem"}}>ไม่เห็นด้วย</b> {disprove}</> 
-        )
+          : (type === 'popup') 
+            ? <><b style={{margin: "0 1rem"}}>ไม่เห็นด้วย</b> {disprove}</> 
+            : <><b style={{margin: "0 1rem"}}>ไม่เห็นด้วย</b> {disprove}%</> 
+          )
         : `ไม่เห็นด้วย ${disprove}`}
     </span>
     <span css={cssLegendWrap({missing})}>
@@ -83,10 +87,12 @@ const VoteLogLegend = ({ approve, disprove, abstained, absent, missing, type }) 
           ? "1px solid var(--cl-senate-vote-abstained)" : "1px solid var(--cl-vote-abstained)"
         }}
       />{" "}
-      { missing 
+      { missing != undefined
         ? ( type === 'group'
           ? <><b style={{margin: "0 0.3rem"}}></b> {abstained}</> 
-          : <><b style={{margin: "0 1rem"}}>งดออกเสียง</b> {abstained}</> 
+          : (type === 'popup') 
+            ? <><b style={{margin: "0 1rem"}}>งดออกเสียง</b> {abstained}</> 
+            : <><b style={{margin: "0 1rem"}}>งดออกเสียง</b> {abstained}%</> 
         )
         : `งดออกเสียง ${abstained}`}
     </span>
@@ -100,14 +106,16 @@ const VoteLogLegend = ({ approve, disprove, abstained, absent, missing, type }) 
           ? "1px solid var(--cl-senate-vote-absent)" : "1px solid var(--cl-black)"
         }}
       />{" "}
-      { missing 
+      { missing != undefined
         ? ( type === 'group'
           ? <><b style={{margin: "0 0.3rem"}}></b> {absent}</>
-          : <><b style={{margin: "0 1rem"}}>ไม่ลงมติ</b> {absent}</>
+          : (type === 'popup') 
+            ? <><b style={{margin: "0 1rem"}}>ไม่ลงมติ</b> {absent}</>
+            : <><b style={{margin: "0 1rem"}}>ไม่ลงมติ</b> {absent}%</>
         )
         : `ไม่ลงคะแนน ${absent}`}
     </span>
-    { missing && (
+    { missing != undefined  && (
       <span 
         css={cssLegendWrap({missing})}>
       <div
@@ -119,7 +127,9 @@ const VoteLogLegend = ({ approve, disprove, abstained, absent, missing, type }) 
       />{" "}
         { type === 'group'
           ? <><b style={{margin: "0 0.3rem"}}></b> {missing}</>
-          : <><b style={{margin: "0 1rem"}}>ขาด</b> {missing}</>
+          : (type === 'popup') 
+            ? <><b style={{margin: "0 1rem"}}>ขาด</b> {missing}</>
+            : <><b style={{margin: "0 1rem"}}>ขาด</b> {missing}%</>
         }
       </span>
     )}
