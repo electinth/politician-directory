@@ -33,8 +33,6 @@ const Page2 = props => {
   const [width, setWidth] = useState(props.width)
   const [is_senate, setIs_senate] = useState(true)
   const [is_starter_bars, setStarter] = useState(true)
-  const [is_showAll, setShowAll] = useState(true)
-  const [is_showGroup, setShowGroup] = useState(false)
   const [currentFilter, setCurrentFilter] = useState(props.choices)
   const [is_On, setIsOn] = useState(false)
   const [height_svg, setHeightSvg] = useState(count_all_senate.length * 30)
@@ -70,23 +68,17 @@ const Page2 = props => {
   }
 
   const showAll = () => {
-    setShowAll(true)
-    setShowGroup(false)
     setIs_all(true)
     setIsOn(true)
   }
   const ShowGroup = () => {
-    setShowAll(false)
-    setShowGroup(true)
     setIs_all(false)
     setIsOn(false)
   }
 
   return (
     <div>
-      <button onClick={showAll}>show all</button>
-      <button onClick={ShowGroup}>show group</button>
-      {is_showAll ? (
+      {props.is_showAll || props.is_showGroup ? (
         <div>
           <DropDown
             choices={props.choices}
@@ -109,6 +101,8 @@ const Page2 = props => {
             search_id={search_id}
             setVoteId={props.setVoteId}
             setPopupState={props.setPopupState}
+            is_showAll={props.is_showAll}
+            is_showGroup={props.is_showGroup}
           />
         </div>
       ) : (
@@ -189,7 +183,7 @@ const Page2 = props => {
   )
 }
 
-export default ({ data, setVoteId, setPopupState }) => {
+export default ({ data, setVoteId, setPopupState, is_showAll, is_showGroup }) => {
   const senate = useStaticQuery(
     graphql`
       query {
@@ -345,6 +339,8 @@ export default ({ data, setVoteId, setPopupState }) => {
       colors={colors}
       setVoteId={setVoteId}
       setPopupState={setPopupState}
+      is_showAll={is_showAll}
+      is_showGroup={is_showGroup} 
     />
   )
 }

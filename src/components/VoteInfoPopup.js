@@ -13,7 +13,7 @@ const cssPopupContainer = {
   background: "white",
   borderLeft: "2px solid #B9B9B9",
   padding: "46px 20px 30px",
-  zIndex: "10",
+  zIndex: "20",
   overflowY: "auto",
   [media(767)]: {
     width: "50vw",
