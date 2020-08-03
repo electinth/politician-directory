@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import _ from "lodash"
+import moment from "moment"
 import { graphql, useStaticQuery } from "gatsby"
 import DropDown from "../components/page2/dropdown"
 import BarChart from "../components/page2/barChart"
@@ -40,6 +41,9 @@ const Page2 = props => {
   const [is_On, setIsOn] = useState(false)
   const [height_svg, setHeightSvg] = useState(count_all_senate.length * 30)
   const [is_all, setIs_all] = useState(true)
+  const [is_selected_position, setIs_position] = useState(false)
+  const [is_selected_government, setIs_government] = useState(false)
+  const [is_selected_yourSelf, setIs_yourSelf] = useState(false)
 
   const formatTypes = type => {
     if (type === "เห็นด้วย") {
@@ -60,14 +64,68 @@ const Page2 = props => {
     const sort_by_data = (a, b) => {
       if (filter !== "เวลาล่าสุด") {
         return b[formatTypes(filter)] - a[formatTypes(filter)]
+      } else {
+        return new Date(b.vote_date) - new Date(a.vote_date)
       }
     }
     let currentFilter = { ...currentFilter }
     formatTypes(filter)
-    let data_of_motion = [...count_all_senate]
+
+    //set group-by
+    let data_of_motion = []
+
+    if (is_selected_position) {
+      data_of_motion = [...count_by_position]
+    } else if (is_selected_government) {
+      data_of_motion = [...count_by_government]
+    } else if (is_selected_yourSelf) {
+      data_of_motion = [...count_by_yourSelf]
+    } else if (is_showAll) {
+      data_of_motion = [...count_all_senate]
+      setCount_all_senate(data_of_motion)
+    }
     data_of_motion.sort(sort_by_data)
-    setCount_all_senate(data_of_motion)
+
+    const set_government = data_of_motion.map(function(value) {
+      return count_by_government[value.id - 1]
+    })
+    const set_position = data_of_motion.map(function(value) {
+      return count_by_position[value.id - 1]
+    })
+    const set_yourSelf = data_of_motion.map(function(value) {
+      return count_by_yourSelf[value.id - 1]
+    })
+
+    if (is_selected_position) {
+      setCount_by_government(set_government)
+      setCount_by_yourSelf(set_yourSelf)
+      setCount_by_position(data_of_motion)
+    } else if (is_selected_government) {
+      setCount_by_government(data_of_motion)
+      setCount_by_position(set_position)
+      setCount_by_yourSelf(set_yourSelf)
+    } else if (is_selected_yourSelf) {
+      setCount_by_yourSelf(data_of_motion)
+      setCount_by_government(set_government)
+      setCount_by_position(set_position)
+    }
     setCurrentFilter(currentFilter)
+  }
+
+  const selected_dropdown = selected => {
+    if (selected === "count_by_position") {
+      setIs_position(true)
+      setIs_government(false)
+      setIs_yourSelf(false)
+    } else if (selected === "count_by_government") {
+      setIs_government(true)
+      setIs_position(false)
+      setIs_yourSelf(false)
+    } else if (selected === "count_by_yourSelf") {
+      setIs_yourSelf(true)
+      setIs_government(false)
+      setIs_position(false)
+    }
   }
 
   const showAll = () => {
@@ -80,6 +138,7 @@ const Page2 = props => {
     setIs_all(false)
     setIsOn(false)
   }
+
   return (
     <div>
       Page 2<button onClick={showAll}>show all</button>
@@ -109,18 +168,42 @@ const Page2 = props => {
         </div>
       ) : (
         <div>
-          {props.groupWidth.map((width, i) => (
-            <div css={{ ...cssColumnChart, width: width }}>
-              <DropDown
-                choices={props.choices}
-                currentFilter={currentFilter}
-                handleFilter={handleFilter}
-                is_senate={is_senate}
-                colors={props.colors}
-                className={`dropdown${i}`}
-              />
-            </div>
-          ))}
+          <div
+            css={{ ...cssColumnChart, width: props.groupWidth[0] }}
+            onClick={() => selected_dropdown("count_by_position")}
+          >
+            <DropDown
+              choices={props.choices}
+              currentFilter={currentFilter}
+              handleFilter={handleFilter}
+              is_senate={is_senate}
+              colors={props.colors}
+            />
+          </div>
+          <div
+            css={{ ...cssColumnChart, width: props.groupWidth[1] }}
+            onClick={() => selected_dropdown("count_by_government")}
+          >
+            <DropDown
+              choices={props.choices}
+              currentFilter={currentFilter}
+              handleFilter={handleFilter}
+              is_senate={is_senate}
+              colors={props.colors}
+            />
+          </div>
+          <div
+            css={{ ...cssColumnChart, width: props.groupWidth[2] }}
+            onClick={() => selected_dropdown("count_by_yourSelf")}
+          >
+            <DropDown
+              choices={props.choices}
+              currentFilter={currentFilter}
+              handleFilter={handleFilter}
+              is_senate={is_senate}
+              colors={props.colors}
+            />
+          </div>
           <ToggleSwitch is_On={is_On} handleToggle={() => setIsOn(!is_On)} />
           <div
             className="group_chart"
@@ -249,7 +332,7 @@ export default ({ data }) => {
   })
 
   const count_all_senate = []
-  arr_votelog.forEach(s => {
+  arr_votelog.forEach((s, i) => {
     let group_by_value = _(s.voter)
       .groupBy("value")
       .map(function(votes, value) {
@@ -257,8 +340,25 @@ export default ({ data }) => {
         return { ...zip }
       })
       .value()
+
+    const set_format_date = moment(s.vote_date)
+      .add(10, "days")
+      .calendar()
+    let count_date = 1
+    if (i < arr_votelog.length - 1) {
+      if (arr_votelog[i].vote_date === arr_votelog[i + 1].vote_date) {
+        count_date++
+      } else {
+        count_date = 1
+      }
+    }
+
     group_by_value = merge_default(default_value, group_by_value)
-    group_by_value = { ...group_by_value, id: s.id, vote_date: s.vote_date }
+    group_by_value = {
+      ...group_by_value,
+      id: s.id,
+      vote_date: set_format_date + ` - ${count_date}`,
+    }
     count_all_senate.push(group_by_value)
   })
 
@@ -321,9 +421,8 @@ export default ({ data }) => {
   count_by_group.push({
     count_by_government: count_by_government,
     position: count_by_position,
-    you_self: count_by_yourSelf,
+    your_self: count_by_yourSelf,
   })
-  console.log(count_by_group, "count_by_group")
 
   const types = ["id", "1", "2", "3", "4", "5"]
   const is_yAxis = true
@@ -357,12 +456,12 @@ export default ({ data }) => {
 
   return (
     <Page2
-      count_all_senate={count_all_senate}
       types={types}
       width={width}
       is_yAxis={is_yAxis}
       choices={choices}
       colors={colors}
+      count_all_senate={count_all_senate}
       count_by_government={count_by_government}
       count_by_position={count_by_position}
       count_by_yourSelf={count_by_yourSelf}
