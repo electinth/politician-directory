@@ -35,23 +35,23 @@ const cssTitle = {
   display: "none",
   [media(767)]: {
     display: "block",
-  }
+  },
 }
 const cssBtn = ({ active }) => ({
-    border: "none",
-    outline: 'none',
-    cursor: "pointer",
-    fontSize: "1.4rem",
-    height: "4rem",
-    width: "14rem",
-    background: "inherit",
-    color: active ? '#EEF090' : '#ffffff',
-    borderBottom: active ? '0.5rem solid #EEF090' : '0.5rem solid #ffffff',
-    [media(767)]: {
-      fontSize: "1.8rem",
-      height: "6rem",
-      width: "19.5rem",
-    }
+  border: "none",
+  outline: "none",
+  cursor: "pointer",
+  fontSize: "1.4rem",
+  height: "4rem",
+  width: "14rem",
+  background: "inherit",
+  color: active ? "#EEF090" : "#ffffff",
+  borderBottom: active ? "0.5rem solid #EEF090" : "0.5rem solid #ffffff",
+  [media(767)]: {
+    fontSize: "1.8rem",
+    height: "6rem",
+    width: "19.5rem",
+  },
 })
 const SenateNavbar = () => {
   const [score, setScore] = useState(false);

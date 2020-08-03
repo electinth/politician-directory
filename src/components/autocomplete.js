@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import Autosuggest from 'react-autosuggest';
-import AutosuggestHighlightMatch from 'autosuggest-highlight/match';
-import AutosuggestHighlightParse from 'autosuggest-highlight/parse';
-import VoteLogLegend from "../components/voteLogLegend";
-import styled from '@emotion/styled';
-import download from '../images/icons/download/download.png'; 
-import search from '../images/icons/search/search-grey.png';
+import React, { useState, useEffect } from "react"
+import Autosuggest from "react-autosuggest"
+import AutosuggestHighlightMatch from "autosuggest-highlight/match"
+import AutosuggestHighlightParse from "autosuggest-highlight/parse"
+import VoteLogLegend from "../components/voteLogLegend"
+import styled from "@emotion/styled"
+import download from "../images/icons/download/download.png"
+import search from "../images/icons/search/search-grey.png"
 import { politicianPicture } from "../utils"
-import { media } from "../styles";
+import { media } from "../styles"
 import _ from "lodash"
 
 const cssContainer = {
@@ -15,7 +15,7 @@ const cssContainer = {
   padding: "0 22px 26px 22px",
   [media(767)]: {
     padding: "0 43px 12px 57px",
-  }
+  },
 }
 const cssWrapper = {
   width: "100%",
@@ -23,8 +23,8 @@ const cssWrapper = {
   flexDirection: "column",
   alignItems: "center",
   [media(767)]: {
-    flexDirection: "row"
-  }
+    flexDirection: "row",
+  },
 }
 const Style = styled.div`
   .react-autosuggest__suggestions-container {
@@ -84,46 +84,46 @@ const Style = styled.div`
   }
 `
 const cssClearIcon = {
-  position: 'absolute',
-  top: '0',
-  right: '0',
-  width: '18px',
-  height: '18px',
-  cursor: 'pointer',
-  opacity: '0.3',
+  position: "absolute",
+  top: "0",
+  right: "0",
+  width: "18px",
+  height: "18px",
+  cursor: "pointer",
+  opacity: "0.3",
   "&:hover": {
-    opacity: '1',
+    opacity: "1",
   },
   "&:before, &:after": {
-    position: 'absolute',
-    top: '4px',
-    right: '12px',
+    position: "absolute",
+    top: "4px",
+    right: "12px",
     content: '""',
-    height: '18px',
-    width: '2px',
-    backgroundColor: '#333',
+    height: "18px",
+    width: "2px",
+    backgroundColor: "#333",
   },
   "&:before": {
-    transform: 'rotate(45deg)'
+    transform: "rotate(45deg)",
   },
   "&:after": {
-    transform: 'rotate(-45deg)'
-  }
+    transform: "rotate(-45deg)",
+  },
 }
 const cssSearchIcon = {
-  position: 'absolute',
-  top: '8px',
-  left: '0',
-  width: '15px',
+  position: "absolute",
+  top: "8px",
+  left: "0",
+  width: "15px",
 }
 const cssImg = {
-  position: 'absolute',
-  top: '0',
-  left: '25px',
+  position: "absolute",
+  top: "0",
+  left: "25px",
   width: "25px",
   height: "25px",
   border: "1px solid #AEAEAE",
-  borderRadius: "50px"
+  borderRadius: "50px",
 }
 const cssAvg = {
   display: "none",
@@ -132,132 +132,128 @@ const cssAvg = {
   },
 }
 
-const AutoComplete = ({allSenateVoteYaml, setSenatorId, viewPerson, viewGroup}) => {
-  const [value, setValue] = useState('');
-  const [suggestions, setSuggestions] = useState([]);
-  const [senator, setSenator] = useState([]);
+const AutoComplete = ({
+  allSenateVoteYaml,
+  setSenatorId,
+  viewPerson,
+  viewGroup,
+}) => {
+  const [value, setValue] = useState("")
+  const [suggestions, setSuggestions] = useState([])
+  const [senator, setSenator] = useState([])
   const [valueSelected, setValueSelected] = useState({})
   const [avgVotelog, setAvgVotelog] = useState({})
-  useEffect(()=>{
+  useEffect(() => {
     allSenateVoteYaml.nodes.unshift({
       id: "0",
       lastname: "",
       name: "",
       title: "ทั้งหมด",
-      votelog: []
+      votelog: [],
     })
-    setSenator(allSenateVoteYaml.nodes)    
-  },[])
+    setSenator(allSenateVoteYaml.nodes)
+  }, [])
 
-  useEffect(()=>{
-    setValue(senator[0] ? senator[0].title : '')
-  },[senator])
+  useEffect(() => {
+    setValue(senator[0] ? senator[0].title : "")
+  }, [senator])
 
-  useEffect(()=>{
-    setAvgVotelog(calPercentPerson())    
-  },[valueSelected])
-  
+  useEffect(() => {
+    setAvgVotelog(calPercentPerson())
+  }, [valueSelected])
+
   const escapeRegexCharacters = str => {
-    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
   }
-  
-  const getSuggestions = (value,senator) => {
-    const escapedValue = escapeRegexCharacters(value.trim());
-    const regex =  new RegExp(escapedValue, 'gi');
-    return senator.filter(person =>
-      person.id === '0' || regex.test(getSuggestionValue(person))
-    );
+
+  const getSuggestions = (value, senator) => {
+    const escapedValue = escapeRegexCharacters(value.trim())
+    const regex = new RegExp(escapedValue, "gi")
+    return senator.filter(
+      person => person.id === "0" || regex.test(getSuggestionValue(person))
+    )
   }
 
   const getSuggestionValue = suggestion => {
     setSenatorId(suggestion.id)
-    return `${suggestion.title} ${suggestion.name} ${suggestion.lastname}`;
-  };
+    return `${suggestion.title} ${suggestion.name} ${suggestion.lastname}`
+  }
 
-  const onSuggestionSelected = (event, { suggestion, suggestionValue }) =>{
-    setValueSelected(suggestion)  
-  };
+  const onSuggestionSelected = (event, { suggestion, suggestionValue }) => {
+    setValueSelected(suggestion)
+  }
 
   const renderSuggestion = (suggestion, { query }) => {
-    const suggestionText = `${suggestion.title} ${suggestion.name} ${suggestion.lastname}`;
-    const matches = AutosuggestHighlightMatch(suggestionText, query);
-    const parts = AutosuggestHighlightParse(suggestionText, matches);
+    const suggestionText = `${suggestion.title} ${suggestion.name} ${suggestion.lastname}`
+    const matches = AutosuggestHighlightMatch(suggestionText, query)
+    const parts = AutosuggestHighlightParse(suggestionText, matches)
     return (
       <span className="name">
-        {
-          parts.map((part, index) => {
-            const className = part.highlight ? 'highlight' : null;
-            return (
-              <span className={className} key={index}>{part.text}</span>
-            );
-          })
-        }
+        {parts.map((part, index) => {
+          const className = part.highlight ? "highlight" : null
+          return (
+            <span className={className} key={index}>
+              {part.text}
+            </span>
+          )
+        })}
       </span>
-    );
-  };
+    )
+  }
 
   const onChange = (event, { newValue }) => {
-    setValue(newValue);
-  };
+    setValue(newValue)
+  }
 
   const onSuggestionsFetchRequested = ({ value, reason }) => {
     setSuggestions(getSuggestions(value, senator))
-  };
+  }
 
   const onSuggestionsClearRequested = () => {
     setSuggestions([])
-  };
+  }
 
-  const shouldRenderSuggestions = (value) => {
-    if (value === '') {
+  const shouldRenderSuggestions = value => {
+    if (value === "") {
       return true
-    }
-    else {
-      return value.trim().length > 1;
+    } else {
+      return value.trim().length > 1
     }
   }
 
   const clearInput = () => {
-    setValue('');
-    setValueSelected({})  
+    setValue("")
+    setValueSelected({})
   }
 
   const renderInputComponent = inputProps => (
     <div>
-      <div 
-        css={cssClearIcon} 
-        onClick={clearInput}
-      />
-      <img
-        css={cssSearchIcon} 
-        src={search}
-      />
-      { _.isEmpty(valueSelected) || value !== 'ทั้งหมด' && (
-        <img
-          css= {cssImg}
-          src={politicianPicture(valueSelected)}
-        />
-      )}
+      <div css={cssClearIcon} onClick={clearInput} />
+      <img css={cssSearchIcon} src={search} />
+      {_.isEmpty(valueSelected) ||
+        (value !== "ทั้งหมด" && (
+          <img css={cssImg} src={politicianPicture(valueSelected)} />
+        ))}
       <input {...inputProps} />
     </div>
-  );
-  
+  )
+
   const cssGroup = {
-    fontWeight: 'bold',
-    fontSize: '1.8rem',
+    fontWeight: "bold",
+    fontSize: "1.8rem",
   }
 
   const calPercentPerson = () => {
-    const voteGroup = _.groupBy(valueSelected.votelog, 'value');
+    const voteGroup = _.groupBy(valueSelected.votelog, "value")
     const vote = {
-      approve: _.get(voteGroup, '1.length', 0),
-      disprove:  _.get(voteGroup, '2.length', 0),
-      abstained:  _.get(voteGroup, '3.length', 0),
-      absent:  _.get(voteGroup, '4.length', 0),
-      missing:  _.get(voteGroup, '5.length', 0)
+      approve: _.get(voteGroup, "1.length", 0),
+      disprove: _.get(voteGroup, "2.length", 0),
+      abstained: _.get(voteGroup, "3.length", 0),
+      absent: _.get(voteGroup, "4.length", 0),
+      missing: _.get(voteGroup, "5.length", 0),
     }
     for (const item in vote) {
-      vote[item] = (((vote[item])/145)*100).toFixed(2);
+      vote[item] = ((vote[item] / 145) * 100).toFixed(2)
       if (vote[item] == 0) {
         vote[item] = 0
       }
@@ -266,44 +262,45 @@ const AutoComplete = ({allSenateVoteYaml, setSenatorId, viewPerson, viewGroup}) 
   }
   return (
     <div css={cssContainer}>
-      { viewPerson && (
+      {viewPerson && (
         <div css={cssWrapper}>
           <Style>
             <Autosuggest
-              className='cssSearchboxDropdown'
+              className="cssSearchboxDropdown"
               suggestions={suggestions}
               onSuggestionsFetchRequested={onSuggestionsFetchRequested}
               onSuggestionsClearRequested={onSuggestionsClearRequested}
               getSuggestionValue={getSuggestionValue}
               shouldRenderSuggestions={shouldRenderSuggestions}
               renderSuggestion={renderSuggestion}
-              inputProps={{value,onChange}}
+              inputProps={{ value, onChange }}
               renderInputComponent={renderInputComponent}
               onSuggestionSelected={onSuggestionSelected}
             >
-              <img src={download}/>
+              <img src={download} />
             </Autosuggest>
           </Style>
-          <span css={cssAvg} style={{margin: '0 1.5rem'}}>โดยเฉลี่ย</span>
-            <VoteLogLegend {...avgVotelog} />
+          <span css={cssAvg} style={{ margin: "0 1.5rem" }}>
+            โดยเฉลี่ย
+          </span>
+          <VoteLogLegend {...avgVotelog} />
         </div>
       )}
-      { viewGroup && (
+      {viewGroup && (
         <div css={cssWrapper}>
           <div>
             <span css={cssGroup}>โดยตำแหน่ง</span>
-            <VoteLogLegend type='group' {...avgVotelog} />
+            <VoteLogLegend type="group" {...avgVotelog} />
           </div>
           <div>
             <span css={cssGroup}>คสช. สรรหา</span>
-            <VoteLogLegend type='group' {...avgVotelog} />
+            <VoteLogLegend type="group" {...avgVotelog} />
           </div>
           <div>
             <span css={cssGroup}>ตามกลุ่มอาชีพ</span>
-            <VoteLogLegend type='group' {...avgVotelog} />
+            <VoteLogLegend type="group" {...avgVotelog} />
           </div>
-          <div>
-          </div>
+          <div></div>
         </div>
       )}
     </div>
@@ -311,4 +308,3 @@ const AutoComplete = ({allSenateVoteYaml, setSenatorId, viewPerson, viewGroup}) 
 }
 
 export default AutoComplete
-  

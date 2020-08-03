@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react"
 import Waffle from "../components/waffle"
 import VoteLogLegend from "../components/voteLogLegend"
 import VoterList from "../components/voterList"
-import download from '../images/icons/download/download.png'
+import download from "../images/icons/download/download.png"
 import _ from "lodash"
 import { media } from "../styles"
 
@@ -26,17 +26,17 @@ const cssCloseBtn = {
   top: "1rem",
   right: "1rem",
   zIndex: "20",
-  cursor: "pointer"
+  cursor: "pointer",
 }
 const cssHeader = {
   display: "flex",
   justifyContent: "space-between",
   borderBottom: "3px solid #222222",
-  paddingBottom: "12px"
+  paddingBottom: "12px",
 }
 const cssSectionWaffle = {
   paddingTop: "3rem",
-  paddingBottom: "3rem"
+  paddingBottom: "3rem",
 }
 const cssDot = {
   margin: "0 1rem",
@@ -49,13 +49,13 @@ const cssVoteTitle = {
   fontFamily: "var(--ff-title)",
   fontSize: "3.2rem",
   lineHeight: "1.2",
-  paddingTop: "23px"
+  paddingTop: "23px",
 }
 const cssVoteStatus = {
   paddingTop: "37px",
   borderBottom: "3px solid #222222",
   paddingBottom: "10px",
-  display: "flex"
+  display: "flex",
 }
 const cssSubTitle = {
   fontSize: "1.8rem",
@@ -65,12 +65,12 @@ const cssSubTitle = {
 }
 const cssSubstance = {
   fontSize: "1.8rem",
-  lineHeight: "1.4"
+  lineHeight: "1.4",
 }
 const cssVotingDocs = {
   fontSize: "1.2rem",
   paddingTop: "2.2rem",
-  paddingBottom: "2rem"
+  paddingBottom: "2rem",
 }
 const cssVotingSheetBtn = {
   fontSize: "1.8rem",
@@ -82,7 +82,7 @@ const cssVotingSheetBtn = {
   cursor: "pointer",
   display: "flex",
   justifyContent: "center",
-  alignItems: "center"
+  alignItems: "center",
 }
 
 const VoteInfoPopup = ({
@@ -90,17 +90,18 @@ const VoteInfoPopup = ({
   setPopupState,
   votelogInfo,
   allSenateVoteYaml,
-  allPeopleYaml
-}) => { 
-
-  useEffect(()=>{
+  allPeopleYaml,
+}) => {
+  useEffect(() => {
     setPopupState(popupState)
-  },[setPopupState])
+  }, [setPopupState])
 
   const filterVote = (combined, key, value) =>
-  _.filter(combined, o => {
-    return _.get(_.find(o.votelog || [], p => p.key === key), "value") === value
-  })
+    _.filter(combined, o => {
+      return (
+        _.get(_.find(o.votelog || [], p => p.key === key), "value") === value
+      )
+    })
 
   const handleClose = () => {
     setPopupState(false)
@@ -128,29 +129,23 @@ const VoteInfoPopup = ({
 
   return (
     <div>
-      { popupState && (
-        <div css={cssPopupContainer} className='cssPopupScrollbar'>
+      {popupState && (
+        <div css={cssPopupContainer} className="cssPopupScrollbar">
           <div onClick={handleClose} css={cssCloseBtn}>
             x
           </div>
 
           <section css={cssHeader}>
-            <div>
-              ประชุมส.ว.
-            </div>
-            <div>
-              {votelogInfo.vote_date}
-            </div>
+            <div>ประชุมส.ว.</div>
+            <div>{votelogInfo.vote_date}</div>
           </section>
 
           <section>
-            <div css={cssVoteTitle}>
-              {votelogInfo.title}
-            </div>
+            <div css={cssVoteTitle}>{votelogInfo.title}</div>
             <div css={cssVoteStatus}>
               สถานะ{" "}
               {votelogInfo.is_active ? (
-                <span style={{display: "flex", alignItems: "center"}}>
+                <span style={{ display: "flex", alignItems: "center" }}>
                   <span
                     css={cssDot}
                     style={{
@@ -160,7 +155,7 @@ const VoteInfoPopup = ({
                   <b>ผ่าน</b>
                 </span>
               ) : (
-                <span style={{display: "flex", alignItems: "center"}}>
+                <span style={{ display: "flex", alignItems: "center" }}>
                   <div
                     css={cssDot}
                     style={{
@@ -172,8 +167,8 @@ const VoteInfoPopup = ({
               )}
             </div>
           </section>
-    
-          <section 
+
+          <section
             css={{
               display: "flex",
               alignItems: "center",
@@ -181,7 +176,8 @@ const VoteInfoPopup = ({
               ...cssSectionWaffle,
             }}
           >
-            <Waffle style={{width: "100%"}}
+            <Waffle
+              style={{ width: "100%" }}
               data={[
                 approve.map(p => ({ node: p })),
                 disprove.map(p => ({ node: p })),
@@ -205,49 +201,63 @@ const VoteInfoPopup = ({
               ]}
             />
             <div css={{ marginTop: "4rem" }}>
-              <VoteLogLegend type='popup' {...countVotelog} />
+              <VoteLogLegend type="popup" {...countVotelog} />
             </div>
           </section>
-          
+
           <section>
             <div css={cssSubTitle}>
               <b>เนื้อหา</b>
             </div>
-            <div css={cssSubstance}>
-              {votelogInfo.description_th}
-            </div>
+            <div css={cssSubstance}>{votelogInfo.description_th}</div>
             <div css={cssVotingDocs}>
-              <b>เอกสารการลงมติ</b> 
+              <b>เอกสารการลงมติ</b>
             </div>
-            <div style={{display: 'flex', marginBottom: '3.6rem'}}>
-              { votelogInfo.document instanceof Array && (
-                votelogInfo.document.map(item => (
-                  item.link && (
-                    <a href={item.link} key={item.link} target="_blank" download style={{textDecoration: 'none'}}>
-                      <div css={cssVotingSheetBtn} style={{marginRight: '20px'}}>
-                        <img src={download} style={{marginBottom:"0", marginRight: "14px", width: "20px"}}/>
-                        <b>
-                          {item.title}
-                        </b>
-                      </div>
-                    </a>
-                  )
-                ))
-              )}
+            <div style={{ display: "flex", marginBottom: "3.6rem" }}>
+              {votelogInfo.document instanceof Array &&
+                votelogInfo.document.map(
+                  item =>
+                    item.link && (
+                      <a
+                        href={item.link}
+                        key={item.link}
+                        target="_blank"
+                        download
+                        style={{ textDecoration: "none" }}
+                      >
+                        <div
+                          css={cssVotingSheetBtn}
+                          style={{ marginRight: "20px" }}
+                        >
+                          <img
+                            src={download}
+                            style={{
+                              marginBottom: "0",
+                              marginRight: "14px",
+                              width: "20px",
+                            }}
+                          />
+                          <b>{item.title}</b>
+                        </div>
+                      </a>
+                    )
+                )}
             </div>
           </section>
-          
+
           <section>
             <div css={cssSubTitle}>
               <b>บันทึกคะแนนเสียง</b>
-              <VoterList data={[approve, disprove, abstained, absent, missing]} page={'senateVoteResult'} />
+              <VoterList
+                data={[approve, disprove, abstained, absent, missing]}
+                page={"senateVoteResult"}
+              />
             </div>
           </section>
-  
         </div>
       )}
     </div>
   )
 }
-  
+
 export default VoteInfoPopup

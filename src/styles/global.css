@@ -69,10 +69,10 @@ a:hover {
   width: 12px;
 }
 .cssPopupScrollbar::-webkit-scrollbar-track {
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 .cssPopupScrollbar::-webkit-scrollbar-thumb {
-  background: var(--cl-gray-4); 
+  background: var(--cl-gray-4);
   border-radius: 10px;
 }
 .cssPopupScrollbar::-webkit-scrollbar-thumb:hover {
