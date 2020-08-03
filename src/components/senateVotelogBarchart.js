@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import _ from "lodash"
 import moment from "moment"
 import { graphql, useStaticQuery } from "gatsby"
-import DropDown from "./page2/dropdown"
+import DropDown from "./dropdown"
 import BarChart from "./page2/barChart"
 import ToggleSwitch from "./page2/toggleSwitch"
 

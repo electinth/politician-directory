@@ -89,13 +89,14 @@ function DrawChart({
       .range([0, search_id ? width - 300 : width])
 
     let vote_dates = data.map(d => d.vote_date)
+
     let yAxis_vote_dates = d3
       .scaleBand()
       .domain(vote_dates)
       .range([0, height])
       .padding(0.2)
 
-    console.log(vote_dates, "vote_dates")
+    // console.log(vote_dates, "vote_dates")
     var yAxis = g =>
       g
         .attr("className", "yAxis")
@@ -138,7 +139,6 @@ function DrawChart({
       d3.selectAll(".rect" + d.data.id).style("stroke", "black")
       console.log(d.data.id)
       setVoteId(d.data.id)
-      console.log(setVoteId, "setVoteId")
       setPopupState(true)
     }
     rects
@@ -177,10 +177,10 @@ function DrawChart({
             .attr("transform", `translate(${search_id ? 150 : 0}, 0)`)
         )
     }
-    console.log(y.bandwidth(), "y")
-    console.log(y.range(), "y.range")
-    console.log(height, "height")
-    console.log(data.length, "length")
+    // console.log(yAxis_vote_dates.bandwidth(), "y")
+    // console.log(yAxis_vote_dates.range(), "y.range")
+    // console.log(height, "height")
+    // console.log(data.length, "length")
 
     if (is_yAxis) {
       if (!is_On) {

@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 import _ from "lodash"
 
-import Dropdown from "../components/page2/dropdown"
+import Dropdown from "../components/dropdown"
 import Waffle from "../components/waffle"
 
 const cssH1 = { fontSize: "4.8rem", marginTop: "4rem" }
