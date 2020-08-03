@@ -2,9 +2,9 @@ import React, { useState } from "react"
 import _ from "lodash"
 import moment from "moment"
 import { graphql, useStaticQuery } from "gatsby"
-import DropDown from "../components/page2/dropdown"
-import BarChart from "../components/page2/barChart"
-import ToggleSwitch from "../components/page2/toggleSwitch"
+import DropDown from "./page2/dropdown"
+import BarChart from "./page2/barChart"
+import ToggleSwitch from "./page2/toggleSwitch"
 
 const cssGroupChart = {
   height: "300px",
@@ -143,7 +143,7 @@ const Page2 = props => {
     <div>
       Page 2<button onClick={showAll}>show all</button>
       <button onClick={ShowGroup}>show group</button>
-      {is_showAll ? (
+      {is_showAll || props.is_showGroup ? (
         <div>
           <DropDown
             choices={props.choices}
@@ -164,6 +164,10 @@ const Page2 = props => {
             is_On={is_On}
             is_all={is_all}
             search_id={search_id}
+            setVoteId={props.setVoteId}
+            setPopupState={props.setPopupState}
+            is_showAll={props.is_showAll}
+            is_showGroup={props.is_showGroup}
           />
         </div>
       ) : (
@@ -251,7 +255,13 @@ const Page2 = props => {
   )
 }
 
-export default ({ data }) => {
+export default ({
+  data,
+  setVoteId,
+  setPopupState,
+  is_showAll,
+  is_showGroup,
+}) => {
   const senate = useStaticQuery(
     graphql`
       query {
@@ -466,6 +476,10 @@ export default ({ data }) => {
       count_by_position={count_by_position}
       count_by_yourSelf={count_by_yourSelf}
       groupWidth={groupWidth}
+      setPopupState={setPopupState}
+      setVoteId={setVoteId}
+      is_showAll={is_showAll}
+      is_showGroup={is_showGroup}
     />
   )
 }

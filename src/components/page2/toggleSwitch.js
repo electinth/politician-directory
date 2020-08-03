@@ -12,7 +12,7 @@ class ToggleSwitch extends Component {
   switchOff = (
     <div>
       <i className="arrow down down_showAll" />
-      <i className="line" />
+      <i className="switch_line" />
       <i className="arrow up up_showAll" />
     </div>
   )
@@ -113,7 +113,7 @@ export default ({ is_On, handleToggle, setHeightSvg }) => {
           .up_showAll {
             margin: 5px 0 0 -18px;
           }
-          .line {
+          .switch_line {
             border: 1px solid #aeaeae;
             transform: rotate(180deg);
             z-index: 10;
