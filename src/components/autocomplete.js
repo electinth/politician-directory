@@ -181,6 +181,15 @@ const AutoComplete = ({
       title: "ทั้งหมด",
       votelog: [],
     })
+    allSenateVoteYaml.nodes.map(item => {
+      if (item.id === "0") {
+        fullname.push(item.title)
+        item.fullname = item.title
+      } else {
+        fullname.push(item.title + ' ' + item.name + ' ' + item.lastname)
+        item.fullname = item.title + ' ' + item.name + ' ' + item.lastname
+      }
+    })
     setSenator(allSenateVoteYaml.nodes)
   }, [])
 
@@ -211,16 +220,18 @@ const AutoComplete = ({
   }
 
   const getSuggestionValue = suggestion => {
-    setSenatorId(suggestion.id)
+    if (suggestion.id === "0") {
+      return `${suggestion.title}`
+    } 
     return `${suggestion.title} ${suggestion.name} ${suggestion.lastname}`
-  }
 
-  const onSuggestionSelected = (event, { suggestion, suggestionValue }) => {
-    setValueSelected(suggestion)
   }
 
   const renderSuggestion = (suggestion, { query }) => {
-    const suggestionText = `${suggestion.title} ${suggestion.name} ${suggestion.lastname}`
+    let suggestionText = `${suggestion.title} ${suggestion.name} ${suggestion.lastname}`
+    if (suggestion.id === "0") {
+      suggestionText = `${suggestion.title}`
+    }
     const matches = AutosuggestHighlightMatch(suggestionText, query)
     const parts = AutosuggestHighlightParse(suggestionText, matches)
     return (
@@ -239,6 +250,14 @@ const AutoComplete = ({
 
   const onChange = (event, { newValue }) => {
     setValue(newValue)
+    if (fullname.includes(newValue)) {
+      const match = _.find(senator, ['fullname', newValue]);
+      setValueSelected(match)
+      setSenatorId(match.id)
+    } else {
+      setValueSelected({})
+      setSenatorId("0")
+    }
   }
 
   const onSuggestionsFetchRequested = ({ value, reason }) => {
@@ -260,6 +279,7 @@ const AutoComplete = ({
   const clearInput = () => {
     setValue("")
     setValueSelected({})
+    setSenatorId("0")
   }
 
   const renderInputComponent = inputProps => (
@@ -414,7 +434,6 @@ const AutoComplete = ({
               renderSuggestion={renderSuggestion}
               inputProps={{ value, onChange }}
               renderInputComponent={renderInputComponent}
-              onSuggestionSelected={onSuggestionSelected}
             >
               <img src={download} />
             </Autosuggest>
@@ -438,7 +457,6 @@ const AutoComplete = ({
             <span css={cssGroup}>ตามกลุ่มอาชีพ</span>
             <VoteLogLegend type="group" {...select_by_career} />
           </div>
-          <div></div>
         </div>
       )}
     </div>
