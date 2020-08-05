@@ -134,15 +134,45 @@ const cssAvg = {
 
 const AutoComplete = ({
   allSenateVoteYaml,
+  allPeopleYaml,
   setSenatorId,
-  viewPerson,
-  viewGroup,
+  isShowAll,
+  countByGroup
 }) => {
   const [value, setValue] = useState("")
   const [suggestions, setSuggestions] = useState([])
   const [senator, setSenator] = useState([])
   const [valueSelected, setValueSelected] = useState({})
   const [avgVotelog, setAvgVotelog] = useState({})
+  const [select_by_government, setSelectByGovernment] = useState({
+    'approve': 0,
+    'disprove': 0,
+    'abstained': 0,
+    'absent': 0,
+    'missing': 0
+  });
+  const [select_by_position, setSelectByPosition] = useState({
+    'approve': 0,
+    'disprove': 0,
+    'abstained': 0,
+    'absent': 0,
+    'missing': 0
+  });
+  const [select_by_career, setSelectByCareer] = useState({
+    'approve': 0,
+    'disprove': 0,
+    'abstained': 0,
+    'absent': 0,
+    'missing': 0
+  });
+  const [totalVotelogType, setTotalVotelogType] = useState({
+    'approve': 0,
+    'disprove': 0,
+    'abstained': 0,
+    'absent': 0,
+    'missing': 0
+  });
+
   useEffect(() => {
     allSenateVoteYaml.nodes.unshift({
       id: "0",
@@ -159,8 +189,14 @@ const AutoComplete = ({
   }, [senator])
 
   useEffect(() => {
-    setAvgVotelog(calPercentPerson())
-  }, [valueSelected])
+    setAvgVotelog(calPercentLegend())
+  }, [valueSelected, isShowAll])
+
+  useEffect(() => {
+    countVoteLogGroup()
+    calLegend()    
+    setAvgVotelog(calPercentLegend())
+  }, [countByGroup])
 
   const escapeRegexCharacters = str => {
     return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
@@ -243,26 +279,129 @@ const AutoComplete = ({
     fontSize: "1.8rem",
   }
 
-  const calPercentPerson = () => {
-    const voteGroup = _.groupBy(valueSelected.votelog, "value")
-    const vote = {
-      approve: _.get(voteGroup, "1.length", 0),
-      disprove: _.get(voteGroup, "2.length", 0),
-      abstained: _.get(voteGroup, "3.length", 0),
-      absent: _.get(voteGroup, "4.length", 0),
-      missing: _.get(voteGroup, "5.length", 0),
-    }
-    for (const item in vote) {
-      vote[item] = ((vote[item] / 145) * 100).toFixed(2)
-      if (vote[item] == 0) {
-        vote[item] = 0
+  const calPercentLegend = () => {
+    if (isShowAll) {
+      if (_.isEmpty(valueSelected) || valueSelected.id === "0") {
+        return totalVotelogType
+      } 
+      else {
+        const voteGroup = _.groupBy(valueSelected.votelog, "value")
+        const vote = {
+          approve: _.get(voteGroup, "1.length", 0),
+          disprove: _.get(voteGroup, "2.length", 0),
+          abstained: _.get(voteGroup, "3.length", 0),
+          absent: _.get(voteGroup, "4.length", 0),
+          missing: _.get(voteGroup, "5.length", 0),
+        }
+        for (const item in vote) {
+          vote[item] = ((vote[item] / 145) * 100).toFixed(2)
+          if (vote[item] == 0) {
+            vote[item] = 0
+          }
+        }
+        return vote
       }
     }
-    return vote
   }
+
+  const getAllPeopleVotes = () => {
+    const people_votes = allSenateVoteYaml.nodes
+    const people_method = allPeopleYaml.nodes
+    const voter_in_votelog = []
+
+    people_votes.forEach(p => {
+      p.votelog.forEach(l => {
+        const method = people_method.filter(m => m.id == p.id)
+        method.forEach(pm => {
+          voter_in_votelog.push({
+            ...l,
+            senator_id: p.id,
+            senator_method: pm.senator_method,
+          })
+        })
+      })
+    })
+    _.remove(voter_in_votelog, function(n) {
+      return n.value === "-"
+    })
+    return voter_in_votelog
+  }
+
+  const countTotalVoteLog = () => {
+    totalVotelogType.approve = select_by_government.approve + select_by_position.approve + select_by_career.approve
+    totalVotelogType.disprove = select_by_government.disprove + select_by_position.disprove + select_by_career.disprove
+    totalVotelogType.abstained = select_by_government.abstained + select_by_position.abstained + select_by_career.abstained
+    totalVotelogType.absent = select_by_government.absent + select_by_position.absent + select_by_career.absent
+    totalVotelogType.missing = select_by_government.missing + select_by_position.missing + select_by_career.missing      
+  }
+
+  const countVoteLogGroup = () => {
+    if (countByGroup[0] !== undefined) {
+      countByGroup[0].count_by_government.map(item => {
+        select_by_government.approve += item[1]
+        select_by_government.disprove += item[2]
+        select_by_government.abstained += item[3]
+        select_by_government.absent += item[4]
+        select_by_government.missing += item[5]
+      })
+      countByGroup[0].count_by_position.map(item => {
+        select_by_position.approve += item[1]
+        select_by_position.disprove += item[2]
+        select_by_position.abstained += item[3]
+        select_by_position.absent += item[4]
+        select_by_position.missing += item[5]
+      })
+      countByGroup[0].count_by_yourSelf.map(item => {
+        select_by_career.approve += item[1]
+        select_by_career.disprove += item[2]
+        select_by_career.abstained += item[3]
+        select_by_career.absent += item[4]
+        select_by_career.missing += item[5]
+      })
+    } 
+    countTotalVoteLog()
+  }
+
+  const calLegend = () => {
+    const numberType = _.groupBy(getAllPeopleVotes(), "senator_method")
+    const sumVoteGovernment = numberType["เลือกโดย คสช."].length
+    const sumVotePosition = numberType["โดยตำแหน่ง"].length
+    const sumVoteCareer = numberType["เลือกกันเอง"].length
+    const sumTotal = totalVotelogType.approve + totalVotelogType.disprove + totalVotelogType.abstained + totalVotelogType.absent + totalVotelogType.missing 
+
+    for (const item in select_by_government) {
+      select_by_government[item] = ((select_by_government[item] / sumVoteGovernment) * 100).toFixed(2)
+      if (select_by_government[item] == 0) {
+        select_by_government[item] = 0
+      }
+    }
+  
+    for (const item in select_by_position) {
+      select_by_position[item] = ((select_by_position[item] / sumVotePosition) * 100).toFixed(2)
+      if (select_by_position[item] == 0) {
+        select_by_position[item] = 0
+      }
+    }
+  
+    for (const item in select_by_career) {
+      select_by_career[item] = ((select_by_career[item] / sumVoteCareer) * 100).toFixed(2)
+      if (select_by_career[item] == 0) {
+        select_by_career[item] = 0
+      }
+    }
+    
+    for (const item in totalVotelogType) {
+      totalVotelogType[item] = ((totalVotelogType[item] / sumTotal) * 100).toFixed(2)
+      if (totalVotelogType[item] == 0) {
+        totalVotelogType[item] = 0
+      }
+    }
+    
+  }
+
   return (
     <div css={cssContainer}>
-      {viewPerson && (
+      {isShowAll ? (
         <div css={cssWrapper}>
           <Style>
             <Autosuggest
@@ -285,20 +424,19 @@ const AutoComplete = ({
           </span>
           <VoteLogLegend {...avgVotelog} />
         </div>
-      )}
-      {viewGroup && (
+      ) : (
         <div css={cssWrapper}>
-          <div>
+          <div style={{marginRight: '35px'}}>
             <span css={cssGroup}>โดยตำแหน่ง</span>
-            <VoteLogLegend type="group" {...avgVotelog} />
+            <VoteLogLegend type="group" {...select_by_position} />
           </div>
-          <div>
+          <div style={{marginRight: '35px'}}>
             <span css={cssGroup}>คสช. สรรหา</span>
-            <VoteLogLegend type="group" {...avgVotelog} />
+            <VoteLogLegend type="group" {...select_by_government} />
           </div>
-          <div>
+          <div style={{marginRight: '35px'}}>
             <span css={cssGroup}>ตามกลุ่มอาชีพ</span>
-            <VoteLogLegend type="group" {...avgVotelog} />
+            <VoteLogLegend type="group" {...select_by_career} />
           </div>
           <div></div>
         </div>

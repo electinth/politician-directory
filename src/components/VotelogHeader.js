@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { media } from "../styles";
 
 const cssContainer = {
@@ -83,15 +83,20 @@ const cssMobile = {
   }
 }
 
-const VoteResultsHeader = ({viewPerson, viewGroup, setViewPerson, setViewGroup}) => {
+const VoteResultsHeader = ({setIsShowAll}) => {
+
+  const [viewPerson, setViewPerson] = useState(true);
+  const [viewGroup, setViewGroup] = useState(false);
 
   const clickBtnViewPerson = () => {
     setViewPerson(true)
     setViewGroup(false)
+    setIsShowAll(true)
   }
   const clickBtnViewGroup = () => {
     setViewPerson(false)
     setViewGroup(true)
+    setIsShowAll(false)
   }
   return (
     <div>

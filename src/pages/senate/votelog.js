@@ -5,10 +5,8 @@ import Layout from "../../components/layout"
 import VotelogHeader from "../../components/votelogHeader"
 import VoteInfoPopup from "../../components/voteInfoPopup"
 import Autocomplete from "../../components/autocomplete"
-import MockBarchart from "../../components/mockBarchart"
 import SenateNavbar from "../../components/senateNavbar"
 import SenateVotelogBarchart from "../../components/senateVotelogBarchart"
-//senateVotelogBarchart
 
 export const query = graphql`
   query {
@@ -49,64 +47,55 @@ export const query = graphql`
         senator_method
       }
     }
+
   }
 `
 
 const VotelogPage = ({ data }) => {
-  const [senatorId, setSenatorId] = useState("0")
-  const [voteId, setVoteId] = useState("")
-  const [popupState, setPopupState] = useState(false)
-  const [viewPerson, setViewPerson] = useState(true)
-  const [viewGroup, setViewGroup] = useState(false)
-  const [voteSelected, setVoteSelected] = useState("")
-  const [is_showAll, setShowAll] = useState(true)
-  const [is_showGroup, setShowGroup] = useState(false)
-
-  useEffect(() => {
+  const [senatorId, setSenatorId] = useState('0');
+  const [voteId, setVoteId] = useState('');
+  const [popupState, setPopupState] = useState(false);
+  const [voteSelected, setVoteSelected] = useState('');
+  const [isShowAll,setIsShowAll] = useState(true);
+  const [countByGroup, setCountByGroup] = useState([])
+  
+  useEffect(()=>{
     if (voteId) {
-      console.log("voteId>", voteId)
-      setVoteSelected(_.find(data.allSenateVotelogYaml.nodes, { id: voteId }))
+      console.log('voteId>',voteId);
+      setVoteSelected(_.find(data.allSenateVotelogYaml.nodes, { 'id': voteId }))
     }
-  }, [voteId])
+  },[voteId])
 
-  useEffect(() => {
-    console.log("viewPerson>", viewPerson)
-  }, [viewPerson])
-  useEffect(() => {
-    console.log("viewGroup>", viewGroup)
-  }, [viewGroup])
+  useEffect(()=>{
+    console.log('senatorId>',senatorId);
+   },[senatorId])
 
   return (
     <div>
-      <VoteInfoPopup
+      <VoteInfoPopup 
         popupState={popupState}
         setPopupState={setPopupState}
         votelogInfo={voteSelected}
         allSenateVoteYaml={data.allSenateVoteYaml}
         allPeopleYaml={data.allPeopleYaml}
       />
-      <Layout style={{ position: "relative" }}>
-        <SenateNavbar />
-        <VotelogHeader
-          viewPerson={viewPerson}
-          viewGroup={viewGroup}
-          setViewPerson={setViewPerson}
-          setViewGroup={setViewGroup}
+      <Layout style={{position: "relative"}}>
+        <SenateNavbar/>
+        <VotelogHeader 
+          setIsShowAll={setIsShowAll}
         />
-        <Autocomplete
-          setSenatorId={setSenatorId}
-          viewPerson={viewPerson}
-          viewGroup={viewGroup}
+        <Autocomplete 
+          setSenatorId={setSenatorId} 
+          isShowAll= {isShowAll}
           allSenateVoteYaml={data.allSenateVoteYaml}
+          allPeopleYaml={data.allPeopleYaml}
+          countByGroup={countByGroup}
         />
-        {/* <MockBarchart 
-          setPopupState={setPopupState}
-          setVoteId={setVoteId} /> */}
-        <SenateVotelogBarchart
-          setPopupState={setPopupState}
+        <SenateVotelogBarchart 
+          setPopupState={setPopupState} 
           setVoteId={setVoteId}
-          is_showAll={viewPerson}
-          is_showGroup={viewGroup}
+          isShowAll= {isShowAll}
+          setCountByGroup={setCountByGroup}
         />
       </Layout>
     </div>

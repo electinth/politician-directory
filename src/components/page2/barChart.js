@@ -5,6 +5,7 @@ import * as d3 from "d3"
 const cssHightChart = {
   height: "300px",
   overflowY: "scroll",
+  marginBottom: "42px"
 }
 
 function DrawChart({

@@ -18,7 +18,7 @@ const cssHeader = {
     flex: 1,
   },
   [media(767)]: {
-    marginBottom: "5.6rem",
+    marginBottom: "0",
     padding: "0 5.8rem 0 2rem",
     height: "6rem",
   }
@@ -46,7 +46,7 @@ const cssBtn = ({ active }) => ({
   width: "14rem",
   background: "inherit",
   color: active ? "#EEF090" : "#ffffff",
-  borderBottom: active ? "0.5rem solid #EEF090" : "0.5rem solid #ffffff",
+  borderBottom: active ? "0.5rem solid #EEF090" : "0.5rem solid #4C4C4C",
   [media(767)]: {
     fontSize: "1.8rem",
     height: "6rem",

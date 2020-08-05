@@ -3,6 +3,7 @@ import { Global, css } from "@emotion/core"
 import { media } from "../styles"
 
 const cssLegend = ({ missing }) => ({
+  display: missing ? "flex" : "unset",
   flexWrap: missing ? "wrap" : "unset",
   justifyContent: missing ? "center" : "unset",
 })
@@ -48,7 +49,7 @@ const VoteLogLegend = ({
   type,
 }) => {
   return (
-    <div css={cssLegend({ missing })} style={{ display: "flex" }}>
+    <div css={cssLegend({ missing })}>
       <div css={cssAvgText({ missing, type })}>โดยเฉลี่ย</div>
       <span css={cssLegendWrap({ missing })}>
         <div
@@ -73,7 +74,7 @@ const VoteLogLegend = ({
             </>
           )
         ) : (
-          `เห็นด้วย ${approve}%`
+          `เห็นด้วย ${approve}`
         )}
       </span>
       <span css={cssLegendWrap({ missing })}>
@@ -87,7 +88,7 @@ const VoteLogLegend = ({
         {missing != undefined ? (
           type === "group" ? (
             <>
-              <b style={{ margin: "0 0.3rem" }}></b> {disprove}
+              <b style={{ margin: "0 0.3rem" }}></b> {disprove}%
             </>
           ) : type === "popup" ? (
             <>
@@ -117,7 +118,7 @@ const VoteLogLegend = ({
         {missing != undefined ? (
           type === "group" ? (
             <>
-              <b style={{ margin: "0 0.3rem" }}></b> {abstained}
+              <b style={{ margin: "0 0.3rem" }}></b> {abstained}%
             </>
           ) : type === "popup" ? (
             <>
@@ -147,7 +148,7 @@ const VoteLogLegend = ({
         {missing != undefined ? (
           type === "group" ? (
             <>
-              <b style={{ margin: "0 0.3rem" }}></b> {absent}
+              <b style={{ margin: "0 0.3rem" }}></b> {absent}%
             </>
           ) : type === "popup" ? (
             <>
@@ -173,7 +174,7 @@ const VoteLogLegend = ({
           />{" "}
           {type === "group" ? (
             <>
-              <b style={{ margin: "0 0.3rem" }}></b> {missing}
+              <b style={{ margin: "0 0.3rem" }}></b> {missing}%
             </>
           ) : type === "popup" ? (
             <>
