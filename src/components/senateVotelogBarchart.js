@@ -59,6 +59,7 @@ const Page2 = props => {
 
   const handleFilter = e => {
     let filter = e.target.innerText
+
     const sort_by_data = (a, b) => {
       if (filter !== "เวลาล่าสุด") {
         return b[formatTypes(filter)] - a[formatTypes(filter)]
@@ -83,7 +84,7 @@ const Page2 = props => {
       setCount_all_senate(data_of_motion)
     }
     data_of_motion.sort(sort_by_data)
-
+ 
     const set_government = data_of_motion.map(function(value) {
       return count_by_government[value.id - 1]
     })
@@ -125,7 +126,7 @@ const Page2 = props => {
       setIs_position(false)
     }
   }
-
+  
   return (
     <div>
       {props.isShowAll || props.isShowGroup ? (
@@ -149,6 +150,7 @@ const Page2 = props => {
             is_On={is_On}
             is_all={props.isShowAll}
             search_id={search_id}
+            setVoteId={props.setVoteId}
             setPopupState={props.setPopupState}
             setCountByGroup={props.setCountByGroup}
           />
@@ -207,6 +209,8 @@ const Page2 = props => {
                 height_svg={height_svg}
                 is_On={is_On}
                 is_all={props.isShowAll}
+                setVoteId={props.setVoteId}
+                setPopupState={props.setPopupState}
               />
             </div>
             <div css={{ ...cssColumnChart, width: props.groupWidth[1] }}>
@@ -218,6 +222,8 @@ const Page2 = props => {
                 height_svg={height_svg}
                 is_On={is_On}
                 is_all={props.isShowAll}
+                setVoteId={props.setVoteId}
+                setPopupState={props.setPopupState}
               />
             </div>
             <div css={{ ...cssColumnChart, width: props.groupWidth[2] }}>
@@ -229,6 +235,8 @@ const Page2 = props => {
                 height_svg={height_svg}
                 is_On={is_On}
                 is_all={props.isShowAll}
+                setVoteId={props.setVoteId}
+                setPopupState={props.setPopupState}
               />
             </div>
           </div>
@@ -240,6 +248,7 @@ const Page2 = props => {
 
 export default ({
   data,
+  setVoteId,
   setPopupState,
   isShowAll,
   setCountByGroup
@@ -469,6 +478,7 @@ export default ({
       count_by_position={count_by_position}
       count_by_yourSelf={count_by_yourSelf}
       groupWidth={groupWidth}
+      setVoteId={setVoteId}
       setPopupState={setPopupState}
       isShowAll={isShowAll}
       setCountByGroup={setCountByGroup}
