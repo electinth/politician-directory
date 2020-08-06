@@ -1,5 +1,4 @@
-import React, { useRef, useEffect } from "react"
-
+import React, { useState, useRef, useEffect } from "react"
 import * as d3 from "d3"
 
 const cssHightChart = {
@@ -33,7 +32,14 @@ function DrawChart({
       .attr("width", width + margin.left + margin.right)
       .attr("height", height)
   }, [])
-  // sort
+
+  useEffect(() => {
+    if (is_starter_bars) {
+      d3.selectAll("g").remove()
+    }
+    draw_bar()
+  }, [filter_senatorId])
+
   useEffect(() => {
     if (is_starter_bars) {
       d3.selectAll("g").remove()
@@ -91,9 +97,10 @@ function DrawChart({
 
     let y_filter_senatorId = d3
       .scaleBand()
-      .domain(d3.range(filter_senatorId ? filter_senatorId.length : 10))
+      .domain(d3.range(filter_senatorId ? filter_senatorId.votes.length : 10))
       .range([0, height])
       .padding(0.2)
+
     var yAxis = g =>
       g
         .attr("className", "yAxis")
@@ -145,13 +152,12 @@ function DrawChart({
           .on("click", is_all ? onClick : "")
           .attr("transform", `translate(${filter_senatorId ? 300 : 0}, 0)`)
       )
-
     if (filter_senatorId) {
       chart
         .append("g")
         .attr("className", "charts")
         .selectAll("rect")
-        .data(filter_senatorId)
+        .data(filter_senatorId.votes)
         .join(enter =>
           enter
             .append("rect")

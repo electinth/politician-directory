@@ -24,7 +24,6 @@ class DropDown extends Component {
   }
   componentWillUnmount() {
     document.removeEventListener("mousedown", this.handleClickOutside)
-    this.setState({ is_senate: false })
   }
   render() {
     return (

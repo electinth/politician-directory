@@ -9,7 +9,7 @@ import ToggleSwitch from "./page2/toggleSwitch"
 const cssGroupChart = {
   height: "300px",
   overflowY: "scroll",
-  marginTop: "50px",
+  marginBottom: "42px",
 }
 const cssGroupChartAll = {
   height: "300px",
@@ -43,8 +43,9 @@ const Page2 = props => {
   const [is_selected_government, setIs_government] = useState(false)
   const [is_selected_yourSelf, setIs_yourSelf] = useState(false)
   const [filter_senatorId, setFilter_senatorId] = useState(
-    props.filter_senatorId ? props.filter_senatorId.votes : 0
+    props.filter_senatorId
   )
+
   const formatTypes = type => {
     if (type === "เห็นด้วย") {
       return 1
@@ -58,6 +59,16 @@ const Page2 = props => {
       return 5
     }
   }
+
+  useEffect(() => {
+    if (props.isShowAll === true) {
+      setIs_government(false)
+      setIs_position(false)
+      setIs_yourSelf(false)
+    }
+  }, [props.isShowAll])
+
+  let data_of_motion = []
   const handleFilter = e => {
     let filter = e.target.innerText
 
@@ -74,8 +85,6 @@ const Page2 = props => {
     let currentFilter = { ...currentFilter }
 
     //set group-by
-    let data_of_motion = []
-    let data_of_filter_senatorId = []
 
     if (is_selected_position) {
       data_of_motion = [...count_by_position]
@@ -86,7 +95,6 @@ const Page2 = props => {
     } else if (props.isShowAll) {
       data_of_motion = [...count_all_senate]
       setCount_all_senate(data_of_motion)
-      console.log(data_of_motion, "data_of_motion")
     }
 
     data_of_motion.sort(sort_by_data)
@@ -97,17 +105,18 @@ const Page2 = props => {
       })
       setFilter_senatorId(set_ids)
     }
-
     const set_government = data_of_motion.map(function(value) {
-      return count_by_government[value.id - 1]
+      const index = count_by_government.findIndex(g => g.id == value.id)
+      return count_by_government[index]
     })
     const set_position = data_of_motion.map(function(value) {
-      return count_by_position[value.id - 1]
+      const index = count_by_position.findIndex(g => g.id == value.id)
+      return count_by_position[index]
     })
     const set_yourSelf = data_of_motion.map(function(value) {
-      return count_by_yourSelf[value.id - 1]
+      const index = count_by_yourSelf.findIndex(g => g.id == value.id)
+      return count_by_yourSelf[index]
     })
-
     if (is_selected_position) {
       setCount_by_government(set_government)
       setCount_by_yourSelf(set_yourSelf)
@@ -140,7 +149,6 @@ const Page2 = props => {
     }
   }
 
-
   return (
     <div>
       {props.isShowAll || props.isShowGroup ? (
@@ -165,7 +173,7 @@ const Page2 = props => {
             is_all={props.isShowAll}
             setVoteId={props.setVoteId}
             setPopupState={props.setPopupState}
-            filter_senatorId={filter_senatorId}
+            filter_senatorId={props.filter_senatorId}
             setCountByGroup={props.setCountByGroup}
           />
         </div>
@@ -331,12 +339,15 @@ export default ({
     return n.value === "-"
   })
 
-  const group_senatorId = _.chain(voter_in_votelog)
-    .groupBy("senator_id")
-    .map((value, key) => ({ id: key, votes: value }))
-    .value()
-
-  const filter_senatorId = _.find(group_senatorId, ["id", senatorId])
+  const [filter_senatorId, setFilter_senatorId] = useState()
+  useEffect(() => {
+    console.log(" >>> searching", senatorId)
+    const group_senatorId = _.chain(voter_in_votelog)
+      .groupBy("senator_id")
+      .map((value, key) => ({ id: key, votes: value }))
+      .value()
+    setFilter_senatorId(_.find(group_senatorId, ["id", senatorId]))
+  }, senatorId)
 
   const default_value = [
     { "1": 0 },
