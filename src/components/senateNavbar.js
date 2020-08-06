@@ -1,6 +1,7 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { media } from "../styles"
+import votelogIcon from "../images/icons/votelog/votelog-white.png"
 
 const cssHeader = {
   width: "100vw",
@@ -9,7 +10,7 @@ const cssHeader = {
   padding: "0",
   marginBottom: "1rem",
   display: "flex",
-  justifyContent: "flex-end",
+  justifyContent: "space-between",
   alignItems: "center",
   h1: {
     fontSize: "3.2rem",
@@ -17,10 +18,17 @@ const cssHeader = {
     flex: 1,
   },
   [media(767)]: {
-    marginBottom: "5.6rem",
+    marginBottom: "0",
     padding: "0 5.8rem 0 2rem",
     height: "6rem",
-    justifyContent: "unset",
+  },
+}
+const cssIcon = {
+  display: "block",
+  height: "24px",
+  margin: "0 1rem",
+  [media(767)]: {
+    display: "none",
   },
 }
 const cssTitle = {
@@ -38,7 +46,7 @@ const cssBtn = ({ active }) => ({
   width: "14rem",
   background: "inherit",
   color: active ? "#EEF090" : "#ffffff",
-  borderBottom: active ? "0.5rem solid #EEF090" : "0.5rem solid #ffffff",
+  borderBottom: active ? "0.5rem solid #EEF090" : "0.5rem solid #4C4C4C",
   [media(767)]: {
     fontSize: "1.8rem",
     height: "6rem",
@@ -46,8 +54,16 @@ const cssBtn = ({ active }) => ({
   },
 })
 const SenateNavbar = () => {
-  const [score, setScore] = useState(true)
+  const [score, setScore] = useState(false)
   const [votelog, setVotelog] = useState(false)
+
+  useEffect(() => {
+    if (window.location.pathname === "/senate/score") {
+      setScore(true)
+    } else if (window.location.pathname === "/senate/votelog") {
+      setVotelog(true)
+    }
+  }, [])
 
   const selected = value => {
     if (value === "score") {
@@ -62,14 +78,19 @@ const SenateNavbar = () => {
   return (
     <div>
       <div css={cssHeader}>
-        <h1 css={cssTitle}>ตรวจงาน สว.</h1>
-        <Link to={"/senate/score"} onClick={() => selected("score")}>
-          <button css={cssBtn({ active: score })}>คะแนนจิตพิสัย สว.</button>
-        </Link>
+        <div style={{ display: "flex" }}>
+          <img css={cssIcon} src={votelogIcon} />
+          <h1 css={cssTitle}>ตรวจงาน สว.</h1>
+        </div>
+        <div>
+          <Link to={"/senate/score"} onClick={() => selected("score")}>
+            <button css={cssBtn({ active: score })}>คะแนนจิตพิสัย สว.</button>
+          </Link>
 
-        <Link to={"/senate/votelog"} onClick={() => selected("votelog")}>
-          <button css={cssBtn({ active: votelog })}>ผลการลงมติ</button>
-        </Link>
+          <Link to={"/senate/votelog"} onClick={() => selected("votelog")}>
+            <button css={cssBtn({ active: votelog })}>ผลการลงมติ</button>
+          </Link>
+        </div>
       </div>
     </div>
   )

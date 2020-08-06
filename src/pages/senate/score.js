@@ -4,6 +4,7 @@ import faker from "faker"
 
 import ScoreViz from "../../components/viz/scoreViz"
 import SenateNavbar from "../../components/senateNavbar"
+import SenateChecklistPopup from "../../components/senateChecklistPopup"
 
 const cssBody = {
   padding: "5.6rem 4.3rem 3.3rem 4.3rem",
@@ -101,6 +102,7 @@ const Motion = () => {
   return (
     <Layout pageStyles={{ background: "#fff" }}>
       <SenateNavbar />
+      <SenateChecklistPopup />
       <body css={{ ...cssBody }}>
         <section css={{ ...cssSection }}>
           <div css={{ ...cssSectionLeft }}>

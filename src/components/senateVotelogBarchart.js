@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import _ from "lodash"
+import React, { useState, useEffect } from "react"
+import _, { set } from "lodash"
 import moment from "moment"
 import { graphql, useStaticQuery } from "gatsby"
 import DropDown from "./dropdown"
@@ -36,11 +36,9 @@ const Page2 = props => {
   const [types, setTypes] = useState(props.types)
   const [is_senate, setIs_senate] = useState(true)
   const [is_starter_bars, setStarter] = useState(true)
-  const [is_showAll, setShowAll] = useState(true)
   const [currentFilter, setCurrentFilter] = useState(props.choices)
   const [is_On, setIsOn] = useState(false)
   const [height_svg, setHeightSvg] = useState(count_all_senate.length * 30)
-  const [is_all, setIs_all] = useState(true)
   const [is_selected_position, setIs_position] = useState(false)
   const [is_selected_government, setIs_government] = useState(false)
   const [is_selected_yourSelf, setIs_yourSelf] = useState(false)
@@ -85,7 +83,7 @@ const Page2 = props => {
       data_of_motion = [...count_by_government]
     } else if (is_selected_yourSelf) {
       data_of_motion = [...count_by_yourSelf]
-    } else if (is_all) {
+    } else if (props.isShowAll) {
       data_of_motion = [...count_all_senate]
       setCount_all_senate(data_of_motion)
       console.log(data_of_motion, "data_of_motion")
@@ -142,22 +140,9 @@ const Page2 = props => {
     }
   }
 
-  const showAll = () => {
-    setShowAll(true)
-    setIs_all(true)
-    setIsOn(false)
-  }
-  const ShowGroup = () => {
-    setShowAll(false)
-    setIs_all(false)
-    setIsOn(false)
-  }
-
   return (
     <div>
-      Page 2<button onClick={showAll}>show all</button>
-      <button onClick={ShowGroup}>show group</button>
-      {is_showAll || props.is_showGroup ? (
+      {props.isShowAll || props.isShowGroup ? (
         <div>
           <DropDown
             choices={props.choices}
@@ -176,11 +161,11 @@ const Page2 = props => {
             is_starter_bars={is_starter_bars}
             height_svg={height_svg}
             is_On={is_On}
-            is_all={is_all}
+            is_all={props.isShowAll}
             setVoteId={props.setVoteId}
             setPopupState={props.setPopupState}
             filter_senatorId={filter_senatorId}
-            is_showGroup={props.is_showGroup}
+            setCountByGroup={props.setCountByGroup}
           />
         </div>
       ) : (
@@ -236,7 +221,9 @@ const Page2 = props => {
                 is_starter_bars={is_starter_bars}
                 height_svg={height_svg}
                 is_On={is_On}
-                is_all={is_all}
+                is_all={props.isShowAll}
+                setVoteId={props.setVoteId}
+                setPopupState={props.setPopupState}
               />
             </div>
             <div css={{ ...cssColumnChart, width: props.groupWidth[1] }}>
@@ -247,7 +234,9 @@ const Page2 = props => {
                 color_bars={props.colors}
                 height_svg={height_svg}
                 is_On={is_On}
-                is_all={is_all}
+                is_all={props.isShowAll}
+                setVoteId={props.setVoteId}
+                setPopupState={props.setPopupState}
               />
             </div>
             <div css={{ ...cssColumnChart, width: props.groupWidth[2] }}>
@@ -258,7 +247,9 @@ const Page2 = props => {
                 color_bars={props.colors}
                 height_svg={height_svg}
                 is_On={is_On}
-                is_all={is_all}
+                is_all={props.isShowAll}
+                setVoteId={props.setVoteId}
+                setPopupState={props.setPopupState}
               />
             </div>
           </div>
@@ -271,9 +262,9 @@ const Page2 = props => {
 export default ({
   setVoteId,
   setPopupState,
-  is_showAll,
-  is_showGroup,
   senatorId,
+  isShowAll,
+  setCountByGroup,
 }) => {
   const senate = useStaticQuery(
     graphql`
@@ -308,6 +299,12 @@ export default ({
   const votelogs = senate.allSenateVotelogYaml.nodes
   const people_method = senate.allPeopleYaml.nodes
 
+  const [firstTime, setFirstTime] = useState(false)
+
+  useEffect(() => {
+    setCountByGroup(count_by_group)
+  }, [firstTime])
+
   const voter_in_votelog = []
   people_votes.forEach(p => {
     p.votelog.forEach(l => {
@@ -321,6 +318,7 @@ export default ({
       })
     })
   })
+
   _.remove(voter_in_votelog, function(n) {
     return n.value === "-"
   })
@@ -469,9 +467,13 @@ export default ({
 
   count_by_group.push({
     count_by_government: count_by_government,
-    position: count_by_position,
-    your_self: count_by_yourSelf,
+    count_by_position: count_by_position,
+    count_by_yourSelf: count_by_yourSelf,
   })
+
+  if (!firstTime) {
+    setFirstTime(true)
+  }
 
   const types = ["id", "1", "2", "3", "4", "5"]
   const is_yAxis = true
@@ -520,12 +522,12 @@ export default ({
       count_by_position={count_by_position}
       count_by_yourSelf={count_by_yourSelf}
       groupWidth={groupWidth}
-      setPopupState={setPopupState}
       setVoteId={setVoteId}
-      is_showAll={is_showAll}
-      is_showGroup={is_showGroup}
-      senatorId={senatorId}
+      setPopupState={setPopupState}
       filter_senatorId={filter_senatorId}
+      senatorId={senatorId}
+      isShowAll={isShowAll}
+      setCountByGroup={setCountByGroup}
     />
   )
 }
