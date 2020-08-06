@@ -1,6 +1,14 @@
 import React, { useRef, useEffect, useState } from "react"
+import { media } from "../../styles"
 import * as d3 from "d3"
-import { relative } from "path"
+
+const cssTimeLine = {
+  display: "none",
+  [media(767)]: {
+    width: "100%",
+    display: "flex",
+  },
+}
 
 const cssLollipopCon = {
   height: "43.6rem",
@@ -31,6 +39,7 @@ const cssLabelCon = {
   marginTop: "-34rem",
   left: 0,
   zIndex: 9,
+  pointerEvents: "none",
 }
 
 const cssScoreText = {
@@ -40,7 +49,6 @@ const cssScoreText = {
 const cssTooltipStyle = {
   position: "absolute",
   width: "20.6rem",
-  height: "10.8rem",
   background: "#fff",
   boxShadow: "0px 1px 4px rgba(0, 0, 0, 0.25)",
   borderRadius: "0.4rem",
@@ -56,24 +64,50 @@ const cssTooltipStyle = {
   },
 }
 
-const type = ["position", "find", "job"]
+const cssCloseBtn = {
+  position: "absolute",
+  top: 0,
+  right: 5,
+  cursor: "pointer",
+}
+
+const type = ["โดยตำแหน่ง", "เลือกโดย คสช.", "เลือกกันเอง"]
 const typeColor = d3
   .scaleOrdinal()
   .domain(type)
   .range(["#999C00", "#5739AC", "#FEACAC"])
 
-function prepareData(data) {
+function prepareData(senateVoteData) {
   const meanScore =
-    data.map(d => d.score).reduce((acc, cur) => acc + cur, 0) / data.length
+    senateVoteData.map(d => d.score).reduce((acc, cur) => acc + cur, 0) /
+    senateVoteData.length
   const criteriaScore = [50, 60, 70, 80, 100]
-
+  const fGrade = senateVoteData.filter(senator => senator.score < 50).length
+  const dGrade = senateVoteData.filter(
+    senator => senator.score > 50 && senator.score < 60
+  ).length
+  const cGrade = senateVoteData.filter(
+    senator => senator.score > 60 && senator.score < 70
+  ).length
+  const bGrade = senateVoteData.filter(
+    senator => senator.score > 70 && senator.score < 80
+  ).length
+  const aGrade = senateVoteData.filter(senator => senator.score > 80).length
+  const labelGradeData = [
+    { grade: "A", score: aGrade },
+    { grade: "B", score: bGrade },
+    { grade: "C", score: cGrade },
+    { grade: "D", score: dGrade },
+    { grade: "F", score: fGrade },
+  ]
   const posScore = criteriaScore.map(score => {
-    return data.findIndex(d => d.score === score)
+    return senateVoteData.findIndex(d => d.score === score)
   })
   return {
     criteriaScore,
     meanScore,
     posScore,
+    labelGradeData,
   }
 }
 
@@ -129,10 +163,8 @@ function createChart(
     gBrush.call(brush.move, [topSection, topSection + size])
   }
 
-  const brush = d3
-    .brushX()
-    .extent([[0, 0], [miniWidth, miniHeight]])
-    .on("brush", brushmove)
+  const brush = d3.brushX().extent([[0, 0], [miniWidth, miniHeight]])
+  // .on("}", brushmove)
 
   const timelineSvg = d3
     .select(timelineRef.current)
@@ -151,9 +183,11 @@ function createChart(
     .range([0, miniWidth])
     .padding(0.2)
 
-  timelineSvg.append("g").attr("class", "brush")
-  // .call(brush)
-  // .call(brush.move, [0, 142])
+  timelineSvg
+    .append("g")
+    .attr("class", "brush")
+    .call(brush)
+    .call(brush.move, [0, 142])
 
   const yTimeline = d3
     .scaleLinear()
@@ -178,7 +212,7 @@ function createChart(
       return miniHeight - yTimeline(d.score)
     })
     .attr("fill", function(d) {
-      return typeColor(d.type)
+      return typeColor(d.senator_method)
     })
 
   d3.selectAll(".handle").style("pointer-events", "none")
@@ -202,7 +236,7 @@ function createChart(
     .attr("height", mainHeight + mainMargin.top)
     .attr("width", maxWidth)
     .attr("overflow-x", "scroll")
-  // .on("wheel.zoom", scroll)
+    .on("wheel.zoom", scroll)
 
   const xLolli = d3
     .scaleBand()
@@ -248,45 +282,7 @@ function createChart(
       return mainHeight - yLolli(d.score)
     })
     .attr("fill", function(d) {
-      return typeColor(d.type)
-    })
-
-  d3.selectAll(".group")
-    .append("circle")
-    .attr("class", "cirecleAvt")
-    .attr("cx", function(d) {
-      return xLolli(d.id) + xLolli.bandwidth() / 2
-    })
-    .attr("cy", function(d) {
-      return yLolli(d.score) - mainMargin.bottom - 20
-    })
-    .attr("r", "20")
-    .style("fill", "#69b3a2")
-    .style("cursor", "pointer")
-    .style("stroke", "black")
-    .on("mouseover", function(d) {
-      const tooltipTop =
-        d.score < 50
-          ? yLolli(d.score) - mainMargin.bottom - 20 - 150
-          : yLolli(d.score)
-      setTooltip(d)
-      setTooltipStyle({
-        ...cssTooltipStyle,
-        top: tooltipTop,
-        left: xLolli(d.id) + xLolli.bandwidth() / 2,
-        overflow: "hidden",
-        opacity: 1,
-      })
-    })
-    .on("click", function(d) {})
-    .on("mouseout", function(d) {
-      setTooltipStyle({
-        width: 0,
-        height: 0,
-        top: null,
-        left: null,
-        opacity: 0,
-      })
+      return typeColor(d.senator_method)
     })
 
   d3.selectAll(".group")
@@ -303,16 +299,18 @@ function createChart(
     .attr("dominant-baseline", "middle")
     // .attr("text-anchor", "middle")
     .text(function(d) {
-      return `${d.score}%`
+      return `${d.score.toFixed(0)}%`
     })
 
   d3.select(".selection")
     .attr("fill", "#EEF090")
     .attr("stroke-width", 1)
     .attr("stroke", "rgba(0,0,0,0.2)")
+    .attr("z-index", 9999999)
 
   criteriaScore.forEach((score, i) => {
     const strokeType = score === 100 ? "stroke-width" : "stroke-dasharray"
+    const strokeWidth = score === 100 ? 1 : 0.5
     lolliSvg
       .append("line")
       .attr("x1", 0)
@@ -321,6 +319,7 @@ function createChart(
       .attr("y2", yLolli(score) - mainMargin.bottom)
       .attr("stroke", "#AEAEAE")
       .attr(strokeType, "2")
+      .attr("stroke-width", strokeWidth)
   })
 
   const meanLine = lolliSvg.append("g")
@@ -331,41 +330,138 @@ function createChart(
     .attr("y1", yLolli(meanScore) - mainMargin.bottom)
     .attr("y2", yLolli(meanScore) - mainMargin.bottom)
     .attr("stroke", "#F0324B")
+    .attr("stroke-width", 0.5)
+
+  d3.selectAll(".group")
+    .append("svg:defs")
+    .append("svg:pattern")
+    .attr("id", function(_, i) {
+      return "profile" + i
+    })
+    .attr("width", 40)
+    .attr("height", 40)
+    .attr("patternUnits", "userSpaceOnUse")
+    .append("svg:image")
+    .attr("xlink:href", function(d) {
+      return `https://elect.thematter.co/data/politicians/${
+        d.name
+      }-${d.lastname.replace(/ /g, "-")}.jpg`
+    })
+    .attr("width", 40)
+    .attr("height", 40)
+    .attr("x", 0)
+    .attr("y", 0)
+
+  let isClicked = false
+
+  d3.selectAll(".group")
+    .append("circle")
+    .attr("transform", function(d) {
+      const x = xLolli(d.id) - 20 + xLolli.bandwidth() / 2
+      const y = yLolli(d.score) - mainMargin.bottom - 40
+      return `translate(${x}, ${y})`
+    })
+    .attr("cx", 20)
+    .attr("cy", 20)
+    .attr("r", 20)
+    .style("fill", "#fff")
+    .style("fill", function(_, i) {
+      return "url(#profile" + i + ")"
+    })
+    .style("cursor", "pointer")
+    .attr("stroke", "black")
+    .attr("stroke-width", 1)
+    .on("mouseover", function(d) {
+      if (!isClicked) {
+        const tooltipTop =
+          d.score < 50
+            ? yLolli(d.score) - mainMargin.bottom - 20 - 150
+            : yLolli(d.score)
+        const tooltipLeft =
+          d.score > 99
+            ? xLolli(d.id) - 200
+            : xLolli(d.id) + xLolli.bandwidth() / 2
+        setTooltip(d)
+        setTooltipStyle({
+          ...cssTooltipStyle,
+          top: tooltipTop,
+          left: tooltipLeft,
+          overflow: "hidden",
+          opacity: 1,
+          zIndex: 9999,
+        })
+      }
+    })
+    .on("click", function() {
+      isClicked = !isClicked
+      d3.select("#closeBtn").on("click", function() {
+        isClicked = !isClicked
+        setTooltipStyle({
+          width: 0,
+          height: 0,
+          top: null,
+          left: null,
+          opacity: 0,
+        })
+      })
+    })
+    .on("mouseout", function() {
+      if (!isClicked) {
+        setTooltipStyle({
+          width: 0,
+          height: 0,
+          top: null,
+          left: null,
+          opacity: 0,
+        })
+      }
+    })
 }
 
 function updateChart(filter) {
-  if (filter === "position") {
+  if (filter === "โดยตำแหน่ง") {
     d3.selectAll(".group").style("opacity", function(d) {
-      return filter !== d.type ? "0.1" : "1"
+      return filter !== d.senator_method ? "0.1" : "1"
     })
-  } else if (filter === "find") {
-    d3.selectAll(".group").style("opacity", function(d) {
-      return filter !== d.type ? "0.1" : "1"
+    d3.selectAll(".miniBar").style("opacity", function(d) {
+      return filter !== d.senator_method ? "0.1" : "1"
     })
-  } else if (filter === "job") {
+  } else if (filter === "เลือกโดย คสช.") {
     d3.selectAll(".group").style("opacity", function(d) {
-      return filter !== d.type ? "0.1" : "1"
+      return filter !== d.senator_method ? "0.1" : "1"
+    })
+    d3.selectAll(".miniBar").style("opacity", function(d) {
+      return filter !== d.senator_method ? "0.1" : "1"
+    })
+  } else if (filter === "เลือกกันเอง") {
+    d3.selectAll(".group").style("opacity", function(d) {
+      return filter !== d.senator_method ? "0.1" : "1"
+    })
+    d3.selectAll(".miniBar").style("opacity", function(d) {
+      return filter !== d.senator_method ? "0.1" : "1"
     })
   } else {
     d3.selectAll(".group").style("opacity", function(d) {
       return "1"
     })
+    d3.selectAll(".miniBar").style("opacity", function(d) {
+      return "1"
+    })
   }
 }
 
-function CreateLabel({ data, index }) {
-  const grade = ["A", "B", "C", "D", "F"]
+function CreateLabel({ gradeObj }) {
   return (
     <div css={{ ...cssLabel }}>
-      <strong>{grade[index]}</strong>{" "}
-      <span css={{ ...cssScoreText }}>0 คน</span>
+      <strong>{gradeObj.grade}</strong>{" "}
+      <span css={{ ...cssScoreText }}>{gradeObj.score} คน</span>
     </div>
   )
 }
 
 export default function(props) {
-  const { data, filter } = props
-  const { criteriaScore } = prepareData(data)
+  const { senateVoteData, filter } = props
+  const { labelGradeData } = prepareData(senateVoteData)
   const timelineRef = useRef(null)
   const lollipopRef = useRef(null)
 
@@ -379,7 +475,13 @@ export default function(props) {
   })
 
   useEffect(() => {
-    createChart(data, timelineRef, lollipopRef, setTooltip, setTooltipStyle)
+    createChart(
+      senateVoteData,
+      timelineRef,
+      lollipopRef,
+      setTooltip,
+      setTooltipStyle
+    )
   }, [])
 
   useEffect(() => {
@@ -388,24 +490,52 @@ export default function(props) {
 
   return (
     <div>
-      <div ref={timelineRef} width="100%" />
+      <div ref={timelineRef} css={{ ...cssTimeLine }} />
       <div css={{ ...cssLollipopCon }}>
         {tooltip ? (
           <div css={{ ...tooltipStyle }}>
+            <div css={{ ...cssCloseBtn }} id="closeBtn">
+              x
+            </div>
             <strong>
-              <p>{tooltip.name}</p>
+              <p>
+                {tooltip.title} {tooltip.name} {tooltip.lastname}
+              </p>
             </strong>
             <p>ระยะเวลาทำงาน 145 ครั้ง</p>
-            <p>เข้าลงมติ {tooltip.score} ครั้ง</p>
-            <a>ดูโปรไฟล์</a>
+            <p>เข้าลงมติ {tooltip.votelog} ครั้ง</p>
+            <a
+              href={`https://theyworkforus.elect.in.th/people/${
+                tooltip.name
+              }-${tooltip.lastname.replace(/ /g, "-")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              css={{ display: "flex", alignItems: "center" }}
+            >
+              ดูโปรไฟล์
+              <svg css={{ width: 10, height: 10, fill: "none", marginLeft: 8 }}>
+                <path
+                  d="M2.49999 1.66663H0.833328V9.16663H8.33333V7.49996"
+                  stroke="#999C00"
+                />
+                <line
+                  x1="8.68688"
+                  y1="1.18693"
+                  x2="3.68688"
+                  y2="6.18693"
+                  stroke="#999C00"
+                />
+                <path d="M5 0.833374H9.16667V5.00004" stroke="#999C00" />
+              </svg>
+            </a>
           </div>
         ) : (
           <></>
         )}
         <div ref={lollipopRef} />
         <div css={{ ...cssLabelCon }}>
-          {criteriaScore.map((data, index) => {
-            return <CreateLabel data={data} key={index} index={index} />
+          {labelGradeData.map((gradeObj, index) => {
+            return <CreateLabel gradeObj={gradeObj} key={index} />
           })}
         </div>
       </div>
