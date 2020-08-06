@@ -17,15 +17,14 @@ function DrawChart({
   height_svg,
   is_On,
   is_all,
-  search_id,
   setVoteId,
   setPopupState,
+  filter_senatorId,
 }) {
   const ref = useRef()
   const margin = { top: 0, right: 50, bottom: 0, left: 100 },
     height = is_On ? 300 : height_svg,
     width = w - margin.right - margin.left
-
   useEffect(() => {
     const chart = d3
       .select(ref.current)
@@ -76,53 +75,39 @@ function DrawChart({
       .range(color_bars)
       .unknown("#ccc")
 
-    let ids = data.map(d => d.id)
+    let vote_dates = data.map(d => d.vote_date)
     let y = d3
       .scaleBand()
-      .domain(ids)
+      .domain(vote_dates)
       .range([0, height])
       .padding(0.2)
 
     let x = d3
       .scaleLinear()
       .domain([0, d3.max(series, d => d3.max(d, d => d[1]))])
-      .range([0, search_id ? width - 300 : width])
+      .nice()
+      .range([0, filter_senatorId ? width - 300 : width])
 
-    let vote_dates = data.map(d => d.vote_date)
-
-    let yAxis_vote_dates = d3
+    let y_filter_senatorId = d3
       .scaleBand()
-      .domain(vote_dates)
+      .domain(d3.range(filter_senatorId ? filter_senatorId.length : 10))
       .range([0, height])
       .padding(0.2)
-
-    // console.log(vote_dates, "vote_dates")
     var yAxis = g =>
       g
         .attr("className", "yAxis")
-        .call(d3.axisLeft(yAxis_vote_dates).ticks(null, "s"))
+        .call(d3.axisLeft(y).ticks(null, "s"))
         .attr("transform", `translate(${0}, ${0})`)
         .call(g => g.selectAll(".domain").remove())
         .call(g => g.selectAll("line").remove())
+        .attr("height", y.bandwidth())
 
     const g = chart
       .append("g")
       .attr("transform", `translate(${margin.left}, 0)`)
       .attr("className", "charts")
 
-    const tiny = chart
-      .append("g")
-      .attr("transform", `translate(${margin.left}, 0)`)
-      .attr("className", "charts")
-
     const rects = g
-      .selectAll("g")
-      .data(series)
-      .enter()
-      .append("g")
-      .attr("fill", d => color(d.key))
-
-    const tiny_rects = tiny
       .selectAll("g")
       .data(series)
       .enter()
@@ -148,55 +133,63 @@ function DrawChart({
         enter
           .append("rect")
           .attr("x", d => x(d[0]))
-          .attr("y", d => y(d.data.id))
+          .attr("y", d => y(d.data.vote_date))
           .attr("width", d =>
-            search_id ? width - x(d[0]) - 300 : width - x(d[0])
+            filter_senatorId ? width - x(d[0]) - 300 : width - x(d[0])
           )
           .attr("height", y.bandwidth())
           .attr("class", d => "rect" + d.data.id)
           .on("mouseover", is_all ? mouseover : "")
           .on("mouseout", is_all ? mouseout : "")
           .on("click", is_all ? onClick : "")
-          .attr("transform", `translate(${search_id ? 300 : 0}, 0)`)
+          .attr("transform", `translate(${filter_senatorId ? 300 : 0}, 0)`)
       )
 
-    if (search_id) {
-      tiny_rects
+    if (filter_senatorId) {
+      chart
+        .append("g")
+        .attr("className", "charts")
         .selectAll("rect")
-        .data(d => d)
+        .data(filter_senatorId)
         .join(enter =>
           enter
             .append("rect")
-            .attr("y", d => y(d.data.id))
+            .attr("x", d => x(d[0]))
+            .attr("y", (d, i) => y_filter_senatorId(i))
             .attr("width", d => (1 / 250) * width)
-            .attr("height", y.bandwidth())
-            .attr("className", d => "rect" + d.data.id)
-            .on("mouseover", is_all ? mouseover : "")
-            .on("mouseout", is_all ? mouseout : "")
-            .on("click", is_all ? onClick : "")
-            .attr("transform", `translate(${search_id ? 150 : 0}, 0)`)
+            .attr("height", y_filter_senatorId.bandwidth())
+            .attr("transform", `translate(${filter_senatorId ? 250 : 10}, 0)`)
+            .attr("class", d => "rect" + d.key)
+            .attr("fill", function(d) {
+              if (d.value === "1") {
+                return color_bars[0]
+              } else if (d.value === "2") {
+                return color_bars[1]
+              } else if (d.value === "3") {
+                return color_bars[2]
+              } else if (d.value === "4") {
+                return color_bars[3]
+              } else if (d.value === "5") {
+                return color_bars[4]
+              }
+            })
         )
     }
-    // console.log(yAxis_vote_dates.bandwidth(), "y")
-    // console.log(yAxis_vote_dates.range(), "y.range")
-    // console.log(height, "height")
-    // console.log(data.length, "length")
-
     if (is_yAxis) {
       if (!is_On) {
         g.append("g").call(yAxis)
       }
       if (is_On) {
         g.append("text")
-          .attr("x", -30)
+          .attr("x", -70)
           .attr("y", 15)
           .style("font-size", "8px")
-          .text(data[0].id)
+          .text(data[0].vote_date)
         g.append("text")
-          .attr("x", -30)
+          .attr("x", -70)
           .attr("y", height - 3)
           .style("font-size", "8px")
-          .text(data[data.length - 1].id)
+          .text(data[data.length - 1].vote_date)
       }
     }
   }

@@ -32,7 +32,7 @@ const Page2 = props => {
   const [count_by_yourSelf, setCount_by_yourSelf] = useState(
     props.count_by_yourSelf
   )
-  const [search_id, setSearch_id] = useState("")
+
   const [types, setTypes] = useState(props.types)
   const [is_senate, setIs_senate] = useState(true)
   const [is_starter_bars, setStarter] = useState(true)
@@ -44,7 +44,9 @@ const Page2 = props => {
   const [is_selected_position, setIs_position] = useState(false)
   const [is_selected_government, setIs_government] = useState(false)
   const [is_selected_yourSelf, setIs_yourSelf] = useState(false)
-
+  const [filter_senatorId, setFilter_senatorId] = useState(
+    props.filter_senatorId ? props.filter_senatorId.votes : 0
+  )
   const formatTypes = type => {
     if (type === "เห็นด้วย") {
       return 1
@@ -58,21 +60,24 @@ const Page2 = props => {
       return 5
     }
   }
-
   const handleFilter = e => {
     let filter = e.target.innerText
+
     const sort_by_data = (a, b) => {
       if (filter !== "เวลาล่าสุด") {
         return b[formatTypes(filter)] - a[formatTypes(filter)]
       } else {
-        return new Date(b.vote_date) - new Date(a.vote_date)
+        return (
+          new Date(b.vote_date.substring(0, 10)) -
+          new Date(a.vote_date.substring(0, 10))
+        )
       }
     }
     let currentFilter = { ...currentFilter }
-    formatTypes(filter)
 
     //set group-by
     let data_of_motion = []
+    let data_of_filter_senatorId = []
 
     if (is_selected_position) {
       data_of_motion = [...count_by_position]
@@ -80,11 +85,20 @@ const Page2 = props => {
       data_of_motion = [...count_by_government]
     } else if (is_selected_yourSelf) {
       data_of_motion = [...count_by_yourSelf]
-    } else if (is_showAll) {
+    } else if (is_all) {
       data_of_motion = [...count_all_senate]
       setCount_all_senate(data_of_motion)
+      console.log(data_of_motion, "data_of_motion")
     }
+
     data_of_motion.sort(sort_by_data)
+
+    if (filter_senatorId) {
+      const set_ids = data_of_motion.map(function(value) {
+        return filter_senatorId[value.id - 1]
+      })
+      setFilter_senatorId(set_ids)
+    }
 
     const set_government = data_of_motion.map(function(value) {
       return count_by_government[value.id - 1]
@@ -163,10 +177,9 @@ const Page2 = props => {
             height_svg={height_svg}
             is_On={is_On}
             is_all={is_all}
-            search_id={search_id}
             setVoteId={props.setVoteId}
             setPopupState={props.setPopupState}
-            is_showAll={props.is_showAll}
+            filter_senatorId={filter_senatorId}
             is_showGroup={props.is_showGroup}
           />
         </div>
@@ -186,7 +199,7 @@ const Page2 = props => {
           </div>
           <div
             css={{ ...cssColumnChart, width: props.groupWidth[1] }}
-            onClick={() => selected_dropdown("count_by_government")}
+            onClick={() => selected_dropdown("count_by_yourSelf")}
           >
             <DropDown
               choices={props.choices}
@@ -198,7 +211,7 @@ const Page2 = props => {
           </div>
           <div
             css={{ ...cssColumnChart, width: props.groupWidth[2] }}
-            onClick={() => selected_dropdown("count_by_yourSelf")}
+            onClick={() => selected_dropdown("count_by_government")}
           >
             <DropDown
               choices={props.choices}
@@ -228,7 +241,7 @@ const Page2 = props => {
             </div>
             <div css={{ ...cssColumnChart, width: props.groupWidth[1] }}>
               <BarChart
-                data={count_by_government}
+                data={count_by_yourSelf}
                 types={types}
                 w={props.groupWidth[1]}
                 color_bars={props.colors}
@@ -239,7 +252,7 @@ const Page2 = props => {
             </div>
             <div css={{ ...cssColumnChart, width: props.groupWidth[2] }}>
               <BarChart
-                data={count_by_yourSelf}
+                data={count_by_government}
                 types={types}
                 w={props.groupWidth[2]}
                 color_bars={props.colors}
@@ -256,11 +269,11 @@ const Page2 = props => {
 }
 
 export default ({
-  data,
   setVoteId,
   setPopupState,
   is_showAll,
   is_showGroup,
+  senatorId,
 }) => {
   const senate = useStaticQuery(
     graphql`
@@ -312,6 +325,13 @@ export default ({
     return n.value === "-"
   })
 
+  const group_senatorId = _.chain(voter_in_votelog)
+    .groupBy("senator_id")
+    .map((value, key) => ({ id: key, votes: value }))
+    .value()
+
+  const filter_senatorId = _.find(group_senatorId, ["id", senatorId])
+
   const default_value = [
     { "1": 0 },
     { "2": 0 },
@@ -342,7 +362,9 @@ export default ({
   })
 
   const count_all_senate = []
-  arr_votelog.forEach((s, i) => {
+  let count_same_date = 0
+
+  arr_votelog.forEach(function(s, index) {
     let group_by_value = _(s.voter)
       .groupBy("value")
       .map(function(votes, value) {
@@ -354,20 +376,22 @@ export default ({
     const set_format_date = moment(s.vote_date)
       .add(10, "days")
       .calendar()
-    let count_date = 1
-    if (i < arr_votelog.length - 1) {
-      if (arr_votelog[i].vote_date === arr_votelog[i + 1].vote_date) {
-        count_date++
+
+    if (index != 0) {
+      if (arr_votelog[index].vote_date === arr_votelog[index - 1].vote_date) {
+        count_same_date++
       } else {
-        count_date = 1
+        count_same_date = 1
       }
+    } else {
+      count_same_date = 1
     }
 
     group_by_value = merge_default(default_value, group_by_value)
     group_by_value = {
       ...group_by_value,
       id: s.id,
-      vote_date: set_format_date + ` - ${count_date}`,
+      vote_date: set_format_date + ` - ${count_same_date}`,
     }
     count_all_senate.push(group_by_value)
   })
@@ -377,7 +401,21 @@ export default ({
   const count_by_yourSelf = []
   const count_by_group = []
 
-  arr_votelog.forEach(s => {
+  arr_votelog.forEach(function(s, index) {
+    const set_format_date = moment(s.vote_date)
+      .add(10, "days")
+      .calendar()
+
+    if (index > 0) {
+      if (arr_votelog[index].vote_date === arr_votelog[index - 1].vote_date) {
+        count_same_date++
+      } else {
+        count_same_date = 1
+      }
+    } else {
+      count_same_date = 1
+    }
+
     const by_position = s.voter.filter(m => m.senator_method == "โดยตำแหน่ง")
     let group_by_position = _(by_position)
       .groupBy("value")
@@ -396,36 +434,37 @@ export default ({
       })
       .value()
 
-    const by_youeSelf = s.voter.filter(m => m.senator_method == "เลือกกันเอง")
-    let group_by_youeSelf = _(by_youeSelf)
+    const by_yourSelf = s.voter.filter(m => m.senator_method == "เลือกกันเอง")
+    let group_by_yourSelf = _(by_yourSelf)
       .groupBy("value")
       .map(function(votes, value) {
         return _.zipObject([value], [votes.length])
       })
       .value()
+
     group_by_government = merge_default(default_value, group_by_government)
     group_by_position = merge_default(default_value, group_by_position)
-    group_by_youeSelf = merge_default(default_value, group_by_youeSelf)
+    group_by_yourSelf = merge_default(default_value, group_by_yourSelf)
 
     group_by_government = {
       ...group_by_government,
       id: s.id,
-      vote_date: s.vote_date,
+      vote_date: set_format_date + ` - ${count_same_date}`,
     }
     group_by_position = {
       ...group_by_position,
       id: s.id,
-      vote_date: s.vote_date,
+      vote_date: set_format_date + ` - ${count_same_date}`,
     }
-    group_by_youeSelf = {
-      ...group_by_youeSelf,
+    group_by_yourSelf = {
+      ...group_by_yourSelf,
       id: s.id,
-      vote_date: s.vote_date,
+      vote_date: set_format_date + ` - ${count_same_date}`,
     }
 
     count_by_government.push(group_by_government)
     count_by_position.push(group_by_position)
-    count_by_yourSelf.push(group_by_youeSelf)
+    count_by_yourSelf.push(group_by_yourSelf)
   })
 
   count_by_group.push({
@@ -449,10 +488,15 @@ export default ({
     return peoples
   }
   const all_peoples = count_people(count_all_senate)
+  const people_in_position = count_people(count_by_position)
+  const people_in_yourSelf = count_people(count_by_yourSelf)
+  const people_in_government = count_people(count_by_government)
+  const padding = [170, 80, 0]
+
   const groupWidth = [
-    (32 / all_peoples) * width,
-    (88 / all_peoples) * width,
-    (130 / all_peoples) * width,
+    (people_in_position / all_peoples) * width + padding[0],
+    (people_in_yourSelf / all_peoples) * width + padding[1],
+    (people_in_government / all_peoples) * width - padding[0] - padding[1],
   ]
 
   const choices = {
@@ -480,6 +524,8 @@ export default ({
       setVoteId={setVoteId}
       is_showAll={is_showAll}
       is_showGroup={is_showGroup}
+      senatorId={senatorId}
+      filter_senatorId={filter_senatorId}
     />
   )
 }

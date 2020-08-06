@@ -104,6 +104,7 @@ const VotelogPage = ({ data }) => {
           setVoteId={setVoteId} /> */}
         <SenateVotelogBarchart
           setPopupState={setPopupState}
+          senatorId={senatorId}
           setVoteId={setVoteId}
           is_showAll={viewPerson}
           is_showGroup={viewGroup}
