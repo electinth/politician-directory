@@ -140,6 +140,7 @@ const Page2 = props => {
     }
   }
 
+
   return (
     <div>
       {props.isShowAll || props.isShowGroup ? (
@@ -212,45 +213,51 @@ const Page2 = props => {
             css={is_On ? cssGroupChartAll : cssGroupChart}
           >
             <div css={{ ...cssColumnChart, width: props.groupWidth[0] }}>
-              <BarChart
-                data={count_by_position}
-                types={types}
-                w={props.groupWidth[0]}
-                is_yAxis={props.is_yAxis}
-                color_bars={props.colors}
-                is_starter_bars={is_starter_bars}
-                height_svg={height_svg}
-                is_On={is_On}
-                is_all={props.isShowAll}
-                setVoteId={props.setVoteId}
-                setPopupState={props.setPopupState}
-              />
+              {((props.senatorType === "1" && window.innerWidth < 768) || (window.innerWidth > 768)) && (
+                <BarChart
+                  data={count_by_position}
+                  types={types}
+                  w={props.groupWidth[0]}
+                  is_yAxis={props.is_yAxis}
+                  color_bars={props.colors}
+                  is_starter_bars={is_starter_bars}
+                  height_svg={height_svg}
+                  is_On={is_On}
+                  is_all={props.isShowAll}
+                  setVoteId={props.setVoteId}
+                  setPopupState={props.setPopupState}
+                />
+              )}
             </div>
             <div css={{ ...cssColumnChart, width: props.groupWidth[1] }}>
-              <BarChart
-                data={count_by_yourSelf}
-                types={types}
-                w={props.groupWidth[1]}
-                color_bars={props.colors}
-                height_svg={height_svg}
-                is_On={is_On}
-                is_all={props.isShowAll}
-                setVoteId={props.setVoteId}
-                setPopupState={props.setPopupState}
-              />
+              {((props.senatorType === "2" && window.innerWidth < 768) || (window.innerWidth > 768)) && (
+                <BarChart
+                  data={count_by_yourSelf}
+                  types={types}
+                  w={props.groupWidth[1]}
+                  color_bars={props.colors}
+                  height_svg={height_svg}
+                  is_On={is_On}
+                  is_all={props.isShowAll}
+                  setVoteId={props.setVoteId}
+                  setPopupState={props.setPopupState}
+                />
+              )}
             </div>
             <div css={{ ...cssColumnChart, width: props.groupWidth[2] }}>
-              <BarChart
-                data={count_by_government}
-                types={types}
-                w={props.groupWidth[2]}
-                color_bars={props.colors}
-                height_svg={height_svg}
-                is_On={is_On}
-                is_all={props.isShowAll}
-                setVoteId={props.setVoteId}
-                setPopupState={props.setPopupState}
-              />
+              {(props.senatorType === "3" && window.innerWidth < 768) || (window.innerWidth > 768) && (
+                <BarChart
+                  data={count_by_government}
+                  types={types}
+                  w={props.groupWidth[2]}
+                  color_bars={props.colors}
+                  height_svg={height_svg}
+                  is_On={is_On}
+                  is_all={props.isShowAll}
+                  setVoteId={props.setVoteId}
+                  setPopupState={props.setPopupState}
+                />
+              )}
             </div>
           </div>
         </div>
@@ -265,6 +272,7 @@ export default ({
   senatorId,
   isShowAll,
   setCountByGroup,
+  senatorType
 }) => {
   const senate = useStaticQuery(
     graphql`
@@ -528,6 +536,7 @@ export default ({
       senatorId={senatorId}
       isShowAll={isShowAll}
       setCountByGroup={setCountByGroup}
+      senatorType={senatorType}
     />
   )
 }
