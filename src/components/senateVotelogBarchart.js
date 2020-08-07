@@ -42,10 +42,7 @@ const Page2 = props => {
   const [is_selected_position, setIs_position] = useState(false)
   const [is_selected_government, setIs_government] = useState(false)
   const [is_selected_yourSelf, setIs_yourSelf] = useState(false)
-  const [filter_senatorId, setFilter_senatorId] = useState(
-    props.filter_senatorId
-  )
-
+  const [filter_senatorId, setFilter_senatorId] = useState()
   const formatTypes = type => {
     if (type === "เห็นด้วย") {
       return 1
@@ -68,10 +65,16 @@ const Page2 = props => {
     }
   }, [props.isShowAll])
 
+  useEffect(() => {
+    setFilter_senatorId(
+      props.filter_senatorId ? props.filter_senatorId.votes : ""
+    )
+  }, [props.filter_senatorId])
+
   let data_of_motion = []
+
   const handleFilter = e => {
     let filter = e.target.innerText
-
     const sort_by_data = (a, b) => {
       if (filter !== "เวลาล่าสุด") {
         return b[formatTypes(filter)] - a[formatTypes(filter)]
@@ -101,10 +104,12 @@ const Page2 = props => {
 
     if (filter_senatorId) {
       const set_ids = data_of_motion.map(function(value) {
-        return filter_senatorId[value.id - 1]
+        const index = filter_senatorId.findIndex(g => g.key == value.id)
+        return filter_senatorId[index]
       })
       setFilter_senatorId(set_ids)
     }
+
     const set_government = data_of_motion.map(function(value) {
       const index = count_by_government.findIndex(g => g.id == value.id)
       return count_by_government[index]
@@ -172,7 +177,7 @@ const Page2 = props => {
             is_all={props.isShowAll}
             setVoteId={props.setVoteId}
             setPopupState={props.setPopupState}
-            filter_senatorId={props.filter_senatorId}
+            filter_senatorId={filter_senatorId}
             setCountByGroup={props.setCountByGroup}
           />
         </div>
@@ -342,7 +347,7 @@ export default ({
       .value()
     setFilter_senatorId(_.find(group_senatorId, ["id", senatorId]))
   }, senatorId)
-
+  // console.log('filter_senatorId <<<',filter_senatorId)
   const default_value = [
     { "1": 0 },
     { "2": 0 },

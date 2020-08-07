@@ -97,7 +97,7 @@ function DrawChart({
 
     let y_filter_senatorId = d3
       .scaleBand()
-      .domain(d3.range(filter_senatorId ? filter_senatorId.votes.length : 10))
+      .domain(d3.range(filter_senatorId ? filter_senatorId.length : 10))
       .range([0, height])
       .padding(0.2)
 
@@ -147,9 +147,9 @@ function DrawChart({
           )
           .attr("height", y.bandwidth())
           .attr("class", d => "rect" + d.data.id)
-          .on("mouseover", is_all ? mouseover : "")
-          .on("mouseout", is_all ? mouseout : "")
-          .on("click", is_all ? onClick : "")
+          .on("mouseover", mouseover)
+          .on("mouseout", mouseout)
+          .on("click", onClick)
           .attr("transform", `translate(${filter_senatorId ? 300 : 0}, 0)`)
       )
     if (filter_senatorId) {
@@ -157,7 +157,7 @@ function DrawChart({
         .append("g")
         .attr("className", "charts")
         .selectAll("rect")
-        .data(filter_senatorId.votes)
+        .data(filter_senatorId)
         .join(enter =>
           enter
             .append("rect")
