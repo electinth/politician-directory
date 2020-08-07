@@ -100,7 +100,7 @@ const cssFilterBtn = {
   height: "4rem",
   display: "flex",
   alignItems: "center",
-  paddingLeft: "1.6rem",
+  padding: "0 1.6rem",
   margin: "0.5rem 0",
   [media(767)]: {
     cursor: "pointer",
@@ -111,7 +111,10 @@ const cssFilterBtn = {
     height: "4rem",
     display: "flex",
     alignItems: "center",
-    paddingLeft: "1.6rem",
+    padding: "0 1.6rem",
+    "&:hover": {
+      border: "0.2rem solid rgba(0, 0, 0, 1)",
+    },
   },
 }
 
@@ -207,10 +210,11 @@ const Motion = ({ data }) => {
                 >
                   <div css={{ ...cssCircle, background: "#999C00" }} />
                   โดยตำแหน่ง{" "}
-                  <span style={{ color: "#999C00" }}>
+                  <span style={{ color: "#999C00", flex: 1 }}>
                     {" "}
                     ({senatorCount["โดยตำแหน่ง"]} คน)
                   </span>
+                  {filter === "โดยตำแหน่ง" ? <>X</> : <></>}
                 </div>
                 <div
                   css={{
@@ -224,10 +228,11 @@ const Motion = ({ data }) => {
                 >
                   <div css={{ ...cssCircle, background: "#5739AC" }} />
                   คสช. สรรหา{" "}
-                  <span style={{ color: "#5739AC" }}>
+                  <span style={{ color: "#5739AC", flex: 1 }}>
                     {" "}
                     ({senatorCount["เลือกโดย คสช."]} คน)
                   </span>
+                  {filter === "เลือกโดย คสช." ? <>X</> : <></>}
                 </div>
                 <div
                   css={{
@@ -241,10 +246,11 @@ const Motion = ({ data }) => {
                 >
                   <div css={{ ...cssCircle, background: "#FEACAC" }} />
                   ตามกลุ่มอาชีพ
-                  <span style={{ color: "#FEACAC" }}>
+                  <span style={{ color: "#FEACAC", flex: 1 }}>
                     {" "}
                     ({senatorCount["เลือกกันเอง"]} คน)
                   </span>
+                  {filter === "เลือกกันเอง" ? <>X</> : <></>}
                 </div>
               </div>
               การเข้าประชุมและการลงมติในที่ประชุมถือเป็นหน้าที่หลักของ ส.ว.
@@ -283,10 +289,11 @@ const Motion = ({ data }) => {
             >
               <div css={{ ...cssCircle, background: "#999C00" }} />
               โดยตำแหน่ง{" "}
-              <span style={{ color: "#999C00" }}>
+              <span style={{ color: "#999C00", flex: 1 }}>
                 {" "}
                 ({senatorCount["โดยตำแหน่ง"]} คน)
               </span>
+              {filter === "โดยตำแหน่ง" ? <>X</> : <></>}
             </div>
             <div
               css={{
@@ -300,10 +307,11 @@ const Motion = ({ data }) => {
             >
               <div css={{ ...cssCircle, background: "#5739AC" }} />
               คสช. สรรหา{" "}
-              <span style={{ color: "#5739AC" }}>
+              <span style={{ color: "#5739AC", flex: 1 }}>
                 {" "}
                 ({senatorCount["เลือกโดย คสช."]} คน)
               </span>
+              {filter === "เลือกโดย คสช." ? <>X</> : <></>}
             </div>
             <div
               css={{
@@ -317,10 +325,11 @@ const Motion = ({ data }) => {
             >
               <div css={{ ...cssCircle, background: "#FEACAC" }} />
               ตามกลุ่มอาชีพ
-              <span style={{ color: "#FEACAC" }}>
+              <span style={{ color: "#FEACAC", flex: 1 }}>
                 {" "}
                 ({senatorCount["เลือกกันเอง"]} คน)
               </span>
+              {filter === "เลือกกันเอง" ? <>X</> : <></>}
             </div>
           </div>
           การเข้าประชุมและการลงมติในที่ประชุมถือเป็นหน้าที่หลักของ ส.ว.

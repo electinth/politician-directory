@@ -10,13 +10,24 @@ const cssTimeLine = {
   },
 }
 
+const cssTimeLineCon = {
+  display: "none",
+  [media(767)]: {
+    width: "100%",
+    display: "flex",
+  },
+}
+
 const cssLollipopCon = {
-  height: "43.6rem",
-  background: "rgba(238,240,144, 0.1)",
-  marginTop: "2.6rem",
   overflowX: "scroll",
-  overflowY: "hidden",
-  position: "relative",
+  [media(767)]: {
+    height: "43.6rem",
+    background: "rgba(238,240,144, 0.1)",
+    marginTop: "2.6rem",
+    overflowX: "hidden",
+    overflowY: "hidden",
+    position: "relative",
+  },
 }
 
 const cssLabel = {
@@ -47,12 +58,13 @@ const cssScoreText = {
 }
 
 const cssTooltipStyle = {
-  position: "absolute",
+  position: "fixed",
   width: "20.6rem",
   background: "#fff",
   boxShadow: "0px 1px 4px rgba(0, 0, 0, 0.25)",
   borderRadius: "0.4rem",
   padding: "1.2rem",
+  zIndex: 99999,
   p: {
     fontSize: "1.2rem",
     marginBottom: "0.4rem",
@@ -71,6 +83,29 @@ const cssCloseBtn = {
   cursor: "pointer",
 }
 
+const cssLineCon = {
+  position: "sticky",
+  width: "100%",
+  left: 0,
+  display: "flex",
+  alignItems: "center",
+  p: {
+    fontSize: "1rem",
+    margin: 0,
+    padding: 0,
+  },
+}
+
+const cssLine = {
+  width: "100%",
+  height: "0.1rem",
+}
+
+const cssLegend = {
+  position: "absolute",
+  top: 0,
+}
+
 const type = ["โดยตำแหน่ง", "เลือกโดย คสช.", "เลือกกันเอง"]
 const typeColor = d3
   .scaleOrdinal()
@@ -81,7 +116,7 @@ function prepareData(senateVoteData) {
   const meanScore =
     senateVoteData.map(d => d.score).reduce((acc, cur) => acc + cur, 0) /
     senateVoteData.length
-  const criteriaScore = [50, 60, 70, 80, 100]
+  const criteriaScore = [50, 60, 70, 80]
   const fGrade = senateVoteData.filter(senator => senator.score < 50).length
   const dGrade = senateVoteData.filter(
     senator => senator.score > 50 && senator.score < 60
@@ -101,12 +136,15 @@ function prepareData(senateVoteData) {
     { grade: "F", score: fGrade },
   ]
   const posScore = criteriaScore.map(score => {
-    return senateVoteData.findIndex(d => d.score === score)
+    return senateVoteData.findIndex(d => Math.floor(d.score) === score)
   })
+  const meanPos = senateVoteData.filter(
+    d => Math.floor(d.score) === Math.floor(meanScore)
+  )[0].id
   return {
     criteriaScore,
-    meanScore,
     posScore,
+    meanPos,
     labelGradeData,
   }
 }
@@ -118,24 +156,26 @@ function createChart(
   setTooltip,
   setTooltipStyle
 ) {
-  const { criteriaScore, meanScore, posScore } = prepareData(data)
+  const { criteriaScore, posScore, meanPos } = prepareData(data)
 
   const miniHeight = 88
   const miniWidth = timelineRef.current.clientWidth
 
   const mainHeight = 394
+  const mainWidth = lollipopRef.current.clientWidth
   const mainMargin = {
     left: 20,
     right: 20,
     bottom: 16,
     top: 34,
   }
-
   const maxWidth = 12000
+
+  const brushWidth = (mainWidth / maxWidth) * miniWidth
 
   function brushmove() {
     const extentX = d3.event.selection
-    const newXcor = -extentX[0] * 9.142
+    const newXcor = -extentX[0] * (maxWidth / mainWidth)
     d3.select(lollipopRef.current).style(
       "transform",
       `translate(${newXcor}px,0px)`
@@ -148,7 +188,7 @@ function createChart(
     let size = selection[1] - selection[0],
       range = xTimeline.range(),
       x0 = d3.min(range),
-      x1 = d3.max(range) + xTimeline.bandwidth(),
+      x1 = d3.max(range),
       dx = -d3.event.deltaX,
       topSection
 
@@ -159,12 +199,15 @@ function createChart(
     } else {
       topSection = selection[0] - dx
     }
-
+    d3.event.stopPropagation()
+    d3.event.preventDefault()
     gBrush.call(brush.move, [topSection, topSection + size])
   }
 
-  const brush = d3.brushX().extent([[0, 0], [miniWidth, miniHeight]])
-  // .on("}", brushmove)
+  const brush = d3
+    .brushX()
+    .extent([[0, 0], [miniWidth, miniHeight]])
+    .on("brush", brushmove)
 
   const timelineSvg = d3
     .select(timelineRef.current)
@@ -187,7 +230,7 @@ function createChart(
     .append("g")
     .attr("class", "brush")
     .call(brush)
-    .call(brush.move, [0, 142])
+    .call(brush.move, [0, brushWidth])
 
   const yTimeline = d3
     .scaleLinear()
@@ -230,12 +273,19 @@ function createChart(
       .attr("stroke-dasharray", "4")
   })
 
+  timelineSvg
+    .append("line")
+    .attr("x1", xTimeline(meanPos))
+    .attr("x2", xTimeline(meanPos))
+    .attr("y1", 0)
+    .attr("y2", 88)
+    .attr("stroke", "#F0324B")
+
   const lolliSvg = d3
     .select(lollipopRef.current)
     .append("svg")
     .attr("height", mainHeight + mainMargin.top)
     .attr("width", maxWidth)
-    .attr("overflow-x", "scroll")
     .on("wheel.zoom", scroll)
 
   const xLolli = d3
@@ -322,16 +372,6 @@ function createChart(
       .attr("stroke-width", strokeWidth)
   })
 
-  const meanLine = lolliSvg.append("g")
-  meanLine
-    .append("line")
-    .attr("x1", 0)
-    .attr("x1", maxWidth)
-    .attr("y1", yLolli(meanScore) - mainMargin.bottom)
-    .attr("y2", yLolli(meanScore) - mainMargin.bottom)
-    .attr("stroke", "#F0324B")
-    .attr("stroke-width", 0.5)
-
   d3.selectAll(".group")
     .append("svg:defs")
     .append("svg:pattern")
@@ -373,14 +413,11 @@ function createChart(
     .attr("stroke-width", 1)
     .on("mouseover", function(d) {
       if (!isClicked) {
-        const tooltipTop =
-          d.score < 50
-            ? yLolli(d.score) - mainMargin.bottom - 20 - 150
-            : yLolli(d.score)
+        const tooltipTop = d3.event.clientY - mainMargin.bottom - 120
         const tooltipLeft =
-          d.score > 99
-            ? xLolli(d.id) - 200
-            : xLolli(d.id) + xLolli.bandwidth() / 2
+          d3.event.clientX + 250 > window.innerWidth
+            ? d3.event.clientX - 200
+            : d3.event.clientX + 10
         setTooltip(d)
         setTooltipStyle({
           ...cssTooltipStyle,
@@ -388,7 +425,6 @@ function createChart(
           left: tooltipLeft,
           overflow: "hidden",
           opacity: 1,
-          zIndex: 9999,
         })
       }
     })
@@ -474,6 +510,13 @@ export default function(props) {
     opacity: 0,
   })
 
+  // const legend = [
+  //   {
+  //     label: "F",
+  //     left: 120,
+  //   },
+  // ]
+
   useEffect(() => {
     createChart(
       senateVoteData,
@@ -490,48 +533,73 @@ export default function(props) {
 
   return (
     <div>
-      <div ref={timelineRef} css={{ ...cssTimeLine }} />
-      <div css={{ ...cssLollipopCon }}>
-        {tooltip ? (
-          <div css={{ ...tooltipStyle }}>
-            <div css={{ ...cssCloseBtn }} id="closeBtn">
-              x
-            </div>
-            <strong>
-              <p>
-                {tooltip.title} {tooltip.name} {tooltip.lastname}
-              </p>
-            </strong>
-            <p>ระยะเวลาทำงาน 145 ครั้ง</p>
-            <p>เข้าลงมติ {tooltip.votelog} ครั้ง</p>
-            <a
-              href={`https://theyworkforus.elect.in.th/people/${
-                tooltip.name
-              }-${tooltip.lastname.replace(/ /g, "-")}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              css={{ display: "flex", alignItems: "center" }}
-            >
-              ดูโปรไฟล์
-              <svg css={{ width: 10, height: 10, fill: "none", marginLeft: 8 }}>
-                <path
-                  d="M2.49999 1.66663H0.833328V9.16663H8.33333V7.49996"
-                  stroke="#999C00"
-                />
-                <line
-                  x1="8.68688"
-                  y1="1.18693"
-                  x2="3.68688"
-                  y2="6.18693"
-                  stroke="#999C00"
-                />
-                <path d="M5 0.833374H9.16667V5.00004" stroke="#999C00" />
-              </svg>
-            </a>
+      {tooltip ? (
+        <div css={{ ...tooltipStyle }}>
+          <div css={{ ...cssCloseBtn }} id="closeBtn">
+            x
           </div>
-        ) : (
-          <></>
-        )}
+          <strong>
+            <p>
+              {tooltip.title} {tooltip.name} {tooltip.lastname}
+            </p>
+          </strong>
+          <p>ระยะเวลาทำงาน 145 ครั้ง</p>
+          <p>เข้าลงมติ {tooltip.votelog} ครั้ง</p>
+          <a
+            href={`https://theyworkforus.elect.in.th/people/${
+              tooltip.name
+            }-${tooltip.lastname.replace(/ /g, "-")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            css={{ display: "flex", alignItems: "center" }}
+          >
+            ดูโปรไฟล์
+            <svg css={{ width: 10, height: 10, fill: "none", marginLeft: 8 }}>
+              <path
+                d="M2.49999 1.66663H0.833328V9.16663H8.33333V7.49996"
+                stroke="#999C00"
+              />
+              <line
+                x1="8.68688"
+                y1="1.18693"
+                x2="3.68688"
+                y2="6.18693"
+                stroke="#999C00"
+              />
+              <path d="M5 0.833374H9.16667V5.00004" stroke="#999C00" />
+            </svg>
+          </a>
+        </div>
+      ) : (
+        <></>
+      )}
+      <div css={{ ...cssTimeLineCon }}>
+        {/* {legend.map(legend => {
+          return (
+            <div css={{ ...cssLegend, left: legend.left }}>{legend.label}</div>
+          )
+        })} */}
+        <div ref={timelineRef} css={{ ...cssTimeLine }} />
+      </div>
+      <div css={{ ...cssLollipopCon }}>
+        <div css={{ ...cssLineCon, top: "8rem", zIndex: 99998 }}>
+          <div css={{ ...cssLine, background: "#AEAEAE" }} />
+          <p css={{ width: "20rem", textAlign: "center" }}>คะแนนเต็ม 100%</p>
+          <div css={{ ...cssLine, background: "#AEAEAE" }} />
+        </div>
+        <div css={{ ...cssLineCon, top: "16rem", zIndex: 99998 }}>
+          <div css={{ ...cssLine, background: "#F0324B" }} />
+          <p
+            css={{
+              width: "20rem",
+              textAlign: "center",
+              color: "#F0324B",
+            }}
+          >
+            คะแนนเฉลี่ยน 75%
+          </p>
+          <div css={{ ...cssLine, background: "#F0324B" }} />
+        </div>
         <div ref={lollipopRef} />
         <div css={{ ...cssLabelCon }}>
           {labelGradeData.map((gradeObj, index) => {
