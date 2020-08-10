@@ -4,7 +4,6 @@ import { media } from "../styles"
 import votelogIcon from "../images/icons/votelog/votelog-white.png"
 
 const cssHeader = {
-  width: "100vw",
   height: "4rem",
   background: "#000000",
   padding: "0",

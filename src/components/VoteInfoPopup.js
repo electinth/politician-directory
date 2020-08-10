@@ -72,17 +72,30 @@ const cssVotingDocs = {
   paddingTop: "2.2rem",
   paddingBottom: "2rem",
 }
+const cssVotingSheetBtnWrap = {
+  flexDirection: "column",
+  [media(767)]: {
+    display: "flex", 
+    flexDirection: "row",
+    marginBottom: "3.6rem",
+  },
+}
 const cssVotingSheetBtn = {
-  fontSize: "1.8rem",
+  fontSize: "1.2rem",
   color: "black",
   background: "#EEF090",
   borderRadius: "5px",
-  width: "fit-content",
+  width: "90%",
   padding: "1rem",
   cursor: "pointer",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  marginBottom: "1.2rem",
+  [media(767)]: {
+    fontSize: "1.8rem",
+    width: "fit-content",
+  },
 }
 
 const VoteInfoPopup = ({
@@ -213,7 +226,7 @@ const VoteInfoPopup = ({
             <div css={cssVotingDocs}>
               <b>เอกสารการลงมติ</b>
             </div>
-            <div style={{ display: "flex", marginBottom: "3.6rem" }}>
+            <div css={cssVotingSheetBtnWrap}>
               {votelogInfo.document instanceof Array &&
                 votelogInfo.document.map(
                   item =>

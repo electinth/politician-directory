@@ -2,10 +2,10 @@ import React from "react"
 import { Global, css } from "@emotion/core"
 import { media } from "../styles"
 
-const cssLegend = ({ missing }) => ({
+const cssLegend = ({ missing, type }) => ({
   display: missing ? "flex" : "unset",
   flexWrap: missing ? "wrap" : "unset",
-  justifyContent: missing ? "center" : "unset",
+  justifyContent: missing && type !== "popup" ? (type === "group" ? "left" : "center") : "unset",
 })
 const cssGridCell = ({ missing, type }) => ({
   width: missing && type !== "popup" ? (type === "group" ? 3 : 10) : 8,
