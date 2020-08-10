@@ -6,7 +6,6 @@ import VoteLogLegend from "../components/voteLogLegend"
 import styled from "@emotion/styled"
 import download from "../images/icons/download/download.png"
 import search from "../images/icons/search/search-grey.png"
-import DropDown from "./dropdown"
 import { politicianPicture } from "../utils"
 import { media } from "../styles"
 import _ from "lodash"
@@ -132,18 +131,6 @@ const cssAvg = {
     display: "unset",
   },
 }
-const cssDesktop = {
-  display: "none",
-  [media(767)]: {
-    display: "block",
-  },
-}
-const cssMobile = {
-  display: "block",
-  [media(767)]: {
-    display: "none",
-  },
-}
 
 const AutoComplete = ({
   allSenateVoteYaml,
@@ -151,7 +138,6 @@ const AutoComplete = ({
   setSenatorId,
   isShowAll,
   countByGroup,
-  setSenatorType
 }) => {
   const [value, setValue] = useState("")
   const [suggestions, setSuggestions] = useState([])
@@ -184,12 +170,11 @@ const AutoComplete = ({
     disprove: 0,
     abstained: 0,
     absent: 0,
-    missing: 0
-  });
+    missing: 0,
+  })
   const [is_senate, setIs_senate] = useState(true)
   const [is_senator_type, setIs_senator_type] = useState(true)
   const [fullname, setFullname] = useState([])
-  const [currentFilter, setCurrentFilter] = useState({})
 
   useEffect(() => {
     allSenateVoteYaml.nodes.unshift({
@@ -232,14 +217,9 @@ const AutoComplete = ({
   const getSuggestions = (value, senator) => {
     const escapedValue = escapeRegexCharacters(value.trim())
     const regex = new RegExp(escapedValue, "gi")
-    if (value === 'ทั้งหมด') {
-      return senator
-    } else {
-      return senator.filter(
-        person => person.id === "0" || regex.test(getSuggestionValue(person))
-      )
-    }
-    
+    return senator.filter(
+      person => person.id === "0" || regex.test(getSuggestionValue(person))
+    )
   }
 
   const getSuggestionValue = suggestion => {
@@ -291,7 +271,7 @@ const AutoComplete = ({
   }
 
   const shouldRenderSuggestions = value => {
-    if (value === "" || value === "ทั้งหมด") {
+    if (value === "") {
       return true
     } else {
       return value.trim().length > 1
@@ -471,31 +451,6 @@ const AutoComplete = ({
     }
   }
 
-  const formatTypes = type => {
-    if (type === "โดยตำแหน่ง") {
-      return "1"
-    } else if (type === "ตามกลุ่มอาชีพ") {
-      return "2"
-    } else if (type === "คสช.สรรหา") {
-      return "3"
-    }
-  }
-
-  const handleFilter = e => {
-    let filter = e.target.innerText
-    const select = _.cloneDeep(choices);
-    select.type.default = filter
-    setCurrentFilter(select)
-    setSenatorType(formatTypes(filter))
-  }
-
-  const choices = {
-    type: {
-      default: "โดยตำแหน่ง",
-      others: ["โดยตำแหน่ง", "ตามกลุ่มอาชีพ", "คสช.สรรหา"],
-    },
-  }
-
   return (
     <div css={cssContainer}>
       {isShowAll ? (
@@ -522,27 +477,17 @@ const AutoComplete = ({
         </div>
       ) : (
         <div css={cssWrapper}>
-          <div css={cssDesktop} style={{ marginRight: "35px" }}>
+          <div style={{ marginRight: "35px" }}>
             <span css={cssGroup}>โดยตำแหน่ง</span>
             <VoteLogLegend type="group" {...select_by_position} />
           </div>
-          <div css={cssDesktop} style={{ marginRight: "35px" }}>
+          <div style={{ marginRight: "35px" }}>
             <span css={cssGroup}>คสช. สรรหา</span>
             <VoteLogLegend type="group" {...select_by_government} />
           </div>
-          <div css={cssDesktop} style={{ marginRight: "35px" }}>
+          <div style={{ marginRight: "35px" }}>
             <span css={cssGroup}>ตามกลุ่มอาชีพ</span>
             <VoteLogLegend type="group" {...select_by_career} />
-          </div>
-          <div css={cssMobile}>
-            <DropDown
-              choices={choices}
-              currentFilter={currentFilter}
-              handleFilter={handleFilter}
-              is_senate={is_senate}
-              is_senator_type={is_senator_type}
-              colors={["#76C8B8", "#F0324B", "#2D3480", "#7B90D1", "#E3E3E3"]}
-            />
           </div>
         </div>
       )}

@@ -3,7 +3,6 @@ import { media } from "../styles"
 
 const cssContainer = {
   position: "absolute",
-  width: "100%",
   display: "flex",
   justifyContent: "center",
   alignItem: "center",

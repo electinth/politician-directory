@@ -55,24 +55,19 @@ const VotelogPage = ({ data }) => {
   const [voteId, setVoteId] = useState("")
   const [popupState, setPopupState] = useState(false)
   const [voteSelected, setVoteSelected] = useState("")
-  const [senatorType, setSenatorType] = useState("1")
   const [isShowAll, setIsShowAll] = useState(true)
   const [countByGroup, setCountByGroup] = useState([])
 
   useEffect(() => {
     if (voteId) {
-      console.log("voteId >", voteId)
+      console.log("voteId>", voteId)
       setVoteSelected(_.find(data.allSenateVotelogYaml.nodes, { id: voteId }))
     }
   }, [voteId])
 
   useEffect(() => {
-    console.log("senatorId >", senatorId)
+    console.log("senatorId>", senatorId)
   }, [senatorId])
-
-  useEffect(() => {
-    console.log("senatorType >", senatorType)
-  }, [senatorType])
 
   return (
     <div>
@@ -92,7 +87,6 @@ const VotelogPage = ({ data }) => {
           allSenateVoteYaml={data.allSenateVoteYaml}
           allPeopleYaml={data.allPeopleYaml}
           countByGroup={countByGroup}
-          setSenatorType={setSenatorType}
         />
         <SenateVotelogBarchart
           setPopupState={setPopupState}
@@ -100,7 +94,6 @@ const VotelogPage = ({ data }) => {
           setVoteId={setVoteId}
           isShowAll={isShowAll}
           setCountByGroup={setCountByGroup}
-          senatorType={senatorType}
         />
       </Layout>
     </div>
