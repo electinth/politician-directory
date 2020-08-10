@@ -10,21 +10,33 @@ const cssHightChart = {
 function DrawChart({
   data,
   types,
-  w,
+  width_of_barChart,
   is_yAxis,
   color_bars,
   is_starter_bars,
   height_svg,
   is_On,
-  is_all,
+  isShowAll,
   setVoteId,
   setPopupState,
   filter_senatorId,
 }) {
+  const [smallTranslateWidth, setSmallTranslateWidth] = useState(
+    window.innerWidth < 768 ? 115 : 250
+  )
+  const [translateWidth, setTranslateWidth] = useState(
+    window.innerWidth < 768 ? 40 : 300
+  )
+
   const ref = useRef()
-  const margin = { top: 0, right: 50, bottom: 0, left: 100 },
+  const margin = {
+      top: 0,
+      right: window.innerWidth < 768 ? 30 : 50,
+      bottom: 0,
+      left: !is_yAxis ? 0 : window.innerWidth < 768 ? 100 : 130,
+    },
     height = is_On ? 300 : height_svg,
-    width = w - margin.right - margin.left
+    width = width_of_barChart - margin.right - margin.left
   useEffect(() => {
     const chart = d3
       .select(ref.current)
@@ -51,7 +63,7 @@ function DrawChart({
     if (is_starter_bars) {
       d3.selectAll("g").remove()
     }
-    if (is_all) {
+    if (isShowAll) {
       d3.selectAll("g").remove()
       if (is_On) {
         d3.select(".chart").style("overflow-y", "hidden")
@@ -93,7 +105,7 @@ function DrawChart({
       .scaleLinear()
       .domain([0, d3.max(series, d => d3.max(d, d => d[1]))])
       .nice()
-      .range([0, filter_senatorId ? width - 300 : width])
+      .range([0, filter_senatorId ? width - translateWidth : width])
 
     let y_filter_senatorId = d3
       .scaleBand()
@@ -143,15 +155,21 @@ function DrawChart({
           .attr("x", d => x(d[0]))
           .attr("y", d => y(d.data.vote_date))
           .attr("width", d =>
-            filter_senatorId ? width - x(d[0]) - 300 : width - x(d[0])
+            filter_senatorId
+              ? width - x(d[0]) - translateWidth
+              : width - x(d[0])
           )
           .attr("height", y.bandwidth())
           .attr("class", d => "rect" + d.data.id)
           .on("mouseover", mouseover)
           .on("mouseout", mouseout)
           .on("click", onClick)
-          .attr("transform", `translate(${filter_senatorId ? 300 : 0}, 0)`)
+          .attr(
+            "transform",
+            `translate(${filter_senatorId ? translateWidth : 0}, 0)`
+          )
       )
+
     if (filter_senatorId) {
       chart
         .append("g")
@@ -165,7 +183,10 @@ function DrawChart({
             .attr("y", (d, i) => y_filter_senatorId(i))
             .attr("width", d => (1 / 250) * width)
             .attr("height", y_filter_senatorId.bandwidth())
-            .attr("transform", `translate(${filter_senatorId ? 250 : 10}, 0)`)
+            .attr(
+              "transform",
+              `translate(${filter_senatorId ? smallTranslateWidth : 10}, 0)`
+            )
             .attr("class", d => "rect" + d.key)
             .attr("fill", function(d) {
               if (d.value === "1") {
