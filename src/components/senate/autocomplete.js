@@ -2,21 +2,21 @@ import React, { useState, useEffect } from "react"
 import Autosuggest from "react-autosuggest"
 import AutosuggestHighlightMatch from "autosuggest-highlight/match"
 import AutosuggestHighlightParse from "autosuggest-highlight/parse"
-import VoteLogLegend from "../components/voteLogLegend"
+import VoteLogLegend from "../voteLogLegend"
 import styled from "@emotion/styled"
-import download from "../images/icons/download/download.png"
-import search from "../images/icons/search/search-grey.png"
-import { politicianPicture } from "../utils"
-import { media } from "../styles"
+import download from "../../images/icons/download/download.png"
+import search from "../../images/icons/search/search-grey.png"
+import { politicianPicture } from "../../utils"
+import { media } from "../../styles"
 import _ from "lodash"
 
-const cssContainer = {
+const cssContainer = ({ isShowAll }) => ({
   display: "flex",
   padding: "0 22px 26px 22px",
   [media(767)]: {
-    padding: "0 43px 12px 57px",
+    padding: isShowAll ? "0 43px 12px 57px" : "0 0 12px 0",
   },
-}
+})
 const cssWrapper = {
   width: "100%",
   display: "flex",
@@ -24,6 +24,7 @@ const cssWrapper = {
   alignItems: "center",
   [media(767)]: {
     flexDirection: "row",
+    alignItems: "flex-start",
   },
 }
 const Style = styled.div`
@@ -131,13 +132,20 @@ const cssAvg = {
     display: "unset",
   },
 }
+const cssTypeDetails = {}
+const cssGroup = {
+  fontWeight: "bold",
+  fontSize: "1.8rem",
+}
 
 const AutoComplete = ({
-  allSenateVoteYaml,
-  allPeopleYaml,
   setSenatorId,
   isShowAll,
   countByGroup,
+  barchartGroupWidth,
+  allSenateVotelogYaml,
+  allSenateVoteYaml,
+  allPeopleYaml,
 }) => {
   const [value, setValue] = useState("")
   const [suggestions, setSuggestions] = useState([])
@@ -172,8 +180,6 @@ const AutoComplete = ({
     absent: 0,
     missing: 0,
   })
-  const [is_senate, setIs_senate] = useState(true)
-  const [is_senator_type, setIs_senator_type] = useState(true)
   const [fullname, setFullname] = useState([])
 
   useEffect(() => {
@@ -296,12 +302,8 @@ const AutoComplete = ({
     </div>
   )
 
-  const cssGroup = {
-    fontWeight: "bold",
-    fontSize: "1.8rem",
-  }
-
   const calPercentLegend = () => {
+    const all_motion = allSenateVotelogYaml.nodes.length
     if (isShowAll) {
       if (_.isEmpty(valueSelected) || valueSelected.id === "0") {
         return totalVotelogType
@@ -315,7 +317,7 @@ const AutoComplete = ({
           missing: _.get(voteGroup, "5.length", 0),
         }
         for (const item in vote) {
-          vote[item] = ((vote[item] / 145) * 100).toFixed(2)
+          vote[item] = ((vote[item] / all_motion) * 100).toFixed(2)
           if (vote[item] == 0) {
             vote[item] = 0
           }
@@ -452,7 +454,7 @@ const AutoComplete = ({
   }
 
   return (
-    <div css={cssContainer}>
+    <div css={cssContainer({ isShowAll })}>
       {isShowAll ? (
         <div css={cssWrapper}>
           <Style>
@@ -477,15 +479,18 @@ const AutoComplete = ({
         </div>
       ) : (
         <div css={cssWrapper}>
-          <div style={{ marginRight: "35px" }}>
+          <div
+            css={cssTypeDetails}
+            style={{ width: barchartGroupWidth[0], paddingLeft: "5rem" }}
+          >
             <span css={cssGroup}>โดยตำแหน่ง</span>
             <VoteLogLegend type="group" {...select_by_position} />
           </div>
-          <div style={{ marginRight: "35px" }}>
+          <div css={cssTypeDetails} style={{ width: barchartGroupWidth[1] }}>
             <span css={cssGroup}>คสช. สรรหา</span>
             <VoteLogLegend type="group" {...select_by_government} />
           </div>
-          <div style={{ marginRight: "35px" }}>
+          <div css={cssTypeDetails} style={{ width: barchartGroupWidth[2] }}>
             <span css={cssGroup}>ตามกลุ่มอาชีพ</span>
             <VoteLogLegend type="group" {...select_by_career} />
           </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { media } from "../styles"
+import { media } from "../../styles"
 
 const cssContainer = {
   position: "absolute",
@@ -7,6 +7,10 @@ const cssContainer = {
   justifyContent: "center",
   alignItem: "center",
   zIndex: "100",
+  [media(767)]: {
+    width: "100%",
+    marginTop: "80px",
+  },
 }
 const cssPopup = {
   width: "90%",
@@ -19,6 +23,7 @@ const cssPopup = {
   [media(767)]: {
     width: "900px",
     flexDirection: "row",
+    position: "relative",
   },
 }
 const cssColumn = {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import { media } from "../styles"
-import votelogIcon from "../images/icons/votelog/votelog-white.png"
+import { media } from "../../styles"
+import votelogIcon from "../../images/icons/votelog/votelog-white.png"
 
 const cssHeader = {
   height: "4rem",

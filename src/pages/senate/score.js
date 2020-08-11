@@ -3,8 +3,8 @@ import Layout from "../../components/layout"
 import _ from "lodash"
 import { graphql } from "gatsby"
 import ScoreViz from "../../components/viz/scoreViz"
-import SenateNavbar from "../../components/senateNavbar"
-import SenateChecklistPopup from "../../components/senateChecklistPopup"
+import SenateNavbar from "../../components/senate/senateNavbar"
+import SenateChecklistPopup from "../../components/senate/senateChecklistPopup"
 import { media } from "../../styles"
 
 export const query = graphql`

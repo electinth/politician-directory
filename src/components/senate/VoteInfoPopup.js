@@ -1,10 +1,10 @@
 import React, { useEffect } from "react"
-import Waffle from "../components/waffle"
-import VoteLogLegend from "../components/voteLogLegend"
-import VoterList from "../components/voterList"
-import download from "../images/icons/download/download.png"
+import Waffle from "../waffle"
+import VoteLogLegend from "../voteLogLegend"
+import VoterList from "../voterList"
+import download from "../../images/icons/download/download.png"
 import _ from "lodash"
-import { media } from "../styles"
+import { media } from "../../styles"
 
 const cssPopupContainer = {
   position: "fixed",
@@ -75,7 +75,7 @@ const cssVotingDocs = {
 const cssVotingSheetBtnWrap = {
   flexDirection: "column",
   [media(767)]: {
-    display: "flex", 
+    display: "flex",
     flexDirection: "row",
     marginBottom: "3.6rem",
   },

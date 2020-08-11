@@ -1,5 +1,6 @@
-import React, { useState } from "react"
-import { media } from "../styles"
+import React, { useState, useEffect } from "react"
+import { media } from "../../styles"
+import { set } from "lodash"
 
 const cssContainer = {
   display: "flex",
@@ -83,9 +84,21 @@ const cssMobile = {
   },
 }
 
-const VoteResultsHeader = ({ setIsShowAll }) => {
+const VoteResultsHeader = ({ setIsShowAll, allSenateVotelogYaml }) => {
   const [viewPerson, setViewPerson] = useState(true)
   const [viewGroup, setViewGroup] = useState(false)
+  const [motionPass, setMotionPass] = useState(0)
+  const [motionFail, setMotionFail] = useState(0)
+
+  useEffect(() => {
+    let pass = allSenateVotelogYaml.nodes.filter(item => {
+      return item.is_active === true
+    })
+    pass = pass.length
+    const fail = allSenateVotelogYaml.nodes.length - pass
+    setMotionPass(pass)
+    setMotionFail(fail)
+  }, [])
 
   const clickBtnViewPerson = () => {
     setViewPerson(true)
@@ -128,11 +141,11 @@ const VoteResultsHeader = ({ setIsShowAll }) => {
         <div css={cssVoteBoxWrap}>
           <div css={cssVoteBox} style={{ background: "var(--cl-vote-yes)" }}>
             มติผ่าน
-            <div css={cssVoteNo}>145</div>
+            <div css={cssVoteNo}>{motionPass}</div>
           </div>
           <div css={cssVoteBox} style={{ background: "var(--cl-vote-no)" }}>
             มติไม่ผ่าน
-            <div css={cssVoteNo}>0</div>
+            <div css={cssVoteNo}>{motionFail}</div>
           </div>
         </div>
       </div>
@@ -143,7 +156,11 @@ const VoteResultsHeader = ({ setIsShowAll }) => {
         >
           ดูรายคน
         </button>
-        <button css={cssBtn({ active: viewGroup })} onClick={clickBtnViewGroup}>
+        <button
+          css={cssBtn({ active: viewGroup })}
+          onClick={clickBtnViewGroup}
+          style={{ marginBottom: "25px" }}
+        >
           ดูแยกประเภทส.ว.
         </button>
       </div>

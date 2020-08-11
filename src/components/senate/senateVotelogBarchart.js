@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react"
 import _, { set } from "lodash"
 import moment from "moment"
 import { graphql, useStaticQuery } from "gatsby"
-import DropDown from "./dropdown"
-import BarChart from "./page2/barChart"
-import ToggleSwitch from "./page2/toggleSwitch"
+import DropDown from "../dropdown"
+import BarChart from "./barChart"
+import ToggleSwitch from "./toggleSwitch"
 
 const cssGroupChart = {
   height: "300px",
@@ -313,6 +313,7 @@ export default ({
   isShowAll,
   setCountByGroup,
   senatorType,
+  setBarchartGroupWidth = { setBarchartGroupWidth },
 }) => {
   const senate = useStaticQuery(
     graphql`
@@ -522,10 +523,6 @@ export default ({
     count_by_yourSelf: count_by_yourSelf,
   })
 
-  if (!firstTime) {
-    setFirstTime(true)
-  }
-
   const types = ["id", "1", "2", "3", "4", "5"]
   const is_yAxis = true
   const clientWidth = document.getElementsByClassName(
@@ -537,7 +534,7 @@ export default ({
   useEffect(() => {
     setWidth(width)
     console.log(width, "<<- setting width")
-  }, [width]) 
+  }, [width])
   //width without scroll bar for window user
 
   function count_people(count_type) {
@@ -561,6 +558,10 @@ export default ({
       (people_in_yourSelf / all_peoples) * width + padding[1],
       (people_in_government / all_peoples) * width - padding[0] - padding[1],
     ]
+  }
+  if (!firstTime) {
+    setFirstTime(true)
+    setBarchartGroupWidth(groupWidth)
   }
 
   const choices = {

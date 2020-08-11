@@ -5,7 +5,12 @@ import { media } from "../styles"
 const cssLegend = ({ missing, type }) => ({
   display: missing ? "flex" : "unset",
   flexWrap: missing ? "wrap" : "unset",
-  justifyContent: missing && type !== "popup" ? (type === "group" ? "left" : "center") : "unset",
+  justifyContent:
+    missing && type !== "popup"
+      ? type === "group"
+        ? "flex-start"
+        : "center"
+      : "unset",
 })
 const cssGridCell = ({ missing, type }) => ({
   width: missing && type !== "popup" ? (type === "group" ? 3 : 10) : 8,
@@ -49,7 +54,7 @@ const VoteLogLegend = ({
   type,
 }) => {
   return (
-    <div css={cssLegend({ missing })}>
+    <div css={cssLegend({ missing, type })}>
       <div css={cssAvgText({ missing, type })}>โดยเฉลี่ย</div>
       <span css={cssLegendWrap({ missing })}>
         <div
