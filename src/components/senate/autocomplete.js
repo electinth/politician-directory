@@ -17,16 +17,18 @@ const cssContainer = ({ isShowAll }) => ({
     padding: isShowAll ? "0 43px 12px 57px" : "0 0 12px 0",
   },
 })
-const cssWrapper = {
+const cssWrapper = ({ isShowAll }) => ({
   width: "100%",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
+  width: "90%",
+  marginLeft: isShowAll ? "0" : "5%",
   [media(767)]: {
     flexDirection: "row",
     alignItems: "flex-start",
   },
-}
+})
 const Style = styled.div`
   .react-autosuggest__suggestions-container {
     max-height: 200px;
@@ -456,7 +458,7 @@ const AutoComplete = ({
   return (
     <div css={cssContainer({ isShowAll })}>
       {isShowAll ? (
-        <div css={cssWrapper}>
+        <div css={cssWrapper({ isShowAll })}>
           <Style>
             <Autosuggest
               className="cssSearchboxDropdown"
@@ -478,15 +480,18 @@ const AutoComplete = ({
           <VoteLogLegend {...avgVotelog} />
         </div>
       ) : (
-        <div css={cssWrapper}>
+        <div css={cssWrapper({ isShowAll })}>
           <div
             css={cssTypeDetails}
-            style={{ width: barchartGroupWidth[0], paddingLeft: "5rem" }}
+            style={{ width: barchartGroupWidth[0] + 250 }}
           >
             <span css={cssGroup}>โดยตำแหน่ง</span>
             <VoteLogLegend type="group" {...select_by_position} />
           </div>
-          <div css={cssTypeDetails} style={{ width: barchartGroupWidth[1] }}>
+          <div
+            css={cssTypeDetails}
+            style={{ width: barchartGroupWidth[1] + 155 }}
+          >
             <span css={cssGroup}>คสช. สรรหา</span>
             <VoteLogLegend type="group" {...select_by_government} />
           </div>

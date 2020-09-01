@@ -575,10 +575,6 @@ export default ({
   //     (people_in_government / all_peoples) * width - padding[0] - padding[1],
   //   ]
   // }
-  // if (!firstTime) {
-  //   setFirstTime(true)
-  //   setBarchartGroupWidth(groupWidth)
-  // }
   const rect_1 = (people_in_position * width_is_margin) / all_peoples
   const rect_2 = (people_in_yourSelf * width_is_margin) / all_peoples
   const rect_3 = (people_in_government * width_is_margin) / all_peoples
@@ -586,6 +582,10 @@ export default ({
   groupWidth = [rect_1, rect_2, rect_3]
 
   console.log(rect_1, rect_2, rect_3)
+  if (!firstTime) {
+    setFirstTime(true)
+    setBarchartGroupWidth(groupWidth)
+  }
 
   const choices = {
     sort_by: {
