@@ -63,7 +63,7 @@ export default ({ is_On, handleToggle, setHeightSvg }) => {
             position: absolute;
             transition: background-color 0.1s;
             margin: -25px 0 0 0;
-            right: 50px;
+            right: 85px;
           }
           .switch-label .switch-button {
             border: 1px solid #e0e0e0;

@@ -7,20 +7,18 @@ import BarChart from "./barChart"
 import ToggleSwitch from "./toggleSwitch"
 
 const cssGroupChart = {
-  height: "300px",
-  overflowY: "scroll",
   marginBottom: "42px",
 }
 const cssGroupChartAll = {
-  height: "300px",
-  overflowY: "hidden",
+  // height: "300px",
+  // overflowY: "hidden",
 }
 const cssColumnChart = {
   display: "inline-block",
 }
 const cssSenateVotelogBarchart = {
-  margin: "0",
-  width: "100%",
+  width: "90%",
+  marginLeft: "5%",
 }
 
 const BarCharts = props => {
@@ -199,7 +197,11 @@ const BarCharts = props => {
             {((props.senatorType === "1" && props.width < 768) ||
               props.width > 768) && (
               <div
-                css={{ ...cssColumnChart, width: props.groupWidth[0] }}
+                css={{
+                  ...cssColumnChart,
+                  width: props.groupWidth,
+                  marginRight: 215,
+                }}
                 onClick={() => selected_dropdown("count_by_position")}
               >
                 <DropDown
@@ -214,7 +216,11 @@ const BarCharts = props => {
             {(props.senatorType === "2" && props.width < 768) ||
               (props.width > 768 && (
                 <div
-                  css={{ ...cssColumnChart, width: props.groupWidth[1] }}
+                  css={{
+                    ...cssColumnChart,
+                    width: props.groupWidth[1],
+                    marginRight: 150,
+                  }}
                   onClick={() => selected_dropdown("count_by_yourSelf")}
                 >
                   <DropDown
@@ -246,7 +252,13 @@ const BarCharts = props => {
               className="group_chart"
               css={is_On ? cssGroupChartAll : cssGroupChart}
             >
-              <div css={{ ...cssColumnChart, width: props.groupWidth[0] }}>
+              <div
+                css={{
+                  ...cssColumnChart,
+                  width: props.groupWidth[0],
+                  marginRight: 250,
+                }}
+              >
                 {((props.senatorType === "1" && props.width < 768) ||
                   props.width > 768) && (
                   <BarChart
@@ -264,7 +276,13 @@ const BarCharts = props => {
                   />
                 )}
               </div>
-              <div css={{ ...cssColumnChart, width: props.groupWidth[1] }}>
+              <div
+                css={{
+                  ...cssColumnChart,
+                  width: props.groupWidth[1],
+                  marginRight: 155,
+                }}
+              >
                 {((props.senatorType === "2" && props.width < 768) ||
                   props.width > 768) && (
                   <BarChart
@@ -374,7 +392,6 @@ export default ({
 
   const [filter_senatorId, setFilter_senatorId] = useState()
   useEffect(() => {
-    console.log(" >>> searching", senatorId)
     const group_senatorId = _.chain(voter_in_votelog)
       .groupBy("senator_id")
       .map((value, key) => ({ id: key, votes: value }))
@@ -525,18 +542,17 @@ export default ({
 
   const types = ["id", "1", "2", "3", "4", "5"]
   const is_yAxis = true
-  const clientWidth = document.getElementsByClassName(
-    "senateVotelogBarchart"
-  )[0]
-  const [width, setWidth] = useState(
-    clientWidth ? clientWidth.clientWidth : window.innerWidth
-  )
-  useEffect(() => {
-    setWidth(width)
-    console.log(width, "<<- setting width")
-  }, [width])
+  let clientWidth = document.getElementsByClassName("senateVotelogBarchart")[0]
+  // const [width, setWidth] = useState(
+  //   clientWidth ? clientWidth.clientWidth : window.innerWidth
+  // )
+  // useEffect(() => {
+  //   setWidth(width)
+  //   console.log(width, "<<- setting width")
+  // }, [width])
   //width without scroll bar for window user
-
+  clientWidth = document.body.clientWidth
+  let [width, setWidth] = useState(clientWidth - 200)
   function count_people(count_type) {
     const peoples = _.dropRight(Object.values(count_type[0]), 2).reduce(
       function(a, b) {
@@ -550,19 +566,26 @@ export default ({
   const people_in_position = count_people(count_by_position)
   const people_in_yourSelf = count_people(count_by_yourSelf)
   const people_in_government = count_people(count_by_government)
-  const padding = [170, 80, 0]
+  const width_is_margin = width - 360
   let groupWidth = []
-  if (width) {
-    groupWidth = [
-      (people_in_position / all_peoples) * width + padding[0],
-      (people_in_yourSelf / all_peoples) * width + padding[1],
-      (people_in_government / all_peoples) * width - padding[0] - padding[1],
-    ]
-  }
-  if (!firstTime) {
-    setFirstTime(true)
-    setBarchartGroupWidth(groupWidth)
-  }
+  // if (width) {
+  //   groupWidth = [
+  //     (people_in_position / all_peoples) * width + padding[0],
+  //     (people_in_yourSelf / all_peoples) * width + padding[1],
+  //     (people_in_government / all_peoples) * width - padding[0] - padding[1],
+  //   ]
+  // }
+  // if (!firstTime) {
+  //   setFirstTime(true)
+  //   setBarchartGroupWidth(groupWidth)
+  // }
+  const rect_1 = (people_in_position * width_is_margin) / all_peoples
+  const rect_2 = (people_in_yourSelf * width_is_margin) / all_peoples
+  const rect_3 = (people_in_government * width_is_margin) / all_peoples
+
+  groupWidth = [rect_1, rect_2, rect_3]
+
+  console.log(rect_1, rect_2, rect_3)
 
   const choices = {
     sort_by: {

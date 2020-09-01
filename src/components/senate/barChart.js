@@ -2,8 +2,8 @@ import React, { useState, useRef, useEffect } from "react"
 import * as d3 from "d3"
 
 const cssHightChart = {
-  height: "300px",
-  overflowY: "scroll",
+  // height: "300px",
+  // overflowY: "scroll",
   marginBottom: "42px",
 }
 
@@ -31,17 +31,18 @@ function DrawChart({
   const ref = useRef()
   const margin = {
       top: 0,
-      right: window.innerWidth < 768 ? 30 : 50,
+      right: window.innerWidth < 768 ? 0 : 0,
       bottom: 0,
-      left: !is_yAxis ? 0 : window.innerWidth < 768 ? 100 : 130,
+      left: !is_yAxis ? 0 : window.innerWidth < 768 ? 0 : 80,
     },
     height = is_On ? 300 : height_svg,
-    width = width_of_barChart - margin.right - margin.left
+    width = width_of_barChart
+
   useEffect(() => {
     const chart = d3
       .select(ref.current)
       .attr("className", "chart")
-      .attr("width", width + margin.left + margin.right)
+      .attr("width", !is_yAxis ? width : width + 80)
       .attr("height", height)
   }, [])
 
@@ -68,7 +69,7 @@ function DrawChart({
       if (is_On) {
         d3.select(".chart").style("overflow-y", "hidden")
       } else {
-        d3.select(".chart").style("overflow-y", "scroll")
+        // d3.select(".chart").style("overflow-y", "scroll")
       }
       d3.select("svg").attr("height", height)
     } else {
@@ -105,7 +106,10 @@ function DrawChart({
       .scaleLinear()
       .domain([0, d3.max(series, d => d3.max(d, d => d[1]))])
       .nice()
-      .range([0, filter_senatorId ? width - translateWidth : width])
+      .range([
+        0,
+        filter_senatorId ? width - translateWidth : width - margin.right,
+      ])
 
     let y_filter_senatorId = d3
       .scaleBand()
@@ -157,7 +161,7 @@ function DrawChart({
           .attr("width", d =>
             filter_senatorId
               ? width - x(d[0]) - translateWidth
-              : width - x(d[0])
+              : x(d[1]) - x(d[0])
           )
           .attr("height", y.bandwidth())
           .attr("class", d => "rect" + d.data.id)
