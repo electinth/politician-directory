@@ -2,8 +2,6 @@ import React, { useState, useRef, useEffect } from "react"
 import * as d3 from "d3"
 
 const cssHightChart = {
-  // height: "300px",
-  // overflowY: "scroll",
   marginBottom: "42px",
 }
 
@@ -22,7 +20,7 @@ function DrawChart({
   filter_senatorId,
 }) {
   const [smallTranslateWidth, setSmallTranslateWidth] = useState(
-    window.innerWidth < 768 ? 115 : 250
+    window.innerWidth < 768 ? 115 : 220
   )
   const [translateWidth, setTranslateWidth] = useState(
     window.innerWidth < 768 ? 40 : 300
@@ -33,11 +31,10 @@ function DrawChart({
       top: 0,
       right: window.innerWidth < 768 ? 0 : 0,
       bottom: 0,
-      left: !is_yAxis ? 0 : window.innerWidth < 768 ? 0 : 80,
+      left: !is_yAxis ? 0 : 80,
     },
     height = is_On ? 300 : height_svg,
     width = width_of_barChart
-
   useEffect(() => {
     const chart = d3
       .select(ref.current)
@@ -68,8 +65,6 @@ function DrawChart({
       d3.selectAll("g").remove()
       if (is_On) {
         d3.select(".chart").style("overflow-y", "hidden")
-      } else {
-        // d3.select(".chart").style("overflow-y", "scroll")
       }
       d3.select("svg").attr("height", height)
     } else {
