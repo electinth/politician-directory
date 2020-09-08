@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import _, { set } from "lodash"
+import _ from "lodash"
 import moment from "moment"
 import { graphql, useStaticQuery } from "gatsby"
 import DropDown from "../dropdown"
@@ -8,13 +8,15 @@ import ToggleSwitch from "./toggleSwitch"
 
 const cssGroupChart = {
   marginBottom: "42px",
+  margin: 0,
+  width: `${window.innerWidth - 100}px`,
 }
 const cssColumnChart = {
   display: "inline-block",
 }
 const cssSenateVotelogBarchart = {
   width: "90%",
-  marginLeft: "5%",
+  marginLeft: "3%",
 }
 
 const BarCharts = props => {
@@ -31,12 +33,13 @@ const BarCharts = props => {
     props.count_by_yourSelf
   )
 
-  const [types, setTypes] = useState(props.types)
-  const [is_senate, set_is_senate] = useState(true)
-  const [is_starter_bars, setStarter] = useState(true)
+  const types = props.types
+  const is_senate = true
+  const is_starter_bars = true
   const [currentFilter, setCurrentFilter] = useState(props.choices)
   const [is_On, setIsOn] = useState(false)
-  const [height_svg, setHeightSvg] = useState(count_all_senate.length * 30)
+  const size_per_bar = 30
+  const height_svg = count_all_senate.length * size_per_bar
   const [is_selected_position, setIs_position] = useState(false)
   const [is_selected_government, setIs_government] = useState(false)
   const [is_selected_yourSelf, setIs_yourSelf] = useState(false)
@@ -57,7 +60,7 @@ const BarCharts = props => {
   }
 
   useEffect(() => {
-    if (props.isShowAll === true) {
+    if (props.isShowAll) {
       setIs_government(false)
       setIs_position(false)
       setIs_yourSelf(false)
@@ -187,16 +190,34 @@ const BarCharts = props => {
           </div>
         ) : (
           <div className="is_group">
-            <div>
-              {((props.senatorType === "1" && props.width < 768) ||
-                props.width > 768) && (
+            {((props.senatorType === "1" && props.width < 768) ||
+              props.width > 768) && (
+              <div
+                css={{
+                  ...cssColumnChart,
+                  width: props.groupWidth,
+                  marginRight: 240,
+                }}
+                onClick={() => selected_dropdown("count_by_position")}
+              >
+                <DropDown
+                  choices={props.choices}
+                  currentFilter={currentFilter}
+                  handleFilter={handleFilter}
+                  is_senate={is_senate}
+                  colors={props.colors}
+                />
+              </div>
+            )}
+            {(props.senatorType === "2" && props.width < 768) ||
+              (props.width > 768 && (
                 <div
                   css={{
                     ...cssColumnChart,
-                    width: props.groupWidth,
-                    marginRight: 215,
+                    width: props.groupWidth[1],
+                    marginRight: 155,
                   }}
-                  onClick={() => selected_dropdown("count_by_position")}
+                  onClick={() => selected_dropdown("count_by_yourSelf")}
                 >
                   <DropDown
                     choices={props.choices}
@@ -206,49 +227,29 @@ const BarCharts = props => {
                     colors={props.colors}
                   />
                 </div>
-              )}
-              {(props.senatorType === "2" && props.width < 768) ||
-                (props.width > 768 && (
-                  <div
-                    css={{
-                      ...cssColumnChart,
-                      width: props.groupWidth[1],
-                      marginRight: 150,
-                    }}
-                    onClick={() => selected_dropdown("count_by_yourSelf")}
-                  >
-                    <DropDown
-                      choices={props.choices}
-                      currentFilter={currentFilter}
-                      handleFilter={handleFilter}
-                      is_senate={is_senate}
-                      colors={props.colors}
-                    />
-                  </div>
-                ))}
-              {(props.senatorType === "2" && props.width < 768) ||
-                (props.width > 768 && (
-                  <div
-                    css={{ ...cssColumnChart, width: props.groupWidth[2] }}
-                    onClick={() => selected_dropdown("count_by_government")}
-                  >
-                    <DropDown
-                      choices={props.choices}
-                      currentFilter={currentFilter}
-                      handleFilter={handleFilter}
-                      is_senate={is_senate}
-                      colors={props.colors}
-                    />
-                  </div>
-                ))}
-            </div>
+              ))}
+            {(props.senatorType === "2" && props.width < 768) ||
+              (props.width > 768 && (
+                <div
+                  css={{ ...cssColumnChart, width: props.groupWidth[2] }}
+                  onClick={() => selected_dropdown("count_by_government")}
+                >
+                  <DropDown
+                    choices={props.choices}
+                    currentFilter={currentFilter}
+                    handleFilter={handleFilter}
+                    is_senate={is_senate}
+                    colors={props.colors}
+                  />
+                </div>
+              ))}
             <ToggleSwitch is_On={is_On} handleToggle={() => setIsOn(!is_On)} />
             <div className="group_chart" css={cssGroupChart}>
               <div
                 css={{
                   ...cssColumnChart,
                   width: props.groupWidth[0],
-                  marginRight: 250,
+                  marginRight: 190,
                   //1500px + พัง
                 }}
               >
@@ -273,7 +274,7 @@ const BarCharts = props => {
                 css={{
                   ...cssColumnChart,
                   width: props.groupWidth[1],
-                  marginRight: 155,
+                  marginRight: 160,
                 }}
               >
                 {((props.senatorType === "2" && props.width < 768) ||
@@ -359,7 +360,7 @@ export default ({
   const votelogs = senate.allSenateVotelogYaml.nodes
   const people_method = senate.allPeopleYaml.nodes
 
-  const [firstTime, setFirstTime] = useState(false)
+  const firstTime = false
 
   useEffect(() => {
     setCountByGroup(count_by_group)
@@ -538,9 +539,7 @@ export default ({
   let clientWidth = document.getElementsByClassName("senateVotelogBarchart")[0]
   //width without scroll bar for window user
   clientWidth = document.body.clientWidth
-  let [width, setWidth] = useState(
-    clientWidth < 768 ? clientWidth : clientWidth - 200
-  )
+  let width = clientWidth - 60
   function count_people(count_type) {
     const peoples = _.dropRight(Object.values(count_type[0]), 2).reduce(
       function(a, b) {
@@ -554,13 +553,16 @@ export default ({
   const people_in_position = count_people(count_by_position)
   const people_in_yourSelf = count_people(count_by_yourSelf)
   const people_in_government = count_people(count_by_government)
-  const width_is_margin = width - 360
+  const sum_allMargin = 470
+  const width_is_margin = width - sum_allMargin
   let groupWidth = []
   const rect_1 = (people_in_position * width_is_margin) / all_peoples
   const rect_2 = (people_in_yourSelf * width_is_margin) / all_peoples
   const rect_3 = (people_in_government * width_is_margin) / all_peoples
 
-  groupWidth = [rect_1, rect_2, rect_3]
+  const marginAxis = 80
+
+  groupWidth = [rect_1 + marginAxis, rect_2, rect_3]
 
   const choices = {
     sort_by: {
