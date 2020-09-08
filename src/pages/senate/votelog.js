@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { media } from "../../styles"
 import { graphql } from "gatsby"
 import _ from "lodash"
 import Layout from "../../components/layout"
@@ -49,6 +50,12 @@ export const query = graphql`
     }
   }
 `
+const cssHeaderWrap = {
+  position: "sticky",
+  top: "0",
+  background: "white",
+  [media(767)]: {},
+}
 
 const VotelogPage = ({ data }) => {
   const [senatorId, setSenatorId] = useState("0")
@@ -75,20 +82,22 @@ const VotelogPage = ({ data }) => {
         allPeopleYaml={data.allPeopleYaml}
       />
       <Layout style={{ position: "relative" }}>
-        <SenateNavbar />
-        <VotelogHeader
-          setIsShowAll={setIsShowAll}
-          allSenateVotelogYaml={data.allSenateVotelogYaml}
-        />
-        <Autocomplete
-          setSenatorId={setSenatorId}
-          isShowAll={isShowAll}
-          countByGroup={countByGroup}
-          barchartGroupWidth={barchartGroupWidth}
-          allSenateVotelogYaml={data.allSenateVotelogYaml}
-          allSenateVoteYaml={data.allSenateVoteYaml}
-          allPeopleYaml={data.allPeopleYaml}
-        />
+        <div css={cssHeaderWrap}>
+          <SenateNavbar />
+          <VotelogHeader
+            setIsShowAll={setIsShowAll}
+            allSenateVotelogYaml={data.allSenateVotelogYaml}
+          />
+          <Autocomplete
+            setSenatorId={setSenatorId}
+            isShowAll={isShowAll}
+            countByGroup={countByGroup}
+            barchartGroupWidth={barchartGroupWidth}
+            allSenateVotelogYaml={data.allSenateVotelogYaml}
+            allSenateVoteYaml={data.allSenateVoteYaml}
+            allPeopleYaml={data.allPeopleYaml}
+          />
+        </div>
         <SenateVotelogBarchart
           setPopupState={setPopupState}
           senatorId={senatorId}

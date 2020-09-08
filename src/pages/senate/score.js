@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Layout from "../../components/layout"
 import _ from "lodash"
 import { graphql } from "gatsby"
@@ -159,6 +159,10 @@ const cssSelectConMobile = {
 
 const Motion = ({ data }) => {
   const [filter, setFilter] = useState(null)
+  const [isFirstTime, setIsFirstTime] = useState(
+    sessionStorage.getItem("isFirstTime")
+  )
+  const [showPopup, setShowPopup] = useState(true)
 
   const handleFilterClick = newFilter => {
     if (filter === newFilter) {
@@ -191,10 +195,21 @@ const Motion = ({ data }) => {
     })
 
   const senatorCount = _.countBy(senateVoteData, "senator_method")
+
+  const renderPopup = () => {
+    return <SenateChecklistPopup />
+  }
   return (
     <Layout pageStyles={{ background: "#fff" }}>
       <SenateNavbar />
-      <SenateChecklistPopup />
+
+      {!isFirstTime ? (
+        <SenateChecklistPopup
+          showPopup={showPopup}
+          setShowPopup={setShowPopup}
+          setIsFirstTime={setIsFirstTime}
+        />
+      ) : null}
       <body css={{ ...cssBody }}>
         <section css={{ ...cssSection }}>
           <div css={{ ...cssSectionLeft }}>

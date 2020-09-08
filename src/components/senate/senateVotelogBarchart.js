@@ -36,7 +36,7 @@ const BarCharts = props => {
   )
 
   const [types, setTypes] = useState(props.types)
-  const [is_senate, set_is_senate] = useState(true)
+  const is_senate = true
   const [is_starter_bars, setStarter] = useState(true)
   const [currentFilter, setCurrentFilter] = useState(props.choices)
   const [is_On, setIsOn] = useState(false)
