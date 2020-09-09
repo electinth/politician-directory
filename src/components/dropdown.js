@@ -137,13 +137,63 @@ const cssDropdownSortBarchart = {
   },
 }
 
-const cssDropdownSenatorType = {}
+const cssDropdownSenatorType = {
+  ".arrow-down": {
+    marginTop: "5px",
+    width: "0",
+    height: "0",
+    borderLeft: "5px solid transparent",
+    borderRight: "5px solid transparent",
+    borderTop: "10px solid var(--cl-black);",
+    float: "right",
+    marginLeft: "1rem",
+  },
+  ".current-filter-list": {
+    textAlign: "center",
+    listStyle: "none",
+    button: {
+      textAlign: "left",
+      background: "transparent",
+      border: "none",
+      borderBottom: "1px solid #aaa",
+      cursor: "pointer",
+      width: "325px",
+      height: "30px",
+      margin: "0",
+      "&:focus": {
+        outline: "none",
+      },
+    },
+    li: {
+      display: "inline-block",
+      position: "relative;",
+    },
+  },
+  ".menuItems": {
+    position: "absolute",
+    zIndex: "1",
+    border: "1px solid #AEAEAE",
+    minWidth: "325px",
+    margin: "0",
+    button: {
+      display: "block",
+      border: "none",
+      backgroundColor: "white",
+      margin: "0px",
+      width: "100%",
+      "&:hover": {
+        backgroundColor: "#eef090",
+      },
+    },
+  },
+}
 
 class DropDown extends Component {
   container = React.createRef()
   state = {
     show: false,
     is_senate: this.props.is_senate,
+    is_mobile: this.props.is_mobile,
   }
   handleFilter = (e, field) => {
     this.setState({ show: !this.state.show })
@@ -166,7 +216,11 @@ class DropDown extends Component {
     return (
       <div
         css={
-          this.state.is_senate ? cssDropdownSortBarchart : cssDropdownDeafult
+          this.state.is_senate
+            ? this.state.is_mobile
+              ? cssDropdownSenatorType
+              : cssDropdownSortBarchart
+            : cssDropdownDeafult
         }
       >
         <ul className="current-filter-list" css={{ marginLeft: 0 }}>
@@ -175,7 +229,7 @@ class DropDown extends Component {
               onClick={() => this.setState({ show: !this.state.show })}
               className="currentFilter"
             >
-              {this.state.is_senate ? (
+              {this.state.is_senate && !this.state.is_mobile ? (
                 <Img fixed={this.props.clock_image} />
               ) : (
                 this.props.currentFilter[this.props.filter]
@@ -190,7 +244,7 @@ class DropDown extends Component {
             {this.state.show ? (
               <div className="menuItems">
                 <button onClick={e => this.handleFilter(e, this.props.filter)}>
-                  {this.state.is_senate ? (
+                  {this.state.is_senate && !this.state.is_mobile ? (
                     <div>
                       <Img
                         fixed={this.props.clock_image}
@@ -206,7 +260,7 @@ class DropDown extends Component {
                   <button
                     onClick={e => this.handleFilter(e, this.props.filter)}
                   >
-                    {this.state.is_senate ? (
+                    {this.state.is_senate && !this.state.is_mobile ? (
                       <>
                         <div
                           className="bulletChoice"
@@ -232,6 +286,7 @@ export default ({
   currentFilter,
   handleFilter,
   is_senate,
+  is_mobile,
   colors,
 }) => {
   const data = useStaticQuery(graphql`
@@ -246,7 +301,7 @@ export default ({
     }
   `)
   return (
-    <div>
+    <div style={{ display: "flex" }}>
       {Object.entries(choices).map(([filter, choices], key) => (
         <DropDown
           currentFilter={currentFilter}
@@ -255,6 +310,7 @@ export default ({
           choices={choices}
           key={key}
           is_senate={is_senate}
+          is_mobile={is_mobile}
           colors={colors}
           clock_image={data.clock.childImageSharp.fixed}
         />

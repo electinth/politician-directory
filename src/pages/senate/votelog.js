@@ -58,6 +58,7 @@ const cssHeaderWrap = {
 }
 
 const VotelogPage = ({ data }) => {
+  const [senatorTypeId, setSenatorTypeId] = useState(1)
   const [senatorId, setSenatorId] = useState("0")
   const [voteId, setVoteId] = useState("")
   const [popupState, setPopupState] = useState(false)
@@ -89,6 +90,7 @@ const VotelogPage = ({ data }) => {
             allSenateVotelogYaml={data.allSenateVotelogYaml}
           />
           <Autocomplete
+            setSenatorTypeId={setSenatorTypeId}
             setSenatorId={setSenatorId}
             isShowAll={isShowAll}
             countByGroup={countByGroup}
@@ -100,6 +102,7 @@ const VotelogPage = ({ data }) => {
         </div>
         <SenateVotelogBarchart
           setPopupState={setPopupState}
+          senatorTypeId={senatorTypeId}
           senatorId={senatorId}
           setVoteId={setVoteId}
           isShowAll={isShowAll}

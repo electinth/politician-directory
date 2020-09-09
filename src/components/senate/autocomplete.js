@@ -4,6 +4,7 @@ import AutosuggestHighlightMatch from "autosuggest-highlight/match"
 import AutosuggestHighlightParse from "autosuggest-highlight/parse"
 import VoteLogLegend from "../voteLogLegend"
 import styled from "@emotion/styled"
+import DropDown from "../dropdown"
 import download from "../../images/icons/download/download.png"
 import search from "../../images/icons/search/search-grey.png"
 import { politicianPicture } from "../../utils"
@@ -134,13 +135,25 @@ const cssAvg = {
     display: "unset",
   },
 }
-const cssTypeDetails = {}
+const cssTypeDetails = {
+  display: "none",
+  [media(767)]: {
+    display: "unset",
+  },
+}
+const cssDropdown = {
+  display: "unset",
+  [media(767)]: {
+    display: "none",
+  },
+}
 const cssGroup = {
   fontWeight: "bold",
   fontSize: "1.8rem",
 }
 
 const AutoComplete = ({
+  setSenatorTypeId,
   setSenatorId,
   isShowAll,
   countByGroup,
@@ -183,6 +196,17 @@ const AutoComplete = ({
     missing: 0,
   })
   const [fullname, setFullname] = useState([])
+  const choices = {
+    senatorType: {
+      default: "โดยตำแหน่ง",
+      others: ["คสช. สรรหา", "ตามกลุ่มอาชีพ"],
+    },
+  }
+  const [currentFilter, setCurrentFilter] = useState(choices)
+
+  useEffect(() => {
+    setCurrentFilter({ senatorType: "โดยตำแหน่ง" })
+  }, [])
 
   useEffect(() => {
     allSenateVoteYaml.nodes.unshift({
@@ -455,6 +479,23 @@ const AutoComplete = ({
     }
   }
 
+  const handleFilter = e => {
+    let currentFilter = { ...currentFilter }
+    let filter = e.target.innerText
+    currentFilter = { senatorType: filter }
+    if (filter === "โดยตำแหน่ง") {
+      setSenatorTypeId(1)
+    } else if (filter === "คสช. สรรหา") {
+      setSenatorTypeId(2)
+    } else if (filter === "ตามกลุ่มอาชีพ") {
+      setSenatorTypeId(3)
+    }
+
+    setCurrentFilter(currentFilter)
+  }
+
+  const colors = ["#76C8B8", "#F0324B", "#2D3480", "#7B90D1", "#E3E3E3"]
+
   return (
     <div css={cssContainer({ isShowAll })}>
       {isShowAll ? (
@@ -498,6 +539,17 @@ const AutoComplete = ({
           <div css={cssTypeDetails} style={{ width: barchartGroupWidth[2] }}>
             <span css={cssGroup}>ตามกลุ่มอาชีพ</span>
             <VoteLogLegend type="group" {...select_by_career} />
+          </div>
+          <div css={cssDropdown}>
+            <DropDown
+              filter={"senatorType"}
+              choices={choices}
+              currentFilter={currentFilter}
+              handleFilter={handleFilter}
+              is_senate={true}
+              is_mobile={true}
+              colors={colors}
+            />
           </div>
         </div>
       )}

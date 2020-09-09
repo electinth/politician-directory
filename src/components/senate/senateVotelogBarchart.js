@@ -327,12 +327,14 @@ const BarCharts = props => {
 export default ({
   setVoteId,
   setPopupState,
+  senatorTypeId,
   senatorId,
   isShowAll,
   setCountByGroup,
   senatorType,
   setBarchartGroupWidth = { setBarchartGroupWidth },
 }) => {
+  console.log("senatorTypeId", senatorTypeId)
   const senate = useStaticQuery(
     graphql`
       query {
@@ -581,7 +583,7 @@ export default ({
 
   groupWidth = [rect_1, rect_2, rect_3]
 
-  console.log(rect_1, rect_2, rect_3)
+  // console.log(rect_1, rect_2, rect_3)
   if (!firstTime) {
     setFirstTime(true)
     setBarchartGroupWidth(groupWidth)
@@ -611,6 +613,7 @@ export default ({
       setVoteId={setVoteId}
       setPopupState={setPopupState}
       filter_senatorId={filter_senatorId}
+      senatorTypeId={senatorTypeId}
       senatorId={senatorId}
       isShowAll={isShowAll}
       setCountByGroup={setCountByGroup}
