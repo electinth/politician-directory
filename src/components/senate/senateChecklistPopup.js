@@ -114,11 +114,11 @@ const cssCloseBtn = {
   },
 }
 
-const SenateChecklistPopup = () => {
-  const [showPopup, setShowPopup] = useState(true)
-
+const SenateChecklistPopup = ({ showPopup, setShowPopup, setIsFirstTime }) => {
   const close = () => {
     setShowPopup(false)
+    setIsFirstTime(false)
+    sessionStorage.setItem("isFirstTime", true)
   }
   return (
     <div css={cssContainer}>

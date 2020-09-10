@@ -321,12 +321,14 @@ const BarCharts = props => {
 export default ({
   setVoteId,
   setPopupState,
+  senatorTypeId,
   senatorId,
   isShowAll,
   setCountByGroup,
   senatorType,
   setBarchartGroupWidth = { setBarchartGroupWidth },
 }) => {
+  console.log("senatorTypeId", senatorTypeId)
   const senate = useStaticQuery(
     graphql`
       query {
@@ -359,8 +361,7 @@ export default ({
   const people_votes = senate.allSenateVoteYaml.nodes
   const votelogs = senate.allSenateVotelogYaml.nodes
   const people_method = senate.allPeopleYaml.nodes
-
-  const firstTime = false
+  const [firstTime, setFirstTime] = useState(false)
 
   useEffect(() => {
     setCountByGroup(count_by_group)
@@ -563,6 +564,10 @@ export default ({
   const marginAxis = 80
 
   groupWidth = [rect_1 + marginAxis, rect_2, rect_3]
+  if (!firstTime) {
+    setFirstTime(true)
+    setBarchartGroupWidth(groupWidth)
+  }
 
   const choices = {
     sort_by: {
@@ -588,6 +593,7 @@ export default ({
       setVoteId={setVoteId}
       setPopupState={setPopupState}
       filter_senatorId={filter_senatorId}
+      senatorTypeId={senatorTypeId}
       senatorId={senatorId}
       isShowAll={isShowAll}
       setCountByGroup={setCountByGroup}
