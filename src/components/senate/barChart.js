@@ -18,6 +18,8 @@ function DrawChart({
   setVoteId,
   setPopupState,
   filter_senatorId,
+  is_mobile,
+  senatorTypeId,
 }) {
   const smallTranslateWidth = window.innerWidth < 768 ? 115 : 220
   const translateWidth = 300
@@ -25,13 +27,24 @@ function DrawChart({
   const ref = useRef()
   const margin = {
       top: 0,
-      right: !is_yAxis ? 0 : 80,
+      right: is_mobile ? 0 : !is_yAxis ? 0 : 80,
       bottom: 0,
       left: !is_yAxis ? 0 : 80,
     },
     height = is_On ? 300 : height_svg,
     width = width_of_barChart
-
+  let is_mobile_center = 0
+  let is_line_center = 0
+  if (senatorTypeId === 1) {
+    is_mobile_center = document.body.clientWidth / 2 - 80
+    is_line_center = document.body.clientWidth / 2 + 3.5
+  } else if (senatorTypeId === 2) {
+    is_mobile_center = document.body.clientWidth / 4 - width / 4 + 5
+    is_line_center = document.body.clientWidth / 2
+  } else if (senatorTypeId === 3) {
+    is_mobile_center = 10
+    is_line_center = document.body.clientWidth / 2 + 18
+  }
   useEffect(() => {
     if (is_starter_bars) {
       d3.selectAll("g").remove()
@@ -49,6 +62,16 @@ function DrawChart({
   }, [data])
 
   useEffect(() => {
+    console.log(senatorTypeId, "<--- senatorTypeId")
+    if (is_mobile) {
+      d3.select(".charts").remove()
+      d3.select(".percentLine").remove()
+    }
+    draw_bar()
+  }, [senatorTypeId])
+
+  useEffect(() => {
+    console.log("is_on ->>", is_On)
     if (is_starter_bars) {
       d3.selectAll("g").remove()
       d3.select(".percentLine").remove()
@@ -76,10 +99,19 @@ function DrawChart({
   function draw_bar() {
     d3.select(ref.current)
       .attr("className", "chart")
-      .attr("width", filter_senatorId ? width - 40 : width)
+      .attr(
+        "width",
+        is_mobile
+          ? document.body.clientWidth - 25
+          : filter_senatorId
+          ? width - 40
+          : width
+      )
       .attr("height", height)
 
-    const fullScreen = window.innerWidth - 100
+    const fullScreen = is_mobile
+      ? window.innerWidth - 25
+      : window.innerWidth - 100
     d3.select(".chart-wrapper").style("width", `${fullScreen}px`)
 
     const chart = d3.select(ref.current)
@@ -110,7 +142,7 @@ function DrawChart({
       .range([0, height])
       .padding(0.2)
 
-    var yAxis = g =>
+    let yAxis = g =>
       g
         .attr("className", "yAxis")
         .call(d3.axisLeft(y).ticks(null, "s"))
@@ -129,13 +161,17 @@ function DrawChart({
         .attr("class", "percentLine")
         .attr(
           "x1",
-          (is_starter_bars && !isShowAll) || window.innerWidth < 768
+          is_mobile
+            ? is_line_center
+            : (is_starter_bars && !isShowAll) || window.innerWidth < 768
             ? width / 2 + 40
             : width / 2
         )
         .attr(
           "x2",
-          (is_starter_bars && !isShowAll) || window.innerWidth < 768
+          is_mobile
+            ? is_line_center
+            : (is_starter_bars && !isShowAll) || window.innerWidth < 768
             ? width / 2 + 40
             : width / 2
         )
@@ -144,16 +180,6 @@ function DrawChart({
         .attr("stroke", "#AEAEAE")
         .attr("stroke-dasharray", "4")
     }
-    // chart
-    //   .append("text")
-    //   .attr("class", "percentText")
-    //   .attr("x", is_starter_bars && !isShowAll ? width / 2 + 40 : width / 2)
-    //   .attr("y", 0)
-    //   .attr("fill", "#828282")
-    //   .attr("font-size", "1.0rem")
-    //   .attr("dominant-baseline", "middle")
-    //   .text("50%")
-
     const rects = g
       .selectAll("g")
       .data(series)
@@ -202,7 +228,13 @@ function DrawChart({
           .on("click", onClick)
           .attr(
             "transform",
-            `translate(${filter_senatorId ? translateWidth : 0}, 0)`
+            `translate(${
+              is_mobile
+                ? is_mobile_center
+                : filter_senatorId
+                ? translateWidth
+                : 0
+            }, 0)`
           )
       )
 
