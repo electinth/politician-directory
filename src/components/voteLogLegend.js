@@ -11,6 +11,10 @@ const cssLegend = ({ missing, type }) => ({
         ? "flex-start"
         : "center"
       : "unset",
+  marginRight: "0",
+  [media(767)]: {
+    marginRight: missing ? "2rem" : "0",
+  },
 })
 const cssGridCell = ({ missing, type }) => ({
   width: missing && type !== "popup" ? (type === "group" ? 3 : 10) : 8,

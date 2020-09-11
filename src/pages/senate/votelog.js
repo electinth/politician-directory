@@ -90,6 +90,7 @@ const VotelogPage = ({ data }) => {
             allSenateVotelogYaml={data.allSenateVotelogYaml}
           />
           <Autocomplete
+            senatorTypeId={senatorTypeId}
             setSenatorTypeId={setSenatorTypeId}
             setSenatorId={setSenatorId}
             isShowAll={isShowAll}

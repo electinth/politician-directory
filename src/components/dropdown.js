@@ -1,7 +1,17 @@
 import React, { Component } from "react"
-import { css, Global } from "@emotion/core"
+import { media } from "../styles"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+
+const cssWrapper = ({ is_senate }) => ({
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "center",
+  marginBottom: is_senate ? "0" : "2.4rem",
+  [media(767)]: {
+    display: "flex",
+  },
+})
 
 const cssDropdownDeafult = {
   ".arrow-down": {
@@ -17,6 +27,7 @@ const cssDropdownDeafult = {
   ".current-filter-list": {
     textAlign: "center",
     listStyle: "none",
+    marginBottom: "0",
     button: {
       textAlign: "left",
       background: "var(--cl-pink)",
@@ -144,15 +155,16 @@ const cssDropdownSenatorType = {
     height: "0",
     borderLeft: "5px solid transparent",
     borderRight: "5px solid transparent",
-    borderTop: "10px solid var(--cl-black);",
+    borderTop: "10px solid #AEAEAE",
     float: "right",
     marginLeft: "1rem",
   },
   ".current-filter-list": {
     textAlign: "center",
     listStyle: "none",
+    marginBottom: "1.8rem",
     button: {
-      textAlign: "left",
+      textAlign: "center",
       background: "transparent",
       border: "none",
       borderBottom: "1px solid #aaa",
@@ -160,6 +172,7 @@ const cssDropdownSenatorType = {
       width: "325px",
       height: "30px",
       margin: "0",
+      fontSize: "1.4rem",
       "&:focus": {
         outline: "none",
       },
@@ -167,6 +180,7 @@ const cssDropdownSenatorType = {
     li: {
       display: "inline-block",
       position: "relative;",
+      marginBottom: "0",
     },
   },
   ".menuItems": {
@@ -181,6 +195,7 @@ const cssDropdownSenatorType = {
       backgroundColor: "white",
       margin: "0px",
       width: "100%",
+      textAlign: "left",
       "&:hover": {
         backgroundColor: "#eef090",
       },
@@ -289,6 +304,7 @@ export default ({
   is_mobile,
   colors,
 }) => {
+  console.log("is_senate", is_senate)
   const data = useStaticQuery(graphql`
     query {
       clock: file(relativePath: { eq: "images/clock/clock.png" }) {
@@ -301,7 +317,7 @@ export default ({
     }
   `)
   return (
-    <div style={{ display: "flex" }}>
+    <div css={cssWrapper({ is_senate })}>
       {Object.entries(choices).map(([filter, choices], key) => (
         <DropDown
           currentFilter={currentFilter}

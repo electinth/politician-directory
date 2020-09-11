@@ -196,9 +196,6 @@ const Motion = ({ data }) => {
 
   const senatorCount = _.countBy(senateVoteData, "senator_method")
 
-  const renderPopup = () => {
-    return <SenateChecklistPopup />
-  }
   return (
     <Layout pageStyles={{ background: "#fff" }}>
       <SenateNavbar />

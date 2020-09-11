@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { media } from "../../styles"
 
-const cssContainer = {
+const cssPopupContainer = {
   position: "absolute",
   display: "flex",
   justifyContent: "center",
@@ -9,7 +9,9 @@ const cssContainer = {
   zIndex: "100",
   [media(767)]: {
     width: "100%",
-    marginTop: "80px",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%,-50%)",
   },
 }
 const cssPopup = {
@@ -121,9 +123,9 @@ const SenateChecklistPopup = ({ showPopup, setShowPopup, setIsFirstTime }) => {
     sessionStorage.setItem("isFirstTime", true)
   }
   return (
-    <div css={cssContainer}>
+    <div css={cssPopupContainer} className="container">
       {showPopup && (
-        <div css={cssPopup}>
+        <div css={cssPopup} className="popup">
           <div css={cssCloseBtn} onClick={close} />
           <div
             css={cssColumn}

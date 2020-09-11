@@ -23,11 +23,10 @@ const cssWrapper = ({ isShowAll }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  width: "90%",
-  marginLeft: isShowAll ? "0" : "5%",
   [media(767)]: {
     flexDirection: "row",
     alignItems: "flex-start",
+    marginLeft: isShowAll ? "0" : "5%",
   },
 })
 const Style = styled.div`
@@ -151,8 +150,15 @@ const cssGroup = {
   fontWeight: "bold",
   fontSize: "1.8rem",
 }
+const cssMobile = {
+  display: "unset",
+  [media(767)]: {
+    display: "none",
+  },
+}
 
 const AutoComplete = ({
+  senatorTypeId,
   setSenatorTypeId,
   setSenatorId,
   isShowAll,
@@ -189,6 +195,13 @@ const AutoComplete = ({
     missing: 0,
   })
   const [totalVotelogType, setTotalVotelogType] = useState({
+    approve: 0,
+    disprove: 0,
+    abstained: 0,
+    absent: 0,
+    missing: 0,
+  })
+  const [senatorType, setSenatorType] = useState({
     approve: 0,
     disprove: 0,
     abstained: 0,
@@ -447,6 +460,7 @@ const AutoComplete = ({
         select_by_government[item] = 0
       }
     }
+    setSelectByGovernment(select_by_government)
 
     for (const item in select_by_position) {
       select_by_position[item] = (
@@ -457,6 +471,8 @@ const AutoComplete = ({
         select_by_position[item] = 0
       }
     }
+    setSelectByPosition(select_by_position)
+    setSenatorType(select_by_position)
 
     for (const item in select_by_career) {
       select_by_career[item] = (
@@ -467,6 +483,7 @@ const AutoComplete = ({
         select_by_career[item] = 0
       }
     }
+    setSelectByCareer(select_by_career)
 
     for (const item in totalVotelogType) {
       totalVotelogType[item] = (
@@ -485,10 +502,13 @@ const AutoComplete = ({
     currentFilter = { senatorType: filter }
     if (filter === "โดยตำแหน่ง") {
       setSenatorTypeId(1)
+      setSenatorType(select_by_position)
     } else if (filter === "คสช. สรรหา") {
       setSenatorTypeId(2)
+      setSenatorType(select_by_government)
     } else if (filter === "ตามกลุ่มอาชีพ") {
       setSenatorTypeId(3)
+      setSenatorType(select_by_career)
     }
 
     setCurrentFilter(currentFilter)
@@ -550,6 +570,9 @@ const AutoComplete = ({
               is_mobile={true}
               colors={colors}
             />
+          </div>
+          <div css={cssMobile}>
+            <VoteLogLegend {...senatorType} />
           </div>
         </div>
       )}
