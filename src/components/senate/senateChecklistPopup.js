@@ -8,6 +8,7 @@ const cssPopupContainer = {
   alignItem: "center",
   zIndex: "100",
   [media(767)]: {
+    position: "fixed",
     width: "100%",
     top: "50%",
     left: "50%",

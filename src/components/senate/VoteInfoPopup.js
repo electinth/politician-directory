@@ -22,11 +22,30 @@ const cssPopupContainer = {
 }
 const cssCloseBtn = {
   position: "absolute",
-  color: "black",
-  top: "1rem",
-  right: "1rem",
-  zIndex: "20",
+  top: "6px",
+  right: "6px",
+  width: "21px",
+  height: "21px",
   cursor: "pointer",
+  opacity: "0.3",
+  "&:hover": {
+    opacity: "1",
+  },
+  "&:before, &:after": {
+    position: "absolute",
+    top: "4px",
+    right: "12px",
+    content: '""',
+    height: "21px",
+    width: "2px",
+    backgroundColor: "#333",
+  },
+  "&:before": {
+    transform: "rotate(45deg)",
+  },
+  "&:after": {
+    transform: "rotate(-45deg)",
+  },
 }
 const cssHeader = {
   display: "flex",
@@ -144,9 +163,7 @@ const VoteInfoPopup = ({
     <div>
       {popupState && (
         <div css={cssPopupContainer} className="cssPopupScrollbar">
-          <div onClick={handleClose} css={cssCloseBtn}>
-            x
-          </div>
+          <div onClick={handleClose} css={cssCloseBtn} />
 
           <section css={cssHeader}>
             <div>ประชุมส.ว.</div>
