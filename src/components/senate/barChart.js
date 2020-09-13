@@ -1,9 +1,7 @@
-import React, { useState, useRef, useEffect } from "react"
+import React, { useRef, useEffect } from "react"
 import * as d3 from "d3"
 
 const cssHightChart = {
-  // height: "300px",
-  // overflowY: "scroll",
   marginBottom: "42px",
 }
 
@@ -20,35 +18,37 @@ function DrawChart({
   setVoteId,
   setPopupState,
   filter_senatorId,
+  is_mobile,
+  senatorTypeId,
 }) {
-  const [smallTranslateWidth, setSmallTranslateWidth] = useState(
-    window.innerWidth < 768 ? 115 : 250
-  )
-  const [translateWidth, setTranslateWidth] = useState(
-    window.innerWidth < 768 ? 40 : 300
-  )
-
+  const smallTranslateWidth = window.innerWidth < 768 ? 115 : 220
+  const translateWidth = 300
+  const diff_width = 400
   const ref = useRef()
   const margin = {
       top: 0,
-      right: window.innerWidth < 768 ? 0 : 0,
+      right: is_mobile ? 0 : !is_yAxis ? 0 : 80,
       bottom: 0,
-      left: !is_yAxis ? 0 : window.innerWidth < 768 ? 0 : 80,
+      left: !is_yAxis ? 0 : 80,
     },
     height = is_On ? 300 : height_svg,
     width = width_of_barChart
-
-  useEffect(() => {
-    const chart = d3
-      .select(ref.current)
-      .attr("className", "chart")
-      .attr("width", !is_yAxis ? width : width + 80)
-      .attr("height", height)
-  }, [])
-
+  let is_mobile_center = 0
+  let is_line_center = 0
+  if (senatorTypeId === 1) {
+    is_mobile_center = document.body.clientWidth / 2 - 80
+    is_line_center = document.body.clientWidth / 2 + 3.5
+  } else if (senatorTypeId === 2) {
+    is_mobile_center = document.body.clientWidth / 4 - width / 4 + 5
+    is_line_center = document.body.clientWidth / 2
+  } else if (senatorTypeId === 3) {
+    is_mobile_center = 10
+    is_line_center = document.body.clientWidth / 2 + 18
+  }
   useEffect(() => {
     if (is_starter_bars) {
       d3.selectAll("g").remove()
+      d3.select(".percentLine").remove()
     }
     draw_bar()
   }, [filter_senatorId])
@@ -56,20 +56,31 @@ function DrawChart({
   useEffect(() => {
     if (is_starter_bars) {
       d3.selectAll("g").remove()
+      d3.select(".percentLine").remove()
     }
     draw_bar()
   }, [data])
 
   useEffect(() => {
+    console.log(senatorTypeId, "<--- senatorTypeId")
+    if (is_mobile) {
+      d3.select(".charts").remove()
+      d3.select(".percentLine").remove()
+    }
+    draw_bar()
+  }, [senatorTypeId])
+
+  useEffect(() => {
+    console.log("is_on ->>", is_On)
     if (is_starter_bars) {
       d3.selectAll("g").remove()
+      d3.select(".percentLine").remove()
     }
     if (isShowAll) {
       d3.selectAll("g").remove()
+      d3.select(".percentLine").remove()
       if (is_On) {
         d3.select(".chart").style("overflow-y", "hidden")
-      } else {
-        // d3.select(".chart").style("overflow-y", "scroll")
       }
       d3.select("svg").attr("height", height)
     } else {
@@ -86,6 +97,23 @@ function DrawChart({
   }, [is_On])
 
   function draw_bar() {
+    d3.select(ref.current)
+      .attr("className", "chart")
+      .attr(
+        "width",
+        is_mobile
+          ? document.body.clientWidth - 25
+          : filter_senatorId
+          ? width - 40
+          : width
+      )
+      .attr("height", height)
+
+    const fullScreen = is_mobile
+      ? window.innerWidth - 25
+      : window.innerWidth - 100
+    d3.select(".chart-wrapper").style("width", `${fullScreen}px`)
+
     const chart = d3.select(ref.current)
     let series = d3.stack().keys(types.slice(1))(data)
 
@@ -106,10 +134,7 @@ function DrawChart({
       .scaleLinear()
       .domain([0, d3.max(series, d => d3.max(d, d => d[1]))])
       .nice()
-      .range([
-        0,
-        filter_senatorId ? width - translateWidth : width - margin.right,
-      ])
+      .range([0, filter_senatorId ? width - diff_width : width - margin.right])
 
     let y_filter_senatorId = d3
       .scaleBand()
@@ -117,11 +142,10 @@ function DrawChart({
       .range([0, height])
       .padding(0.2)
 
-    var yAxis = g =>
+    let yAxis = g =>
       g
         .attr("className", "yAxis")
         .call(d3.axisLeft(y).ticks(null, "s"))
-        .attr("transform", `translate(${0}, ${0})`)
         .call(g => g.selectAll(".domain").remove())
         .call(g => g.selectAll("line").remove())
         .attr("height", y.bandwidth())
@@ -131,6 +155,31 @@ function DrawChart({
       .attr("transform", `translate(${margin.left}, 0)`)
       .attr("className", "charts")
 
+    if (!filter_senatorId != "") {
+      chart
+        .append("line")
+        .attr("class", "percentLine")
+        .attr(
+          "x1",
+          is_mobile
+            ? is_line_center
+            : (is_starter_bars && !isShowAll) || window.innerWidth < 768
+            ? width / 2 + 40
+            : width / 2
+        )
+        .attr(
+          "x2",
+          is_mobile
+            ? is_line_center
+            : (is_starter_bars && !isShowAll) || window.innerWidth < 768
+            ? width / 2 + 40
+            : width / 2
+        )
+        .attr("y1", 0)
+        .attr("y2", height)
+        .attr("stroke", "#AEAEAE")
+        .attr("stroke-dasharray", "4")
+    }
     const rects = g
       .selectAll("g")
       .data(series)
@@ -139,16 +188,29 @@ function DrawChart({
       .attr("fill", d => color(d.key))
 
     const mouseover = d => {
-      d3.selectAll(".rect" + d.data.id).style("stroke", "black")
+      if (d.data) {
+        d3.selectAll(".rect" + d.data.id).style("stroke", "black")
+      } else {
+        d3.selectAll(".rect" + d.key).style("stroke", "black")
+      }
     }
     const mouseout = d => {
-      d3.selectAll(".rect" + d.data.id).style("stroke", "none")
+      if (d.data) {
+        d3.selectAll(".rect" + d.data.id).style("stroke", "none")
+      } else {
+        d3.selectAll(".rect" + d.key).style("stroke", "none")
+      }
     }
     const onClick = d => {
-      d3.selectAll(".rect" + d.data.id).style("stroke", "black")
-      console.log(d.data.id)
-      setVoteId(d.data.id)
-      setPopupState(true)
+      if (d.data) {
+        d3.selectAll(`.rect${d.data.id}`).style("stroke", "black")
+        setVoteId(d.data.id)
+        setPopupState(true)
+      } else {
+        d3.selectAll(".rect" + d.key).style("stroke", "black")
+        setVoteId(d.key)
+        setPopupState(true)
+      }
     }
     rects
       .selectAll("rect")
@@ -158,11 +220,7 @@ function DrawChart({
           .append("rect")
           .attr("x", d => x(d[0]))
           .attr("y", d => y(d.data.vote_date))
-          .attr("width", d =>
-            filter_senatorId
-              ? width - x(d[0]) - translateWidth
-              : x(d[1]) - x(d[0])
-          )
+          .attr("width", d => x(d[1]) - x(d[0]))
           .attr("height", y.bandwidth())
           .attr("class", d => "rect" + d.data.id)
           .on("mouseover", mouseover)
@@ -170,7 +228,13 @@ function DrawChart({
           .on("click", onClick)
           .attr(
             "transform",
-            `translate(${filter_senatorId ? translateWidth : 0}, 0)`
+            `translate(${
+              is_mobile
+                ? is_mobile_center
+                : filter_senatorId
+                ? translateWidth
+                : 0
+            }, 0)`
           )
       )
 
@@ -189,8 +253,11 @@ function DrawChart({
             .attr("height", y_filter_senatorId.bandwidth())
             .attr(
               "transform",
-              `translate(${filter_senatorId ? smallTranslateWidth : 10}, 0)`
+              `translate(${filter_senatorId ? smallTranslateWidth : 0}, 0)`
             )
+            .on("mouseover", mouseover)
+            .on("mouseout", mouseout)
+            .on("click", onClick)
             .attr("class", d => "rect" + d.key)
             .attr("fill", function(d) {
               if (d.value === "1") {
@@ -226,7 +293,7 @@ function DrawChart({
     }
   }
   return (
-    <div className="chart" css={cssHightChart}>
+    <div className="chart-wrapper" css={cssHightChart}>
       <svg ref={ref}></svg>
     </div>
   )
