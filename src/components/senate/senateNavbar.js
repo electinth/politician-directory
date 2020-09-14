@@ -79,11 +79,11 @@ const SenateNavbar = () => {
       <div css={cssHeader}>
         <div style={{ display: "flex" }}>
           <img css={cssIcon} src={votelogIcon} />
-          <h1 css={cssTitle}>ตรวจงาน สว.</h1>
+          <h1 css={cssTitle}>ตรวจงาน ส.ว.</h1>
         </div>
         <div>
           <Link to={"/senate/score"} onClick={() => selected("score")}>
-            <button css={cssBtn({ active: score })}>คะแนนจิตพิสัย สว.</button>
+            <button css={cssBtn({ active: score })}>คะแนนจิตพิสัย ส.ว.</button>
           </Link>
 
           <Link to={"/senate/votelog"} onClick={() => selected("votelog")}>

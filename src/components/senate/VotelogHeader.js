@@ -134,7 +134,7 @@ const VoteResultsHeader = ({ setIsShowAll, allSenateVotelogYaml }) => {
               css={cssBtn({ active: viewGroup })}
               onClick={clickBtnViewGroup}
             >
-              ดูแยกประเภทส.ว.
+              ดูแยกประเภท ส.ว.
             </button>
           </div>
         </div>
@@ -161,7 +161,7 @@ const VoteResultsHeader = ({ setIsShowAll, allSenateVotelogYaml }) => {
           onClick={clickBtnViewGroup}
           style={{ marginBottom: "25px" }}
         >
-          ดูแยกประเภทส.ว.
+          ดูแยกประเภท ส.ว.
         </button>
       </div>
     </div>

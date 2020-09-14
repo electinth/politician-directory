@@ -167,7 +167,7 @@ const Menu = ({ siteTitle }) => {
                 style={{ transform: "translate(2px, 0)" }}
               />
             </span>
-            <Link to={"/senate/score"}>สรุปวาระการลงมติส.ว.</Link>
+            <Link to={"/senate/score"}>สรุปวาระการลงมติ ส.ว.</Link>
           </span>
         </li>
         <li>

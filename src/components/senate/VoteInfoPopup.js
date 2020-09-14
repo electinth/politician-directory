@@ -166,7 +166,7 @@ const VoteInfoPopup = ({
           <div onClick={handleClose} css={cssCloseBtn} />
 
           <section css={cssHeader}>
-            <div>ประชุมส.ว.</div>
+            <div>ประชุม ส.ว.</div>
             <div>{votelogInfo.vote_date}</div>
           </section>
 

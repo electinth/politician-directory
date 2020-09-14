@@ -212,7 +212,7 @@ const Motion = ({ data }) => {
           <div css={{ ...cssSectionLeft }}>
             <h1>คะแนนจิตพิสัย ส.ว.</h1>
             <div css={{ ...cssSelectcon }}>
-              <b>เลือกดูตามประเภทส.ว.</b>
+              <b>เลือกดูตามประเภท ส.ว.</b>
               <div css={{ ...cssButtonCon }}>
                 <div
                   css={{
@@ -291,7 +291,7 @@ const Motion = ({ data }) => {
           </div>
         </section>
         <div css={{ ...cssSelectConMobile }}>
-          <b>เลือกดูตามประเภทส.ว.</b>
+          <b>เลือกดูตามประเภท ส.ว.</b>
           <div css={{ ...cssButtonCon }}>
             <div
               css={{
