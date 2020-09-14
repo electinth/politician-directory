@@ -132,6 +132,7 @@ const cssAvg = {
   display: "none",
   [media(767)]: {
     display: "unset",
+    flex: "none",
   },
 }
 const cssTypeDetails = {

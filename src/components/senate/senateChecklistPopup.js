@@ -87,6 +87,7 @@ const cssLine = {
   paddingBottom: "1.5rem",
 }
 const cssCloseBtn = {
+  zIndex: "100",
   position: "absolute",
   top: "1.8rem",
   right: "3.5rem",

@@ -196,6 +196,23 @@ const Motion = ({ data }) => {
 
   const senatorCount = _.countBy(senateVoteData, "senator_method")
 
+  const handleBtnClick = value => {
+    console.log("value", value)
+    if (
+      process.env.GATSBY_ENV !== "production" ||
+      process.env.GATSBY_ENV === "development"
+    ) {
+      return
+    }
+    try {
+      window.gtag("senate_score_mode", "View", {
+        event_label: value,
+      })
+    } catch (e) {
+      console.error(e)
+    }
+  }
+
   return (
     <Layout pageStyles={{ background: "#fff" }}>
       <SenateNavbar />
@@ -222,7 +239,10 @@ const Motion = ({ data }) => {
                         ? "0.2rem solid rgba(0, 0, 0, 1)"
                         : "0.2rem solid rgba(0, 0, 0, 0.3)",
                   }}
-                  onClick={() => handleFilterClick("โดยตำแหน่ง")}
+                  onClick={() => {
+                    handleBtnClick("1,0,0")
+                    handleFilterClick("โดยตำแหน่ง")
+                  }}
                 >
                   <div css={{ ...cssCircle, background: "#999C00" }} />
                   โดยตำแหน่ง{" "}
@@ -240,7 +260,10 @@ const Motion = ({ data }) => {
                         ? "0.2rem solid rgba(0, 0, 0, 1)"
                         : "0.2rem solid rgba(0, 0, 0, 0.3)",
                   }}
-                  onClick={() => handleFilterClick("เลือกโดย คสช.")}
+                  onClick={() => {
+                    handleBtnClick("0,1,0")
+                    handleFilterClick("เลือกโดย คสช.")
+                  }}
                 >
                   <div css={{ ...cssCircle, background: "#5739AC" }} />
                   คสช. สรรหา{" "}
@@ -258,7 +281,10 @@ const Motion = ({ data }) => {
                         ? "0.2rem solid rgba(0, 0, 0, 1)"
                         : "0.2rem solid rgba(0, 0, 0, 0.3)",
                   }}
-                  onClick={() => handleFilterClick("เลือกกันเอง")}
+                  onClick={() => {
+                    handleBtnClick("0,0,1")
+                    handleFilterClick("เลือกกันเอง")
+                  }}
                 >
                   <div css={{ ...cssCircle, background: "#FEACAC" }} />
                   ตามกลุ่มอาชีพ

@@ -46,6 +46,7 @@ const cssAvgText = ({ missing, type }) => ({
   marginTop: "0.6rem",
   [media(767)]: {
     display: "none",
+    flex: "none",
     marginTop: "0",
   },
 })

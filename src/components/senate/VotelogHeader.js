@@ -110,6 +110,22 @@ const VoteResultsHeader = ({ setIsShowAll, allSenateVotelogYaml }) => {
     setViewGroup(true)
     setIsShowAll(false)
   }
+  const handleBtnClick = value => {
+    console.log("value", value)
+    if (
+      process.env.GATSBY_ENV !== "production" ||
+      process.env.GATSBY_ENV === "development"
+    ) {
+      return
+    }
+    try {
+      window.gtag("senate_votelog_mode", "View", {
+        event_label: value,
+      })
+    } catch (e) {
+      console.error(e)
+    }
+  }
   return (
     <div>
       <div css={cssContainer}>
@@ -126,13 +142,19 @@ const VoteResultsHeader = ({ setIsShowAll, allSenateVotelogYaml }) => {
               style={{
                 marginRight: "5px",
               }}
-              onClick={clickBtnViewPerson}
+              onClick={() => {
+                handleBtnClick("all")
+                clickBtnViewPerson()
+              }}
             >
               ดูรายคน
             </button>
             <button
               css={cssBtn({ active: viewGroup })}
-              onClick={clickBtnViewGroup}
+              onClick={() => {
+                handleBtnClick("senator_method")
+                clickBtnViewGroup()
+              }}
             >
               ดูแยกประเภท ส.ว.
             </button>
