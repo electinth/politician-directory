@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import Autosuggest from "react-autosuggest"
 import AutosuggestHighlightMatch from "autosuggest-highlight/match"
 import AutosuggestHighlightParse from "autosuggest-highlight/parse"
@@ -10,6 +11,8 @@ import search from "../../images/icons/search/search-grey.png"
 import { politicianPicture } from "../../utils"
 import { media } from "../../styles"
 import _ from "lodash"
+import Img from "gatsby-image"
+import { LazyLoadComponent } from "react-lazy-load-image-component"
 
 const cssContainer = ({ isShowAll }) => ({
   display: "flex",
@@ -120,7 +123,7 @@ const cssSearchIcon = {
   width: "15px",
 }
 const cssImg = {
-  position: "absolute",
+  position: "absolute !important",
   top: "0",
   left: "25px",
   width: "25px",
@@ -169,6 +172,20 @@ const AutoComplete = ({
   allSenateVoteYaml,
   allPeopleYaml,
 }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(
+        relativePath: { eq: "images/people/placeholder.png" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 84) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  const [showPlaceholder, setShowPlaceholder] = useState(false)
   const [value, setValue] = useState("")
   const [suggestions, setSuggestions] = useState([])
   const [senator, setSenator] = useState([])
@@ -302,6 +319,7 @@ const AutoComplete = ({
       const match = _.find(senator, ["fullname", newValue])
       setValueSelected(match)
       setSenatorId(match.id)
+      setShowPlaceholder(false)
     } else {
       setValueSelected({})
       setSenatorId("0")
@@ -336,7 +354,23 @@ const AutoComplete = ({
       <img css={cssSearchIcon} src={search} />
       {_.isEmpty(valueSelected) ||
         (value !== "ทั้งหมด" && (
-          <img css={cssImg} src={politicianPicture(valueSelected)} />
+          <LazyLoadComponent>
+            {!showPlaceholder ? (
+              <img
+                src={politicianPicture(valueSelected)}
+                css={cssImg}
+                alt={`${valueSelected.title} ${valueSelected.name} ${valueSelected.lastname}`}
+                onError={() => {
+                  setShowPlaceholder(true)
+                }}
+              />
+            ) : (
+              <Img
+                css={cssImg}
+                fluid={data.placeholderImage.childImageSharp.fluid}
+              />
+            )}
+          </LazyLoadComponent>
         ))}
       <input {...inputProps} />
     </div>
