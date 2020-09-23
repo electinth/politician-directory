@@ -29,7 +29,7 @@ const cssWrapper = ({ isShowAll }) => ({
   [media(767)]: {
     flexDirection: "row",
     alignItems: "flex-start",
-    marginLeft: isShowAll ? "0" : "5%",
+    marginLeft: isShowAll ? "0" : "3%",
   },
 })
 const Style = styled.div`
@@ -579,14 +579,14 @@ const AutoComplete = ({
         <div css={cssWrapper({ isShowAll })}>
           <div
             css={cssTypeDetails}
-            style={{ width: barchartGroupWidth[0] + 250 }}
+            style={{ width: barchartGroupWidth[0] + 190 }}
           >
             <span css={cssGroup}>โดยตำแหน่ง</span>
             <VoteLogLegend type="group" {...select_by_position} />
           </div>
           <div
             css={cssTypeDetails}
-            style={{ width: barchartGroupWidth[1] + 155 }}
+            style={{ width: barchartGroupWidth[1] + 160 }}
           >
             <span css={cssGroup}>คสช. สรรหา</span>
             <VoteLogLegend type="group" {...select_by_government} />
