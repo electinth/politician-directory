@@ -5,15 +5,15 @@ import { css, Global } from "@emotion/core"
 class ToggleSwitch extends Component {
   switchOn = (
     <div>
-      <i className="arrow up up_limitShow" />
-      <i className="arrow down down_limitShow" />
+      <div className="arrow up up_limitShow" />
+      <div className="arrow down down_limitShow" />
     </div>
   )
   switchOff = (
     <div>
-      <i className="arrow down down_showAll" />
-      <i className="switch_line" />
-      <i className="arrow up up_showAll" />
+      <div className="arrow down down_showAll" />
+      <div className="switch_line" />
+      <div className="arrow up up_showAll" />
     </div>
   )
   render() {
@@ -40,14 +40,12 @@ class ToggleSwitch extends Component {
   }
 }
 
-export default ({ is_On, handleToggle, setHeightSvg }) => {
+export default ({ is_On, handleToggle }) => {
   return (
-    <ul>
+    <div>
       <Global
         styles={css`
           .switch-checkbox {
-            height: 0;
-            width: 0;
             visibility: hidden;
           }
           .switch-label {
@@ -62,8 +60,7 @@ export default ({ is_On, handleToggle, setHeightSvg }) => {
             border: 1px solid #e0e0e0;
             position: absolute;
             transition: background-color 0.1s;
-            margin: -25px 0 0 0;
-            right: 85px;
+            top: 0;
           }
           .switch-label .switch-button {
             border: 1px solid #e0e0e0;
@@ -125,6 +122,6 @@ export default ({ is_On, handleToggle, setHeightSvg }) => {
         `}
       />
       <ToggleSwitch is_On={is_On} handleToggle={handleToggle} />
-    </ul>
+    </div>
   )
 }

@@ -8,6 +8,7 @@ import VoteInfoPopup from "../../components/senate/voteInfoPopup"
 import Autocomplete from "../../components/senate/autocomplete"
 import SenateNavbar from "../../components/senate/senateNavbar"
 import SenateVotelogBarchart from "../../components/senate/senateVotelogBarchart"
+import SenateFilter from "../../components/senate/senateFilter"
 
 export const query = graphql`
   query {
@@ -66,6 +67,12 @@ const VotelogPage = ({ data }) => {
   const [isShowAll, setIsShowAll] = useState(true)
   const [countByGroup, setCountByGroup] = useState([])
   const [barchartGroupWidth, setBarchartGroupWidth] = useState([])
+  const [handleFilter, setHandleFilter] = useState("")
+  const [is_mobile, setIs_mobile_width] = useState(false)
+  const [is_selected_position, setIs_position] = useState(false)
+  const [is_selected_government, setIs_government] = useState(false)
+  const [is_selected_yourSelf, setIs_yourSelf] = useState(false)
+  const [is_On, setIsOn] = useState(false)
 
   useEffect(() => {
     if (voteId) {
@@ -100,8 +107,22 @@ const VotelogPage = ({ data }) => {
             allSenateVoteYaml={data.allSenateVoteYaml}
             allPeopleYaml={data.allPeopleYaml}
           />
+
+          <SenateFilter
+            setHandleFilter={setHandleFilter}
+            isShowAll={isShowAll}
+            barchartGroupWidth={barchartGroupWidth}
+            is_mobile={is_mobile}
+            setIs_position={setIs_position}
+            setIs_government={setIs_government}
+            setIs_yourSelf={setIs_yourSelf}
+            senatorTypeId={senatorTypeId}
+            is_On={is_On}
+            setIsOn={setIsOn}
+          />
         </div>
         <SenateVotelogBarchart
+          handleFilter={handleFilter}
           setPopupState={setPopupState}
           senatorTypeId={senatorTypeId}
           senatorId={senatorId}
@@ -109,6 +130,12 @@ const VotelogPage = ({ data }) => {
           isShowAll={isShowAll}
           setCountByGroup={setCountByGroup}
           setBarchartGroupWidth={setBarchartGroupWidth}
+          setIs_mobile_width={setIs_mobile_width}
+          is_selected_position={is_selected_position}
+          is_selected_government={is_selected_government}
+          is_selected_yourSelf={is_selected_yourSelf}
+          is_On={is_On}
+          setIsOn={setIsOn}
         />
       </Layout>
     </div>

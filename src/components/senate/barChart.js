@@ -21,9 +21,11 @@ function DrawChart({
   is_mobile,
   senatorTypeId,
 }) {
-  const smallTranslateWidth = window.innerWidth < 768 ? 115 : 220
-  const translateWidth = 300
-  const diff_width = 400
+  const smallTranslateWidth = window.innerWidth < 768 ? 100 : 150
+  let is_active = []
+  const translateWidth = window.innerWidth < 768 ? 60 : 150
+  let is_mobile_center = 0
+  let is_line_center = 0
   const ref = useRef()
   const margin = {
       top: 0,
@@ -32,9 +34,12 @@ function DrawChart({
       left: !is_yAxis ? 0 : 80,
     },
     height = is_On ? 300 : height_svg,
-    width = width_of_barChart
-  let is_mobile_center = 0
-  let is_line_center = 0
+    width = filter_senatorId
+      ? window.innerWidth < 768
+        ? width_of_barChart + 40
+        : width_of_barChart - 80
+      : width_of_barChart
+
   if (senatorTypeId === 1) {
     is_mobile_center = document.body.clientWidth / 2 - 80
     is_line_center = document.body.clientWidth / 2 + 3.5
@@ -62,7 +67,6 @@ function DrawChart({
   }, [data])
 
   useEffect(() => {
-    console.log(senatorTypeId, "<--- senatorTypeId")
     if (is_mobile) {
       d3.select(".charts").remove()
       d3.select(".percentLine").remove()
@@ -71,7 +75,6 @@ function DrawChart({
   }, [senatorTypeId])
 
   useEffect(() => {
-    console.log("is_on ->>", is_On)
     if (is_starter_bars) {
       d3.selectAll("g").remove()
       d3.select(".percentLine").remove()
@@ -104,7 +107,7 @@ function DrawChart({
         is_mobile
           ? document.body.clientWidth - 25
           : filter_senatorId
-          ? width - 40
+          ? width + 210
           : width
       )
       .attr("height", height)
@@ -134,7 +137,7 @@ function DrawChart({
       .scaleLinear()
       .domain([0, d3.max(series, d => d3.max(d, d => d[1]))])
       .nice()
-      .range([0, filter_senatorId ? width - diff_width : width - margin.right])
+      .range([0, filter_senatorId ? width : width - margin.right])
 
     let y_filter_senatorId = d3
       .scaleBand()
@@ -190,8 +193,10 @@ function DrawChart({
     const mouseover = d => {
       if (d.data) {
         d3.selectAll(".rect" + d.data.id).style("stroke", "black")
+        d3.selectAll(".rect" + d.data.id).style("cursor", "pointer")
       } else {
         d3.selectAll(".rect" + d.key).style("stroke", "black")
+        d3.selectAll(".rect" + d.key).style("cursor", "pointer")
       }
     }
     const mouseout = d => {
@@ -202,15 +207,17 @@ function DrawChart({
       }
     }
     const onClick = d => {
+      is_active.push(d.data.id)
+      d3.selectAll(".rect" + is_active[0]).style("stroke", "none")
+      if (is_active.length === 2) is_active.splice(0, 1)
       if (d.data) {
         d3.selectAll(`.rect${d.data.id}`).style("stroke", "black")
         setVoteId(d.data.id)
-        setPopupState(true)
       } else {
         d3.selectAll(".rect" + d.key).style("stroke", "black")
         setVoteId(d.key)
-        setPopupState(true)
       }
+      setPopupState(true)
     }
     rects
       .selectAll("rect")

@@ -238,14 +238,27 @@ class DropDown extends Component {
             : cssDropdownDeafult
         }
       >
-        <ul className="current-filter-list" css={{ marginLeft: 0 }}>
+        <ul className="current-filter-list" css={{ margin: 0 }}>
           <li ref={this.container} className="css-dropdown">
             <button
               onClick={() => this.setState({ show: !this.state.show })}
               className="currentFilter"
             >
               {this.state.is_senate && !this.state.is_mobile ? (
-                <Img fixed={this.props.clock_image} />
+                !this.props.currentFilter ||
+                this.props.currentFilter === "เวลาล่าสุด" ? (
+                  <Img fixed={this.props.clock_image} />
+                ) : (
+                  <div
+                    className="bulletChoice"
+                    style={{
+                      backgroundColor: this.props.colors[
+                        this.props.currentFilter - 1
+                      ],
+                      marginLeft: 0,
+                    }}
+                  />
+                )
               ) : (
                 this.props.currentFilter[this.props.filter]
               )}
@@ -304,7 +317,6 @@ export default ({
   is_mobile,
   colors,
 }) => {
-  console.log("is_senate", is_senate)
   const data = useStaticQuery(graphql`
     query {
       clock: file(relativePath: { eq: "images/clock/clock.png" }) {
