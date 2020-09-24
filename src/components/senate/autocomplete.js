@@ -326,8 +326,15 @@ const AutoComplete = ({
     }
   }
 
-  const onSuggestionsFetchRequested = ({ value, reason }) => {
-    setSuggestions(getSuggestions(value, senator))
+  const onSuggestionsFetchRequested = ({ value }) => {
+    if (value == "ทั้งหมด") {
+      setValue("")
+      setValueSelected({})
+      setSenatorId("0")
+      setSuggestions(getSuggestions("", senator))
+    } else {
+      setSuggestions(getSuggestions(value, senator))
+    }
   }
 
   const onSuggestionsClearRequested = () => {
