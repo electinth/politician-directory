@@ -28,7 +28,7 @@ const cssWrapper = ({ isShowAll }) => ({
   alignItems: "center",
   [media(767)]: {
     flexDirection: "row",
-    alignItems: "flex-start",
+    alignItems: "baseline",
     marginLeft: isShowAll ? "0" : "3%",
   },
 })
@@ -102,7 +102,7 @@ const cssClearIcon = {
   },
   "&:before, &:after": {
     position: "absolute",
-    top: "4px",
+    top: "6px",
     right: "12px",
     content: '""',
     height: "18px",
@@ -118,7 +118,7 @@ const cssClearIcon = {
 }
 const cssSearchIcon = {
   position: "absolute",
-  top: "8px",
+  top: "9px",
   left: "0",
   width: "15px",
 }

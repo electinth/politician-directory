@@ -5,20 +5,24 @@ import { media } from "../styles"
 const cssLegend = ({ missing, type }) => ({
   display: missing ? "flex" : "unset",
   flexWrap: missing ? "wrap" : "unset",
-  justifyContent:
-    missing && type !== "popup"
-      ? type === "group"
+  justifyContent: missing
+    ? type === "group" || type !== "popup"
+      ? "center"
+      : "center"
+    : "unset",
+  marginRight: "0",
+  [media(767)]: {
+    justifyContent: missing
+      ? type === "group" || type !== "popup"
         ? "flex-start"
         : "center"
       : "unset",
-  marginRight: "0",
-  [media(767)]: {
     marginRight: missing ? "2rem" : "0",
   },
 })
 const cssGridCell = ({ missing, type }) => ({
-  width: missing && type !== "popup" ? (type === "group" ? 3 : 10) : 8,
-  height: missing && type !== "popup" ? (type === "group" ? 10 : 10) : 8,
+  width: missing && type !== "popup" ? (type === "group" ? 3 : 10) : 10,
+  height: missing && type !== "popup" ? (type === "group" ? 10 : 10) : 10,
   backgroundColor: "var(--cl-white)",
   border: "1px solid var(--cl-black)",
   boxSizing: "border-box",
@@ -42,14 +46,21 @@ const cssLegendWrap = ({ missing, type }) => ({
 const cssAvgText = ({ missing, type }) => ({
   fontSize: missing ? "1rem" : "unset",
   marginRight: missing ? "1rem" : "unset",
-  display: missing ? "unset" : "none",
+  display: missing ? (type === "popup" ? "none" : "unset") : "none",
   marginTop: "0.6rem",
   [media(767)]: {
+    fontSize: missing ? "1rem" : "unset",
     display: "none",
     flex: "none",
     marginTop: "0",
   },
 })
+const cssLegendSpace = {
+  margin: "0 0.5rem",
+  [media(767)]: {
+    margin: "0 1rem",
+  },
+}
 const VoteLogLegend = ({
   approve,
   disprove,
@@ -58,10 +69,11 @@ const VoteLogLegend = ({
   missing,
   type,
 }) => {
+  console.log("type", type)
   return (
     <div css={cssLegend({ missing, type })}>
       <div css={cssAvgText({ missing, type })}>โดยเฉลี่ย</div>
-      <span css={cssLegendWrap({ missing })}>
+      <span css={cssLegendWrap({ missing, type })}>
         <div
           css={cssGridCell({ missing, type })}
           style={{
@@ -80,14 +92,14 @@ const VoteLogLegend = ({
             </>
           ) : (
             <>
-              <b style={{ margin: "0 1rem" }}>เห็นด้วย</b> {approve}%
+              <b css={cssLegendSpace}>เห็นด้วย</b> {approve}%
             </>
           )
         ) : (
           `เห็นด้วย ${approve}`
         )}
       </span>
-      <span css={cssLegendWrap({ missing })}>
+      <span css={cssLegendWrap({ missing, type })}>
         <div
           css={cssGridCell({ missing, type })}
           style={{
@@ -106,14 +118,14 @@ const VoteLogLegend = ({
             </>
           ) : (
             <>
-              <b style={{ margin: "0 1rem" }}>ไม่เห็นด้วย</b> {disprove}%
+              <b css={cssLegendSpace}>ไม่เห็นด้วย</b> {disprove}%
             </>
           )
         ) : (
           `ไม่เห็นด้วย ${disprove}`
         )}
       </span>
-      <span css={cssLegendWrap({ missing })}>
+      <span css={cssLegendWrap({ missing, type })}>
         <div
           css={cssGridCell({ missing, type })}
           style={{
@@ -136,14 +148,14 @@ const VoteLogLegend = ({
             </>
           ) : (
             <>
-              <b style={{ margin: "0 1rem" }}>งดออกเสียง</b> {abstained}%
+              <b css={cssLegendSpace}>งดออกเสียง</b> {abstained}%
             </>
           )
         ) : (
           `งดออกเสียง ${abstained}`
         )}
       </span>
-      <span css={cssLegendWrap({ missing })}>
+      <span css={cssLegendWrap({ missing, type })}>
         <div
           css={cssGridCell({ missing, type })}
           style={{
@@ -166,7 +178,7 @@ const VoteLogLegend = ({
             </>
           ) : (
             <>
-              <b style={{ margin: "0 1rem" }}>ไม่ลงมติ</b> {absent}%
+              <b css={cssLegendSpace}>ไม่ลงมติ</b> {absent}%
             </>
           )
         ) : (
@@ -174,7 +186,7 @@ const VoteLogLegend = ({
         )}
       </span>
       {missing != undefined && (
-        <span css={cssLegendWrap({ missing })}>
+        <span css={cssLegendWrap({ missing, type })}>
           <div
             css={cssGridCell({ missing, type })}
             style={{
@@ -192,7 +204,7 @@ const VoteLogLegend = ({
             </>
           ) : (
             <>
-              <b style={{ margin: "0 1rem" }}>ขาด</b> {missing}%
+              <b css={cssLegendSpace}>ขาด</b> {missing}%
             </>
           )}
         </span>

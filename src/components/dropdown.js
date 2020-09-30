@@ -150,7 +150,7 @@ const cssDropdownSortBarchart = {
 
 const cssDropdownSenatorType = {
   ".arrow-down": {
-    marginTop: "5px",
+    marginTop: "3px",
     width: "0",
     height: "0",
     borderLeft: "5px solid transparent",

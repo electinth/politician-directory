@@ -52,10 +52,19 @@ export const query = graphql`
   }
 `
 const cssHeaderWrap = {
+  position: "unset",
+  background: "white",
+  [media(767)]: {
+    position: "sticky",
+    top: "0",
+  },
+}
+const cssHeaderWrapMobile = {
   position: "sticky",
   top: "0",
-  background: "white",
-  [media(767)]: {},
+  [media(767)]: {
+    position: "unset",
+  },
 }
 
 const VotelogPage = ({ data }) => {
@@ -96,30 +105,31 @@ const VotelogPage = ({ data }) => {
             setIsShowAll={setIsShowAll}
             allSenateVotelogYaml={data.allSenateVotelogYaml}
           />
-          <Autocomplete
-            senatorTypeId={senatorTypeId}
-            setSenatorTypeId={setSenatorTypeId}
-            setSenatorId={setSenatorId}
-            isShowAll={isShowAll}
-            countByGroup={countByGroup}
-            barchartGroupWidth={barchartGroupWidth}
-            allSenateVotelogYaml={data.allSenateVotelogYaml}
-            allSenateVoteYaml={data.allSenateVoteYaml}
-            allPeopleYaml={data.allPeopleYaml}
-          />
-
-          <SenateFilter
-            setHandleFilter={setHandleFilter}
-            isShowAll={isShowAll}
-            barchartGroupWidth={barchartGroupWidth}
-            is_mobile={is_mobile}
-            setIs_position={setIs_position}
-            setIs_government={setIs_government}
-            setIs_yourSelf={setIs_yourSelf}
-            senatorTypeId={senatorTypeId}
-            is_On={is_On}
-            setIsOn={setIsOn}
-          />
+          <div css={cssHeaderWrapMobile}>
+            <Autocomplete
+              senatorTypeId={senatorTypeId}
+              setSenatorTypeId={setSenatorTypeId}
+              setSenatorId={setSenatorId}
+              isShowAll={isShowAll}
+              countByGroup={countByGroup}
+              barchartGroupWidth={barchartGroupWidth}
+              allSenateVotelogYaml={data.allSenateVotelogYaml}
+              allSenateVoteYaml={data.allSenateVoteYaml}
+              allPeopleYaml={data.allPeopleYaml}
+            />
+            <SenateFilter
+              setHandleFilter={setHandleFilter}
+              isShowAll={isShowAll}
+              barchartGroupWidth={barchartGroupWidth}
+              is_mobile={is_mobile}
+              setIs_position={setIs_position}
+              setIs_government={setIs_government}
+              setIs_yourSelf={setIs_yourSelf}
+              senatorTypeId={senatorTypeId}
+              is_On={is_On}
+              setIsOn={setIsOn}
+            />
+          </div>
         </div>
         <SenateVotelogBarchart
           handleFilter={handleFilter}
