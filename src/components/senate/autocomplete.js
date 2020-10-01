@@ -16,9 +16,9 @@ import { LazyLoadComponent } from "react-lazy-load-image-component"
 
 const cssContainer = ({ isShowAll }) => ({
   display: "flex",
-  padding: "0 22px 26px 22px",
+  padding: "26px 22px",
   [media(767)]: {
-    padding: isShowAll ? "0 43px 12px 57px" : "0 0 12px 0",
+    padding: isShowAll ? "42px 43px 12px 57px" : "42px 0 12px 0",
   },
 })
 const cssWrapper = ({ isShowAll }) => ({
