@@ -10,11 +10,44 @@ const cssTimeLine = {
   },
 }
 
+const cssCloseBtn = {
+  zIndex: "100",
+  position: "absolute",
+  top: "0.5rem",
+  right: "0.5rem",
+  width: "10px",
+  height: "10px",
+  cursor: "pointer",
+  opacity: "0.5",
+  [media(767)]: {
+    right: "0.5rem",
+  },
+  "&:hover": {
+    opacity: "1",
+  },
+  "&:before, &:after": {
+    position: "absolute",
+    top: "0",
+    right: "1.2rem",
+    content: '""',
+    height: "12px",
+    width: "1px",
+    backgroundColor: "black",
+  },
+  "&:before": {
+    transform: "rotate(45deg)",
+  },
+  "&:after": {
+    transform: "rotate(-45deg)",
+  },
+}
+
 const cssTimeLineCon = {
   display: "none",
   [media(767)]: {
     width: "100%",
     display: "flex",
+    position: "relative",
   },
 }
 
@@ -49,7 +82,7 @@ const cssLabelCon = {
   position: "sticky",
   marginTop: "-34rem",
   left: 0,
-  zIndex: 9,
+  zIndex: 88,
   pointerEvents: "none",
 }
 
@@ -76,13 +109,6 @@ const cssTooltipStyle = {
   },
 }
 
-const cssCloseBtn = {
-  position: "absolute",
-  top: 0,
-  right: 5,
-  cursor: "pointer",
-}
-
 const cssLineCon = {
   position: "sticky",
   width: "100%",
@@ -99,11 +125,6 @@ const cssLineCon = {
 const cssLine = {
   width: "100%",
   height: "0.1rem",
-}
-
-const cssLegend = {
-  position: "absolute",
-  top: 0,
 }
 
 const type = ["โดยตำแหน่ง", "เลือกโดย คสช.", "เลือกกันเอง"]
@@ -261,6 +282,7 @@ function createChart(
   d3.selectAll(".handle").style("pointer-events", "none")
   d3.select(".overlay").style("pointer-events", "none")
 
+  let sumPos = 0
   posScore.forEach(pos => {
     if (pos === -1) return
     timelineSvg
@@ -271,6 +293,13 @@ function createChart(
       .attr("y2", 88)
       .attr("stroke", "#AEAEAE")
       .attr("stroke-dasharray", "4")
+
+    // const leftPos = sumPos + xTimeline(data[pos].id) / 2
+    // const legend = document.createElement("p")
+    // legend.innerText = "A"
+    // legend.style.cssText = `position: absolute; top: 0; left: ${leftPos}px`
+    // document.getElementById("timeline-viz").appendChild(legend)
+    // sumPos += xTimeline(data[pos].id)
   })
 
   timelineSvg
@@ -510,13 +539,6 @@ export default function(props) {
     opacity: 0,
   })
 
-  // const legend = [
-  //   {
-  //     label: "F",
-  //     left: 120,
-  //   },
-  // ]
-
   useEffect(() => {
     createChart(
       senateVoteData,
@@ -535,9 +557,7 @@ export default function(props) {
     <div>
       {tooltip ? (
         <div css={{ ...tooltipStyle }}>
-          <div css={{ ...cssCloseBtn }} id="closeBtn">
-            x
-          </div>
+          <div css={{ ...cssCloseBtn }} id="closeBtn" />
           <strong>
             <p>
               {tooltip.title} {tooltip.name} {tooltip.lastname}
@@ -573,21 +593,16 @@ export default function(props) {
       ) : (
         <></>
       )}
-      <div css={{ ...cssTimeLineCon }}>
-        {/* {legend.map(legend => {
-          return (
-            <div css={{ ...cssLegend, left: legend.left }}>{legend.label}</div>
-          )
-        })} */}
+      <div css={{ ...cssTimeLineCon }} id="timeline-viz">
         <div ref={timelineRef} css={{ ...cssTimeLine }} />
       </div>
       <div css={{ ...cssLollipopCon }}>
-        <div css={{ ...cssLineCon, top: "8rem", zIndex: 99998 }}>
+        <div css={{ ...cssLineCon, top: "8rem" }}>
           <div css={{ ...cssLine, background: "#AEAEAE" }} />
           <p css={{ width: "20rem", textAlign: "center" }}>คะแนนเต็ม 100%</p>
           <div css={{ ...cssLine, background: "#AEAEAE" }} />
         </div>
-        <div css={{ ...cssLineCon, top: "16rem", zIndex: 99998 }}>
+        <div css={{ ...cssLineCon, top: "16rem" }}>
           <div css={{ ...cssLine, background: "#F0324B" }} />
           <p
             css={{

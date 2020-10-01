@@ -42,6 +42,39 @@ const cssBody = {
   },
 }
 
+const cssCloseBtn = {
+  zIndex: "100",
+  position: "absolute",
+  top: "50%",
+  transform: "translateY(-50%)",
+  right: "0.5rem",
+  width: "10px",
+  height: "10px",
+  cursor: "pointer",
+  opacity: "1",
+  [media(767)]: {
+    right: "0.5rem",
+  },
+  "&:hover": {
+    opacity: "1",
+  },
+  "&:before, &:after": {
+    position: "absolute",
+    top: "0",
+    right: "1.4rem",
+    content: '""',
+    height: "12px",
+    width: "1px",
+    backgroundColor: "black",
+  },
+  "&:before": {
+    transform: "rotate(45deg)",
+  },
+  "&:after": {
+    transform: "rotate(-45deg)",
+  },
+}
+
 const cssSection = {
   display: "flex",
 }
@@ -104,6 +137,7 @@ const cssFilterBtn = {
   alignItems: "center",
   padding: "0 1.6rem",
   margin: "0.5rem 0",
+  position: "relative",
   [media(767)]: {
     cursor: "pointer",
     background: "#fff",
@@ -250,7 +284,11 @@ const Motion = ({ data }) => {
                     {" "}
                     ({senatorCount["โดยตำแหน่ง"]} คน)
                   </span>
-                  {filter === "โดยตำแหน่ง" ? <>X</> : <></>}
+                  {filter === "โดยตำแหน่ง" ? (
+                    <div css={{ ...cssCloseBtn }} />
+                  ) : (
+                    <></>
+                  )}
                 </div>
                 <div
                   css={{
@@ -271,7 +309,11 @@ const Motion = ({ data }) => {
                     {" "}
                     ({senatorCount["เลือกโดย คสช."]} คน)
                   </span>
-                  {filter === "เลือกโดย คสช." ? <>X</> : <></>}
+                  {filter === "เลือกโดย คสช." ? (
+                    <div css={{ ...cssCloseBtn }} />
+                  ) : (
+                    <></>
+                  )}
                 </div>
                 <div
                   css={{
@@ -292,7 +334,11 @@ const Motion = ({ data }) => {
                     {" "}
                     ({senatorCount["เลือกกันเอง"]} คน)
                   </span>
-                  {filter === "เลือกกันเอง" ? <>X</> : <></>}
+                  {filter === "เลือกกันเอง" ? (
+                    <div css={{ ...cssCloseBtn }} />
+                  ) : (
+                    <></>
+                  )}
                 </div>
               </div>
               การเข้าประชุมและการลงมติในที่ประชุมถือเป็นหน้าที่หลักของ ส.ว.
@@ -335,7 +381,11 @@ const Motion = ({ data }) => {
                 {" "}
                 ({senatorCount["โดยตำแหน่ง"]} คน)
               </span>
-              {filter === "โดยตำแหน่ง" ? <>X</> : <></>}
+              {filter === "โดยตำแหน่ง" ? (
+                <div css={{ ...cssCloseBtn }} />
+              ) : (
+                <></>
+              )}
             </div>
             <div
               css={{
@@ -353,7 +403,11 @@ const Motion = ({ data }) => {
                 {" "}
                 ({senatorCount["เลือกโดย คสช."]} คน)
               </span>
-              {filter === "เลือกโดย คสช." ? <>X</> : <></>}
+              {filter === "เลือกโดย คสช." ? (
+                <div css={{ ...cssCloseBtn }} />
+              ) : (
+                <></>
+              )}
             </div>
             <div
               css={{
@@ -371,7 +425,11 @@ const Motion = ({ data }) => {
                 {" "}
                 ({senatorCount["เลือกกันเอง"]} คน)
               </span>
-              {filter === "เลือกกันเอง" ? <>X</> : <></>}
+              {filter === "เลือกกันเอง" ? (
+                <div css={{ ...cssCloseBtn }} />
+              ) : (
+                <></>
+              )}
             </div>
           </div>
           การเข้าประชุมและการลงมติในที่ประชุมถือเป็นหน้าที่หลักของ ส.ว.
