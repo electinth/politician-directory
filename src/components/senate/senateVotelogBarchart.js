@@ -4,15 +4,8 @@ import moment from "moment"
 import { graphql, useStaticQuery } from "gatsby"
 import BarChart from "./barChart"
 
-const cssGroupChart = {
-  marginBottom: "42px",
-  margin: 0,
-  width: `${window.innerWidth - 100}px`,
-}
-
 const cssSenateVotelogBarchart = {
-  width: "90%",
-  margin: "0 3%",
+  margin: "0 2%",
 }
 
 const BarCharts = props => {
@@ -30,7 +23,6 @@ const BarCharts = props => {
   )
 
   const types = props.types
-  const is_starter_bars = true
   const size_per_bar = 30
   const height_svg = count_all_senate.length * size_per_bar
   const [filter_senatorId, setFilter_senatorId] = useState()
@@ -127,117 +119,100 @@ const BarCharts = props => {
     }
   }
   // ---------
-
   if (props.width) {
     return (
-      <div
-        className="senateVotelogBarchart"
-        css={{ ...cssSenateVotelogBarchart }}
-      >
+      <div className="senateVotelogBarcharts">
         {props.isShowAll ? (
-          <div className="is_dropDown">
-            <BarChart
-              data={count_all_senate}
-              types={types}
-              width_of_barChart={
-                filter_senatorId
-                  ? props.width - 154
-                  : is_mobile
-                  ? props.width + 30
-                  : props.width
-              }
-              is_yAxis={props.is_yAxis}
-              color_bars={props.colors}
-              is_starter_bars={is_starter_bars}
-              height_svg={height_svg}
-              is_On={props.is_On}
-              isShowAll={props.isShowAll}
-              setVoteId={props.setVoteId}
-              setPopupState={props.setPopupState}
-              filter_senatorId={filter_senatorId}
-              setCountByGroup={props.setCountByGroup}
-            />
-          </div>
+          <BarChart
+            data={count_all_senate}
+            types={types}
+            width_of_barChart={props.width}
+            is_yAxis={props.is_yAxis}
+            color_bars={props.colors}
+            height_svg={height_svg}
+            is_On={props.is_On}
+            isShowAll={props.isShowAll}
+            setVoteId={props.setVoteId}
+            setPopupState={props.setPopupState}
+            filter_senatorId={filter_senatorId}
+            setCountByGroup={props.setCountByGroup}
+          />
         ) : (
           <div className="is_group">
-            <div className="group_chart" css={cssGroupChart}>
-              <div
-                style={{
-                  display: is_mobile ? "block" : "inline-block",
-                  width: props.groupWidth[0] + 280,
-                }}
-              >
-                {((senatorTypeId === 1 && props.width < 768) ||
-                  props.width > 768) && (
-                  <BarChart
-                    data={count_by_position}
-                    types={types}
-                    width_of_barChart={props.groupWidth[0]}
-                    is_yAxis={props.is_yAxis}
-                    color_bars={props.colors}
-                    is_starter_bars={is_starter_bars}
-                    height_svg={height_svg}
-                    is_On={props.is_On}
-                    isShowAll={props.isShowAll}
-                    setVoteId={props.setVoteId}
-                    setPopupState={props.setPopupState}
-                    is_mobile={is_mobile}
-                    senatorTypeId={senatorTypeId}
-                  />
-                )}
-              </div>
-              <div
-                style={{
-                  display: is_mobile ? "block" : "inline-block",
-                  width: props.groupWidth[1] + 160,
-                }}
-              >
-                {((senatorTypeId === 2 && props.width < 768) ||
-                  props.width > 768) && (
-                  <BarChart
-                    data={count_by_yourSelf}
-                    types={types}
-                    width_of_barChart={props.groupWidth[1]}
-                    color_bars={props.colors}
-                    height_svg={height_svg}
-                    is_On={props.is_On}
-                    isShowAll={props.isShowAll}
-                    setVoteId={props.setVoteId}
-                    setPopupState={props.setPopupState}
-                    is_mobile={is_mobile}
-                    senatorTypeId={senatorTypeId}
-                    is_starter_bars={is_mobile ? is_starter_bars : ""}
-                    is_yAxis={is_mobile ? props.is_yAxis : ""}
-                  />
-                )}
-              </div>
-              <div
-                style={{
-                  display: is_mobile ? "block" : "inline-block",
-                  width: props.groupWidth[2] - 90,
-                }}
-              >
-                {((senatorTypeId === 3 && props.width < 768) ||
-                  props.width > 768) && (
-                  <BarChart
-                    data={count_by_government}
-                    types={types}
-                    width_of_barChart={
-                      is_mobile ? props.groupWidth[2] : props.groupWidth[2] - 90
-                    }
-                    color_bars={props.colors}
-                    height_svg={height_svg}
-                    is_On={props.is_On}
-                    isShowAll={props.isShowAll}
-                    setVoteId={props.setVoteId}
-                    setPopupState={props.setPopupState}
-                    is_mobile={is_mobile}
-                    senatorTypeId={senatorTypeId}
-                    is_yAxis={is_mobile ? props.is_yAxis : ""}
-                    is_starter_bars={is_mobile ? is_starter_bars : ""}
-                  />
-                )}
-              </div>
+            <div
+              style={{
+                display: is_mobile ? "block" : "inline-block",
+                width: is_mobile
+                  ? document.body.clientWidth - 30
+                  : props.groupWidth[0] + 250,
+              }}
+            >
+              {((senatorTypeId === 1 && is_mobile) || !is_mobile) && (
+                <BarChart
+                  data={count_by_position}
+                  types={types}
+                  width_of_barChart={props.groupWidth[0]}
+                  is_yAxis={props.is_yAxis}
+                  color_bars={props.colors}
+                  height_svg={height_svg}
+                  is_On={props.is_On}
+                  isShowAll={props.isShowAll}
+                  setVoteId={props.setVoteId}
+                  setPopupState={props.setPopupState}
+                  is_mobile={is_mobile}
+                  senatorTypeId={senatorTypeId}
+                />
+              )}
+            </div>
+            <div
+              style={{
+                display: is_mobile ? "block" : "inline-block",
+                width: is_mobile
+                  ? document.body.clientWidth - 30
+                  : props.groupWidth[1] + 105,
+              }}
+            >
+              {((senatorTypeId === 2 && is_mobile) || !is_mobile) && (
+                <BarChart
+                  data={count_by_yourSelf}
+                  types={types}
+                  width_of_barChart={props.groupWidth[1]}
+                  color_bars={props.colors}
+                  height_svg={height_svg}
+                  is_On={props.is_On}
+                  isShowAll={props.isShowAll}
+                  setVoteId={props.setVoteId}
+                  setPopupState={props.setPopupState}
+                  is_mobile={is_mobile}
+                  senatorTypeId={senatorTypeId}
+                  is_yAxis={is_mobile ? props.is_yAxis : ""}
+                />
+              )}
+            </div>
+            <div
+              style={{
+                display: is_mobile ? "block" : "inline-block",
+                width: is_mobile
+                  ? document.body.clientWidth - 30
+                  : props.groupWidth[2],
+              }}
+            >
+              {((senatorTypeId === 3 && is_mobile) || !is_mobile) && (
+                <BarChart
+                  data={count_by_government}
+                  types={types}
+                  width_of_barChart={props.groupWidth[2]}
+                  color_bars={props.colors}
+                  height_svg={height_svg}
+                  is_On={props.is_On}
+                  isShowAll={props.isShowAll}
+                  setVoteId={props.setVoteId}
+                  setPopupState={props.setPopupState}
+                  is_mobile={is_mobile}
+                  senatorTypeId={senatorTypeId}
+                  is_yAxis={is_mobile ? props.is_yAxis : ""}
+                />
+              )}
             </div>
           </div>
         )}
@@ -297,10 +272,6 @@ export default ({
   const votelogs = senate.allSenateVotelogYaml.nodes
   const people_method = senate.allPeopleYaml.nodes
   const [firstTime, setFirstTime] = useState(false)
-
-  useEffect(() => {
-    setCountByGroup(count_by_group)
-  }, [firstTime])
 
   const voter_in_votelog = []
   people_votes.forEach(p => {
@@ -472,10 +443,9 @@ export default ({
 
   const types = ["id", "1", "2", "3", "4", "5"]
   const is_yAxis = true
-  let clientWidth = document.getElementsByClassName("senateVotelogBarchart")[0]
   //width without scroll bar for window user
-  clientWidth = document.body.clientWidth
-  let width = clientWidth - 60
+  let size_width = document.body.clientWidth
+  const width = size_width
   function count_people(count_type) {
     const peoples = _.dropRight(Object.values(count_type[0]), 2).reduce(
       function(a, b) {
@@ -489,16 +459,16 @@ export default ({
   const people_in_position = count_people(count_by_position)
   const people_in_yourSelf = count_people(count_by_yourSelf)
   const people_in_government = count_people(count_by_government)
-  const sum_allMargin = width < 768 ? 0 : 470
+  const sum_allMargin = width < 768 ? 0 : 435
   const width_is_margin = width - sum_allMargin
   let groupWidth = []
-  const rect_1 = (people_in_position * width_is_margin) / all_peoples
-  const rect_2 = (people_in_yourSelf * width_is_margin) / all_peoples
-  const rect_3 = (people_in_government * width_is_margin) / all_peoples
-
-  const marginAxis = width < 768 ? 0 : 80
-
-  groupWidth = [rect_1 + marginAxis, rect_2, rect_3]
+  const rect_1 = width_is_margin * (1 / all_peoples) * people_in_position
+  const rect_2 = width_is_margin * (1 / all_peoples) * people_in_yourSelf
+  const rect_3 = width_is_margin * (1 / all_peoples) * people_in_government
+  groupWidth = [rect_1, rect_2, rect_3]
+  useEffect(() => {
+    setCountByGroup(count_by_group)
+  }, [firstTime])
 
   if (!firstTime) {
     setFirstTime(true)
@@ -513,33 +483,34 @@ export default ({
   }
 
   const colors = ["#76C8B8", "#F0324B", "#2D3480", "#7B90D1", "#E3E3E3"]
-
   return (
-    <BarCharts
-      types={types}
-      width={width}
-      is_yAxis={is_yAxis}
-      choices={choices}
-      colors={colors}
-      count_all_senate={count_all_senate}
-      count_by_government={count_by_government}
-      count_by_position={count_by_position}
-      count_by_yourSelf={count_by_yourSelf}
-      groupWidth={groupWidth}
-      setVoteId={setVoteId}
-      setPopupState={setPopupState}
-      filter_senatorId={filter_senatorId}
-      senatorTypeId={senatorTypeId}
-      senatorId={senatorId}
-      isShowAll={isShowAll}
-      setCountByGroup={setCountByGroup}
-      senatorType={senatorType}
-      handleFilter={handleFilter}
-      setIs_mobile_width={setIs_mobile_width}
-      is_selected_position={is_selected_position}
-      is_selected_government={is_selected_government}
-      is_selected_yourSelf={is_selected_yourSelf}
-      is_On={is_On}
-    />
+    <div className="wrapperBarchart" css={cssSenateVotelogBarchart}>
+      <BarCharts
+        types={types}
+        width={width}
+        is_yAxis={is_yAxis}
+        choices={choices}
+        colors={colors}
+        count_all_senate={count_all_senate}
+        count_by_government={count_by_government}
+        count_by_position={count_by_position}
+        count_by_yourSelf={count_by_yourSelf}
+        groupWidth={groupWidth}
+        setVoteId={setVoteId}
+        setPopupState={setPopupState}
+        filter_senatorId={filter_senatorId}
+        senatorTypeId={senatorTypeId}
+        senatorId={senatorId}
+        isShowAll={isShowAll}
+        setCountByGroup={setCountByGroup}
+        senatorType={senatorType}
+        handleFilter={handleFilter}
+        setIs_mobile_width={setIs_mobile_width}
+        is_selected_position={is_selected_position}
+        is_selected_government={is_selected_government}
+        is_selected_yourSelf={is_selected_yourSelf}
+        is_On={is_On}
+      />
+    </div>
   )
 }

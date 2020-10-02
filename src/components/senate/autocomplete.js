@@ -586,14 +586,14 @@ const AutoComplete = ({
         <div css={cssWrapper({ isShowAll })}>
           <div
             css={cssTypeDetails}
-            style={{ width: barchartGroupWidth[0] + 190 }}
+            style={{ width: barchartGroupWidth[0] + 230 }}
           >
             <span css={cssGroup}>โดยตำแหน่ง</span>
             <VoteLogLegend type="group" {...select_by_position} />
           </div>
           <div
             css={cssTypeDetails}
-            style={{ width: barchartGroupWidth[1] + 160 }}
+            style={{ width: barchartGroupWidth[1] + 105 }}
           >
             <span css={cssGroup}>คสช. สรรหา</span>
             <VoteLogLegend type="group" {...select_by_government} />

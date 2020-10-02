@@ -245,19 +245,38 @@ class DropDown extends Component {
               className="currentFilter"
             >
               {this.state.is_senate && !this.state.is_mobile ? (
-                !this.props.currentFilter ||
-                this.props.currentFilter === "เวลาล่าสุด" ? (
-                  <Img fixed={this.props.clock_image} />
-                ) : (
+                this.props.is_selected_position ||
+                this.props.is_selected_yourSelf ||
+                this.props.is_selected_government ||
+                this.props.isShowAll ? (
+                  !this.props.currentFilter ||
+                  this.props.currentFilter === "เวลาล่าสุด" ? (
+                    <Img fixed={this.props.clock_image} />
+                  ) : (
+                    <div
+                      className="bulletChoice"
+                      style={{
+                        backgroundColor: this.props.colors[
+                          this.props.currentFilter - 1
+                        ],
+                        marginLeft: 0,
+                      }}
+                    />
+                  )
+                ) : this.props.is_filter ? (
                   <div
-                    className="bulletChoice"
+                    className="dot"
                     style={{
-                      backgroundColor: this.props.colors[
-                        this.props.currentFilter - 1
-                      ],
-                      marginLeft: 0,
+                      position: "absolute",
+                      display: "flex",
+                      top: "10%",
+                      color: "#aeaeae",
                     }}
-                  />
+                  >
+                    ...
+                  </div>
+                ) : (
+                  <Img fixed={this.props.clock_image} />
                 )
               ) : (
                 this.props.currentFilter[this.props.filter]
@@ -316,6 +335,11 @@ export default ({
   is_senate,
   is_mobile,
   colors,
+  is_selected_government,
+  is_selected_yourSelf,
+  is_selected_position,
+  is_filter,
+  isShowAll,
 }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -341,6 +365,11 @@ export default ({
           is_mobile={is_mobile}
           colors={colors}
           clock_image={data.clock.childImageSharp.fixed}
+          is_selected_government={is_selected_government}
+          is_selected_yourSelf={is_selected_yourSelf}
+          is_selected_position={is_selected_position}
+          is_filter={is_filter}
+          isShowAll={isShowAll}
         />
       ))}
     </div>

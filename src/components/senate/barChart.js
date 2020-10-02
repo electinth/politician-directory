@@ -1,17 +1,12 @@
 import React, { useRef, useEffect } from "react"
 import * as d3 from "d3"
 
-const cssHightChart = {
-  marginBottom: "42px",
-}
-
 function DrawChart({
   data,
   types,
   width_of_barChart,
   is_yAxis,
   color_bars,
-  is_starter_bars,
   height_svg,
   is_On,
   isShowAll,
@@ -21,37 +16,32 @@ function DrawChart({
   is_mobile,
   senatorTypeId,
 }) {
-  const smallTranslateWidth = window.innerWidth < 768 ? 100 : 150
+  const smallTranslateWidth = width_of_barChart / 6 / 2
   let is_active = []
-  const translateWidth = window.innerWidth < 768 ? 60 : 150
+  const translateWidth = width_of_barChart / 6
   let is_mobile_center = 0
-  let is_line_center = 0
   const ref = useRef()
+  const getElm = document.getElementsByClassName("barChart-wrapper")
+  const getElm_margin = getElm[0] ? getElm[0].offsetLeft : 0
   const margin = {
       top: 0,
-      right: is_mobile ? 0 : !is_yAxis ? 0 : 80,
+      right:
+        (!is_mobile && isShowAll) || (is_yAxis && isShowAll)
+          ? getElm_margin
+          : 0,
       bottom: 0,
-      left: !is_yAxis ? 0 : 80,
+      left: 0,
     },
     height = is_On ? 300 : height_svg,
-    width = filter_senatorId
-      ? window.innerWidth < 768
-        ? width_of_barChart + 40
-        : width_of_barChart - 80
-      : width_of_barChart
+    width = width_of_barChart
 
-  if (senatorTypeId === 1) {
-    is_mobile_center = document.body.clientWidth / 2 - 80
-    is_line_center = document.body.clientWidth / 2 + 3.5
-  } else if (senatorTypeId === 2) {
-    is_mobile_center = document.body.clientWidth / 4 - width / 4 + 5
-    is_line_center = document.body.clientWidth / 2
+  if (senatorTypeId === 1 || senatorTypeId === 2) {
+    is_mobile_center = (document.body.clientWidth - width - 100) / 2
   } else if (senatorTypeId === 3) {
-    is_mobile_center = 10
-    is_line_center = document.body.clientWidth / 2 + 18
+    is_mobile_center = (document.body.clientWidth - width - 100) / 2
   }
   useEffect(() => {
-    if (is_starter_bars) {
+    if (is_yAxis) {
       d3.selectAll("g").remove()
       d3.select(".percentLine").remove()
     }
@@ -59,7 +49,7 @@ function DrawChart({
   }, [filter_senatorId])
 
   useEffect(() => {
-    if (is_starter_bars) {
+    if (is_yAxis) {
       d3.selectAll("g").remove()
       d3.select(".percentLine").remove()
     }
@@ -75,7 +65,7 @@ function DrawChart({
   }, [senatorTypeId])
 
   useEffect(() => {
-    if (is_starter_bars) {
+    if (is_yAxis) {
       d3.selectAll("g").remove()
       d3.select(".percentLine").remove()
     }
@@ -104,18 +94,9 @@ function DrawChart({
       .attr("className", "chart")
       .attr(
         "width",
-        is_mobile
-          ? document.body.clientWidth - 25
-          : filter_senatorId
-          ? width + 210
-          : width
+        is_mobile ? document.body.clientWidth : isShowAll ? width - 100 : width
       )
       .attr("height", height)
-
-    const fullScreen = is_mobile
-      ? window.innerWidth - 25
-      : window.innerWidth - 100
-    d3.select(".chart-wrapper").style("width", `${fullScreen}px`)
 
     const chart = d3.select(ref.current)
     let series = d3.stack().keys(types.slice(1))(data)
@@ -132,50 +113,60 @@ function DrawChart({
       .domain(vote_dates)
       .range([0, height])
       .padding(0.2)
-
+    const diff_filter_width = window.innerWidth < 768 ? 110 : 140
     let x = d3
       .scaleLinear()
       .domain([0, d3.max(series, d => d3.max(d, d => d[1]))])
       .nice()
-      .range([0, filter_senatorId ? width : width - margin.right])
+      .range([
+        0,
+        filter_senatorId
+          ? width_of_barChart -
+            width_of_barChart / 6 -
+            (1 / 250) * width -
+            diff_filter_width
+          : isShowAll
+          ? width - 100 - margin.right
+          : width - margin.right,
+      ])
 
     let y_filter_senatorId = d3
       .scaleBand()
-      .domain(d3.range(filter_senatorId ? filter_senatorId.length : 10))
+      .domain(d3.range(filter_senatorId ? filter_senatorId.length : 0))
       .range([0, height])
       .padding(0.2)
 
     let yAxis = g =>
       g
-        .attr("className", "yAxis")
+        .attr("className", "g-yAxis")
+        .style("text-anchor", "start")
+        .attr("transform", `translate(10, 0)`)
         .call(d3.axisLeft(y).ticks(null, "s"))
         .call(g => g.selectAll(".domain").remove())
         .call(g => g.selectAll("line").remove())
-        .attr("height", y.bandwidth())
 
-    const g = chart
-      .append("g")
-      .attr("transform", `translate(${margin.left}, 0)`)
-      .attr("className", "charts")
+    const all_axis = d3.select(".yAxis")
 
-    if (!filter_senatorId != "") {
+    const g = chart.append("g").attr("className", "charts-g")
+    const diff_line = window.innerWidth < 768 ? 50 : 100
+    if (!filter_senatorId) {
       chart
         .append("line")
         .attr("class", "percentLine")
         .attr(
           "x1",
-          is_mobile
-            ? is_line_center
-            : (is_starter_bars && !isShowAll) || window.innerWidth < 768
-            ? width / 2 + 40
+          isShowAll
+            ? width / 2 - diff_line
+            : is_mobile
+            ? (document.body.clientWidth - width - 100) / 2 + width / 2
             : width / 2
         )
         .attr(
           "x2",
-          is_mobile
-            ? is_line_center
-            : (is_starter_bars && !isShowAll) || window.innerWidth < 768
-            ? width / 2 + 40
+          isShowAll
+            ? width / 2 - diff_line
+            : is_mobile
+            ? (document.body.clientWidth - width - 100) / 2 + width / 2
             : width / 2
         )
         .attr("y1", 0)
@@ -183,6 +174,7 @@ function DrawChart({
         .attr("stroke", "#AEAEAE")
         .attr("stroke-dasharray", "4")
     }
+
     const rects = g
       .selectAll("g")
       .data(series)
@@ -207,13 +199,14 @@ function DrawChart({
       }
     }
     const onClick = d => {
-      is_active.push(d.data.id)
       d3.selectAll(".rect" + is_active[0]).style("stroke", "none")
       if (is_active.length === 2) is_active.splice(0, 1)
       if (d.data) {
+        is_active.push(d.data.id)
         d3.selectAll(`.rect${d.data.id}`).style("stroke", "black")
         setVoteId(d.data.id)
       } else {
+        is_active.push(d.key.id)
         d3.selectAll(".rect" + d.key).style("stroke", "black")
         setVoteId(d.key)
       }
@@ -283,16 +276,20 @@ function DrawChart({
     }
     if (is_yAxis) {
       if (!is_On) {
-        g.append("g").call(yAxis)
+        all_axis.append("g").call(yAxis)
       }
       if (is_On) {
-        g.append("text")
-          .attr("x", -70)
-          .attr("y", 15)
+        all_axis
+          .append("g")
+          .append("text")
+          .attr("x", 0)
+          .attr("y", 10)
           .style("font-size", "8px")
           .text(data[0].vote_date)
-        g.append("text")
-          .attr("x", -70)
+        all_axis
+          .append("g")
+          .append("text")
+          .attr("x", 0)
           .attr("y", height - 3)
           .style("font-size", "8px")
           .text(data[data.length - 1].vote_date)
@@ -300,8 +297,16 @@ function DrawChart({
     }
   }
   return (
-    <div className="chart-wrapper" css={cssHightChart}>
-      <svg ref={ref}></svg>
+    <div
+      className="barChart-wrapper"
+      style={{ display: "flex", marginBottom: "30px" }}
+    >
+      {is_yAxis != "" ? (
+        <svg className="yAxis" style={{ width: "100px" }} />
+      ) : (
+        ""
+      )}
+      <svg ref={ref} className="barChart" style={{ overflow: "hidden" }} />
     </div>
   )
 }
