@@ -33,7 +33,7 @@ const cssGridCell = ({ missing, type }) => ({
   },
 })
 const cssLegendWrap = ({ missing, type }) => ({
-  marginRight: missing ? "1.5rem" : "1rem",
+  marginRight: missing ? "0.7rem" : "1rem",
   display: missing ? "flex" : "unset",
   alignItems: missing ? "center" : "none",
   fontSize: missing ? (type === "group" ? "1rem" : "1rem") : "unset",
