@@ -73,6 +73,7 @@ const VotelogPage = ({ data }) => {
   const [is_selected_government, setIs_government] = useState(false)
   const [is_selected_yourSelf, setIs_yourSelf] = useState(false)
   const [is_On, setIsOn] = useState(false)
+  const [is_filter, setIs_filter] = useState(false)
 
   useEffect(() => {
     if (voteId) {
@@ -116,9 +117,14 @@ const VotelogPage = ({ data }) => {
             setIs_position={setIs_position}
             setIs_government={setIs_government}
             setIs_yourSelf={setIs_yourSelf}
+            is_selected_position={is_selected_position}
+            is_selected_government={is_selected_government}
+            is_selected_yourSelf={is_selected_yourSelf}
             senatorTypeId={senatorTypeId}
             is_On={is_On}
             setIsOn={setIsOn}
+            setIs_filter={setIs_filter}
+            is_filter={is_filter}
           />
         </div>
         <SenateVotelogBarchart

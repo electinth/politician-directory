@@ -26,7 +26,7 @@ const cssWrapper = ({ isShowAll }) => ({
   [media(767)]: {
     flexDirection: "row",
     alignItems: "flex-start",
-    marginLeft: isShowAll ? "0" : "5%",
+    marginLeft: isShowAll ? "0" : "4%",
   },
 })
 const Style = styled.div`

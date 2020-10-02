@@ -29,13 +29,15 @@ const cssGridCell = ({ missing, type }) => ({
   },
 })
 const cssLegendWrap = ({ missing, type }) => ({
-  marginRight: missing ? "1.5rem" : "1rem",
+  // marginRight: missing ? "1.5rem" : "0.5rem",
+  marginRight: "0.5rem",
   display: missing ? "flex" : "unset",
   alignItems: missing ? "center" : "none",
   fontSize: missing ? (type === "group" ? "1rem" : "1rem") : "unset",
   marginTop: "0.6rem",
   [media(767)]: {
     fontSize: missing ? (type === "group" ? "1rem" : "1.4rem") : "unset",
+    // type ไม่เข้า
     marginTop: "0",
   },
 })

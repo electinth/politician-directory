@@ -18,6 +18,11 @@ const SenateFilter = ({
   is_On,
   setIsOn,
   senatorTypeId,
+  is_selected_position,
+  is_selected_government,
+  is_selected_yourSelf,
+  setIs_filter,
+  is_filter,
 }) => {
   const [currentFilter, setCurrentFilter] = useState("เวลาล่าสุด")
 
@@ -51,18 +56,21 @@ const SenateFilter = ({
       setIs_position(false)
       setIs_yourSelf(false)
     }
+    setIs_filter(false)
+    setCurrentFilter("เวลาล่าสุด")
   }, [isShowAll])
 
   const selected_dropdown = selected => {
-    if (selected === "count_by_position") {
+    setIs_filter(true)
+    if (selected === "is_selected_position") {
       setIs_position(true)
       setIs_government(false)
       setIs_yourSelf(false)
-    } else if (selected === "count_by_government") {
+    } else if (selected === "is_selected_government") {
       setIs_government(true)
       setIs_position(false)
       setIs_yourSelf(false)
-    } else if (selected === "count_by_yourSelf") {
+    } else if (selected === "is_selected_yourSelf") {
       setIs_yourSelf(true)
       setIs_government(false)
       setIs_position(false)
@@ -82,24 +90,27 @@ const SenateFilter = ({
         <div
           style={{
             display: "flex",
-            width: `${window.innerWidth - 100}px`,
-            margin: "0 5%",
+            width: `${document.body.clientWidth}px`,
+            padding: "0 3%",
           }}
         >
-          <div>
+          <div className="dropDown" style={{ display: "flex", flex: "1" }}>
             <DropDown
               choices={choices}
               currentFilter={currentFilter}
               handleFilter={handleFilter}
               is_senate={is_senate}
               colors={colors}
+              isShowAll={isShowAll}
             />
           </div>
           <div
+            className="switch"
             style={{
-              transform: `translateX(${
-                is_mobile ? window.innerWidth - 100 : window.innerWidth - 190
-              }px)`,
+              display: "flex",
+              flex: "1",
+              justifyContent: "flex-end",
+              transform: "translateX(-50px)",
             }}
           >
             <ToggleSwitch is_On={is_On} handleToggle={() => setIsOn(!is_On)} />
@@ -109,43 +120,20 @@ const SenateFilter = ({
         <div
           style={{
             display: "flex",
-            width: `${window.innerWidth - 100}px`,
-            margin: "0 5%",
+            width: `${document.body.clientWidth - 100}px`,
+            margin: "0 3%",
           }}
         >
-          {((senatorTypeId === 1 && window.innerWidth < 768) ||
-            window.innerWidth > 768) && (
-            <div
-              style={{
-                width: barchartGroupWidth[0] + 250,
-                display: "flex",
-                justifyContent: "flex-start",
-              }}
-              onClick={() => selected_dropdown("count_by_position")}
-            >
-              <DropDown
-                style={{
-                  margin: "0 70px",
-                }}
-                choices={choices}
-                currentFilter={currentFilter}
-                handleFilter={handleFilter}
-                is_senate={is_senate}
-                colors={colors}
-              />
-            </div>
-          )}
-          {((senatorTypeId === 2 && window.innerWidth < 768) ||
-            window.innerWidth > 768) && (
+          {((senatorTypeId === 1 && is_mobile) || !is_mobile) && (
             <div
               style={{
                 width: is_mobile
-                  ? barchartGroupWidth[0] + 250
-                  : barchartGroupWidth[1] + 160,
+                  ? document.body.clientWidth - 100
+                  : barchartGroupWidth[0] + 235,
                 display: "flex",
                 justifyContent: "flex-start",
               }}
-              onClick={() => selected_dropdown("count_by_yourSelf")}
+              onClick={() => selected_dropdown("is_selected_position")}
             >
               <DropDown
                 choices={choices}
@@ -153,19 +141,42 @@ const SenateFilter = ({
                 handleFilter={handleFilter}
                 is_senate={is_senate}
                 colors={colors}
+                is_selected_position={is_selected_position}
+                is_filter={is_filter}
               />
             </div>
           )}
-          {((senatorTypeId === 3 && window.innerWidth < 768) ||
-            window.innerWidth > 768) && (
+          {((senatorTypeId === 2 && is_mobile) || !is_mobile) && (
+            <div
+              style={{
+                width: is_mobile
+                  ? document.body.clientWidth - 100
+                  : barchartGroupWidth[1] + 105,
+                display: "flex",
+                justifyContent: "flex-start",
+              }}
+              onClick={() => selected_dropdown("is_selected_yourSelf")}
+            >
+              <DropDown
+                choices={choices}
+                currentFilter={currentFilter}
+                handleFilter={handleFilter}
+                is_senate={is_senate}
+                colors={colors}
+                is_selected_yourSelf={is_selected_yourSelf}
+                is_filter={is_filter}
+              />
+            </div>
+          )}
+          {((senatorTypeId === 3 && is_mobile) || !is_mobile) && (
             <div
               style={{
                 display: "flex",
                 width: is_mobile
-                  ? barchartGroupWidth[0] + 250
-                  : barchartGroupWidth[2] - 90,
+                  ? document.body.clientWidth - 100
+                  : barchartGroupWidth[2],
               }}
-              onClick={() => selected_dropdown("count_by_government")}
+              onClick={() => selected_dropdown("is_selected_government")}
             >
               <div style={{ justifyContent: "flex-start", display: "flex" }}>
                 <DropDown
@@ -174,15 +185,18 @@ const SenateFilter = ({
                   handleFilter={handleFilter}
                   is_senate={is_senate}
                   colors={colors}
+                  is_selected_government={is_selected_government}
+                  is_filter={is_filter}
                 />
               </div>
             </div>
           )}
           <div
+            className="switch"
             style={{
               transform: is_mobile
-                ? `translateX(${0}px)`
-                : `translateX(${-70}px)`,
+                ? `translateX(${20}px)`
+                : `translateX(${-80}px)`,
             }}
           >
             <ToggleSwitch is_On={is_On} handleToggle={() => setIsOn(!is_On)} />
