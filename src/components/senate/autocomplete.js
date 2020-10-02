@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import Autosuggest from "react-autosuggest"
 import AutosuggestHighlightMatch from "autosuggest-highlight/match"
 import AutosuggestHighlightParse from "autosuggest-highlight/parse"
@@ -10,12 +11,14 @@ import search from "../../images/icons/search/search-grey.png"
 import { politicianPicture } from "../../utils"
 import { media } from "../../styles"
 import _ from "lodash"
+import Img from "gatsby-image"
+import { LazyLoadComponent } from "react-lazy-load-image-component"
 
 const cssContainer = ({ isShowAll }) => ({
   display: "flex",
-  padding: "0 22px 26px 22px",
+  padding: "26px 22px",
   [media(767)]: {
-    padding: isShowAll ? "0 43px 12px 57px" : "0 0 12px 0",
+    padding: isShowAll ? "42px 43px 12px 57px" : "42px 0 12px 0",
   },
 })
 const cssWrapper = ({ isShowAll }) => ({
@@ -25,8 +28,8 @@ const cssWrapper = ({ isShowAll }) => ({
   alignItems: "center",
   [media(767)]: {
     flexDirection: "row",
-    alignItems: "flex-start",
-    marginLeft: isShowAll ? "0" : "4%",
+    alignItems: "baseline",
+    marginLeft: isShowAll ? "0" : "3%",
   },
 })
 const Style = styled.div`
@@ -99,7 +102,7 @@ const cssClearIcon = {
   },
   "&:before, &:after": {
     position: "absolute",
-    top: "4px",
+    top: "6px",
     right: "12px",
     content: '""',
     height: "18px",
@@ -115,12 +118,12 @@ const cssClearIcon = {
 }
 const cssSearchIcon = {
   position: "absolute",
-  top: "8px",
+  top: "9px",
   left: "0",
   width: "15px",
 }
 const cssImg = {
-  position: "absolute",
+  position: "absolute !important",
   top: "0",
   left: "25px",
   width: "25px",
@@ -169,6 +172,20 @@ const AutoComplete = ({
   allSenateVoteYaml,
   allPeopleYaml,
 }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(
+        relativePath: { eq: "images/people/placeholder.png" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 84) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  const [showPlaceholder, setShowPlaceholder] = useState(false)
   const [value, setValue] = useState("")
   const [suggestions, setSuggestions] = useState([])
   const [senator, setSenator] = useState([])
@@ -302,14 +319,22 @@ const AutoComplete = ({
       const match = _.find(senator, ["fullname", newValue])
       setValueSelected(match)
       setSenatorId(match.id)
+      setShowPlaceholder(false)
     } else {
       setValueSelected({})
       setSenatorId("0")
     }
   }
 
-  const onSuggestionsFetchRequested = ({ value, reason }) => {
-    setSuggestions(getSuggestions(value, senator))
+  const onSuggestionsFetchRequested = ({ value }) => {
+    if (value == "ทั้งหมด") {
+      setValue("")
+      setValueSelected({})
+      setSenatorId("0")
+      setSuggestions(getSuggestions("", senator))
+    } else {
+      setSuggestions(getSuggestions(value, senator))
+    }
   }
 
   const onSuggestionsClearRequested = () => {
@@ -336,7 +361,23 @@ const AutoComplete = ({
       <img css={cssSearchIcon} src={search} />
       {_.isEmpty(valueSelected) ||
         (value !== "ทั้งหมด" && (
-          <img css={cssImg} src={politicianPicture(valueSelected)} />
+          <LazyLoadComponent>
+            {!showPlaceholder ? (
+              <img
+                src={politicianPicture(valueSelected)}
+                css={cssImg}
+                alt={`${valueSelected.title} ${valueSelected.name} ${valueSelected.lastname}`}
+                onError={() => {
+                  setShowPlaceholder(true)
+                }}
+              />
+            ) : (
+              <Img
+                css={cssImg}
+                fluid={data.placeholderImage.childImageSharp.fluid}
+              />
+            )}
+          </LazyLoadComponent>
         ))}
       <input {...inputProps} />
     </div>
@@ -545,14 +586,14 @@ const AutoComplete = ({
         <div css={cssWrapper({ isShowAll })}>
           <div
             css={cssTypeDetails}
-            style={{ width: barchartGroupWidth[0] + 250 }}
+            style={{ width: barchartGroupWidth[0] + 230 }}
           >
             <span css={cssGroup}>โดยตำแหน่ง</span>
             <VoteLogLegend type="group" {...select_by_position} />
           </div>
           <div
             css={cssTypeDetails}
-            style={{ width: barchartGroupWidth[1] + 155 }}
+            style={{ width: barchartGroupWidth[1] + 105 }}
           >
             <span css={cssGroup}>คสช. สรรหา</span>
             <VoteLogLegend type="group" {...select_by_government} />

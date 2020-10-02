@@ -7,7 +7,7 @@ const cssContainer = {
   justifyContent: "space-between",
   padding: "25px 22px",
   [media(767)]: {
-    padding: "81px 43px 42px 57px",
+    padding: "81px 43px 0 57px",
   },
 }
 const cssTitle = {

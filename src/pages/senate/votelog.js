@@ -52,10 +52,9 @@ export const query = graphql`
   }
 `
 const cssHeaderWrap = {
+  background: "white",
   position: "sticky",
   top: "0",
-  background: "white",
-  [media(767)]: {},
 }
 
 const VotelogPage = ({ data }) => {
@@ -91,12 +90,12 @@ const VotelogPage = ({ data }) => {
         allPeopleYaml={data.allPeopleYaml}
       />
       <Layout style={{ position: "relative" }}>
+        <SenateNavbar />
+        <VotelogHeader
+          setIsShowAll={setIsShowAll}
+          allSenateVotelogYaml={data.allSenateVotelogYaml}
+        />
         <div css={cssHeaderWrap}>
-          <SenateNavbar />
-          <VotelogHeader
-            setIsShowAll={setIsShowAll}
-            allSenateVotelogYaml={data.allSenateVotelogYaml}
-          />
           <Autocomplete
             senatorTypeId={senatorTypeId}
             setSenatorTypeId={setSenatorTypeId}
@@ -108,7 +107,6 @@ const VotelogPage = ({ data }) => {
             allSenateVoteYaml={data.allSenateVoteYaml}
             allPeopleYaml={data.allPeopleYaml}
           />
-
           <SenateFilter
             setHandleFilter={setHandleFilter}
             isShowAll={isShowAll}

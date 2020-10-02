@@ -8,15 +8,14 @@ class ListCard extends Component {
   state = {
     voter: this.props.voter,
     hidden: true,
-    check: this.props.check
+    check: this.props.check,
   }
   render() {
     return (
       <div
         css={{
           width: "100%",
-          minHeight: this.props.check
-          ? 'unset' : '500',
+          minHeight: this.props.check ? "unset" : "500",
           borderRadius: 10,
           overflow: "hidden",
 
@@ -29,13 +28,10 @@ class ListCard extends Component {
         }}
       >
         <h2
-          style={{ 
-            fontSize: !this.props.check
-            ? "2.5rem" : "3.2rem",
-            marginTop: !this.props.check
-            ? "0" : "2.6rem",
-            padding: !this.props.check
-            ? "1rem 3rem" : "1rem 0 2rem 0"
+          style={{
+            fontSize: !this.props.check ? "2.5rem" : "3.2rem",
+            marginTop: !this.props.check ? "0" : "2.6rem",
+            padding: !this.props.check ? "1rem 3rem" : "1rem 0 2rem 0",
           }}
         >{`${this.props.choice} (${this.state.voter.length})`}</h2>
         {this.state.voter.length > 0 ? (
@@ -43,13 +39,10 @@ class ListCard extends Component {
             css={css`
               position: relative;
             `}
-            style={{ 
-              minHeight: !this.props.check
-              ? "518px" : "285px",
-              marginBottom: !this.props.check
-              ? "10rem" : "1rem",
-              marginLeft: !this.props.check
-              ? "1.44rem" : "0",
+            style={{
+              minHeight: !this.props.check ? "518px" : "285px",
+              marginBottom: !this.props.check ? "10rem" : "1rem",
+              marginLeft: !this.props.check ? "1.44rem" : "0",
             }}
           >
             {this.state.voter
@@ -60,11 +53,9 @@ class ListCard extends Component {
                   css={css`
                     display: ${this.state.hidden && idx > 7 ? "none" : "block"};
                   `}
-                  style={{ 
-                    fontSize: !this.props.check
-                    ? "2rem" : "1.8rem",
-                    margin: !this.props.check
-                    ? "2rem 2rem" : "0.5rem 2rem"
+                  style={{
+                    fontSize: !this.props.check ? "2rem" : "1.8rem",
+                    margin: !this.props.check ? "2rem 2rem" : "0.5rem 2rem",
                   }}
                 >
                   <Link
@@ -73,18 +64,13 @@ class ListCard extends Component {
                       color: var(--cl-black);
                     `}
                     style={{
-                      fontWeight: !this.props.check
-                      ? "bold" : "normal",
+                      fontWeight: !this.props.check ? "bold" : "normal",
                     }}
                   >
-                    { this.props.check && (
-                      <span>
-                        {idx+1}.&nbsp;
-                      </span>
-                    )}
-                    {member.name} {member.lastname}
+                    <span>{idx + 1}.&nbsp;</span>
+                    {member.title} {member.name} {member.lastname}
                   </Link>
-                  { !this.props.check && (
+                  {!this.props.check && (
                     <p>{member.is_senator ? "สมาชิกวุฒิสภา" : member.party}</p>
                   )}
                 </li>
@@ -143,7 +129,7 @@ class ListCard extends Component {
               margin: "6rem 0",
               textAlign: "center",
             }}
-          > 
+          >
             ไม่มีคะแนนเลือกมติประเภทนี้
           </div>
         )}
@@ -163,8 +149,12 @@ export default ({ data, page }) => {
       <ListCard voter={data[0]} check={page} choice="เห็นด้วย" />
       <ListCard voter={data[1]} check={page} choice="ไม่เห็นด้วย" />
       <ListCard voter={data[2]} check={page} choice="งดออกเสียง" />
-      <ListCard voter={data[3]} check={page} choice={data.length === 5 ? "ไม่ลงมติ" : "ไม่ลงคะแนน"} />
-      { data.length === 5 && (
+      <ListCard
+        voter={data[3]}
+        check={page}
+        choice={data.length === 5 ? "ไม่ลงมติ" : "ไม่ลงคะแนน"}
+      />
+      {data.length === 5 && (
         <ListCard voter={data[4]} check={page} choice="ขาด" />
       )}
     </div>

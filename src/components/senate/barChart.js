@@ -199,13 +199,14 @@ function DrawChart({
       }
     }
     const onClick = d => {
-      is_active.push(d.data.id)
       d3.selectAll(".rect" + is_active[0]).style("stroke", "none")
       if (is_active.length === 2) is_active.splice(0, 1)
       if (d.data) {
+        is_active.push(d.data.id)
         d3.selectAll(`.rect${d.data.id}`).style("stroke", "black")
         setVoteId(d.data.id)
       } else {
+        is_active.push(d.key.id)
         d3.selectAll(".rect" + d.key).style("stroke", "black")
         setVoteId(d.key)
       }
