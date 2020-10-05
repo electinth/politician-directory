@@ -44,7 +44,10 @@ const Style = styled.div`
   .react-autosuggest__input {
     width: 325px;
     height: 30px;
-    padding: 10px 26px 10px 62px;
+    padding: ${props =>
+      props.value == "ทั้งหมด" || props.value == "" || !props.searchFullname
+        ? "10px 26px 10px"
+        : "10px 26px 10px 62px"};
     font-weight: 300;
     font-size: 16px;
     border: none;
@@ -227,6 +230,7 @@ const AutoComplete = ({
     missing: 0,
   })
   const [fullname, setFullname] = useState([])
+  const [searchFullname, setSearchFullname] = useState(false)
   const choices = {
     senatorType: {
       default: "โดยตำแหน่ง",
@@ -320,9 +324,11 @@ const AutoComplete = ({
       setValueSelected(match)
       setSenatorId(match.id)
       setShowPlaceholder(false)
+      setSearchFullname(true)
     } else {
       setValueSelected({})
       setSenatorId("0")
+      setSearchFullname(false)
     }
   }
 
@@ -353,6 +359,7 @@ const AutoComplete = ({
     setValue("")
     setValueSelected({})
     setSenatorId("0")
+    setSearchFullname(false)
   }
 
   const renderInputComponent = inputProps => (
@@ -562,7 +569,7 @@ const AutoComplete = ({
     <div css={cssContainer({ isShowAll })}>
       {isShowAll ? (
         <div css={cssWrapper({ isShowAll })}>
-          <Style>
+          <Style value={value} searchFullname={searchFullname}>
             <Autosuggest
               className="cssSearchboxDropdown"
               suggestions={suggestions}
