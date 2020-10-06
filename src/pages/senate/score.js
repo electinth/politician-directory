@@ -373,7 +373,10 @@ const Motion = ({ data }) => {
                     ? "0.2rem solid rgba(0, 0, 0, 1)"
                     : "0.2rem solid rgba(0, 0, 0, 0.3)",
               }}
-              onClick={() => handleFilterClick("โดยตำแหน่ง")}
+              onClick={() => {
+                handleBtnClick("1,0,0")
+                handleFilterClick("โดยตำแหน่ง")
+              }}
             >
               <div css={{ ...cssCircle, background: "#999C00" }} />
               โดยตำแหน่ง{" "}
@@ -395,7 +398,10 @@ const Motion = ({ data }) => {
                     ? "0.2rem solid rgba(0, 0, 0, 1)"
                     : "0.2rem solid rgba(0, 0, 0, 0.3)",
               }}
-              onClick={() => handleFilterClick("เลือกโดย คสช.")}
+              onClick={() => {
+                handleBtnClick("0,1,0")
+                handleFilterClick("เลือกโดย คสช.")
+              }}
             >
               <div css={{ ...cssCircle, background: "#5739AC" }} />
               คสช. สรรหา{" "}
@@ -417,7 +423,10 @@ const Motion = ({ data }) => {
                     ? "0.2rem solid rgba(0, 0, 0, 1)"
                     : "0.2rem solid rgba(0, 0, 0, 0.3)",
               }}
-              onClick={() => handleFilterClick("เลือกกันเอง")}
+              onClick={() => {
+                handleBtnClick("0,0,1")
+                handleFilterClick("เลือกกันเอง")
+              }}
             >
               <div css={{ ...cssCircle, background: "#FEACAC" }} />
               ตามกลุ่มอาชีพ

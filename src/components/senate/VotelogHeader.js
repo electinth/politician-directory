@@ -174,13 +174,19 @@ const VoteResultsHeader = ({ setIsShowAll, allSenateVotelogYaml }) => {
       <div css={cssMobile}>
         <button
           css={cssBtn({ active: viewPerson })}
-          onClick={clickBtnViewPerson}
+          onClick={() => {
+            handleBtnClick("all")
+            clickBtnViewPerson()
+          }}
         >
           ดูรายคน
         </button>
         <button
           css={cssBtn({ active: viewGroup })}
-          onClick={clickBtnViewGroup}
+          onClick={() => {
+            handleBtnClick("senator_method")
+            clickBtnViewGroup()
+          }}
           style={{ marginBottom: "25px" }}
         >
           ดูแยกประเภท ส.ว.

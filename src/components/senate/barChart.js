@@ -211,6 +211,23 @@ function DrawChart({
         setVoteId(d.key)
       }
       setPopupState(true)
+      handleBtnClick(d.data.id)
+    }
+    const handleBtnClick = value => {
+      console.log("senate_votelog_id", value)
+      if (
+        process.env.GATSBY_ENV !== "production" ||
+        process.env.GATSBY_ENV === "development"
+      ) {
+        return
+      }
+      try {
+        window.gtag("senate_votelog_id", "Click", {
+          event_label: value,
+        })
+      } catch (e) {
+        console.error(e)
+      }
     }
     rects
       .selectAll("rect")
