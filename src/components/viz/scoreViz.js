@@ -1,6 +1,8 @@
 import React, { useRef, useEffect, useState } from "react"
 import { media } from "../../styles"
 import * as d3 from "d3"
+import { useStaticQuery, graphql } from "gatsby"
+import _ from "lodash"
 
 const cssTimeLine = {
   display: "none",
@@ -175,10 +177,14 @@ function createChart(
   timelineRef,
   lollipopRef,
   setTooltip,
-  setTooltipStyle
+  setTooltipStyle,
+  placeholder
 ) {
   const { criteriaScore, posScore, meanPos } = prepareData(data)
-
+  const placeholderImage = _.get(
+    placeholder,
+    "placeholderImage.childImageSharp.fluid.src"
+  )
   const miniHeight = 88
   const miniWidth = timelineRef.current.clientWidth
 
@@ -400,7 +406,6 @@ function createChart(
       .attr(strokeType, "2")
       .attr("stroke-width", strokeWidth)
   })
-
   d3.selectAll(".group")
     .append("svg:defs")
     .append("svg:pattern")
@@ -416,6 +421,10 @@ function createChart(
         d.name
       }-${d.lastname.replace(/ /g, "-")}.jpg`
     })
+    .on("error", function(d) {
+      d3.select(this).attr("xlink:href", placeholderImage)
+    })
+    .attr("fluid", placeholder.placeholderImage.childImageSharp.fluid)
     .attr("width", 40)
     .attr("height", 40)
     .attr("x", 0)
@@ -525,6 +534,19 @@ function CreateLabel({ gradeObj }) {
 }
 
 export default function(props) {
+  const placeholder = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(
+        relativePath: { eq: "images/people/placeholder.png" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 84) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   const { senateVoteData, filter } = props
   const { labelGradeData } = prepareData(senateVoteData)
   const timelineRef = useRef(null)
@@ -545,7 +567,8 @@ export default function(props) {
       timelineRef,
       lollipopRef,
       setTooltip,
-      setTooltipStyle
+      setTooltipStyle,
+      placeholder
     )
   }, [])
 
