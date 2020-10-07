@@ -55,9 +55,9 @@ const cssTimeLineCon = {
 
 const cssLollipopCon = {
   overflowX: "scroll",
+  background: "rgba(238,240,144, 0.1)",
   [media(767)]: {
     height: "43.6rem",
-    background: "rgba(238,240,144, 0.1)",
     marginTop: "2.6rem",
     overflowX: "hidden",
     overflowY: "hidden",
@@ -84,7 +84,7 @@ const cssLabelCon = {
   position: "sticky",
   marginTop: "-34rem",
   left: 0,
-  zIndex: 88,
+  zIndex: 150,
   pointerEvents: "none",
 }
 
@@ -122,6 +122,7 @@ const cssLineCon = {
     margin: 0,
     padding: 0,
   },
+  zIndex: "100",
 }
 
 const cssLine = {
@@ -622,7 +623,18 @@ export default function(props) {
       <div css={{ ...cssLollipopCon }}>
         <div css={{ ...cssLineCon, top: "8rem" }}>
           <div css={{ ...cssLine, background: "#AEAEAE" }} />
-          <p css={{ width: "20rem", textAlign: "center" }}>คะแนนเต็ม 100%</p>
+          <p
+            css={{
+              width: "20rem",
+              textAlign: "center",
+              fontWeight: "700",
+              color: "#AEAEAE",
+              background: "rgba(255,255,255,0.8)",
+              borderRadius: "0.3rem",
+            }}
+          >
+            คะแนนเต็ม 100%
+          </p>
           <div css={{ ...cssLine, background: "#AEAEAE" }} />
         </div>
         <div css={{ ...cssLineCon, top: "16rem" }}>
@@ -632,9 +644,12 @@ export default function(props) {
               width: "20rem",
               textAlign: "center",
               color: "#F0324B",
+              fontWeight: "700",
+              background: "rgba(255,255,255,0.8)",
+              borderRadius: "0.3rem",
             }}
           >
-            คะแนนเฉลี่ยน 75%
+            คะแนนเฉลี่ย 75%
           </p>
           <div css={{ ...cssLine, background: "#F0324B" }} />
         </div>

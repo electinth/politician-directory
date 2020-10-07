@@ -77,6 +77,7 @@ const cssCloseBtn = {
 
 const cssSection = {
   display: "flex",
+  marginTop: "30px",
 }
 
 const cssSectionLeft = {
@@ -102,6 +103,7 @@ const cssSectionRight = {
   width: "50%",
   borderLeft: "1px solid #000000",
   paddingLeft: "1.5rem",
+  marginTop: "10px",
   h1: {
     fontSize: "1.2rem",
   },
@@ -110,6 +112,7 @@ const cssSectionRight = {
     borderLeft: "1px solid #000000",
     paddingLeft: "4.4rem",
     fontFamily: "Noto Sans Thai",
+    height: "fit-content",
     h1: {
       fontSize: "1.8rem",
       fontWeight: "bold",
@@ -143,7 +146,8 @@ const cssFilterBtn = {
     background: "#fff",
     borderRadius: "5rem",
     marginRight: "0.5rem",
-    width: "25rem",
+    width: "fit-content",
+    minWidth: "250px",
     height: "4rem",
     display: "flex",
     alignItems: "center",
@@ -159,6 +163,12 @@ const cssCircle = {
   height: "1rem",
   marginRight: "1.2rem",
   borderRadius: "50%",
+  flex: "none",
+}
+
+const cssType = {
+  marginRight: "5px",
+  flex: "none",
 }
 
 const cssSelectcon = {
@@ -175,10 +185,13 @@ const cssSelectcon = {
 const cssButtonCon = {
   marginTop: "0.6rem",
   marginBottom: "3rem",
+  width: "max-content",
   [media(767)]: {
     display: "flex",
     marginTop: "1.4rem",
     marginBottom: "2.4rem",
+    flexWrap: "wrap",
+    width: "100%",
   },
 }
 
@@ -279,8 +292,8 @@ const Motion = ({ data }) => {
                   }}
                 >
                   <div css={{ ...cssCircle, background: "#999C00" }} />
-                  โดยตำแหน่ง{" "}
-                  <span style={{ color: "#999C00", flex: 1 }}>
+                  <span css={{ ...cssType }}>โดยตำแหน่ง</span>
+                  <span style={{ color: "#999C00", flex: "none" }}>
                     {" "}
                     ({senatorCount["โดยตำแหน่ง"]} คน)
                   </span>
@@ -304,7 +317,7 @@ const Motion = ({ data }) => {
                   }}
                 >
                   <div css={{ ...cssCircle, background: "#5739AC" }} />
-                  คสช. สรรหา{" "}
+                  <span css={{ ...cssType }}> คสช. สรรหา </span>
                   <span style={{ color: "#5739AC", flex: 1 }}>
                     {" "}
                     ({senatorCount["เลือกโดย คสช."]} คน)
@@ -329,7 +342,7 @@ const Motion = ({ data }) => {
                   }}
                 >
                   <div css={{ ...cssCircle, background: "#FEACAC" }} />
-                  ตามกลุ่มอาชีพ
+                  <span css={{ ...cssType }}>ตามกลุ่มอาชีพ</span>
                   <span style={{ color: "#FEACAC", flex: 1 }}>
                     {" "}
                     ({senatorCount["เลือกกันเอง"]} คน)
@@ -349,7 +362,7 @@ const Motion = ({ data }) => {
             </div>
           </div>
           <div css={{ ...cssSectionRight }}>
-            <h1>เกณฑ์การให้คะแนน</h1>
+            <h1 style={{ marginTop: 0 }}>เกณฑ์การให้คะแนน</h1>
             <div css={{ ...cssCriteria }}>
               เข้าลงมติ = 1 คะแนน/ครั้ง
               <br />
@@ -379,7 +392,7 @@ const Motion = ({ data }) => {
               }}
             >
               <div css={{ ...cssCircle, background: "#999C00" }} />
-              โดยตำแหน่ง{" "}
+              <span css={{ ...cssType }}>โดยตำแหน่ง</span>
               <span style={{ color: "#999C00", flex: 1 }}>
                 {" "}
                 ({senatorCount["โดยตำแหน่ง"]} คน)
@@ -404,7 +417,7 @@ const Motion = ({ data }) => {
               }}
             >
               <div css={{ ...cssCircle, background: "#5739AC" }} />
-              คสช. สรรหา{" "}
+              <span css={{ ...cssType }}> คสช. สรรหา </span>
               <span style={{ color: "#5739AC", flex: 1 }}>
                 {" "}
                 ({senatorCount["เลือกโดย คสช."]} คน)
@@ -429,7 +442,7 @@ const Motion = ({ data }) => {
               }}
             >
               <div css={{ ...cssCircle, background: "#FEACAC" }} />
-              ตามกลุ่มอาชีพ
+              <span css={{ ...cssType }}> ตามกลุ่มอาชีพ </span>
               <span style={{ color: "#FEACAC", flex: 1 }}>
                 {" "}
                 ({senatorCount["เลือกกันเอง"]} คน)

@@ -17,6 +17,11 @@ const cssLegend = ({ missing, type }) => ({
         ? "flex-start"
         : "center"
       : "unset",
+    transform: missing
+      ? type !== "popup"
+        ? "translateY(1.5px)"
+        : "none"
+      : "none",
     marginRight: missing ? "2rem" : "0",
   },
 })
