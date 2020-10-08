@@ -93,6 +93,7 @@ const VotelogPage = ({ data }) => {
         <SenateNavbar />
         <VotelogHeader
           setIsShowAll={setIsShowAll}
+          setPopupState={setPopupState}
           allSenateVotelogYaml={data.allSenateVotelogYaml}
         />
         <div css={cssHeaderWrap}>

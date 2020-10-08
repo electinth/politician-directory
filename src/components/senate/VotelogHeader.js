@@ -84,7 +84,11 @@ const cssMobile = {
   },
 }
 
-const VoteResultsHeader = ({ setIsShowAll, allSenateVotelogYaml }) => {
+const VoteResultsHeader = ({
+  setIsShowAll,
+  setPopupState,
+  allSenateVotelogYaml,
+}) => {
   const [viewPerson, setViewPerson] = useState(true)
   const [viewGroup, setViewGroup] = useState(false)
   const [motionPass, setMotionPass] = useState(0)
@@ -104,11 +108,13 @@ const VoteResultsHeader = ({ setIsShowAll, allSenateVotelogYaml }) => {
     setViewPerson(true)
     setViewGroup(false)
     setIsShowAll(true)
+    setPopupState(false)
   }
   const clickBtnViewGroup = () => {
     setViewPerson(false)
     setViewGroup(true)
     setIsShowAll(false)
+    setPopupState(false)
   }
   const handleBtnClick = value => {
     console.log("senate_votelog_mode", value)
