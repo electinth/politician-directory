@@ -111,11 +111,8 @@ const VoteResultsHeader = ({ setIsShowAll, allSenateVotelogYaml }) => {
     setIsShowAll(false)
   }
   const handleBtnClick = value => {
-    console.log("value", value)
-    if (
-      process.env.GATSBY_ENV !== "production" ||
-      process.env.GATSBY_ENV === "development"
-    ) {
+    console.log("senate_votelog_mode", value)
+    if (!["production", "development"].includes(process.env.GATSBY_ENV)) {
       return
     }
     try {

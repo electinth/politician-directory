@@ -215,10 +215,7 @@ function DrawChart({
     }
     const handleBtnClick = value => {
       console.log("senate_votelog_id", value)
-      if (
-        process.env.GATSBY_ENV !== "production" ||
-        process.env.GATSBY_ENV === "development"
-      ) {
+      if (!["production", "development"].includes(process.env.GATSBY_ENV)) {
         return
       }
       try {

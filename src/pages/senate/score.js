@@ -244,11 +244,8 @@ const Motion = ({ data }) => {
   const senatorCount = _.countBy(senateVoteData, "senator_method")
 
   const handleBtnClick = value => {
-    console.log("value", value)
-    if (
-      process.env.GATSBY_ENV !== "production" ||
-      process.env.GATSBY_ENV === "development"
-    ) {
+    console.log("senate_score_mode", value)
+    if (!["production", "development"].includes(process.env.GATSBY_ENV)) {
       return
     }
     try {
