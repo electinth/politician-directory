@@ -71,7 +71,6 @@ const VoteLogLegend = ({
   missing,
   type,
 }) => {
-  console.log("type", type)
   return (
     <div css={cssLegend({ missing, type })}>
       <div css={cssAvgText({ missing, type })}>โดยเฉลี่ย</div>

@@ -72,7 +72,6 @@ const VotelogPage = ({ data }) => {
   const [is_selected_government, setIs_government] = useState(false)
   const [is_selected_yourSelf, setIs_yourSelf] = useState(false)
   const [is_On, setIsOn] = useState(false)
-  const [is_filter, setIs_filter] = useState(false)
 
   useEffect(() => {
     if (voteId) {
@@ -108,6 +107,7 @@ const VotelogPage = ({ data }) => {
             allPeopleYaml={data.allPeopleYaml}
           />
           <SenateFilter
+            setFilter={handleFilter}
             setHandleFilter={setHandleFilter}
             isShowAll={isShowAll}
             barchartGroupWidth={barchartGroupWidth}
@@ -121,8 +121,6 @@ const VotelogPage = ({ data }) => {
             senatorTypeId={senatorTypeId}
             is_On={is_On}
             setIsOn={setIsOn}
-            setIs_filter={setIs_filter}
-            is_filter={is_filter}
           />
         </div>
         <SenateVotelogBarchart

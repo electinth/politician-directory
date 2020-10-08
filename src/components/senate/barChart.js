@@ -43,7 +43,7 @@ function DrawChart({
   useEffect(() => {
     if (is_yAxis) {
       d3.selectAll("g").remove()
-      d3.select(".percentLine").remove()
+      d3.select("line").remove()
     }
     draw_bar()
   }, [filter_senatorId])
@@ -51,7 +51,7 @@ function DrawChart({
   useEffect(() => {
     if (is_yAxis) {
       d3.selectAll("g").remove()
-      d3.select(".percentLine").remove()
+      d3.select("line").remove()
     }
     draw_bar()
   }, [data])
@@ -59,7 +59,7 @@ function DrawChart({
   useEffect(() => {
     if (is_mobile) {
       d3.select(".charts").remove()
-      d3.select(".percentLine").remove()
+      d3.select("line").remove()
     }
     draw_bar()
   }, [senatorTypeId])
@@ -67,11 +67,11 @@ function DrawChart({
   useEffect(() => {
     if (is_yAxis) {
       d3.selectAll("g").remove()
-      d3.select(".percentLine").remove()
+      d3.select("line").remove()
     }
     if (isShowAll) {
       d3.selectAll("g").remove()
-      d3.select(".percentLine").remove()
+      d3.select("line").remove()
       if (is_On) {
         d3.select(".chart").style("overflow-y", "hidden")
       }

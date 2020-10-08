@@ -21,11 +21,9 @@ const SenateFilter = ({
   is_selected_position,
   is_selected_government,
   is_selected_yourSelf,
-  setIs_filter,
-  is_filter,
+  setFilter,
 }) => {
-  const [currentFilter, setCurrentFilter] = useState("เวลาล่าสุด")
-
+  const [currentFilter, setCurrentFilter] = useState(false)
   const is_senate = true
   const colors = ["#76C8B8", "#F0324B", "#2D3480", "#7B90D1", "#E3E3E3"]
   const choices = {
@@ -56,31 +54,41 @@ const SenateFilter = ({
       setIs_position(false)
       setIs_yourSelf(false)
     }
-    setIs_filter(false)
-    setCurrentFilter("เวลาล่าสุด")
+    setCurrentFilter(false)
   }, [isShowAll])
 
-  const selected_dropdown = selected => {
-    setIs_filter(true)
-    if (selected === "is_selected_position") {
-      setIs_position(true)
-      setIs_government(false)
-      setIs_yourSelf(false)
-    } else if (selected === "is_selected_government") {
-      setIs_government(true)
-      setIs_position(false)
-      setIs_yourSelf(false)
-    } else if (selected === "is_selected_yourSelf") {
-      setIs_yourSelf(true)
-      setIs_government(false)
-      setIs_position(false)
-    }
-  }
+  const [set_formatter, SetFormatter] = useState()
+  useEffect(() => {
+    setCurrentFilter(set_formatter)
+  }, [setFilter])
 
   const handleFilter = e => {
     let filter = e.target.innerText
-    let set_formatter = formatTypes(filter)
-    setCurrentFilter(set_formatter)
+    SetFormatter(formatTypes(filter))
+    setHandleFilter(filter)
+  }
+  const handleFilter_1 = e => {
+    setIs_position(true)
+    setIs_government(false)
+    setIs_yourSelf(false)
+    let filter = e.target.innerText
+    SetFormatter(formatTypes(filter))
+    setHandleFilter(filter)
+  }
+  const handleFilter_2 = e => {
+    setIs_government(false)
+    setIs_position(false)
+    setIs_yourSelf(true)
+    let filter = e.target.innerText
+    SetFormatter(formatTypes(filter))
+    setHandleFilter(filter)
+  }
+  const handleFilter_3 = e => {
+    setIs_yourSelf(false)
+    setIs_government(true)
+    setIs_position(false)
+    let filter = e.target.innerText
+    SetFormatter(formatTypes(filter))
     setHandleFilter(filter)
   }
 
@@ -133,17 +141,17 @@ const SenateFilter = ({
                 display: "flex",
                 justifyContent: "flex-start",
               }}
-              onClick={() => selected_dropdown("is_selected_position")}
             >
-              <DropDown
-                choices={choices}
-                currentFilter={currentFilter}
-                handleFilter={handleFilter}
-                is_senate={is_senate}
-                colors={colors}
-                is_selected_position={is_selected_position}
-                is_filter={is_filter}
-              />
+              <div>
+                <DropDown
+                  choices={choices}
+                  currentFilter={is_selected_position ? currentFilter : false}
+                  handleFilter={handleFilter_1}
+                  is_senate={is_senate}
+                  colors={colors}
+                  is_selected_position={is_selected_position}
+                />
+              </div>
             </div>
           )}
           {((senatorTypeId === 2 && is_mobile) || !is_mobile) && (
@@ -155,17 +163,17 @@ const SenateFilter = ({
                 display: "flex",
                 justifyContent: "flex-start",
               }}
-              onClick={() => selected_dropdown("is_selected_yourSelf")}
             >
-              <DropDown
-                choices={choices}
-                currentFilter={currentFilter}
-                handleFilter={handleFilter}
-                is_senate={is_senate}
-                colors={colors}
-                is_selected_yourSelf={is_selected_yourSelf}
-                is_filter={is_filter}
-              />
+              <div>
+                <DropDown
+                  choices={choices}
+                  currentFilter={is_selected_yourSelf ? currentFilter : false}
+                  handleFilter={handleFilter_2}
+                  is_senate={is_senate}
+                  colors={colors}
+                  is_selected_yourSelf={is_selected_yourSelf}
+                />
+              </div>
             </div>
           )}
           {((senatorTypeId === 3 && is_mobile) || !is_mobile) && (
@@ -176,17 +184,15 @@ const SenateFilter = ({
                   ? document.body.clientWidth - 100
                   : barchartGroupWidth[2],
               }}
-              onClick={() => selected_dropdown("is_selected_government")}
             >
               <div style={{ justifyContent: "flex-start", display: "flex" }}>
                 <DropDown
                   choices={choices}
-                  currentFilter={currentFilter}
-                  handleFilter={handleFilter}
+                  currentFilter={is_selected_government ? currentFilter : false}
+                  handleFilter={handleFilter_3}
                   is_senate={is_senate}
                   colors={colors}
                   is_selected_government={is_selected_government}
-                  is_filter={is_filter}
                 />
               </div>
             </div>
