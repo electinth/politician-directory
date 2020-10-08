@@ -341,9 +341,7 @@ export default ({
       })
       .value()
 
-    const set_format_date = moment(s.vote_date)
-      .add(10, "days")
-      .calendar()
+    const set_format_date = moment(s.vote_date).calendar()
 
     if (index != 0) {
       if (arr_votelog[index].vote_date === arr_votelog[index - 1].vote_date) {
@@ -370,9 +368,7 @@ export default ({
   const count_by_group = []
 
   arr_votelog.forEach(function(s, index) {
-    const set_format_date = moment(s.vote_date)
-      .add(10, "days")
-      .calendar()
+    const set_format_date = moment(s.vote_date).calendar()
 
     if (index > 0) {
       if (arr_votelog[index].vote_date === arr_votelog[index - 1].vote_date) {
