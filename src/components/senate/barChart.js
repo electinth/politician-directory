@@ -192,15 +192,13 @@ function DrawChart({
       }
     }
     const mouseout = d => {
-      if (d.data) {
+      if (d.data && is_active[is_active.length - 1] != d.data.id) {
         d3.selectAll(".rect" + d.data.id).style("stroke", "none")
       } else {
         d3.selectAll(".rect" + d.key).style("stroke", "none")
       }
     }
     const onClick = d => {
-      d3.selectAll(".rect" + is_active[0]).style("stroke", "none")
-      if (is_active.length === 2) is_active.splice(0, 1)
       if (d.data) {
         is_active.push(d.data.id)
         d3.selectAll(`.rect${d.data.id}`).style("stroke", "black")
@@ -210,6 +208,9 @@ function DrawChart({
         d3.selectAll(".rect" + d.key).style("stroke", "black")
         setVoteId(d.key)
       }
+      if (is_active.length > 0)
+        d3.selectAll(".rect" + is_active[0]).style("stroke", "none")
+      if (is_active.length === 2) is_active.splice(0, 1)
       setPopupState(true)
       handleBtnClick(d.data.id)
     }
