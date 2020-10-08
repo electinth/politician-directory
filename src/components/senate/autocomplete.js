@@ -244,13 +244,16 @@ const AutoComplete = ({
   }, [])
 
   useEffect(() => {
-    allSenateVoteYaml.nodes.unshift({
-      id: "0",
-      lastname: "",
-      name: "",
-      title: "ทั้งหมด",
-      votelog: [],
-    })
+    const found = allSenateVoteYaml.nodes.find(element => element.id == 0)
+    if (found === undefined) {
+      allSenateVoteYaml.nodes.unshift({
+        id: "0",
+        lastname: "",
+        name: "",
+        title: "ทั้งหมด",
+        votelog: [],
+      })
+    }
     allSenateVoteYaml.nodes.map(item => {
       if (item.id === "0") {
         fullname.push(item.title)
