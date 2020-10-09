@@ -131,8 +131,9 @@ const PeopleCard = ({ type, ...props }) => {
   }
 
   return (
-    <Link
-      to={props.fields.slug}
+    <a
+      target="_blank"
+      href={props.fields.slug}
       key={props.id}
       className={props.className}
       css={{
@@ -167,7 +168,7 @@ const PeopleCard = ({ type, ...props }) => {
       >
         {peopleInfo}
       </div>
-    </Link>
+    </a>
   )
 }
 
