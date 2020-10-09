@@ -431,8 +431,6 @@ function createChart(
     .attr("x", 0)
     .attr("y", 0)
 
-  let isClicked = false
-
   d3.selectAll(".group")
     .append("circle")
     .attr("class", d => `circle${d.id}`)
@@ -454,21 +452,31 @@ function createChart(
     .on("mouseover", function(d) {
       d3.selectAll("circle").attr("stroke-width", 1)
       d3.select(`.circle${d.id}`).attr("stroke-width", 2)
-      if (!isClicked) {
-        const tooltipTop = d3.event.clientY - mainMargin.bottom - 120
-        const tooltipLeft =
-          d3.event.clientX + 250 > window.innerWidth
-            ? d3.event.clientX - 200
-            : d3.event.clientX + 10
-        setTooltip(d)
+      const tooltipTop = d3.event.clientY - mainMargin.bottom - 120
+      const tooltipLeft =
+        d3.event.clientX + 250 > window.innerWidth
+          ? d3.event.clientX - 200
+          : d3.event.clientX + 10
+      setTooltip(d)
+      setTooltipStyle({
+        ...cssTooltipStyle,
+        top: tooltipTop,
+        left: tooltipLeft,
+        overflow: "hidden",
+        opacity: 1,
+      })
+    })
+    .on("click", function(d) {
+      d3.select("#closeBtn").on("click", function() {
+        d3.select(`.circle${d.id}`).attr("stroke-width", 1)
         setTooltipStyle({
-          ...cssTooltipStyle,
-          top: tooltipTop,
-          left: tooltipLeft,
-          overflow: "hidden",
-          opacity: 1,
+          width: 0,
+          height: 0,
+          top: null,
+          left: null,
+          opacity: 0,
         })
-      }
+      })
     })
 }
 
