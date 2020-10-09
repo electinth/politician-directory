@@ -35,6 +35,7 @@
 
 @media only screen and (max-width: 950px) {
   .waffle {
+    max-width: 348px !important;
     width: 348px;
     height: 750px;
   }
