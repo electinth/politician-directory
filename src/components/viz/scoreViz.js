@@ -435,6 +435,7 @@ function createChart(
 
   d3.selectAll(".group")
     .append("circle")
+    .attr("class", d => `circle${d.id}`)
     .attr("transform", function(d) {
       const x = xLolli(d.id) - 20 + xLolli.bandwidth() / 2
       const y = yLolli(d.score) - mainMargin.bottom - 40
@@ -467,9 +468,12 @@ function createChart(
         })
       }
     })
-    .on("click", function() {
+    .on("click", function(d) {
+      d3.selectAll("circle").attr("stroke-width", 1)
+      d3.select(`.circle${d.id}`).attr("stroke-width", 2)
       isClicked = !isClicked
       d3.select("#closeBtn").on("click", function() {
+        d3.select(`.circle${d.id}`).attr("stroke-width", 1)
         isClicked = !isClicked
         setTooltipStyle({
           width: 0,

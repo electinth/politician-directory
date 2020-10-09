@@ -185,13 +185,12 @@ const cssSelectcon = {
 const cssButtonCon = {
   marginTop: "0.6rem",
   marginBottom: "3rem",
-  width: "max-content",
   [media(767)]: {
     display: "flex",
     marginTop: "1.4rem",
     marginBottom: "2.4rem",
     flexWrap: "wrap",
-    width: "100%",
+    width: "auto",
   },
 }
 
