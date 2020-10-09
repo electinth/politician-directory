@@ -59,9 +59,19 @@ const cssLollipopCon = {
   [media(767)]: {
     height: "43.6rem",
     marginTop: "2.6rem",
-    overflowX: "hidden",
     overflowY: "hidden",
     position: "relative",
+  },
+  "::-webkit-scrollbar-track": {
+    background: "#DFDFDF",
+  },
+  "::-webkit-scrollbar": {
+    height: 7,
+    background: "#DFDFDF",
+  },
+  "::-webkit-scrollbar-thumb": {
+    background: "#F0324B",
+    borderRadius: 6,
   },
 }
 
