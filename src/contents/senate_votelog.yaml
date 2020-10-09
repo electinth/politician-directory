@@ -5232,3 +5232,32 @@
     - title: รายงาน กมธ. (ส่วนที่เปิดเผยได้)
       link: 'https://www.senate.go.th/document/mSubject/Ext85/85775_0001.PDF'
   reference: ''
+- id: '146'
+  title: มติให้ตั้งคณะกรรมาธิการวิสามัญศึกษาญัตติการแก้ไขรัฐธรรมนูญทั้ง 6 ฉบับ
+  code: 24/09/63-146
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: ''
+  meeting: ''
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2020-09-24'
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  approve: null
+  disprove: null
+  abstained: null
+  field17: ''
+  total_voter: null
+  absent: null
+  total_member: null
+  description_th: ''
+  description_en: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: ''
