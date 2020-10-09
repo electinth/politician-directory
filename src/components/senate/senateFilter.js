@@ -43,7 +43,7 @@ const SenateFilter = ({
       return 4
     } else if (type === "ขาด") {
       return 5
-    } else if (type === "เวลาล่าสุด" || type === "") {
+    } else if (type === "เวลาล่าสุด") {
       return "เวลาล่าสุด"
     }
   }
@@ -74,6 +74,7 @@ const SenateFilter = ({
     let filter = e.target.innerText
     SetFormatter(formatTypes(filter))
     setHandleFilter(filter)
+    console.log(filter)
   }
   const handleFilter_2 = e => {
     setIs_government(false)

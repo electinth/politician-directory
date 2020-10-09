@@ -9,9 +9,15 @@ const cssSenateVotelogBarchart = {
 }
 
 const BarCharts = props => {
-  const [count_all_senate, setCount_all_senate] = useState(
-    props.count_all_senate
-  )
+  const sort_by_data = (a, b) => {
+    return (
+      new Date(b.vote_date.substring(0, 10)) -
+      new Date(a.vote_date.substring(0, 10))
+    )
+  }
+  let sort_data = props.count_all_senate.sort(sort_by_data)
+
+  const [count_all_senate, setCount_all_senate] = useState(sort_data)
   const [count_by_government, setCount_by_government] = useState(
     props.count_by_government
   )
@@ -21,7 +27,6 @@ const BarCharts = props => {
   const [count_by_yourSelf, setCount_by_yourSelf] = useState(
     props.count_by_yourSelf
   )
-
   const types = props.types
   const size_per_bar = 30
   const height_svg = count_all_senate.length * size_per_bar
@@ -473,15 +478,8 @@ export default ({
 
   const choices = {
     sort_by: {
-      default: "",
-      others: [
-        "เวลาล่าสุด",
-        "เห็นด้วย",
-        "ไม่เห็นด้วย",
-        "งดออกเสียง",
-        "ไม่ลงมติ",
-        "ขาด",
-      ],
+      default: "เวลาล่าสุด",
+      others: ["เห็นด้วย", "ไม่เห็นด้วย", "งดออกเสียง", "ไม่ลงมติ", "ขาด"],
     },
   }
 
