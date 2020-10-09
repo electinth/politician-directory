@@ -134,6 +134,7 @@ const cssDropdownSortBarchart = {
     height: "15px",
     borderRadius: "7.5px",
     marginLeft: "20px",
+    pointerEvents: "none",
   },
   ".cssChoice , .clock_text": {
     display: "inline-block",
@@ -264,7 +265,7 @@ class DropDown extends Component {
                 this.props.is_selected_government ||
                 this.props.isShowAll ? (
                   !this.props.currentFilter ? (
-                    this.dot
+                    <Img fixed={this.props.clock_image} />
                   ) : this.props.currentFilter === "เวลาล่าสุด" ? (
                     <Img fixed={this.props.clock_image} />
                   ) : (
@@ -300,7 +301,10 @@ class DropDown extends Component {
                         fixed={this.props.clock_image}
                         className="clock_image"
                       />
-                      <div className="clock_text">เวลาล่าสุด</div>
+                      <div className="clock_text">
+                        {" "}
+                        {this.props.choices.default}
+                      </div>
                     </div>
                   ) : (
                     this.props.choices.default

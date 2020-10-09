@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react"
 import * as d3 from "d3"
+import { style } from "d3"
 
 function DrawChart({
   data,
@@ -30,7 +31,7 @@ function DrawChart({
           ? getElm_margin
           : 0,
       bottom: 0,
-      left: 0,
+      left: 0.5,
     },
     height = is_On ? 300 : height_svg,
     width = width_of_barChart
@@ -184,10 +185,14 @@ function DrawChart({
 
     const mouseover = d => {
       if (d.data) {
-        d3.selectAll(".rect" + d.data.id).style("stroke", "black")
+        d3.selectAll(".rect" + d.data.id)
+          .style("stroke", "black")
+          .style("stroke-width", 0.5)
         d3.selectAll(".rect" + d.data.id).style("cursor", "pointer")
       } else {
-        d3.selectAll(".rect" + d.key).style("stroke", "black")
+        d3.selectAll(".rect" + d.key)
+          .style("stroke", "black")
+          .style("stroke-width", 0.5)
         d3.selectAll(".rect" + d.key).style("cursor", "pointer")
       }
     }
