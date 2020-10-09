@@ -210,6 +210,20 @@ class DropDown extends Component {
     is_senate: this.props.is_senate,
     is_mobile: this.props.is_mobile,
   }
+  dot = (
+    <div
+      className="dot"
+      style={{
+        position: "absolute",
+        display: "flex",
+        top: "10%",
+        color: "#aeaeae",
+      }}
+    >
+      ...
+    </div>
+  )
+
   handleFilter = (e, field) => {
     this.setState({ show: !this.state.show })
     this.props.handleFilter(e, field)
@@ -249,8 +263,9 @@ class DropDown extends Component {
                 this.props.is_selected_yourSelf ||
                 this.props.is_selected_government ||
                 this.props.isShowAll ? (
-                  !this.props.currentFilter ||
-                  this.props.currentFilter === "เวลาล่าสุด" ? (
+                  !this.props.currentFilter ? (
+                    this.dot
+                  ) : this.props.currentFilter === "เวลาล่าสุด" ? (
                     <Img fixed={this.props.clock_image} />
                   ) : (
                     <div
@@ -263,20 +278,8 @@ class DropDown extends Component {
                       }}
                     />
                   )
-                ) : this.props.is_filter ? (
-                  <div
-                    className="dot"
-                    style={{
-                      position: "absolute",
-                      display: "flex",
-                      top: "10%",
-                      color: "#aeaeae",
-                    }}
-                  >
-                    ...
-                  </div>
                 ) : (
-                  <Img fixed={this.props.clock_image} />
+                  this.dot
                 )
               ) : (
                 this.props.currentFilter[this.props.filter]
@@ -338,7 +341,6 @@ export default ({
   is_selected_government,
   is_selected_yourSelf,
   is_selected_position,
-  is_filter,
   isShowAll,
 }) => {
   const data = useStaticQuery(graphql`
@@ -368,7 +370,6 @@ export default ({
           is_selected_government={is_selected_government}
           is_selected_yourSelf={is_selected_yourSelf}
           is_selected_position={is_selected_position}
-          is_filter={is_filter}
           isShowAll={isShowAll}
         />
       ))}
