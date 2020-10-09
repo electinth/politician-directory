@@ -289,7 +289,7 @@ function createChart(
   d3.selectAll(".handle").style("pointer-events", "none")
   d3.select(".overlay").style("pointer-events", "none")
 
-  let sumPos = 0
+  // let sumPos = 0
   posScore.forEach(pos => {
     if (pos === -1) return
     timelineSvg
@@ -452,6 +452,8 @@ function createChart(
     .attr("stroke", "black")
     .attr("stroke-width", 1)
     .on("mouseover", function(d) {
+      d3.selectAll("circle").attr("stroke-width", 1)
+      d3.select(`.circle${d.id}`).attr("stroke-width", 2)
       if (!isClicked) {
         const tooltipTop = d3.event.clientY - mainMargin.bottom - 120
         const tooltipLeft =
@@ -465,33 +467,6 @@ function createChart(
           left: tooltipLeft,
           overflow: "hidden",
           opacity: 1,
-        })
-      }
-    })
-    .on("click", function(d) {
-      d3.selectAll("circle").attr("stroke-width", 1)
-      d3.select(`.circle${d.id}`).attr("stroke-width", 2)
-      isClicked = !isClicked
-      d3.select("#closeBtn").on("click", function() {
-        d3.select(`.circle${d.id}`).attr("stroke-width", 1)
-        isClicked = !isClicked
-        setTooltipStyle({
-          width: 0,
-          height: 0,
-          top: null,
-          left: null,
-          opacity: 0,
-        })
-      })
-    })
-    .on("mouseout", function() {
-      if (!isClicked) {
-        setTooltipStyle({
-          width: 0,
-          height: 0,
-          top: null,
-          left: null,
-          opacity: 0,
         })
       }
     })
@@ -581,6 +556,34 @@ export default function(props) {
     updateChart(filter)
   }, [filter])
 
+  const [scrolling, setScrolling] = useState(false)
+  const [scrollTop, setScrollTop] = useState(0)
+  useEffect(() => {
+    function onScroll() {
+      let currentPosition = window.pageYOffset // or use document.documentElement.scrollTop;
+      if (currentPosition > scrollTop) {
+        // downscroll code
+        setScrolling(false)
+      } else {
+        // upscroll code
+        setScrolling(true)
+      }
+      setScrollTop(currentPosition <= 0 ? 0 : currentPosition)
+    }
+
+    setTooltipStyle({
+      position: "absolute",
+      width: 0,
+      height: 0,
+      top: null,
+      left: null,
+      opacity: 0,
+    })
+
+    window.addEventListener("scroll", _.throttle(onScroll, 10000))
+    return window.addEventListener("scroll", _.throttle(onScroll, 10000))
+  }, [scrollTop])
+
   return (
     <div>
       {tooltip ? (
@@ -624,8 +627,8 @@ export default function(props) {
       <div css={{ ...cssTimeLineCon }} id="timeline-viz">
         <div ref={timelineRef} css={{ ...cssTimeLine }} />
       </div>
-      <div css={{ ...cssLollipopCon }}>
-        <div css={{ ...cssLineCon, top: "8rem" }}>
+      <div css={{ ...cssLollipopCon }} className="senate_scroll">
+        <div css={{ ...cssLineCon, top: "8rem", pointerEvents: "none" }}>
           <div css={{ ...cssLine, background: "#AEAEAE" }} />
           <p
             css={{
@@ -641,7 +644,7 @@ export default function(props) {
           </p>
           <div css={{ ...cssLine, background: "#AEAEAE" }} />
         </div>
-        <div css={{ ...cssLineCon, top: "16rem" }}>
+        <div css={{ ...cssLineCon, top: "16rem", pointerEvents: "none" }}>
           <div css={{ ...cssLine, background: "#F0324B" }} />
           <p
             css={{
