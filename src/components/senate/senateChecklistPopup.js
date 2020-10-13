@@ -123,7 +123,9 @@ const SenateChecklistPopup = ({ showPopup, setShowPopup, setIsFirstTime }) => {
   const close = () => {
     setShowPopup(false)
     setIsFirstTime(false)
-    sessionStorage.setItem("isFirstTime", true)
+    if (typeof window !== "undefined") {
+      window.sessionStorage.setItem("isFirstTime", true)
+    }
   }
   return (
     <div css={cssPopupContainer} className="container">

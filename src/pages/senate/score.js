@@ -206,10 +206,9 @@ const cssSelectConMobile = {
 const Motion = ({ data }) => {
   const [filter, setFilter] = useState(null)
   const [isFirstTime, setIsFirstTime] = useState(
-    sessionStorage.getItem("isFirstTime")
+    window.sessionStorage.getItem("isFirstTime")
   )
   const [showPopup, setShowPopup] = useState(true)
-
   const handleFilterClick = newFilter => {
     if (filter === newFilter) {
       setFilter(null)
