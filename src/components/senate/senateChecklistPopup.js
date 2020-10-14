@@ -119,12 +119,11 @@ const cssCloseBtn = {
   },
 }
 
-const SenateChecklistPopup = ({ showPopup, setShowPopup, setIsFirstTime }) => {
+const SenateChecklistPopup = ({ showPopup, setShowPopup }) => {
   const close = () => {
     setShowPopup(false)
-    setIsFirstTime(false)
     if (typeof window !== "undefined") {
-      window.sessionStorage.setItem("isFirstTime", true)
+      sessionStorage.setItem("senatePopupStatus", true)
     }
   }
   return (

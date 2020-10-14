@@ -205,10 +205,8 @@ const cssSelectConMobile = {
 
 const Motion = ({ data }) => {
   const [filter, setFilter] = useState(null)
-  const [isFirstTime, setIsFirstTime] = useState(
-    window.sessionStorage.getItem("isFirstTime")
-  )
   const [showPopup, setShowPopup] = useState(true)
+  const [senatePopupStatus, setSenatePopupStatus] = useState(true)
   const handleFilterClick = newFilter => {
     if (filter === newFilter) {
       setFilter(null)
@@ -216,6 +214,11 @@ const Motion = ({ data }) => {
       setFilter(newFilter)
     }
   }
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setSenatePopupStatus(sessionStorage.getItem("senatePopupStatus"))
+    }
+  }, [])
 
   const senateVoteData = data.senateVoteData.nodes
     .map(senate => {
@@ -259,11 +262,10 @@ const Motion = ({ data }) => {
     <Layout pageStyles={{ background: "#fff" }}>
       <SenateNavbar />
 
-      {!isFirstTime ? (
+      {!senatePopupStatus ? (
         <SenateChecklistPopup
           showPopup={showPopup}
           setShowPopup={setShowPopup}
-          setIsFirstTime={setIsFirstTime}
         />
       ) : null}
       <body css={{ ...cssBody }}>
