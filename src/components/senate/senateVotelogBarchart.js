@@ -445,7 +445,10 @@ export default ({
   const types = ["id", "1", "2", "3", "4", "5"]
   const is_yAxis = true
   //width without scroll bar for window user
-  let size_width = document.body.clientWidth
+  let size_width = 0
+  if (typeof document !== "undefined") {
+    size_width = document.body.clientWidth
+  }
   const width = size_width
   function count_people(count_type) {
     const peoples = _.dropRight(Object.values(count_type[0]), 2).reduce(

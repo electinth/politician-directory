@@ -92,6 +92,9 @@ const SenateFilter = ({
     SetFormatter(formatTypes(filter))
     setHandleFilter(filter)
   }
+  const getWidth = () => {
+    return document.body.clientWidth
+  }
 
   return (
     <div css={cssFilterWrapper}>
@@ -99,7 +102,7 @@ const SenateFilter = ({
         <div
           style={{
             display: "flex",
-            width: `${document.body.clientWidth}px`,
+            width: `${getWidth}px`,
             padding: "0 3%",
           }}
         >
@@ -129,16 +132,14 @@ const SenateFilter = ({
         <div
           style={{
             display: "flex",
-            width: `${document.body.clientWidth - 100}px`,
+            width: `${getWidth - 100}px`,
             margin: "0 3%",
           }}
         >
           {((senatorTypeId === 1 && is_mobile) || !is_mobile) && (
             <div
               style={{
-                width: is_mobile
-                  ? document.body.clientWidth - 100
-                  : barchartGroupWidth[0] + 235,
+                width: is_mobile ? getWidth - 100 : barchartGroupWidth[0] + 235,
                 display: "flex",
                 justifyContent: "flex-start",
               }}
@@ -158,9 +159,7 @@ const SenateFilter = ({
           {((senatorTypeId === 2 && is_mobile) || !is_mobile) && (
             <div
               style={{
-                width: is_mobile
-                  ? document.body.clientWidth - 100
-                  : barchartGroupWidth[1] + 105,
+                width: is_mobile ? getWidth - 100 : barchartGroupWidth[1] + 105,
                 display: "flex",
                 justifyContent: "flex-start",
               }}
@@ -181,9 +180,7 @@ const SenateFilter = ({
             <div
               style={{
                 display: "flex",
-                width: is_mobile
-                  ? document.body.clientWidth - 100
-                  : barchartGroupWidth[2],
+                width: is_mobile ? getWidth - 100 : barchartGroupWidth[2],
               }}
             >
               <div style={{ justifyContent: "flex-start", display: "flex" }}>
