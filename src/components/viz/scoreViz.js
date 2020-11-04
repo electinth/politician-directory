@@ -531,7 +531,7 @@ function CreateLabel({ gradeObj }) {
   )
 }
 
-export default function(props) {
+const ScoreViz = props => {
   const placeholder = useStaticQuery(graphql`
     query {
       placeholderImage: file(
@@ -688,3 +688,5 @@ export default function(props) {
     </div>
   )
 }
+
+export default ScoreViz
