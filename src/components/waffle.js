@@ -45,7 +45,8 @@ const split_array = (array, size, callback) =>
 
 const waffle = (data, color, borderColor, add_separator) => {
   let result = split_array(data, 100, (hundred, hi) => (
-    <div key={hi} className="hundred">
+    <div key={hi} className="hundred" 
+      style={{ margin: data[0].node.is_senator ? '0 10px 0 0' : '0 27px 0 0'}}>
       {split_array(hundred, 25, (quarter, qi) => (
         <div key={qi} className="quarter">
           {quarter.map(({ node }) => (

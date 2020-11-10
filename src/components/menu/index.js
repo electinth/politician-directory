@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
@@ -72,6 +72,11 @@ const languageMenu = {
 }
 
 const Menu = ({ siteTitle }) => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      sessionStorage.getItem("senatePopupStatus")
+    }
+  }, [])
   const staticData = useStaticQuery(graphql`
     query {
       voteRecordImage: file(
@@ -157,6 +162,17 @@ const Menu = ({ siteTitle }) => {
               />
             </span>
             <Link to={"/votelog"}>สรุปวาระการลงมติ</Link>
+          </span>
+        </li>
+        <li>
+          <span>
+            <span css={cssMenuIcon}>
+              <Img
+                fixed={staticData.voteRecordImage.childImageSharp.fixed}
+                style={{ transform: "translate(2px, 0)" }}
+              />
+            </span>
+            <Link to={"/senate/score"}>สรุปวาระการลงมติ ส.ว.</Link>
           </span>
         </li>
         <li>

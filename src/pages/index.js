@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import { navigate } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
