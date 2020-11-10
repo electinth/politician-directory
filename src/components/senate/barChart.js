@@ -225,7 +225,8 @@ function DrawChart({
         return
       }
       try {
-        window.gtag("senate_votelog_id", "Click", {
+        window.gtag("event", "Click", {
+          event_category: "senate_votelog_id",
           event_label: value,
         })
       } catch (e) {
