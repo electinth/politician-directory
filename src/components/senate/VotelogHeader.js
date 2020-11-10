@@ -122,7 +122,8 @@ const VoteResultsHeader = ({
       return
     }
     try {
-      window.gtag("senate_votelog_mode", "View", {
+      window.gtag("event", "View", {
+        event_category: "senate_votelog_mode",
         event_label: value,
       })
     } catch (e) {

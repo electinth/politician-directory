@@ -250,7 +250,8 @@ const Motion = ({ data }) => {
       return
     }
     try {
-      window.gtag("senate_score_mode", "View", {
+      window.gtag("event", "View", {
+        event_category: "senate_score_mode",
         event_label: value,
       })
     } catch (e) {
