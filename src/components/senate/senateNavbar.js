@@ -42,7 +42,7 @@ const cssBtn = ({ active }) => ({
   cursor: "pointer",
   fontSize: "1.4rem",
   height: "4rem",
-  width: "12.5rem",
+  minWidth: "12.5rem",
   background: "inherit",
   color: active ? "#EEF090" : "#ffffff",
   borderBottom: active ? "0.5rem solid #EEF090" : "0.5rem solid #4C4C4C",
