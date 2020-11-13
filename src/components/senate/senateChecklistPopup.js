@@ -6,7 +6,7 @@ const cssPopupContainer = {
   display: "flex",
   justifyContent: "center",
   alignItem: "center",
-  zIndex: "100",
+  zIndex: "500",
   [media(767)]: {
     position: "fixed",
     width: "100%",

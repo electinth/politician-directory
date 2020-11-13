@@ -198,9 +198,10 @@ const SenateFilter = ({
           <div
             className="switch"
             style={{
-              transform: is_mobile
-                ? `translateX(${20}px)`
-                : `translateX(${-80}px)`,
+              display: "flex",
+              flex: "1",
+              justifyContent: "flex-end",
+              transform: "translateX(-50px)",
             }}
           >
             <ToggleSwitch is_On={is_On} handleToggle={() => setIsOn(!is_On)} />
