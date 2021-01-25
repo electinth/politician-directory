@@ -163,6 +163,22 @@ function omit(val, key) {
   return false
 }
 
+function transform(object) {
+  if (typeof object !== "object") return object
+
+  // senate_votelog: add votelog slug
+  if (inputBasename === 'senate_votelog') {
+    if (object.vote_date) {
+      const dt = moment(object.vote_date);
+      const year_be = String(+dt.format('YYYY') + 543);
+      const votelog_code = `${dt.format('DD/MM/')}${year_be.slice(-2)}-${object.id}`;
+      object.code = votelog_code;
+    }
+  }
+
+  return object
+}
+
 const inputPath = path.resolve(process.argv[2])
 const inputExt = path.extname(inputPath)
 const inputBasename = path.basename(inputPath, inputExt)
@@ -173,7 +189,7 @@ async function start() {
     const csvOptions = { trim: true, checkColumn: true }
     const data = await csv(csvOptions).fromFile(inputPath)
     const clean_data = data.map(item =>
-      _.omitBy(_.mapValues(item, clean), omit)
+      _.omitBy(transform(_.mapValues(item, clean)), omit)
     )
     const yamlOptions = {}
     const yaml = jsYaml.safeDump(clean_data, yamlOptions)

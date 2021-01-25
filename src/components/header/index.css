@@ -4,7 +4,7 @@
   position: relative;
   top: 0;
   right: 0;
-  z-index: 3;
+  z-index: 600;
   cursor: pointer;
 }
 
@@ -31,9 +31,11 @@
 
   transition: all 0.3s;
 }
+
 .bar:after {
   top: 6px;
 }
+
 .bar:before {
   top: -6px;
 }
@@ -51,10 +53,12 @@
   top: 0;
   transform: rotate(45deg);
 }
+
 .animateIcon .fade-center::before {
   top: 0;
   transform: rotate(-45deg);
 }
+
 .animateIcon .fade-center {
   background: none;
 }
@@ -64,20 +68,24 @@
     height: 60px;
     width: 60px;
     position: relative;
-    z-index: 3;
+    z-index: 600;
     cursor: pointer;
   }
+
   .bar {
     width: 32px;
+
     &,
     &:before,
     &:after {
       height: 5px;
     }
   }
+
   .bar:after {
     top: 8px;
   }
+
   .bar:before {
     top: -8px;
   }

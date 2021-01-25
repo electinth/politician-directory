@@ -18,7 +18,6 @@
   align-content: flex-start;
   width: 55px;
   height: 256px;
-  margin: 0 27px 0 0;
 }
 
 .quarter {
@@ -36,6 +35,7 @@
 
 @media only screen and (max-width: 950px) {
   .waffle {
+    max-width: 348px !important;
     width: 348px;
     height: 750px;
   }

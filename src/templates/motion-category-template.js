@@ -176,7 +176,7 @@ class MotionCategoryPage extends React.Component {
                   textAlign: "right",
                 }}
               >
-                ข้อมูลล่าสุดวันที่ 29 กุมภาพันธ์ 2562
+                ข้อมูลล่าสุดวันที่ 25 กันยายน 2563
               </div>
             </HiddenOnMobile>
           </div>

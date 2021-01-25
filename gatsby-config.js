@@ -73,13 +73,14 @@ if (process.env.GATSBY_ENV === "production") {
     },
   }
   config.plugins.push(googleGtagConfig)
-} else if (process.env.GATSBY_ENV === "development") {
+} else {
   const googleGtagConfig = {
     resolve: "gatsby-plugin-gtag",
     options: {
       trackingId: "UA-161190279-3",
     },
   }
+  config.plugins.push(googleGtagConfig)
 }
 
 module.exports = config
