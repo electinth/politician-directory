@@ -19,7 +19,7 @@
     "@emotion/styled": "^10.0.27",
     "@google-cloud/local-auth": "^1.0.0",
     "autosuggest-highlight": "^3.1.1",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bottleneck": "^2.19.5",
     "d3": "^5.16.0",
     "d3-scale": "^3.2.1",
