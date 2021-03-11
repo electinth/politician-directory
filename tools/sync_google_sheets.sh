@@ -26,7 +26,9 @@ node -r esm csv2yaml tmp/votelog.csv >> build.log
 # PeopleVotelog
 echo "people_vote"
 curl -s -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRyM5D8LOVvjGICiUdbQ4pPGdudulFq-uoek_ATkLOTi7AI9qMH7FhlwONC4N-TVLjokombSYfDu6G5/pub?gid=435210633&single=true&output=csv' \
-  | sed '1d' > tmp/people_vote.csv
+  > tmp/people_vote.bk.csv
+DEL_LINE=$(($(grep -n '^id,' tmp/people_vote.bk.csv | cut -d: -f 1)-1))
+cat tmp/people_vote.bk.csv | sed "1,${DEL_LINE}d" > tmp/people_vote.csv
 node -r esm csv2yaml tmp/people_vote.csv >> build.log
 
 # Motion
@@ -56,7 +58,9 @@ node -r esm csv2yaml tmp/senate_votelog.csv >> build.log
 # Senate Vote
 echo "senate_vote"
 curl -s -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRyM5D8LOVvjGICiUdbQ4pPGdudulFq-uoek_ATkLOTi7AI9qMH7FhlwONC4N-TVLjokombSYfDu6G5/pub?gid=1224052418&single=true&output=csv' \
-  | sed '1d' > tmp/senate_vote.csv
+  > tmp/senate_vote.bk.csv
+DEL_LINE=$(($(grep -n '^id,' tmp/senate_vote.bk.csv | cut -d: -f 1)-1))
+cat tmp/senate_vote.bk.csv | sed "1,${DEL_LINE}d" > tmp/senate_vote.csv
 node -r esm csv2yaml tmp/senate_vote.csv >> build.log
 
 # Move
