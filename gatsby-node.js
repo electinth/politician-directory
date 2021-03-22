@@ -231,7 +231,7 @@ exports.sourceNodes = async ({
 
   // Contributors
   const { data } = await axios.get(
-    `https://api.github.com/repos/codeforthailand/politician-directory/contributors`
+    `https://api.github.com/repos/electinth/politician-directory/contributors`
   )
 
   data.forEach(contributor => {

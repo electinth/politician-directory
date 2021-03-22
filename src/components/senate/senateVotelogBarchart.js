@@ -298,10 +298,12 @@ export default ({
 
   const [filter_senatorId, setFilter_senatorId] = useState()
   useEffect(() => {
-    const group_senatorId = _.chain(voter_in_votelog)
-      .groupBy("senator_id")
-      .map((value, key) => ({ id: key, votes: value }))
-      .value()
+    const groups = _.groupBy(voter_in_votelog, "senator_id")
+    const group_senatorId = _.map(groups, (value, key) => ({
+      id: key,
+      votes: value,
+    }))
+
     setFilter_senatorId(_.find(group_senatorId, ["id", senatorId]))
   }, senatorId)
 
@@ -338,13 +340,13 @@ export default ({
   let count_same_date = 0
 
   arr_votelog.forEach(function(s, index) {
-    let group_by_value = _(s.voter)
-      .groupBy("value")
-      .map(function(votes, value) {
-        const zip = _.zipObject([value], [votes.length])
-        return { ...zip }
-      })
-      .value()
+    let group_by_value = _.map(_.groupBy(s.voter, "value"), function(
+      votes,
+      value
+    ) {
+      const zip = _.zipObject([value], [votes.length])
+      return { ...zip }
+    })
 
     const set_format_date = moment(s.vote_date).calendar()
 
@@ -386,30 +388,30 @@ export default ({
     }
 
     const by_position = s.voter.filter(m => m.senator_method === "โดยตำแหน่ง")
-    let group_by_position = _(by_position)
-      .groupBy("value")
-      .map(function(votes, value) {
-        return _.zipObject([value], [votes.length])
-      })
-      .value()
+    let group_by_position = _.map(_.groupBy(by_position, "value"), function(
+      votes,
+      value
+    ) {
+      return _.zipObject([value], [votes.length])
+    })
 
     const by_government = s.voter.filter(
       m => m.senator_method === "เลือกโดย คสช."
     )
-    let group_by_government = _(by_government)
-      .groupBy("value")
-      .map(function(votes, value) {
-        return _.zipObject([value], [votes.length])
-      })
-      .value()
+    let group_by_government = _.map(_.groupBy(by_government, "value"), function(
+      votes,
+      value
+    ) {
+      return _.zipObject([value], [votes.length])
+    })
 
     const by_yourSelf = s.voter.filter(m => m.senator_method === "เลือกกันเอง")
-    let group_by_yourSelf = _(by_yourSelf)
-      .groupBy("value")
-      .map(function(votes, value) {
-        return _.zipObject([value], [votes.length])
-      })
-      .value()
+    let group_by_yourSelf = _.map(_.groupBy(by_yourSelf, "value"), function(
+      votes,
+      value
+    ) {
+      return _.zipObject([value], [votes.length])
+    })
 
     group_by_government = merge_default(default_value, group_by_government)
     group_by_position = merge_default(default_value, group_by_position)

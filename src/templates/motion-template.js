@@ -19,7 +19,7 @@ export const query = graphql`
     $main_cat: String!
     $votelog_id: String!
   ) {
-    motion: motionYaml(id: { glob: $id }) {
+    motion: motionYaml(id: { eq: $id }) {
       id
       content
       name
@@ -75,7 +75,7 @@ export const query = graphql`
       }
     }
 
-    votelog: votelogYaml(id: { glob: $votelog_id }) {
+    votelog: votelogYaml(id: { eq: $votelog_id }) {
       passed
       is_no_vote
       no_vote_description

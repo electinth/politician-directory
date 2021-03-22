@@ -132,7 +132,10 @@ const VoteInfoPopup = ({
   const filterVote = (combined, key, value) =>
     _.filter(combined, o => {
       return (
-        _.get(_.find(o.votelog || [], p => p.key === key), "value") === value
+        _.get(
+          _.find(o.votelog || [], p => p.key === key),
+          "value"
+        ) === value
       )
     })
 
