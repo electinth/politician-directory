@@ -10998,7 +10998,7 @@
   is_senator: false
   is_cabinet: false
   is_committee: false
-  is_active: true
+  is_active: false
   party: ก้าวไกล
   party_group: ฝ่ายค้าน
   mp_type: บัญชีรายชื่อ
@@ -62321,3 +62321,227 @@
   bio: >-
     เป็น ส.ส. ตั้งแต่วันที่ 3 กันยายน 2563 หลังจากที่ ดร.กนกวรรณ วิลาวัลย์
     พ้นจากตำแหน่ง เนื่องจากลาออก
+- id: '1041'
+  title: ''
+  name: วัฒนา
+  lastname: สิทธิวัง
+  en:
+    title: ''
+    name: ''
+    lastname: ''
+    cabinet_position: []
+    graduation: ''
+    degree: ''
+    ex_occupation: []
+    bio: ''
+  is_mp: false
+  is_senator: false
+  is_cabinet: false
+  is_committee: false
+  is_active: false
+  party: ''
+  party_group: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
+  mp_list: ''
+  vote: null
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: ''
+  birthdate: null
+  education: ''
+  graduation: ''
+  degree: ''
+  ex_occupation: []
+  occupation_group: ''
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ''
+- id: '1042'
+  title: ''
+  name: จัตุรงค์
+  lastname: เสริมสุข
+  en:
+    title: ''
+    name: ''
+    lastname: ''
+    cabinet_position: []
+    graduation: ''
+    degree: ''
+    ex_occupation: []
+    bio: ''
+  is_mp: false
+  is_senator: false
+  is_cabinet: false
+  is_committee: false
+  is_active: false
+  party: ''
+  party_group: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
+  mp_list: ''
+  vote: null
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: ''
+  birthdate: null
+  education: ''
+  graduation: ''
+  degree: ''
+  ex_occupation: []
+  occupation_group: ''
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ''
+- id: '1043'
+  title: ''
+  name: วิชัย
+  lastname: ทิตตภักดี
+  en:
+    title: ''
+    name: ''
+    lastname: ''
+    cabinet_position: []
+    graduation: ''
+    degree: ''
+    ex_occupation: []
+    bio: ''
+  is_mp: false
+  is_senator: false
+  is_cabinet: false
+  is_committee: false
+  is_active: false
+  party: ''
+  party_group: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
+  mp_list: ''
+  vote: null
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: ''
+  birthdate: null
+  education: ''
+  graduation: ''
+  degree: ''
+  ex_occupation: []
+  occupation_group: ''
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ''
+- id: '1044'
+  title: ''
+  name: ประสิทธิ์
+  lastname: ปทุมารักษ์
+  en:
+    title: ''
+    name: ''
+    lastname: ''
+    cabinet_position: []
+    graduation: ''
+    degree: ''
+    ex_occupation: []
+    bio: ''
+  is_mp: false
+  is_senator: false
+  is_cabinet: false
+  is_committee: false
+  is_active: false
+  party: ''
+  party_group: ''
+  mp_type: ''
+  mp_province: ''
+  mp_zone: ''
+  mp_list: ''
+  vote: null
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: ''
+  birthdate: null
+  education: ''
+  graduation: ''
+  degree: ''
+  ex_occupation: []
+  occupation_group: ''
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ''

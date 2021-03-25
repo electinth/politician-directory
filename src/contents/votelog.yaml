@@ -1186,3 +1186,341 @@
       link: ''
   reference: >-
     https://drive.google.com/file/d/1nN_FFX-0sTRVoIxrQH4aSh0zQVGLWy1D/view?usp=sharing
+- id: '26'
+  title: >-
+    อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล  พลเอกประยุทธ์ จันทร์โอชา นายกรัฐมนตรี
+    และรัฐมนตรีว่าการกระทรวงกลาโหม
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
+  meeting: ''
+  type: อภิปรายไม่ไว้วางใจ
+  vote_date: '2020-02-20'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  approve: null
+  disprove: null
+  abstained: null
+  field18: ''
+  total_voter: null
+  absent: null
+  total_member: 481
+  description_th: ''
+  description_en: ''
+  document:
+    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A1.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+- id: '27'
+  title: อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล พลเอกประวิตร วงษ์สุวรรณ รองนายกรัฐมนตรี
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
+  meeting: ''
+  type: อภิปรายไม่ไว้วางใจ
+  vote_date: '2020-02-20'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  approve: null
+  disprove: null
+  abstained: null
+  field18: ''
+  total_voter: null
+  absent: null
+  total_member: 482
+  description_th: ''
+  description_en: ''
+  document:
+    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A3.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+- id: '28'
+  title: >-
+    อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายอนุทิน ชาญวีรกูล
+    รองนายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงสาธารณสุข
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
+  meeting: ''
+  type: อภิปรายไม่ไว้วางใจ
+  vote_date: '2020-02-20'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  approve: null
+  disprove: null
+  abstained: null
+  field18: ''
+  total_voter: null
+  absent: null
+  total_member: 482
+  description_th: ''
+  description_en: ''
+  document:
+    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A5.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+- id: '29'
+  title: >-
+    อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายจุรินทร์ ลักษณวิศิษฏ์
+    รองนายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงพาณิชย์
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
+  meeting: ''
+  type: อภิปรายไม่ไว้วางใจ
+  vote_date: '2020-02-20'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  approve: null
+  disprove: null
+  abstained: null
+  field18: ''
+  total_voter: null
+  absent: null
+  total_member: 482
+  description_th: ''
+  description_en: ''
+  document:
+    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A7.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+- id: '30'
+  title: >-
+    อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล พลเอก อนุพงษ์ เผ่าจินดา
+    รัฐมนตรีว่าการกระทรวงมหาดไทย
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
+  meeting: ''
+  type: อภิปรายไม่ไว้วางใจ
+  vote_date: '2020-02-20'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  approve: null
+  disprove: null
+  abstained: null
+  field18: ''
+  total_voter: null
+  absent: null
+  total_member: 480
+  description_th: ''
+  description_en: ''
+  document:
+    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A9.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+- id: '31'
+  title: >-
+    อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายณัฏฐพล ทีปสุวรรณ
+    รัฐมนตรีว่าการกระทรวงศึกษาธิการ
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
+  meeting: ''
+  type: อภิปรายไม่ไว้วางใจ
+  vote_date: '2020-02-20'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  approve: null
+  disprove: null
+  abstained: null
+  field18: ''
+  total_voter: null
+  absent: null
+  total_member: 481
+  description_th: ''
+  description_en: ''
+  document:
+    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A11.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+- id: '32'
+  title: >-
+    อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายสุชาติ ชมกลิ่น
+    รัฐมนตรีว่าการกระทรวงแรงงาน
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
+  meeting: ''
+  type: อภิปรายไม่ไว้วางใจ
+  vote_date: '2020-02-20'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  approve: null
+  disprove: null
+  abstained: null
+  field18: ''
+  total_voter: null
+  absent: null
+  total_member: 481
+  description_th: ''
+  description_en: ''
+  document:
+    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A13.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+- id: '33'
+  title: >-
+    อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายศักดิ์สยาม ชิดชอบ
+    รัฐมนตรีว่าการกระทรวงคมนาคม
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
+  meeting: ''
+  type: อภิปรายไม่ไว้วางใจ
+  vote_date: '2020-02-20'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  approve: null
+  disprove: null
+  abstained: null
+  field18: ''
+  total_voter: null
+  absent: null
+  total_member: 482
+  description_th: ''
+  description_en: ''
+  document:
+    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A15.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+- id: '34'
+  title: >-
+    อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายนิพนธ์ บุญญามณี
+    รัฐมนตรีช่วยว่าการกระทรวงมหาดไทย
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
+  meeting: ''
+  type: อภิปรายไม่ไว้วางใจ
+  vote_date: '2020-02-20'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  approve: null
+  disprove: null
+  abstained: null
+  field18: ''
+  total_voter: null
+  absent: null
+  total_member: 482
+  description_th: ''
+  description_en: ''
+  document:
+    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A17.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+- id: '35'
+  title: >-
+    อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล ร้อยเอก ธรรมนัส พรมเผ่า
+    รัฐมนตรีช่วยว่าการเกษตรและสหกรณ์
+  is_active: false
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
+  meeting: ''
+  type: อภิปรายไม่ไว้วางใจ
+  vote_date: '2020-02-20'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  approve: null
+  disprove: null
+  abstained: null
+  field18: ''
+  total_voter: null
+  absent: null
+  total_member: 479
+  description_th: ''
+  description_en: ''
+  document:
+    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A19.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
