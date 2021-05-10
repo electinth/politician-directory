@@ -15,13 +15,17 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '12'
+      - name: Install dependencies
+        run: npm i
       - name: Pull YAML data
         run: ./tools/sync_data.sh
+      - name: Build the project
+        run: npm run build
       - name: Build and Deploy to Netlify
         uses: jsmrcaga/action-netlify-deploy@master
         with:
-          install_command: npm install,
-          build_command: npm run build,
+          install_command: echo "Dependencies are already installed",
+          build_command: echo "Project is already built",
           build_directory: public
           NETLIFY_DEPLOY_TO_PROD: true
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
