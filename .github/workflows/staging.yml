@@ -31,9 +31,12 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_DEPLOY_MESSAGE: "Deploy staging from commit ${{ github.sha }}"
-      - name: Commit built artifacts
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Prepare content and built artifacts
+        run: mkdir release && mv src/contents release && mv public release
+      - name: Commit artifacts to release branch
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: release
-          file_pattern: public/**/*
-          commit_message: 'Update built artifacts'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./release
+          publish_branch: release
+
