@@ -15,17 +15,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '12'
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-      - name: Install dependencies
-        run: npm install
       - name: Pull YAML data
         run: ./tools/sync_data.sh
-      - name: Deploy to Netlify
+      - name: Build and Deploy to Netlify
         uses: jsmrcaga/action-netlify-deploy@master
         with:
+          install_command: npm install,
+          build_command: npm run build,
           build_directory: public
           NETLIFY_DEPLOY_TO_PROD: true
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
