@@ -21,28 +21,19 @@ jobs:
         run: ./tools/sync_data.sh
       - name: Build the project
         run: npm run build
-      - name: Build and Deploy to Netlify
+      - name: Deploy to Netlify
         uses: jsmrcaga/action-netlify-deploy@master
         with:
-          install_command: echo "Dependencies are already installed",
-          build_command: echo "Project is already built",
+          install_command: echo "Dependencies are already installed"
+          build_command: echo "Project is already built"
           build_directory: public
           NETLIFY_DEPLOY_TO_PROD: true
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_DEPLOY_MESSAGE: "Deploy staging from commit ${{ github.sha }}"
-      - name: Commit built files
-        run: |
-          git log -1
-          git branch
-          git status
-          ls -l src/contents
-          ls -l public
-          git add -f public
-          git status
-      - name: Commit updated data
+      - name: Commit built artifacts
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           branch: release
-          commit_message: 'Sync data from Google Sheets'
-          file_pattern: src/contents/*.yaml
+          file_pattern: public/**/*
+          commit_message: 'Update built artifacts'
