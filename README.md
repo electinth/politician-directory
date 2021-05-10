@@ -45,7 +45,7 @@ npm run sync
 |                      Environment                       |                 Description                  |
 | :----------------------------------------------------: | :------------------------------------------: |
 |                          Dev                           | Each PR will be built and hosted on Netlify. |
-| [Staging](https://pedantic-edison-3897de.netlify.com/) |      New features awaiting for release.      |
+| [Staging](https://theyworkforus.kickdown.dev/) |      New features awaiting for release.      |
 |    [Production](https://theyworkforus.elect.in.th)     |                Public website                |
 
 ## Getting Started for Contributers
