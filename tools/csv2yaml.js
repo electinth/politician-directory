@@ -6,8 +6,11 @@ import csv from "csvtojson"
 import fs from "fs"
 import path from "path"
 import _ from "lodash"
-import moment from "moment"
+import dayjs from "dayjs"
+import customParseFormat from "dayjs/plugin/customParseFormat"
 import { splitPeopleName } from "./split_people_name"
+
+dayjs.extend(customParseFormat)
 
 if (process.argv.length < 3) {
   console.log("Usage: node -r esm csv2yaml <file.csv>")
@@ -71,26 +74,22 @@ function clean(val, key, object) {
       "proposal_date",
     ]
     if (dateKeys.includes(key)) {
-      if (val === "-") return null
-      // convert DD/MM/YYYY to YYYY-MM-DD
-      if (/^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/.test(val)) {
-        val = `${val.slice(6, 10)}-${val.slice(3, 5)}-${val.slice(0, 2)}`
-      }
-      let dt
-      if (val) {
-        dt = moment(val)
-        if (!dt.isValid()) {
-          console.error(`Invalid date: ${key}=${val} at id=${object.id}`)
-          val = null
+      if (!val || val === "-") return null
+
+      let date = dayjs(val, ["DD/MM/YYYY", "YYYY-MM-DD"])
+
+      if (date.isValid()) {
+        if (date.year() > 2100) {
+          date = date.year(date.year() - 543)
         }
-      }
-      if (dt && dt.isValid()) {
-        if (dt.year() > 2100) dt.year(dt.year() - 543)
-        val = dt.format("YYYY-MM-DD")
+
+        val = date.format("YYYY-MM-DD")
       } else {
+        console.error(`Invalid date: ${key}=${val} at id=${object.id}`)
         val = null
       }
     }
+
     // parse number keys
     const numberKeys = [
       // people
@@ -167,12 +166,14 @@ function transform(object) {
   if (typeof object !== "object") return object
 
   // senate_votelog: add votelog slug
-  if (inputBasename === 'senate_votelog') {
+  if (inputBasename === "senate_votelog") {
     if (object.vote_date) {
-      const dt = moment(object.vote_date);
-      const year_be = String(+dt.format('YYYY') + 543);
-      const votelog_code = `${dt.format('DD/MM/')}${year_be.slice(-2)}-${object.id}`;
-      object.code = votelog_code;
+      const dt = dayjs(object.vote_date)
+      const year_be = String(+dt.format("YYYY") + 543)
+      const votelog_code = `${dt.format("DD/MM/")}${year_be.slice(-2)}-${
+        object.id
+      }`
+      object.code = votelog_code
     }
   }
 

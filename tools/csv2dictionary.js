@@ -5,7 +5,9 @@ import csv from "csvtojson"
 import fs from "fs"
 import path from "path"
 import _ from "lodash"
-import moment from "moment"
+import dayjs from "dayjs"
+
+dayjs.extend(customParseFormat)
 
 if (process.argv.length < 3) {
   console.log("Usage: node -r esm csv2dictionary <file.csv>")
@@ -57,17 +59,16 @@ function clean(val, key, object) {
       "vote_date",
     ]
     if (dateKeys.includes(key)) {
-      let dt
-      if (val) {
-        dt = moment(val)
-        if (!dt.isValid()) {
-          console.error(`Invalid date: ${key}=${val} at id=${object.id}`)
+      let date = dayjs(val, ["DD/MM/YYYY", "YYYY-MM-DD"])
+
+      if (date.isValid()) {
+        if (date.year() > 2100) {
+          date = date.year(date.year() - 543)
         }
-      }
-      if (dt && dt.isValid()) {
-        if (dt.year() > 2100) dt.year(dt.year() - 543)
-        val = dt.format("YYYY-MM-DD")
+
+        val = date.format("YYYY-MM-DD")
       } else {
+        console.error(`Invalid date: ${key}=${val} at id=${object.id}`)
         val = null
       }
     }
