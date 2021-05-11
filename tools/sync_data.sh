@@ -66,3 +66,7 @@ node -r esm tools/csv2yaml tmp/senate_vote.csv >> build.log
 # Move
 mv tmp/*.yaml ./src/contents
 rm -rf tmp/
+
+# Update votelog count from people_vote
+echo "Update votelog count from people_vote"
+node -r esm tools/votelog-count.js

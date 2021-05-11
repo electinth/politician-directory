@@ -10,7 +10,6 @@ import SEO from "../components/seo"
 import VoterList from "../components/voterList"
 import Waffle from "../components/waffle"
 import VoteLogLegend from "../components/voteLogLegend"
-import { calculateVoteLog } from "../utils"
 import { media } from "../styles"
 
 export const query = graphql`
@@ -34,6 +33,7 @@ export const query = graphql`
       disprove
       abstained
       absent
+      total_voter
     }
 
     voteRecordIcon: file(
@@ -105,7 +105,12 @@ const cssSection = {
 
 const filterVote = (combined, key, value) =>
   _.filter(combined, o => {
-    return _.get(_.find(o.votelog || [], p => p.key === key), "value") === value
+    return (
+      _.get(
+        _.find(o.votelog || [], p => p.key === key),
+        "value"
+      ) === value
+    )
   })
 
 const VotelogPage = ({
@@ -117,8 +122,7 @@ const VotelogPage = ({
     allPeopleYaml,
   },
 }) => {
-  // Total members who're eligible to vote at that time
-  const { passed, total_voter } = calculateVoteLog(votelogYaml)
+  const { passed, total_voter } = votelogYaml
 
   let combined = []
   allPeopleVoteYaml.nodes.forEach(votelog => {
