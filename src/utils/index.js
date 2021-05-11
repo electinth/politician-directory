@@ -1,12 +1,12 @@
-import moment from "moment"
+import dayjs from "dayjs"
 import _ from "lodash"
 
 /**
  * Format date
- * @param {Date,String,moment} date
+ * @param {Date,String,dayjs} date
  */
 export function formatDate(dt) {
-  return moment(dt).format("DD.MM.YYYY")
+  return dayjs(dt).format("DD.MM.YYYY")
 }
 
 /**
@@ -81,10 +81,10 @@ export function partyLogo(partyName) {
 
 /**
  * Calcaulate person's age from his/her birthdaty
- * @param {String, Date} birthdate Date format accepted by moment
+ * @param {String, Date} birthdate Date format accepted by dayjs
  */
 export function ageFromBirthdate(birthdate) {
-  return moment().diff(moment(birthdate), "years")
+  return dayjs().diff(dayjs(birthdate), "year")
 }
 
 /**
@@ -235,9 +235,9 @@ export function birthdayToAgeHistogram(birthdate, ageBin = [39, 55, 74]) {
     value: 0,
   })
   age.push({ name: String(ageBin[2]) + " ปีขึ้นไป", value: 0 })
-  const today = parseInt(moment().format("YYYY"))
+  const today = dayjs().year()
   birthdate.map(x => {
-    const y = parseInt(moment(x.node.birthdate).format("YYYY"))
+    const y = dayjs(x.node.birthdate).year()
     const a = today - y
     if (a < ageBin[0]) {
       age[0].value++
@@ -374,7 +374,12 @@ export function loadCategoryStats(data) {
 
 export function filterVote(peopleVotelog, key, value) {
   return _.filter(peopleVotelog, o => {
-    return _.get(_.find(o.votelog || [], p => p.key === key), "value") === value
+    return (
+      _.get(
+        _.find(o.votelog || [], p => p.key === key),
+        "value"
+      ) === value
+    )
   })
 }
 

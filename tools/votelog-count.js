@@ -31,6 +31,26 @@ try {
       { "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "-": 0, total_voter: 0 }
     )
 
+    // const countKeys = ["approve", "disprove", "abstained", "absent"]
+    // const counts = { approve, disprove, abstained, absent }
+
+    // countKeys.forEach((countKey, index) => {
+    //   if (topic[countKey] !== counts[countKey])
+    //     console.log(
+    //       `topic id ${topic.id}: ${countKey} (${index + 1}) ${
+    //         topic[countKey]
+    //       } => ${counts[countKey]}`
+    //     )
+    // })
+
+    // console.log({
+    //   approve,
+    //   disprove,
+    //   abstained,
+    //   absent,
+    //   total_voter,
+    // })
+
     return {
       ...topic,
       approve,

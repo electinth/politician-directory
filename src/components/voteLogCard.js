@@ -1,5 +1,5 @@
 import React from "react"
-import moment from "moment"
+import dayjs from "dayjs"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
 
@@ -181,7 +181,7 @@ const VoteLogCard = votelog => {
           <VoteLogLegend {...votelog} />
         </div>
         <h6 style={{ fontSize: "2rem" }}>
-          {moment(vote_date).format("D.M.YYYY")}
+          {dayjs(vote_date).format("D.M.YYYY")}
         </h6>
       </div>
     </div>

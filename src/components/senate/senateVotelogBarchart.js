@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react"
 import _ from "lodash"
-import moment from "moment"
+import dayjs from "dayjs"
+import calendar from "dayjs/plugin/calendar"
 import { graphql, useStaticQuery } from "gatsby"
 import BarChart from "./barChart"
+
+dayjs.extend(calendar)
 
 const cssSenateVotelogBarchart = {
   margin: "0 2%",
@@ -348,7 +351,7 @@ export default ({
       return { ...zip }
     })
 
-    const set_format_date = moment(s.vote_date).calendar()
+    const set_format_date = dayjs(s.vote_date).calendar()
 
     if (index != 0) {
       if (arr_votelog[index].vote_date === arr_votelog[index - 1].vote_date) {
@@ -375,7 +378,7 @@ export default ({
   const count_by_group = []
 
   arr_votelog.forEach(function(s, index) {
-    const set_format_date = moment(s.vote_date).calendar()
+    const set_format_date = dayjs(s.vote_date).calendar()
 
     if (index > 0) {
       if (arr_votelog[index].vote_date === arr_votelog[index - 1].vote_date) {
