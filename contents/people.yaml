@@ -421,6 +421,7 @@
   senator_method: ''
   cabinet_position:
     - รองนายกรัฐมนตรี
+    - รัฐมนตรีว่าการกระทรวงการต่างประเทศ
   committee:
     - position: ''
       set: ''
@@ -6919,9 +6920,9 @@
       - Senator
       - Member of Parliament
     bio: ''
-  is_mp: true
+  is_mp: false
   is_senator: false
-  is_cabinet: false
+  is_cabinet: true
   is_committee: false
   is_active: true
   party: พลังประชารัฐ
@@ -63048,7 +63049,7 @@
     - position: ''
       set: ''
   gender: ชาย
-  birthdate: '1960-01-01'
+  birthdate: null
   education: ปริญญาโท
   graduation: จุฬาลงกรณ์มหาวิทยาลัย
   degree: บริหารธุรกิจ

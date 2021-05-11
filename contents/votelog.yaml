@@ -18,12 +18,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: null
-  disprove: null
+  approve: 500
+  disprove: 244
   abstained: 3
-  field18: '0'
-  total_voter: 747
-  absent: 1
+  absent: 0
+  total_voter: 808
   total_member: 748
   description_th: >-
     การประชุมร่วมกันของทั้ง ส.ส. และ ส.ว. ครั้งแรก
@@ -74,9 +73,8 @@
   approve: 101
   disprove: 365
   abstained: 13
-  field18: '0'
-  total_voter: 479
-  absent: 20
+  absent: 0
+  total_voter: 808
   total_member: 499
   description_th: >-
     วันที่ 22 สิงหาคม 2562
@@ -128,9 +126,8 @@
   approve: 412
   disprove: 25
   abstained: 20
-  field18: '0'
-  total_voter: 457
-  absent: 40
+  absent: 0
+  total_voter: 808
   total_member: 497
   description_th: >-
     วันที่ 5 กันยายน 2562
@@ -179,9 +176,8 @@
   approve: 224
   disprove: 231
   abstained: 2
-  field18: '0'
-  total_voter: 457
-  absent: 40
+  absent: 0
+  total_voter: 808
   total_member: 497
   description_th: >-
     Eastern Economic Corridor (EEC) หรือ โครงการระเบียงเศรษฐกิจพิเศษภาคตะวันออก
@@ -256,9 +252,8 @@
   approve: 374
   disprove: 70
   abstained: 2
-  field18: '0'
-  total_voter: 446
-  absent: 40
+  absent: 0
+  total_voter: 808
   total_member: 486
   description_th: >-
     30 กันยายน 2562 พล.อ.ประยุทธ์ จันทร์โอชา ในฐานะนายกรัฐมนตรีภายใต้รัฐบาล
@@ -330,9 +325,8 @@
   approve: 251
   disprove: 0
   abstained: 234
-  field18: '0'
-  total_voter: 485
-  absent: 12
+  absent: 1
+  total_voter: 808
   total_member: 497
   description_th: >-
     ทางปฏิบัติในการบริหารราชการแผ่นดิน เมื่อรัฐบาลต้องการงบประมาณจะเสนอเป็น
@@ -401,9 +395,8 @@
   approve: 400
   disprove: 0
   abstained: 0
-  field18: '0'
-  total_voter: 400
-  absent: 97
+  absent: 0
+  total_voter: 808
   total_member: 497
   description_th: >-
     จากประเด็นสารเคมี 3 ตัว ประกอบด้วย พาราควอต ไกลโฟเซต และคลอร์ไพริฟอส
@@ -437,9 +430,8 @@
   approve: 392
   disprove: 0
   abstained: 1
-  field18: '1'
-  total_voter: 394
-  absent: 104
+  absent: 1
+  total_voter: 808
   total_member: 498
   description_th: >-
     เนื่องจากภาคตะวันออกเฉียงเหนือเป็นภูมิภาคที่มีพื้นที่การเกษตรจำนวนเกือบ
@@ -484,9 +476,8 @@
   approve: 5
   disprove: 244
   abstained: 6
-  field18: '0'
-  total_voter: 255
-  absent: 243
+  absent: 0
+  total_voter: 808
   total_member: 498
   description_th: >-
     จากญัตติด่วนให้ตั้งคณะกรรมาธิการวิสามัญเพื่อศึกษาผลกระทบจาก ม.44
@@ -541,9 +532,8 @@
   approve: 411
   disprove: 0
   abstained: 2
-  field18: '1'
-  total_voter: 414
-  absent: 84
+  absent: 1
+  total_voter: 808
   total_member: 498
   description_th: >-
     จากกรณีการถูกละเมิดสิทธิมนุษยชนและถูกประทุษร้ายของประชาชน
@@ -590,9 +580,8 @@
   approve: 240
   disprove: 78
   abstained: 150
-  field18: '1'
-  total_voter: 469
-  absent: 30
+  absent: 1
+  total_voter: 808
   total_member: 499
   description_th: ''
   description_en: ''
@@ -622,9 +611,8 @@
   approve: 354
   disprove: 0
   abstained: 2
-  field18: '0'
-  total_voter: 356
-  absent: 142
+  absent: 0
+  total_voter: 808
   total_member: 498
   description_th: >-
     จากกรณีที่สังคมตั้งคำถามว่า การก่อสร้างรัฐสภาใหม่ ที่สำนักงานเลขาธิการสภาฯ
@@ -670,10 +658,9 @@
   no_vote_description: ''
   approve: 10
   disprove: 343
-  abstained: 2
-  field18: '0'
-  total_voter: 355
-  absent: 142
+  abstained: 0
+  absent: 2
+  total_voter: 808
   total_member: 497
   description_th: >-
     ด้วยปัจจุบันประชากรส่วนใหญ่ของประเทศประกอบอาชีพเกษตรกรรม
@@ -720,9 +707,8 @@
   approve: 216
   disprove: 242
   abstained: 2
-  field18: '0'
-  total_voter: 460
-  absent: 38
+  absent: 0
+  total_voter: 808
   total_member: 498
   description_th: >-
     จากกรณี ส.ส. พรรคฝ่ายค้าน ยกประเด็นว่าการรัฐประหาร 2
@@ -763,12 +749,11 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 433
-  disprove: 0
-  abstained: 0
-  field18: '0'
-  total_voter: 433
-  absent: 64
+  approve: 576
+  disprove: 21
+  abstained: 122
+  absent: 2
+  total_voter: 808
   total_member: 497
   description_th: >-
     จากญัตติด่วนที่ ส.ส. ทั้งฝ่ายรัฐบาลและฝ่ายค้าน
@@ -809,12 +794,11 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 647
+  disprove: 18
+  abstained: 54
+  absent: 2
+  total_voter: 808
   total_member: null
   description_th: >-
     กรณีที่คณะกรรมการการทางพิเศษแห่งประเทศไทย (กทพ.)
@@ -853,12 +837,11 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 214
+  disprove: 34
+  abstained: 470
+  absent: 2
+  total_voter: 808
   total_member: null
   description_th: >-
     จากการดำเนินการกองทุน กยศ. ซึ่งมีผู้กู้กว่า 5.6 ล้านราย
@@ -898,12 +881,11 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 267
+  disprove: 21
+  abstained: 431
+  absent: 2
+  total_voter: 808
   total_member: null
   description_th: ''
   description_en: ''
@@ -931,12 +913,11 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 210
+  disprove: 48
+  abstained: 461
+  absent: 2
+  total_voter: 808
   total_member: null
   description_th: ''
   description_en: ''
@@ -962,12 +943,11 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 270
+  disprove: 22
+  abstained: 427
+  absent: 2
+  total_voter: 808
   total_member: null
   description_th: >-
     การขุดคลองไทยนับเป็นคลองหนึ่งที่มีความสาคัญ ทางยุทธศาสตร์การเดินเรือ
@@ -1014,12 +994,11 @@
   is_no_vote: true
   no_vote_description: >-
     ที่ประชุมลงมติเห็นชอบให้ส่งงคณะกรรมาธิการแก้ไขปัญหาหนี้สินแห่งชาติพิจารณาศึกษาญัตติดังกล่าว
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 212
+  disprove: 134
+  abstained: 373
+  absent: 2
+  total_voter: 808
   total_member: null
   description_th: >-
     ราคาหนังโคกระบือตกต่ำมาก เนื่องจากโรงงานฟอกหนังที่อยู่ในจังหวัด สมุทรปราการ
@@ -1059,12 +1038,11 @@
   is_no_vote: true
   no_vote_description: >-
     ที่ประชุมลงมติเห็นชอบให้ส่งงคณะกรรมาธิการการเกษตรและสหกรณ์พิจารณาศึกษาญัตติดังกล่าว
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 365
+  disprove: 315
+  abstained: 15
+  absent: 1
+  total_voter: 808
   total_member: null
   description_th: >-
     ปัญหาหนี้สินในครัวเรือนเพิ่มขึ้นอย่างต่อเนื่องทุกปี นอกจากนี้
@@ -1102,12 +1080,11 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
   total_member: null
   description_th: ''
   description_en: ''
@@ -1137,12 +1114,11 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
   total_member: null
   description_th: ''
   description_en: ''
@@ -1169,12 +1145,11 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
   total_member: null
   description_th: ''
   description_en: ''
@@ -1187,14 +1162,98 @@
   reference: >-
     https://drive.google.com/file/d/1nN_FFX-0sTRVoIxrQH4aSh0zQVGLWy1D/view?usp=sharing
 - id: '26'
-  title: พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ
+  title: |-
+    พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ
+    (ฉบับที่ 1)
   is_active: true
   en:
     title: ''
     legal_title: ''
-  legal_title: |-
-    ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม
-    (ฉบับที่...)
+  legal_title: >-
+    ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พ.ศ. ….
+    แก้ไขเพิ่มเติมมาตรา 256 และเพิ่มหมวด 15/1 (นายสมพงษ์ อมรวิวัฒน์กับคณะ
+    เป็นผู้เสนอ)
+  meeting: ประชุมร่วมสองสภา
+  type: ร่าง ร.ธ.น.
+  vote_date: '2020-11-18'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  approve: 206
+  disprove: 272
+  abstained: 3
+  absent: 0
+  total_voter: 808
+  total_member: 668
+  description_th: >-
+    การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
+    ซึ่งรวมร่างแก้ไขที่เสนอโดยโครงการอินเทอร์เน็ตเพื่อกฎหมายประชาชน หรือ iLaw
+    ซึ่งประชาชนร่วม 1 แสนคนได้ลงชื่อสนับสนุนด้วย ดังนี้
+
+    โดยญัตติแก้ไขมาตรา 256 พรรคร่วมฝ่ายค้าน ให้ส.ส.ร. 200
+    คนมาจากการเลือกตั้งทั้งหมด
+  description_en: ''
+  document:
+    - title: บันทึกการออกเสียงลงคะแนนของสมาชิกรัฐสภา
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20201202092442A1.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
+- id: '27'
+  title: |-
+    พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ
+    (ฉบับที่ 2)
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พ.ศ. ….
+    แก้ไขเพิ่มเติมมาตรา 256 และเพิ่มหมวด 15/1 (นายวิรัช รัตนเศรษฐกับคณะ
+    เป็นผู้เสนอ)
+  meeting: ประชุมร่วมสองสภา
+  type: ร่าง ร.ธ.น.
+  vote_date: '2020-11-18'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  approve: 204
+  disprove: 274
+  abstained: 4
+  absent: 0
+  total_voter: 808
+  total_member: 668
+  description_th: >-
+    การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
+    ซึ่งรวมร่างแก้ไขที่เสนอโดยโครงการอินเทอร์เน็ตเพื่อกฎหมายประชาชน หรือ iLaw
+    ซึ่งประชาชนร่วม 1 แสนคนได้ลงชื่อสนับสนุนด้วย ดังนี้
+
+    โดยญัตติแก้ไขมาตรา 256 พรรคร่วมรัฐบาล ให้ส.ส.ร. 200 คน มาจากการเลือกตั้ง 150
+    คน แต่งตั้ง 50 คน
+  description_en: ''
+  document:
+    - title: บันทึกการออกเสียงลงคะแนนของสมาชิกรัฐสภา
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20201202092442A1.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
+- id: '28'
+  title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 3)"
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พ.ศ. ….
+    ยกเลิกมาตรา 270 และมาตรา 271 (นายสมพงษ์กับคณะ เป็นผู้เสนอ)
   meeting: ประชุมร่วมสองสภา
   type: ร่าง ร.ธ.น.
   vote_date: '2020-11-18'
@@ -1203,37 +1262,176 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 201
+  disprove: 275
+  abstained: 6
+  absent: 0
+  total_voter: 808
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
     ซึ่งรวมร่างแก้ไขที่เสนอโดยโครงการอินเทอร์เน็ตเพื่อกฎหมายประชาชน หรือ iLaw
     ซึ่งประชาชนร่วม 1 แสนคนได้ลงชื่อสนับสนุนด้วย ดังนี้
 
-    1.ญัตติแก้ไขมาตรา 256 พรรคร่วมฝ่ายค้าน ให้ส.ส.ร. 200
-    คนมาจากการเลือกตั้งทั้งหมด
+    โดยญัตติฝ่ายค้าน ยกเลิกมาตรา 270 และ 271 ยกเลิกการใก้อำนาจ ส.ว.ติดตาม
+    เสนอแนะ เร่งรัดการปฏิรูปประเทศ จัดทำและดำเนินการตามยุทธศาสตร์ชาติ
+  description_en: ''
+  document:
+    - title: บันทึกการออกเสียงลงคะแนนของสมาชิกรัฐสภา
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20201202092442A1.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
+- id: '29'
+  title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 4)"
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พ.ศ. ….
+    แก้ไขเพิ่มเติมมาตรา 259 และยกเลิกมาตรา 272 (นายสมพงษ์กับคณะ เป็นผู้เสนอ)
+  meeting: ประชุมร่วมสองสภา
+  type: ร่าง ร.ธ.น.
+  vote_date: '2020-11-18'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  approve: 206
+  disprove: 269
+  abstained: 7
+  absent: 0
+  total_voter: 808
+  total_member: 668
+  description_th: >-
+    การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
+    ซึ่งรวมร่างแก้ไขที่เสนอโดยโครงการอินเทอร์เน็ตเพื่อกฎหมายประชาชน หรือ iLaw
+    ซึ่งประชาชนร่วม 1 แสนคนได้ลงชื่อสนับสนุนด้วย ดังนี้
 
-    2.ญัตติแก้ไขมาตรา 256 พรรคร่วมรัฐบาล ให้ส.ส.ร. 200 คน มาจากการเลือกตั้ง 150
-    คน แต่งตั้ง 50 คน
-
-    3.ญัตติฝ่ายค้าน ยกเลิกมาตรา 270 และ 271 ยกเลิกการใก้อำนาจ ส.ว.ติดตาม เสนอแนะ
-    เร่งรัดการปฏิรูปประเทศ จัดทำและดำเนินการตามยุทธศาสตร์ชาติ
-
-    4.ญัตติฝ่ายค้านแก้ไขมาตรา 159 และยกเลิกมาตรา 272 ที่ตัดอำนาจไม่ให้ส.ว.
+    โดยญัตติฝ่ายค้านแก้ไขมาตรา 159 และยกเลิกมาตรา 272 ที่ตัดอำนาจไม่ให้ส.ว.
     ร่วมเลือกนายกรัฐมนตรี ช่วง 5 ปีแรก
+  description_en: ''
+  document:
+    - title: บันทึกการออกเสียงลงคะแนนของสมาชิกรัฐสภา
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20201202092442A1.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
+- id: '30'
+  title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 5)"
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พ.ศ. ….
+    ยกเลิกมาตรา 279 (นายสมพงษ์กับคณะ เป็นผู้เสนอ)
+  meeting: ประชุมร่วมสองสภา
+  type: ร่าง ร.ธ.น.
+  vote_date: '2020-11-18'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  approve: 205
+  disprove: 272
+  abstained: 3
+  absent: 0
+  total_voter: 808
+  total_member: 668
+  description_th: >-
+    การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
+    ซึ่งรวมร่างแก้ไขที่เสนอโดยโครงการอินเทอร์เน็ตเพื่อกฎหมายประชาชน หรือ iLaw
+    ซึ่งประชาชนร่วม 1 แสนคนได้ลงชื่อสนับสนุนด้วย ดังนี้
 
-    5.ญัตติฝ่ายค้านยกเลิกมาตรา 279 ยกเลิกการรับรองความเห็นชอบด้วยกฎหมายของประกาศ
-    คำสั่ง และการกระทำโดยคสช.
+    โดยญัตติฝ่ายค้านยกเลิกมาตรา 279
+    ยกเลิกการรับรองความเห็นชอบด้วยกฎหมายของประกาศ คำสั่ง และการกระทำโดยคสช.
+  description_en: ''
+  document:
+    - title: บันทึกการออกเสียงลงคะแนนของสมาชิกรัฐสภา
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20201202092442A1.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
+- id: '31'
+  title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 6)"
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พ.ศ. ….
+    แก้ไขเพิ่มเติมมาตรา 91 มาตรา 92 และมาตรา 94 และยกเลิกมาตรา 93 มาตรา 101 (4)
+    และมาตรา 105 วรรคสาม (นายสมพงษ์กับคณะ เป็นผู้เสนอ)
+  meeting: ประชุมร่วมสองสภา
+  type: ร่าง ร.ธ.น.
+  vote_date: '2020-11-18'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  approve: 215
+  disprove: 258
+  abstained: 8
+  absent: 0
+  total_voter: 808
+  total_member: 668
+  description_th: >-
+    การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
+    ซึ่งรวมร่างแก้ไขที่เสนอโดยโครงการอินเทอร์เน็ตเพื่อกฎหมายประชาชน หรือ iLaw
+    ซึ่งประชาชนร่วม 1 แสนคนได้ลงชื่อสนับสนุนด้วย ดังนี้
 
-    6.ญัตติฝ่ายค้านแก้ไขเพิ่มเติมเกี่ยวกับระบบเลือกตั้ง ใช้บัตรเลือกตั้ง 2 ใบ
+    โดยญัตติฝ่ายค้านแก้ไขเพิ่มเติมเกี่ยวกับระบบเลือกตั้ง ใช้บัตรเลือกตั้ง 2 ใบ
     เลือกส.ส. แบบบัญชีรายชื่อและแบบแบ่งเขต
+  description_en: ''
+  document:
+    - title: บันทึกการออกเสียงลงคะแนนของสมาชิกรัฐสภา
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20201202092442A1.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
+- id: '32'
+  title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 7)"
+  is_active: true
+  en:
+    title: ''
+    legal_title: ''
+  legal_title: >-
+    ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พ.ศ. ….
+    ยกเลิกมาตรา 65 มาตรา 88 มาตรา 203 มาตรา 217 มาตรา 270 มาตรา 272 มาตรา 275
+    และมาตรา 279
+  meeting: ประชุมร่วมสองสภา
+  type: ร่าง ร.ธ.น.
+  vote_date: '2020-11-18'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  approve: 212
+  disprove: 263
+  abstained: 5
+  absent: 1
+  total_voter: 808
+  total_member: 668
+  description_th: >-
+    การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
+    ซึ่งรวมร่างแก้ไขที่เสนอโดยโครงการอินเทอร์เน็ตเพื่อกฎหมายประชาชน หรือ iLaw
+    ซึ่งประชาชนร่วม 1 แสนคนได้ลงชื่อสนับสนุนด้วย ดังนี้
 
-    7.ญัตติแก้ร่างรัฐธรรมนูญฉบับ ilaw รวม 10 ประเด็น เช่น ถอนอำนาจคสช. , ส.ว.
+    โดยญัตติแก้ร่างรัฐธรรมนูญฉบับ ilaw รวม 10 ประเด็น เช่น ถอนอำนาจคสช. , ส.ว.
     มาจากการเลือกตั้งทั้งหมด
   description_en: ''
   document:
@@ -1244,97 +1442,7 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
-- id: ''
-  title: ''
-  is_active: false
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: ''
-  meeting: ''
-  type: ''
-  vote_date: null
-  prayuth: ''
-  thanathorn: ''
-  passed: false
-  is_no_vote: false
-  no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
-  total_member: null
-  description_th: ''
-  description_en: ''
-  document:
-    - title: ''
-      link: ''
-    - title: ''
-      link: ''
-  reference: ''
-- id: ''
-  title: ''
-  is_active: false
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: ''
-  meeting: ''
-  type: ''
-  vote_date: null
-  prayuth: ''
-  thanathorn: ''
-  passed: false
-  is_no_vote: false
-  no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
-  total_member: null
-  description_th: ''
-  description_en: ''
-  document:
-    - title: ''
-      link: ''
-    - title: ''
-      link: ''
-  reference: ''
-- id: ''
-  title: ''
-  is_active: false
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: ''
-  meeting: ''
-  type: ''
-  vote_date: null
-  prayuth: ''
-  thanathorn: ''
-  passed: false
-  is_no_vote: false
-  no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
-  total_member: null
-  description_th: ''
-  description_en: ''
-  document:
-    - title: ''
-      link: ''
-    - title: ''
-      link: ''
-  reference: ''
-- id: '27'
+- id: '33'
   title: ขอให้ศาลรัฐธรรมนูญพิจารณาเกี่ยวกับหน้าที่และอำนาจของรัฐสภาตามรัฐธรรมนูญ
   is_active: true
   en:
@@ -1351,12 +1459,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 201
+  disprove: 268
+  abstained: 12
+  absent: 1
+  total_voter: 808
   total_member: 697
   description_th: >-
     ญัตติด่วนที่นายไพบูลย์ นิติตะวัน ส.ส.บัญชีรายชื่อ พรรคพลังประชารัฐ
@@ -1373,7 +1480,7 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
-- id: '28'
+- id: '34'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล  พลเอกประยุทธ์ จันทร์โอชา นายกรัฐมนตรี
     และรัฐมนตรีว่าการกระทรวงกลาโหม
@@ -1390,12 +1497,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 206
+  disprove: 272
+  abstained: 4
+  absent: 0
+  total_voter: 808
   total_member: 481
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1416,7 +1522,7 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-- id: '29'
+- id: '35'
   title: อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล พลเอกประวิตร วงษ์สุวรรณ รองนายกรัฐมนตรี
   is_active: true
   en:
@@ -1431,12 +1537,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 199
+  disprove: 273
+  abstained: 5
+  absent: 3
+  total_voter: 808
   total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1455,7 +1560,7 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-- id: '30'
+- id: '36'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายอนุทิน ชาญวีรกูล
     รองนายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงสาธารณสุข
@@ -1472,12 +1577,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 208
+  disprove: 4
+  abstained: 92
+  absent: 218
+  total_voter: 808
   total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1497,7 +1601,7 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-- id: '31'
+- id: '37'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายจุรินทร์ ลักษณวิศิษฏ์
     รองนายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงพาณิชย์
@@ -1514,12 +1618,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
   total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1539,7 +1642,7 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-- id: '32'
+- id: '38'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล พลเอก อนุพงษ์ เผ่าจินดา
     รัฐมนตรีว่าการกระทรวงมหาดไทย
@@ -1556,12 +1659,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
   total_member: 480
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1581,7 +1683,7 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-- id: '33'
+- id: '39'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายณัฏฐพล ทีปสุวรรณ
     รัฐมนตรีว่าการกระทรวงศึกษาธิการ
@@ -1598,12 +1700,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
   total_member: 481
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1623,7 +1724,7 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-- id: '34'
+- id: '40'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายสุชาติ ชมกลิ่น
     รัฐมนตรีว่าการกระทรวงแรงงาน
@@ -1640,12 +1741,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
   total_member: 481
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1666,7 +1766,7 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-- id: '35'
+- id: '41'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายศักดิ์สยาม ชิดชอบ
     รัฐมนตรีว่าการกระทรวงคมนาคม
@@ -1683,12 +1783,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
   total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1707,7 +1806,7 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-- id: '36'
+- id: '42'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายนิพนธ์ บุญญามณี
     รัฐมนตรีช่วยว่าการกระทรวงมหาดไทย
@@ -1724,12 +1823,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
   total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1747,7 +1845,7 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-- id: '37'
+- id: '43'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล ร้อยเอก ธรรมนัส พรมเผ่า
     รัฐมนตรีช่วยว่าการเกษตรและสหกรณ์
@@ -1764,12 +1862,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
   total_member: 479
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1790,7 +1887,7 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-- id: '38'
+- id: '44'
   title: |-
     พิจารณาแก้ไขเพิ่มเติมร่าง ร.ธ.น. 
     (แก้ไขเพิ่มเติมมาตรา 256 
@@ -1817,12 +1914,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: null
-  disprove: null
-  abstained: null
-  field18: ''
-  total_voter: null
-  absent: null
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
   total_member: 442
   description_th: >-
     จากที่ร่างแก้ไขรัฐธรรมนูญที่มีเนื้อหา 5 มาตรา
