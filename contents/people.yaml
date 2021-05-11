@@ -33103,7 +33103,7 @@
   is_senator: true
   is_cabinet: false
   is_committee: false
-  is_active: true
+  is_active: false
   party: ''
   party_group: ''
   mp_type: ''
@@ -39029,7 +39029,7 @@
   is_senator: true
   is_cabinet: false
   is_committee: false
-  is_active: true
+  is_active: false
   party: ''
   party_group: ''
   mp_type: ''
@@ -40711,7 +40711,7 @@
   is_senator: true
   is_cabinet: false
   is_committee: false
-  is_active: true
+  is_active: false
   party: ''
   party_group: ''
   mp_type: ''
@@ -40889,7 +40889,7 @@
   is_senator: true
   is_cabinet: false
   is_committee: false
-  is_active: true
+  is_active: false
   party: ''
   party_group: ''
   mp_type: ''
@@ -46095,7 +46095,7 @@
   is_senator: true
   is_cabinet: false
   is_committee: false
-  is_active: true
+  is_active: false
   party: ''
   party_group: ''
   mp_type: ''
@@ -46638,7 +46638,7 @@
   is_senator: true
   is_cabinet: false
   is_committee: false
-  is_active: true
+  is_active: false
   party: ''
   party_group: ''
   mp_type: ''
@@ -47054,7 +47054,7 @@
   is_senator: true
   is_cabinet: false
   is_committee: false
-  is_active: true
+  is_active: false
   party: ''
   party_group: ''
   mp_type: ''
@@ -62611,7 +62611,7 @@
   mp_zone: ''
   mp_list: ''
   vote: null
-  senator_method: ''
+  senator_method: โดยตำแหน่ง
   cabinet_position: []
   committee:
     - position: ''
@@ -62671,7 +62671,7 @@
   mp_zone: ''
   mp_list: ''
   vote: null
-  senator_method: ''
+  senator_method: โดยตำแหน่ง
   cabinet_position: []
   committee:
     - position: ''
@@ -62730,7 +62730,7 @@
   mp_zone: ''
   mp_list: ''
   vote: null
-  senator_method: ''
+  senator_method: โดยตำแหน่ง
   cabinet_position: []
   committee:
     - position: ''
@@ -62789,7 +62789,7 @@
   mp_zone: ''
   mp_list: ''
   vote: null
-  senator_method: ''
+  senator_method: โดยตำแหน่ง
   cabinet_position: []
   committee:
     - position: ''
@@ -62849,7 +62849,7 @@
   mp_zone: ''
   mp_list: ''
   vote: null
-  senator_method: ''
+  senator_method: โดยตำแหน่ง
   cabinet_position: []
   committee:
     - position: ''
@@ -63126,3 +63126,124 @@
   bio: >-
     แต่งตั้งรัฐมนตรีแทนตำแหน่งที่ว่างและเพิ่มเติมบางตำแหน่งตามประกาศ ณ วันที่ 5
     สิงหาคม พ.ศ. 2563 เป็นปีที่ 5 ในรัชกาลปัจจุบัน
+- id: '1054'
+  title: นาย
+  name: กองตรี อาญาสิทธิ์
+  lastname: ศรีสุวรรณ
+  en:
+    title: ''
+    name: ''
+    lastname: ''
+    cabinet_position: []
+    graduation: ''
+    degree: ''
+    ex_occupation: []
+    bio: ''
+  is_mp: true
+  is_senator: false
+  is_cabinet: false
+  is_committee: false
+  is_active: true
+  party: พลังประชารัฐ
+  party_group: ฝ่ายรัฐบาล
+  mp_type: แบ่งเขต
+  mp_province: นครศรีธรรมราช
+  mp_zone: '3'
+  mp_list: ''
+  vote: 44306
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: ชาย
+  birthdate: '1965-02-28'
+  education: ปริญญาตรี
+  graduation: มหาวิทยาลัยรามคำแหง
+  degree: นิติศาสตรบัณฑิต
+  ex_occupation:
+    - รับราชการ นายอำเภอเขาชัยสน พัทลุง
+  occupation_group: องค์กรรัฐ/รัฐวิสาหกิจ
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: >-
+    ดำรงตำแหน่งส.ส. เนื่องจากชนะการเลือกตั้งซ่อม เขต 3 จ.นครศรีธรรมราช เมื่อ 10
+    มีนาคม 2564
+- id: '1055'
+  title: นาย
+  name: เพชรภูมิ
+  lastname: อาภรณ์รัตน์
+  en:
+    title: ''
+    name: ''
+    lastname: ''
+    cabinet_position: []
+    graduation: ''
+    degree: ''
+    ex_occupation: []
+    bio: ''
+  is_mp: true
+  is_senator: false
+  is_cabinet: false
+  is_committee: false
+  is_active: true
+  party: พลังประชารัฐ
+  party_group: ฝ่ายรัฐบาล
+  mp_type: แบ่งเขต
+  mp_province: กำแพงเพชร
+  mp_zone: '2'
+  mp_list: ''
+  vote: 45687
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: ชาย
+  birthdate: '1992-10-01'
+  education: ปริญญาตรี
+  graduation: มหาวิทยาลัยเกษตรศาสตร์
+  degree: นิติศาสตรบัณฑิต
+  ex_occupation:
+    - ธุรกิจส่วนตัว
+    - >-
+      ที่ี่ปรึกษาประจำคณะกรรมาธิการศึกษาจัดทำและติดตามการบริหารงบประมาณ
+      สภาผู้แทนราษฎร
+  occupation_group: เอกชน
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: >-
+    ดำรงตำแหน่งส.ส. เนื่องจากชนะการเลือกตั้งซ่อม เขต 2  จ.กำแพงเพชร เมื่อ  25
+    กุมภาพันธ์ 2564
