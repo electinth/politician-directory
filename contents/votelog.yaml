@@ -21,8 +21,9 @@
   approve: 500
   disprove: 244
   abstained: 3
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 748
   description_th: >-
     การประชุมร่วมกันของทั้ง ส.ส. และ ส.ว. ครั้งแรก
@@ -73,8 +74,9 @@
   approve: 101
   disprove: 365
   abstained: 13
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 499
   description_th: >-
     วันที่ 22 สิงหาคม 2562
@@ -126,8 +128,9 @@
   approve: 412
   disprove: 25
   abstained: 20
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 497
   description_th: >-
     วันที่ 5 กันยายน 2562
@@ -176,8 +179,9 @@
   approve: 224
   disprove: 231
   abstained: 2
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 497
   description_th: >-
     Eastern Economic Corridor (EEC) หรือ โครงการระเบียงเศรษฐกิจพิเศษภาคตะวันออก
@@ -252,8 +256,9 @@
   approve: 374
   disprove: 70
   abstained: 2
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 486
   description_th: >-
     30 กันยายน 2562 พล.อ.ประยุทธ์ จันทร์โอชา ในฐานะนายกรัฐมนตรีภายใต้รัฐบาล
@@ -325,8 +330,9 @@
   approve: 251
   disprove: 0
   abstained: 234
-  absent: 1
+  field18: '0'
   total_voter: 808
+  absent: 1
   total_member: 497
   description_th: >-
     ทางปฏิบัติในการบริหารราชการแผ่นดิน เมื่อรัฐบาลต้องการงบประมาณจะเสนอเป็น
@@ -395,8 +401,9 @@
   approve: 400
   disprove: 0
   abstained: 0
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 497
   description_th: >-
     จากประเด็นสารเคมี 3 ตัว ประกอบด้วย พาราควอต ไกลโฟเซต และคลอร์ไพริฟอส
@@ -430,8 +437,9 @@
   approve: 392
   disprove: 0
   abstained: 1
-  absent: 1
+  field18: '1'
   total_voter: 808
+  absent: 1
   total_member: 498
   description_th: >-
     เนื่องจากภาคตะวันออกเฉียงเหนือเป็นภูมิภาคที่มีพื้นที่การเกษตรจำนวนเกือบ
@@ -476,8 +484,9 @@
   approve: 5
   disprove: 244
   abstained: 6
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 498
   description_th: >-
     จากญัตติด่วนให้ตั้งคณะกรรมาธิการวิสามัญเพื่อศึกษาผลกระทบจาก ม.44
@@ -532,8 +541,9 @@
   approve: 411
   disprove: 0
   abstained: 2
-  absent: 1
+  field18: '1'
   total_voter: 808
+  absent: 1
   total_member: 498
   description_th: >-
     จากกรณีการถูกละเมิดสิทธิมนุษยชนและถูกประทุษร้ายของประชาชน
@@ -580,8 +590,9 @@
   approve: 240
   disprove: 78
   abstained: 150
-  absent: 1
+  field18: '1'
   total_voter: 808
+  absent: 1
   total_member: 499
   description_th: ''
   description_en: ''
@@ -611,8 +622,9 @@
   approve: 354
   disprove: 0
   abstained: 2
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 498
   description_th: >-
     จากกรณีที่สังคมตั้งคำถามว่า การก่อสร้างรัฐสภาใหม่ ที่สำนักงานเลขาธิการสภาฯ
@@ -659,8 +671,9 @@
   approve: 10
   disprove: 343
   abstained: 0
-  absent: 2
+  field18: '0'
   total_voter: 808
+  absent: 2
   total_member: 497
   description_th: >-
     ด้วยปัจจุบันประชากรส่วนใหญ่ของประเทศประกอบอาชีพเกษตรกรรม
@@ -707,8 +720,9 @@
   approve: 216
   disprove: 242
   abstained: 2
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 498
   description_th: >-
     จากกรณี ส.ส. พรรคฝ่ายค้าน ยกประเด็นว่าการรัฐประหาร 2
@@ -752,8 +766,9 @@
   approve: 576
   disprove: 21
   abstained: 122
-  absent: 2
+  field18: '0'
   total_voter: 808
+  absent: 2
   total_member: 497
   description_th: >-
     จากญัตติด่วนที่ ส.ส. ทั้งฝ่ายรัฐบาลและฝ่ายค้าน
@@ -797,8 +812,9 @@
   approve: 647
   disprove: 18
   abstained: 54
-  absent: 2
+  field18: ''
   total_voter: 808
+  absent: 2
   total_member: null
   description_th: >-
     กรณีที่คณะกรรมการการทางพิเศษแห่งประเทศไทย (กทพ.)
@@ -840,8 +856,9 @@
   approve: 214
   disprove: 34
   abstained: 470
-  absent: 2
+  field18: ''
   total_voter: 808
+  absent: 2
   total_member: null
   description_th: >-
     จากการดำเนินการกองทุน กยศ. ซึ่งมีผู้กู้กว่า 5.6 ล้านราย
@@ -884,8 +901,9 @@
   approve: 267
   disprove: 21
   abstained: 431
-  absent: 2
+  field18: ''
   total_voter: 808
+  absent: 2
   total_member: null
   description_th: ''
   description_en: ''
@@ -916,8 +934,9 @@
   approve: 210
   disprove: 48
   abstained: 461
-  absent: 2
+  field18: ''
   total_voter: 808
+  absent: 2
   total_member: null
   description_th: ''
   description_en: ''
@@ -946,8 +965,9 @@
   approve: 270
   disprove: 22
   abstained: 427
-  absent: 2
+  field18: ''
   total_voter: 808
+  absent: 2
   total_member: null
   description_th: >-
     การขุดคลองไทยนับเป็นคลองหนึ่งที่มีความสาคัญ ทางยุทธศาสตร์การเดินเรือ
@@ -997,8 +1017,9 @@
   approve: 212
   disprove: 134
   abstained: 373
-  absent: 2
+  field18: ''
   total_voter: 808
+  absent: 2
   total_member: null
   description_th: >-
     ราคาหนังโคกระบือตกต่ำมาก เนื่องจากโรงงานฟอกหนังที่อยู่ในจังหวัด สมุทรปราการ
@@ -1041,8 +1062,9 @@
   approve: 365
   disprove: 315
   abstained: 15
-  absent: 1
+  field18: ''
   total_voter: 808
+  absent: 1
   total_member: null
   description_th: >-
     ปัญหาหนี้สินในครัวเรือนเพิ่มขึ้นอย่างต่อเนื่องทุกปี นอกจากนี้
@@ -1083,8 +1105,9 @@
   approve: 0
   disprove: 0
   abstained: 0
-  absent: 0
+  field18: ''
   total_voter: 0
+  absent: 0
   total_member: null
   description_th: ''
   description_en: ''
@@ -1117,8 +1140,9 @@
   approve: 0
   disprove: 0
   abstained: 0
-  absent: 0
+  field18: ''
   total_voter: 0
+  absent: 0
   total_member: null
   description_th: ''
   description_en: ''
@@ -1148,8 +1172,9 @@
   approve: 0
   disprove: 0
   abstained: 0
-  absent: 0
+  field18: ''
   total_voter: 0
+  absent: 0
   total_member: null
   description_th: ''
   description_en: ''
@@ -1184,8 +1209,9 @@
   approve: 206
   disprove: 272
   abstained: 3
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1226,8 +1252,9 @@
   approve: 204
   disprove: 274
   abstained: 4
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1265,8 +1292,9 @@
   approve: 201
   disprove: 275
   abstained: 6
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1304,8 +1332,9 @@
   approve: 206
   disprove: 269
   abstained: 7
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1343,8 +1372,9 @@
   approve: 205
   disprove: 272
   abstained: 3
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1383,8 +1413,9 @@
   approve: 215
   disprove: 258
   abstained: 8
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1423,8 +1454,9 @@
   approve: 212
   disprove: 263
   abstained: 5
-  absent: 1
+  field18: '0'
   total_voter: 808
+  absent: 1
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1456,14 +1488,15 @@
   vote_date: '2021-02-09'
   prayuth: ''
   thanathorn: ''
-  passed: false
+  passed: true
   is_no_vote: false
   no_vote_description: ''
   approve: 201
   disprove: 268
   abstained: 12
-  absent: 1
+  field18: '0'
   total_voter: 808
+  absent: 1
   total_member: 697
   description_th: >-
     ญัตติด่วนที่นายไพบูลย์ นิติตะวัน ส.ส.บัญชีรายชื่อ พรรคพลังประชารัฐ
@@ -1500,8 +1533,9 @@
   approve: 206
   disprove: 272
   abstained: 4
-  absent: 0
+  field18: '0'
   total_voter: 808
+  absent: 0
   total_member: 481
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1540,8 +1574,9 @@
   approve: 199
   disprove: 273
   abstained: 5
-  absent: 3
+  field18: '0'
   total_voter: 808
+  absent: 3
   total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1580,8 +1615,9 @@
   approve: 208
   disprove: 4
   abstained: 92
-  absent: 218
+  field18: '0'
   total_voter: 808
+  absent: 218
   total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1621,8 +1657,9 @@
   approve: 0
   disprove: 0
   abstained: 0
-  absent: 0
+  field18: '0'
   total_voter: 0
+  absent: 0
   total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1662,8 +1699,9 @@
   approve: 0
   disprove: 0
   abstained: 0
-  absent: 0
+  field18: '0'
   total_voter: 0
+  absent: 0
   total_member: 480
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1703,8 +1741,9 @@
   approve: 0
   disprove: 0
   abstained: 0
-  absent: 0
+  field18: '0'
   total_voter: 0
+  absent: 0
   total_member: 481
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1744,8 +1783,9 @@
   approve: 0
   disprove: 0
   abstained: 0
-  absent: 0
+  field18: '1'
   total_voter: 0
+  absent: 0
   total_member: 481
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1786,8 +1826,9 @@
   approve: 0
   disprove: 0
   abstained: 0
-  absent: 0
+  field18: '1'
   total_voter: 0
+  absent: 0
   total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1826,8 +1867,9 @@
   approve: 0
   disprove: 0
   abstained: 0
-  absent: 0
+  field18: '0'
   total_voter: 0
+  absent: 0
   total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1865,8 +1907,9 @@
   approve: 0
   disprove: 0
   abstained: 0
-  absent: 0
+  field18: '1'
   total_voter: 0
+  absent: 0
   total_member: 479
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1917,8 +1960,9 @@
   approve: 0
   disprove: 0
   abstained: 0
-  absent: 0
+  field18: '136'
   total_voter: 0
+  absent: 0
   total_member: 442
   description_th: >-
     จากที่ร่างแก้ไขรัฐธรรมนูญที่มีเนื้อหา 5 มาตรา
