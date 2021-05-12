@@ -809,12 +809,12 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 647
-  disprove: 18
-  abstained: 54
+  approve: 0
+  disprove: 0
+  abstained: 0
   field18: ''
-  total_voter: 808
-  absent: 2
+  total_voter: 0
+  absent: 0
   total_member: null
   description_th: >-
     กรณีที่คณะกรรมการการทางพิเศษแห่งประเทศไทย (กทพ.)
@@ -853,12 +853,12 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 214
-  disprove: 34
-  abstained: 470
+  approve: 0
+  disprove: 0
+  abstained: 0
   field18: ''
-  total_voter: 808
-  absent: 2
+  total_voter: 0
+  absent: 0
   total_member: null
   description_th: >-
     จากการดำเนินการกองทุน กยศ. ซึ่งมีผู้กู้กว่า 5.6 ล้านราย
@@ -898,12 +898,12 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 267
-  disprove: 21
-  abstained: 431
+  approve: 0
+  disprove: 0
+  abstained: 0
   field18: ''
-  total_voter: 808
-  absent: 2
+  total_voter: 0
+  absent: 0
   total_member: null
   description_th: ''
   description_en: ''
@@ -931,12 +931,12 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 210
-  disprove: 48
-  abstained: 461
+  approve: 0
+  disprove: 0
+  abstained: 0
   field18: ''
-  total_voter: 808
-  absent: 2
+  total_voter: 0
+  absent: 0
   total_member: null
   description_th: ''
   description_en: ''
@@ -962,12 +962,12 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 270
-  disprove: 22
-  abstained: 427
+  approve: 0
+  disprove: 0
+  abstained: 0
   field18: ''
-  total_voter: 808
-  absent: 2
+  total_voter: 0
+  absent: 0
   total_member: null
   description_th: >-
     การขุดคลองไทยนับเป็นคลองหนึ่งที่มีความสาคัญ ทางยุทธศาสตร์การเดินเรือ
@@ -1014,12 +1014,12 @@
   is_no_vote: true
   no_vote_description: >-
     ที่ประชุมลงมติเห็นชอบให้ส่งงคณะกรรมาธิการแก้ไขปัญหาหนี้สินแห่งชาติพิจารณาศึกษาญัตติดังกล่าว
-  approve: 212
-  disprove: 134
-  abstained: 373
+  approve: 0
+  disprove: 0
+  abstained: 0
   field18: ''
-  total_voter: 808
-  absent: 2
+  total_voter: 0
+  absent: 0
   total_member: null
   description_th: >-
     ราคาหนังโคกระบือตกต่ำมาก เนื่องจากโรงงานฟอกหนังที่อยู่ในจังหวัด สมุทรปราการ
@@ -1059,12 +1059,12 @@
   is_no_vote: true
   no_vote_description: >-
     ที่ประชุมลงมติเห็นชอบให้ส่งงคณะกรรมาธิการการเกษตรและสหกรณ์พิจารณาศึกษาญัตติดังกล่าว
-  approve: 365
-  disprove: 315
-  abstained: 15
+  approve: 0
+  disprove: 0
+  abstained: 0
   field18: ''
-  total_voter: 808
-  absent: 1
+  total_voter: 0
+  absent: 0
   total_member: null
   description_th: >-
     ปัญหาหนี้สินในครัวเรือนเพิ่มขึ้นอย่างต่อเนื่องทุกปี นอกจากนี้
@@ -1206,12 +1206,12 @@
   passed: true
   is_no_vote: false
   no_vote_description: ''
-  approve: 206
-  disprove: 272
-  abstained: 3
+  approve: 576
+  disprove: 21
+  abstained: 122
   field18: '0'
   total_voter: 808
-  absent: 0
+  absent: 2
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1249,12 +1249,12 @@
   passed: true
   is_no_vote: false
   no_vote_description: ''
-  approve: 204
-  disprove: 274
-  abstained: 4
+  approve: 647
+  disprove: 18
+  abstained: 54
   field18: '0'
   total_voter: 808
-  absent: 0
+  absent: 2
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1289,12 +1289,12 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 201
-  disprove: 275
-  abstained: 6
+  approve: 214
+  disprove: 34
+  abstained: 470
   field18: '0'
   total_voter: 808
-  absent: 0
+  absent: 2
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1329,12 +1329,12 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 206
-  disprove: 269
-  abstained: 7
+  approve: 267
+  disprove: 21
+  abstained: 431
   field18: '0'
   total_voter: 808
-  absent: 0
+  absent: 2
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1369,12 +1369,12 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 205
-  disprove: 272
-  abstained: 3
+  approve: 210
+  disprove: 48
+  abstained: 461
   field18: '0'
   total_voter: 808
-  absent: 0
+  absent: 2
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1410,12 +1410,12 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 215
-  disprove: 258
-  abstained: 8
+  approve: 270
+  disprove: 22
+  abstained: 427
   field18: '0'
   total_voter: 808
-  absent: 0
+  absent: 2
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1452,11 +1452,11 @@
   is_no_vote: false
   no_vote_description: ''
   approve: 212
-  disprove: 263
-  abstained: 5
+  disprove: 134
+  abstained: 373
   field18: '0'
   total_voter: 808
-  absent: 1
+  absent: 2
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1491,9 +1491,9 @@
   passed: true
   is_no_vote: false
   no_vote_description: ''
-  approve: 201
-  disprove: 268
-  abstained: 12
+  approve: 365
+  disprove: 315
+  abstained: 15
   field18: '0'
   total_voter: 808
   absent: 1
@@ -1532,7 +1532,7 @@
   no_vote_description: ''
   approve: 206
   disprove: 272
-  abstained: 4
+  abstained: 3
   field18: '0'
   total_voter: 808
   absent: 0
@@ -1571,12 +1571,12 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 199
-  disprove: 273
-  abstained: 5
+  approve: 204
+  disprove: 274
+  abstained: 4
   field18: '0'
   total_voter: 808
-  absent: 3
+  absent: 0
   total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1612,12 +1612,12 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 208
-  disprove: 4
-  abstained: 92
+  approve: 201
+  disprove: 275
+  abstained: 6
   field18: '0'
   total_voter: 808
-  absent: 218
+  absent: 0
   total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1654,11 +1654,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 0
-  disprove: 0
-  abstained: 0
+  approve: 206
+  disprove: 269
+  abstained: 7
   field18: '0'
-  total_voter: 0
+  total_voter: 808
   absent: 0
   total_member: 482
   description_th: >-
@@ -1696,11 +1696,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 0
-  disprove: 0
-  abstained: 0
+  approve: 205
+  disprove: 272
+  abstained: 3
   field18: '0'
-  total_voter: 0
+  total_voter: 808
   absent: 0
   total_member: 480
   description_th: >-
@@ -1738,11 +1738,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 0
-  disprove: 0
-  abstained: 0
+  approve: 215
+  disprove: 258
+  abstained: 8
   field18: '0'
-  total_voter: 0
+  total_voter: 808
   absent: 0
   total_member: 481
   description_th: >-
@@ -1780,12 +1780,12 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 0
-  disprove: 0
-  abstained: 0
+  approve: 212
+  disprove: 263
+  abstained: 5
   field18: '1'
-  total_voter: 0
-  absent: 0
+  total_voter: 808
+  absent: 1
   total_member: 481
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1823,12 +1823,12 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 0
-  disprove: 0
-  abstained: 0
+  approve: 201
+  disprove: 268
+  abstained: 12
   field18: '1'
-  total_voter: 0
-  absent: 0
+  total_voter: 808
+  absent: 1
   total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1864,11 +1864,11 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 0
-  disprove: 0
-  abstained: 0
+  approve: 206
+  disprove: 272
+  abstained: 4
   field18: '0'
-  total_voter: 0
+  total_voter: 808
   absent: 0
   total_member: 482
   description_th: >-
@@ -1904,12 +1904,12 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 0
-  disprove: 0
-  abstained: 0
+  approve: 199
+  disprove: 273
+  abstained: 5
   field18: '1'
-  total_voter: 0
-  absent: 0
+  total_voter: 808
+  absent: 3
   total_member: 479
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1957,12 +1957,12 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 0
-  disprove: 0
-  abstained: 0
+  approve: 208
+  disprove: 4
+  abstained: 92
   field18: '136'
-  total_voter: 0
-  absent: 0
+  total_voter: 808
+  absent: 218
   total_member: 442
   description_th: >-
     จากที่ร่างแก้ไขรัฐธรรมนูญที่มีเนื้อหา 5 มาตรา

@@ -1288,7 +1288,7 @@
     ex_occupation:
       - Member of Parliament
     bio: ''
-  is_mp: true
+  is_mp: false
   is_senator: false
   is_cabinet: true
   is_committee: false
@@ -6920,7 +6920,7 @@
       - Senator
       - Member of Parliament
     bio: ''
-  is_mp: false
+  is_mp: true
   is_senator: false
   is_cabinet: true
   is_committee: false
@@ -26603,7 +26603,7 @@
     bio: ''
   is_mp: true
   is_senator: false
-  is_cabinet: false
+  is_cabinet: true
   is_committee: false
   is_active: true
   party: ประชาธิปัตย์
@@ -26857,7 +26857,7 @@
     bio: ''
   is_mp: true
   is_senator: false
-  is_cabinet: false
+  is_cabinet: true
   is_committee: false
   is_active: true
   party: พลังประชารัฐ
@@ -29347,7 +29347,7 @@
     bio: ''
   is_mp: true
   is_senator: false
-  is_cabinet: false
+  is_cabinet: true
   is_committee: false
   is_active: true
   party: พลังประชารัฐ
@@ -31895,9 +31895,9 @@
     bio: >-
       Former Palang Pracharath's Party-List no. 5 - resigned as MP to be
       Government Spokesperson on 30 Jul 19
-  is_mp: true
+  is_mp: false
   is_senator: false
-  is_cabinet: false
+  is_cabinet: true
   is_committee: false
   is_active: true
   party: พลังประชารัฐ
