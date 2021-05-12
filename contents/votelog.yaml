@@ -763,12 +763,12 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 576
-  disprove: 21
-  abstained: 122
+  approve: 0
+  disprove: 0
+  abstained: 0
   field18: '0'
-  total_voter: 808
-  absent: 2
+  total_voter: 0
+  absent: 0
   total_member: 497
   description_th: >-
     จากญัตติด่วนที่ ส.ส. ทั้งฝ่ายรัฐบาลและฝ่ายค้าน
