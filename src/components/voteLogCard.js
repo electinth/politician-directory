@@ -110,7 +110,7 @@ const VoteLogCard = votelog => {
           marginTop: "2rem",
         }}
       >
-        {calcTotalVoter > 0 ? parseInt((approve / calcTotalVoter) * 100) : 0}%
+        {calcTotalVoter > 0 ? Math.round((approve / calcTotalVoter) * 100) : 0}%
         เห็นด้วย
       </h4>
       <Link
