@@ -141,7 +141,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Vote Log Lists
   const allVotelogs = votelogs.data.allVotelogYaml.edges
-  const votelogPerPage = 4
+  const votelogPerPage = 6
   const numPages = Math.ceil(allVotelogs.length / votelogPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
@@ -187,7 +187,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-    // Motion Category
+  // Motion Category
   const motionCats = await graphql(`
     query {
       allMotionCatYaml {
