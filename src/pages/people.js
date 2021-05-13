@@ -243,24 +243,19 @@ const PeoplePage = ({ data }) => {
               marginTop: "6rem",
             }}
           >
-            {data.allVotelogYaml.edges.map(({ node }) => (
-              <VoteLogCard
-                key={node.id}
-                view={"full"}
-                css={{
-                  width: `calc((var(--container-width) - 4rem) / 2)`,
-                  margin: "0 1rem 2rem 1rem",
-                }}
-                title={node.title}
-                description_th={node.description_th}
-                approve={node.approve}
-                disprove={node.disprove}
-                abstained={node.abstained}
-                absent={node.absent}
-                vote_date={node.vote_date}
-                slug={node.fields.slug}
-              />
-            ))}
+            {data.allVotelogYaml.edges.map(
+              ({ node: { id, fields, ...votelog } }) => (
+                <VoteLogCard
+                  key={id}
+                  css={{
+                    width: `calc((var(--container-width) - 4rem) / 2)`,
+                    margin: "0 1rem 2rem 1rem",
+                  }}
+                  slug={fields.slug}
+                  {...votelog}
+                />
+              )
+            )}
           </div>
           <div
             css={{

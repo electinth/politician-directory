@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import { media } from "../../styles"
 import { graphql } from "gatsby"
 import _ from "lodash"
 import Layout from "../../components/layout"

@@ -291,24 +291,16 @@ const RepresentativesPage = props => {
                 marginTop: "6rem",
               }}
             >
-              {votelogs.map(node => (
+              {votelogs.map(({ id, fields, ...voteLog }) => (
                 <VoteLogCard
-                  key={node.id}
-                  view={"compact"}
+                  isCompact
+                  key={id}
                   css={{
                     width: `calc((var(--container-width) - 4rem) / 2)`,
                     margin: "0 1rem 2rem 1rem",
                   }}
-                  title={node.title}
-                  description_th={node.description_th}
-                  passed={node.passed}
-                  approve={node.approve}
-                  disprove={node.disprove}
-                  abstained={node.abstained}
-                  absent={node.absent}
-                  total_voter={node.total_voter}
-                  vote_date={node.vote_date}
-                  slug={node.fields.slug}
+                  slug={fields.slug}
+                  {...voteLog}
                 />
               ))}
             </div>

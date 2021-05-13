@@ -18,7 +18,7 @@ const VoteLogCard = votelog => {
     absent,
     vote_date,
     slug,
-    view, // "full", "compact"
+    isCompact = false,
   } = votelog
   let { passed } = votelog
 
@@ -38,8 +38,8 @@ const VoteLogCard = votelog => {
         flexDirection: "column",
         width: 300,
         minWidth: 300,
-        height: view !== "compact" ? 450 : 370,
-        minHeight: view !== "compact" ? 450 : 370,
+        height: !isCompact ? 450 : 370,
+        minHeight: !isCompact ? 450 : 370,
         padding: "2rem",
         border: "2px solid var(--cl-black)",
         borderRadius: "10px",
@@ -122,7 +122,7 @@ const VoteLogCard = votelog => {
           {title}
         </h5>
       </Link>
-      {view !== "compact" ? (
+      {!isCompact ? (
         <p
           style={{
             paddingTop: "1rem",
