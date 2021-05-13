@@ -1211,7 +1211,7 @@
   abstained: 122
   field18: '0'
   total_voter: 808
-  absent: 2
+  absent: 0
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1254,7 +1254,7 @@
   abstained: 55
   field18: '0'
   total_voter: 808
-  absent: 2
+  absent: 0
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1294,7 +1294,7 @@
   abstained: 470
   field18: '0'
   total_voter: 808
-  absent: 2
+  absent: 0
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1334,7 +1334,7 @@
   abstained: 432
   field18: '0'
   total_voter: 808
-  absent: 2
+  absent: 0
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1374,7 +1374,7 @@
   abstained: 461
   field18: '0'
   total_voter: 808
-  absent: 2
+  absent: 0
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1415,7 +1415,7 @@
   abstained: 427
   field18: '0'
   total_voter: 808
-  absent: 2
+  absent: 0
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1456,7 +1456,7 @@
   abstained: 373
   field18: '0'
   total_voter: 808
-  absent: 2
+  absent: 0
   total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
@@ -1492,11 +1492,11 @@
   is_no_vote: false
   no_vote_description: ''
   approve: 365
-  disprove: 315
+  disprove: 316
   abstained: 15
   field18: '0'
   total_voter: 808
-  absent: 1
+  absent: 0
   total_member: 697
   description_th: >-
     ญัตติด่วนที่นายไพบูลย์ นิติตะวัน ส.ส.บัญชีรายชื่อ พรรคพลังประชารัฐ
