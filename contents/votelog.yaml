@@ -1209,7 +1209,7 @@
   approve: 576
   disprove: 21
   abstained: 122
-  field18: '2'
+  field18: '0'
   total_voter: 808
   absent: 0
   total_member: 668
@@ -1252,7 +1252,7 @@
   approve: 647
   disprove: 17
   abstained: 55
-  field18: '2'
+  field18: '0'
   total_voter: 808
   absent: 0
   total_member: 668
@@ -1292,7 +1292,7 @@
   approve: 214
   disprove: 34
   abstained: 470
-  field18: '2'
+  field18: '0'
   total_voter: 808
   absent: 0
   total_member: 668
@@ -1332,7 +1332,7 @@
   approve: 267
   disprove: 20
   abstained: 432
-  field18: '2'
+  field18: '0'
   total_voter: 808
   absent: 0
   total_member: 668
@@ -1372,7 +1372,7 @@
   approve: 210
   disprove: 48
   abstained: 461
-  field18: '2'
+  field18: '0'
   total_voter: 808
   absent: 0
   total_member: 668
@@ -1410,10 +1410,10 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 270
-  disprove: 22
-  abstained: 427
-  field18: '2'
+  approve: 268
+  disprove: 19
+  abstained: 432
+  field18: '0'
   total_voter: 808
   absent: 0
   total_member: 668
@@ -1454,7 +1454,7 @@
   approve: 212
   disprove: 135
   abstained: 372
-  field18: '2'
+  field18: '0'
   total_voter: 808
   absent: 0
   total_member: 668
@@ -1497,7 +1497,7 @@
   field18: '0'
   total_voter: 808
   absent: 0
-  total_member: 697
+  total_member: 696
   description_th: >-
     ญัตติด่วนที่นายไพบูลย์ นิติตะวัน ส.ส.บัญชีรายชื่อ พรรคพลังประชารัฐ
     และนายสมชาย แสวงการ ส.ว.
@@ -1960,7 +1960,7 @@
   approve: 208
   disprove: 4
   abstained: 92
-  field18: '136'
+  field18: '218'
   total_voter: 808
   absent: 218
   total_member: 442
