@@ -1209,7 +1209,7 @@
   approve: 576
   disprove: 21
   abstained: 122
-  field18: '0'
+  field18: '2'
   total_voter: 808
   absent: 0
   total_member: 668
@@ -1252,7 +1252,7 @@
   approve: 647
   disprove: 17
   abstained: 55
-  field18: '0'
+  field18: '2'
   total_voter: 808
   absent: 0
   total_member: 668
@@ -1292,7 +1292,7 @@
   approve: 214
   disprove: 34
   abstained: 470
-  field18: '0'
+  field18: '2'
   total_voter: 808
   absent: 0
   total_member: 668
@@ -1332,7 +1332,7 @@
   approve: 267
   disprove: 20
   abstained: 432
-  field18: '0'
+  field18: '2'
   total_voter: 808
   absent: 0
   total_member: 668
@@ -1372,7 +1372,7 @@
   approve: 210
   disprove: 48
   abstained: 461
-  field18: '0'
+  field18: '2'
   total_voter: 808
   absent: 0
   total_member: 668
@@ -1413,7 +1413,7 @@
   approve: 270
   disprove: 22
   abstained: 427
-  field18: '0'
+  field18: '2'
   total_voter: 808
   absent: 0
   total_member: 668
@@ -1452,9 +1452,9 @@
   is_no_vote: false
   no_vote_description: ''
   approve: 212
-  disprove: 134
-  abstained: 373
-  field18: '0'
+  disprove: 135
+  abstained: 372
+  field18: '2'
   total_voter: 808
   absent: 0
   total_member: 668

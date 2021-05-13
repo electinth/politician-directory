@@ -9253,7 +9253,7 @@
     bio: ''
   is_mp: true
   is_senator: false
-  is_cabinet: false
+  is_cabinet: true
   is_committee: false
   is_active: true
   party: พลังประชารัฐ
