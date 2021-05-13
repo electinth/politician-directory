@@ -1452,8 +1452,8 @@
   is_no_vote: false
   no_vote_description: ''
   approve: 212
-  disprove: 135
-  abstained: 372
+  disprove: 138
+  abstained: 369
   field18: '0'
   total_voter: 808
   absent: 0
