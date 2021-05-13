@@ -414,20 +414,3 @@ export function joinPeopleVotelog(people, peopleVotelogs, votelogs, limit = 6) {
     .filter(({ total_voter }) => total_voter > 0)
     .slice(0, limit)
 }
-
-export function calculateVoteLog(votelog) {
-  const { approve, disprove, abstained, absent } = votelog
-  const total_voter = approve + disprove + abstained + absent
-  // Stop calculating passed flag,
-  // we'll use whatever in the "passed" field to accommodate "is_unanimous" case
-  const passed = votelog.passed
-  // const passed = (total_voter > 0 ? approve / total_voter : 0) >= 0.5
-  return {
-    passed,
-    total_voter,
-    approve,
-    disprove,
-    abstained,
-    absent,
-  }
-}

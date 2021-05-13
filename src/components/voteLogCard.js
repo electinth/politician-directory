@@ -3,7 +3,6 @@ import dayjs from "dayjs"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
 
-import { calculateVoteLog } from "../utils"
 import VoteLogLegend from "./voteLogLegend"
 
 import "../styles/global.css"
@@ -22,22 +21,14 @@ const VoteLogCard = votelog => {
     view, // "full", "compact"
   } = votelog
   let { passed } = votelog
-  // Total members who're eligible to vote at that time
-  const { passed: calcPassed, total_voter: calcTotalVoter } = calculateVoteLog(
-    votelog
-  )
 
-  // user may pass "passed" props to show global result
-  // if not, use calculated value
-  if (typeof passed === "undefined") {
-    passed = calcPassed
-  }
+  const totalVoter = approve + disprove + abstained + absent
 
   const resultColor = passed ? "var(--cl-vote-yes)" : "var(--cl-vote-no)"
-  const approveBar = (approve * 100) / calcTotalVoter + "%"
-  const disproveBar = (disprove * 100) / calcTotalVoter + "%"
-  const abstainedBar = (abstained * 100) / calcTotalVoter + "%"
-  const absentBar = (absent * 100) / calcTotalVoter + "%"
+  const approveBar = (approve * 100) / totalVoter + "%"
+  const disproveBar = (disprove * 100) / totalVoter + "%"
+  const abstainedBar = (abstained * 100) / totalVoter + "%"
+  const absentBar = (absent * 100) / totalVoter + "%"
 
   return (
     <div
@@ -110,7 +101,7 @@ const VoteLogCard = votelog => {
           marginTop: "2rem",
         }}
       >
-        {calcTotalVoter > 0 ? Math.round((approve / calcTotalVoter) * 100) : 0}%
+        {totalVoter > 0 ? Math.round((approve / totalVoter) * 100) : 0}%
         เห็นด้วย
       </h4>
       <Link
