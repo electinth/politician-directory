@@ -1780,12 +1780,12 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 212
+  approve: 213
   disprove: 263
   abstained: 5
-  field18: '1'
+  field18: '0'
   total_voter: 808
-  absent: 1
+  absent: 0
   total_member: 481
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1823,12 +1823,12 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 201
+  approve: 202
   disprove: 268
   abstained: 12
-  field18: '1'
+  field18: '0'
   total_voter: 808
-  absent: 1
+  absent: 0
   total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
@@ -1904,12 +1904,12 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 199
+  approve: 200
   disprove: 273
   abstained: 5
-  field18: '1'
+  field18: '2'
   total_voter: 808
-  absent: 3
+  absent: 2
   total_member: 479
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
