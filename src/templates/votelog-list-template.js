@@ -77,22 +77,16 @@ const VoteLogWrapper = votelogs => {
         marginTop: "6rem",
       }}
     >
-      {data.map(({ node }) => (
+      {data.map(({ node: { id, fields, ...voteLog } }) => (
         <VoteLogCard
-          key={node.id}
-          view={"full"}
+          key={id}
+          view="full"
           css={{
             width: `calc((var(--container-width) - 4rem) / 2)`,
             margin: "0 1rem 2rem 1rem",
           }}
-          title={node.title}
-          description_th={node.description_th}
-          approve={node.approve}
-          disprove={node.disprove}
-          abstained={node.abstained}
-          absent={node.absent}
-          vote_date={node.vote_date}
-          slug={node.fields.slug}
+          slug={fields.slug}
+          {...voteLog}
         />
       ))}
     </div>
