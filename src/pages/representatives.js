@@ -99,7 +99,6 @@ export const query = graphql`
     }
     allVotelogYaml(
       filter: { is_active: { eq: true } }
-      limit: 6
       sort: { fields: vote_date, order: DESC }
     ) {
       totalCount
@@ -202,7 +201,7 @@ const RepresentativesPage = props => {
     data.allPeopleYaml,
     data.allPeopleVoteYaml,
     data.allVotelogYaml
-  ).filter(vote => vote.total_voter > 0)
+  )
 
   return (
     <Layout pageStyles={{ background: "#eeeeee" }}>
