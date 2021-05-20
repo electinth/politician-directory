@@ -19,8 +19,8 @@ const VoteLogCard = votelog => {
     vote_date,
     slug,
     isCompact = false,
+    passed,
   } = votelog
-  let { passed } = votelog
 
   const totalVoter = approve + disprove + abstained + absent
 
