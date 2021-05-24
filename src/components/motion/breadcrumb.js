@@ -1,5 +1,5 @@
 import React from "react"
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 import { is_tablet, device } from "./size"
 import { useContext } from "react"
 import { MenuContext, MenuChoice } from "../../templates/motion-template"

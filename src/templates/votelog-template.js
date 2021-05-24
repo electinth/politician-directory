@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 import _ from "lodash"
 
 import ExternalLink from "../components/externalLink"

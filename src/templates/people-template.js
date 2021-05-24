@@ -10,7 +10,7 @@ import OfficialWebsite from "../components/profile/officialWebsite"
 import PeopleVote from "../components/peopleVote"
 import PeopleStatus from "../components/peopleStatus"
 
-import styles from "./people-template.module.css"
+import { hr } from "./people-template.module.css"
 import "../styles/profile-book.css"
 
 export const query = graphql`
@@ -305,20 +305,20 @@ const PeoplePage = props => {
               />
               ข้อมูลพื้นฐาน
             </h2>
-            <hr className={`${styles.hr}`} />
+            <hr className={hr} />
             <MPParty {...person}></MPParty>
             <PersonAffiliation {...person}></PersonAffiliation>
             <PersonPosition {...person}></PersonPosition>
 
-            <hr className={`${styles.hr}`} />
+            <hr className={hr} />
 
             <PersonRecord {...person}></PersonRecord>
 
-            <hr className={`${styles.hr}`} />
+            <hr className={hr} />
 
             <PersonFinance {...person}></PersonFinance>
 
-            <hr className={`${styles.hr}`} />
+            <hr className={hr} />
 
             <h2 css={{ ...cssEngTitle }}>Official Website</h2>
             <OfficialWebsite {...person}></OfficialWebsite>

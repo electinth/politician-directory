@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import _ from "lodash"
 
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 
 import Profile from "./profile"
 import { breakpoint } from "./size"

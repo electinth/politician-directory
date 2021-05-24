@@ -1,6 +1,6 @@
 import React from "react"
 import _ from "lodash"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import FloatingCard from "../components/floatingCard"
@@ -9,7 +9,7 @@ import { media } from "../styles"
 import ExternalLink from "../components/externalLink"
 import MotionSubCatCard from "../components/motionSubCatCard"
 import BarChart from "../components/motion/barchart"
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 import StatusBarChart from "../components/motion/statusBarChart"
 import { statusColors } from "../components/motionStatusChip"
 

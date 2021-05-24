@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-import { css, Global } from "@emotion/core"
+import { css, Global } from "@emotion/react"
 
 class ToggleSwitch extends Component {
   switchOn = (

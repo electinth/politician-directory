@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import styled from "@emotion/styled"
 
 import Layout from "../components/layout"
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 import Info from "../components/motion/info"
 import Nominator from "../components/motion/nominator"
 import MotionMenu from "../components/motion/motionmenu"

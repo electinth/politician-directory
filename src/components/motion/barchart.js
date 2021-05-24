@@ -1,5 +1,5 @@
 import React from "react"
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 import { scaleLinear, scaleBand } from "d3-scale"
 import { useRef } from "react"
 import { useState } from "react"

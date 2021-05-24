@@ -22,16 +22,10 @@ export const query = graphql`
       id
       name
       short_name
-      description
       established_date
       dissolved_date
       color
-      en {
-        name
-        description
-      }
       party_group
-      total_member
       party_leader
       party_secretary
       website
@@ -39,7 +33,6 @@ export const query = graphql`
       twitter
       email
       phone
-      ratchakitcha
       is_active
     }
     allPeopleYaml(

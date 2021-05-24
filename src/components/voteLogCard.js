@@ -1,7 +1,7 @@
 import React from "react"
 import dayjs from "dayjs"
 import { Link } from "gatsby"
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 
 import VoteLogLegend from "./voteLogLegend"
 
