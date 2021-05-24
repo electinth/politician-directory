@@ -19,15 +19,9 @@ export const query = graphql`
       description
       established_date
       dissolved_date
-      total_member
-      prime_minister
-      deputy_prime_minister
       website
       facebook
       twitter
-      email
-      phone
-      ratchakitcha
       is_active
     }
     allPeopleYaml(

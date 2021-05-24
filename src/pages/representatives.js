@@ -26,7 +26,6 @@ export const query = graphql`
       description
       established_date
       dissolved_date
-      total_member
       speaker
       first_deputy_speaker
       second_deputy_speaker
@@ -34,9 +33,6 @@ export const query = graphql`
       website
       facebook
       twitter
-      email
-      phone
-      ratchakitcha
       is_active
     }
     allPeopleYaml(filter: { is_mp: { eq: true }, is_active: { eq: true } }) {

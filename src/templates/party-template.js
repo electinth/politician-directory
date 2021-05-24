@@ -31,8 +31,6 @@ export const query = graphql`
       website
       facebook
       twitter
-      email
-      phone
       is_active
     }
     allPeopleYaml(
