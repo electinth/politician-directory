@@ -126,12 +126,7 @@ const Header = ({ siteTitle }) => {
       }}
     >
       <EnvBadge />
-      {iconClicked && (
-        <Menu
-          siteTitle={siteTitle}
-          list={[{ path: "/", label: "Home" }, { path: "/", label: "Home" }]}
-        />
-      )}
+      {iconClicked && <Menu siteTitle={siteTitle} />}
       <div css={cssHeader}>
         <h1 className="logo" style={{ width: "25%", flexGrow: 1 }}>
           <Link

@@ -123,7 +123,7 @@ const Menu = ({ siteTitle }) => {
   return (
     <div className="menu-wrapper">
       <h2 css={menuHeader}>
-        <Link to={"/"}>{siteTitle}</Link>
+        <Link to="/">{siteTitle}</Link>
       </h2>
 
       <ul css={menuList}>
@@ -132,7 +132,7 @@ const Menu = ({ siteTitle }) => {
             <span css={cssMenuIcon}>
               <Img fixed={staticData.cabinetImage.childImageSharp.fixed} />
             </span>
-            <Link to={"/cabinet"}>คณะรัฐมนตรี</Link>
+            <Link to="/cabinet">คณะรัฐมนตรี</Link>
           </span>
         </li>
         <li>
@@ -140,7 +140,7 @@ const Menu = ({ siteTitle }) => {
             <span css={cssMenuIcon}>
               <Img fixed={staticData.senateImage.childImageSharp.fixed} />
             </span>
-            <Link to={"/senate"}>สมาชิกวุฒิสภา</Link>
+            <Link to="/senate">สมาชิกวุฒิสภา</Link>
           </span>
         </li>
         <li>
@@ -150,7 +150,7 @@ const Menu = ({ siteTitle }) => {
                 fixed={staticData.representativeImage.childImageSharp.fixed}
               />
             </span>
-            <Link to={"/representatives"}>สมาชิกสภาผู้แทนราษฎร</Link>
+            <Link to="/representatives">สมาชิกสภาผู้แทนราษฎร</Link>
           </span>
         </li>
         <li>
@@ -161,34 +161,20 @@ const Menu = ({ siteTitle }) => {
                 style={{ transform: "translate(2px, 0)" }}
               />
             </span>
-            <Link to={"/votelog"}>สรุปวาระการลงมติ</Link>
+            <Link to="/votelog">สรุปวาระการลงมติ</Link>
           </span>
         </li>
         <li>
           <span>
-            <span css={cssMenuIcon}>
-              <Img
-                fixed={staticData.voteRecordImage.childImageSharp.fixed}
-                style={{ transform: "translate(2px, 0)" }}
-              />
-            </span>
-            <Link to={"/senate/score"}>สรุปวาระการลงมติ ส.ว.</Link>
+            <Link to="/archive">Archive</Link>
           </span>
         </li>
         <li>
           <span>
-            <Link to={"/about"}>เกี่ยวกับเรา</Link>
+            <Link to="/about">เกี่ยวกับเรา</Link>
           </span>
         </li>
       </ul>
-
-      <div css={languageMenu} style={{ display: "none" }}>
-        <a className="active" href="/">
-          TH
-        </a>
-        {" / "}
-        <a href="/">EN</a>
-      </div>
     </div>
   )
 }
