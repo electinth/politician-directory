@@ -249,7 +249,7 @@ const VotelogPage = ({
               },
             }}
           >
-            ผู้มีสิทธิ์ลงคะแนน {total_voter} คน
+            ผู้เข้าร่วมประชุม {total_voter} คน
           </span>
         </span>
       </section>
