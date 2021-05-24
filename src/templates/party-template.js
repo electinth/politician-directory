@@ -21,6 +21,9 @@ export const query = graphql`
     ) {
       id
       name
+      en {
+        name
+      }
       short_name
       established_date
       dissolved_date
