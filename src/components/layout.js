@@ -25,29 +25,28 @@ const Layout = ({ children, pageStyles, mainStyles, className }) => {
   `)
 
   return (
-    <>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+        ...pageStyles,
+      }}
+    >
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
+
+      <main
         style={{
-          margin: `0 auto`,
-          paddingTop: 0,
-          minHeight: "calc(100vh - 80px)",
-          ...pageStyles,
+          ...mainStyles,
+          width: "100%",
+          flex: 1,
         }}
+        className={className}
       >
-        <main
-          style={{
-            margin: "0 auto",
-            padding: 0,
-            ...mainStyles,
-          }}
-          className={className}
-        >
-          {children}
-        </main>
-        <Footer />
-      </div>
-    </>
+        {children}
+      </main>
+      <Footer />
+    </div>
   )
 }
 

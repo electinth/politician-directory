@@ -28,7 +28,7 @@ const cssSection = {
 
 const cssSubSection = {
   fontFamily: "var(--ff-text)",
-  margin: "0 0 3rem 0",
+  margin: "0 auto 3rem",
   paddingBottom: "2rem",
   borderBottom: "3px solid var(--cl-black)",
   maxWidth: "832px",
