@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -38,8 +38,8 @@ const Archive = () => (
     </section>
     <section style={{ maxWidth: 720, margin: "0 auto" }}>
       {archivePages.map(({ name, description, page }) => (
-        <a
-          href={page}
+        <Link
+          to={page}
           style={{
             display: "flex",
             flexDirection: "column",
@@ -52,7 +52,7 @@ const Archive = () => (
         >
           <h2 style={{ fontSize: "2.4rem" }}>{name}</h2>
           <p style={{ margin: 0 }}>{description}</p>
-        </a>
+        </Link>
       ))}
     </section>
   </Layout>
