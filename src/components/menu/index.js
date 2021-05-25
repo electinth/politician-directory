@@ -166,7 +166,7 @@ const Menu = ({ siteTitle }) => {
         </li>
         <li>
           <span>
-            <Link to="/archive">Archive</Link>
+            <Link to="/archive">คลังข้อมูลน่าสนใจ</Link>
           </span>
         </li>
         <li>

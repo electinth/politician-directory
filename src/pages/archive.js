@@ -18,7 +18,7 @@ const archivePages = [
 
 const Archive = () => (
   <Layout>
-    <SEO title="Archive" />
+    <SEO title="คลังข้อมูลน่าสนใจ" />
     <section
       css={{
         fontSize: "1.8rem",
@@ -33,7 +33,7 @@ const Archive = () => (
           textAlign: "center",
         }}
       >
-        Archives
+        คลังข้อมูลน่าสนใจ
       </h1>
     </section>
     <section style={{ maxWidth: 720, margin: "0 auto" }}>
