@@ -1,33 +1,8 @@
-import React, { useState } from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
-
-import { politicianPicture } from "../utils"
+import React from "react"
 import { media } from "../styles"
-
-import { LazyLoadComponent } from "react-lazy-load-image-component"
+import PeopleAvatar from "./peopleAvatar"
 
 export const ProfilePicture = props => {
-  const data = useStaticQuery(graphql`
-    {
-      placeholderImage: file(
-        relativePath: { eq: "images/people/placeholder.png" }
-      ) {
-        childImageSharp {
-          gatsbyImageData(width: 84, layout: CONSTRAINED)
-        }
-      }
-    }
-  `)
-
-  const [imageStyle, setImageStyle] = useState({ display: "display" })
-  const [placeholderStyle, setPlaceholderStyle] = useState({ display: "none" })
-
-  const onImageError = e => {
-    setImageStyle({ display: "none" })
-    setPlaceholderStyle({ display: "block" })
-  }
-
   return (
     <div
       className="profile-picture"
@@ -44,25 +19,8 @@ export const ProfilePicture = props => {
         backgroundSize: "cover",
         overflow: "hidden",
       }}
-      style={
-        {
-          // backgroundImage: `url(${politicianPicture(props)})`,
-        }
-      }
     >
-      <LazyLoadComponent>
-        <img
-          src={politicianPicture(props)}
-          alt={`${props.title} ${props.name} ${props.lastname}`}
-          css={{ width: "100%" }}
-          style={imageStyle}
-          onError={onImageError}
-        ></img>
-        <GatsbyImage
-          image={data.placeholderImage.childImageSharp.gatsbyImageData}
-          style={placeholderStyle}
-        />
-      </LazyLoadComponent>
+      <PeopleAvatar {...props} />
     </div>
   )
 }

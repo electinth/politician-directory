@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { politicianPicture } from "../utils"
+import PeopleAvatar from "./peopleAvatar"
 
 const MPInfo = props => (
   <div
@@ -19,7 +19,8 @@ const MPInfo = props => (
 )
 
 const PeopleCardMini = props => {
-  let peopleInfo = MPInfo(props)
+  const peopleInfo = MPInfo(props)
+
   return (
     <div
       key={props.id}
@@ -48,11 +49,11 @@ const PeopleCardMini = props => {
               border: "2px solid var(--cl-black)",
               background: "var(--cl-gray-2) no-repeat",
               backgroundSize: "cover",
+              overflow: "hidden",
             }}
-            style={{
-              backgroundImage: `url(${politicianPicture(props)})`,
-            }}
-          ></div>
+          >
+            <PeopleAvatar {...props} />
+          </div>
         </Link>
       </div>
       <div style={{ marginTop: "2rem" }}>{peopleInfo}</div>

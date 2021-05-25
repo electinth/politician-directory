@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { formatNumber, ageFromBirthdate, politicianPicture } from "../utils"
+import { formatNumber, ageFromBirthdate } from "../utils"
 import ExternalLink from "../components/externalLink"
 import OfficialWebsite from "../components/profile/officialWebsite"
 import PeopleVote from "../components/peopleVote"
@@ -12,6 +12,7 @@ import PeopleStatus from "../components/peopleStatus"
 
 import { hr } from "./people-template.module.css"
 import "../styles/profile-book.css"
+import PeopleAvatar from "../components/peopleAvatar"
 
 export const query = graphql`
   query($slug: String!, $name: String!, $lastname: String!, $party: String!) {
@@ -280,13 +281,7 @@ const PeoplePage = props => {
                   marginBottom: 20,
                 }}
               >
-                <img
-                  css={{
-                    maxHeight: 240,
-                  }}
-                  alt=""
-                  src={politicianPicture(person)}
-                />
+                <PeopleAvatar {...person} />
               </div>
               <h1 css={{ ...cssH1, margin: "1rem 0 0 0" }}>{personFullName}</h1>
               <PeopleStatus isActive={person.is_active} />

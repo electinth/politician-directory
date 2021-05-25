@@ -1,45 +1,7 @@
 import React from "react"
-
 import styled from "@emotion/styled"
-
-import { politicianPicture } from "../../utils"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
-import { useState } from "react"
-
-const ProfilePic = ({ name, last_name }) => {
-  const [showPlaceholder, setShowPlaceholder] = useState(false)
-  const data = useStaticQuery(graphql`
-    {
-      placeholderImage: file(
-        relativePath: { eq: "images/people/placeholder.png" }
-      ) {
-        childImageSharp {
-          gatsbyImageData(width: 84, layout: CONSTRAINED)
-        }
-      }
-    }
-  `)
-
-  const profile = { name, lastname: last_name }
-  return (
-    <>
-      {!showPlaceholder ? (
-        <img
-          src={politicianPicture(profile)}
-          alt={[name, last_name, "profile"].join(" ")}
-          onError={() => {
-            setShowPlaceholder(true)
-          }}
-        />
-      ) : (
-        <GatsbyImage
-          image={data.placeholderImage.childImageSharp.gatsbyImageData}
-        />
-      )}
-    </>
-  )
-}
+import { Link } from "gatsby"
+import PeopleAvatar from "../peopleAvatar"
 
 const ProfileContainer = styled.li`
   list-style: none;
@@ -77,11 +39,11 @@ const ProfileContainer = styled.li`
   }
 `
 
-const profile = ({ name, last_name, party, slug, oneline }) => {
+const Profile = ({ name, last_name, party, slug, oneline }) => {
   return (
     <ProfileContainer oneline={oneline}>
       <div className="profile-pic">
-        <ProfilePic name={name} last_name={last_name} />
+        <PeopleAvatar name={name} lastname={last_name} />
       </div>
       <div className={oneline && "oneline"}>
         <div className="name">
@@ -96,6 +58,5 @@ const profile = ({ name, last_name, party, slug, oneline }) => {
     </ProfileContainer>
   )
 }
-const Profile = styled(profile)``
 
 export default Profile

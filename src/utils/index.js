@@ -65,16 +65,6 @@ export function peopleSlug(fullname) {
  * Create poltician profile image URL
  * @param {People} profile
  */
-export function politicianPicture(profile) {
-  if (!profile.name || !profile.lastname) return ""
-  return `https://elect.thematter.co/data/politicians/${
-    profile.name
-  }-${profile.lastname.replace(/ /g, "-")}.jpg`
-}
-/**
- * Create poltician profile image URL
- * @param {People} profile
- */
 export function partyLogo(partyName) {
   return `https://elect.in.th/candidates/statics/party-logos/${partyName}.png`
 }

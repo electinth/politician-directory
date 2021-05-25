@@ -8,11 +8,9 @@ import styled from "@emotion/styled"
 import DropDown from "../dropdown"
 import download from "../../images/icons/download/download.png"
 import search from "../../images/icons/search/search-grey.png"
-import { politicianPicture } from "../../utils"
 import { media } from "../../styles"
 import _ from "lodash"
-import { GatsbyImage } from "gatsby-plugin-image"
-import { LazyLoadComponent } from "react-lazy-load-image-component"
+import PeopleAvatar from "../peopleAvatar"
 
 const cssContainer = ({ isShowAll }) => ({
   display: "flex",
@@ -175,18 +173,6 @@ const AutoComplete = ({
   allSenateVoteYaml,
   allPeopleYaml,
 }) => {
-  const data = useStaticQuery(graphql`
-    {
-      placeholderImage: file(
-        relativePath: { eq: "images/people/placeholder.png" }
-      ) {
-        childImageSharp {
-          gatsbyImageData(width: 84, layout: CONSTRAINED)
-        }
-      }
-    }
-  `)
-  const [showPlaceholder, setShowPlaceholder] = useState(false)
   const [value, setValue] = useState("")
   const [suggestions, setSuggestions] = useState([])
   const [senator, setSenator] = useState([])
@@ -324,7 +310,6 @@ const AutoComplete = ({
       const match = _.find(senator, ["fullname", newValue])
       setValueSelected(match)
       setSenatorId(match.id)
-      setShowPlaceholder(false)
       setSearchFullname(true)
     } else {
       setValueSelected({})
@@ -368,25 +353,7 @@ const AutoComplete = ({
       <div css={cssClearIcon} onClick={clearInput} />
       <img css={cssSearchIcon} src={search} />
       {_.isEmpty(valueSelected) ||
-        (value !== "ทั้งหมด" && (
-          <LazyLoadComponent>
-            {!showPlaceholder ? (
-              <img
-                src={politicianPicture(valueSelected)}
-                css={cssImg}
-                alt={`${valueSelected.title} ${valueSelected.name} ${valueSelected.lastname}`}
-                onError={() => {
-                  setShowPlaceholder(true)
-                }}
-              />
-            ) : (
-              <GatsbyImage
-                image={data.placeholderImage.childImageSharp.gatsbyImageData}
-                css={cssImg}
-              />
-            )}
-          </LazyLoadComponent>
-        ))}
+        (value !== "ทั้งหมด" && <PeopleAvatar {...valueSelected} />)}
       <input {...inputProps} />
     </div>
   )
