@@ -62,14 +62,6 @@ export function peopleSlug(fullname) {
 }
 
 /**
- * Create poltician profile image URL
- * @param {People} profile
- */
-export function partyLogo(partyName) {
-  return `https://elect.in.th/candidates/statics/party-logos/${partyName}.png`
-}
-
-/**
  * Calcaulate person's age from his/her birthdaty
  * @param {String, Date} birthdate Date format accepted by dayjs
  */

@@ -1,10 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import _ from "lodash"
-
-import { LazyLoadImage } from "react-lazy-load-image-component"
-
-import { partyLogo } from "../utils"
+import PartyLogo from "./partyLogo"
 
 const cssMPColumn = {
   display: "block",
@@ -20,8 +17,6 @@ const cssMPColumn = {
     padding: "2rem",
   },
   img: {
-    height: "4.5rem",
-    width: "4.5rem",
     borderRadius: "50%",
     display: "inline-block",
     verticalAlign: "middle",
@@ -98,6 +93,24 @@ const PartyGroupList = ({ paneHeaderStyle }) => {
     return members
   }
 
+  const PartyListItem = ({ node }) => (
+    <Link
+      key={node.name}
+      to={node.fields.slug}
+      style={{
+        fontSize: "2.2rem",
+        display: "flex",
+        flexDirection: "row",
+        marginBottom: "0.5rem",
+      }}
+    >
+      <PartyLogo name={node.name} />
+      <p style={{ margin: "auto 10px" }}>
+        {node.name} ({totalActiveMember(node.name)})
+      </p>
+    </Link>
+  )
+
   return (
     <div
       css={{
@@ -114,13 +127,7 @@ const PartyGroupList = ({ paneHeaderStyle }) => {
         </h3>
         <ul>
           {getSortedParties("ร่วมรัฐบาล").map(({ node }) => (
-            <div key={node.name} css={{ fontSize: "2.2rem" }}>
-              <Link to={node.fields.slug}>
-                <LazyLoadImage src={partyLogo(node.name)} alt={node.name} />{" "}
-                {node.name}&nbsp;
-              </Link>
-              ({totalActiveMember(node.name)})
-            </div>
+            <PartyListItem node={node} />
           ))}
         </ul>
       </div>
@@ -130,13 +137,7 @@ const PartyGroupList = ({ paneHeaderStyle }) => {
         </h3>
         <ul>
           {getSortedParties("ฝ่ายค้าน").map(({ node }) => (
-            <div key={node.name} css={{ fontSize: "2.2rem" }}>
-              <Link to={node.fields.slug}>
-                <LazyLoadImage src={partyLogo(node.name)} alt={node.name} />{" "}
-                {node.name}&nbsp;
-              </Link>
-              ({totalActiveMember(node.name)})
-            </div>
+            <PartyListItem node={node} />
           ))}
         </ul>
       </div>
