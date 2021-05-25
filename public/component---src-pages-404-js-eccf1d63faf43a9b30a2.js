@@ -1,0 +1,2 @@
+(self.webpackChunkpolitician_directory=self.webpackChunkpolitician_directory||[]).push([[883],{9616:function(t,e,n){"use strict";n.r(e);n(7294);var u=n(4738),i=n(6179),l=n(4382);e.default=function(){return(0,l.tZ)(u.Z,null,(0,l.tZ)(i.Z,{title:"404: Not found"}),(0,l.tZ)("h1",null,"NOT FOUND"),(0,l.tZ)("p",null,"You just hit a route that doesn't exist... the sadness."))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-eccf1d63faf43a9b30a2.js.map

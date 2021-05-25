@@ -1,6 +1,6 @@
 - id: '1'
   title: ลงมติเลือกนายกรัฐมนตรี
-  is_active: true
+  is_active: false
   en:
     title: Prime Minister Approval
     legal_title: >-
@@ -18,13 +18,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 500
-  disprove: 244
-  abstained: 3
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 748
   description_th: >-
     การประชุมร่วมกันของทั้ง ส.ส. และ ส.ว. ครั้งแรก
     เพื่อพิจารณาและลงมติเลือกคนที่จะมาเป็นนายกรัฐมนตรี โดยมีสองชื่อที่ถูกเสนอ
@@ -49,6 +42,11 @@
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190606122944A0.pdf
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4135#!
+  approve: 500
+  disprove: 244
+  abstained: 3
+  absent: 0
+  total_voter: 808
 - id: '2'
   title: ตั้งคณะกรรมาธิการผู้มีความหลากหลายทางเพศ
   is_active: true
@@ -71,13 +69,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 101
-  disprove: 365
-  abstained: 13
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 499
   description_th: >-
     วันที่ 22 สิงหาคม 2562
     การประชุมของสภาผู้แทนราษฎรเพื่อพิจารณาร่างข้อบังคับการประชุม
@@ -106,6 +97,11 @@
         https://library2.parliament.go.th/giventake/content_give/force-hr2562.pdf
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4154
+  approve: 101
+  disprove: 365
+  abstained: 13
+  absent: 0
+  total_voter: 808
 - id: '3'
   title: ขยายสัญญาสัมปทานทางด่วนและรถไฟฟ้าบีทีเอส
   is_active: true
@@ -125,13 +121,6 @@
   passed: true
   is_no_vote: false
   no_vote_description: ''
-  approve: 412
-  disprove: 25
-  abstained: 20
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 497
   description_th: >-
     วันที่ 5 กันยายน 2562
     ที่ประชุมสภาผู้แทนราษฎรมีมติเห็นชอบด้วยกับข้อเสนอตามรายงานของคณะกรรมาธิการวิสามัญ
@@ -158,6 +147,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4156#!
+  approve: 412
+  disprove: 25
+  abstained: 20
+  absent: 0
+  total_voter: 808
 - id: '4'
   title: ตั้งคณะกรรมาธิการวิสามัญพิจารณาผลกระทบโครงการอีอีซี
   is_active: true
@@ -176,13 +170,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 224
-  disprove: 231
-  abstained: 2
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 497
   description_th: >-
     Eastern Economic Corridor (EEC) หรือ โครงการระเบียงเศรษฐกิจพิเศษภาคตะวันออก
     เป็นหนึ่งในนโยบายหลักของรัฐบาล คสช.2
@@ -233,6 +220,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4158
+  approve: 224
+  disprove: 231
+  abstained: 2
+  absent: 0
+  total_voter: 808
 - id: '5'
   title: พิจารณาพ.ร.ก.โอนกำลังพลและงบประมาณฯ
   is_active: true
@@ -253,13 +245,6 @@
   passed: true
   is_no_vote: false
   no_vote_description: ''
-  approve: 374
-  disprove: 70
-  abstained: 2
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 486
   description_th: >-
     30 กันยายน 2562 พล.อ.ประยุทธ์ จันทร์โอชา ในฐานะนายกรัฐมนตรีภายใต้รัฐบาล
     'คสช.2' ลงนามออกกฎหมายเป็นพระราชกำหนด (พ.ร.ก.)
@@ -310,6 +295,11 @@
       link: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/A/103/T_0001.PDF'
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4162
+  approve: 374
+  disprove: 70
+  abstained: 2
+  absent: 0
+  total_voter: 808
 - id: '6'
   title: พ.ร.บ.งบประมาณฯ วาระที่ 1
   is_active: true
@@ -327,13 +317,6 @@
   passed: true
   is_no_vote: false
   no_vote_description: ''
-  approve: 251
-  disprove: 0
-  abstained: 234
-  field18: '0'
-  total_voter: 808
-  absent: 1
-  total_member: 497
   description_th: >-
     ทางปฏิบัติในการบริหารราชการแผ่นดิน เมื่อรัฐบาลต้องการงบประมาณจะเสนอเป็น
     ร่างพ.ร.บ.งบประมาณรายจ่ายประจำปี ทุกปี
@@ -382,6 +365,11 @@
       link: 'http://bbstore.bb.go.th/cms/1570699357_1282.pdf'
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4162
+  approve: 251
+  disprove: 0
+  abstained: 234
+  absent: 1
+  total_voter: 808
 - id: '7'
   title: ตั้ง กมธ.วิสามัญศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
   is_active: false
@@ -398,13 +386,6 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 400
-  disprove: 0
-  abstained: 0
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 497
   description_th: >-
     จากประเด็นสารเคมี 3 ตัว ประกอบด้วย พาราควอต ไกลโฟเซต และคลอร์ไพริฟอส
     ถูกใช้ในภาคเกษตรกรรมและเป็นอันตรายต่อสุขภาพของคนไทยจำนวนมาก
@@ -419,6 +400,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4158
+  approve: 400
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 808
 - id: '8'
   title: ตั้ง กมธ. วิสามัญ ศึกษาโครงการผันน้ำ โขง เลย ชี มูล ป่าสัก
   is_active: true
@@ -434,13 +420,6 @@
   passed: true
   is_no_vote: false
   no_vote_description: ''
-  approve: 392
-  disprove: 0
-  abstained: 1
-  field18: '1'
-  total_voter: 808
-  absent: 1
-  total_member: 498
   description_th: >-
     เนื่องจากภาคตะวันออกเฉียงเหนือเป็นภูมิภาคที่มีพื้นที่การเกษตรจำนวนเกือบ
     70,000,000 ไร่ แต่มีพื้นที่ชลประทานน้อยที่สุดเพียง 8.06 ล้านไร่
@@ -463,6 +442,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4169
+  approve: 392
+  disprove: 0
+  abstained: 1
+  absent: 1
+  total_voter: 808
 - id: '9'
   title: ตั้ง กมธ.วิสามัญ ศึกษาผลกระทบจาก ม. 44
   is_active: true
@@ -481,13 +465,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 5
-  disprove: 244
-  abstained: 6
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 498
   description_th: >-
     จากญัตติด่วนให้ตั้งคณะกรรมาธิการวิสามัญเพื่อศึกษาผลกระทบจาก ม.44
     ที่คงอยู่หลังช่วงรัฐประหาร ในวันที่ 27 พ.ย. 2562 ที่ประชุมได้ลงมติให้ตั้ง
@@ -520,6 +497,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4172
+  approve: 5
+  disprove: 244
+  abstained: 6
+  absent: 0
+  total_voter: 808
 - id: '10'
   title: ตั้ง กมธ.วิสามัญ ตรวจสอบละเมิดสิทธิมนุษยชน
   is_active: true
@@ -538,13 +520,6 @@
   passed: true
   is_no_vote: false
   no_vote_description: ''
-  approve: 411
-  disprove: 0
-  abstained: 2
-  field18: '1'
-  total_voter: 808
-  absent: 1
-  total_member: 498
   description_th: >-
     จากกรณีการถูกละเมิดสิทธิมนุษยชนและถูกประทุษร้ายของประชาชน
     โดยเฉพาะปัญหาความรุนแรงในพื้นที่จังหวัดชายแดนใต้ ส.ส.
@@ -566,6 +541,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4175
+  approve: 411
+  disprove: 0
+  abstained: 2
+  absent: 1
+  total_voter: 808
 - id: '11'
   title: >-
     ขอถอนญัตติ ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบกฎอัยการศึก และพรก.ฉุกเฉินในพื้นที่
@@ -587,13 +567,6 @@
   passed: true
   is_no_vote: false
   no_vote_description: ''
-  approve: 240
-  disprove: 78
-  abstained: 150
-  field18: '1'
-  total_voter: 808
-  absent: 1
-  total_member: 499
   description_th: ''
   description_en: ''
   document:
@@ -604,6 +577,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4170
+  approve: 240
+  disprove: 78
+  abstained: 150
+  absent: 1
+  total_voter: 808
 - id: '12'
   title: ตั้ง กมธ. วิสามัญ ตรวจสอบโครงการก่อสร้างอาคารรัฐสภาแห่งใหม่
   is_active: true
@@ -619,13 +597,6 @@
   passed: true
   is_no_vote: false
   no_vote_description: ''
-  approve: 354
-  disprove: 0
-  abstained: 2
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 498
   description_th: >-
     จากกรณีที่สังคมตั้งคำถามว่า การก่อสร้างรัฐสภาใหม่ ที่สำนักงานเลขาธิการสภาฯ
     ว่าจ้างบริษัท ซิโน-ไทย เอ็นจีเนียริ่ง แอนด์คอนสตรัคชั่น จำกัด (มหาชน) วงเงิน
@@ -653,6 +624,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4176
+  approve: 354
+  disprove: 0
+  abstained: 2
+  absent: 0
+  total_voter: 808
 - id: '13'
   title: ตั้ง กมธ.วิสามัญศึกษาโครงการจัดตั้งกระทรวงการข้าว
   is_active: true
@@ -668,13 +644,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 10
-  disprove: 343
-  abstained: 0
-  field18: '0'
-  total_voter: 808
-  absent: 2
-  total_member: 497
   description_th: >-
     ด้วยปัจจุบันประชากรส่วนใหญ่ของประเทศประกอบอาชีพเกษตรกรรม
     แต่กลับมีฐานะยากจนและถูกเอารัดเอาเปรียบมาโดยตลอด
@@ -700,6 +669,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
+  approve: 10
+  disprove: 343
+  abstained: 0
+  absent: 2
+  total_voter: 808
 - id: '14'
   title: ตั้ง กมธ. วิสามัญ ศึกษาแนวทางป้องกันไม่ให้เกิดการรัฐประหารขึ้นอีกในอนาคต
   is_active: true
@@ -717,13 +691,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 216
-  disprove: 242
-  abstained: 2
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 498
   description_th: >-
     จากกรณี ส.ส. พรรคฝ่ายค้าน ยกประเด็นว่าการรัฐประหาร 2
     ครั้งล่าสุดเป็นต้นเหตุของการเกิดวิกฤติการการเมือง
@@ -748,6 +715,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4193
+  approve: 216
+  disprove: 242
+  abstained: 2
+  absent: 0
+  total_voter: 808
 - id: '15'
   title: ตั้ง กมธ.วิสามัญ ศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
   is_active: false
@@ -763,13 +735,6 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 0
-  disprove: 0
-  abstained: 0
-  field18: '0'
-  total_voter: 0
-  absent: 0
-  total_member: 497
   description_th: >-
     จากญัตติด่วนที่ ส.ส. ทั้งฝ่ายรัฐบาลและฝ่ายค้าน
     พูดถึงปัญหาราคาผลผลิตทางการเกษตรที่ตกต่ำประจำทุกปี รวมถึงสินค้าการประมง
@@ -792,6 +757,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4142
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
 - id: '16'
   title: ตั้ง กมธ.วิสามัญ ศึกษาการต่อสัญญาสัมปทานทางด่วนและรถไฟฟ้าบีทีเอส
   is_active: false
@@ -809,13 +779,6 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 0
-  disprove: 0
-  abstained: 0
-  field18: ''
-  total_voter: 0
-  absent: 0
-  total_member: null
   description_th: >-
     กรณีที่คณะกรรมการการทางพิเศษแห่งประเทศไทย (กทพ.)
     มีมติต่อสัญญาสัมปทานให้บริษัททางด่วนและรถไฟฟ้ากรุงเทพ จำกัด (มหาชน) อีก 30
@@ -836,6 +799,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4144
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
 - id: '17'
   title: ตั้ง กมธ. วิสามัญ ศึกษาปัญหาหนี้ กยศ.
   is_active: false
@@ -853,13 +821,6 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 0
-  disprove: 0
-  abstained: 0
-  field18: ''
-  total_voter: 0
-  absent: 0
-  total_member: null
   description_th: >-
     จากการดำเนินการกองทุน กยศ. ซึ่งมีผู้กู้กว่า 5.6 ล้านราย
     แต่มีการชำระหนี้ร้อยละ 40 มีจำนวนผู้ผิดนัดเกือบ 3 ล้านคน
@@ -882,6 +843,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4176
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
 - id: '18'
   title: ตั้ง กมธ. วิสามัญ ศึกษาปัญหาการข่มขืนกระทำชำเรา
   is_active: false
@@ -898,13 +864,6 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 0
-  disprove: 0
-  abstained: 0
-  field18: ''
-  total_voter: 0
-  absent: 0
-  total_member: null
   description_th: ''
   description_en: ''
   document:
@@ -914,6 +873,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4179
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
 - id: '19'
   title: ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบของการใช้กัญชาในประเทศไทย
   is_active: false
@@ -931,13 +895,6 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 0
-  disprove: 0
-  abstained: 0
-  field18: ''
-  total_voter: 0
-  absent: 0
-  total_member: null
   description_th: ''
   description_en: ''
   document:
@@ -947,6 +904,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4180
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
 - id: '20'
   title: ตั้ง กมธ.วิสามัญ พิจารณาศึกษาการขุดคลองไทย
   is_active: false
@@ -962,13 +924,6 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 0
-  disprove: 0
-  abstained: 0
-  field18: ''
-  total_voter: 0
-  absent: 0
-  total_member: null
   description_th: >-
     การขุดคลองไทยนับเป็นคลองหนึ่งที่มีความสาคัญ ทางยุทธศาสตร์การเดินเรือ
     ซึ่งจะเป็นโครงการที่สร้างรายได้ให้แก่ประเทศชาติอย่างมหาศาล และได้รับ
@@ -998,6 +953,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
 - id: '21'
   title: ตั้ง กมธ.วิสามัญ พิจารณาราคาหนังสัตว์ โค – กระบือ ตกต่ำ
   is_active: false
@@ -1014,13 +974,6 @@
   is_no_vote: true
   no_vote_description: >-
     ที่ประชุมลงมติเห็นชอบให้ส่งงคณะกรรมาธิการแก้ไขปัญหาหนี้สินแห่งชาติพิจารณาศึกษาญัตติดังกล่าว
-  approve: 0
-  disprove: 0
-  abstained: 0
-  field18: ''
-  total_voter: 0
-  absent: 0
-  total_member: null
   description_th: >-
     ราคาหนังโคกระบือตกต่ำมาก เนื่องจากโรงงานฟอกหนังที่อยู่ในจังหวัด สมุทรปราการ
     นำหนังโคกระบือเข้ามาจากต่างประเทศเป็นจำนวนมาก
@@ -1041,6 +994,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
 - id: '22'
   title: ตั้ง กมธ.วิสามัญ พิจารณาปัญหาหนี้และค่าครองชีพสูงจากราคาน้ำมัน แก๊ส ไฟฟ้า
   is_active: false
@@ -1059,13 +1017,6 @@
   is_no_vote: true
   no_vote_description: >-
     ที่ประชุมลงมติเห็นชอบให้ส่งงคณะกรรมาธิการการเกษตรและสหกรณ์พิจารณาศึกษาญัตติดังกล่าว
-  approve: 0
-  disprove: 0
-  abstained: 0
-  field18: ''
-  total_voter: 0
-  absent: 0
-  total_member: null
   description_th: >-
     ปัญหาหนี้สินในครัวเรือนเพิ่มขึ้นอย่างต่อเนื่องทุกปี นอกจากนี้
     ประชาชนยังต้องแบกภาระค่าบริการโครงการพื้นฐาน
@@ -1085,6 +1036,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
 - id: '23'
   title: ตั้ง กมธ. วิสามัญศึกษาปัญหาฝุ่น PM 2.5
   is_active: false
@@ -1102,13 +1058,6 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 0
-  disprove: 0
-  abstained: 0
-  field18: ''
-  total_voter: 0
-  absent: 0
-  total_member: null
   description_th: ''
   description_en: ''
   document:
@@ -1118,6 +1067,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4183
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
 - id: '24'
   title: ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบจาก พรบ. e-Payment
   is_active: false
@@ -1137,13 +1091,6 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 0
-  disprove: 0
-  abstained: 0
-  field18: ''
-  total_voter: 0
-  absent: 0
-  total_member: null
   description_th: ''
   description_en: ''
   document:
@@ -1153,6 +1100,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4188
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
 - id: '25'
   title: ตั้ง กมธ. วิสามัญ แก้ไขปัญหาที่ดินทำกิน
   is_active: false
@@ -1169,13 +1121,6 @@
   passed: true
   is_no_vote: true
   no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  approve: 0
-  disprove: 0
-  abstained: 0
-  field18: ''
-  total_voter: 0
-  absent: 0
-  total_member: null
   description_th: ''
   description_en: ''
   document:
@@ -1186,6 +1131,11 @@
       link: ''
   reference: >-
     https://drive.google.com/file/d/1nN_FFX-0sTRVoIxrQH4aSh0zQVGLWy1D/view?usp=sharing
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
 - id: '26'
   title: |-
     พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ
@@ -1206,13 +1156,6 @@
   passed: true
   is_no_vote: false
   no_vote_description: ''
-  approve: 576
-  disprove: 21
-  abstained: 122
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
     ซึ่งรวมร่างแก้ไขที่เสนอโดยโครงการอินเทอร์เน็ตเพื่อกฎหมายประชาชน หรือ iLaw
@@ -1229,6 +1172,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
+  approve: 576
+  disprove: 21
+  abstained: 122
+  absent: 0
+  total_voter: 808
 - id: '27'
   title: |-
     พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ
@@ -1249,13 +1197,6 @@
   passed: true
   is_no_vote: false
   no_vote_description: ''
-  approve: 647
-  disprove: 17
-  abstained: 55
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
     ซึ่งรวมร่างแก้ไขที่เสนอโดยโครงการอินเทอร์เน็ตเพื่อกฎหมายประชาชน หรือ iLaw
@@ -1272,6 +1213,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
+  approve: 647
+  disprove: 17
+  abstained: 55
+  absent: 0
+  total_voter: 808
 - id: '28'
   title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 3)"
   is_active: true
@@ -1289,13 +1235,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 214
-  disprove: 34
-  abstained: 470
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
     ซึ่งรวมร่างแก้ไขที่เสนอโดยโครงการอินเทอร์เน็ตเพื่อกฎหมายประชาชน หรือ iLaw
@@ -1312,6 +1251,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
+  approve: 214
+  disprove: 34
+  abstained: 470
+  absent: 0
+  total_voter: 808
 - id: '29'
   title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 4)"
   is_active: true
@@ -1329,13 +1273,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 267
-  disprove: 20
-  abstained: 432
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
     ซึ่งรวมร่างแก้ไขที่เสนอโดยโครงการอินเทอร์เน็ตเพื่อกฎหมายประชาชน หรือ iLaw
@@ -1352,6 +1289,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
+  approve: 267
+  disprove: 20
+  abstained: 432
+  absent: 0
+  total_voter: 808
 - id: '30'
   title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 5)"
   is_active: true
@@ -1369,13 +1311,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 210
-  disprove: 48
-  abstained: 461
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
     ซึ่งรวมร่างแก้ไขที่เสนอโดยโครงการอินเทอร์เน็ตเพื่อกฎหมายประชาชน หรือ iLaw
@@ -1392,6 +1327,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
+  approve: 210
+  disprove: 48
+  abstained: 461
+  absent: 0
+  total_voter: 808
 - id: '31'
   title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 6)"
   is_active: true
@@ -1410,13 +1350,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 268
-  disprove: 19
-  abstained: 432
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
     ซึ่งรวมร่างแก้ไขที่เสนอโดยโครงการอินเทอร์เน็ตเพื่อกฎหมายประชาชน หรือ iLaw
@@ -1433,6 +1366,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
+  approve: 268
+  disprove: 19
+  abstained: 432
+  absent: 0
+  total_voter: 808
 - id: '32'
   title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 7)"
   is_active: true
@@ -1451,13 +1389,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 212
-  disprove: 138
-  abstained: 369
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 668
   description_th: >-
     การประชุมของรัฐสภาเพื่อพิจารณาญัตติแก้ไขรัฐธรรมนูญ พ.ศ. 2560 จำนวน 7 ญัตติ
     ซึ่งรวมร่างแก้ไขที่เสนอโดยโครงการอินเทอร์เน็ตเพื่อกฎหมายประชาชน หรือ iLaw
@@ -1474,6 +1405,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
+  approve: 212
+  disprove: 138
+  abstained: 369
+  absent: 0
+  total_voter: 808
 - id: '33'
   title: ขอให้ศาลรัฐธรรมนูญพิจารณาเกี่ยวกับหน้าที่และอำนาจของรัฐสภาตามรัฐธรรมนูญ
   is_active: true
@@ -1491,13 +1427,6 @@
   passed: true
   is_no_vote: false
   no_vote_description: ''
-  approve: 365
-  disprove: 316
-  abstained: 15
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 696
   description_th: >-
     ญัตติด่วนที่นายไพบูลย์ นิติตะวัน ส.ส.บัญชีรายชื่อ พรรคพลังประชารัฐ
     และนายสมชาย แสวงการ ส.ว.
@@ -1513,6 +1442,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
+  approve: 365
+  disprove: 316
+  abstained: 15
+  absent: 0
+  total_voter: 808
 - id: '34'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล  พลเอกประยุทธ์ จันทร์โอชา นายกรัฐมนตรี
@@ -1530,13 +1464,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 206
-  disprove: 272
-  abstained: 3
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 481
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
     เพื่อยื่นญัตติด่วนขอเปิดอภิปรายไม่ไว้วางใจ 10 รัฐมนตรีจาก 3 พรรคร่วมรัฐบาล 
@@ -1556,6 +1483,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  approve: 206
+  disprove: 272
+  abstained: 3
+  absent: 0
+  total_voter: 808
 - id: '35'
   title: อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล พลเอกประวิตร วงษ์สุวรรณ รองนายกรัฐมนตรี
   is_active: true
@@ -1571,13 +1503,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 204
-  disprove: 274
-  abstained: 4
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
     เพื่อยื่นญัตติด่วนขอเปิดอภิปรายไม่ไว้วางใจ 10 รัฐมนตรีจาก 3 พรรคร่วมรัฐบาล 
@@ -1595,6 +1520,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  approve: 204
+  disprove: 274
+  abstained: 4
+  absent: 0
+  total_voter: 808
 - id: '36'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายอนุทิน ชาญวีรกูล
@@ -1612,13 +1542,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 201
-  disprove: 275
-  abstained: 6
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
     เพื่อยื่นญัตติด่วนขอเปิดอภิปรายไม่ไว้วางใจ 10 รัฐมนตรีจาก 3 พรรคร่วมรัฐบาล 
@@ -1637,6 +1560,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  approve: 201
+  disprove: 275
+  abstained: 6
+  absent: 0
+  total_voter: 808
 - id: '37'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายจุรินทร์ ลักษณวิศิษฏ์
@@ -1654,13 +1582,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 206
-  disprove: 269
-  abstained: 7
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
     เพื่อยื่นญัตติด่วนขอเปิดอภิปรายไม่ไว้วางใจ 10 รัฐมนตรีจาก 3 พรรคร่วมรัฐบาล 
@@ -1679,6 +1600,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  approve: 206
+  disprove: 269
+  abstained: 7
+  absent: 0
+  total_voter: 808
 - id: '38'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล พลเอก อนุพงษ์ เผ่าจินดา
@@ -1696,13 +1622,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 205
-  disprove: 272
-  abstained: 3
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 480
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
     เพื่อยื่นญัตติด่วนขอเปิดอภิปรายไม่ไว้วางใจ 10 รัฐมนตรีจาก 3 พรรคร่วมรัฐบาล 
@@ -1721,6 +1640,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  approve: 205
+  disprove: 272
+  abstained: 3
+  absent: 0
+  total_voter: 808
 - id: '39'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายณัฏฐพล ทีปสุวรรณ
@@ -1738,13 +1662,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 215
-  disprove: 258
-  abstained: 8
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 481
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
     เพื่อยื่นญัตติด่วนขอเปิดอภิปรายไม่ไว้วางใจ 10 รัฐมนตรีจาก 3 พรรคร่วมรัฐบาล 
@@ -1763,6 +1680,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  approve: 215
+  disprove: 258
+  abstained: 8
+  absent: 0
+  total_voter: 808
 - id: '40'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายสุชาติ ชมกลิ่น
@@ -1780,13 +1702,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 213
-  disprove: 263
-  abstained: 5
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 481
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
     เพื่อยื่นญัตติด่วนขอเปิดอภิปรายไม่ไว้วางใจ 10 รัฐมนตรีจาก 3 พรรคร่วมรัฐบาล 
@@ -1806,6 +1721,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  approve: 213
+  disprove: 263
+  abstained: 5
+  absent: 0
+  total_voter: 808
 - id: '41'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายศักดิ์สยาม ชิดชอบ
@@ -1823,13 +1743,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 202
-  disprove: 268
-  abstained: 12
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
     เพื่อยื่นญัตติด่วนขอเปิดอภิปรายไม่ไว้วางใจ 10 รัฐมนตรีจาก 3 พรรคร่วมรัฐบาล 
@@ -1847,6 +1760,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  approve: 202
+  disprove: 268
+  abstained: 12
+  absent: 0
+  total_voter: 808
 - id: '42'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายนิพนธ์ บุญญามณี
@@ -1864,13 +1782,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 206
-  disprove: 272
-  abstained: 4
-  field18: '0'
-  total_voter: 808
-  absent: 0
-  total_member: 482
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
     เพื่อยื่นญัตติด่วนขอเปิดอภิปรายไม่ไว้วางใจ 10 รัฐมนตรีจาก 3 พรรคร่วมรัฐบาล 
@@ -1887,6 +1798,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  approve: 206
+  disprove: 272
+  abstained: 4
+  absent: 0
+  total_voter: 808
 - id: '43'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล ร้อยเอก ธรรมนัส พรมเผ่า
@@ -1904,13 +1820,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 200
-  disprove: 273
-  abstained: 5
-  field18: '2'
-  total_voter: 808
-  absent: 2
-  total_member: 479
   description_th: >-
     นายสมพงษ์ อมรวิวัฒน์ ผู้นำฝ่ายค้าน ยื่นรายชื่อส.ส. พรรคร่วมฝ่ายค้าน 208 คน
     เพื่อยื่นญัตติด่วนขอเปิดอภิปรายไม่ไว้วางใจ 10 รัฐมนตรีจาก 3 พรรคร่วมรัฐบาล 
@@ -1930,6 +1839,11 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  approve: 200
+  disprove: 273
+  abstained: 5
+  absent: 2
+  total_voter: 808
 - id: '44'
   title: |-
     พิจารณาแก้ไขเพิ่มเติมร่าง ร.ธ.น. 
@@ -1957,13 +1871,6 @@
   passed: false
   is_no_vote: false
   no_vote_description: ''
-  approve: 208
-  disprove: 4
-  abstained: 92
-  field18: '218'
-  total_voter: 808
-  absent: 218
-  total_member: 442
   description_th: >-
     จากที่ร่างแก้ไขรัฐธรรมนูญที่มีเนื้อหา 5 มาตรา
     ผ่านความเห็นของของรัฐสภาในวาระที่ 2
@@ -1979,3 +1886,8 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#G
+  approve: 208
+  disprove: 4
+  abstained: 92
+  absent: 218
+  total_voter: 808
