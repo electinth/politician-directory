@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "4.0.0",
-    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@google-cloud/local-auth": "^1.0.0",
     "autosuggest-highlight": "^3.1.1",
