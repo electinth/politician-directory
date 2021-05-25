@@ -158,9 +158,11 @@ const VotelogPage = ({
             <span>
               <GatsbyImage
                 image={voteRecordIcon.childImageSharp.gatsbyImageData}
-                css={css`
-                  vertical-align: middle;
-                `}
+                style={{
+                  verticalAlign: "middle",
+                  display: "inline-block",
+                  marginRight: "5px",
+                }}
               />
               {votelogYaml.meeting}
               <span

@@ -305,6 +305,7 @@ const PeoplePage = ({ data }) => {
               }}
             >
               <GatsbyImage
+                style={{ margin: "auto" }}
                 image={data.representativeImage.childImageSharp.gatsbyImageData}
               />
             </div>
