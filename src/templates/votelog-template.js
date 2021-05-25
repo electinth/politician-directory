@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { css } from "@emotion/react"
 import _ from "lodash"
 
@@ -35,26 +35,20 @@ export const query = graphql`
       absent
       total_voter
     }
-
     voteRecordIcon: file(
       relativePath: { eq: "images/icons/votelog/votelog.png" }
     ) {
       childImageSharp {
-        fixed(height: 30) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(height: 30, layout: FIXED)
       }
     }
     downloadIcon: file(
       relativePath: { eq: "images/icons/download/download.png" }
     ) {
       childImageSharp {
-        fixed(height: 20) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(height: 20, layout: FIXED)
       }
     }
-
     allPeopleVoteYaml {
       nodes {
         id
@@ -162,8 +156,8 @@ const VotelogPage = ({
         >
           <div className="container">
             <span>
-              <Img
-                fixed={voteRecordIcon.childImageSharp.fixed}
+              <GatsbyImage
+                image={voteRecordIcon.childImageSharp.gatsbyImageData}
                 css={css`
                   vertical-align: middle;
                 `}
@@ -374,8 +368,8 @@ const VotelogPage = ({
                       pointer-events: auto;
                     `}
                   >
-                    <Img
-                      fixed={downloadIcon.childImageSharp.fixed}
+                    <GatsbyImage
+                      image={downloadIcon.childImageSharp.gatsbyImageData}
                       css={{ marginRight: "1rem" }}
                     />
                     {doc.title || "เอกสาร"}

@@ -4,20 +4,18 @@ import styled from "@emotion/styled"
 
 import { politicianPicture } from "../../utils"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { useState } from "react"
 
 const ProfilePic = ({ name, last_name }) => {
   const [showPlaceholder, setShowPlaceholder] = useState(false)
   const data = useStaticQuery(graphql`
-    query {
+    {
       placeholderImage: file(
         relativePath: { eq: "images/people/placeholder.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 84) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(width: 84, layout: CONSTRAINED)
         }
       }
     }
@@ -35,7 +33,9 @@ const ProfilePic = ({ name, last_name }) => {
           }}
         />
       ) : (
-        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+        <GatsbyImage
+          image={data.placeholderImage.childImageSharp.gatsbyImageData}
+        />
       )}
     </>
   )

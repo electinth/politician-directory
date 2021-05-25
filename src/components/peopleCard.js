@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import { politicianPicture } from "../utils"
 import { media } from "../styles"
@@ -9,14 +9,12 @@ import { LazyLoadComponent } from "react-lazy-load-image-component"
 
 export const ProfilePicture = props => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       placeholderImage: file(
         relativePath: { eq: "images/people/placeholder.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 84) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(width: 84, layout: CONSTRAINED)
         }
       }
     }
@@ -60,8 +58,8 @@ export const ProfilePicture = props => {
           style={imageStyle}
           onError={onImageError}
         ></img>
-        <Img
-          fluid={data.placeholderImage.childImageSharp.fluid}
+        <GatsbyImage
+          image={data.placeholderImage.childImageSharp.gatsbyImageData}
           style={placeholderStyle}
         />
       </LazyLoadComponent>

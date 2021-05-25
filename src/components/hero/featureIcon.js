@@ -1,5 +1,5 @@
 import React from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const FeatureIcon = ({ image, borderWidth }) => {
   return (
@@ -11,7 +11,7 @@ const FeatureIcon = ({ image, borderWidth }) => {
         marginBottom: "1.5rem",
       }}
     >
-      <Img fluid={image.childImageSharp.fluid} style={{}} />
+      <GatsbyImage image={image.childImageSharp.gatsbyImageData} style={{}} />
     </div>
   )
 }

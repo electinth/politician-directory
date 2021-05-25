@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,7 +11,7 @@ import WaffleFilter from "../components/waffleFilter"
 import PartyGroupList from "../components/partyGroupList"
 
 export const query = graphql`
-  query {
+  {
     cabinet: allPeopleYaml(
       filter: { is_cabinet: { eq: true }, is_active: { eq: true } }
     ) {
@@ -79,25 +79,19 @@ export const query = graphql`
       relativePath: { eq: "images/icons/cabinet/cabinet.png" }
     ) {
       childImageSharp {
-        fixed(width: 60) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(width: 60, layout: FIXED)
       }
     }
     senateImage: file(relativePath: { eq: "images/icons/senate/senate.png" }) {
       childImageSharp {
-        fixed(width: 60) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(width: 60, layout: FIXED)
       }
     }
     representativeImage: file(
       relativePath: { eq: "images/icons/representative/representative.png" }
     ) {
       childImageSharp {
-        fixed(width: 60) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(width: 60, layout: FIXED)
       }
     }
   }
@@ -286,17 +280,17 @@ const PeoplePage = ({ data }) => {
             }}
           >
             <Link to={"/cabinet"} css={cssPartyTypeCard}>
-              <Img
+              <GatsbyImage
+                image={data.cabinetImage.childImageSharp.gatsbyImageData}
                 css={{ marginBottom: "1.2rem" }}
-                fixed={data.cabinetImage.childImageSharp.fixed}
               />
               <h3>คณะรัฐมนตรี</h3>
               <h4>{data.cabinet.totalCount} คน</h4>
             </Link>
             <Link to={"/senate"} css={cssPartyTypeCard}>
-              <Img
+              <GatsbyImage
+                image={data.senateImage.childImageSharp.gatsbyImageData}
                 css={{ marginBottom: "1.2rem" }}
-                fixed={data.senateImage.childImageSharp.fixed}
               />
               <h3>สมาชิกวุฒิสภา</h3>
               <h4>{data.senator.totalCount} คน</h4>
@@ -310,7 +304,9 @@ const PeoplePage = ({ data }) => {
                 textAlign: "center",
               }}
             >
-              <Img fixed={data.representativeImage.childImageSharp.fixed} />
+              <GatsbyImage
+                image={data.representativeImage.childImageSharp.gatsbyImageData}
+              />
             </div>
             <h3
               css={{

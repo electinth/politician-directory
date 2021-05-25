@@ -11,7 +11,7 @@ import search from "../../images/icons/search/search-grey.png"
 import { politicianPicture } from "../../utils"
 import { media } from "../../styles"
 import _ from "lodash"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { LazyLoadComponent } from "react-lazy-load-image-component"
 
 const cssContainer = ({ isShowAll }) => ({
@@ -176,14 +176,12 @@ const AutoComplete = ({
   allPeopleYaml,
 }) => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       placeholderImage: file(
         relativePath: { eq: "images/people/placeholder.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 84) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(width: 84, layout: CONSTRAINED)
         }
       }
     }
@@ -382,9 +380,9 @@ const AutoComplete = ({
                 }}
               />
             ) : (
-              <Img
+              <GatsbyImage
+                image={data.placeholderImage.childImageSharp.gatsbyImageData}
                 css={cssImg}
-                fluid={data.placeholderImage.childImageSharp.fluid}
               />
             )}
           </LazyLoadComponent>

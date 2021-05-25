@@ -244,7 +244,10 @@ function createChart(
 
   const brush = d3
     .brushX()
-    .extent([[0, 0], [miniWidth, miniHeight]])
+    .extent([
+      [0, 0],
+      [miniWidth, miniHeight],
+    ])
     .on("brush", brushmove)
 
   const timelineSvg = d3
@@ -435,7 +438,7 @@ function createChart(
     .on("error", function(d) {
       d3.select(this).attr("xlink:href", placeholderImage)
     })
-    .attr("fluid", placeholder.placeholderImage.childImageSharp.fluid)
+    .attr("fluid", placeholder.placeholderImage.childImageSharp.gatsbyImageData)
     .attr("width", 40)
     .attr("height", 40)
     .attr("x", 0)
@@ -533,14 +536,12 @@ function CreateLabel({ gradeObj }) {
 
 const ScoreViz = props => {
   const placeholder = useStaticQuery(graphql`
-    query {
+    {
       placeholderImage: file(
         relativePath: { eq: "images/people/placeholder.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 84) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(width: 84, layout: CONSTRAINED)
         }
       }
     }

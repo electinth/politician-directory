@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -39,16 +39,12 @@ export const query = graphql`
       relativePath: { eq: "images/icons/votelog/votelog-white.png" }
     ) {
       childImageSharp {
-        fixed(width: 48) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(width: 48, layout: FIXED)
       }
     }
     updateImage: file(relativePath: { eq: "images/icons/update/update.png" }) {
       childImageSharp {
-        fixed(width: 17) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(width: 17, layout: FIXED)
       }
     }
   }
@@ -115,10 +111,10 @@ const VoteLogPage = ({
       >
         <div className="container">
           <div>
-            <Img
-              fixed={voteRecordImage.childImageSharp.fixed}
+            <GatsbyImage
+              image={voteRecordImage.childImageSharp.gatsbyImageData}
               css={{ width: "48px", margin: "auto" }}
-            ></Img>
+            />
           </div>
           <h1
             css={{

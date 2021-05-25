@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import "../../styles/global.css"
 import "./index.css"
@@ -78,32 +78,26 @@ const Menu = ({ siteTitle }) => {
     }
   }, [])
   const staticData = useStaticQuery(graphql`
-    query {
+    {
       voteRecordImage: file(
         relativePath: { eq: "images/icons/votelog/votelog-white.png" }
       ) {
         childImageSharp {
-          fixed(height: 32) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(height: 32, layout: FIXED)
         }
       }
       cabinetImage: file(
         relativePath: { eq: "images/icons/cabinet/cabinet-white.png" }
       ) {
         childImageSharp {
-          fixed(width: 32) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(width: 32, layout: FIXED)
         }
       }
       senateImage: file(
         relativePath: { eq: "images/icons/senate/senate-white.png" }
       ) {
         childImageSharp {
-          fixed(width: 32) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(width: 32, layout: FIXED)
         }
       }
       representativeImage: file(
@@ -112,9 +106,7 @@ const Menu = ({ siteTitle }) => {
         }
       ) {
         childImageSharp {
-          fixed(width: 32) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(width: 32, layout: FIXED)
         }
       }
     }
@@ -130,7 +122,9 @@ const Menu = ({ siteTitle }) => {
         <li>
           <span>
             <span css={cssMenuIcon}>
-              <Img fixed={staticData.cabinetImage.childImageSharp.fixed} />
+              <GatsbyImage
+                image={staticData.cabinetImage.childImageSharp.gatsbyImageData}
+              />
             </span>
             <Link to="/cabinet">คณะรัฐมนตรี</Link>
           </span>
@@ -138,7 +132,9 @@ const Menu = ({ siteTitle }) => {
         <li>
           <span>
             <span css={cssMenuIcon}>
-              <Img fixed={staticData.senateImage.childImageSharp.fixed} />
+              <GatsbyImage
+                image={staticData.senateImage.childImageSharp.gatsbyImageData}
+              />
             </span>
             <Link to="/senate">สมาชิกวุฒิสภา</Link>
           </span>
@@ -146,8 +142,10 @@ const Menu = ({ siteTitle }) => {
         <li>
           <span>
             <span css={cssMenuIcon}>
-              <Img
-                fixed={staticData.representativeImage.childImageSharp.fixed}
+              <GatsbyImage
+                image={
+                  staticData.representativeImage.childImageSharp.gatsbyImageData
+                }
               />
             </span>
             <Link to="/representatives">สมาชิกสภาผู้แทนราษฎร</Link>
@@ -156,8 +154,10 @@ const Menu = ({ siteTitle }) => {
         <li>
           <span>
             <span css={cssMenuIcon}>
-              <Img
-                fixed={staticData.voteRecordImage.childImageSharp.fixed}
+              <GatsbyImage
+                image={
+                  staticData.voteRecordImage.childImageSharp.gatsbyImageData
+                }
                 style={{ transform: "translate(2px, 0)" }}
               />
             </span>

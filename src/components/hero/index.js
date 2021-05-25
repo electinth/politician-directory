@@ -8,30 +8,24 @@ import { media } from "../../styles"
 
 const Hero = () => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       biograpyImage: file(relativePath: { eq: "images/hero/biography.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(width: 300, layout: CONSTRAINED)
         }
       }
       partySummaryImage: file(
         relativePath: { eq: "images/hero/partySummary.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(width: 300, layout: CONSTRAINED)
         }
       }
       voteSummaryImage: file(
         relativePath: { eq: "images/hero/voteSummary.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(width: 300, layout: CONSTRAINED)
         }
       }
     }

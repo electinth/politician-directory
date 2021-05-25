@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { media } from "../styles"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const cssWrapper = ({ is_senate }) => ({
   display: "flex",
@@ -265,9 +265,9 @@ class DropDown extends Component {
                 this.props.is_selected_government ||
                 this.props.isShowAll ? (
                   !this.props.currentFilter ? (
-                    <Img fixed={this.props.clock_image} />
+                    <GatsbyImage image={this.props.clock_image} />
                   ) : this.props.currentFilter === "เวลาล่าสุด" ? (
-                    <Img fixed={this.props.clock_image} />
+                    <GatsbyImage image={this.props.clock_image} />
                   ) : (
                     <div
                       className="bulletChoice"
@@ -297,8 +297,8 @@ class DropDown extends Component {
                 <button onClick={e => this.handleFilter(e, this.props.filter)}>
                   {this.state.is_senate && !this.state.is_mobile ? (
                     <div>
-                      <Img
-                        fixed={this.props.clock_image}
+                      <GatsbyImage
+                        image={this.props.clock_image}
                         className="clock_image"
                       />
                       <div className="clock_text">
@@ -348,12 +348,10 @@ export default ({
   isShowAll,
 }) => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       clock: file(relativePath: { eq: "images/clock/clock.png" }) {
         childImageSharp {
-          fixed(height: 15) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(height: 15, layout: FIXED)
         }
       }
     }
@@ -370,7 +368,7 @@ export default ({
           is_senate={is_senate}
           is_mobile={is_mobile}
           colors={colors}
-          clock_image={data.clock.childImageSharp.fixed}
+          clock_image={data.clock.childImageSharp.gatsbyImageData}
           is_selected_government={is_selected_government}
           is_selected_yourSelf={is_selected_yourSelf}
           is_selected_position={is_selected_position}

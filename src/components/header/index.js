@@ -2,7 +2,7 @@ import _ from "lodash"
 import React, { useState } from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import HiddenOnMobile from "../hiddenOnMobile/index"
 import Menu from "../menu/index"
@@ -101,19 +101,15 @@ const Header = ({ siteTitle }) => {
   const [iconClicked, setIconClicked] = useState(false)
 
   const staticData = useStaticQuery(graphql`
-    query {
+    {
       siteLogo: file(relativePath: { eq: "images/site-logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 186) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(width: 186, layout: CONSTRAINED)
         }
       }
       searchIcon: file(relativePath: { eq: "images/icons/search/search.png" }) {
         childImageSharp {
-          fluid(maxWidth: 31) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(width: 31, layout: CONSTRAINED)
         }
       }
     }
@@ -136,7 +132,10 @@ const Header = ({ siteTitle }) => {
               textDecoration: `none`,
             }}
           >
-            <Img {...staticData.siteLogo.childImageSharp} css={cssSiteLogo} />
+            <GatsbyImage
+              {...staticData.siteLogo.childImageSharp}
+              css={cssSiteLogo}
+            />
           </Link>
         </h1>
 
@@ -180,7 +179,7 @@ const Header = ({ siteTitle }) => {
           >
             <div style={{ display: "none" }}>
               <Link to="/" css={cssMenuIcon}>
-                <Img {...staticData.searchIcon.childImageSharp} />
+                <GatsbyImage {...staticData.searchIcon.childImageSharp} />
               </Link>
             </div>
             <div

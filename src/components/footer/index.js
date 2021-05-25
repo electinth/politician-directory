@@ -2,42 +2,34 @@ import React from "react"
 
 import "./index.css"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import ExternalLink from "../externalLink"
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       bml: file(
         relativePath: { eq: "images/partner-logo/logo-white-bml.png" }
       ) {
         childImageSharp {
-          fixed(height: 28) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(height: 28, layout: FIXED)
         }
       }
       punchup: file(
         relativePath: { eq: "images/partner-logo/logo-punchup.png" }
       ) {
         childImageSharp {
-          fixed(height: 28) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(height: 28, layout: FIXED)
         }
       }
       ilaw: file(relativePath: { eq: "images/partner-logo/logo-ilaw.png" }) {
         childImageSharp {
-          fixed(height: 28) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(height: 28, layout: FIXED)
         }
       }
       fnf: file(relativePath: { eq: "images/partner-logo/logo-fnf.png" }) {
         childImageSharp {
-          fixed(height: 28) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(height: 28, layout: FIXED)
         }
       }
     }
@@ -126,22 +118,22 @@ const Footer = () => {
         </div>
         <div className="footer-logo" style={{ gridArea: "bml" }}>
           <ExternalLink href="https://www.boonmeelab.com">
-            <Img fixed={data.bml.childImageSharp.fixed}></Img>
+            <GatsbyImage image={data.bml.childImageSharp.gatsbyImageData} />
           </ExternalLink>
         </div>
         <div className="footer-logo" style={{ gridArea: "punchup" }}>
           <ExternalLink href="http://punchup.world">
-            <Img fixed={data.punchup.childImageSharp.fixed}></Img>
+            <GatsbyImage image={data.punchup.childImageSharp.gatsbyImageData} />
           </ExternalLink>
         </div>
         <div className="footer-logo" style={{ gridArea: "ilaw" }}>
           <ExternalLink href="https://ilaw.or.th">
-            <Img fixed={data.ilaw.childImageSharp.fixed}></Img>
+            <GatsbyImage image={data.ilaw.childImageSharp.gatsbyImageData} />
           </ExternalLink>
         </div>
         <div className="footer-logo" style={{ gridArea: "fnf" }}>
           <ExternalLink href="https://thailand.fnst.org/">
-            <Img fixed={data.fnf.childImageSharp.fixed}></Img>
+            <GatsbyImage image={data.fnf.childImageSharp.gatsbyImageData} />
           </ExternalLink>
         </div>
 
