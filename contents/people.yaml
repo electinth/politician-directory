@@ -6169,7 +6169,7 @@
   is_mp: true
   is_senator: false
   is_cabinet: false
-  is_active: true
+  is_active: false
   party: ประชาธิปัตย์
   party_group: ร่วมรัฐบาล
   mp_type: แบ่งเขต
@@ -6208,7 +6208,9 @@
   debt: 44264303.6
   facebook: 'https://www.facebook.com/luukmhee.cp'
   twitter: ''
-  bio: ''
+  bio: >-
+    พ้นจากตำแหน่ง ส.ส. ตามคำสั่งของศาลชั้นต้น ที่พิพากษาจำคุก
+    กรณีชุมนุมทางการเมืองในนามกลุ่มกปปส.  (ตัดสินเมื่อวันที่ 24 ก.พ. 64)
   en:
     bio: ''
 - id: '120'
@@ -8026,8 +8028,8 @@
   lastname: ลิปตพัลลภ
   is_mp: true
   is_senator: false
-  is_cabinet: true
-  is_active: false
+  is_cabinet: false
+  is_active: true
   party: ชาติพัฒนา
   party_group: ร่วมรัฐบาล
   mp_type: บัญชีรายชื่อ
@@ -8067,7 +8069,7 @@
   debt: 160812109.9
   facebook: 'https://www.facebook.com/TewanLiptapallop/'
   twitter: ''
-  bio: ลาออกจากตำแหน่ง สิ้นสุดวาระเมื่อวันที่ 21 กรฏฏาคม พ.ศ. 2563
+  bio: ลาออกจากตำแหน่ง
   en:
     bio: ''
 - id: '156'
@@ -8589,7 +8591,7 @@
   is_mp: true
   is_senator: false
   is_cabinet: false
-  is_active: true
+  is_active: false
   party: ประชาธิปัตย์
   party_group: ร่วมรัฐบาล
   mp_type: แบ่งเขต
@@ -8632,7 +8634,9 @@
   debt: 0
   facebook: 'https://www.facebook.com/theptai.theptai'
   twitter: ''
-  bio: ''
+  bio: >-
+    ความเป็น ส.ส.สิ้นสุดลงตามรัฐธรรมนูญ มาตรา 101(6) ประกอบมาตรา 98 (4) มาตรา
+    96(2)
   en:
     bio: ''
 - id: '167'
@@ -12496,7 +12500,7 @@
   debt: 29731411.89
   facebook: 'https://www.facebook.com/pareena.k'
   twitter: ''
-  bio: ''
+  bio: มีคำสั่งให้หยุดปฏิบัติหน้าที่
   en:
     bio: ''
 - id: '242'
@@ -26527,7 +26531,9 @@
   debt: 0
   facebook: 'https://www.facebook.com/XisSraSmChay'
   twitter: ''
-  bio: ''
+  bio: >-
+    พ้นจากตำแหน่ง ส.ส. ตามคำสั่งของศาลชั้นต้น ที่พิพากษาจำคุก
+    กรณีชุมนุมทางการเมืองในนามกลุ่มกปปส.  (ตัดสินเมื่อวันที่ 24 ก.พ. 64)
   en:
     bio: ''
 - id: '514'
@@ -42739,57 +42745,6 @@
   en:
     bio: ''
 - id: '836'
-  title: นาย
-  name: ดิสทัต
-  lastname: คำประกอบ
-  is_mp: false
-  is_senator: false
-  is_cabinet: false
-  is_active: true
-  party: ''
-  party_group: ''
-  mp_type: ''
-  mp_province: ''
-  mp_zone: ''
-  mp_list: ''
-  vote: null
-  senator_method: ''
-  cabinet_position: []
-  committee:
-    - position: กรรมาธิการ
-      set: >-
-        กมธ.วิสามัญ
-        พิจารณาศึกษาผลกระทบจากการประกอบธุรกิจออนไลน์และการทำธุรกรรมผ่านช่องทางอิเล็กทรอนิกส์
-        สภาผู้แทนฯ
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-  gender: หญิง
-  birthdate: null
-  education: ''
-  graduation: ''
-  degree: ''
-  ex_occupation: []
-  occupation_group: ''
-  quotes: ''
-  quotes_url: ''
-  asset: null
-  debt: null
-  facebook: ''
-  twitter: ''
-  bio: ''
-  en:
-    bio: ''
-- id: '837'
   title: นาง
   name: ดุษฎี
   lastname: นามวิเศษ
@@ -42840,7 +42795,7 @@
   bio: ''
   en:
     bio: ''
-- id: '838'
+- id: '837'
   title: นาย
   name: เดชรัต
   lastname: สุขกำเนิด
@@ -42888,7 +42843,7 @@
   bio: ''
   en:
     bio: ''
-- id: '839'
+- id: '838'
   title: นาย
   name: ตรีรัตน์
   lastname: ศิริจันทโรภาส
@@ -42939,7 +42894,7 @@
   bio: ''
   en:
     bio: ''
-- id: '840'
+- id: '839'
   title: รองศาสตราจารย์
   name: ต่อตระกูล
   lastname: ยมนาค
@@ -42987,7 +42942,7 @@
   bio: ''
   en:
     bio: ''
-- id: '841'
+- id: '840'
   title: นาย
   name: เถกิง
   lastname: ศักดานุวงศ์
@@ -43038,7 +42993,7 @@
   bio: ''
   en:
     bio: ''
-- id: '842'
+- id: '841'
   title: นาย
   name: เถลิงศักดิ์
   lastname: เพ็ชรสุวรรณ
@@ -43088,7 +43043,7 @@
   bio: ''
   en:
     bio: ''
-- id: '843'
+- id: '842'
   title: นาย
   name: ทศพร
   lastname: เสรีรักษ์
@@ -43138,7 +43093,7 @@
   bio: ''
   en:
     bio: ''
-- id: '844'
+- id: '843'
   title: นาย
   name: ทศพล
   lastname: เพ็งส้ม
@@ -43188,7 +43143,7 @@
   bio: ''
   en:
     bio: ''
-- id: '845'
+- id: '844'
   title: นาย
   name: ธนกร
   lastname: วังบุญคงชนะ
@@ -43238,7 +43193,7 @@
   bio: ''
   en:
     bio: ''
-- id: '846'
+- id: '845'
   title: นาย
   name: ธนวัฒน์
   lastname: ศรีสุข
@@ -43289,7 +43244,7 @@
   bio: ''
   en:
     bio: ''
-- id: '847'
+- id: '846'
   title: นาย
   name: ธนาคม
   lastname: จงจิระ
@@ -43339,7 +43294,7 @@
   bio: ''
   en:
     bio: ''
-- id: '848'
+- id: '847'
   title: นาย
   name: ธเนศ
   lastname: ดุสิตสุนทรกุล
@@ -43389,7 +43344,7 @@
   bio: ''
   en:
     bio: ''
-- id: '849'
+- id: '848'
   title: นาย
   name: ธารา
   lastname: กุศลชาติธรรม
@@ -43439,7 +43394,7 @@
   bio: ''
   en:
     bio: ''
-- id: '850'
+- id: '849'
   title: นาย
   name: ธีรศานต์
   lastname: สหัสสพาศน์
@@ -43490,7 +43445,7 @@
   bio: ''
   en:
     bio: ''
-- id: '851'
+- id: '850'
   title: นาย
   name: ธีระทัศน์
   lastname: เตียวเจริญโสภา
@@ -43538,7 +43493,7 @@
   bio: ''
   en:
     bio: ''
-- id: '852'
+- id: '851'
   title: พลเรือตรี
   name: ธีระยุทธ
   lastname: นอบน้อม
@@ -43588,7 +43543,7 @@
   bio: ''
   en:
     bio: ''
-- id: '853'
+- id: '852'
   title: นาย
   name: ธีระยุทธ
   lastname: วานิชชัง
@@ -43638,7 +43593,7 @@
   bio: ''
   en:
     bio: ''
-- id: '854'
+- id: '853'
   title: นาย
   name: นพร
   lastname: โพธิ์พัฒนชัย
@@ -43688,7 +43643,7 @@
   bio: ''
   en:
     bio: ''
-- id: '855'
+- id: '854'
   title: นางสาว
   name: นพสรัญ
   lastname: วรรณศิริกุล
@@ -43739,7 +43694,7 @@
   bio: ''
   en:
     bio: ''
-- id: '856'
+- id: '855'
   title: นาย
   name: นภดล
   lastname: ตันติเมฆิน
@@ -43789,7 +43744,7 @@
   bio: ''
   en:
     bio: ''
-- id: '857'
+- id: '856'
   title: พันโท
   name: นราวิทย์
   lastname: เปาอินทร์
@@ -43839,7 +43794,7 @@
   bio: ''
   en:
     bio: ''
-- id: '858'
+- id: '857'
   title: นาง
   name: นฤมล
   lastname: ธารดำรงค์
@@ -43889,7 +43844,7 @@
   bio: ''
   en:
     bio: ''
-- id: '859'
+- id: '858'
   title: นาย
   name: นิพิฏฐ์
   lastname: อินทรสมบัติ
@@ -43939,7 +43894,7 @@
   bio: ''
   en:
     bio: ''
-- id: '860'
+- id: '859'
   title: นางสาว
   name: นุชนภา
   lastname: รื่นอบเชย
@@ -43990,7 +43945,7 @@
   bio: ''
   en:
     bio: ''
-- id: '861'
+- id: '860'
   title: ผู้ช่วยศาสตราจารย์
   name: บัณฑิต
   lastname: จันทร์โรจน์กิจ
@@ -44040,7 +43995,7 @@
   bio: ''
   en:
     bio: ''
-- id: '862'
+- id: '861'
   title: นาย
   name: บุญดำรง
   lastname: ประเสริฐโสภา
@@ -44090,7 +44045,7 @@
   bio: ''
   en:
     bio: ''
-- id: '863'
+- id: '862'
   title: นาย
   name: บุญเลิศ
   lastname: เหลียงกอบกิจ
@@ -44138,7 +44093,7 @@
   bio: ''
   en:
     bio: ''
-- id: '864'
+- id: '863'
   title: นาย
   name: ปกรณ์
   lastname: นิลประพันธ์
@@ -44188,7 +44143,7 @@
   bio: ''
   en:
     bio: ''
-- id: '865'
+- id: '864'
   title: นางสาว
   name: ปรกชล
   lastname: อู่ทรัพย์
@@ -44238,7 +44193,7 @@
   bio: ''
   en:
     bio: ''
-- id: '866'
+- id: '865'
   title: นาย
   name: ประพัฒน์
   lastname: ปัญญาชาติรักษ์
@@ -44288,7 +44243,7 @@
   bio: ''
   en:
     bio: ''
-- id: '867'
+- id: '866'
   title: นาย
   name: ประพิศ
   lastname: นวมโคกสูง
@@ -44338,7 +44293,7 @@
   bio: ''
   en:
     bio: ''
-- id: '868'
+- id: '867'
   title: นาย
   name: ประยงค์
   lastname: ดอกลำใย
@@ -44388,7 +44343,7 @@
   bio: ''
   en:
     bio: ''
-- id: '869'
+- id: '868'
   title: นาย
   name: ประยุทธ์
   lastname: ศิริพานิชย์
@@ -44438,7 +44393,7 @@
   bio: ''
   en:
     bio: ''
-- id: '870'
+- id: '869'
   title: นาย
   name: ประสิทธิ์ชัย
   lastname: หนูนวล
@@ -44488,7 +44443,7 @@
   bio: ''
   en:
     bio: ''
-- id: '871'
+- id: '870'
   title: นาย
   name: ปวิณ
   lastname: ชำนิประศาสน์
@@ -44538,7 +44493,7 @@
   bio: ''
   en:
     bio: ''
-- id: '872'
+- id: '871'
   title: นาย
   name: ปองพล
   lastname: สะสมทรัพย์
@@ -44586,7 +44541,7 @@
   bio: ''
   en:
     bio: ''
-- id: '873'
+- id: '872'
   title: นาง
   name: ปัณณิตา
   lastname: สท้านไตรภพ
@@ -44634,7 +44589,7 @@
   bio: ''
   en:
     bio: ''
-- id: '874'
+- id: '873'
   title: นาง
   name: ปิยะศิริ
   lastname: นาโคศิริ
@@ -44684,7 +44639,7 @@
   bio: ''
   en:
     bio: ''
-- id: '875'
+- id: '874'
   title: นาย
   name: เป็นหนึ่ง
   lastname: วานิชชัย
@@ -44732,7 +44687,7 @@
   bio: ''
   en:
     bio: ''
-- id: '876'
+- id: '875'
   title: นาง
   name: ผุสดี
   lastname: ตามไท
@@ -44783,7 +44738,7 @@
   bio: ''
   en:
     bio: ''
-- id: '877'
+- id: '876'
   title: นาย
   name: พงศ์กิตติ์
   lastname: อรุณภักดีสกุล
@@ -44831,7 +44786,7 @@
   bio: ''
   en:
     bio: ''
-- id: '878'
+- id: '877'
   title: นาย
   name: พงศ์เทพ
   lastname: เทพกาญจนา
@@ -44881,7 +44836,7 @@
   bio: ''
   en:
     bio: ''
-- id: '879'
+- id: '878'
   title: นาย
   name: พงศ์บุณย์
   lastname: ปองทอง
@@ -44931,7 +44886,7 @@
   bio: ''
   en:
     bio: ''
-- id: '880'
+- id: '879'
   title: นาย
   name: พจน์
   lastname: เจริญสันเทียะ
@@ -44982,7 +44937,7 @@
   bio: ''
   en:
     bio: ''
-- id: '881'
+- id: '880'
   title: นางสาว
   name: พรเพ็ญ
   lastname: คงขจรเกียรติ
@@ -45032,7 +44987,7 @@
   bio: ''
   en:
     bio: ''
-- id: '882'
+- id: '881'
   title: รองศาสตราจารย์
   name: พวงรัตน์
   lastname: ขจิตวิชยานุกูล
@@ -45082,7 +45037,7 @@
   bio: ''
   en:
     bio: ''
-- id: '883'
+- id: '882'
   title: นาย
   name: พะโยม
   lastname: ชิณวงศ์
@@ -45133,7 +45088,7 @@
   bio: ''
   en:
     bio: ''
-- id: '884'
+- id: '883'
   title: นาย
   name: พัศพงศ์
   lastname: พงศ์เรืองรอง
@@ -45183,7 +45138,7 @@
   bio: ''
   en:
     bio: ''
-- id: '885'
+- id: '884'
   title: พลเรือเอก
   name: พิเชฐ
   lastname: ตานะเศรษฐ
@@ -45231,7 +45186,7 @@
   bio: ''
   en:
     bio: ''
-- id: '886'
+- id: '885'
   title: นาย
   name: พิทักษ์
   lastname: สันติวงษ์สกุล
@@ -45282,7 +45237,7 @@
   bio: ''
   en:
     bio: ''
-- id: '887'
+- id: '886'
   title: นาย
   name: พินิจ
   lastname: พูลเกิด
@@ -45330,7 +45285,7 @@
   bio: ''
   en:
     bio: ''
-- id: '888'
+- id: '887'
   title: นาย
   name: พิสิษฐ์
   lastname: คงสมพรต
@@ -45381,7 +45336,7 @@
   bio: ''
   en:
     bio: ''
-- id: '889'
+- id: '888'
   title: นาย
   name: พุทธิสัตย์
   lastname: นามเดช
@@ -45429,7 +45384,7 @@
   bio: ''
   en:
     bio: ''
-- id: '890'
+- id: '889'
   title: พลตำรวจโท
   name: ไพฑูรย์
   lastname: ชูชัยยะ
@@ -45477,7 +45432,7 @@
   bio: ''
   en:
     bio: ''
-- id: '891'
+- id: '890'
   title: นาย
   name: ภพ
   lastname: เอครพานิช
@@ -45528,7 +45483,7 @@
   bio: ''
   en:
     bio: ''
-- id: '892'
+- id: '891'
   title: นาง
   name: ภัทธมน
   lastname: เพ็งส้ม
@@ -45578,7 +45533,7 @@
   bio: ''
   en:
     bio: ''
-- id: '893'
+- id: '892'
   title: นาง
   name: ภัทรพร
   lastname: วรทรัพย์
@@ -45629,7 +45584,7 @@
   bio: ''
   en:
     bio: ''
-- id: '894'
+- id: '893'
   title: นาย
   name: ภัทร
   lastname: ภมรมนตรี
@@ -45680,7 +45635,7 @@
   bio: ''
   en:
     bio: ''
-- id: '895'
+- id: '894'
   title: นาย
   name: ภาคภูมิ
   lastname: แสงกนกกุล
@@ -45731,7 +45686,7 @@
   bio: ''
   en:
     bio: ''
-- id: '896'
+- id: '895'
   title: รองศาสตราจารย์
   name: ภูมินทร์
   lastname: บุตรอินทร์
@@ -45781,7 +45736,7 @@
   bio: ''
   en:
     bio: ''
-- id: '897'
+- id: '896'
   title: นาง
   name: เภาพงา
   lastname: สุทธิมณฑล
@@ -45832,7 +45787,7 @@
   bio: ''
   en:
     bio: ''
-- id: '898'
+- id: '897'
   title: รองศาสตราจารย์
   name: โภคิน
   lastname: พลกุล
@@ -45882,7 +45837,7 @@
   bio: ''
   en:
     bio: ''
-- id: '899'
+- id: '898'
   title: พลตำรวจตรี
   name: มณเฑียร
   lastname: ประทีปะวณิช
@@ -45932,57 +45887,7 @@
   bio: ''
   en:
     bio: ''
-- id: '900'
-  title: นางสาว
-  name: มนัญญา
-  lastname: ไทยเศรษฐ์
-  is_mp: false
-  is_senator: false
-  is_cabinet: false
-  is_active: true
-  party: ''
-  party_group: ''
-  mp_type: ''
-  mp_province: ''
-  mp_zone: ''
-  mp_list: ''
-  vote: null
-  senator_method: ''
-  cabinet_position: []
-  committee:
-    - position: ที่ปรึกษาคณะกรรมาธิการ
-      set: >-
-        กมธ.วิสามัญ พิจารณาศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
-        สภาผู้แทนฯ
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-  gender: หญิง
-  birthdate: null
-  education: ''
-  graduation: ''
-  degree: ''
-  ex_occupation: []
-  occupation_group: ''
-  quotes: ''
-  quotes_url: ''
-  asset: null
-  debt: null
-  facebook: ''
-  twitter: ''
-  bio: ''
-  en:
-    bio: ''
-- id: '901'
+- id: '899'
   title: นาย
   name: มานะ
   lastname: มหาสุวีระชัย
@@ -46032,7 +45937,7 @@
   bio: ''
   en:
     bio: ''
-- id: '902'
+- id: '900'
   title: นาย
   name: มานะ
   lastname: ศิริพิทยาวัฒน์
@@ -46082,7 +45987,7 @@
   bio: ''
   en:
     bio: ''
-- id: '903'
+- id: '901'
   title: นาย
   name: มูหามัดเปาซี
   lastname: อาลีฮา
@@ -46132,7 +46037,7 @@
   bio: ''
   en:
     bio: ''
-- id: '904'
+- id: '902'
   title: ผู้ช่วยศาสตราจารย์
   name: ยอดพล
   lastname: เทพสิทธา
@@ -46183,20 +46088,20 @@
   bio: ''
   en:
     bio: ''
-- id: '905'
+- id: '903'
   title: นาย
   name: ยุทธนา
   lastname: โพธสุธน
-  is_mp: false
+  is_mp: true
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: ''
-  party_group: ''
-  mp_type: ''
+  party: พลังประชารัฐ
+  party_group: ร่วมรัฐบาล
+  mp_type: บัญชีรายชื่อ
   mp_province: ''
   mp_zone: ''
-  mp_list: ''
+  mp_list: '21'
   vote: null
   senator_method: ''
   cabinet_position: []
@@ -46218,12 +46123,13 @@
     - position: ''
       set: ''
   gender: ชาย
-  birthdate: null
-  education: ''
-  graduation: ''
-  degree: ''
-  ex_occupation: []
-  occupation_group: ''
+  birthdate: '1971-01-05'
+  education: ปริญญาโท
+  graduation: CALIFORNIA STATE UNIVERSITY
+  degree: สาขาบริหารธุรกิจการเงิน
+  ex_occupation:
+    - ธุรกิจส่วนตัว
+  occupation_group: อื่นๆ
   quotes: ''
   quotes_url: ''
   asset: null
@@ -46233,7 +46139,7 @@
   bio: ''
   en:
     bio: ''
-- id: '906'
+- id: '904'
   title: นางสาว
   name: โยธากาญจน์
   lastname: ฟองงาม
@@ -46281,7 +46187,7 @@
   bio: ''
   en:
     bio: ''
-- id: '907'
+- id: '905'
   title: นางสาว
   name: รตญา
   lastname: กอบศิริกาญจน์
@@ -46331,7 +46237,7 @@
   bio: ''
   en:
     bio: ''
-- id: '908'
+- id: '906'
   title: นางสาว
   name: รวิวรรณ
   lastname: จตุรพิธพร
@@ -46382,7 +46288,7 @@
   bio: ''
   en:
     bio: ''
-- id: '909'
+- id: '907'
   title: นาย
   name: รัฐชทรัพย์
   lastname: นิชิด้า
@@ -46432,7 +46338,7 @@
   bio: ''
   en:
     bio: ''
-- id: '910'
+- id: '908'
   title: นาย
   name: รัฐชยุตม์
   lastname: รุ่งจารุพันธ์
@@ -46483,7 +46389,7 @@
   bio: ''
   en:
     bio: ''
-- id: '911'
+- id: '909'
   title: นาย
   name: รัฐพล
   lastname: แสนรักษ์
@@ -46533,7 +46439,7 @@
   bio: ''
   en:
     bio: ''
-- id: '912'
+- id: '910'
   title: นาย
   name: เรืองไกร
   lastname: ลีกิจวัฒนะ
@@ -46581,7 +46487,7 @@
   bio: ''
   en:
     bio: ''
-- id: '913'
+- id: '911'
   title: นาย
   name: เรืองศักดิ์
   lastname: สุวารี
@@ -46631,7 +46537,7 @@
   bio: ''
   en:
     bio: ''
-- id: '914'
+- id: '912'
   title: นางสาว
   name: ลีลาวดี
   lastname: วัชโรบล
@@ -46682,7 +46588,7 @@
   bio: ''
   en:
     bio: ''
-- id: '915'
+- id: '913'
   title: นาย
   name: วรณัฐ
   lastname: ศรีสุริยชัย
@@ -46733,7 +46639,7 @@
   bio: ''
   en:
     bio: ''
-- id: '916'
+- id: '914'
   title: นาย
   name: วรรณรัตน์
   lastname: ชาญนุกูล
@@ -46783,7 +46689,7 @@
   bio: ''
   en:
     bio: ''
-- id: '917'
+- id: '915'
   title: นาง
   name: วรลักษณ์
   lastname: ศรีสะอาด
@@ -46833,7 +46739,7 @@
   bio: ''
   en:
     bio: ''
-- id: '918'
+- id: '916'
   title: นาย
   name: วรัชญ์
   lastname: เพชรร่วง
@@ -46884,7 +46790,7 @@
   bio: ''
   en:
     bio: ''
-- id: '919'
+- id: '917'
   title: ผู้ช่วยศาสตราจารย์
   name: วลัยพร
   lastname: รัตนเศรษฐ
@@ -46934,7 +46840,7 @@
   bio: ''
   en:
     bio: ''
-- id: '920'
+- id: '918'
   title: ร้อยตำรวจเอก
   name: วัฒนรักษ์
   lastname: อำนรรฆสรเดช
@@ -46984,7 +46890,7 @@
   bio: ''
   en:
     bio: ''
-- id: '921'
+- id: '919'
   title: นาย
   name: วัฒนา
   lastname: เมืองสุข
@@ -47034,7 +46940,7 @@
   bio: ''
   en:
     bio: ''
-- id: '922'
+- id: '920'
   title: นาย
   name: วัลลภ
   lastname: นาคบัว
@@ -47085,7 +46991,7 @@
   bio: ''
   en:
     bio: ''
-- id: '923'
+- id: '921'
   title: นาย
   name: วาสุเทพ
   lastname: ศรีโสดา
@@ -47135,7 +47041,7 @@
   bio: ''
   en:
     bio: ''
-- id: '924'
+- id: '922'
   title: นาย
   name: วิจักร
   lastname: อากัปกริยา
@@ -47183,7 +47089,7 @@
   bio: ''
   en:
     bio: ''
-- id: '925'
+- id: '923'
   title: นาย
   name: วิจิตร
   lastname: พรพฤฒิพันธ์ุ
@@ -47231,7 +47137,7 @@
   bio: ''
   en:
     bio: ''
-- id: '926'
+- id: '924'
   title: นาย
   name: วิชัย
   lastname: ไชยมงคล
@@ -47281,7 +47187,7 @@
   bio: ''
   en:
     bio: ''
-- id: '927'
+- id: '925'
   title: ว่าที่ร้อยตรี
   name: วิชากร
   lastname: เฮงษฎีกุล
@@ -47329,7 +47235,7 @@
   bio: ''
   en:
     bio: ''
-- id: '928'
+- id: '926'
   title: นาย
   name: วิชาญ
   lastname: มีนชัยนันท์
@@ -47379,7 +47285,7 @@
   bio: ''
   en:
     bio: ''
-- id: '929'
+- id: '927'
   title: พลเอก
   name: วิชิต
   lastname: สาทรานนท์
@@ -47430,7 +47336,7 @@
   bio: ''
   en:
     bio: ''
-- id: '930'
+- id: '928'
   title: นาย
   name: วิฑูรย์
   lastname: เลี่ยนจำรูญ
@@ -47480,7 +47386,7 @@
   bio: ''
   en:
     bio: ''
-- id: '931'
+- id: '929'
   title: นาย
   name: วิทยา
   lastname: พานิชพงศ์
@@ -47531,7 +47437,7 @@
   bio: ''
   en:
     bio: ''
-- id: '932'
+- id: '930'
   title: นาย
   name: วิทยา
   lastname: ยาม่วง
@@ -47581,7 +47487,7 @@
   bio: ''
   en:
     bio: ''
-- id: '933'
+- id: '931'
   title: นางสาว
   name: วิภาวัลย์
   lastname: วรวรรณปรีชา
@@ -47632,7 +47538,7 @@
   bio: ''
   en:
     bio: ''
-- id: '934'
+- id: '932'
   title: พลตำรวจโท
   name: วิโรจน์
   lastname: เปาอินทร์
@@ -47682,7 +47588,7 @@
   bio: ''
   en:
     bio: ''
-- id: '935'
+- id: '933'
   title: นาง
   name: วิไลรัตน์
   lastname: อักษรพันธ์
@@ -47732,7 +47638,7 @@
   bio: ''
   en:
     bio: ''
-- id: '936'
+- id: '934'
   title: นาย
   name: วีระ
   lastname: สมความคิด
@@ -47782,7 +47688,7 @@
   bio: ''
   en:
     bio: ''
-- id: '937'
+- id: '935'
   title: รองศาสตราจารย์
   name: วุฒิสาร
   lastname: ตันไชย
@@ -47832,7 +47738,7 @@
   bio: ''
   en:
     bio: ''
-- id: '938'
+- id: '936'
   title: นาย
   name: ศรัญ
   lastname: ฤกษ์อัตการ
@@ -47883,7 +47789,7 @@
   bio: ''
   en:
     bio: ''
-- id: '939'
+- id: '937'
   title: นาย
   name: ศันสนะ
   lastname: สุริยะโยธิน
@@ -47934,7 +47840,7 @@
   bio: ''
   en:
     bio: ''
-- id: '940'
+- id: '938'
   title: พันตำรวจโทหญิง
   name: ศิพร
   lastname: โกวิท
@@ -47985,7 +47891,7 @@
   bio: ''
   en:
     bio: ''
-- id: '941'
+- id: '939'
   title: นาง
   name: ศิริวรรณ
   lastname: สุคนธมาน
@@ -48035,7 +47941,7 @@
   bio: ''
   en:
     bio: ''
-- id: '942'
+- id: '940'
   title: นาย
   name: ศุภชัย
   lastname: นาคสุวรรณ์
@@ -48085,7 +47991,7 @@
   bio: ''
   en:
     bio: ''
-- id: '943'
+- id: '941'
   title: นาย
   name: ศุภณัฐค์
   lastname: น้อยโสภณ
@@ -48135,7 +48041,7 @@
   bio: ''
   en:
     bio: ''
-- id: '944'
+- id: '942'
   title: นาย
   name: ศุภณัฐ
   lastname: อิ่มทอง
@@ -48186,7 +48092,7 @@
   bio: ''
   en:
     bio: ''
-- id: '945'
+- id: '943'
   title: นาย
   name: สนธิญาน
   lastname: ชื่นฤทัยในธรรม
@@ -48236,7 +48142,7 @@
   bio: ''
   en:
     bio: ''
-- id: '946'
+- id: '944'
   title: นาย
   name: สนธิญา
   lastname: หนูจีนเส้ง
@@ -48286,7 +48192,7 @@
   bio: ''
   en:
     bio: ''
-- id: '947'
+- id: '945'
   title: นาย
   name: สมชัย
   lastname: ศรีสุทธิยากร
@@ -48336,7 +48242,7 @@
   bio: ''
   en:
     bio: ''
-- id: '948'
+- id: '946'
   title: นาย
   name: สมชัย
   lastname: อภิวัฒนพร
@@ -48387,7 +48293,7 @@
   bio: ''
   en:
     bio: ''
-- id: '949'
+- id: '947'
   title: นาย
   name: สมชาติ
   lastname: ธรรมศิริ
@@ -48435,7 +48341,7 @@
   bio: ''
   en:
     bio: ''
-- id: '950'
+- id: '948'
   title: นาย
   name: สมชาย
   lastname: สุมนัสขจรกุล
@@ -48485,7 +48391,7 @@
   bio: ''
   en:
     bio: ''
-- id: '951'
+- id: '949'
   title: นาย
   name: สมพงษ์
   lastname: สระกวี
@@ -48533,7 +48439,7 @@
   bio: ''
   en:
     bio: ''
-- id: '952'
+- id: '950'
   title: นาย
   name: สมศักดิ์
   lastname: ภู่สกุล
@@ -48581,7 +48487,7 @@
   bio: ''
   en:
     bio: ''
-- id: '953'
+- id: '951'
   title: ว่าที่ร้อยตรี
   name: สรชาติ
   lastname: วิชย สุวรรณพรหม
@@ -48632,7 +48538,7 @@
   bio: ''
   en:
     bio: ''
-- id: '954'
+- id: '952'
   title: นาย
   name: สรสินธุ
   lastname: ไตรจักรภพ
@@ -48683,7 +48589,7 @@
   bio: ''
   en:
     bio: ''
-- id: '955'
+- id: '953'
   title: นาย
   name: สวาท
   lastname: สุทธิอาคาร
@@ -48733,7 +48639,7 @@
   bio: ''
   en:
     bio: ''
-- id: '956'
+- id: '954'
   title: ศาสตราจารย์
   name: สัมพันธ์
   lastname: ฤทธิเดช
@@ -48784,7 +48690,7 @@
   bio: ''
   en:
     bio: ''
-- id: '957'
+- id: '955'
   title: นาย
   name: สัมพันธ์
   lastname: เลิศนุวัฒน์
@@ -48834,7 +48740,7 @@
   bio: ''
   en:
     bio: ''
-- id: '958'
+- id: '956'
   title: นาย
   name: สามารถ
   lastname: เจนชัยจิตรวนิช
@@ -48884,7 +48790,7 @@
   bio: ''
   en:
     bio: ''
-- id: '959'
+- id: '957'
   title: นาย
   name: สามารถ
   lastname: ราชพลสิทธิ์
@@ -48934,7 +48840,7 @@
   bio: ''
   en:
     bio: ''
-- id: '960'
+- id: '958'
   title: ผู้ช่วยศาสตราจารย์
   name: สิตางศุ์
   lastname: พิลัยหล้า
@@ -48982,7 +48888,7 @@
   bio: ''
   en:
     bio: ''
-- id: '961'
+- id: '959'
   title: นาย
   name: สิทธิพล
   lastname: วิบูลย์ธนากุล
@@ -49033,7 +48939,7 @@
   bio: ''
   en:
     bio: ''
-- id: '962'
+- id: '960'
   title: นาย
   name: สุชาติ
   lastname: โรจน์ทองคำ
@@ -49081,7 +48987,7 @@
   bio: ''
   en:
     bio: ''
-- id: '963'
+- id: '961'
   title: นางสาว
   name: สุณีย์
   lastname: กัลยะจิตร
@@ -49132,7 +49038,7 @@
   bio: ''
   en:
     bio: ''
-- id: '964'
+- id: '962'
   title: นาย
   name: สุทัศน์
   lastname: วีสกุล
@@ -49180,7 +49086,7 @@
   bio: ''
   en:
     bio: ''
-- id: '965'
+- id: '963'
   title: นาย
   name: สุพจน์
   lastname: โตวิจักษณ์ชัยกุล
@@ -49228,7 +49134,7 @@
   bio: ''
   en:
     bio: ''
-- id: '966'
+- id: '964'
   title: นาย
   name: สุพล
   lastname: บริสุทธิ์
@@ -49279,7 +49185,7 @@
   bio: ''
   en:
     bio: ''
-- id: '967'
+- id: '965'
   title: นางสาว
   name: สุเพ็ญศรี
   lastname: พึ่งโคกสูง
@@ -49330,7 +49236,7 @@
   bio: ''
   en:
     bio: ''
-- id: '968'
+- id: '966'
   title: นางสาว
   name: สุภัทรา
   lastname: บุญเสริม
@@ -49380,7 +49286,7 @@
   bio: ''
   en:
     bio: ''
-- id: '969'
+- id: '967'
   title: นาย
   name: สุเมธ
   lastname: องกิตติกุล
@@ -49430,7 +49336,7 @@
   bio: ''
   en:
     bio: ''
-- id: '970'
+- id: '968'
   title: พลตำรวจตรี
   name: สุรชาติ
   lastname: จึงดำรงกิจ
@@ -49481,7 +49387,7 @@
   bio: ''
   en:
     bio: ''
-- id: '971'
+- id: '969'
   title: นาย
   name: สุรวุฒิ
   lastname: อินนะใจ
@@ -49531,7 +49437,7 @@
   bio: ''
   en:
     bio: ''
-- id: '972'
+- id: '970'
   title: นาย
   name: สุรสาล
   lastname: ผาสุข
@@ -49582,7 +49488,7 @@
   bio: ''
   en:
     bio: ''
-- id: '973'
+- id: '971'
   title: นาย
   name: สุริยันต์
   lastname: ทองหนูเอียด
@@ -49632,7 +49538,7 @@
   bio: ''
   en:
     bio: ''
-- id: '974'
+- id: '972'
   title: นาย
   name: สุริยันต์
   lastname: สุริยะโชติกุล
@@ -49683,7 +49589,7 @@
   bio: ''
   en:
     bio: ''
-- id: '975'
+- id: '973'
   title: นาง
   name: สุวรรณา
   lastname: เตียรถ์สุวรรณ
@@ -49733,7 +49639,7 @@
   bio: ''
   en:
     bio: ''
-- id: '976'
+- id: '974'
   title: นาย
   name: สุวิทย์
   lastname: งอกศรี
@@ -49781,7 +49687,7 @@
   bio: ''
   en:
     bio: ''
-- id: '977'
+- id: '975'
   title: นาย
   name: เสน่ห์
   lastname: ขาวโต
@@ -49832,7 +49738,7 @@
   bio: ''
   en:
     bio: ''
-- id: '978'
+- id: '976'
   title: นางสาว
   name: แสงเดือน
   lastname: ชัยเลิศ
@@ -49882,7 +49788,7 @@
   bio: ''
   en:
     bio: ''
-- id: '979'
+- id: '977'
   title: นาย
   name: องอาจ
   lastname: วนามากสมบัติ
@@ -49932,7 +49838,7 @@
   bio: ''
   en:
     bio: ''
-- id: '980'
+- id: '978'
   title: นาย
   name: อนันต์
   lastname: ปาลีคุปต์
@@ -49982,7 +49888,7 @@
   bio: ''
   en:
     bio: ''
-- id: '981'
+- id: '979'
   title: นาย
   name: อนันต์
   lastname: ฤกษ์ดี
@@ -50032,7 +49938,7 @@
   bio: ''
   en:
     bio: ''
-- id: '982'
+- id: '980'
   title: นาย
   name: อนุกูล
   lastname: ทรายเพชร
@@ -50082,7 +49988,7 @@
   bio: ''
   en:
     bio: ''
-- id: '983'
+- id: '981'
   title: นาย
   name: อนุชา
   lastname: บูรพชัยศรี
@@ -50133,7 +50039,7 @@
   bio: ''
   en:
     bio: ''
-- id: '984'
+- id: '982'
   title: นาย
   name: อภิชาต
   lastname: ศักดิเศรษฐ์
@@ -50181,7 +50087,7 @@
   bio: ''
   en:
     bio: ''
-- id: '985'
+- id: '983'
   title: นาย
   name: อภิวัฒน์
   lastname: อากาศฤกษ์
@@ -50231,7 +50137,7 @@
   bio: ''
   en:
     bio: ''
-- id: '986'
+- id: '984'
   title: ผู้ช่วยศาสตราจารย์
   name: อลงกรณ์
   lastname: อรรคแสง
@@ -50281,7 +50187,7 @@
   bio: ''
   en:
     bio: ''
-- id: '987'
+- id: '985'
   title: นาย
   name: อัครพล
   lastname: ทองพูน
@@ -50329,7 +50235,7 @@
   bio: ''
   en:
     bio: ''
-- id: '988'
+- id: '986'
   title: นาง
   name: อังคณา
   lastname: นีละไพจิตร
@@ -50379,7 +50285,7 @@
   bio: ''
   en:
     bio: ''
-- id: '989'
+- id: '987'
   title: นาย
   name: อับดุลกอฮาร์
   lastname: อาแวปูเตะ
@@ -50429,7 +50335,7 @@
   bio: ''
   en:
     bio: ''
-- id: '990'
+- id: '988'
   title: นาย
   name: อัมภัส
   lastname: ปิ่นวนิชย์กุล
@@ -50477,7 +50383,7 @@
   bio: ''
   en:
     bio: ''
-- id: '991'
+- id: '989'
   title: นาย
   name: อำนวย
   lastname: ยุติธรรม
@@ -50528,7 +50434,7 @@
   bio: ''
   en:
     bio: ''
-- id: '992'
+- id: '990'
   title: นาย
   name: อุดม
   lastname: รัฐอมฤต
@@ -50578,7 +50484,7 @@
   bio: ''
   en:
     bio: ''
-- id: '993'
+- id: '991'
   title: นางสาว
   name: อุษณี
   lastname: กังวารจิตต์
@@ -50629,7 +50535,7 @@
   bio: ''
   en:
     bio: ''
-- id: '994'
+- id: '992'
   title: นาย
   name: เอกพันธุ์
   lastname: ปิณฑวณิช
@@ -50679,7 +50585,7 @@
   bio: ''
   en:
     bio: ''
-- id: '995'
+- id: '993'
   title: นางสาว
   name: เอมอร
   lastname: เสียงใหญ่
@@ -50729,7 +50635,7 @@
   bio: ''
   en:
     bio: ''
-- id: '996'
+- id: '994'
   title: นางสาว
   name: ทิพานัน
   lastname: ศิริชนะ
@@ -50782,7 +50688,7 @@
   bio: ''
   en:
     bio: ''
-- id: '997'
+- id: '995'
   title: นาย
   name: ธนิตพล
   lastname: ไชยนันทน์
@@ -50837,7 +50743,7 @@
   bio: ''
   en:
     bio: ''
-- id: '998'
+- id: '996'
   title: ศาสตราจารย์
   name: ธีระวัฒน์
   lastname: เหมะจุฑา
@@ -50889,7 +50795,7 @@
   bio: ''
   en:
     bio: ''
-- id: '999'
+- id: '997'
   title: นางสาว
   name: นพวรรณ
   lastname: หัวใจมั่น
@@ -50942,7 +50848,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1000'
+- id: '998'
   title: นาย
   name: ปรเมศวร์
   lastname: กุมารบุญ
@@ -50994,7 +50900,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1001'
+- id: '999'
   title: นาย
   name: ปลอดประสพ
   lastname: สุรัสวดี
@@ -51044,7 +50950,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1002'
+- id: '1000'
   title: นาย
   name: พรพจน์
   lastname: เพ็ญพาส
@@ -51096,7 +51002,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1003'
+- id: '1001'
   title: นาย
   name: ไพโรจน์
   lastname: อิสระเสรีพงษ์
@@ -51148,7 +51054,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1004'
+- id: '1002'
   title: นาย
   name: ยงยุทธ
   lastname: ติยะไพรัช
@@ -51200,7 +51106,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1005'
+- id: '1003'
   title: นาย
   name: วสันต์
   lastname: กล้าแท้
@@ -51253,7 +51159,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1006'
+- id: '1004'
   title: นาย
   name: วิชิต
   lastname: ปลั่งศรีสกุล
@@ -51303,7 +51209,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1007'
+- id: '1005'
   title: นาย
   name: สงกรานต์
   lastname: จิตสุทธิภากร
@@ -51354,7 +51260,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1008'
+- id: '1006'
   title: นาย
   name: สัมพันธ์
   lastname: แป้นพัฒน์
@@ -51406,7 +51312,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1009'
+- id: '1007'
   title: นาย
   name: อุดมศักดิ์
   lastname: ศรีสุทิวา
@@ -51459,7 +51365,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1010'
+- id: '1008'
   title: นางสาว
   name: สุรางค์รัตน์
   lastname: จำเนียรพล
@@ -51509,7 +51415,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1011'
+- id: '1009'
   title: พันตำรวจเอก
   name: ประเวศน์
   lastname: มูลประมุข
@@ -51559,7 +51465,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1012'
+- id: '1010'
   title: นาย
   name: มุข
   lastname: สุไลมาน
@@ -51609,7 +51515,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1013'
+- id: '1011'
   title: นาย
   name: อดิศร
   lastname: เพียงเกษ
@@ -51659,7 +51565,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1014'
+- id: '1012'
   title: นาย
   name: อุดมเดช
   lastname: รัตนเสถียร
@@ -51709,7 +51615,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1015'
+- id: '1013'
   title: นางสาว
   name: ชญาวดี
   lastname: ชัยอนันต์
@@ -51759,7 +51665,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1016'
+- id: '1014'
   title: นาย
   name: ดนุชา
   lastname: พิชยนันท์
@@ -51809,7 +51715,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1017'
+- id: '1015'
   title: นาย
   name: ทศพร
   lastname: ศิริสัมพันธ์
@@ -51859,7 +51765,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1018'
+- id: '1016'
   title: นาย
   name: ธีรัชย์
   lastname: อัตนวานิช
@@ -51909,7 +51815,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1019'
+- id: '1017'
   title: นาย
   name: พรชัย
   lastname: ฐีระเวช
@@ -51959,7 +51865,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1020'
+- id: '1018'
   title: นางสาว
   name: ศิรสา
   lastname: กันต์พิทยา
@@ -52009,7 +51915,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1021'
+- id: '1019'
   title: นาย
   name: เข้มแข็ง
   lastname: ยุติธรรมดำรง
@@ -52057,7 +51963,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1022'
+- id: '1020'
   title: นาย
   name: ทศพล
   lastname: ทังสุบุตร
@@ -52105,7 +52011,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1023'
+- id: '1021'
   title: นาย
   name: ไพศาล
   lastname: ดั่นคุ้ม
@@ -52153,7 +52059,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1024'
+- id: '1022'
   title: นาง
   name: อรมน
   lastname: ทรัพย์ทวีธรรม
@@ -52201,7 +52107,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1025'
+- id: '1023'
   title: นางสาว
   name: กรรณิการ
   lastname: กิจติเวชกุล
@@ -52249,7 +52155,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1026'
+- id: '1024'
   title: นาย
   name: เชิดชาย
   lastname: ใช้ไววิทย์
@@ -52297,7 +52203,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1027'
+- id: '1025'
   title: นาย
   name: ธกร
   lastname: เลาหพงศ์ชนะ
@@ -52345,7 +52251,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1028'
+- id: '1026'
   title: นาย
   name: ธีระพงษ์
   lastname: วัฒนวงษ์ภิญโญ
@@ -52393,7 +52299,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1029'
+- id: '1027'
   title: นาย
   name: เนวินธุ์
   lastname: ช่อชัยทิพฐ์
@@ -52441,7 +52347,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1030'
+- id: '1028'
   title: นาย
   name: ประเสริฐ
   lastname: ชัยกิจเด่นนภาลัย
@@ -52489,7 +52395,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1031'
+- id: '1029'
   title: นาย
   name: ปริญญ์
   lastname: พานิชภักดิ์
@@ -52537,7 +52443,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1032'
+- id: '1030'
   title: นาง
   name: รัชฎาภรณ์
   lastname: แก้วสนิท
@@ -52585,7 +52491,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1033'
+- id: '1031'
   title: นาย
   name: ศุภกิจ
   lastname: ศิริลักษณ์
@@ -52633,55 +52539,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1034'
-  title: นาย
-  name: สมเกียรติ
-  lastname: ศรลัมพ์
-  is_mp: false
-  is_senator: false
-  is_cabinet: false
-  is_active: true
-  party: ''
-  party_group: ''
-  mp_type: ''
-  mp_province: ''
-  mp_zone: ''
-  mp_list: ''
-  vote: null
-  senator_method: ''
-  cabinet_position: []
-  committee:
-    - position: กรรมาธิการ
-      set: กมธ.วิสามัญ พิจารณาศึกษาผลกระทบจากการเข้าร่วม CPTPP
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-  gender: ชาย
-  birthdate: null
-  education: ''
-  graduation: ''
-  degree: ''
-  ex_occupation: []
-  occupation_group: ''
-  quotes: ''
-  quotes_url: ''
-  asset: null
-  debt: null
-  facebook: ''
-  twitter: ''
-  bio: ''
-  en:
-    bio: ''
-- id: '1035'
+- id: '1032'
   title: นาย
   name: สุนทร
   lastname: รักษ์รงค์
@@ -52729,7 +52587,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1036'
+- id: '1033'
   title: รองศาสตราจารย์
   name: สุรวิช
   lastname: วรรณไกรโรจน์
@@ -52777,7 +52635,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1037'
+- id: '1034'
   title: นางสาว
   name: เสริมสุข
   lastname: สลักเพ็ชร์
@@ -52825,7 +52683,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1038'
+- id: '1035'
   title: นางสาว
   name: อรพินทร์
   lastname: เพชรทัต
@@ -52873,7 +52731,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1039'
+- id: '1036'
   title: นาย
   name: จักรวี
   lastname: วิสุทธิผล
@@ -52921,7 +52779,7 @@
   bio: ''
   en:
     bio: ''
-- id: '1040'
+- id: '1037'
   title: นาย
   name: สุชาติ
   lastname: โชคชัยวัฒนากร
@@ -52972,7 +52830,7 @@
     พ้นจากตำแหน่ง เนื่องจากลาออก
   en:
     bio: ''
-- id: '1041'
+- id: '1038'
   title: นาย
   name: วัฒนา
   lastname: สิทธิวัง
@@ -53021,7 +52879,7 @@
   bio: ชนะการเลือกตั้งซ่อมที่ลำปางเขต 4
   en:
     bio: ''
-- id: '1042'
+- id: '1039'
   title: นาย
   name: จัตุรงค์
   lastname: เสริมสุข
@@ -53071,7 +52929,7 @@
     จึงแต่งตั้งสมาชิกวุฒิสภาแทนตำแหน่งที่ว่าง
   en:
     bio: ''
-- id: '1043'
+- id: '1040'
   title: นาย
   name: วิชัย
   lastname: ทิตตภักดี
@@ -53122,7 +52980,7 @@
     จึงแต่งตั้งสมาชิกวุฒิสภาแทนตำแหน่งที่ว่าง
   en:
     bio: ''
-- id: '1044'
+- id: '1041'
   title: นาย
   name: ประสิทธิ์
   lastname: ปทุมารักษ์
@@ -53171,7 +53029,7 @@
   bio: นายอุดม คชินทร ลาออกจากตำแหน่งให้ จึงแต่งตั้งสมาชิกวุฒิสภาแทนตำแหน่งที่ว่าง
   en:
     bio: ''
-- id: '1045'
+- id: '1042'
   title: พลอากาศเอก
   name: แอร์บูล
   lastname: สุทธิวรรณ
@@ -53223,7 +53081,7 @@
     แต่งตั้งสมาชิกวุฒิสภาแทนตำแหน่งที่ว่าง
   en:
     bio: ''
-- id: '1046'
+- id: '1043'
   title: พลเอก
   name: เฉลิมพล
   lastname: ศรีสวัสดิ์
@@ -53274,7 +53132,7 @@
     แต่งตั้งสมาชิกวุฒิสภาแทนตำแหน่งที่ว่าง
   en:
     bio: ''
-- id: '1047'
+- id: '1044'
   title: พลเรือเอก
   name: ชาติชาย
   lastname: ศรีวรขาน
@@ -53325,7 +53183,7 @@
     แต่งตั้งสมาชิกวุฒิสภาแทนตำแหน่งที่ว่าง
   en:
     bio: ''
-- id: '1048'
+- id: '1045'
   title: พลเอก
   name: ณรงค์พันธ์
   lastname: จิตต์แก้วแท้
@@ -53377,7 +53235,7 @@
     แต่งตั้งสมาชิกวุฒิสภาแทนตำแหน่งที่ว่าง
   en:
     bio: ''
-- id: '1049'
+- id: '1046'
   title: พลตำรวจเอก
   name: สุวัฒน์
   lastname: แจ้งยอดสุข
@@ -53428,7 +53286,7 @@
     แต่งตั้งสมาชิกวุฒิสภาแทนตำแหน่งที่ว่าง
   en:
     bio: ''
-- id: '1050'
+- id: '1047'
   title: นาย
   name: อาคม
   lastname: เติมพิทยาไพสิฐ
@@ -53481,7 +53339,7 @@
     ในรัชกาลปัจจุบัน
   en:
     bio: ''
-- id: '1051'
+- id: '1048'
   title: นาย
   name: ปรีดี
   lastname: ดาวฉาย
@@ -53532,7 +53390,7 @@
   bio: ลาออกจากตำแหน่ง สิ้นสุดวาระวันที่ 2 กันยายน พ.ศ. 2563
   en:
     bio: ''
-- id: '1052'
+- id: '1049'
   title: นาย
   name: สุพัฒนพงษ์
   lastname: พันธ์มีเชาว์
@@ -53586,7 +53444,7 @@
     สิงหาคม พ.ศ. 2563 เป็นปีที่ 5 ในรัชกาลปัจจุบัน
   en:
     bio: ''
-- id: '1053'
+- id: '1050'
   title: นาย
   name: เอนก
   lastname: เหล่าธรรมทัศน์
@@ -53639,9 +53497,9 @@
     สิงหาคม พ.ศ. 2563 เป็นปีที่ 5 ในรัชกาลปัจจุบัน
   en:
     bio: ''
-- id: '1054'
-  title: นาย
-  name: กองตรี อาญาสิทธิ์
+- id: '1051'
+  title: กองตรี
+  name: อาญาสิทธิ์
   lastname: ศรีสุวรรณ
   is_mp: true
   is_senator: false
@@ -53688,59 +53546,5 @@
   bio: >-
     ดำรงตำแหน่งส.ส. เนื่องจากชนะการเลือกตั้งซ่อม เขต 3 จ.นครศรีธรรมราช เมื่อ 10
     มีนาคม 2564
-  en:
-    bio: ''
-- id: '1055'
-  title: นาย
-  name: เพชรภูมิ
-  lastname: อาภรณ์รัตน์
-  is_mp: true
-  is_senator: false
-  is_cabinet: false
-  is_active: true
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
-  mp_type: แบ่งเขต
-  mp_province: กำแพงเพชร
-  mp_zone: '2'
-  mp_list: ''
-  vote: 45687
-  senator_method: ''
-  cabinet_position: []
-  committee:
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-    - position: ''
-      set: ''
-  gender: ชาย
-  birthdate: '1992-10-01'
-  education: ปริญญาตรี
-  graduation: มหาวิทยาลัยเกษตรศาสตร์
-  degree: นิติศาสตรบัณฑิต
-  ex_occupation:
-    - ธุรกิจส่วนตัว
-    - >-
-      ที่ี่ปรึกษาประจำคณะกรรมาธิการศึกษาจัดทำและติดตามการบริหารงบประมาณ
-      สภาผู้แทนราษฎร
-  occupation_group: เอกชน
-  quotes: ''
-  quotes_url: ''
-  asset: null
-  debt: null
-  facebook: ''
-  twitter: ''
-  bio: >-
-    ดำรงตำแหน่งส.ส. เนื่องจากชนะการเลือกตั้งซ่อม เขต 2 จ.กำแพงเพชร เมื่อ 25
-    กุมภาพันธ์ 2564
   en:
     bio: ''
