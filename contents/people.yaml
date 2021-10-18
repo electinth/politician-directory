@@ -17374,7 +17374,7 @@
   is_mp: true
   is_senator: false
   is_cabinet: true
-  is_active: true
+  is_active: false
   party: พลังประชารัฐ
   party_group: ร่วมรัฐบาล
   mp_type: แบ่งเขต
@@ -17419,7 +17419,9 @@
   debt: 79261936.12
   facebook: 'https://www.facebook.com/ThamanatPhayao/'
   twitter: ''
-  bio: ''
+  bio: >-
+    พ้นจากตำแหน่งความเป็นรัฐมนตรีช่วยว่าการกระทรวงเกษตรและสหกรณ์ ตั้งแต่ 8
+    กันยายน 2564
   en:
     bio: ''
 - id: '337'
@@ -27054,7 +27056,7 @@
   is_mp: false
   is_senator: false
   is_cabinet: true
-  is_active: true
+  is_active: false
   party: พลังประชารัฐ
   party_group: ร่วมรัฐบาล
   mp_type: บัญชีรายชื่อ
@@ -27095,11 +27097,7 @@
   debt: 17922.98
   facebook: ''
   twitter: ''
-  bio: >-
-    ลาออกจากการเป็น ส.ส. บัญชีรายชื่อลำดับที่ 5 พรรคพลังประชารัฐ เมื่อวันที่ 30
-    กรกฎาคม 62
-    เป็นรัฐมนตรีช่วยว่าการกระทรวงแรงงานตามการแต่งตั้งรัฐมนตรีแทนตำแหน่งที่ว่างและเพิ่มเติมบางตำแหน่งตามประกาศ
-    ณ วันที่ 5 สิงหาคม พ.ศ. 2563 เป็นปีที่ 5 ในรัชกาลปัจจุบัน
+  bio: พ้นจากตำแหน่งความเป็นรัฐมนตรีช่วยว่าการกระทรวงแรงงาน ตั้งแต่ 8 กันยายน 2564
   en:
     bio: >-
       Former Palang Pracharath's PartyList no. 5  resigned as MP to be
