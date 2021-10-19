@@ -25,7 +25,7 @@ node -r esm tools/csv2yaml tmp/votelog.csv >> build.log
 
 # PeopleVotelog
 echo "people_vote"
-curl -s -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRyM5D8LOVvjGICiUdbQ4pPGdudulFq-uoek_ATkLOTi7AI9qMH7FhlwONC4N-TVLjokombSYfDu6G5/pub?gid=435210633&single=true&output=csv' \
+curl -s -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRyM5D8LOVvjGICiUdbQ4pPGdudulFq-uoek_ATkLOTi7AI9qMH7FhlwONC4N-TVLjokombSYfDu6G5/pub?gid=2012529332&single=true&output=csv' \
   > tmp/people_vote.bk.csv
 DEL_LINE=$(($(grep -n '^id,' tmp/people_vote.bk.csv | cut -d: -f 1)-1))
 cat tmp/people_vote.bk.csv | sed "1,${DEL_LINE}d" > tmp/people_vote.csv
