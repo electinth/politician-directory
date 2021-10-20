@@ -2552,7 +2552,7 @@
   vote_date: '2021-09-04'
   prayuth: ''
   thanathorn: ''
-  passed: true
+  passed: false
   is_no_vote: false
   no_vote_description: ''
   description_th: >-
@@ -2591,7 +2591,7 @@
   vote_date: '2021-09-04'
   prayuth: ''
   thanathorn: ''
-  passed: true
+  passed: false
   is_no_vote: false
   no_vote_description: ''
   description_th: >-
@@ -2629,7 +2629,7 @@
   vote_date: '2021-09-04'
   prayuth: ''
   thanathorn: ''
-  passed: true
+  passed: false
   is_no_vote: false
   no_vote_description: ''
   description_th: >-
@@ -2667,7 +2667,7 @@
   vote_date: '2021-09-04'
   prayuth: ''
   thanathorn: ''
-  passed: true
+  passed: false
   is_no_vote: false
   no_vote_description: ''
   description_th: >-
@@ -2706,7 +2706,7 @@
   vote_date: '2021-09-04'
   prayuth: ''
   thanathorn: ''
-  passed: true
+  passed: false
   is_no_vote: false
   no_vote_description: ''
   description_th: >-
@@ -2744,7 +2744,7 @@
   vote_date: '2021-09-04'
   prayuth: ''
   thanathorn: ''
-  passed: true
+  passed: false
   is_no_vote: false
   no_vote_description: ''
   description_th: >-
