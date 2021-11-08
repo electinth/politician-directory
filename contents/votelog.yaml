@@ -46,7 +46,7 @@
   disprove: 243
   abstained: 3
   absent: 1
-  total_voter: 1051
+  total_voter: 745
 - id: '2'
   title: ตั้งคณะกรรมาธิการผู้มีความหลากหลายทางเพศ
   is_active: true
@@ -101,7 +101,7 @@
   disprove: 365
   abstained: 13
   absent: 20
-  total_voter: 1051
+  total_voter: 498
 - id: '3'
   title: ขยายสัญญาสัมปทานทางด่วนและรถไฟฟ้าบีทีเอส
   is_active: true
@@ -151,7 +151,7 @@
   disprove: 24
   abstained: 20
   absent: 42
-  total_voter: 1051
+  total_voter: 498
 - id: '4'
   title: ตั้งคณะกรรมาธิการวิสามัญพิจารณาผลกระทบโครงการอีอีซี
   is_active: true
@@ -224,7 +224,7 @@
   disprove: 231
   abstained: 2
   absent: 40
-  total_voter: 1051
+  total_voter: 496
 - id: '5'
   title: พิจารณาพ.ร.ก.โอนกำลังพลและงบประมาณฯ
   is_active: true
@@ -299,7 +299,7 @@
   disprove: 70
   abstained: 2
   absent: 50
-  total_voter: 1051
+  total_voter: 496
 - id: '6'
   title: พ.ร.บ.งบประมาณฯ วาระที่ 1
   is_active: true
@@ -369,7 +369,7 @@
   disprove: 0
   abstained: 233
   absent: 12
-  total_voter: 1051
+  total_voter: 496
 - id: '7'
   title: ตั้ง กมธ.วิสามัญศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
   is_active: false
@@ -404,7 +404,7 @@
   disprove: 0
   abstained: 0
   absent: 97
-  total_voter: 1051
+  total_voter: 496
 - id: '8'
   title: ตั้ง กมธ. วิสามัญ ศึกษาโครงการผันน้ำ โขง เลย ชี มูล ป่าสัก
   is_active: true
@@ -446,7 +446,7 @@
   disprove: 0
   abstained: 1
   absent: 105
-  total_voter: 1051
+  total_voter: 497
 - id: '9'
   title: ตั้ง กมธ.วิสามัญ ศึกษาผลกระทบจาก ม. 44
   is_active: true
@@ -501,7 +501,7 @@
   disprove: 244
   abstained: 6
   absent: 242
-  total_voter: 1051
+  total_voter: 497
 - id: '10'
   title: ตั้ง กมธ.วิสามัญ ตรวจสอบละเมิดสิทธิมนุษยชน
   is_active: true
@@ -545,7 +545,7 @@
   disprove: 0
   abstained: 2
   absent: 85
-  total_voter: 1051
+  total_voter: 497
 - id: '11'
   title: >-
     ขอถอนญัตติ ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบกฎอัยการศึก และพรก.ฉุกเฉินในพื้นที่
@@ -581,7 +581,7 @@
   disprove: 78
   abstained: 149
   absent: 31
-  total_voter: 1051
+  total_voter: 498
 - id: '12'
   title: ตั้ง กมธ. วิสามัญ ตรวจสอบโครงการก่อสร้างอาคารรัฐสภาแห่งใหม่
   is_active: true
@@ -628,7 +628,7 @@
   disprove: 0
   abstained: 2
   absent: 142
-  total_voter: 1051
+  total_voter: 497
 - id: '13'
   title: ตั้ง กมธ.วิสามัญศึกษาโครงการจัดตั้งกระทรวงการข้าว
   is_active: true
@@ -673,7 +673,7 @@
   disprove: 342
   abstained: 0
   absent: 144
-  total_voter: 1051
+  total_voter: 496
 - id: '14'
   title: ตั้ง กมธ. วิสามัญ ศึกษาแนวทางป้องกันไม่ให้เกิดการรัฐประหารขึ้นอีกในอนาคต
   is_active: true
@@ -719,7 +719,7 @@
   disprove: 242
   abstained: 2
   absent: 38
-  total_voter: 1051
+  total_voter: 497
 - id: '15'
   title: ตั้ง กมธ.วิสามัญ ศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
   is_active: false
@@ -1176,7 +1176,7 @@
   disprove: 21
   abstained: 121
   absent: 13
-  total_voter: 1051
+  total_voter: 729
 - id: '27'
   title: |-
     พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ
@@ -1217,7 +1217,7 @@
   disprove: 17
   abstained: 55
   absent: 13
-  total_voter: 1051
+  total_voter: 729
 - id: '28'
   title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 3)"
   is_active: true
@@ -1255,7 +1255,7 @@
   disprove: 34
   abstained: 468
   absent: 13
-  total_voter: 1051
+  total_voter: 728
 - id: '29'
   title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 4)"
   is_active: true
@@ -1293,7 +1293,7 @@
   disprove: 20
   abstained: 430
   absent: 13
-  total_voter: 1051
+  total_voter: 729
 - id: '30'
   title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 5)"
   is_active: true
@@ -1331,7 +1331,7 @@
   disprove: 48
   abstained: 459
   absent: 13
-  total_voter: 1051
+  total_voter: 729
 - id: '31'
   title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 6)"
   is_active: true
@@ -1370,7 +1370,7 @@
   disprove: 19
   abstained: 430
   absent: 13
-  total_voter: 1051
+  total_voter: 729
 - id: '32'
   title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 7)"
   is_active: true
@@ -1409,7 +1409,7 @@
   disprove: 137
   abstained: 368
   absent: 13
-  total_voter: 1051
+  total_voter: 729
 - id: '33'
   title: ขอให้ศาลรัฐธรรมนูญพิจารณาเกี่ยวกับหน้าที่และอำนาจของรัฐสภาตามรัฐธรรมนูญ
   is_active: true
@@ -1446,7 +1446,7 @@
   disprove: 315
   abstained: 15
   absent: 40
-  total_voter: 1051
+  total_voter: 733
 - id: '34'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล  พลเอกประยุทธ์ จันทร์โอชา นายกรัฐมนตรี
@@ -1487,7 +1487,7 @@
   disprove: 272
   abstained: 3
   absent: 6
-  total_voter: 1051
+  total_voter: 486
 - id: '35'
   title: อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล พลเอกประวิตร วงษ์สุวรรณ รองนายกรัฐมนตรี
   is_active: true
@@ -1524,7 +1524,7 @@
   disprove: 274
   abstained: 4
   absent: 5
-  total_voter: 1051
+  total_voter: 486
 - id: '36'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายอนุทิน ชาญวีรกูล
@@ -1564,7 +1564,7 @@
   disprove: 275
   abstained: 6
   absent: 5
-  total_voter: 1051
+  total_voter: 486
 - id: '37'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายจุรินทร์ ลักษณวิศิษฏ์
@@ -1604,7 +1604,7 @@
   disprove: 269
   abstained: 7
   absent: 5
-  total_voter: 1051
+  total_voter: 486
 - id: '38'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล พลเอก อนุพงษ์ เผ่าจินดา
@@ -1644,7 +1644,7 @@
   disprove: 272
   abstained: 3
   absent: 7
-  total_voter: 1051
+  total_voter: 486
 - id: '39'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายณัฏฐพล ทีปสุวรรณ
@@ -1684,7 +1684,7 @@
   disprove: 258
   abstained: 8
   absent: 6
-  total_voter: 1051
+  total_voter: 486
 - id: '40'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายสุชาติ ชมกลิ่น
@@ -1725,7 +1725,7 @@
   disprove: 263
   abstained: 5
   absent: 6
-  total_voter: 1051
+  total_voter: 486
 - id: '41'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายศักดิ์สยาม ชิดชอบ
@@ -1764,7 +1764,7 @@
   disprove: 268
   abstained: 12
   absent: 5
-  total_voter: 1051
+  total_voter: 486
 - id: '42'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายนิพนธ์ บุญญามณี
@@ -1802,7 +1802,7 @@
   disprove: 272
   abstained: 4
   absent: 5
-  total_voter: 1051
+  total_voter: 486
 - id: '43'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล ร้อยเอก ธรรมนัส พรมเผ่า
@@ -1843,7 +1843,7 @@
   disprove: 273
   abstained: 5
   absent: 8
-  total_voter: 1051
+  total_voter: 485
 - id: '44'
   title: |-
     พิจารณาแก้ไขเพิ่มเติมร่าง ร.ธ.น. 
@@ -1890,7 +1890,7 @@
   disprove: 4
   abstained: 91
   absent: 432
-  total_voter: 1051
+  total_voter: 734
 - id: '45'
   title: >-
     ร่างพรรคพลังประชารัฐ เพิ่มสิทธิในกระบวนการยุติธรรม
@@ -1949,7 +1949,7 @@
   disprove: 199
   abstained: 173
   absent: 27
-  total_voter: 1051
+  total_voter: 733
 - id: '46'
   title: >-
     ร่างพรรคเพื่อไทย ฉบับที่ 1 เพิ่มสิทธิเสรีภาพของประชาชน
@@ -2025,7 +2025,7 @@
   disprove: 136
   abstained: 171
   absent: 27
-  total_voter: 1051
+  total_voter: 733
 - id: '47'
   title: ร่างพรรคเพื่อไทย ฉบับที่ 2 แก้ระบบเลือกตั้งเป็นบัตรสองใบแบบรัฐธรรมนูญ 2540
   is_active: true
@@ -2062,7 +2062,7 @@
   disprove: 89
   abstained: 241
   absent: 27
-  total_voter: 1051
+  total_voter: 733
 - id: '48'
   title: >-
     ร่างพรรคเพื่อไทย ฉบับที่ 3
@@ -2104,7 +2104,7 @@
   disprove: 101
   abstained: 150
   absent: 27
-  total_voter: 1051
+  total_voter: 733
 - id: '49'
   title: >-
     ร่างพรรคเพื่อไทย ฉบับที่ 4 ยกเลิกแผนยุทธศาสตร์ชาติ 20 ปีและยกเลิกอำนาจ
@@ -2149,7 +2149,7 @@
   disprove: 150
   abstained: 229
   absent: 27
-  total_voter: 1051
+  total_voter: 733
 - id: '50'
   title: ร่างพรรคภูมิใจไทย ฉบับที่ 1 แก้ไขแผนยุทธศาสตร์ชาติ
   is_active: true
@@ -2185,7 +2185,7 @@
   disprove: 86
   abstained: 166
   absent: 27
-  total_voter: 1051
+  total_voter: 733
 - id: '51'
   title: ร่างพรรคภูมิใจไทย ฉบับที่ 2 เสนอหลักประกันรายได้ถ้วนหน้า (UBI)
   is_active: true
@@ -2222,7 +2222,7 @@
   disprove: 78
   abstained: 152
   absent: 27
-  total_voter: 1051
+  total_voter: 733
 - id: '52'
   title: >-
     ร่างพรรคประชาธิปัตย์ ฉบับที่ 1 เพิ่มสิทธิในกระบวนการยุติธรรม สิทธิชุมชน
@@ -2275,7 +2275,7 @@
   disprove: 75
   abstained: 162
   absent: 27
-  total_voter: 1051
+  total_voter: 733
 - id: '53'
   title: ร่างพรรคประชาธิปัตย์ ฉบับที่ 2 ตัดอำนาจ ส.ว. ในการแก้รัฐธรรมนูญ
   is_active: true
@@ -2313,7 +2313,7 @@
   disprove: 102
   abstained: 189
   absent: 27
-  total_voter: 1051
+  total_voter: 733
 - id: '54'
   title: ร่างพรรคประชาธิปัตย์ ฉบับที่ 3 กระบวนการตรวจสอบ ป.ป.ช.
   is_active: true
@@ -2355,7 +2355,7 @@
   disprove: 97
   abstained: 178
   absent: 27
-  total_voter: 1051
+  total_voter: 733
 - id: '55'
   title: >-
     ร่างพรรคประชาธิปัตย์ ฉบับที่ 4
@@ -2398,7 +2398,7 @@
   disprove: 96
   abstained: 149
   absent: 27
-  total_voter: 1051
+  total_voter: 733
 - id: '56'
   title: ร่างพรรคประชาธิปัตย์ ฉบับที่ 5 ประเด็นกระจายอำนาจสู่ท้องถิ่น
   is_active: true
@@ -2461,7 +2461,7 @@
   disprove: 82
   abstained: 167
   absent: 27
-  total_voter: 1051
+  total_voter: 733
 - id: '57'
   title: >-
     ร่างพรรคประชาธิปัตย์ ฉบับที่ 6 แก้ระบบเลือกตั้งเป็นบัตรสองใบแบบรัฐธรรมนูญ
@@ -2500,7 +2500,7 @@
   disprove: 24
   abstained: 130
   absent: 27
-  total_voter: 1051
+  total_voter: 733
 - id: '58'
   title: โหวตพ.ร.ก.เงินกู้ เพิ่มเติม 2564
   is_active: true
@@ -2537,7 +2537,7 @@
   disprove: 196
   abstained: 5
   absent: 11
-  total_voter: 1051
+  total_voter: 473
 - id: '59'
   title: อภิปรายไม่ไว้วางใจพลเอกประยุทธ์ จันทรโอชา 2564
   is_active: true
@@ -2576,7 +2576,7 @@
   disprove: 264
   abstained: 3
   absent: 7
-  total_voter: 1051
+  total_voter: 479
 - id: '60'
   title: อภิปรายไม่ไว้วางใจอนุทิน  ชาญวีรกูล 2564
   is_active: true
@@ -2614,7 +2614,7 @@
   disprove: 260
   abstained: 11
   absent: 6
-  total_voter: 1051
+  total_voter: 472
 - id: '61'
   title: อภิปรายไม่ไว้วางใจสุชาติ  ชมกลิ่น  2564
   is_active: true
@@ -2652,7 +2652,7 @@
   disprove: 255
   abstained: 10
   absent: 8
-  total_voter: 1051
+  total_voter: 471
 - id: '62'
   title: อภิปรายไม่ไว้วางใจศักดิ์สยาม ชิดชอบ 2564
   is_active: true
@@ -2691,7 +2691,7 @@
   disprove: 258
   abstained: 10
   absent: 8
-  total_voter: 1051
+  total_voter: 472
 - id: '63'
   title: อภิปรายไม่ไว้วางใจเฉลิมชัย  ศรีอ่อน 2564
   is_active: true
@@ -2729,7 +2729,7 @@
   disprove: 259
   abstained: 7
   absent: 5
-  total_voter: 1051
+  total_voter: 471
 - id: '64'
   title: อภิปรายไม่ไว้วางใจชัยวุฒิ  ธนาคมมานุสรณ์  2564
   is_active: true
@@ -2766,4 +2766,4 @@
   disprove: 258
   abstained: 9
   absent: 4
-  total_voter: 1051
+  total_voter: 471
