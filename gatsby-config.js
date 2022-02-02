@@ -69,26 +69,17 @@ const config = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `theyworkforus.wevis.info`,
+        // Currently when using a custom domain with self-hosted plausible, the script
+        // path will incorrectly point to index.js. Here we force the correct path...
+        // https://github.com/pixelplicity/gatsby-plugin-plausible/issues/49
+        customDomain: `analytics.punchup.world/js/plausible.js?original=`,
+      },
+    },
   ],
-}
-
-// Track analytics on production
-if (process.env.GATSBY_ENV === "production") {
-  const googleGtagConfig = {
-    resolve: "gatsby-plugin-gtag",
-    options: {
-      trackingId: "UA-43653558-21",
-    },
-  }
-  config.plugins.push(googleGtagConfig)
-} else {
-  const googleGtagConfig = {
-    resolve: "gatsby-plugin-gtag",
-    options: {
-      trackingId: "UA-161190279-3",
-    },
-  }
-  config.plugins.push(googleGtagConfig)
 }
 
 module.exports = config

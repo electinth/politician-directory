@@ -217,21 +217,6 @@ function DrawChart({
         d3.selectAll(".rect" + is_active[0]).style("stroke", "none")
       if (is_active.length === 2) is_active.splice(0, 1)
       setPopupState(true)
-      handleBtnClick(d.data.id)
-    }
-    const handleBtnClick = value => {
-      console.log("senate_votelog_id", value)
-      if (!["production", "development"].includes(process.env.GATSBY_ENV)) {
-        return
-      }
-      try {
-        window.gtag("event", "Click", {
-          event_category: "senate_votelog_id",
-          event_label: value,
-        })
-      } catch (e) {
-        console.error(e)
-      }
     }
     rects
       .selectAll("rect")

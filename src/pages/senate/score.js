@@ -244,21 +244,6 @@ const Motion = ({ data }) => {
 
   const senatorCount = _.countBy(senateVoteData, "senator_method")
 
-  const handleBtnClick = value => {
-    console.log("senate_score_mode", value)
-    if (!["production", "development"].includes(process.env.GATSBY_ENV)) {
-      return
-    }
-    try {
-      window.gtag("event", "View", {
-        event_category: "senate_score_mode",
-        event_label: value,
-      })
-    } catch (e) {
-      console.error(e)
-    }
-  }
-
   return (
     <Layout pageStyles={{ background: "#fff" }}>
       <SenateNavbar />
@@ -284,10 +269,7 @@ const Motion = ({ data }) => {
                         ? "0.2rem solid rgba(0, 0, 0, 1)"
                         : "0.2rem solid rgba(0, 0, 0, 0.3)",
                   }}
-                  onClick={() => {
-                    handleBtnClick("1,0,0")
-                    handleFilterClick("โดยตำแหน่ง")
-                  }}
+                  onClick={() => handleFilterClick("โดยตำแหน่ง")}
                 >
                   <div css={{ ...cssCircle, background: "#999C00" }} />
                   <span css={{ ...cssType }}>โดยตำแหน่ง</span>
@@ -309,10 +291,7 @@ const Motion = ({ data }) => {
                         ? "0.2rem solid rgba(0, 0, 0, 1)"
                         : "0.2rem solid rgba(0, 0, 0, 0.3)",
                   }}
-                  onClick={() => {
-                    handleBtnClick("0,1,0")
-                    handleFilterClick("เลือกโดย คสช.")
-                  }}
+                  onClick={() => handleFilterClick("เลือกโดย คสช.")}
                 >
                   <div css={{ ...cssCircle, background: "#5739AC" }} />
                   <span css={{ ...cssType }}> คสช. สรรหา </span>
@@ -334,10 +313,7 @@ const Motion = ({ data }) => {
                         ? "0.2rem solid rgba(0, 0, 0, 1)"
                         : "0.2rem solid rgba(0, 0, 0, 0.3)",
                   }}
-                  onClick={() => {
-                    handleBtnClick("0,0,1")
-                    handleFilterClick("เลือกกันเอง")
-                  }}
+                  onClick={() => handleFilterClick("เลือกกันเอง")}
                 >
                   <div css={{ ...cssCircle, background: "#FEACAC" }} />
                   <span css={{ ...cssType }}>ตามกลุ่มอาชีพ</span>
@@ -384,10 +360,7 @@ const Motion = ({ data }) => {
                     ? "0.2rem solid rgba(0, 0, 0, 1)"
                     : "0.2rem solid rgba(0, 0, 0, 0.3)",
               }}
-              onClick={() => {
-                handleBtnClick("1,0,0")
-                handleFilterClick("โดยตำแหน่ง")
-              }}
+              onClick={() => handleFilterClick("โดยตำแหน่ง")}
             >
               <div css={{ ...cssCircle, background: "#999C00" }} />
               <span css={{ ...cssType }}>โดยตำแหน่ง</span>
@@ -409,10 +382,7 @@ const Motion = ({ data }) => {
                     ? "0.2rem solid rgba(0, 0, 0, 1)"
                     : "0.2rem solid rgba(0, 0, 0, 0.3)",
               }}
-              onClick={() => {
-                handleBtnClick("0,1,0")
-                handleFilterClick("เลือกโดย คสช.")
-              }}
+              onClick={() => handleFilterClick("เลือกโดย คสช.")}
             >
               <div css={{ ...cssCircle, background: "#5739AC" }} />
               <span css={{ ...cssType }}> คสช. สรรหา </span>
@@ -434,10 +404,7 @@ const Motion = ({ data }) => {
                     ? "0.2rem solid rgba(0, 0, 0, 1)"
                     : "0.2rem solid rgba(0, 0, 0, 0.3)",
               }}
-              onClick={() => {
-                handleBtnClick("0,0,1")
-                handleFilterClick("เลือกกันเอง")
-              }}
+              onClick={() => handleFilterClick("เลือกกันเอง")}
             >
               <div css={{ ...cssCircle, background: "#FEACAC" }} />
               <span css={{ ...cssType }}> ตามกลุ่มอาชีพ </span>

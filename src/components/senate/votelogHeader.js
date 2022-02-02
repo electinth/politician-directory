@@ -116,20 +116,7 @@ const VoteResultsHeader = ({
     setIsShowAll(false)
     setPopupState(false)
   }
-  const handleBtnClick = value => {
-    console.log("senate_votelog_mode", value)
-    if (!["production", "development"].includes(process.env.GATSBY_ENV)) {
-      return
-    }
-    try {
-      window.gtag("event", "View", {
-        event_category: "senate_votelog_mode",
-        event_label: value,
-      })
-    } catch (e) {
-      console.error(e)
-    }
-  }
+
   return (
     <div>
       <div css={cssContainer}>
@@ -146,19 +133,13 @@ const VoteResultsHeader = ({
               style={{
                 marginRight: "5px",
               }}
-              onClick={() => {
-                handleBtnClick("all")
-                clickBtnViewPerson()
-              }}
+              onClick={clickBtnViewPerson}
             >
               ดูรายคน
             </button>
             <button
               css={cssBtn({ active: viewGroup })}
-              onClick={() => {
-                handleBtnClick("senator_method")
-                clickBtnViewGroup()
-              }}
+              onClick={clickBtnViewGroup}
             >
               ดูแยกประเภท ส.ว.
             </button>
@@ -178,19 +159,13 @@ const VoteResultsHeader = ({
       <div css={cssMobile}>
         <button
           css={cssBtn({ active: viewPerson })}
-          onClick={() => {
-            handleBtnClick("all")
-            clickBtnViewPerson()
-          }}
+          onClick={clickBtnViewPerson}
         >
           ดูรายคน
         </button>
         <button
           css={cssBtn({ active: viewGroup })}
-          onClick={() => {
-            handleBtnClick("senator_method")
-            clickBtnViewGroup()
-          }}
+          onClick={clickBtnViewGroup}
           style={{ marginBottom: "25px" }}
         >
           ดูแยกประเภท ส.ว.
