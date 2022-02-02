@@ -17,7 +17,7 @@
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.3.0",
     "@google-cloud/local-auth": "^1.0.0",
-    "@wevisdemo/ui": "^1.0.1",
+    "@wevisdemo/ui": "^2.0.0",
     "autosuggest-highlight": "^3.1.1",
     "axios": "^0.21.1",
     "bottleneck": "^2.19.5",
