@@ -33,6 +33,24 @@ const Layout = ({ children, pageStyles, className }) => {
         ...pageStyles,
       }}
     >
+      <div
+        style={{
+          backgroundColor: "black",
+          color: "white",
+          position: "sticky",
+          top: 0,
+          textAlign: "center",
+          padding: 10,
+          zIndex: 999,
+        }}
+      >
+        เว็บไซต์นี้อัพเดทข้อมูลล่าสุดเมื่อ กรกฎาคม 2564
+        สามารถดูเวอร์ชั่นอัพเดทได้ที่{" "}
+        <a href="https://reconstitution.wevis.info" target="_blank">
+          https://reconstitution.wevis.info
+        </a>
+      </div>
+
       <Header siteTitle={data.site.siteMetadata.title} />
 
       <main

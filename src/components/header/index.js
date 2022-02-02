@@ -119,6 +119,7 @@ const Header = ({ siteTitle }) => {
     <header
       style={{
         background: `#fff`,
+        position: "relative",
       }}
     >
       <EnvBadge />
