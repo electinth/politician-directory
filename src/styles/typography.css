@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Kondolar Thai";
+  src: url(/fonts/KondolarThai-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Kondolar Thai";
+  font-weight: 900;
+  src: url(/fonts/KondolarThai-Black.woff) format("woff");
+}
+@font-face {
+  font-family: "Anuphan";
+  src: url(/fonts/Anuphan-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "Anuphan";
+  font-weight: 600;
+  src: url(/fonts/Anuphan-SemiBold.otf) format("opentype");
+}
+@font-face {
+  font-family: "Bai Jamjuri";
+  src: url(/fonts/BaiJamjuree-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Bai Jamjuri";
+  font-weight: 700;
+  src: url(/fonts/BaiJamjuree-Bold.ttf) format("truetype");
+}
