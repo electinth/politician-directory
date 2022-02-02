@@ -27,3 +27,26 @@ ol,
 ul {
   margin-bottom: 2.4rem;
 }
+
+/* Correct WeVis UI for font-size: 62.5%; */
+.wv_navbar__logo__wevis {
+  padding: 0.1rem;
+}
+
+.wv_navbar__logo__wevis svg {
+  height: 100%;
+}
+
+.wv_footer__logo svg {
+  height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .wv_navbar__logo__wevis {
+    padding: 0.5rem;
+  }
+
+  .wv_footer__logo svg {
+    height: 2rem;
+  }
+}
