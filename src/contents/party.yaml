@@ -3,12 +3,6 @@
   en:
     name: House of Representatives
     short_name: ''
-    description: >-
-      The lower house of the National Assembly of Thailand, the legislative
-      branch of the Thai government, has 500 members, all of which are
-      democratically elected: 375 members were directly elected through single
-      constituency elections, while the other 125 are elected through party-list
-      proportional representation.
   short_name: ส.ส.
   color: ''
   party_type: สส
@@ -22,35 +16,21 @@
     ส่วนฝ่ายค้านคือพรรคเพื่อไทยและพรรคร่วมฝ่ายค้านอีก 6 พรรค
   established_date: '2019-03-24'
   dissolved_date: ''
-  total_member: 500
   speaker: นาย ชวน หลีกภัย
   first_deputy_speaker: นาย สุชาติ ตันเจริญ
   second_deputy_speaker: นาย ศุภชัย โพธิ์สุ
   opposition_leader: นาย สมพงษ์ อมรวิวัฒน์
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: ''
   party_secretary: ''
   website: 'https://www.parliament.go.th'
   facebook: 'https://www.facebook.com/thaiparliament'
   twitter: ''
-  email: webmaster@parliament.go.th
-  phone: 0-2244-2500
-  ratchakitcha: ''
   is_active: true
 - id: '2'
   name: วุฒิสภาไทย
   en:
     name: Senate
     short_name: ''
-    description: >-
-      The non-elected Senate is a part of the Thai legislative branch. Of its
-      250 members, 244 were appointed, while the other 6 seats are given
-      automatically to incumbent holders of top security positions. The
-      transitory provisions of the current constitution provide extra power to
-      the Senate, allowing it to participate in the Prime Minister vote, steer
-      the cabinet's national reform work, and vote for certain bills deemed
-      relevant.
   short_name: ส.ว
   color: ''
   party_type: สว
@@ -63,33 +43,21 @@
     วุฒิสภาชุดดังกล่าวมีอำนาจเพิ่มเติมตามบทเฉพาะกาลของรัฐธรรมนูญให้ร่วมเลือกนายกรัฐมนตรีและเร่งรัดการปฏิรูปประเทศของคณะรัฐมนตรีตลอดจนพิจารณากฎหมายที่เห็นว่าเกี่ยวข้อง
   established_date: '2019-05-28'
   dissolved_date: ''
-  total_member: 250
   speaker: นาย พรเพชร วิชิตชลชัย
   first_deputy_speaker: นาย สิงห์ศึก สิงห์ไพร
   second_deputy_speaker: นาย ศุภชัย สมเจริญ
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: ''
   party_secretary: ''
   website: 'https://www.senate.go.th'
   facebook: 'https://www.facebook.com/SenateThailand'
   twitter: ''
-  email: webmaster@senate.go.th
-  phone: 0-2831-5888-9
-  ratchakitcha: ''
   is_active: true
 - id: '3'
   name: คณะรัฐมนตรีไทย
   en:
     name: Cabinet
     short_name: ''
-    description: >-
-      The cabinet manages the government. Gen. Prayut Chan-o-Cha, endorsed by
-      Palung Pracharat Party and 19 other parties, is leading the current
-      cabinet. The junta leader had been the Prime Minister of Thailand and Head
-      of the National Council for Peace and Order (NCPO) for the past 5 years;
-      hence the nickname "Prayut 2" for this cabinet.
   short_name: ครม.
   color: ''
   party_type: ครม
@@ -103,36 +71,21 @@
     ชุดนี้มีอีกชื่อเรียกว่าคณะรัฐมนตรีประยุทธ์ 2
   established_date: '2019-07-10'
   dissolved_date: ''
-  total_member: 36
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: พลเอก ประยุทธ์ จันทร์โอชา
-  deputy_prime_minister: |-
-    พลเอก ประวิตร วงษ์สุวรรณ
-    สมคิด จาตุศรีพิทักษ์
-    วิษณุ เครืองาม
-    จุรินทร์ ลักษณวิศิษฏ์
-    อนุทิน ชาญวีรกูล
   party_leader: ''
   party_secretary: ''
   website: 'https://www.thaigov.go.th'
   facebook: 'https://www.facebook.com/ThaigovSpokesman'
   twitter: ''
-  email: ''
-  phone: ''
-  ratchakitcha: ''
   is_active: true
 - id: '4'
   name: ครูไทยเพื่อประชาชน
   en:
     name: Thai Teachers For People
     short_name: T.T.P.P.
-    description: >-
-      Thai Teacher for People Party was established by a network of Thai teacher
-      organisations to bring about national-crisis solving policies with the
-      approach of developing national education and educational practitioners.
   short_name: ค.พ.ช.
   color: '#175a38'
   party_type: พรรค
@@ -143,32 +96,21 @@
     เพื่อนำเสนอนโยบายแนวทางการแก้ปัญหาวิกฤติของชาติโดยเน้นเรื่องการศึกษาและบุคลากรทางการศึกษา
   established_date: '2011-06-28'
   dissolved_date: ''
-  total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย ปรีดา บุญเพลิง
   party_secretary: นาย สุวิชญ์ โยทองยศ
   website: ''
   facebook: 'https://www.facebook.com/thaiteachersforpeopleparty/'
   twitter: ''
-  email: ''
-  phone: 085-467-5922
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2554/D/132/183.PDF'
   is_active: true
 - id: '5'
   name: ชาติไทยพัฒนา
   en:
     name: Chartthaipattana
     short_name: CP
-    description: >-
-      Chartthaipattana Party was established in 2008 to absorb the MPs from
-      Chartthai Party which had been dissolved. Its stronghold is in Suphanburi
-      Province. With its flexible, friendly-to-all-side position, the party has
-      never failed to join the government.
   short_name: ชทพ.
   color: '#ff72a8'
   party_type: พรรค
@@ -180,33 +122,21 @@
     และมีจุดยืนที่ปรับตัวได้กับทุกฝ่ายจึงมักได้ร่วมรัฐบาลอยู่เสมอ
   established_date: '2008-04-18'
   dissolved_date: ''
-  total_member: 10
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นางสาว กัญจนา ศิลปอาชา
   party_secretary: นาย ประภัตร โพธสุธน
   website: 'http://www.chartthaipattana.or.th'
   facebook: 'https://www.facebook.com/pg/ChartthaipattanaParty'
   twitter: 'https://twitter.com/ChartthaiPT'
-  email: chartthaipattana@chartthaipattana.or.th
-  phone: 02-2438072-3
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2551/D/064/66.PDF'
   is_active: true
 - id: '6'
   name: ชาติพัฒนา
   en:
     name: Chartpattana
     short_name: CPN.
-    description: >-
-      Chartpattana is a merge between the Ruam Jai Thai group and the former
-      Chartpattana Party which had once dissolved itself to join the Thai Rak
-      Thai Party. Its stronghold is in Nakhon Ratchasima. With its flexible,
-      friendly-to-all-side position, the party has never failed to join the
-      government.
   short_name: ชพน.
   color: '#ffaf41'
   party_type: พรรค
@@ -219,32 +149,21 @@
     มีจุดยืนที่ปรับตัวได้กับทุกฝ่ายจึงมักได้ร่วมรัฐบาลอยู่เสมอ
   established_date: '2007-10-03'
   dissolved_date: ''
-  total_member: 3
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย เทวัญ ลิปตพัลลภ
   party_secretary: นาย ดล เหตระกูล
   website: 'http://www.chartpattana.com/'
   facebook: 'https://www.facebook.com/ChartpattanaParty/'
   twitter: 'https://twitter.com/chartpattana'
-  email: Office.cpn@gmail.com
-  phone: 02-241-8275
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2554/D/179/121.PDF'
   is_active: true
 - id: '7'
   name: ไทยศรีวิไลย์
   en:
     name: Thai Civilized
     short_name: TCL.
-    description: >-
-      Thai Civilized Party, led by Mongkolkit Suksintaranont, former Secretary
-      General of the National Anti-Corruption Network. After the 2019 election
-      it innitially joined the government, but has now declared itself an
-      independent opposition.
   short_name: ทศล.
   color: '#0c5197'
   party_type: พรรค
@@ -256,31 +175,21 @@
     62 ได้เข้าเป็นพรรคร่วมรัฐบาลระยะหนึ่ง ก่อนประกาศถอนตัวและขอเป็นฝ่ายค้านอิสระ
   established_date: '2018-10-24'
   dissolved_date: ''
-  total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย มงคลกิตติ์ สุขสินธารานนท์
   party_secretary: นาย วิวัฒน์ เจริญพาณิชย์ศิริ
   website: ''
   facebook: 'https://www.facebook.com/THAICIVILIZEDPARTY/'
   twitter: ''
-  email: ''
-  phone: 02-961-0380-5
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/003/T_0176.PDF'
   is_active: true
 - id: '8'
   name: ไทรักธรรม
   en:
     name: Thairaktham
     short_name: T.T.
-    description: >-
-      Thairaktham Party's sole party list seat from the 2019 general election
-      was taken back shortly afterwards, as the by-election in Chiangmai
-      Constituency 8 changed the overall party list quota given to each party.
   short_name: ท.ธ.
   color: '#e43ba2'
   party_type: พรรค
@@ -293,32 +202,21 @@
     ส่งผลให้มีการคำนวณคะแนนใหม่
   established_date: '2013-08-16'
   dissolved_date: ''
-  total_member: 0
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย พีระวิทย์ เรื่องลือดลภาค
   party_secretary: นาย จตุรวิทย์ กาละมิตร์
   website: ''
   facebook: 'https://www.facebook.com/Thairaktham/'
   twitter: ''
-  email: tairaktham_party@outlook.com
-  phone: 099-308-5545
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/106/116.PDF'
   is_active: true
 - id: '9'
   name: ประชาชาติ
   en:
     name: Prachachat
     short_name: PCC.
-    description: >-
-      Prachachat Party comprises of people from different places of birth, races
-      and cultures, with an aim to build a multi-culture nation. All of the 6
-      seats the party earned from the 2019 election were from constituencies in
-      the three Southern border provinces.
   short_name: ปช.
   color: '#a35f26'
   party_type: พรรค
@@ -331,32 +229,21 @@
     เป็นเขตเลือกตั้งในพื้นที่สามจังหวัดชายแดนภาคใต้ทั้งหมด
   established_date: '2018-10-31'
   dissolved_date: ''
-  total_member: 7
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย วันมูหะมัดนอร์ มะทา
   party_secretary: พ.ต.อ. ทวี สอดส่อง
   website: 'https://prachachat.org'
   facebook: 'https://www.facebook.com/PrachachatPeopleNation'
   twitter: ''
-  email: PeoplesNation2561@gmail.com
-  phone: 063-269-9487
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0395.PDF'
   is_active: true
 - id: '10'
   name: ประชาธรรมไทย
   en:
     name: Thai People Justice
     short_name: T.P.J.
-    description: >-
-      Thai People Justice Party is led by Pichet Sathirachawal, former transport
-      minister, former deputy industry minister and former Bangkok Mass Transit
-      Authority Director. After the 2019 election it has innitially joined the
-      governnment, but has now declared itself an independent opposition.
   short_name: ปธท.
   color: '#c32429'
   party_type: พรรค
@@ -368,31 +255,21 @@
     ก่อนประกาศถอนตัวและขอเป็นฝ่ายค้านอิสระ
   established_date: '2018-11-02'
   dissolved_date: ''
-  total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย พิเชษฐ สถิรชวาล
   party_secretary: นาย ชัยวุฑ ตรึกตรอง
   website: 'http://www.prachatumthai.com'
   facebook: 'https://www.facebook.com/THPJ.Party/'
   twitter: ''
-  email: dr.chaiwut@gmail.com
-  phone: 097-998-7865
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0488.PDF'
   is_active: true
 - id: '11'
   name: ประชาธิปไตยใหม่
   en:
     name: New Democrat
     short_name: NDP.
-    description: >-
-      New Democrat Party secured 1 party list seat from the 2554 election,
-      joining the Yingluck government. In 2019 election it has again received 1
-      party list seat and joined the government with Gen. Prayut Chan-o-Cha.
   short_name: ปธม.
   color: '#eb4138'
   party_type: พรรค
@@ -403,32 +280,21 @@
     ทำงานเป็นพรรคร่วมรัฐบาลยิ่งลักษณ์
   established_date: '2011-04-21'
   dissolved_date: ''
-  total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย สุรทิน พิจารณ์
   party_secretary: นาย ชุณห์ ศิริชัยคีรีโกศล
   website: ''
   facebook: 'https://www.facebook.com/NDCP2554/'
   twitter: ''
-  email: ''
-  phone: ''
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2554/E/062/61.PDF'
   is_active: true
 - id: '12'
   name: ประชาธิปัตย์
   en:
     name: Democrat
     short_name: ''
-    description: >-
-      The oldest political party in Thailand that is still operating, Democrat
-      Party was established before Thailand has a Political Party Act. The
-      Democrat used to dominate the whole of the South. It claimes to hold a
-      liberal democratic political ideology and opposes the "Thaksin regime".
   short_name: ปชป.
   color: '#06aff3'
   party_type: พรรค
@@ -441,32 +307,21 @@
     และมีจุดยืนต่อต้านระบอบทักษิณ
   established_date: '1946-04-06'
   dissolved_date: ''
-  total_member: 53
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย จุรินทร์ ลักษณวิศิษฏ์
   party_secretary: นาย เฉลิมชัย ศรีอ่อน
   website: 'https://www.democrat.or.th/home'
   facebook: 'https://www.facebook.com/DemocratPartyTH/'
   twitter: 'http://twitter.com/democratTH'
-  email: public@democrat.or.th
-  phone: 02-828-1000
-  ratchakitcha: ''
   is_active: true
 - id: '13'
   name: ประชานิยม
   en:
     name: Prachaniyom
     short_name: PYP.
-    description: >-
-      Prachaniyom ("populist") Party was set up by a former Assistant Police
-      Commissioner General. It was first percieved as a Pheu Thai nominee. The
-      party leader denied the claim saying their policies were in line with
-      those of the government.
   short_name: ปย.
   color: '#ea1f25'
   party_type: พรรค
@@ -478,32 +333,21 @@
     แต่หัวหน้าพรรคได้ออกมาปฏิเสธพร้อมกับกล่าวว่านโยบายของพรรคตรงกับนโยบายของรัฐบาล
   established_date: '2018-11-07'
   dissolved_date: ''
-  total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: พล.ต.อ. ยงยุทธ เทพจำนงค์
   party_secretary: พล.ต.ต. วรยุทธ อินทรสุวรรณ
   website: ''
   facebook: 'https://www.facebook.com/prashaniyomparty/'
   twitter: ''
-  email: info@prachaniyom.or.th
-  phone: 063-195-5511
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/005/T_0099.PDF'
   is_active: true
 - id: '14'
   name: ประชาภิวัฒน์
   en:
     name: People Progressive
     short_name: PRA
-    description: >-
-      People Progressive Party, led by Dhammakaya disciple Somkiat Sornlam, has
-      its stronghold in the Hankha District, Chainat Province. The party
-      advertises religious-driven policies and has supporters among the
-      Dhammakaya disciples.
   short_name: ปชภ.
   color: '#076350'
   party_type: พรรค
@@ -515,30 +359,21 @@
     ชูนโยบายขับเคลื่อนประเทศด้วยศาสนา
   established_date: '2018-08-10'
   dissolved_date: ''
-  total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย สมเกียรติ ศรลัมพ์
   party_secretary: นาง นันทนา สงฆ์ประชา
   website: 'https://www.prachapiwat.com/'
   facebook: 'https://www.facebook.com/love.at.first.sight.prachapiwat/'
   twitter: ''
-  email: prachapiwat01@gmail.com
-  phone: 056-881-326
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/070/T81.PDF'
   is_active: true
 - id: '15'
   name: พลเมืองไทย
   en:
     name: Ponlamuang Thai
     short_name: PONT.
-    description: >-
-      Ponlamuang Thai Party, formerly Ponlamuang Party, comprises former
-      ministers and MPs from all parts of Thailand.
   short_name: พล.
   color: '#2d3180'
   party_type: พรรค
@@ -549,31 +384,21 @@
     จากทั่วทุกภาค
   established_date: '2018-08-10'
   dissolved_date: ''
-  total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นางสาว ศิลัมพา เลิศนุวัฒน์
   party_secretary: นาย สมเกียรติ วัฒนศิริชัยกุล
   website: ''
   facebook: 'https://www.facebook.com/ptpthaiparty/'
   twitter: ''
-  email: ''
-  phone: 02-060-8688
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/070/T137.PDF'
   is_active: true
 - id: '16'
   name: พลังชาติไทย
   en:
     name: Thai Nation Power
     short_name: TNPP
-    description: >-
-      Thai Nation Power Party, led by Pol. Maj. Gen. Songklod Thipparat, former
-      member of the NCPO working committee, has the objective of supporting Gen.
-      Prayut Chan-o-Cha to become the Prime Minister.
   short_name: พพชท
   color: '#08663b'
   party_type: พรรค
@@ -584,31 +409,21 @@
     มุ่งสนับสนุนให้ พลเอก ประยุทธ์ จันทร์โอชา เป็นนายกรัฐมนตรี
   established_date: '2018-10-31'
   dissolved_date: ''
-  total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: พล.ต. ทรงกลด ทิพย์รัตน์
   party_secretary: ''
   website: 'https://www.tnpparty.com/'
   facebook: 'https://www.facebook.com/TNPP.Thai/'
   twitter: ''
-  email: ppct_power@gmail.com
-  phone: 081-409-9998
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0265.PDF'
   is_active: true
 - id: '17'
   name: พลังท้องถิ่นไท
   en:
     name: Thai Local Power
     short_name: TLP
-    description: >-
-      Thai Local Power Party, led by Chatchawal Kong-Udom or "Chat Tao-poon",
-      former senator who is influential in Bangkok. The party made clear it
-      wanted to join the government no matter which side led it.
   short_name: พทท.
   color: '#259747'
   party_type: พรรค
@@ -620,31 +435,21 @@
     มีจุดยืนที่จะทำงานร่วมกับพรรครัฐบาลไม่ว่าจะเป็นขั้วไหน
   established_date: '2012-03-30'
   dissolved_date: ''
-  total_member: 3
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย ชัชวาลล์ คงอุดม
   party_secretary: นาย ธีรศักดิ์ พานิชวิทย์
   website: 'http://www.tlpparty.com'
   facebook: 'https://www.facebook.com/ThaiLocalPowerParty'
   twitter: 'https://twitter.com/thailocalpower'
-  email: ''
-  phone: thailocalpowerparty@gmail.com
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2555/D/053/143.PDF'
   is_active: true
 - id: '18'
   name: พลังไทยรักไทย
   en:
     name: Phalang Thai Rak Thai
     short_name: P.T.R.T.
-    description: >-
-      Phalang Thai Rak Thai Party was established by a group of new generation
-      of farmers aiming to represent the Thai farmers. Their top policy was to
-      solve the agricultural irrigation problems.
   short_name: พ.ท.ร.ท.
   color: '#245896'
   party_type: พรรค
@@ -655,33 +460,21 @@
     ชูนโยบายการแก้ปัญหาขาดแคลนแหล่งน้ำทำการเกษตร
   established_date: '2018-10-30'
   dissolved_date: ''
-  total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย คฑาเทพ เตชะเดชเรืองกุล
   party_secretary: นาย วินัย ไชยบุตร
   website: ''
   facebook: 'https://www.facebook.com/PTRTparty/'
   twitter: ''
-  email: ''
-  phone: ''
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0200.PDF'
   is_active: true
 - id: '19'
   name: พลังธรรมใหม่
   en:
     name: New Palangdharma
     short_name: NPD
-    description: >-
-      New Palangdharma Party is a move to revive the original Palangdharma
-      Party. The original party was established by its former leader Maj. Gen.
-      Chamlong Srimuang who was also a leader of the People's Alliance for
-      Democracy (PAD). The New Palangdharma was set up by some former members of
-      the old party, together with other members of the public.
   short_name: พธม.
   color: '#e9b54a'
   party_type: พรรค
@@ -693,33 +486,21 @@
     โดยมีอดีตสมาชิกพรรคพลังธรรมและภาคประชาชนบางส่วนร่วมจัดตั้ง
   established_date: '2018-09-14'
   dissolved_date: ''
-  total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย ระวี มาศฉมาดล
   party_secretary: นาย นิทัศน์ รายยวา
   website: 'http://www.npdthai.org'
   facebook: 'https://www.facebook.com/npdthai/'
   twitter: ''
-  email: wtn_fm99@hotmail.com
-  phone: 092-808-9265
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/080/T_0043.PDF'
   is_active: true
 - id: '20'
   name: พลังประชารัฐ
   en:
     name: Palang Pracharath
     short_name: PPRP
-    description: >-
-      Palang Pracharath Party comprises former ministers in the NCPO's cabinet,
-      former PDRC leaders, and former members of the Thai Rak Thai Party who had
-      left the camp, especially the Sam Mitr ("three friends") faction. The
-      party's main direction is to support Gen. Prayut to become the Prime
-      Minister.
   short_name: พปชร.
   color: '#1f68dd'
   party_type: พรรค
@@ -731,32 +512,21 @@
     ประยุทธ์ จันทร์โอชา เป็นนายกรัฐมนตรี
   established_date: '2018-11-07'
   dissolved_date: ''
-  total_member: 115
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย อุตตม สาวนายน
   party_secretary: นาย สนธิรัตน์ สนธิจิรวงศ์
   website: 'https://pprp.or.th/'
   facebook: 'https://www.facebook.com/PPRPThailand/'
   twitter: 'https://twitter.com/pprpthailand'
-  email: Info@pprp.or.th
-  phone: 02-152-9999
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/003/T_0221.PDF'
   is_active: true
 - id: '21'
   name: พลังปวงชนไทย
   en:
     name: Thai People Power
     short_name: PLPT
-    description: >-
-      Thai People Power Party was especially established for the 2019 election.
-      Some believe there is a connection between this party and Pheu Thai Party
-      as its founders, leader and advisors has a close connection to Thaksin
-      Shinnawatra and Pheu Thai Party.
   short_name: พลท.
   color: '#181f97'
   party_type: พรรค
@@ -768,32 +538,21 @@
     หัวหน้าพรรค และที่ปรึกษา มีความสนิทสนมกับ ทักษิณ ชินวัตร และพรรคเพื่อไทย
   established_date: '2018-10-29'
   dissolved_date: ''
-  total_member: 1
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย นิคม บุญวิเศษ
   party_secretary: นาย จรินทร์ เฮียงกุล
   website: 'https://www.พรรคพลังปวงชนไทย.com'
   facebook: 'https://www.facebook.com/thaipeoplepowerpartypage/'
   twitter: 'https://twitter.com/0xREjn0OHxcFkQg'
-  email: thaipeoplepowerparty@gmail.com
-  phone: ''
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0125.PDF'
   is_active: true
 - id: '22'
   name: เพื่อชาติ
   en:
     name: Puea Chat
     short_name: PCH.P.
-    description: >-
-      Puea Chat is said to be another of Pheu Thai's spare party in addition to
-      Pheu Tham Party. Others believe it is the party of the red shirt UDD
-      (United Front for Democracy against Dictatorship), saying UDD leaders are
-      behind the party.
   short_name: พ.พ.ช.
   color: '#c0bcc3'
   party_type: พรรค
@@ -806,33 +565,21 @@
     นปช. เป็นผู้สนับสนุน
   established_date: '2013-09-18'
   dissolved_date: ''
-  total_member: 5
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย สงคราม กิจเลิศไพโรจน์
   party_secretary: นาง ลินดา เชิดชัย
   website: ''
   facebook: 'https://www.facebook.com/PueaChatOfficial/'
   twitter: ''
-  email: pueachatparty@gmail.com
-  phone: ''
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/116/86.PDF'
   is_active: true
 - id: '23'
   name: เพื่อไทย
   en:
     name: Pheu Thai
     short_name: PT.
-    description: >-
-      Pheu Thai Party is the second reincarnation of Thai Rak Thai Party -- the
-      first one being People Power Party. Both Thai Rak Thai and People Power
-      had been dissolved. The Thai Rak Thai government was taken down by the
-      2006 military coup, while 2014 coup had ousted the recent Pheu Thai
-      government.
   short_name: พท.
   color: '#da3731'
   party_type: พรรค
@@ -845,32 +592,21 @@
     คือในปี 2549 ยุคไทยรักไทย และในปี 2557 ยุคเพื่อไทย
   established_date: '2007-09-20'
   dissolved_date: ''
-  total_member: 136
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย สมพงษ์ อมรวิวัฒน์
   party_secretary: น.อ. อนุดิษฐ์ นาครทรรพ
   website: 'https://www.ptp.or.th/'
   facebook: 'https://www.facebook.com/pheuthaiparty/'
   twitter: 'https://twitter.com/pheuthaiparty'
-  email: ''
-  phone: 02-653-4000-1
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2550/E/174/1.PDF'
   is_active: true
 - id: '24'
   name: ภูมิใจไทย
   en:
     name: Bhumjaithai
     short_name: BJT
-    description: >-
-      Bhumjaithai Party is a gathering of some former members of Thai Rak Thai
-      and People Power, and the "Friends of Newin" group. It has a stronghold in
-      the southern part of the Northeast and was ready to join the government of
-      any side.
   short_name: ภท
   color: '#209fa0'
   party_type: พรรค
@@ -882,31 +618,21 @@
     มีจุดยืนที่พร้อมจะร่วมรัฐบาลกับทุกขั้ว
   established_date: '2008-11-05'
   dissolved_date: ''
-  total_member: 51
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย อนุทิน ชาญวีรกูล
   party_secretary: นาย ศักดิ์สยาม ชิดชอบ
   website: 'https://www.bhumjaithai.com/'
   facebook: 'https://www.facebook.com/khonbhumjaithai/'
   twitter: 'https://twitter.com/khonbhumjaithai'
-  email: info.bhumjaithai@gmail.com
-  phone: 02-940-6740
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2552/D/003/107.PDF'
   is_active: true
 - id: '25'
   name: รวมพลังประชาชาติไทย
   en:
     name: Action Coalition for Thailand
     short_name: ACT
-    description: >-
-      Action Coalition for Thailand continues the movement of the yellow shirt
-      PDRC. It supports Gen. Prayut Chan-o-cha to become the Prime Minister and
-      opposes the Thaksin regime.
   short_name: รปช.
   color: '#303d8e'
   party_type: พรรค
@@ -917,32 +643,21 @@
     จันทร์โอชา เป็นนายกรัฐมนตรี และต่อต้านระบอบทักษิณ
   established_date: '2118-10-26'
   dissolved_date: ''
-  total_member: 5
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: หม่อมราชวงศ์ จัตุมงคล โสณกุล
   party_secretary: นาย ทวีศักดิ์ ณ ตะกั่วทุ่ง
   website: 'https://act-party.org/'
   facebook: 'https://www.facebook.com/actpartyorg'
   twitter: 'https://twitter.com/actpartyorg'
-  email: info@act-party.org
-  phone: 093-254-9419
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/095/T_0324.PDF'
   is_active: true
 - id: '26'
   name: รักษ์ผืนป่าประเทศไทย
   en:
     name: Thai Forest Conservation
     short_name: FCP
-    description: >-
-      Thai Forest Conservation Party, formerly the Thai Forest Land Reclaimation
-      Party, is led by Damrong Phidej, former Director General of the Department
-      of National Parks, Wildlife and Plant Conservation. Its main policy is
-      about conserving natural resource and environment.
   short_name: รป.
   color: '#8dbf44'
   party_type: พรรค
@@ -954,69 +669,47 @@
     ชูนโยบายอนุรักษ์ทรัพยากรและสิ่งแวดล้อม
   established_date: '2013-01-09'
   dissolved_date: ''
-  total_member: 2
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย ดำรงค์ พิเดช
   party_secretary: นาย สันติภาพ อินทรพัฒน์
   website: ''
   facebook: 'https://www.facebook.com/ThaiForestConservationParty/'
   twitter: ''
-  email: ''
-  phone: 02-931-0065
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/022/113.PDF'
   is_active: true
 - id: '27'
   name: เศรษฐกิจใหม่
   en:
     name: New Economics
     short_name: NEP
-    description: >-
-      New Economics Party wants to solve economic problems and improve the
-      people's livelihood in the period when the middle and lower classes feel
-      strong impact from the sluggish economy. It claims a democratic position
-      while focusing on the economy, not on political conflicts.
   short_name: ศม
   color: '#6e2fff'
   party_type: พรรค
   party_ordinal: null
-  party_group: ฝ่ายค้าน
+  party_group: ร่วมรัฐบาล
   description: >-
     พรรคที่เกิดขึ้นจากความต้องการแก้ปัญหาปากท้องของประชาชน
     เพราะเป็ช่วงเศรษฐกิจของชนชั้นกลางลงมาย่ำแย่ ระบุจุดยืนประชาธิปไตย
     เน้นเศรษฐกิจ ไม่เน้นขัดแย้ง
   established_date: '2018-11-08'
   dissolved_date: ''
-  total_member: 6
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย มนูญ สิวาภิรมย์รัตน์
   party_secretary: นาย ภาสกร เงินเจริญกุล
   website: 'http://www.nep.or.th/'
   facebook: 'https://www.facebook.com/NEPThailand/'
   twitter: 'https://www.twitter.com/NewEconomicsTH'
-  email: pr@nep.or.th
-  phone: 02-285-2975
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/D/003/T_0139.PDF'
   is_active: true
 - id: '28'
   name: เสรีรวมไทย
   en:
     name: Thai Liberal
     short_name: TLP
-    description: >-
-      Thai Liberal Party is led by Pol. Gen. Seripisut Temiyavet, former Police
-      Commissioner General. It has announced its position against the military
-      coup, supporting military reforms and standing firmly against
-      dictatorship.
   short_name: สร.
   color: '#b49e31'
   party_type: พรรค
@@ -1028,32 +721,21 @@
     สนับสนุนการปฏิรูปกองทัพ และต่อต้านเผด็จการอย่างชัดเจน
   established_date: '2013-08-29'
   dissolved_date: ''
-  total_member: 10
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: พล.ต.อ. เสรีพิศุทธ์ เตมียเวส
   party_secretary: นาย วัชรา ณ วังขนาย
   website: 'https://sereeruamthai.or.th'
   facebook: 'https://www.facebook.com/sereeruamthai/'
   twitter: ''
-  email: ''
-  phone: 02-433-9484
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/D/112/48.PDF'
   is_active: true
 - id: '29'
   name: อนาคตใหม่
   en:
     name: Future Forward
     short_name: FWP
-    description: >-
-      Future Forward Party aims to build a new political culture, support
-      democracy, and end the vicious cycle of the military coup in Thailand. It
-      has strongly announced its position against military influence in
-      politics.
   short_name: อนค.
   color: '#ef7824'
   party_type: พรรค
@@ -1065,31 +747,21 @@
     พร้อมประกาศชัดเจนว่าจะคัดค้านอิทธิพลของกองทัพในการเมือง
   established_date: '2018-10-03'
   dissolved_date: '2563-02-21'
-  total_member: 80
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย ธนาธร จึงรุ่งเรืองกิจ
   party_secretary: นาย ปิยบุตร แสงกนกกุล
   website: 'https://futureforwardparty.org'
   facebook: 'https://www.facebook.com/FWPthailand/'
   twitter: 'https://twitter.com/FWPthailand'
-  email: office@futureforwardparty.org
-  phone: 02-821-5688
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2561/D/087/T_0104.PDF'
   is_active: false
 - id: '30'
   name: ประชาชนปฏิรูป
   en:
     name: People Reform Party
     short_name: PPR
-    description: >-
-      In the 2019 general election, the party won only a single seat. Later, the
-      party executive committee decided to dissolve the party and its only MP,
-      Paiboon, Paiboon became a member of Palang Pracharath.
   short_name: ปชช.
   color: '#f1ee56'
   party_type: พรรค
@@ -1101,32 +773,21 @@
     และย้ายไปสังกัดพรรคพลังประชารัฐ
   established_date: '2018-10-03'
   dissolved_date: '2562-09-06'
-  total_member: 0
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย ไพบูลย์ นิติตะวัน
   party_secretary: ''
   website: 'https://www.pprparty.com/'
   facebook: ''
   twitter: ''
-  email: ''
-  phone: ''
-  ratchakitcha: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/A/095/T_0001.PDF'
   is_active: false
 - id: '31'
   name: ก้าวไกล
   en:
     name: Move Forward Party
     short_name: MFP
-    description: >-
-      a social-democratic and progressive political party opposing the remaining
-      influence of the military junta which ruled the country from 2014 to 2019.
-      It obtained its current name in 2020 after becoming the de-facto successor
-      to the dissolved Future Forward Party.
   short_name: กก.
   color: '#ef7824'
   party_type: พรรค
@@ -1139,19 +800,13 @@
     ทำให้มีที่นั่งในสภาผู้แทนราษฎร
   established_date: '2020-01-19'
   dissolved_date: ''
-  total_member: 54
   speaker: ''
   first_deputy_speaker: ''
   second_deputy_speaker: ''
   opposition_leader: ''
-  prime_minister: ''
-  deputy_prime_minister: ''
   party_leader: นาย พิธา ลิ้มเจริญรัตน์
   party_secretary: นาย ชัยธวัช ตุลาธน
   website: 'https://moveforwardparty.org/'
   facebook: 'https://www.facebook.com/MoveForwardPartyThailand/'
   twitter: 'https://twitter.com/MFPThailand'
-  email: ''
-  phone: ''
-  ratchakitcha: ''
   is_active: true
