@@ -1,68 +1,13 @@
 import _ from "lodash"
 import React, { useState } from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
-import { GatsbyImage } from "gatsby-plugin-image"
+import WvNavbar from "@wevisdemo/ui/components/navbar.jsx"
 
-import HiddenOnMobile from "../hiddenOnMobile/index"
 import Menu from "../menu/index"
 import { media } from "../../styles"
 
 import "../../styles/global.css"
 import "./index.css"
-
-const cssHeader = {
-  margin: `0 auto`,
-  padding: "0 1rem",
-  height: 54,
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "space-between",
-  [media(767)]: {
-    height: 80,
-  },
-}
-
-const cssSiteLogo = {
-  // height: 30,
-  width: 118,
-  [media(767)]: {
-    width: 186,
-  },
-}
-
-const cssSiteTitle = {
-  fontSize: "2.4rem",
-  color: "var(--cl-black)",
-  textDecoration: `none`,
-}
-
-const cssMenuIcon = {
-  display: "inline-block",
-  width: 20,
-  margin: "0 0.5rem",
-  [media(767)]: {
-    width: 31,
-    margin: "0 1rem",
-  },
-}
-
-const cssLanguageMenu = {
-  // minWidth: 100,
-  margin: "0 1rem",
-  fontFamily: "var(--ff-title)",
-  fontSize: "2.4rem",
-  color: "var(--cl-black)",
-  a: {
-    color: "var(--cl-black)",
-    textDecoration: `none`,
-    "&:hover, &.active": {
-      textDecoration: "underline",
-      // Works only on Safari, Firefox
-      textDecorationThickness: 2,
-    },
-  },
-}
 
 const EnvBadge = () => {
   const env = process.env.GATSBY_ENV || "development"
@@ -100,99 +45,22 @@ const EnvBadge = () => {
 const Header = ({ siteTitle }) => {
   const [iconClicked, setIconClicked] = useState(false)
 
-  const staticData = useStaticQuery(graphql`
-    {
-      siteLogo: file(relativePath: { eq: "images/site-logo.png" }) {
-        childImageSharp {
-          gatsbyImageData(width: 186, layout: CONSTRAINED)
-        }
-      }
-      searchIcon: file(relativePath: { eq: "images/icons/search/search.png" }) {
-        childImageSharp {
-          gatsbyImageData(width: 31, layout: CONSTRAINED)
-        }
-      }
-    }
-  `)
-
   return (
-    <header
-      style={{
-        background: `#fff`,
-      }}
-    >
+    <header style={{ overflow: "hidden" }}>
       <EnvBadge />
-      {iconClicked && <Menu siteTitle={siteTitle} />}
-      <div css={cssHeader}>
-        <h1 className="logo" style={{ width: "25%", flexGrow: 1 }}>
-          <Link
-            to="/"
-            style={{
-              color: "var(--cl-black)",
-              textDecoration: `none`,
-            }}
-          >
-            <GatsbyImage
-              {...staticData.siteLogo.childImageSharp}
-              css={cssSiteLogo}
-            />
-          </Link>
-        </h1>
 
-        <HiddenOnMobile style={{ width: "50%", flexGrow: 2 }}>
-          <h1
-            css={{
-              margin: 0,
-              textAlign: "center",
-              fontSize: "2.4rem",
-            }}
-          >
-            <Link to="/" css={cssSiteTitle}>
-              {siteTitle}
-            </Link>
-          </h1>
-        </HiddenOnMobile>
+      <WvNavbar title="THEY WORK FOR US" alwayShowSlot>
         <div
-          style={{
-            display: "flex",
-            flexGrow: 1,
-            justifyContent: "flex-end",
-            alignItems: "center",
-            width: "25%",
-          }}
+          className={`hamburger-icon ${iconClicked ? "animateIcon" : ""}`}
+          onClick={() => setIconClicked(!iconClicked)}
         >
-          <HiddenOnMobile>
-            <div css={cssLanguageMenu} style={{ display: "none" }}>
-              <a href="/?lang=th" className="active">
-                TH
-              </a>{" "}
-              {" / "}
-              <a href="/?lang=en">EN</a>
-            </div>
-          </HiddenOnMobile>
           <div
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              alignItems: "center",
-            }}
-          >
-            <div style={{ display: "none" }}>
-              <Link to="/" css={cssMenuIcon}>
-                <GatsbyImage {...staticData.searchIcon.childImageSharp} />
-              </Link>
-            </div>
-            <div
-              className={`hamburger-icon ${iconClicked ? "animateIcon" : ""}`}
-              onClick={() => setIconClicked(!iconClicked)}
-            >
-              <div
-                className={`bar fade-center ${iconClicked ? "bar-white" : ""}`}
-              ></div>
-            </div>
-          </div>
+            className={`bar fade-center ${iconClicked ? "bar-white" : ""}`}
+          ></div>
         </div>
-      </div>
+      </WvNavbar>
+
+      {iconClicked && <Menu siteTitle={siteTitle} />}
     </header>
   )
 }

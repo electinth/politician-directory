@@ -248,3 +248,21 @@ exports.sourceNodes = async ({
     createNode(node)
   })
 }
+
+// Config webpack to compile @wevisdemo/ui package
+exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }) => {
+  const config = getConfig()
+  config.module.rules = [
+    ...config.module.rules.filter(
+      rule => String(rule.test) !== String(/\.jsx?$/)
+    ),
+    {
+      ...loaders.js(),
+      test: /\.jsx?$/,
+      exclude: modulePath =>
+        /node_modules/.test(modulePath) &&
+        !/node_modules\/@wevisdemo/.test(modulePath),
+    },
+  ]
+  actions.replaceWebpackConfig(config)
+}

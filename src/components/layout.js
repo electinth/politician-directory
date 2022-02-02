@@ -8,9 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import WvFooter from "@wevisdemo/ui/components/footer.jsx"
 
 import Header from "./header/index"
-import Footer from "./footer/index"
 import "./layout.css"
 
 const Layout = ({ children, pageStyles, className }) => {
@@ -44,7 +44,7 @@ const Layout = ({ children, pageStyles, className }) => {
       >
         {children}
       </main>
-      <Footer />
+      <WvFooter dark />
     </div>
   )
 }

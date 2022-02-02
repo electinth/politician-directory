@@ -1,6 +1,8 @@
 @import "~normalize.css";
 @import "../styles/typography.css";
 @import "../styles/global.css";
+@import "@wevisdemo/ui/styles/typography.css";
+@import "@wevisdemo/ui/styles/components.css";
 
 body {
   margin: 0;
