@@ -1,0 +1,42 @@
+name: Deploy to Staging
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: Install dependencies
+        run: npm i
+      - name: Pull YAML data
+        run: ./tools/sync_data.sh
+      - name: Build the project
+        run: npm run build
+      - name: Deploy to Netlify
+        uses: jsmrcaga/action-netlify-deploy@master
+        with:
+          install_command: echo "Dependencies are already installed"
+          build_command: echo "Project is already built"
+          build_directory: public
+          NETLIFY_DEPLOY_TO_PROD: true
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_DEPLOY_MESSAGE: "Deploy staging from commit ${{ github.sha }}"
+      - name: Prepare content and built artifacts
+        run: mkdir release && mv src/contents release && mv public release
+      - name: Commit artifacts to release branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./release
+          publish_branch: release
+

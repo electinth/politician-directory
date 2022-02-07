@@ -42,11 +42,11 @@ npm run sync
 
 ### Environments
 
-|                   Environment                   |                 Description                  |
-| :---------------------------------------------: | :------------------------------------------: |
-|                     ~~Dev~~                     | Each PR will be built and hosted on Netlify. |
-|                   ~~Staging~~                   |      New features awaiting for release.      |
-| [Production](https://theyworkforus.elect.in.th) |                Public website                |
+|                      Environment                       |                 Description                  |
+| :----------------------------------------------------: | :------------------------------------------: |
+|                          Dev                           | Each PR will be built and hosted on Netlify. |
+| [Staging](https://theyworkforus.kickdown.dev/) |      New features awaiting for release.      |
+|    [Production](https://theyworkforus.elect.in.th)     |                Public website                |
 
 ## Getting Started for Contributers
 
