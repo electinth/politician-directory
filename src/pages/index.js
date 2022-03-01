@@ -67,6 +67,9 @@ export const query = graphql`
           }
           title
           description_th
+          passed
+          is_no_vote
+          no_vote_description
           approve
           disprove
           abstained
@@ -150,7 +153,7 @@ const cssPartyTypeCard = {
   },
 }
 
-const PeoplePage = ({ data }) => {
+const IndexPage = ({ data }) => {
   return (
     <Layout
       pageStyles={{
@@ -345,4 +348,4 @@ const PeoplePage = ({ data }) => {
   )
 }
 
-export default PeoplePage
+export default IndexPage
