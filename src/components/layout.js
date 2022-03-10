@@ -46,8 +46,8 @@ const Layout = ({ children, pageStyles, className }) => {
       >
         เว็บไซต์นี้อัพเดทข้อมูลล่าสุดเมื่อ กรกฎาคม 2564
         สามารถดูเวอร์ชั่นอัพเดทได้ที่{" "}
-        <a href="https://reconstitution.wevis.info" target="_blank">
-          https://reconstitution.wevis.info
+        <a href="https://theyworkforus.wevis.info" target="_blank">
+          https://theyworkforus.wevis.info
         </a>
       </div>
 
