@@ -2,8 +2,6 @@
   They Work For Us
 </h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1165ad17-98ee-45b6-acb3-f552ed565abf/deploy-status)](https://app.netlify.com/sites/quirky-hodgkin-ae5fd3/deploys) [![](https://circleci.com/gh/codeforthailand/politician-directory.svg?style=svg)](https://circleci.com/gh/codeforthailand/politician-directory)
-
 **They Work For Us** is an open-source politician directory project for listing and tracking activities of members of the Cabinet and National Assembly of Thailand. It's run on [Gatsby](https://www.gatsbyjs.org).
 
 ## Table of Contents
@@ -42,11 +40,11 @@ npm run sync
 
 ### Environments
 
-|                  Environment                   |                 Description                  |
-| :--------------------------------------------: | :------------------------------------------: |
-|                      Dev                       | Each PR will be built and hosted on Netlify. |
-| [Staging](https://theyworkforus.kickdown.dev/) |      New features awaiting for release.      |
-| [Production](https://theyworkforus.wevis.info) |                Public website                |
+|                     Environment                     |                 Description                  |
+| :-------------------------------------------------: | :------------------------------------------: |
+|                         Dev                         | Each PR will be built and hosted on Netlify. |
+| [Staging](https://staging.theyworkforus.wevis.info) |      New features awaiting for release.      |
+|   [Production](https://theyworkforus.wevis.info)    |                Public website                |
 
 ## Getting Started for Contributers
 
