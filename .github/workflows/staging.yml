@@ -17,13 +17,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 16
-          cache: npm
+          cache: yarn
       - name: Install dependencies
-        run: npm i
+        run: yarn
       - name: Pull YAML data
         run: ./tools/sync_data.sh
       - name: Build the project
-        run: npm run build
+        run: yarn build
       - name: Deploy to Github page
         uses: peaceiris/actions-gh-pages@v3
         with:
