@@ -1,4 +1,4 @@
-**[DEPRECATED]** We move to the new organization: [wevisdemo/they-work-for-us](https://github.com/they-work-for-us/they-work-for-us)
+**[DEPRECATED]** We moved to the new organization: [wevisdemo/they-work-for-us](https://github.com/wevisdemo/they-work-for-us)
 
 ----
 <h1 align="center">
