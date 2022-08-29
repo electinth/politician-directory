@@ -16,18 +16,21 @@ try {
       "2": disprove,
       "3": abstained,
       "4": absent,
+      "": special
     } = peopleVoteData.reduce(
       (countObj, { votelog }) => {
         const vote = votelog.find(({ key }) => key === topic.id)
 
-        if (vote && vote.value) {
+        if (vote) {
           countObj[vote.value]++
         }
 
         return countObj
       },
-      { "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "-": 0 }
+      { "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "-": 0,"":0}
     )
+
+    const total_voter = approve + disprove + abstained + absent
 
     return {
       ...topic,
@@ -35,7 +38,9 @@ try {
       disprove,
       abstained,
       absent,
-      total_voter: approve + disprove + abstained + absent,
+      total_voter,
+      special,
+      total_people: total_voter + special
     }
   })
 

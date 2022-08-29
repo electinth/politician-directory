@@ -34,6 +34,8 @@ export const query = graphql`
       abstained
       absent
       total_voter
+      special
+      total_people
     }
     voteRecordIcon: file(
       relativePath: { eq: "images/icons/votelog/votelog.png" }
@@ -116,7 +118,7 @@ const VotelogPage = ({
     allPeopleYaml,
   },
 }) => {
-  const { passed, total_voter } = votelogYaml
+  const { passed, total_voter, total_people } = votelogYaml
 
   let combined = []
   allPeopleVoteYaml.nodes.forEach(votelog => {
@@ -244,6 +246,14 @@ const VotelogPage = ({
               }}
             >
               ผู้เข้าร่วมประชุม {total_voter} คน
+              <span
+                css={{
+                  color: "#C5C5C5",
+                }}
+              >
+                /{total_people.toLocaleString()}
+              </span>{" "}
+              คน
             </span>
           </span>
         </section>
@@ -266,6 +276,9 @@ const VotelogPage = ({
             </div>
           ) : (
             <>
+              <div css={{ marginBottom: "4rem" }}>
+                <VoteLogLegend {...votelogYaml} />
+              </div>
               <Waffle
                 data={[
                   approve.map(p => ({ node: p })),
@@ -286,9 +299,6 @@ const VotelogPage = ({
                   `var(--cl-black)`,
                 ]}
               />
-              <div css={{ marginTop: "4rem" }}>
-                <VoteLogLegend {...votelogYaml} />
-              </div>
             </>
           )}
         </section>

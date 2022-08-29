@@ -1,6 +1,7 @@
 import React from "react"
 import { Global, css } from "@emotion/react"
 import { media } from "../styles"
+import times from "../images/icons/votelog/times.png"
 
 const cssLegend = ({ missing, type }) => ({
   display: missing ? "flex" : "unset",
@@ -66,12 +67,21 @@ const cssLegendSpace = {
     margin: "0 1rem",
   },
 }
+const cssTimesIcon = {
+  position: "absolute",
+  right: "32px",
+  top: "32px",
+  width: "32px",
+  height: "32px",
+  opacity: "0.3",
+}
 const VoteLogLegend = ({
   approve,
   disprove,
   abstained,
   absent,
   missing,
+  special,
   type,
 }) => {
   return (
@@ -100,7 +110,9 @@ const VoteLogLegend = ({
             </>
           )
         ) : (
-          `เห็นด้วย ${approve}`
+          <>
+            เห็นด้วย <b> {approve}</b>
+          </>
         )}
       </span>
       <span css={cssLegendWrap({ missing, type })}>
@@ -126,7 +138,9 @@ const VoteLogLegend = ({
             </>
           )
         ) : (
-          `ไม่เห็นด้วย ${disprove}`
+          <>
+            ไม่เห็นด้วย <b> {disprove}</b>
+          </>
         )}
       </span>
       <span css={cssLegendWrap({ missing, type })}>
@@ -156,7 +170,9 @@ const VoteLogLegend = ({
             </>
           )
         ) : (
-          `งดออกเสียง ${abstained}`
+          <>
+            งดออกเสียง <b> {abstained}</b>
+          </>
         )}
       </span>
       <span css={cssLegendWrap({ missing, type })}>
@@ -186,7 +202,36 @@ const VoteLogLegend = ({
             </>
           )
         ) : (
-          `ไม่ลงคะแนน ${absent}`
+          <>
+            ไม่ลงคะแนน <b> {absent}</b>
+          </>
+        )}
+      </span>
+      <span css={cssLegendWrap({ missing, type })}>
+        <img
+          src={times}
+          style={{
+            margin: "0",
+          }}
+        />{" "}
+        {missing != undefined ? (
+          type === "group" ? (
+            <>
+              <b style={{ margin: "0 0.3rem" }}></b> {special}%
+            </>
+          ) : type === "popup" ? (
+            <>
+              <b style={{ margin: "0 1rem" }}>ไม่ลงมติ</b> {special}
+            </>
+          ) : (
+            <>
+              <b css={cssLegendSpace}>ไม่ลงมติ</b> {special}%
+            </>
+          )
+        ) : (
+          <>
+            ไม่เข้าประชุม <b> {special}</b>
+          </>
         )}
       </span>
       {missing != undefined && (
