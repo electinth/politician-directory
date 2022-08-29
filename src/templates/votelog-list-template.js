@@ -13,7 +13,7 @@ export const query = graphql`
       filter: { is_active: { eq: true } }
       limit: $limit
       skip: $skip
-      sort: { fields: vote_date, order: DESC }
+      sort: { fields: vote_date, order: ASC }
     ) {
       totalCount
       edges {
@@ -185,6 +185,7 @@ const VoteLogPage = ({
             )}
             {Array.from({ length: numPages }, (_, i) => {
               const pageNumber = i + 1
+              // console.log(pageNumber)
               if (pageNumber === currentPage) {
                 return (
                   <span

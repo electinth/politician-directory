@@ -118,7 +118,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // Vote Logs
   const votelogs = await graphql(`
     query {
-      allVotelogYaml {
+      allVotelogYaml ( filter: { is_active: { eq: true } }){
         edges {
           node {
             fields {
