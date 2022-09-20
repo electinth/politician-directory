@@ -1,7 +1,7 @@
 import _ from "lodash"
 import React, { useState } from "react"
 import PropTypes from "prop-types"
-import WvNavbar from "@wevisdemo/ui/components/navbar.jsx"
+import WvNavbar from "@wevisdemo/ui/components/navbar.js"
 
 import Menu from "../menu/index"
 import { media } from "../../styles"

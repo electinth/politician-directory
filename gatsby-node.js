@@ -118,7 +118,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // Vote Logs
   const votelogs = await graphql(`
     query {
-      allVotelogYaml ( filter: { is_active: { eq: true } }){
+      allVotelogYaml(filter: { is_active: { eq: true } }) {
         edges {
           node {
             fields {
@@ -247,22 +247,4 @@ exports.sourceNodes = async ({
     const node = Object.assign({}, contributor, meta)
     createNode(node)
   })
-}
-
-// Config webpack to compile @wevisdemo/ui package
-exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }) => {
-  const config = getConfig()
-  config.module.rules = [
-    ...config.module.rules.filter(
-      rule => String(rule.test) !== String(/\.jsx?$/)
-    ),
-    {
-      ...loaders.js(),
-      test: /\.jsx?$/,
-      exclude: modulePath =>
-        /node_modules/.test(modulePath) &&
-        !/node_modules\/@wevisdemo/.test(modulePath),
-    },
-  ]
-  actions.replaceWebpackConfig(config)
 }

@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import WvFooter from "@wevisdemo/ui/components/footer.jsx"
+import WvFooter from "@wevisdemo/ui/components/footer.js"
 
 import Header from "./header/index"
 import "./layout.css"
