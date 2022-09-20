@@ -84,7 +84,8 @@ const PartyGroupList = ({ paneHeaderStyle }) => {
   // sort by more members first, then alphabetically
   const getSortedParties = partyGroup => {
     let members = data.allPartyYaml.edges.filter(
-      ({ node }) => node.party_group === partyGroup
+      ({ node }) =>
+        node.party_group === partyGroup && totalActiveMember(node.name)
     )
     members.sort(({ node: a }, { node: b }) => {
       const totalDiff = totalActiveMember(b.name) - totalActiveMember(a.name)
