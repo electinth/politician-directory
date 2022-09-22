@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 import { useEffect } from "react"
 import { useRef } from "react"
 import { useContext } from "react"
-import { MenuContext } from "../../templates/motion-template"
+import { MenuContext } from "../../constants/motion"
 
 const MotionList = styled.ul`
   list-style: none;

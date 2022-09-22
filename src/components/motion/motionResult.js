@@ -124,6 +124,7 @@ const Motionresult = ({
             <a
               href={pageLink}
               target="_blank"
+              rel="noreferrer nofollow noopener"
               className="download download-detail"
             >
               รายละเอียดมติ
@@ -133,6 +134,7 @@ const Motionresult = ({
             <a
               href={voteLink}
               target="_blank"
+              rel="noreferrer nofollow noopener"
               className="download download-record"
             >
               บันทึกการลงมติ

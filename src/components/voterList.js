@@ -138,7 +138,7 @@ class ListCard extends Component {
   }
 }
 
-export default ({ data, page }) => {
+export default function VoterList({ data, page }) {
   return (
     <div
       css={css`

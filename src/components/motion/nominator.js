@@ -5,7 +5,7 @@ import styled from "@emotion/styled"
 
 import Profile from "./profile"
 import { useContext } from "react"
-import { MenuContext, MenuChoice } from "../../templates/motion-template"
+import { MenuContext, MenuChoice } from "../../constants/motion"
 import { device } from "./size"
 
 const nominator = ({ className, motion: { purposers, seconders } }) => {

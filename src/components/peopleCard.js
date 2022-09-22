@@ -89,6 +89,7 @@ const PeopleCard = ({ type, ...props }) => {
   return (
     <a
       target="_blank"
+      rel="noreferrer nofollow noopener"
       href={props.fields.slug}
       key={props.id}
       className={props.className}

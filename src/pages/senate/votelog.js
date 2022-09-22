@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useReducer } from "react"
 import { graphql } from "gatsby"
 import _ from "lodash"
 import Layout from "../../components/layout"
@@ -59,24 +59,24 @@ const cssHeaderWrap = {
 const VotelogPage = ({ data }) => {
   const [senatorTypeId, setSenatorTypeId] = useState(1)
   const [senatorId, setSenatorId] = useState("0")
-  const [voteId, setVoteId] = useState("")
   const [popupState, setPopupState] = useState(false)
   const [voteSelected, setVoteSelected] = useState("")
   const [isShowAll, setIsShowAll] = useState(true)
   const [countByGroup, setCountByGroup] = useState([])
   const [barchartGroupWidth, setBarchartGroupWidth] = useState([])
   const [handleFilter, setHandleFilter] = useState("")
-  const [is_mobile, setIs_mobile_width] = useState(false)
-  const [is_selected_position, setIs_position] = useState(false)
-  const [is_selected_government, setIs_government] = useState(false)
-  const [is_selected_yourSelf, setIs_yourSelf] = useState(false)
-  const [is_On, setIsOn] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+  const [isSelectedPosition, setIsSelectedPosition] = useState(false)
+  const [isSelectedGovernment, setIsSelectedGovernment] = useState(false)
+  const [isSelectedYourself, setIsSelectedYourself] = useState(false)
+  const [isOn, setIsOn] = useState(false)
 
-  useEffect(() => {
+  const [, setVoteId] = useReducer((_prevState, voteId) => {
     if (voteId) {
       setVoteSelected(_.find(data.allSenateVotelogYaml.nodes, { id: voteId }))
     }
-  }, [voteId])
+    return voteId
+  }, "")
 
   return (
     <div>
@@ -111,15 +111,15 @@ const VotelogPage = ({ data }) => {
             setHandleFilter={setHandleFilter}
             isShowAll={isShowAll}
             barchartGroupWidth={barchartGroupWidth}
-            is_mobile={is_mobile}
-            setIs_position={setIs_position}
-            setIs_government={setIs_government}
-            setIs_yourSelf={setIs_yourSelf}
-            is_selected_position={is_selected_position}
-            is_selected_government={is_selected_government}
-            is_selected_yourSelf={is_selected_yourSelf}
+            is_mobile={isMobile}
+            setIs_position={setIsSelectedPosition}
+            setIs_government={setIsSelectedGovernment}
+            setIs_yourSelf={setIsSelectedYourself}
+            is_selected_position={isSelectedPosition}
+            is_selected_government={isSelectedGovernment}
+            is_selected_yourSelf={isSelectedYourself}
             senatorTypeId={senatorTypeId}
-            is_On={is_On}
+            is_On={isOn}
             setIsOn={setIsOn}
           />
         </div>
@@ -132,11 +132,11 @@ const VotelogPage = ({ data }) => {
           isShowAll={isShowAll}
           setCountByGroup={setCountByGroup}
           setBarchartGroupWidth={setBarchartGroupWidth}
-          setIs_mobile_width={setIs_mobile_width}
-          is_selected_position={is_selected_position}
-          is_selected_government={is_selected_government}
-          is_selected_yourSelf={is_selected_yourSelf}
-          is_On={is_On}
+          setIs_mobile_width={setIsMobile}
+          is_selected_position={isSelectedPosition}
+          is_selected_government={isSelectedGovernment}
+          is_selected_yourSelf={isSelectedYourself}
+          is_On={isOn}
           setIsOn={setIsOn}
         />
       </Layout>

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import ExternalLink from "../components/externalLink"
 import Emoji from "../components/emoji"
 
@@ -200,7 +200,7 @@ const allProducers = [
 
 const AboutPage = ({ data }) => (
   <Layout>
-    <SEO title="About Us" />
+    <Seo title="About Us" />
     <section
       css={{
         ...cssSection,

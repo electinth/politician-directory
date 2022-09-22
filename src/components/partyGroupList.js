@@ -96,7 +96,6 @@ const PartyGroupList = ({ paneHeaderStyle }) => {
 
   const PartyListItem = ({ node }) => (
     <Link
-      key={node.name}
       to={node.fields.slug}
       style={{
         fontSize: "2.2rem",
@@ -128,7 +127,7 @@ const PartyGroupList = ({ paneHeaderStyle }) => {
         </h3>
         <ul>
           {getSortedParties("ร่วมรัฐบาล").map(({ node }) => (
-            <PartyListItem node={node} />
+            <PartyListItem node={node} key={node.name} />
           ))}
         </ul>
       </div>
@@ -138,7 +137,7 @@ const PartyGroupList = ({ paneHeaderStyle }) => {
         </h3>
         <ul>
           {getSortedParties("ฝ่ายค้าน").map(({ node }) => (
-            <PartyListItem node={node} />
+            <PartyListItem node={node} key={node.name} />
           ))}
         </ul>
       </div>

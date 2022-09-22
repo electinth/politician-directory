@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Button from "../components/button"
 import Hero from "../components/hero"
 import VoteLogCard from "../components/voteLogCard"
@@ -160,7 +160,7 @@ const IndexPage = ({ data }) => {
         background: "var(--cl-people-section)",
       }}
     >
-      <SEO title="Home" />
+      <Seo title="Home" />
       <section css={{ ...cssSection }}>
         <div className="container">
           <h1
@@ -285,6 +285,7 @@ const IndexPage = ({ data }) => {
             <Link to={"/cabinet"} css={cssPartyTypeCard}>
               <GatsbyImage
                 image={data.cabinetImage.childImageSharp.gatsbyImageData}
+                alt=""
                 css={{ marginBottom: "1.2rem" }}
               />
               <h3>คณะรัฐมนตรี</h3>
@@ -293,6 +294,7 @@ const IndexPage = ({ data }) => {
             <Link to={"/senate"} css={cssPartyTypeCard}>
               <GatsbyImage
                 image={data.senateImage.childImageSharp.gatsbyImageData}
+                alt=""
                 css={{ marginBottom: "1.2rem" }}
               />
               <h3>สมาชิกวุฒิสภา</h3>
@@ -310,6 +312,7 @@ const IndexPage = ({ data }) => {
               <GatsbyImage
                 style={{ margin: "auto" }}
                 image={data.representativeImage.childImageSharp.gatsbyImageData}
+                alt=""
               />
             </div>
             <h3

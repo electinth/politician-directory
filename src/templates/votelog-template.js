@@ -6,7 +6,7 @@ import _ from "lodash"
 
 import ExternalLink from "../components/externalLink"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import VoterList from "../components/voterList"
 import Waffle from "../components/waffle"
 import VoteLogLegend from "../components/voteLogLegend"
@@ -138,7 +138,7 @@ const VotelogPage = ({
         background: "#000",
       }}
     >
-      <SEO title={votelogYaml.title} imageUrl="/seo/share/votelog.png" />
+      <Seo title={votelogYaml.title} imageUrl="/seo/share/votelog.png" />
 
       <div
         style={{
@@ -162,6 +162,7 @@ const VotelogPage = ({
             <span>
               <GatsbyImage
                 image={voteRecordIcon.childImageSharp.gatsbyImageData}
+                alt=""
                 style={{
                   verticalAlign: "middle",
                   display: "inline-block",
@@ -395,6 +396,7 @@ const VotelogPage = ({
                   >
                     <GatsbyImage
                       image={downloadIcon.childImageSharp.gatsbyImageData}
+                      alt=""
                       css={{ marginRight: "1rem" }}
                     />
                     {doc.title || "เอกสาร"}

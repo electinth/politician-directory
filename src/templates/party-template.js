@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import _ from "lodash"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { loadCategoryStats, joinPeopleVotelog, peopleSlug } from "../utils"
 import StackedBarChart from "../components/stackedBarChart"
 import { OfficialWebsite, InOfficeDate } from "../components/profile"
@@ -301,7 +301,7 @@ const PartyPage = props => {
 
   return (
     <Layout pageStyles={{ background: party.color }}>
-      <SEO title={`พรรค${party.name}`} imageUrl="/seo/share/party.png" />
+      <Seo title={`พรรค${party.name}`} imageUrl="/seo/share/party.png" />
       <section className="section">
         <div className="book">
           <div className="page leftPage">
@@ -405,34 +405,40 @@ const PartyPage = props => {
           >
             สมาชิกพรรคในสภา
           </h2>
-          <ul
+          <div
             css={{
               display: "block",
               listStyle: "none",
               textAlign: "center",
-              "> li": {
+              marginBottom: "2.4rem",
+              "> button": {
                 display: "inline-block",
                 fontSize: "2.4rem",
                 padding: "1rem 0 0",
                 margin: "0 1rem",
                 cursor: "pointer",
+                background: "transparent",
+                border: "none",
+                lineHeight: 1.5,
                 "&.active": {
                   borderBottom: "8px solid var(--cl-black)",
                 },
               },
             }}
+            role="tablist"
           >
             {tabList.map(tab => (
-              <li
+              <button
+                type="button"
                 key={tab.id}
                 className={[tab.getClass(memberFilter)].join(" ")}
                 role="tab"
                 onClick={selectMemberFilter(tab.filter)}
               >
                 {tab.label} ({tab.count})
-              </li>
+              </button>
             ))}
-          </ul>
+          </div>
           {showingMembers.length > 0 ? (
             <div
               css={{

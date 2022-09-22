@@ -32,6 +32,7 @@ const MotionSubCatCard = ({ type, ...props }) => {
         <div css={{}}>
           <img
             src={`/motion/icons/${motionCategorySlug(props.title)}.png`}
+            alt={motionCategorySlug(props.title)}
             css={{
               flexShrink: "0",
               marginRight: "16px",

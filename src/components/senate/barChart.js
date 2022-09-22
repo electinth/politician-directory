@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react"
 import * as d3 from "d3"
-import { style } from "d3"
 
 function DrawChart({
   data,
@@ -197,7 +196,7 @@ function DrawChart({
       }
     }
     const mouseout = d => {
-      if (d.data && is_active[is_active.length - 1] != d.data.id) {
+      if (d.data && is_active[is_active.length - 1] !== d.data.id) {
         d3.selectAll(".rect" + d.data.id).style("stroke", "none")
       } else {
         d3.selectAll(".rect" + d.key).style("stroke", "none")
@@ -307,7 +306,7 @@ function DrawChart({
       className="barChart-wrapper"
       style={{ display: "flex", marginBottom: "30px" }}
     >
-      {is_yAxis != "" ? (
+      {is_yAxis !== "" ? (
         <svg className="yAxis" style={{ width: "100px" }} />
       ) : (
         ""

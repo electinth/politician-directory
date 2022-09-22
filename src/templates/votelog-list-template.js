@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import VoteLogCard from "../components/voteLogCard"
 import VoteSearch from "../components/votesearch/VoteSearch"
 import { Router } from "@reach/router"
@@ -98,7 +98,7 @@ const VoteLogPage = ({
 
   return (
     <Layout>
-      <SEO
+      <Seo
         title="บันทึกการประชุมและการลงมติ"
         imageUrl="/seo/share/votelog.png"
       />
@@ -114,6 +114,7 @@ const VoteLogPage = ({
           <div>
             <GatsbyImage
               image={voteRecordImage.childImageSharp.gatsbyImageData}
+              alt=""
               css={{ width: "48px", margin: "auto" }}
             />
           </div>

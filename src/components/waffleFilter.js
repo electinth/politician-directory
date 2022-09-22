@@ -72,23 +72,21 @@ class WaffleFilter extends Component {
     let data_of_interest = []
     let data_the_rest = []
     data.forEach(person => {
-      {
-        let interested = true
-        for (var key in filter) {
-          if (
-            /// if default filter then don't change interest
-            !Object.values(this.props.choices)
-              .map(choice => choice.default)
-              .includes(filter[key])
-          ) {
-            interested = interested && person.node[key] === filter[key]
-          }
+      let interested = true
+      for (var key in filter) {
+        if (
+          /// if default filter then don't change interest
+          !Object.values(this.props.choices)
+            .map(choice => choice.default)
+            .includes(filter[key])
+        ) {
+          interested = interested && person.node[key] === filter[key]
         }
-        if (interested) {
-          data_of_interest.push(person)
-        } else {
-          data_the_rest.push(person)
-        }
+      }
+      if (interested) {
+        data_of_interest.push(person)
+      } else {
+        data_the_rest.push(person)
       }
     })
     return [data_of_interest, data_the_rest]
@@ -195,7 +193,7 @@ class WaffleFilter extends Component {
   }
 }
 
-export default ({ data }) => {
+export default function WaffleFilterComponent({ data }) {
   const generationList = [
     [74, "Silent | 74 ปีขึ้นไป"],
     [55, "Baby Boomer | 55 - 73 ปี"],

@@ -2,7 +2,7 @@ import React from "react"
 import _ from "lodash"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import FloatingCard from "../components/floatingCard"
 import HiddenOnMobile from "../components/hiddenOnMobile"
 import { media } from "../styles"
@@ -101,7 +101,7 @@ const IndexPage = ({ data }) => {
         background: "#FDFDFD",
       }}
     >
-      <SEO title="Motions" />
+      <Seo title="Motions" />
       <div style={{ backgroundColor: "var(--cl-black)", padding: "1.6rem" }}>
         <div
           className="container-motion"

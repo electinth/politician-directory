@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import { media } from "../../styles"
-import { set } from "lodash"
 
 const cssContainer = {
   display: "flex",

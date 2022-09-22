@@ -575,7 +575,7 @@ const ScoreViz = props => {
     updateChart(filter)
   }, [filter])
 
-  const [scrolling, setScrolling] = useState(false)
+  const [, setScrolling] = useState(false)
   const [scrollTop, setScrollTop] = useState(0)
   useEffect(() => {
     function onScroll() {

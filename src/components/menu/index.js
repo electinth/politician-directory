@@ -55,22 +55,6 @@ const cssMenuIcon = {
   textAlign: "center",
 }
 
-const languageMenu = {
-  fontFamily: "var(--ff-title)",
-  fontSize: "1.8rem",
-  color: "var(--cl-paper-gray)",
-  margin: "4rem 0 1rem",
-  a: {
-    color: "var(--cl-paper-gray)",
-    textDecoration: `none`,
-    "&:hover, &.active": {
-      textDecoration: "underline",
-      // Works only on Safari, Firefox
-      textDecorationThickness: 2,
-    },
-  },
-}
-
 const Menu = ({ siteTitle }) => {
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -124,6 +108,7 @@ const Menu = ({ siteTitle }) => {
             <span css={cssMenuIcon}>
               <GatsbyImage
                 image={staticData.cabinetImage.childImageSharp.gatsbyImageData}
+                alt=""
               />
             </span>
             <Link to="/cabinet">คณะรัฐมนตรี</Link>
@@ -134,6 +119,7 @@ const Menu = ({ siteTitle }) => {
             <span css={cssMenuIcon}>
               <GatsbyImage
                 image={staticData.senateImage.childImageSharp.gatsbyImageData}
+                alt=""
               />
             </span>
             <Link to="/senate">สมาชิกวุฒิสภา</Link>
@@ -146,6 +132,7 @@ const Menu = ({ siteTitle }) => {
                 image={
                   staticData.representativeImage.childImageSharp.gatsbyImageData
                 }
+                alt=""
               />
             </span>
             <Link to="/representatives">สมาชิกสภาผู้แทนราษฎร</Link>
@@ -158,6 +145,7 @@ const Menu = ({ siteTitle }) => {
                 image={
                   staticData.voteRecordImage.childImageSharp.gatsbyImageData
                 }
+                alt=""
                 style={{ transform: "translate(2px, 0)" }}
               />
             </span>

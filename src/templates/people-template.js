@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { formatNumber, ageFromBirthdate } from "../utils"
 import ExternalLink from "../components/externalLink"
 import OfficialWebsite from "../components/profile/officialWebsite"
@@ -265,7 +265,7 @@ const PeoplePage = props => {
         background: pageBGColor,
       }}
     >
-      <SEO title={personFullName} imageUrl="/seo/share/people.png" />
+      <Seo title={personFullName} imageUrl="/seo/share/people.png" />
 
       <section className="section">
         <div className="book">
@@ -294,6 +294,7 @@ const PeoplePage = props => {
             <h2 css={{ ...cssH2, marginTop: "1rem", textAlign: "center" }}>
               <GatsbyImage
                 image={data.infoImage.childImageSharp.gatsbyImageData}
+                alt=""
                 style={{ verticalAlign: "bottom", margin: "0 0.8rem" }}
               />
               ข้อมูลพื้นฐาน
@@ -337,7 +338,7 @@ const PeoplePage = props => {
                   marginRight: "1.6rem",
                 }}
               >
-                “
+                &ldquo;
               </div>
               <blockquote>{person.quotes}</blockquote>
             </div>

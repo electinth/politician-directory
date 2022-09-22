@@ -8,7 +8,7 @@ import Info from "../components/motion/info"
 import Nominator from "../components/motion/nominator"
 import MotionMenu from "../components/motion/motionmenu"
 import Breadcrumb from "../components/motion/breadcrumb"
-import { createContext } from "react"
+import { MenuContext, MenuChoice } from "../constants/motion"
 import { useState } from "react"
 import { device } from "../components/motion/size"
 
@@ -154,11 +154,7 @@ const Container = styled.div`
     }
   }
 `
-export const MenuContext = createContext()
-export const MenuChoice = {
-  motion: "motion",
-  nominator: "nominator",
-}
+
 const MotionPage = props => {
   const {
     data: {
@@ -229,6 +225,7 @@ const MotionPage = props => {
                     transform: rotate(-45deg);
                   }
                 `}
+                aria-label="ปิดเมนู"
                 onClick={() => setMenu(null)}
               ></button>
             </div>

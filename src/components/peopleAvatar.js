@@ -31,10 +31,12 @@ const PeopleAvatar = ({ title = "", name, lastname }) => {
   )
 
   return (
-    <GatsbyImage
-      image={getImage((personImageNode || placeHolderImageNode).node)}
-      alt={alt}
-    />
+    getImage((personImageNode || placeHolderImageNode).node) && (
+      <GatsbyImage
+        image={getImage((personImageNode || placeHolderImageNode).node)}
+        alt={alt}
+      />
+    )
   )
 }
 

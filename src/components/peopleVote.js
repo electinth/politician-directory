@@ -169,7 +169,10 @@ class PeopleVote extends Component {
   }
 }
 
-export default ({ peopleVoteYaml, allVotelogYaml }) => {
+export default function PeopleVoteComponent({
+  peopleVoteYaml,
+  allVotelogYaml,
+}) {
   const voteLogs = peopleVoteYaml.votelog || []
   const allVotes = [...allVotelogYaml.nodes]
   // merge allVote and voteLog into allVote

@@ -67,14 +67,6 @@ const cssLegendSpace = {
     margin: "0 1rem",
   },
 }
-const cssTimesIcon = {
-  position: "absolute",
-  right: "32px",
-  top: "32px",
-  width: "32px",
-  height: "32px",
-  opacity: "0.3",
-}
 const VoteLogLegend = ({
   approve,
   disprove,
@@ -95,7 +87,7 @@ const VoteLogLegend = ({
             border: "1px solid var(--cl-vote-yes)",
           }}
         />{" "}
-        {missing != undefined ? (
+        {missing !== undefined ? (
           type === "group" ? (
             <>
               <b style={{ margin: "0 0.3rem" }}></b> {approve}%
@@ -123,7 +115,7 @@ const VoteLogLegend = ({
             border: "1px solid var(--cl-vote-no)",
           }}
         />{" "}
-        {missing != undefined ? (
+        {missing !== undefined ? (
           type === "group" ? (
             <>
               <b style={{ margin: "0 0.3rem" }}></b> {disprove}%
@@ -155,7 +147,7 @@ const VoteLogLegend = ({
               : "1px solid var(--cl-vote-abstained)",
           }}
         />{" "}
-        {missing != undefined ? (
+        {missing !== undefined ? (
           type === "group" ? (
             <>
               <b style={{ margin: "0 0.3rem" }}></b> {abstained}%
@@ -187,7 +179,7 @@ const VoteLogLegend = ({
               : "1px solid var(--cl-black)",
           }}
         />{" "}
-        {missing != undefined ? (
+        {missing !== undefined ? (
           type === "group" ? (
             <>
               <b style={{ margin: "0 0.3rem" }}></b> {absent}%
@@ -215,8 +207,15 @@ const VoteLogLegend = ({
           }}
           width="8"
           height="8"
+          alt={
+            missing !== undefined
+              ? type === "group"
+                ? ""
+                : "ไม่ลงมติ"
+              : "ไม่เข้าประชุม"
+          }
         />{" "}
-        {missing != undefined ? (
+        {missing !== undefined ? (
           type === "group" ? (
             <>
               <b style={{ margin: "0 0.3rem" }}></b> {special}%
@@ -236,7 +235,7 @@ const VoteLogLegend = ({
           </>
         )}
       </span>
-      {missing != undefined && (
+      {missing !== undefined && (
         <span css={cssLegendWrap({ missing, type })}>
           <div
             css={cssGridCell({ missing, type })}

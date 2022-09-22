@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import _ from "lodash"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import {
   loadCategoryStats,
   joinPeopleVotelog,
@@ -201,7 +201,7 @@ const RepresentativesPage = props => {
 
   return (
     <Layout pageStyles={{ background: "#eeeeee" }}>
-      <SEO title="สมาชิกสภาผู้แทนราษฎรไทย" />
+      <Seo title="สมาชิกสภาผู้แทนราษฎรไทย" />
       <section className="section">
         <div className="book">
           <div className="page leftPage">

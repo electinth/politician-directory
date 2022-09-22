@@ -2,7 +2,6 @@ import React from "react"
 import { css } from "@emotion/react"
 import styled from "@emotion/styled"
 import MotionResult from "./motionResult"
-import { device } from "./size"
 import { NominatorMenu } from "./nominator"
 import { displayTexts, statusColors } from "../motionStatusChip"
 

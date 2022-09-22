@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { loadCategoryStats, formatOrdinalNumber } from "../utils"
 import StackedBarChart from "../components/stackedBarChart"
 import { OfficialWebsite, InOfficeDate } from "../components/profile"
@@ -98,7 +98,7 @@ const CabinetPage = props => {
 
   return (
     <Layout pageStyles={{ background: "#c0e4ff" }}>
-      <SEO title="คณะรัฐมนตรี" />
+      <Seo title="คณะรัฐมนตรี" />
 
       <section className="section">
         <div className="book">

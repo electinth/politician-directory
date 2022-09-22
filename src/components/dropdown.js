@@ -265,9 +265,9 @@ class DropDown extends Component {
                 this.props.is_selected_government ||
                 this.props.isShowAll ? (
                   !this.props.currentFilter ? (
-                    <GatsbyImage image={this.props.clock_image} />
+                    <GatsbyImage image={this.props.clock_image} alt="" />
                   ) : this.props.currentFilter === "เวลาล่าสุด" ? (
-                    <GatsbyImage image={this.props.clock_image} />
+                    <GatsbyImage image={this.props.clock_image} alt="" />
                   ) : (
                     <div
                       className="bulletChoice"
@@ -300,6 +300,7 @@ class DropDown extends Component {
                       <GatsbyImage
                         image={this.props.clock_image}
                         className="clock_image"
+                        alt=""
                       />
                       <div className="clock_text">
                         {" "}
@@ -335,7 +336,7 @@ class DropDown extends Component {
     )
   }
 }
-export default ({
+export default function DropDownComponent({
   choices,
   currentFilter,
   handleFilter,
@@ -346,7 +347,7 @@ export default ({
   is_selected_yourSelf,
   is_selected_position,
   isShowAll,
-}) => {
+}) {
   const data = useStaticQuery(graphql`
     {
       clock: file(relativePath: { eq: "images/clock/clock.png" }) {

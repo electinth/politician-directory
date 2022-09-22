@@ -256,6 +256,7 @@ const VoteInfoPopup = ({
                         href={item.link}
                         key={item.link}
                         target="_blank"
+                        rel="noreferrer nofollow noopener"
                         download
                         style={{ textDecoration: "none" }}
                       >
@@ -270,6 +271,7 @@ const VoteInfoPopup = ({
                               marginRight: "14px",
                               width: "20px",
                             }}
+                            alt="ดาวน์โหลด"
                           />
                           <b>{item.title}</b>
                         </div>

@@ -40,7 +40,7 @@ class ToggleSwitch extends Component {
   }
 }
 
-export default ({ is_On, handleToggle }) => {
+export default function ToggleSwitchComponent({ is_On, handleToggle }) {
   return (
     <div>
       <Global

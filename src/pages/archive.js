@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const archivePages = [
   {
@@ -18,13 +18,12 @@ const archivePages = [
 
 const Archive = () => (
   <Layout>
-    <SEO title="คลังข้อมูลน่าสนใจ" />
+    <Seo title="คลังข้อมูลน่าสนใจ" />
     <section
       css={{
         fontSize: "1.8rem",
-        padding: "4rem 2rem 0",
-        backgroundColor: "var(--cl-pink)",
         padding: "4rem 0 6rem 0",
+        backgroundColor: "var(--cl-pink)",
       }}
     >
       <h1

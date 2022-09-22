@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import Autosuggest from "react-autosuggest"
 import AutosuggestHighlightMatch from "autosuggest-highlight/match"
 import AutosuggestHighlightParse from "autosuggest-highlight/parse"
@@ -43,7 +42,7 @@ const Style = styled.div`
     width: 325px;
     height: 30px;
     padding: ${props =>
-      props.value == "ทั้งหมด" || props.value == "" || !props.searchFullname
+      props.value === "ทั้งหมด" || props.value === "" || !props.searchFullname
         ? "10px 26px 10px"
         : "10px 26px 10px 62px"};
     font-weight: 300;
@@ -123,15 +122,6 @@ const cssSearchIcon = {
   left: "0",
   width: "15px",
 }
-const cssImg = {
-  position: "absolute !important",
-  top: "0",
-  left: "25px",
-  width: "25px",
-  height: "25px",
-  border: "1px solid #AEAEAE",
-  borderRadius: "50px",
-}
 const cssAvg = {
   display: "none",
   [media(767)]: {
@@ -199,7 +189,7 @@ const AutoComplete = ({
     absent: 0,
     missing: 0,
   })
-  const [totalVotelogType, setTotalVotelogType] = useState({
+  const [totalVotelogType] = useState({
     approve: 0,
     disprove: 0,
     abstained: 0,
@@ -213,7 +203,7 @@ const AutoComplete = ({
     absent: 0,
     missing: 0,
   })
-  const [fullname, setFullname] = useState([])
+  const [fullname] = useState([])
   const [searchFullname, setSearchFullname] = useState(false)
   const choices = {
     senatorType: {
@@ -228,7 +218,7 @@ const AutoComplete = ({
   }, [])
 
   useEffect(() => {
-    const found = allSenateVoteYaml.nodes.find(element => element.id == 0)
+    const found = allSenateVoteYaml.nodes.find(element => element.id === 0)
     if (found === undefined) {
       allSenateVoteYaml.nodes.unshift({
         id: "0",
@@ -238,7 +228,7 @@ const AutoComplete = ({
         votelog: [],
       })
     }
-    allSenateVoteYaml.nodes.map(item => {
+    allSenateVoteYaml.nodes.forEach(item => {
       if (item.id === "0") {
         fullname.push(item.title)
         item.fullname = item.title
@@ -319,7 +309,7 @@ const AutoComplete = ({
   }
 
   const onSuggestionsFetchRequested = ({ value }) => {
-    if (value == "ทั้งหมด") {
+    if (value === "ทั้งหมด") {
       setValue("")
       setValueSelected({})
       setSenatorId("0")
@@ -351,7 +341,7 @@ const AutoComplete = ({
   const renderInputComponent = inputProps => (
     <div>
       <div css={cssClearIcon} onClick={clearInput} />
-      <img css={cssSearchIcon} src={search} />
+      <img css={cssSearchIcon} src={search} alt="ค้นหา" />
       {_.isEmpty(valueSelected) ||
         (value !== "ทั้งหมด" && <PeopleAvatar {...valueSelected} />)}
       <input {...inputProps} />
@@ -374,7 +364,7 @@ const AutoComplete = ({
         }
         for (const item in vote) {
           vote[item] = ((vote[item] / all_motion) * 100).toFixed(2)
-          if (vote[item] == 0) {
+          if (vote[item] === 0) {
             vote[item] = 0
           }
         }
@@ -390,7 +380,7 @@ const AutoComplete = ({
 
     people_votes.forEach(p => {
       p.votelog.forEach(l => {
-        const method = people_method.filter(m => m.id == p.id)
+        const method = people_method.filter(m => m.id === p.id)
         method.forEach(pm => {
           voter_in_votelog.push({
             ...l,
@@ -431,21 +421,21 @@ const AutoComplete = ({
 
   const countVoteLogGroup = () => {
     if (countByGroup[0] !== undefined) {
-      countByGroup[0].count_by_government.map(item => {
+      countByGroup[0].count_by_government.forEach(item => {
         select_by_government.approve += item[1]
         select_by_government.disprove += item[2]
         select_by_government.abstained += item[3]
         select_by_government.absent += item[4]
         select_by_government.missing += item[5]
       })
-      countByGroup[0].count_by_position.map(item => {
+      countByGroup[0].count_by_position.forEach(item => {
         select_by_position.approve += item[1]
         select_by_position.disprove += item[2]
         select_by_position.abstained += item[3]
         select_by_position.absent += item[4]
         select_by_position.missing += item[5]
       })
-      countByGroup[0].count_by_yourSelf.map(item => {
+      countByGroup[0].count_by_yourSelf.forEach(item => {
         select_by_career.approve += item[1]
         select_by_career.disprove += item[2]
         select_by_career.abstained += item[3]
@@ -473,7 +463,7 @@ const AutoComplete = ({
         (select_by_government[item] / sumVoteGovernment) *
         100
       ).toFixed(2)
-      if (select_by_government[item] == 0) {
+      if (select_by_government[item] === 0) {
         select_by_government[item] = 0
       }
     }
@@ -484,7 +474,7 @@ const AutoComplete = ({
         (select_by_position[item] / sumVotePosition) *
         100
       ).toFixed(2)
-      if (select_by_position[item] == 0) {
+      if (select_by_position[item] === 0) {
         select_by_position[item] = 0
       }
     }
@@ -496,7 +486,7 @@ const AutoComplete = ({
         (select_by_career[item] / sumVoteCareer) *
         100
       ).toFixed(2)
-      if (select_by_career[item] == 0) {
+      if (select_by_career[item] === 0) {
         select_by_career[item] = 0
       }
     }
@@ -507,7 +497,7 @@ const AutoComplete = ({
         (totalVotelogType[item] / sumTotal) *
         100
       ).toFixed(2)
-      if (totalVotelogType[item] == 0) {
+      if (totalVotelogType[item] === 0) {
         totalVotelogType[item] = 0
       }
     }
@@ -549,7 +539,7 @@ const AutoComplete = ({
               inputProps={{ value, onChange }}
               renderInputComponent={renderInputComponent}
             >
-              <img src={download} />
+              <img src={download} alt="ดาวน์โหลด" />
             </Autosuggest>
           </Style>
           <span css={cssAvg} style={{ margin: "0 1.5rem" }}>

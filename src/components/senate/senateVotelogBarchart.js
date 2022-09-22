@@ -231,7 +231,7 @@ const BarCharts = props => {
   }
 }
 
-export default ({
+export default function SenateVotelogBarchart({
   setVoteId,
   setPopupState,
   senatorTypeId,
@@ -246,7 +246,7 @@ export default ({
   is_selected_government,
   is_selected_yourSelf,
   is_On,
-}) => {
+}) {
   const senate = useStaticQuery(
     graphql`
       query {
@@ -308,7 +308,7 @@ export default ({
     }))
 
     setFilter_senatorId(_.find(group_senatorId, ["id", senatorId]))
-  }, senatorId)
+  }, [senatorId])
 
   const default_value = [
     { "1": 0 },
@@ -353,7 +353,7 @@ export default ({
 
     const set_format_date = dayjs(s.vote_date).calendar()
 
-    if (index != 0) {
+    if (index !== 0) {
       if (arr_votelog[index].vote_date === arr_votelog[index - 1].vote_date) {
         count_same_date++
       } else {

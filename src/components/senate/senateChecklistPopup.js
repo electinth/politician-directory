@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { media } from "../../styles"
 
 const cssPopupContainer = {
@@ -166,6 +166,7 @@ const SenateChecklistPopup = ({ showPopup, setShowPopup }) => {
               <a
                 href="https://ilaw.or.th/node/5663"
                 target="_blank"
+                rel="noreferrer nofollow noopener"
                 style={{ marginLeft: "5px" }}
               >
                 https://ilaw.or.th/node/5663

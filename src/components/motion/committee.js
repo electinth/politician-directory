@@ -124,7 +124,7 @@ const Committee = ({ members }) => {
           {Object.entries(by_party)
             .sort((a, b) => b[1].length - a[1].length)
             .map(([p, m]) => {
-              if (p === "") return
+              if (p === "") return null
               return (
                 <div key={p}>
                   <h5

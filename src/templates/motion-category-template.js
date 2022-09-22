@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Layout from "../components/layout"
 import { motionCategorySlug } from "../utils"
 import MotionStatusChip from "../components/motionStatusChip"
@@ -139,7 +139,7 @@ class MotionCategoryPage extends React.Component {
           background: "#FDFDFD",
         }}
       >
-        <SEO title="Motions" />
+        <Seo title="Motions" />
         <section>
           <div
             css={{
@@ -189,6 +189,7 @@ class MotionCategoryPage extends React.Component {
             >
               <img
                 src={`/motion/icons/${motionCategorySlug(pageTitle)}.png`}
+                alt={motionCategorySlug(pageTitle)}
                 css={{
                   marginBottom: "0",
                   flexShrink: "0",
@@ -251,13 +252,13 @@ class MotionCategoryPage extends React.Component {
                       value={this.sortBy}
                       css={cssDropdown}
                     >
-                      <option value="desc">อัพเดทใหม่ > เก่า</option>
-                      <option value="asc">อัพเดทเก่า > ใหม่</option>
+                      <option value="desc">อัพเดทใหม่ &gt; เก่า</option>
+                      <option value="asc">อัพเดทเก่า &gt; ใหม่</option>
                       <option value="regis_no_desc">
-                        เลขรับญัตติมาก > น้อย
+                        เลขรับญัตติมาก &gt; น้อย
                       </option>
                       <option value="regis_no_asc">
-                        เลขรับญัตติน้อย > มาก
+                        เลขรับญัตติน้อย &gt; มาก
                       </option>
                     </select>
                     <DownOutlined />

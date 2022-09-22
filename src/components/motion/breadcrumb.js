@@ -1,8 +1,8 @@
 import React from "react"
 import { css } from "@emotion/react"
-import { is_tablet, device } from "./size"
+import { device } from "./size"
 import { useContext } from "react"
-import { MenuContext, MenuChoice } from "../../templates/motion-template"
+import { MenuContext, MenuChoice } from "../../constants/motion"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
 

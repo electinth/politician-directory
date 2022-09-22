@@ -31,7 +31,7 @@ const PartyLogo = ({ name }) => {
   return (
     <GatsbyImage
       image={getImage((partyImageNode || placeHolderImageNode).node)}
-      alt={name}
+      alt={name || ""}
     />
   )
 }
