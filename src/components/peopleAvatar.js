@@ -30,14 +30,12 @@ const PeopleAvatar = ({ title = "", name, lastname }) => {
     ({ node }) => node.name === `${name}-${lastname}`
   )
 
-  return (
-    getImage((personImageNode || placeHolderImageNode).node) && (
-      <GatsbyImage
-        image={getImage((personImageNode || placeHolderImageNode).node)}
-        alt={alt}
-      />
-    )
-  )
+  return getImage((personImageNode || placeHolderImageNode).node) ? (
+    <GatsbyImage
+      image={getImage((personImageNode || placeHolderImageNode).node)}
+      alt={alt}
+    />
+  ) : null
 }
 
 export default PeopleAvatar
