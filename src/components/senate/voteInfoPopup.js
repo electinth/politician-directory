@@ -29,6 +29,8 @@ const cssCloseBtn = {
   height: "21px",
   cursor: "pointer",
   opacity: "0.3",
+  background: "transparent",
+  border: "none",
   "&:hover": {
     opacity: "1",
   },
@@ -127,7 +129,7 @@ const VoteInfoPopup = ({
 }) => {
   useEffect(() => {
     setPopupState(popupState)
-  }, [setPopupState])
+  }, [setPopupState, popupState])
 
   const filterVote = (combined, key, value) =>
     _.filter(combined, o => {
@@ -167,7 +169,7 @@ const VoteInfoPopup = ({
     <div>
       {popupState && (
         <div css={cssPopupContainer} className="cssPopupScrollbar">
-          <div onClick={handleClose} css={cssCloseBtn} />
+          <button onClick={handleClose} css={cssCloseBtn} aria-label="ปิด" />
 
           <section css={cssHeader}>
             <div>ประชุม ส.ว.</div>
@@ -270,6 +272,7 @@ const VoteInfoPopup = ({
                               marginBottom: "0",
                               marginRight: "14px",
                               width: "20px",
+                              display: "inline-block",
                             }}
                             alt="ดาวน์โหลด"
                           />

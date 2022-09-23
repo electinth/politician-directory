@@ -96,6 +96,8 @@ const cssCloseBtn = {
   height: "28px",
   cursor: "pointer",
   opacity: "0.5",
+  background: "transparent",
+  border: "none",
   [media(767)]: {
     right: "1.8rem",
   },
@@ -130,7 +132,12 @@ const SenateChecklistPopup = ({ showPopup, setShowPopup }) => {
     <div css={cssPopupContainer} className="container">
       {showPopup && (
         <div css={cssPopup} className="popup">
-          <div css={cssCloseBtn} onClick={close} />
+          <button
+            type="button"
+            aria-label="ปิด"
+            css={cssCloseBtn}
+            onClick={close}
+          />
           <div
             css={cssColumn}
             style={{

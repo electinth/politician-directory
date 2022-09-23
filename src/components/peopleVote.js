@@ -113,27 +113,34 @@ class PeopleVote extends Component {
           >
             สรุปการลงมติในสภา
           </h2>
-          <ul
+          <div
             css={{
               display: "block",
               listStyle: "none",
               textAlign: "center",
-              "> li": {
+              marginBottom: "2.4rem",
+              "> button": {
                 display: "inline-block",
                 fontSize: "2.4rem",
                 padding: "1rem 0 0",
                 margin: "0 1rem",
                 cursor: "pointer",
+                background: "transparent",
+                border: "none",
+                lineHeight: 1.5,
                 "&.active": {
                   borderBottom: "8px solid var(--cl-black)",
                 },
               },
             }}
+            role="tablist"
           >
             {filterChoice.map(({ text, choice }) => (
-              <li
+              <button
+                type="button"
                 key={choice}
                 className={activeFilter === choice ? "active" : ""}
+                role="tab"
                 onClick={() => this.handleFilter(choice)}
                 style={
                   activeFilter === choice
@@ -144,9 +151,9 @@ class PeopleVote extends Component {
                 }
               >
                 {text}
-              </li>
+              </button>
             ))}
-          </ul>
+          </div>
           {allVote.length > 0 ? (
             allVote.map(vote => (
               <PeopleVoteCard key={vote.id} {...vote}></PeopleVoteCard>

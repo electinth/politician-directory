@@ -46,13 +46,17 @@ const Breadcrumb = ({ sub_cat, registration_no }) => {
           <b>{registration_no}</b>
         </span>
       </div>
-      <span
+      <button
+        type="button"
         onClick={() => setMenu(MenuChoice.motion)}
         css={css`
           visibility: hidden;
           display: flex;
           align-items: center;
           cursor: pointer;
+          background: transparent;
+          border: none;
+          padding: 0;
 
           @media ${device.hideMotion} {
             visibility: visible;
@@ -88,7 +92,7 @@ const Breadcrumb = ({ sub_cat, registration_no }) => {
           <div className="menu-bar"></div>
           <div className="menu-bar"></div>
         </span>
-      </span>
+      </button>
     </div>
   )
 }

@@ -98,9 +98,10 @@ class ListCard extends Component {
                     outline: none;
                   }
                 `}
+                type="button"
+                onClick={() => this.setState({ hidden: !this.state.hidden })}
               >
                 <span
-                  onClick={() => this.setState({ hidden: !this.state.hidden })}
                   css={css`
                     font-family: var(--ff-title);
                     font-size: 2.4rem;

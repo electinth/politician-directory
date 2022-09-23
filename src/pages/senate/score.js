@@ -261,7 +261,7 @@ const Motion = ({ data }) => {
             <div css={{ ...cssSelectcon }}>
               <b>เลือกดูตามประเภท ส.ว.</b>
               <div css={{ ...cssButtonCon }}>
-                <div
+                <button
                   css={{
                     ...cssFilterBtn,
                     border:
@@ -270,6 +270,9 @@ const Motion = ({ data }) => {
                         : "0.2rem solid rgba(0, 0, 0, 0.3)",
                   }}
                   onClick={() => handleFilterClick("โดยตำแหน่ง")}
+                  role="switch"
+                  aria-checked={filter === "โดยตำแหน่ง"}
+                  type="button"
                 >
                   <div css={{ ...cssCircle, background: "#999C00" }} />
                   <span css={{ ...cssType }}>โดยตำแหน่ง</span>
@@ -282,8 +285,8 @@ const Motion = ({ data }) => {
                   ) : (
                     <></>
                   )}
-                </div>
-                <div
+                </button>
+                <button
                   css={{
                     ...cssFilterBtn,
                     border:
@@ -292,6 +295,9 @@ const Motion = ({ data }) => {
                         : "0.2rem solid rgba(0, 0, 0, 0.3)",
                   }}
                   onClick={() => handleFilterClick("เลือกโดย คสช.")}
+                  role="switch"
+                  aria-checked={filter === "เลือกโดย คสช."}
+                  type="button"
                 >
                   <div css={{ ...cssCircle, background: "#5739AC" }} />
                   <span css={{ ...cssType }}> คสช. สรรหา </span>
@@ -304,8 +310,8 @@ const Motion = ({ data }) => {
                   ) : (
                     <></>
                   )}
-                </div>
-                <div
+                </button>
+                <button
                   css={{
                     ...cssFilterBtn,
                     border:
@@ -314,6 +320,9 @@ const Motion = ({ data }) => {
                         : "0.2rem solid rgba(0, 0, 0, 0.3)",
                   }}
                   onClick={() => handleFilterClick("เลือกกันเอง")}
+                  role="switch"
+                  aria-checked={filter === "เลือกกันเอง"}
+                  type="button"
                 >
                   <div css={{ ...cssCircle, background: "#FEACAC" }} />
                   <span css={{ ...cssType }}>ตามกลุ่มอาชีพ</span>
@@ -326,7 +335,7 @@ const Motion = ({ data }) => {
                   ) : (
                     <></>
                   )}
-                </div>
+                </button>
               </div>
               การเข้าประชุมและการลงมติในที่ประชุมถือเป็นหน้าที่หลักของ ส.ว.
               รัฐธรรมนูญกำหนดเงื่อนไขการพ้นตำแหน่ง ของ ส.ว.
@@ -341,10 +350,10 @@ const Motion = ({ data }) => {
               เข้าลงมติ = 1 คะแนน/ครั้ง
               <br />
               ขาดลงมติ = 0 คะแนน/ครั้ง
-              <br /> <b>เกรด A</b> = เข้า 80%ขึ้นไป
-              <br /> <b>เกรด B</b> = เข้า 70-79%
-              <br /> <b>เกรด C</b> = เข้า 60-69%
-              <br /> <b>เกรด D</b> = เข้า 50-59%
+              <br /> <b>เกรด A</b> = เข้า 80% ขึ้นไป
+              <br /> <b>เกรด B</b> = เข้า 70&ndash;79%
+              <br /> <b>เกรด C</b> = เข้า 60&ndash;69%
+              <br /> <b>เกรด D</b> = เข้า 50&ndash;59%
               <br /> <b>เกรด F</b> = เข้าไม่ถึง 50%
             </div>
           </div>
@@ -352,7 +361,7 @@ const Motion = ({ data }) => {
         <div css={{ ...cssSelectConMobile }}>
           <b>เลือกดูตามประเภท ส.ว.</b>
           <div css={{ ...cssButtonCon }}>
-            <div
+            <button
               css={{
                 ...cssFilterBtn,
                 border:
@@ -361,6 +370,9 @@ const Motion = ({ data }) => {
                     : "0.2rem solid rgba(0, 0, 0, 0.3)",
               }}
               onClick={() => handleFilterClick("โดยตำแหน่ง")}
+              role="switch"
+              aria-checked={filter === "โดยตำแหน่ง"}
+              type="button"
             >
               <div css={{ ...cssCircle, background: "#999C00" }} />
               <span css={{ ...cssType }}>โดยตำแหน่ง</span>
@@ -373,8 +385,8 @@ const Motion = ({ data }) => {
               ) : (
                 <></>
               )}
-            </div>
-            <div
+            </button>
+            <button
               css={{
                 ...cssFilterBtn,
                 border:
@@ -383,6 +395,9 @@ const Motion = ({ data }) => {
                     : "0.2rem solid rgba(0, 0, 0, 0.3)",
               }}
               onClick={() => handleFilterClick("เลือกโดย คสช.")}
+              role="switch"
+              aria-checked={filter === "เลือกโดย คสช."}
+              type="button"
             >
               <div css={{ ...cssCircle, background: "#5739AC" }} />
               <span css={{ ...cssType }}> คสช. สรรหา </span>
@@ -395,8 +410,8 @@ const Motion = ({ data }) => {
               ) : (
                 <></>
               )}
-            </div>
-            <div
+            </button>
+            <button
               css={{
                 ...cssFilterBtn,
                 border:
@@ -405,6 +420,9 @@ const Motion = ({ data }) => {
                     : "0.2rem solid rgba(0, 0, 0, 0.3)",
               }}
               onClick={() => handleFilterClick("เลือกกันเอง")}
+              role="switch"
+              aria-checked={filter === "เลือกกันเอง"}
+              type="button"
             >
               <div css={{ ...cssCircle, background: "#FEACAC" }} />
               <span css={{ ...cssType }}> ตามกลุ่มอาชีพ </span>
@@ -417,7 +435,7 @@ const Motion = ({ data }) => {
               ) : (
                 <></>
               )}
-            </div>
+            </button>
           </div>
           การเข้าประชุมและการลงมติในที่ประชุมถือเป็นหน้าที่หลักของ ส.ว.
           รัฐธรรมนูญกำหนดเงื่อนไขการพ้นตำแหน่ง ของ ส.ว.

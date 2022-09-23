@@ -111,15 +111,15 @@ const VotelogPage = ({ data }) => {
             setHandleFilter={setHandleFilter}
             isShowAll={isShowAll}
             barchartGroupWidth={barchartGroupWidth}
-            is_mobile={isMobile}
-            setIs_position={setIsSelectedPosition}
-            setIs_government={setIsSelectedGovernment}
-            setIs_yourSelf={setIsSelectedYourself}
-            is_selected_position={isSelectedPosition}
-            is_selected_government={isSelectedGovernment}
-            is_selected_yourSelf={isSelectedYourself}
+            isMobile={isMobile}
+            setIsPosition={setIsSelectedPosition}
+            setIsGovernment={setIsSelectedGovernment}
+            setIsYourself={setIsSelectedYourself}
+            isSelectedPosition={isSelectedPosition}
+            isSelectedGovernment={isSelectedGovernment}
+            isSelectedYourSelf={isSelectedYourself}
             senatorTypeId={senatorTypeId}
-            is_On={isOn}
+            isOn={isOn}
             setIsOn={setIsOn}
           />
         </div>

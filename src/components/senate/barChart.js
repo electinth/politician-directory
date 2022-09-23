@@ -46,7 +46,7 @@ function DrawChart({
       d3.select("line").remove()
     }
     draw_bar()
-  }, [filter_senatorId])
+  }, [filter_senatorId]) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (is_yAxis) {
@@ -54,7 +54,7 @@ function DrawChart({
       d3.select("line").remove()
     }
     draw_bar()
-  }, [data])
+  }, [data]) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (is_mobile) {
@@ -62,7 +62,7 @@ function DrawChart({
       d3.select("line").remove()
     }
     draw_bar()
-  }, [senatorTypeId])
+  }, [senatorTypeId]) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (is_yAxis) {
@@ -87,7 +87,7 @@ function DrawChart({
       d3.selectAll("svg").attr("height", height)
     }
     draw_bar()
-  }, [is_On])
+  }, [is_On]) // eslint-disable-line react-hooks/exhaustive-deps
 
   function draw_bar() {
     d3.select(ref.current)

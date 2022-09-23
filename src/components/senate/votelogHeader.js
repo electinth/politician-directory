@@ -101,7 +101,7 @@ const VoteResultsHeader = ({
     const fail = allSenateVotelogYaml.nodes.length - pass
     setMotionPass(pass)
     setMotionFail(fail)
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const clickBtnViewPerson = () => {
     setViewPerson(true)

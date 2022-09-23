@@ -97,6 +97,8 @@ const cssClearIcon = {
   height: "18px",
   cursor: "pointer",
   opacity: "0.3",
+  background: "transparent",
+  border: "none",
   "&:hover": {
     opacity: "1",
   },
@@ -238,7 +240,7 @@ const AutoComplete = ({
       }
     })
     setSenator(allSenateVoteYaml.nodes)
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     setValue(senator[0] ? senator[0].title : "")
@@ -246,13 +248,13 @@ const AutoComplete = ({
 
   useEffect(() => {
     setAvgVotelog(calPercentLegend())
-  }, [valueSelected, isShowAll])
+  }, [valueSelected, isShowAll]) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     countVoteLogGroup()
     calLegend()
     setAvgVotelog(calPercentLegend())
-  }, [countByGroup])
+  }, [countByGroup]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const escapeRegexCharacters = str => {
     return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
@@ -340,7 +342,12 @@ const AutoComplete = ({
 
   const renderInputComponent = inputProps => (
     <div>
-      <div css={cssClearIcon} onClick={clearInput} />
+      <button
+        type="button"
+        aria-label="เคลียร์"
+        css={cssClearIcon}
+        onClick={clearInput}
+      />
       <img css={cssSearchIcon} src={search} alt="ค้นหา" />
       {_.isEmpty(valueSelected) ||
         (value !== "ทั้งหมด" && <PeopleAvatar {...valueSelected} />)}
@@ -504,9 +511,9 @@ const AutoComplete = ({
   }
 
   const handleFilter = e => {
-    let currentFilter = { ...currentFilter }
+    let _currentFilter = { ...currentFilter }
     let filter = e.target.innerText
-    currentFilter = { senatorType: filter }
+    _currentFilter = { senatorType: filter }
     if (filter === "โดยตำแหน่ง") {
       setSenatorTypeId(1)
       setSenatorType(select_by_position)
@@ -518,7 +525,7 @@ const AutoComplete = ({
       setSenatorType(select_by_career)
     }
 
-    setCurrentFilter(currentFilter)
+    setCurrentFilter(_currentFilter)
   }
 
   const colors = ["#76C8B8", "#F0324B", "#2D3480", "#7B90D1", "#E3E3E3"]

@@ -6,6 +6,11 @@
   right: -0.75rem;
   z-index: 600;
   cursor: pointer;
+
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .bar {
@@ -23,6 +28,7 @@
 
 .bar:before,
 .bar:after {
+  left: 0;
   height: 3px;
   width: 100%;
   background: var(--cl-black);
@@ -74,19 +80,16 @@
 
   .bar {
     width: 32px;
-
-    &,
-    &:before,
-    &:after {
-      height: 5px;
-    }
-  }
-
-  .bar:after {
-    top: 8px;
+    height: 5px;
   }
 
   .bar:before {
     top: -8px;
+    height: 5px;
+  }
+
+  .bar:after {
+    top: 8px;
+    height: 5px;
   }
 }

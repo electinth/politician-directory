@@ -397,7 +397,7 @@ const VotelogPage = ({
                     <GatsbyImage
                       image={downloadIcon.childImageSharp.gatsbyImageData}
                       alt=""
-                      css={{ marginRight: "1rem" }}
+                      css={{ marginRight: "1rem", display: "inline-block" }}
                     />
                     {doc.title || "เอกสาร"}
                   </span>

@@ -50,14 +50,15 @@ const Header = ({ siteTitle }) => {
       <EnvBadge />
 
       <WvNavbar title="THEY WORK FOR US" alwayShowSlot>
-        <div
+        <button
+          type="button"
           className={`hamburger-icon ${iconClicked ? "animateIcon" : ""}`}
           onClick={() => setIconClicked(!iconClicked)}
         >
           <div
             className={`bar fade-center ${iconClicked ? "bar-white" : ""}`}
           ></div>
-        </div>
+        </button>
       </WvNavbar>
 
       {iconClicked && <Menu siteTitle={siteTitle} />}

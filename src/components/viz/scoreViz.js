@@ -569,7 +569,7 @@ const ScoreViz = props => {
       setTooltipStyle,
       placeholder
     )
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     updateChart(filter)

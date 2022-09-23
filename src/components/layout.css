@@ -4,6 +4,10 @@
 @import "@wevisdemo/ui/styles/typography.css";
 @import "@wevisdemo/ui/styles/components.css";
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-size: 1.6rem;

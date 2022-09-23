@@ -64,7 +64,7 @@ const BarCharts = props => {
 
   useEffect(() => {
     handleFilter(props.handleFilter)
-  }, [props.handleFilter])
+  }, [props.handleFilter]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleFilter = filter => {
     const sort_by_data = (a, b) => {
@@ -239,7 +239,7 @@ export default function SenateVotelogBarchart({
   isShowAll,
   setCountByGroup,
   senatorType,
-  setBarchartGroupWidth = { setBarchartGroupWidth },
+  setBarchartGroupWidth,
   handleFilter,
   setIs_mobile_width,
   is_selected_position,
@@ -308,7 +308,7 @@ export default function SenateVotelogBarchart({
     }))
 
     setFilter_senatorId(_.find(group_senatorId, ["id", senatorId]))
-  }, [senatorId])
+  }, [senatorId]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const default_value = [
     { "1": 0 },
@@ -477,7 +477,7 @@ export default function SenateVotelogBarchart({
   groupWidth = [rect_1, rect_2, rect_3]
   useEffect(() => {
     setCountByGroup(count_by_group)
-  }, [firstTime])
+  }, [firstTime]) // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!firstTime) {
     setFirstTime(true)
