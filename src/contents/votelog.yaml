@@ -1,12 +1,433 @@
-- id: '1'
-  title: ลงมติเลือกนายกรัฐมนตรี
+- id: ''
+  title: ตั้ง กมธ.วิสามัญ ศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
+  field3: votelog.__
   is_active: false
-  en:
-    title: Prime Minister Approval
-    legal_title: >-
-      An approval of a person suitable to be appointed as the Prime Minister
-      shall be done in accordance with section 272 of Constitution of the
-      Kingdom of Thailand
+  legal_title: พิจารณาตั้งคณะกรรมาธิการวิสามัญ เพื่อศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-07-04'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
+  description_th: >-
+    จากญัตติด่วนที่ ส.ส. ทั้งฝ่ายรัฐบาลและฝ่ายค้าน
+    พูดถึงปัญหาราคาผลผลิตทางการเกษตรที่ตกต่ำประจำทุกปี รวมถึงสินค้าการประมง
+    จึงมีการให้แต่งตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
+    โดยให้กรรมาธิการได้รวบรวมปัญหาพิจารณาลงลึกถึงพื้นที่ที่มีความแตกต่างกัน
+    รวมทั้งให้ภาครัฐเข้ามากำกับบาทบาทของล้งด้วย
+
+
+    ประธานสภาผู้แทนราษฎร ถามมติต่อที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
+    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมมีมติเห็นชอบ ตามข้อบังคับ
+    การประชุมสภาผู้แทนราษฎร พ.ศ. 2551 ข้อ 80 โดยผลสรุป
+    มีการตั้งคณะกรรรมาธิการวิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
+    จำนวน 39 คน แบ่งเป็นสัดส่วน ส.ส.รัฐบาลจำนวน 20 คน และส.ส.ฝ่ายค้าน 19 คน
+    โดยมีกรอบระยะเวลาการศึกษาภายใน 60
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4142
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ตั้ง กมธ.วิสามัญ ศึกษาการต่อสัญญาสัมปทานทางด่วนและรถไฟฟ้าบีทีเอส
+  field3: votelog.__
+  is_active: false
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษากรณีการต่อสัญญาสัมปทานให้กับบริษัททางด่วนและรถไฟฟ้ากรุงเทพ
+    จำกัด (มหาชน)
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-07-11'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
+  description_th: >-
+    กรณีที่คณะกรรมการการทางพิเศษแห่งประเทศไทย (กทพ.)
+    มีมติต่อสัญญาสัมปทานให้บริษัททางด่วนและรถไฟฟ้ากรุงเทพ จำกัด (มหาชน) อีก 30
+    ปี ใน 3 โครงการ เพื่อแลกกับการยุติข้อพิพาท 137,000 ล้านบาท
+    ส.ส.ทั้งฝ่ายรัฐบาล และฝ่ายค้าน
+    ต่างอภิปรายสนับสนุนญัตติเพื่อให้ที่ประชุมตั้งคณะกรรมาธิการวิสามัญฯ
+    ขึ้นมาศึกษากรณีดังกล่าว ก่อนที่จะมีการต่อสัญญา 
+
+
+    ประธานสภาผู้แทนราษฎร ถามมติต่อที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
+    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมมีมติเห็นชอบ ตามข้อบังคับ
+    การประชุมสภาผู้แทนราษฎร  พ.ศ. 2551 ข้อ 80
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4144
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ตั้ง กมธ. วิสามัญ ศึกษาปัญหาหนี้ กยศ.
+  field3: votelog.__
+  is_active: false
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญเพื่อศึกษา ตรวจสอบ
+    และหาแนวทางแก้ไขปัญหาลูกหนี้กองทุนเงินให้กู้ยืมเพื่อการศึกษา (กยศ.)
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-12-20'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
+  description_th: >-
+    จากการดำเนินการกองทุน กยศ. ซึ่งมีผู้กู้กว่า 5.6 ล้านราย
+    แต่มีการชำระหนี้ร้อยละ 40 มีจำนวนผู้ผิดนัดเกือบ 3 ล้านคน
+    คิดเป็นจำนวนเงินที่ยังไม่ได้รับการชำระกว่า 4 แสนล้านบาท สภาฯ
+    เห็นว่าควรศึกษาหาแนวทางแก้ไข ทั้งแนวทางให้กับกองทุนให้ได้รับการชำระหนี้
+    และหาทางออกให้กับลูกหนี้มีโอกาสใช้หนี้ให้กับกองทุน
+    ภายใต้ภาวะเศรษฐกิจปัจจุบันที่อาจทำให้ความสามารถในการชำระหนี้ลดลง 
+
+
+    หลังการอภิปราย สภาฯ ได้ใช้ข้อบังคับการประชุมสภาฯ ข้อที่ 88
+    ให้ตั้งกมธ.วิสามัญฯคณะดังกล่าว โดยไม่ต้องลงมติ
+    เนื่องจากที่ประชุมอภิปรายสนับสนุนกันอย่างถ้วนหน้า ซึ่งที่ประชุมเห็นชอบ
+    ก่อนตั้งคณะกรรมาธิการวิสามัญเพื่อ พิจารณาศึกษาข้อเท็จจริง
+    และแนวทางการบริหารจัดการกองทุนกยศ.ต่อไป
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4176
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ตั้ง กมธ. วิสามัญ ศึกษาปัญหาการข่มขืนกระทำชำเรา
+  field3: votelog.__
+  is_active: false
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาหาแนวทางป้องกันและแก้ไขปัญหาเกี่ยวกับการข่มขืนกระทำชำเรา
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-12-26'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4179
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบของการใช้กัญชาในประเทศไทย
+  field3: votelog.__
+  is_active: false
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาความเป็นไปได้และตรวจสอบผลกระทบของการใช้กัญชาในรูปแบบต่าง
+    ๆ ในประเทศไทย
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-12-26'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4179
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ตั้ง กมธ.วิสามัญ พิจารณาศึกษาการขุดคลองไทย
+  field3: votelog.__
+  is_active: false
+  legal_title: ตั้งคณะกรรมาธิการวิสามัญ พิจารณาศึกษาการขุดคลองไทย
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2020-01-16'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
+  description_th: >-
+    การขุดคลองไทยนับเป็นคลองหนึ่งที่มีความสาคัญ ทางยุทธศาสตร์การเดินเรือ
+    ซึ่งจะเป็นโครงการที่สร้างรายได้ให้แก่ประเทศชาติอย่างมหาศาล และได้รับ
+    ผลประโยชน์ทั้งทางตรงและทางอ้อม
+    ก่อให้เกิดประโยชน์ต่อประเทศชาติในด้านความมั่นคง โดยใช้เป็นเส้นทางเดินเรือรบ
+    เรือขนส่งน้ำมัน เรือขนสินค้า
+    และเรือประมงสามารถเข้าออกได้โดยไม่ต้องผ่านน่านน้ำประเทศเพื่อนบ้าน
+    หากมีความขัดแย้งทางด้านอ่าวไทยจะสามารถสร้างอานาจทางทหารและความอิสระในการขนส่งทางทะเลได้อย่างไม่มีข้อจำกัด 
+
+
+    ด้านเศรษฐกิจจะช่วยให้ประเทศที่เดินเรือทั่วโลก สามารถประหยัดพลังงาน
+    ประหยัดการใช้น้ำมันในการส่งสินค้าทางทะเลได้เป็นจำนวนมาก
+    ทำให้ผู้ประกอบการมีรายได้เพิ่มมากขึ้นและสามารถเป็นแหล่งท่องเที่ยวทางทะเลระหว่างประเทศได้อีกด้วย 
+
+
+    เนื่องจากรองประธานสภาผู้แทนราษฎร คนที่หนึ่ง ถามที่ประชุมว่ามีผู้เห็นเป็น
+    อย่างอื่นหรือไม่ เมื่อไม่มีผู้เห็นเป็นอย่างอื่น
+    จึงถือว่าที่ประชุมลงมติเห็นชอบ กับญัตติดังกล่าว ตามข้อบังคับฯ ข้อ 88
+    ให้ตั้งคณะกรรมาธิการวิสามัญพิจารณา ศึกษาขุดคลองไทย และ
+    การพัฒนาพื้นที่ระเบียงเศรษฐกิจภาคใต้ จานวน 49 คน ใช้ระยะเวลาในการพิจารณา 120
+    วัน
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ตั้ง กมธ.วิสามัญ พิจารณาราคาหนังสัตว์ โค – กระบือ ตกต่ำ
+  field3: votelog.__
+  is_active: false
+  legal_title: ตั้งคณะกรรมาธิการวิสามัญ พิจารณาเรื่องราคาหนังสัตว์ โค – กระบือ ตกต่ำ
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2020-01-16'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: true
+  no_vote_description: >-
+    ที่ประชุมลงมติเห็นชอบให้ส่งงคณะกรรมาธิการแก้ไขปัญหาหนี้สินแห่งชาติพิจารณาศึกษาญัตติดังกล่าว
+  description_th: >-
+    ราคาหนังโคกระบือตกต่ำมาก เนื่องจากโรงงานฟอกหนังที่อยู่ในจังหวัด สมุทรปราการ
+    นำหนังโคกระบือเข้ามาจากต่างประเทศเป็นจำนวนมาก
+    และมีการยกเว้นภาษีการนำเข้าหนังโคกระบือมาใช้ในการอุตสาหกรรม
+    ซึ่งกลายเป็นที่รองรับขยะพิษจากการฟอกหนัง และปล่อยน้ำเสียไหลลงอ่าวไทย
+    อีกทั้งไม่ให้ความสนใจซื้อหนังโคกระบือในประเทศไทยจึงทำให้ราคาหนังโคกระบือตกต่ำลง
+
+
+    ที่ประชุมมีมติให้ส่งคณะกรรมาธิการการเกษตรและสหกรณ์ต่อไป
+    ประธานสภาผู้แทนราษฎรถามที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
+    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมลงมติเห็นชอบ ตามข้อบังคับฯ
+    ข้อ 88
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ตั้ง กมธ.วิสามัญ พิจารณาปัญหาหนี้และค่าครองชีพสูงจากราคาน้ำมัน แก๊ส ไฟฟ้า
+  field3: votelog.__
+  is_active: false
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณา ศึกษา ปัญหาหนี้สินในครัวเรือน หนี้สินภาครัฐ
+    รวมทั้งค่าครองชีพสูงจากราคาน้ำมัน แก๊ส ไฟฟ้า
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2020-01-16'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: true
+  no_vote_description: >-
+    ที่ประชุมลงมติเห็นชอบให้ส่งงคณะกรรมาธิการการเกษตรและสหกรณ์พิจารณาศึกษาญัตติดังกล่าว
+  description_th: >-
+    ปัญหาหนี้สินในครัวเรือนเพิ่มขึ้นอย่างต่อเนื่องทุกปี นอกจากนี้
+    ประชาชนยังต้องแบกภาระค่าบริการโครงการพื้นฐาน
+    ซึ่งใช้เงินลงทุนจากภาษีของประชาชน ที่ผ่านมารัฐบาลใช้งบประมาณ 17 ล้านล้านบาท
+    แต่กลับ ส่งผลให้หนี้สินภาคครัวเรือนสูงขึ้นเป็น 3.1 แสนล้านบาท
+    ภาครัฐจึงต้องมีมาตรการในการแก้ไขปัญหาที่ส่งผลกระทบต่อการดำเนินชีวิตของประชาชนอย่างเร่งด่วน
+
+
+    ที่ประชุมขอส่งญัตติไปยังคณะกรรมาธิการแก้ไขปัญหาหนี้สินแห่งชาติ
+    จากนั้นประธานได้ใช้ข้อบังคับการประชุมสภาผู้แทนราษฎร ข้อ 88
+    ถือว่าที่ประชุมมีมติเห็นชอบให้ส่งญัตติไปให้คณะกรรมาธิการแก้ไขปัญหาหนี้สินแห่งชาติพิจารณาศึกษา
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ตั้ง กมธ. วิสามัญศึกษาปัญหาฝุ่น PM 2.5
+  field3: votelog.__
+  is_active: false
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการป้องกันและแก้ไขปัญหาฝุ่นละอองขนาดเล็ก
+    (PM 2.5) อย่างเป็นระบบ
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2020-01-22'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4183
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบจาก พรบ. e-Payment
+  field3: votelog.__
+  is_active: false
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาในเรื่องผลกระทบจากการประกาศใช้พระราชบัญญัติแก้ไขเพิ่มเติมประมวลรัษฎากร
+
+    (ฉบับที่ 48) พ.ศ. 2562 ประเด็นการทำธุรกรรมผ่านช่องทางอิเล็กทรอนิกส์
+    (e-Payment)
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2020-02-05'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4188
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ตั้ง กมธ. วิสามัญ แก้ไขปัญหาที่ดินทำกิน
+  field3: votelog.__
+  is_active: false
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาหามาตรการเพื่อแก้ไขปัญหาที่ดินทำกินของประชาชนอย่างครบถ้วนเป็นระบบ
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2020-01-31'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://drive.google.com/file/d/1nN_FFX-0sTRVoIxrQH4aSh0zQVGLWy1D/view?usp=sharing
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ลงมติเลือกนายกรัฐมนตรี
+  field3: votelog.__
+  is_active: false
   legal_title: >-
     พิจารณาให้ความเห็นชอบบุคคลซึ่งสมควรได้รับแต่งตั้งเป็นนายกรัฐมนตรี ตามมาตรา
     272 ของรัฐธรรมนูญแห่งราชอาณาจักรไทย
@@ -25,14 +446,6 @@
     จึงรุ่งเรืองกิจ เสนอโดยพรรคอนาคตใหม่
     ก่อนการลงมติได้เปิดให้อภิปรายคุณสมบัติของทั้งสองคนก่อน ผลการลงมติ
     พล.อ.ประยุทธ์ ได้คะแนนมากกว่าที่ 500 ต่อ 244 เสียง งดออกเสียง 3 เสียง
-  description_en: >-
-    The first meeting of the Parliament consists of the House of Representatives
-    and the Senate in order to consider and vote for a person who shall become
-    Prime Minister. There were two names proposed; Gen.Prayuth Chan-o-cha from
-    Palangpracharat Party and Thanathorn Jungroongruangkit from Future Forward
-    Party. Members of parliament were allowed to discussed before casting their
-    votes. The result came up as Gen.Prayuth recieved majority vote at 500:244
-    with 3 abstentions.
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
@@ -42,21 +455,19 @@
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190606122944A0.pdf
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4135#!
-  approve: 498
-  disprove: 243
-  abstained: 3
-  absent: 1
-  total_voter: 745
-- id: '2'
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: '1'
   title: ตั้งคณะกรรมาธิการผู้มีความหลากหลายทางเพศ
+  field3: votelog.__1
   is_active: true
-  en:
-    title: Vote to set up separate Standing Committee on LGBT rights
-    legal_title: >-
-      Consideration of the Draft Rules of Procedure of the House of
-      Representatives on item 90 under Chapter 5 related to Committee, the MPs
-      of Future Forward Party proposed to have 36 committees instead of 25 with
-      one more on LGBT rights.
   legal_title: >-
     พิจารณาร่างข้อบังคับการประชุมสภาผู้แทนราษฎร พ.ศ. .... ในข้อที่ 90 หมวดที่ 5
     ว่าด้วยกรรมาธิการ โดย ส.ส. พรรคอนาคตใหม่ ขอเพิ่มจาก 35 คณะ เป็น 36 คณะ
@@ -79,15 +490,6 @@
     กลุ่มชาติพันธุ์ และผู้มีความหลากหลายทางเพศ ซึ่งผลปรากฏว่า
     ที่ประชุมไม่เห็นชอบกับคำแปรญัตติของ น.ส.ณธีภัสร์ ด้วยคะแนน 365 ต่อ 101
     และงดออกเสียง 13 ส่งผลให้กรรมาธิการสามัญ จะมีจำนวน 35 คณะตามร่างเดิม
-  description_en: >-
-    On 22 August 2019, during the meeting of the House of Representatives to
-    consider the Draft Rules of Procedure of the House of Representatives. In
-    the draft, there are 35 House Committees, however, Nathiphat Kunsetthasit,
-    the FFP party-list MPs proposed the motion to set up a standing house
-    committee on gender diversity separate from Committee on children, young
-    people, women, the elderly, persons with disabilities, ethnic groups, and
-    LGBT people. The vote was 365 against and 101 in favour, with three
-    abstentions.
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
@@ -97,22 +499,22 @@
         https://library2.parliament.go.th/giventake/content_give/force-hr2562.pdf
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4154
-  approve: 100
-  disprove: 365
-  abstained: 13
-  absent: 20
-  total_voter: 498
-- id: '3'
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 498
+  disprove: 243
+  abstained: 3
+  absent: 1
+  total_voter: 745
+  special: 248
+  total_people: 993
+- id: '2'
   title: ขยายสัญญาสัมปทานทางด่วนและรถไฟฟ้าบีทีเอส
+  field3: votelog.__2
   is_active: true
-  en:
-    title: Extend the concessions of expressway and BTS
-    legal_title: >-
-      Consideration of the Committee report on the extension of concessions of
-      express way and BTS sky train
   legal_title: >-
-    ที่ประชุมพิจารณาระเบียบวาระเรื่องที่คณะกรรมาธิการพิจารณาเสร็จแล้ว คือ
     รายงานการพิจารณาศึกษาการขยายสัญญาสัมปทานทางด่วนและรถไฟฟ้า (บีทีเอส)
+    ซึ่งคณะกรรมาธิการวิสามัญพิจารณาเสร็จแล้ว
   meeting: ประชุมส.ส.
   type: รายงานการพิจารณา
   vote_date: '2019-09-05'
@@ -130,15 +532,6 @@
     และไม่ขยายสัมปทานการเดินรถไฟฟ้าสายสีเขียวของบีทีเอส ที่จะสิ้นสุดในปี 2572
     ด้วยคะแนน 412 ต่อ 25 งดออกเสียง 20 คะแนน
     ซึ่งเมื่อผ่านการลงมติจากสภาผู้แทนราษฎรแล้วก็จะเสนอให้คณะรัฐมนตรีเป็นผู้นำไปปฏิบัติต่อไป
-  description_en: >-
-    On 5 September 2019, The House of Representatives had voted to approve the
-    proposal according to a study report by an Ad hoc Committee to extend the
-    concession of express way to end the dispuet between Expressway Authirity of
-    Thailand (Epat) and the Bangkok Expressway and Metro public company (BEM)
-    and not extend the concession on the BTS green line which will end in 2029.
-    The vote was 415 in favour and 25 against with 20 abstentions. After the
-    house has finalised, the proposal will be submitted to the cabinet to
-    conduct according to the result.
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
@@ -147,17 +540,19 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4156#!
-  approve: 412
-  disprove: 24
-  abstained: 20
-  absent: 42
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 100
+  disprove: 365
+  abstained: 13
+  absent: 20
   total_voter: 498
-- id: '4'
+  special: 248
+  total_people: 746
+- id: '3'
   title: ตั้งคณะกรรมาธิการวิสามัญพิจารณาผลกระทบโครงการอีอีซี
+  field3: votelog.__3
   is_active: true
-  en:
-    title: Agenda to set up committee on EEC
-    legal_title: Extend the concessions of expressway and BTS
   legal_title: >-
     ญัตติด่วน
     ขอให้สภาผู้แทนราษฎรตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาและตรวจสอบผลกระทบจากการดำเนินโครงการเขตพัฒนาพิเศษภาคตะวันออก
@@ -191,27 +586,6 @@
     หลังจากญัตตินี้ถูกเลื่อนพิจารณาหลายครั้ง เมื่อวันที่ 13 กันยายน 2562
     ที่ประชุมมีมติไม่เห็นด้วยให้ตั้งคณะกรรมาธิการวิสามัญด้วยเสียง 231 ต่อ 223
     เสียง งดออกเสียง 2 เสียง จากผู้เข้าประชุม 456 คน
-  description_en: >-
-    Eastern Economic Corridor (EEC) is one of the main policy from the Nation
-    Council for Peace and Order (NCPO) regime and also become an aim of the
-    NCPO2 with Somkid Jatusripitak, the deputy Prime Minister on economic as a
-    key person who is pushing for. The goal of the EEC project is to build a
-    special economic zone to attract foreign investors in three provinces in the
-    east, Chonburi, Rayong and Chacherngsao. The obvious effect of the EECP
-    project is the rise of properties price in the area and the trade of lands.
-    Farmers and fishers who rent the lands for long time was abandoned and
-    canceled the rent contract where land owners want to sell to new investors. 
-    The effect to environment and communities will follow.
-
-
-
-
-    Representatives from at least three parties which are Future Forward Party,
-    Democrat Party and Palangpracharat Party proposed to set up Ad hoc
-    Committees to consider the effect of EEC under three different names and
-    focuses. This agenda was postponed many times until 13 September 2019, the
-    house has voted against the proposal with 231:223 with 2 abstentions from
-    the 456 attendees.
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
@@ -220,19 +594,55 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4158
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 412
+  disprove: 24
+  abstained: 20
+  absent: 42
+  total_voter: 498
+  special: 248
+  total_people: 746
+- id: '4'
+  title: ตั้ง กมธ.วิสามัญศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
+  field3: votelog.__4
+  is_active: true
+  legal_title: >-
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-09-13'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: true
+  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
+  description_th: >-
+    จากประเด็นสารเคมี 3 ตัว ประกอบด้วย พาราควอต ไกลโฟเซต และคลอร์ไพริฟอส
+    ถูกใช้ในภาคเกษตรกรรมและเป็นอันตรายต่อสุขภาพของคนไทยจำนวนมาก
+    ส.ส.จากทุกพรรคการเมืองอภิปรายไปในทางเดียวกันว่าเห็นด้วยกับการยกเลิกสารเคมีดังกล่าว
+    จากนั้นที่ประชุมลงมติเป็นเอกฉันท์ให้ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190917112227A5.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4158
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
   approve: 223
   disprove: 231
   abstained: 2
   absent: 40
   total_voter: 496
+  special: 248
+  total_people: 744
 - id: '5'
   title: พิจารณาพ.ร.ก.โอนกำลังพลและงบประมาณฯ
+  field3: votelog.__5
   is_active: true
-  en:
-    title: >-
-      An approval of executive decree on the transfer of army units, and budget,
-      to a royal security command unit.
-    legal_title: ''
   legal_title: >-
     พิจารณาพระราชกำหนดโอนอัตรากำลังพลและงบประมาณบางส่วนของกองทัพบก กองทัพไทย
     กระทรวงกลาโหม ไปเป็นของหน่วยบัญชาการถวาย ความปลอดภัยรักษาพระองค์
@@ -266,27 +676,6 @@
     ปิยบุตร แสงกนกกุล อภิปรายถึงความไม่ถูกต้องตามเงื่อนไขของ มาตรา 172 ส.ส.
     พรรคอนาคตใหม่ 70 คนลงมติไม่เห็นด้วยกับการออก พ.ร.ก.ฉบับนี้
     และแพ้ไปด้วยคะแนนรวม 374 ต่อ 70 เสียง งดออกเสียง 2 เสียง
-  description_en: >-
-    On 30 September 2019, Gen. Prayut Chan-o-cha as a Prime Minister under the
-    NCPO2 cabinet has signed an executive decree to trasfer forces and budget of
-    army units under ministry of defense, 1st Infantry Regiment of the Ratcha
-    Wallop Royal Guards and the 11th Infantry Regiment of the Ratcha Wallop
-    Royal Guards  to the royal security command unit. 
-
-
-
-
-    After an executive order was enacted, the cabinet must propose to ask for
-    approval from the parliament once the meeting was started. The legal problem
-    of such order is Section 172 of the Constitution provide the power to
-    cabinet to issue such order only on 'emergency' situation otherwise the
-    cabinet must propose to draft to parliament as normal process of legislative
-    enactment. However, the cabinet under Gen.Prayuth has failed to provide the
-    reason of emergency. On 17 October 2019, when the decree was proposed to
-    parliament consideration, Piyabutr Saengkanokkul, a secretary of future
-    forward party described the illegality of the decree with Section 172. 70
-    MPs from Future Forward Party voted against the decree and lost with 374:70
-    with 2 abstentions.
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
@@ -295,17 +684,19 @@
       link: 'http://www.ratchakitcha.soc.go.th/DATA/PDF/2562/A/103/T_0001.PDF'
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4162
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
   approve: 374
   disprove: 70
   abstained: 2
   absent: 50
   total_voter: 496
+  special: 248
+  total_people: 744
 - id: '6'
-  title: พ.ร.บ.งบประมาณฯ วาระที่ 1
+  title: พ.ร.บ.งบประมาณฯ 2563 (วาระ 1)
+  field3: votelog.__6
   is_active: true
-  en:
-    title: The First Reading of 2020 budget
-    legal_title: ''
   legal_title: >-
     พิจารณาร่างพระราชบัญญัติงบประมาณรายจ่ายประจำปีงบประมาณพ.ศ. ๒๕๖๓ ซึ่ง
     คณะรัฐมนตรี เป็นผู้เสนอ
@@ -336,27 +727,6 @@
     เข้าสู่การตั้งคณะกรรมาธิการพิจารณารายละเอียดในวาระที่สองต่อไป
     ซึ่งกำหนดระยะเวลาพิจารณา 30 วัน
     ก่อนจะนำกลับเข้ามาอภิปรายในที่ประชุมของสภาผู้แทนราษฎรอีกครั้งหนึ่ง
-  description_en: >-
-    In practice of the government administration, when the government needs
-    budget to conduct their work the draft budget shall be proposed to
-    parliament for consideration as an act. The 2020 budget was crucial because
-    the current government carries very small majority seats in the parliament
-    and some MPs are under qualification examinations, therefore the stability
-    of the government is very unclear. If some MPs tuned against the government,
-    the proposed budget can be failed and will effect the government
-    administration. If so, the government should resign from positions or
-    dissolve the parliament as a political tradition.  
-
-
-
-
-    On 17 October 2019, the parliament considered the 2020 annual budget that
-    proposed by the government. The discussion took three full day then at the
-    night on 19 October 2016, the house of representatives voted with 251 in
-    favour of the draft and 234 abstentions. The draft budget the passed the
-    first reading to the process of committee consideration which will take 30
-    more days to consider before it will be brought back to discuss in the house
-    again.
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
@@ -365,52 +735,19 @@
       link: 'http://bbstore.bb.go.th/cms/1570699357_1282.pdf'
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4162
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
   approve: 251
   disprove: 0
   abstained: 233
   absent: 12
   total_voter: 496
+  special: 248
+  total_people: 744
 - id: '7'
-  title: ตั้ง กมธ.วิสามัญศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
-  is_active: false
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: >-
-    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2019-09-13'
-  prayuth: ''
-  thanathorn: ''
-  passed: true
-  is_no_vote: true
-  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  description_th: >-
-    จากประเด็นสารเคมี 3 ตัว ประกอบด้วย พาราควอต ไกลโฟเซต และคลอร์ไพริฟอส
-    ถูกใช้ในภาคเกษตรกรรมและเป็นอันตรายต่อสุขภาพของคนไทยจำนวนมาก
-    ส.ส.จากทุกพรรคการเมืองอภิปรายไปในทางเดียวกันว่าเห็นด้วยกับการยกเลิกสารเคมีดังกล่าว
-    จากนั้นที่ประชุมลงมติเป็นเอกฉันท์ให้ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการควบคุมการใช้สารเคมีในภาคเกษตรกรรม
-  description_en: ''
-  document:
-    - title: ใบประมวลผลการลงมติ
-      link: >-
-        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20190917112227A5.pdf
-    - title: ''
-      link: ''
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4158
-  approve: 399
-  disprove: 0
-  abstained: 0
-  absent: 97
-  total_voter: 496
-- id: '8'
   title: ตั้ง กมธ. วิสามัญ ศึกษาโครงการผันน้ำ โขง เลย ชี มูล ป่าสัก
+  field3: votelog.__7
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาโครงการผันน้ำ โขง เลย ชี มูล ป่าสัก
   meeting: ประชุมส.ส.
   type: ตั้ง กมธ. วิสามัญ
@@ -433,7 +770,6 @@
     จึงได้รับความเดือดร้อน ดังนั้น ที่ประชุมจึงพิจารณาตั้งกรรมาธิการวิสามัญ
     เพื่อศึกษาว่าหากพื้นที่ดังกล่าวมีการก่อสร้างโครงการผันน้ำโขง เลย ชี มูล
     ป่าสัก จะก่อให้เกิดประโยชน์ต่อประชาชนหรือไม่
-  description_en: ''
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
@@ -442,17 +778,56 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4169
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 399
+  disprove: 0
+  abstained: 0
+  absent: 97
+  total_voter: 496
+  special: 248
+  total_people: 744
+- id: '8'
+  title: >-
+    ขอถอนญัตติ ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบกฎอัยการศึก และพรก.ฉุกเฉินในพื้นที่
+    3 จังหวัดชายแดนภาคใต้
+  field3: votelog.__8
+  is_active: true
+  legal_title: >-
+    ขอถอนญัตติ
+    ตั้งคณะกรรมาธิการวิสามัญพิจารณาเพื่อศึกษาผลกระทบการบังคับใช้พระราชบัญญัติกฎอัยการศึก
+    พ.ศ. 2547 และพระราชกำหนดการบริหารราชการในสถานการณ์ฉุกเฉิน พ.ศ. 2548
+    ในพื้นที่ 3 จังหวัดชายแดนภาคใต้
+  meeting: ประชุมส.ส.
+  type: ตั้ง กมธ. วิสามัญ
+  vote_date: '2019-11-27'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191128082252A1.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4170
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
   approve: 391
   disprove: 0
   abstained: 1
   absent: 105
   total_voter: 497
+  special: 248
+  total_people: 745
 - id: '9'
   title: ตั้ง กมธ.วิสามัญ ศึกษาผลกระทบจาก ม. 44
+  field3: votelog.__9
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     พิจารณาตั้งคณะกรรมาธิการวิสามัญ เพื่อศึกษาผลกระทบจากการกระทำ ประกาศ
     และคำสั่งของคณะรักษาความสงบแห่งชาติ
@@ -488,7 +863,6 @@
     ที่ประชุมลงมติเห็นด้วย  5  คน ไม่เห็นด้วย 244 คน  และงดออกเสียงอีก 6 คน 
     ทำให้ที่ประชุมมีมติ ไม่ตั้ง กมธ.วิสามัญศึกษาผลกระทบจากประกาศ และคำสั่งของ
     คสช. และการใช้อำนาจของหัวหน้าคสช. ตามมาตรา 44
-  description_en: ''
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
@@ -497,17 +871,19 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4172
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
   approve: 5
   disprove: 244
   abstained: 6
   absent: 242
   total_voter: 497
+  special: 248
+  total_people: 745
 - id: '10'
   title: ตั้ง กมธ.วิสามัญ ตรวจสอบละเมิดสิทธิมนุษยชน
+  field3: votelog.__10
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ตั้งคณะกรรมาธิการวิสามัญเพื่อตรวจ สอบและศึกษา
     ติดตามการทำงานของหน่วยงานภาครัฐ
@@ -532,7 +908,6 @@
     สภาผู้แทนราษฎร จึงเห็นชอบตั้งคณะกรรมาธิการวิสามัญเพื่อตรวจ สอบและศึกษา
     ติดตามการทำงานของหน่วยงานภาครัฐต่อการถูกละเมิดสิทธิมนุษยชนและถูกประทุษร้ายของประชาชน
     เพื่อตรวจสอบและติดตาม
-  description_en: ''
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
@@ -541,53 +916,19 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4175
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
   approve: 410
   disprove: 0
   abstained: 2
   absent: 85
   total_voter: 497
+  special: 248
+  total_people: 745
 - id: '11'
-  title: >-
-    ขอถอนญัตติ ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบกฎอัยการศึก และพรก.ฉุกเฉินในพื้นที่
-    3 จังหวัดชายแดนภาคใต้
-  is_active: true
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: >-
-    ขอถอนญัตติ
-    ตั้งคณะกรรมาธิการวิสามัญพิจารณาเพื่อศึกษาผลกระทบการบังคับใช้พระราชบัญญัติกฎอัยการศึก
-    พ.ศ. 2547 และพระราชกำหนดการบริหารราชการในสถานการณ์ฉุกเฉิน พ.ศ. 2548
-    ในพื้นที่ 3 จังหวัดชายแดนภาคใต้
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2019-11-27'
-  prayuth: ''
-  thanathorn: ''
-  passed: true
-  is_no_vote: false
-  no_vote_description: ''
-  description_th: ''
-  description_en: ''
-  document:
-    - title: ''
-      link: >-
-        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20191128082252A1.pdf
-    - title: ''
-      link: ''
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4170
-  approve: 240
-  disprove: 78
-  abstained: 149
-  absent: 31
-  total_voter: 498
-- id: '12'
   title: ตั้ง กมธ. วิสามัญ ตรวจสอบโครงการก่อสร้างอาคารรัฐสภาแห่งใหม่
+  field3: votelog.__11
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: ตั้งคณะกรรมาธิการวิสามัญตรวจสอบโครงการก่อสร้างอาคารรัฐสภาแห่งใหม่
   meeting: ประชุมส.ส.
   type: ตั้ง กมธ. วิสามัญ
@@ -615,7 +956,6 @@
     นายชวน หลีกภัย ประธานสภาฯ ได้แจ้งให้ทราบด้วยว่า ตนให้เลขาธิการสภาฯ
     ศึกษากระบวนการใช้พื้นที่อาคารรัฐสภา
     ซึ่งเป็นเรื่องของการเตรียมการไว้ในอนาคตด้วย
-  description_en: ''
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
@@ -624,17 +964,19 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4176
-  approve: 353
-  disprove: 0
-  abstained: 2
-  absent: 142
-  total_voter: 497
-- id: '13'
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 240
+  disprove: 78
+  abstained: 149
+  absent: 31
+  total_voter: 498
+  special: 511
+  total_people: 1009
+- id: '12'
   title: ตั้ง กมธ.วิสามัญศึกษาโครงการจัดตั้งกระทรวงการข้าว
+  field3: votelog.__12
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาโครงการจัดตั้งกระทรวงการข้าว
   meeting: ประชุมส.ส.
   type: ตั้ง กมธ. วิสามัญ
@@ -660,7 +1002,6 @@
 
     ซึ่งที่ประชุมลงมติเห็นด้วย 343 เสียง
     ให้ส่งคณะกรรมาธิการการเกษตรและสหกรณ์ต่อไป
-  description_en: ''
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
@@ -669,17 +1010,19 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
-  approve: 10
-  disprove: 342
-  abstained: 0
-  absent: 144
-  total_voter: 496
-- id: '14'
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 353
+  disprove: 0
+  abstained: 2
+  absent: 142
+  total_voter: 497
+  special: 511
+  total_people: 1008
+- id: '13'
   title: ตั้ง กมธ. วิสามัญ ศึกษาแนวทางป้องกันไม่ให้เกิดการรัฐประหารขึ้นอีกในอนาคต
+  field3: votelog.__13
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ตั้งคณะกรรมาธิการวิสามัญ
     เพื่อศึกษาแนวทางป้องกันไม่ให้เกิดการรัฐประหารขึ้นอีกในอนาคต
@@ -706,7 +1049,6 @@
     ที่ประชุมสภาผู้แทนราษฎร มีมติเสียงข้างมาก 242 เสียง ไม่เห็นชอบให้มีการตั้ง
     กมธ.ศึกษาแนวทางป้องกันรัฐประหารฯ ดังกล่าว โดยมีผู้เห็นชอบจำนวน 216 เสียง
     งดออกเสียง 2 ราย จากจำนวนผู้เข้าประชุม 460 ราย
-  description_en: ''
   document:
     - title: ใบประมวลผลการลงมติ
       link: >-
@@ -715,435 +1057,21 @@
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4193
-  approve: 215
-  disprove: 242
-  abstained: 2
-  absent: 38
-  total_voter: 497
-- id: '15'
-  title: ตั้ง กมธ.วิสามัญ ศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
-  is_active: false
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: พิจารณาตั้งคณะกรรมาธิการวิสามัญ เพื่อศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2019-07-04'
-  prayuth: ''
-  thanathorn: ''
-  passed: true
-  is_no_vote: true
-  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  description_th: >-
-    จากญัตติด่วนที่ ส.ส. ทั้งฝ่ายรัฐบาลและฝ่ายค้าน
-    พูดถึงปัญหาราคาผลผลิตทางการเกษตรที่ตกต่ำประจำทุกปี รวมถึงสินค้าการประมง
-    จึงมีการให้แต่งตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
-    โดยให้กรรมาธิการได้รวบรวมปัญหาพิจารณาลงลึกถึงพื้นที่ที่มีความแตกต่างกัน
-    รวมทั้งให้ภาครัฐเข้ามากำกับบาทบาทของล้งด้วย
-
-
-    ประธานสภาผู้แทนราษฎร ถามมติต่อที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
-    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมมีมติเห็นชอบ ตามข้อบังคับ
-    การประชุมสภาผู้แทนราษฎร พ.ศ. 2551 ข้อ 80 โดยผลสรุป
-    มีการตั้งคณะกรรรมาธิการวิสามัญพิจารณาศึกษาปัญหาราคาพืชผลทางการเกษตรตกต่ำ
-    จำนวน 39 คน แบ่งเป็นสัดส่วน ส.ส.รัฐบาลจำนวน 20 คน และส.ส.ฝ่ายค้าน 19 คน
-    โดยมีกรอบระยะเวลาการศึกษาภายใน 60
-  description_en: ''
-  document:
-    - title: ''
-      link: ''
-    - title: ''
-      link: ''
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4142
-  approve: 0
-  disprove: 0
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 10
+  disprove: 342
   abstained: 0
-  absent: 0
-  total_voter: 0
-- id: '16'
-  title: ตั้ง กมธ.วิสามัญ ศึกษาการต่อสัญญาสัมปทานทางด่วนและรถไฟฟ้าบีทีเอส
-  is_active: false
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: >-
-    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษากรณีการต่อสัญญาสัมปทานให้กับบริษัททางด่วนและรถไฟฟ้ากรุงเทพ
-    จำกัด (มหาชน)
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2019-07-11'
-  prayuth: ''
-  thanathorn: ''
-  passed: true
-  is_no_vote: true
-  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  description_th: >-
-    กรณีที่คณะกรรมการการทางพิเศษแห่งประเทศไทย (กทพ.)
-    มีมติต่อสัญญาสัมปทานให้บริษัททางด่วนและรถไฟฟ้ากรุงเทพ จำกัด (มหาชน) อีก 30
-    ปี ใน 3 โครงการ เพื่อแลกกับการยุติข้อพิพาท 137,000 ล้านบาท
-    ส.ส.ทั้งฝ่ายรัฐบาล และฝ่ายค้าน
-    ต่างอภิปรายสนับสนุนญัตติเพื่อให้ที่ประชุมตั้งคณะกรรมาธิการวิสามัญฯ
-    ขึ้นมาศึกษากรณีดังกล่าว ก่อนที่จะมีการต่อสัญญา 
-
-
-    ประธานสภาผู้แทนราษฎร ถามมติต่อที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
-    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมมีมติเห็นชอบ ตามข้อบังคับ
-    การประชุมสภาผู้แทนราษฎร  พ.ศ. 2551 ข้อ 80
-  description_en: ''
-  document:
-    - title: ''
-      link: ''
-    - title: ''
-      link: ''
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4144
-  approve: 0
-  disprove: 0
-  abstained: 0
-  absent: 0
-  total_voter: 0
-- id: '17'
-  title: ตั้ง กมธ. วิสามัญ ศึกษาปัญหาหนี้ กยศ.
-  is_active: false
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: >-
-    ตั้งคณะกรรมาธิการวิสามัญเพื่อศึกษา ตรวจสอบ
-    และหาแนวทางแก้ไขปัญหาลูกหนี้กองทุนเงินให้กู้ยืมเพื่อการศึกษา (กยศ.)
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2019-12-20'
-  prayuth: ''
-  thanathorn: ''
-  passed: true
-  is_no_vote: true
-  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  description_th: >-
-    จากการดำเนินการกองทุน กยศ. ซึ่งมีผู้กู้กว่า 5.6 ล้านราย
-    แต่มีการชำระหนี้ร้อยละ 40 มีจำนวนผู้ผิดนัดเกือบ 3 ล้านคน
-    คิดเป็นจำนวนเงินที่ยังไม่ได้รับการชำระกว่า 4 แสนล้านบาท สภาฯ
-    เห็นว่าควรศึกษาหาแนวทางแก้ไข ทั้งแนวทางให้กับกองทุนให้ได้รับการชำระหนี้
-    และหาทางออกให้กับลูกหนี้มีโอกาสใช้หนี้ให้กับกองทุน
-    ภายใต้ภาวะเศรษฐกิจปัจจุบันที่อาจทำให้ความสามารถในการชำระหนี้ลดลง 
-
-
-    หลังการอภิปราย สภาฯ ได้ใช้ข้อบังคับการประชุมสภาฯ ข้อที่ 88
-    ให้ตั้งกมธ.วิสามัญฯคณะดังกล่าว โดยไม่ต้องลงมติ
-    เนื่องจากที่ประชุมอภิปรายสนับสนุนกันอย่างถ้วนหน้า ซึ่งที่ประชุมเห็นชอบ
-    ก่อนตั้งคณะกรรมาธิการวิสามัญเพื่อ พิจารณาศึกษาข้อเท็จจริง
-    และแนวทางการบริหารจัดการกองทุนกยศ.ต่อไป
-  description_en: ''
-  document:
-    - title: ''
-      link: ''
-    - title: ''
-      link: ''
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4176
-  approve: 0
-  disprove: 0
-  abstained: 0
-  absent: 0
-  total_voter: 0
-- id: '18'
-  title: ตั้ง กมธ. วิสามัญ ศึกษาปัญหาการข่มขืนกระทำชำเรา
-  is_active: false
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: >-
-    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาหาแนวทางป้องกันและแก้ไขปัญหาเกี่ยวกับการข่มขืนกระทำชำเรา
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2019-12-26'
-  prayuth: ''
-  thanathorn: ''
-  passed: true
-  is_no_vote: true
-  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  description_th: ''
-  description_en: ''
-  document:
-    - title: ''
-      link: ''
-    - title: ''
-      link: ''
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4179
-  approve: 0
-  disprove: 0
-  abstained: 0
-  absent: 0
-  total_voter: 0
-- id: '19'
-  title: ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบของการใช้กัญชาในประเทศไทย
-  is_active: false
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: >-
-    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาความเป็นไปได้และตรวจสอบผลกระทบของการใช้กัญชาในรูปแบบต่าง
-    ๆ ในประเทศไทย
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2019-12-26'
-  prayuth: ''
-  thanathorn: ''
-  passed: true
-  is_no_vote: true
-  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  description_th: ''
-  description_en: ''
-  document:
-    - title: ''
-      link: ''
-    - title: ''
-      link: ''
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4180
-  approve: 0
-  disprove: 0
-  abstained: 0
-  absent: 0
-  total_voter: 0
-- id: '20'
-  title: ตั้ง กมธ.วิสามัญ พิจารณาศึกษาการขุดคลองไทย
-  is_active: false
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: ตั้งคณะกรรมาธิการวิสามัญ พิจารณาศึกษาการขุดคลองไทย
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2020-01-16'
-  prayuth: ''
-  thanathorn: ''
-  passed: true
-  is_no_vote: true
-  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  description_th: >-
-    การขุดคลองไทยนับเป็นคลองหนึ่งที่มีความสาคัญ ทางยุทธศาสตร์การเดินเรือ
-    ซึ่งจะเป็นโครงการที่สร้างรายได้ให้แก่ประเทศชาติอย่างมหาศาล และได้รับ
-    ผลประโยชน์ทั้งทางตรงและทางอ้อม
-    ก่อให้เกิดประโยชน์ต่อประเทศชาติในด้านความมั่นคง โดยใช้เป็นเส้นทางเดินเรือรบ
-    เรือขนส่งน้ำมัน เรือขนสินค้า
-    และเรือประมงสามารถเข้าออกได้โดยไม่ต้องผ่านน่านน้ำประเทศเพื่อนบ้าน
-    หากมีความขัดแย้งทางด้านอ่าวไทยจะสามารถสร้างอานาจทางทหารและความอิสระในการขนส่งทางทะเลได้อย่างไม่มีข้อจำกัด 
-
-
-    ด้านเศรษฐกิจจะช่วยให้ประเทศที่เดินเรือทั่วโลก สามารถประหยัดพลังงาน
-    ประหยัดการใช้น้ำมันในการส่งสินค้าทางทะเลได้เป็นจำนวนมาก
-    ทำให้ผู้ประกอบการมีรายได้เพิ่มมากขึ้นและสามารถเป็นแหล่งท่องเที่ยวทางทะเลระหว่างประเทศได้อีกด้วย 
-
-
-    เนื่องจากรองประธานสภาผู้แทนราษฎร คนที่หนึ่ง ถามที่ประชุมว่ามีผู้เห็นเป็น
-    อย่างอื่นหรือไม่ เมื่อไม่มีผู้เห็นเป็นอย่างอื่น
-    จึงถือว่าที่ประชุมลงมติเห็นชอบ กับญัตติดังกล่าว ตามข้อบังคับฯ ข้อ 88
-    ให้ตั้งคณะกรรมาธิการวิสามัญพิจารณา ศึกษาขุดคลองไทย และ
-    การพัฒนาพื้นที่ระเบียงเศรษฐกิจภาคใต้ จานวน 49 คน ใช้ระยะเวลาในการพิจารณา 120
-    วัน
-  description_en: ''
-  document:
-    - title: ''
-      link: ''
-    - title: ''
-      link: ''
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
-  approve: 0
-  disprove: 0
-  abstained: 0
-  absent: 0
-  total_voter: 0
-- id: '21'
-  title: ตั้ง กมธ.วิสามัญ พิจารณาราคาหนังสัตว์ โค – กระบือ ตกต่ำ
-  is_active: false
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: ตั้งคณะกรรมาธิการวิสามัญ พิจารณาเรื่องราคาหนังสัตว์ โค – กระบือ ตกต่ำ
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2020-01-16'
-  prayuth: ''
-  thanathorn: ''
-  passed: false
-  is_no_vote: true
-  no_vote_description: >-
-    ที่ประชุมลงมติเห็นชอบให้ส่งงคณะกรรมาธิการแก้ไขปัญหาหนี้สินแห่งชาติพิจารณาศึกษาญัตติดังกล่าว
-  description_th: >-
-    ราคาหนังโคกระบือตกต่ำมาก เนื่องจากโรงงานฟอกหนังที่อยู่ในจังหวัด สมุทรปราการ
-    นำหนังโคกระบือเข้ามาจากต่างประเทศเป็นจำนวนมาก
-    และมีการยกเว้นภาษีการนำเข้าหนังโคกระบือมาใช้ในการอุตสาหกรรม
-    ซึ่งกลายเป็นที่รองรับขยะพิษจากการฟอกหนัง และปล่อยน้ำเสียไหลลงอ่าวไทย
-    อีกทั้งไม่ให้ความสนใจซื้อหนังโคกระบือในประเทศไทยจึงทำให้ราคาหนังโคกระบือตกต่ำลง
-
-
-    ที่ประชุมมีมติให้ส่งคณะกรรมาธิการการเกษตรและสหกรณ์ต่อไป
-    ประธานสภาผู้แทนราษฎรถามที่ประชุมว่ามีผู้เห็นเป็นอย่างอื่นหรือไม่
-    เมื่อไม่มีผู้เห็นเป็นอย่างอื่น จึงถือว่าที่ประชุมลงมติเห็นชอบ ตามข้อบังคับฯ
-    ข้อ 88
-  description_en: ''
-  document:
-    - title: ''
-      link: ''
-    - title: ''
-      link: ''
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
-  approve: 0
-  disprove: 0
-  abstained: 0
-  absent: 0
-  total_voter: 0
-- id: '22'
-  title: ตั้ง กมธ.วิสามัญ พิจารณาปัญหาหนี้และค่าครองชีพสูงจากราคาน้ำมัน แก๊ส ไฟฟ้า
-  is_active: false
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: >-
-    ตั้งคณะกรรมาธิการวิสามัญพิจารณา ศึกษา ปัญหาหนี้สินในครัวเรือน หนี้สินภาครัฐ
-    รวมทั้งค่าครองชีพสูงจากราคาน้ำมัน แก๊ส ไฟฟ้า
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2020-01-16'
-  prayuth: ''
-  thanathorn: ''
-  passed: false
-  is_no_vote: true
-  no_vote_description: >-
-    ที่ประชุมลงมติเห็นชอบให้ส่งงคณะกรรมาธิการการเกษตรและสหกรณ์พิจารณาศึกษาญัตติดังกล่าว
-  description_th: >-
-    ปัญหาหนี้สินในครัวเรือนเพิ่มขึ้นอย่างต่อเนื่องทุกปี นอกจากนี้
-    ประชาชนยังต้องแบกภาระค่าบริการโครงการพื้นฐาน
-    ซึ่งใช้เงินลงทุนจากภาษีของประชาชน ที่ผ่านมารัฐบาลใช้งบประมาณ 17 ล้านล้านบาท
-    แต่กลับ ส่งผลให้หนี้สินภาคครัวเรือนสูงขึ้นเป็น 3.1 แสนล้านบาท
-    ภาครัฐจึงต้องมีมาตรการในการแก้ไขปัญหาที่ส่งผลกระทบต่อการดำเนินชีวิตของประชาชนอย่างเร่งด่วน
-
-
-    ที่ประชุมขอส่งญัตติไปยังคณะกรรมาธิการแก้ไขปัญหาหนี้สินแห่งชาติ
-    จากนั้นประธานได้ใช้ข้อบังคับการประชุมสภาผู้แทนราษฎร ข้อ 88
-    ถือว่าที่ประชุมมีมติเห็นชอบให้ส่งญัตติไปให้คณะกรรมาธิการแก้ไขปัญหาหนี้สินแห่งชาติพิจารณาศึกษา
-  description_en: ''
-  document:
-    - title: ''
-      link: ''
-    - title: ''
-      link: ''
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4182
-  approve: 0
-  disprove: 0
-  abstained: 0
-  absent: 0
-  total_voter: 0
-- id: '23'
-  title: ตั้ง กมธ. วิสามัญศึกษาปัญหาฝุ่น PM 2.5
-  is_active: false
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: >-
-    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาแนวทางการป้องกันและแก้ไขปัญหาฝุ่นละอองขนาดเล็ก
-    (PM 2.5) อย่างเป็นระบบ
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2020-01-22'
-  prayuth: ''
-  thanathorn: ''
-  passed: true
-  is_no_vote: true
-  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  description_th: ''
-  description_en: ''
-  document:
-    - title: ''
-      link: ''
-    - title: ''
-      link: ''
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4183
-  approve: 0
-  disprove: 0
-  abstained: 0
-  absent: 0
-  total_voter: 0
-- id: '24'
-  title: ตั้ง กมธ. วิสามัญ ศึกษาผลกระทบจาก พรบ. e-Payment
-  is_active: false
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: >-
-    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาในเรื่องผลกระทบจากการประกาศใช้พระราชบัญญัติแก้ไขเพิ่มเติมประมวลรัษฎากร
-
-    (ฉบับที่ 48) พ.ศ. 2562 ประเด็นการทำธุรกรรมผ่านช่องทางอิเล็กทรอนิกส์
-    (e-Payment)
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2020-02-05'
-  prayuth: ''
-  thanathorn: ''
-  passed: true
-  is_no_vote: true
-  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  description_th: ''
-  description_en: ''
-  document:
-    - title: ''
-      link: ''
-    - title: ''
-      link: ''
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4188
-  approve: 0
-  disprove: 0
-  abstained: 0
-  absent: 0
-  total_voter: 0
-- id: '25'
-  title: ตั้ง กมธ. วิสามัญ แก้ไขปัญหาที่ดินทำกิน
-  is_active: false
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: >-
-    ตั้งคณะกรรมาธิการวิสามัญพิจารณาศึกษาหามาตรการเพื่อแก้ไขปัญหาที่ดินทำกินของประชาชนอย่างครบถ้วนเป็นระบบ
-  meeting: ประชุมส.ส.
-  type: ตั้ง กมธ. วิสามัญ
-  vote_date: '2020-01-31'
-  prayuth: ''
-  thanathorn: ''
-  passed: true
-  is_no_vote: true
-  no_vote_description: ที่ประชุมลงมติเห็นชอบให้ตั้งคณะกรรมาธิการวิสามัญ โดยไม่มีการลงคะแนน
-  description_th: ''
-  description_en: ''
-  document:
-    - title: บันทึกการออกเสียงลงคะแนนของ ส.ส.
-      link: >-
-        https://drive.google.com/file/d/1nN_FFX-0sTRVoIxrQH4aSh0zQVGLWy1D/view?usp=sharing
-    - title: ''
-      link: ''
-  reference: >-
-    https://drive.google.com/file/d/1nN_FFX-0sTRVoIxrQH4aSh0zQVGLWy1D/view?usp=sharing
-  approve: 0
-  disprove: 0
-  abstained: 0
-  absent: 0
-  total_voter: 0
-- id: '26'
-  title: |-
-    พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ
-    (ฉบับที่ 1)
+  absent: 144
+  total_voter: 496
+  special: 248
+  total_people: 744
+- id: '14'
+  title: >-
+    พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
+    1)
+  field3: votelog.__14
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พ.ศ. ….
     แก้ไขเพิ่มเติมมาตรา 256 และเพิ่มหมวด 15/1 (นายสมพงษ์ อมรวิวัฒน์กับคณะ
@@ -1163,28 +1091,29 @@
 
     โดยญัตติแก้ไขมาตรา 256 พรรคร่วมฝ่ายค้าน ให้ส.ส.ร. 200
     คนมาจากการเลือกตั้งทั้งหมด
-  description_en: ''
   document:
-    - title: บันทึกการออกเสียงลงคะแนนของสมาชิกรัฐสภา
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20201202092442A1.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
-  approve: 574
-  disprove: 21
-  abstained: 121
-  absent: 13
-  total_voter: 729
-- id: '27'
-  title: |-
-    พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ
-    (ฉบับที่ 2)
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 215
+  disprove: 242
+  abstained: 2
+  absent: 38
+  total_voter: 497
+  special: 248
+  total_people: 745
+- id: '15'
+  title: >-
+    พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
+    2)
+  field3: votelog.__15
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พ.ศ. ….
     แก้ไขเพิ่มเติมมาตรา 256 และเพิ่มหมวด 15/1 (นายวิรัช รัตนเศรษฐกับคณะ
@@ -1204,26 +1133,29 @@
 
     โดยญัตติแก้ไขมาตรา 256 พรรคร่วมรัฐบาล ให้ส.ส.ร. 200 คน มาจากการเลือกตั้ง 150
     คน แต่งตั้ง 50 คน
-  description_en: ''
   document:
-    - title: บันทึกการออกเสียงลงคะแนนของสมาชิกรัฐสภา
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20201202092442A1.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
-  approve: 644
-  disprove: 17
-  abstained: 55
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 574
+  disprove: 21
+  abstained: 121
   absent: 13
   total_voter: 729
-- id: '28'
-  title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 3)"
+  special: 249
+  total_people: 978
+- id: '16'
+  title: >-
+    พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
+    3)
+  field3: votelog.__16
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พ.ศ. ….
     ยกเลิกมาตรา 270 และมาตรา 271 (นายสมพงษ์กับคณะ เป็นผู้เสนอ)
@@ -1242,26 +1174,29 @@
 
     โดยญัตติฝ่ายค้าน ยกเลิกมาตรา 270 และ 271 ยกเลิกการใก้อำนาจ ส.ว.ติดตาม
     เสนอแนะ เร่งรัดการปฏิรูปประเทศ จัดทำและดำเนินการตามยุทธศาสตร์ชาติ
-  description_en: ''
   document:
-    - title: บันทึกการออกเสียงลงคะแนนของสมาชิกรัฐสภา
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20201202092442A1.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
-  approve: 213
-  disprove: 34
-  abstained: 468
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 644
+  disprove: 17
+  abstained: 55
   absent: 13
-  total_voter: 728
-- id: '29'
-  title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 4)"
+  total_voter: 729
+  special: 249
+  total_people: 978
+- id: '17'
+  title: >-
+    พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
+    4)
+  field3: votelog.__17
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พ.ศ. ….
     แก้ไขเพิ่มเติมมาตรา 259 และยกเลิกมาตรา 272 (นายสมพงษ์กับคณะ เป็นผู้เสนอ)
@@ -1280,26 +1215,29 @@
 
     โดยญัตติฝ่ายค้านแก้ไขมาตรา 159 และยกเลิกมาตรา 272 ที่ตัดอำนาจไม่ให้ส.ว.
     ร่วมเลือกนายกรัฐมนตรี ช่วง 5 ปีแรก
-  description_en: ''
   document:
-    - title: บันทึกการออกเสียงลงคะแนนของสมาชิกรัฐสภา
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20201202092442A1.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
-  approve: 266
-  disprove: 20
-  abstained: 430
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 213
+  disprove: 34
+  abstained: 468
   absent: 13
-  total_voter: 729
-- id: '30'
-  title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 5)"
+  total_voter: 728
+  special: 250
+  total_people: 978
+- id: '18'
+  title: >-
+    พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
+    5)
+  field3: votelog.__18
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พ.ศ. ….
     ยกเลิกมาตรา 279 (นายสมพงษ์กับคณะ เป็นผู้เสนอ)
@@ -1318,26 +1256,29 @@
 
     โดยญัตติฝ่ายค้านยกเลิกมาตรา 279
     ยกเลิกการรับรองความเห็นชอบด้วยกฎหมายของประกาศ คำสั่ง และการกระทำโดยคสช.
-  description_en: ''
   document:
-    - title: บันทึกการออกเสียงลงคะแนนของสมาชิกรัฐสภา
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20201202092442A1.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
-  approve: 209
-  disprove: 48
-  abstained: 459
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 266
+  disprove: 20
+  abstained: 430
   absent: 13
   total_voter: 729
-- id: '31'
-  title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 6)"
+  special: 249
+  total_people: 978
+- id: '19'
+  title: >-
+    พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
+    6)
+  field3: votelog.__19
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พ.ศ. ….
     แก้ไขเพิ่มเติมมาตรา 91 มาตรา 92 และมาตรา 94 และยกเลิกมาตรา 93 มาตรา 101 (4)
@@ -1357,26 +1298,29 @@
 
     โดยญัตติฝ่ายค้านแก้ไขเพิ่มเติมเกี่ยวกับระบบเลือกตั้ง ใช้บัตรเลือกตั้ง 2 ใบ
     เลือกส.ส. แบบบัญชีรายชื่อและแบบแบ่งเขต
-  description_en: ''
   document:
-    - title: บันทึกการออกเสียงลงคะแนนของสมาชิกรัฐสภา
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20201202092442A1.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
-  approve: 267
-  disprove: 19
-  abstained: 430
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 209
+  disprove: 48
+  abstained: 459
   absent: 13
   total_voter: 729
-- id: '32'
-  title: "พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ\r\n(ฉบับที่ 7)"
+  special: 249
+  total_people: 978
+- id: '20'
+  title: >-
+    พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
+    7)
+  field3: votelog.__20
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พ.ศ. ….
     ยกเลิกมาตรา 65 มาตรา 88 มาตรา 203 มาตรา 217 มาตรา 270 มาตรา 272 มาตรา 275
@@ -1396,26 +1340,27 @@
 
     โดยญัตติแก้ร่างรัฐธรรมนูญฉบับ ilaw รวม 10 ประเด็น เช่น ถอนอำนาจคสช. , ส.ว.
     มาจากการเลือกตั้งทั้งหมด
-  description_en: ''
   document:
-    - title: บันทึกการออกเสียงลงคะแนนของสมาชิกรัฐสภา
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20201202092442A1.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
-  approve: 211
-  disprove: 137
-  abstained: 368
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 267
+  disprove: 19
+  abstained: 430
   absent: 13
   total_voter: 729
-- id: '33'
+  special: 249
+  total_people: 978
+- id: '21'
   title: ขอให้ศาลรัฐธรรมนูญพิจารณาเกี่ยวกับหน้าที่และอำนาจของรัฐสภาตามรัฐธรรมนูญ
+  field3: votelog.__21
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ขอให้ศาลรัฐธรรมนูญพิจารณาวินิจฉัยปัญหาเกี่ยวกับหน้าที่และอำนาจของรัฐสภาตามรัฐธรรมนูญ
     มาตรา ๒๑๐ (๒)
@@ -1433,28 +1378,29 @@
     ได้ขอให้รัฐสภาพิจารณาส่งเรื่องให้ศาลรัฐธรรมนูญพิจารณาเกี่ยวกับการแก้ไขรัฐธรรมนูญตามมาตรา
     256 ของรัฐสภา ในการตั้งสมาชิกสภาร่างรัฐธรรมนูญ (ส.ส.ร.)
     เพื่อยกร่างรัฐธรรมนูญฉบับใหม่ ว่าเป็นการกระทำที่ขัดรัฐธรรมนูญหรือไม่
-  description_en: ''
   document:
-    - title: บันทึกการออกเสียงลงคะแนนของสมาชิกรัฐสภา
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210209154329A1.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#detail
-  approve: 363
-  disprove: 315
-  abstained: 15
-  absent: 40
-  total_voter: 733
-- id: '34'
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 211
+  disprove: 137
+  abstained: 368
+  absent: 13
+  total_voter: 729
+  special: 249
+  total_people: 978
+- id: '22'
   title: >-
-    อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล  พลเอกประยุทธ์ จันทร์โอชา นายกรัฐมนตรี
+    อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล พลเอกประยุทธ์ จันทร์โอชา นายกรัฐมนตรี
     และรัฐมนตรีว่าการกระทรวงกลาโหม
+  field3: votelog.__22
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
   meeting: ประชุมส.ส.
   type: อภิปรายไม่ไว้วางใจ
@@ -1474,26 +1420,27 @@
     ไร้ภาวะผู้นำ
     และยังปล่อยให้มีการทุจริตในการสร้างความมั่นคั่งให้กับพวกพ้องรวมถึงตนเอง
     ในขณะที่ประชาชนประสบกับความยากลำบากเนื่องจากสถานการณ์โควิด-19
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A1.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-  approve: 205
-  disprove: 272
-  abstained: 3
-  absent: 6
-  total_voter: 486
-- id: '35'
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 363
+  disprove: 315
+  abstained: 15
+  absent: 40
+  total_voter: 733
+  special: 249
+  total_people: 982
+- id: '23'
   title: อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล พลเอกประวิตร วงษ์สุวรรณ รองนายกรัฐมนตรี
+  field3: votelog.__23
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
   meeting: ประชุมส.ส.
   type: อภิปรายไม่ไว้วางใจ
@@ -1511,28 +1458,29 @@
     ระบุว่าจงใจปฏิบัติหน้าที่ขัดต่อรัฐธรรมนูญ
     ฝ่าฝืนและไม่ปฏิบัติตามมาตรฐานทางจริยธรรมอย่างร้ายแรง
     อีกทั้งยังใช้งบประมาณของรัฐเพื่อสร้างความมั่งคั่งให้กับตัวเอง
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A3.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-  approve: 203
-  disprove: 274
-  abstained: 4
-  absent: 5
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 205
+  disprove: 272
+  abstained: 3
+  absent: 6
   total_voter: 486
-- id: '36'
+  special: 249
+  total_people: 735
+- id: '24'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายอนุทิน ชาญวีรกูล
     รองนายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงสาธารณสุข
+  field3: votelog.__24
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
   meeting: ประชุมส.ส.
   type: อภิปรายไม่ไว้วางใจ
@@ -1551,28 +1499,29 @@
     ระบุว่าบริหารราชการแผ่นดินล้มเหลว ไร้ประสิทธิภาพ ไร้ความสามารถ
     ผิดพลาดและบกพร้องอย่างร้ายแรง ไม่สามารถควบคุมการแพร่ระบบาดของโควิด - 19 ได้
     ทำให้เกิดการแพร่ระบาดในรอบสองอย่างรวดเร็วและกว้างขวาง
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A5.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-  approve: 200
-  disprove: 275
-  abstained: 6
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 203
+  disprove: 274
+  abstained: 4
   absent: 5
   total_voter: 486
-- id: '37'
+  special: 249
+  total_people: 735
+- id: '25'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายจุรินทร์ ลักษณวิศิษฏ์
     รองนายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงพาณิชย์
+  field3: votelog.__25
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
   meeting: ประชุมส.ส.
   type: อภิปรายไม่ไว้วางใจ
@@ -1591,28 +1540,29 @@
     ระบุว่าบริหารราชการแผ่นดินบกพร่อง ล้มเหลว ไร้ความรับผิดชอบ ลอยตัวหนีปัญหา
     เลือกปฏิบัติ อีกทั้งยังแต่งตั้งบุคคลที่ไม่มีคุณสมบัติ
     ความรู้ความสามารถเข้ามาเพื่อแสวงหาผลประโยชน์ของตัวเองและพวกพ้อง
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A7.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-  approve: 205
-  disprove: 269
-  abstained: 7
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 200
+  disprove: 275
+  abstained: 6
   absent: 5
   total_voter: 486
-- id: '38'
+  special: 249
+  total_people: 735
+- id: '26'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล พลเอก อนุพงษ์ เผ่าจินดา
     รัฐมนตรีว่าการกระทรวงมหาดไทย
+  field3: votelog.__26
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
   meeting: ประชุมส.ส.
   type: อภิปรายไม่ไว้วางใจ
@@ -1631,28 +1581,29 @@
     ใช้อำนาจในตำแหน่งแสวงหาผลประโยชน์แก่ตนเองและพวกพ้อง
     ใช้กลไกทางกฎหมายเพื่อวางแผนในการทุจริตอย่างเป็นระบบ
     อีกทั้งปล่อยให้องค์กรในกำกับมีการทุจริตอย่างกว้างขวาง
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A9.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-  approve: 204
-  disprove: 272
-  abstained: 3
-  absent: 7
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 205
+  disprove: 269
+  abstained: 7
+  absent: 5
   total_voter: 486
-- id: '39'
+  special: 249
+  total_people: 735
+- id: '27'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายณัฏฐพล ทีปสุวรรณ
     รัฐมนตรีว่าการกระทรวงศึกษาธิการ
+  field3: votelog.__27
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
   meeting: ประชุมส.ส.
   type: อภิปรายไม่ไว้วางใจ
@@ -1671,28 +1622,29 @@
     ละเว้นและบกพร่องในการปฏิบัติหน้าที่ ไร้ประสิทธิภาพ
     ขาดวุฒิภาวะและความเป็นผู้นำ
     ใช้อำนาจแทรกแซงการปฏิบัติหน้าที่ของข้าราชการประจำในลักษณะกดขี่ข่มเหงข้าราชการในกระทรวงศึกษาธิการ
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A11.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-  approve: 214
-  disprove: 258
-  abstained: 8
-  absent: 6
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 204
+  disprove: 272
+  abstained: 3
+  absent: 7
   total_voter: 486
-- id: '40'
+  special: 249
+  total_people: 735
+- id: '28'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายสุชาติ ชมกลิ่น
     รัฐมนตรีว่าการกระทรวงแรงงาน
+  field3: votelog.__28
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
   meeting: ประชุมส.ส.
   type: อภิปรายไม่ไว้วางใจ
@@ -1712,28 +1664,29 @@
     ไม่กำกับควบคุมผู้ใช้แรงงานต่างด้าวให้เป็นระบบ
     ตนส่งผลให้เกิดแรงงานผิดกฎหมายจำนวนมาก เห็นได้จากการแพร่ระบาดของโควิด - 19
     จนส่งผลเสียหายต่อประเทศ
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A13.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-  approve: 212
-  disprove: 263
-  abstained: 5
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 214
+  disprove: 258
+  abstained: 8
   absent: 6
   total_voter: 486
-- id: '41'
+  special: 249
+  total_people: 735
+- id: '29'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายศักดิ์สยาม ชิดชอบ
     รัฐมนตรีว่าการกระทรวงคมนาคม
+  field3: votelog.__29
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
   meeting: ประชุมส.ส.
   type: อภิปรายไม่ไว้วางใจ
@@ -1751,28 +1704,29 @@
     ระบุว่าบริหารราชการแผ่นดินโดยเห็นแก่ผลประโยชน์ส่วนตัวมากกว่าส่วนรวม
     เอื้อประโยชน์ให้กลุ่มนายทุนผูกขาด เพื่อให้มีสิทธิ์ดำเนินงานในกิจการของรัฐ
     ทุจริตต่อหน้าที่และยังปล่อยให้มีการทุจริตอีกด้วย
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A15.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-  approve: 201
-  disprove: 268
-  abstained: 12
-  absent: 5
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 212
+  disprove: 263
+  abstained: 5
+  absent: 6
   total_voter: 486
-- id: '42'
+  special: 249
+  total_people: 735
+- id: '30'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล นายนิพนธ์ บุญญามณี
     รัฐมนตรีช่วยว่าการกระทรวงมหาดไทย
+  field3: votelog.__30
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
   meeting: ประชุมส.ส.
   type: อภิปรายไม่ไว้วางใจ
@@ -1789,28 +1743,29 @@
     โดยยื่นญัตตินายนิพนธ์ บุญญามณี รัฐมนตรีช่วยว่าการกระทรวงมหาดไทย
     ระบุว่าขาดความซื่อสัตย์สุจริต ขาดคุณธรรมและจริยธรรม
     ใช้อำนาจในตำแหน่งเอื้อผลประโยชน์ให้กับตนเองและพวกพ้อง
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A17.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-  approve: 205
-  disprove: 272
-  abstained: 4
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 201
+  disprove: 268
+  abstained: 12
   absent: 5
   total_voter: 486
-- id: '43'
+  special: 249
+  total_people: 735
+- id: '31'
   title: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล ร้อยเอก ธรรมนัส พรมเผ่า
     รัฐมนตรีช่วยว่าการเกษตรและสหกรณ์
+  field3: votelog.__31
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: การลงมติญัติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีรายบุคคล
   meeting: ประชุมส.ส.
   type: อภิปรายไม่ไว้วางใจ
@@ -1830,29 +1785,27 @@
     แสวงหาประโยชน์อันมิควรได้โดยชอบด้วยกฎหมาย
     ใช้งบประมาณของรัฐเอื้อประโยชน์ให้ตนเองและพวกพ้อง
     โดยไม่รักษาวินัยการเงินการคลังของรัฐอย่างเคร่งครัด
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210220122732A19.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-  approve: 199
-  disprove: 273
-  abstained: 5
-  absent: 8
-  total_voter: 485
-- id: '44'
-  title: |-
-    พิจารณาแก้ไขเพิ่มเติมร่าง ร.ธ.น. 
-    (แก้ไขเพิ่มเติมมาตรา 256 
-    และเพิ่มหมวด 15/1)
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 205
+  disprove: 272
+  abstained: 4
+  absent: 5
+  total_voter: 486
+  special: 249
+  total_people: 735
+- id: '32'
+  title: พิจารณาแก้ไขเพิ่มเติมร่าง ร.ธ.น. (แก้ไขเพิ่มเติมมาตรา 256 และเพิ่มหมวด 15/1)
+  field3: votelog.__32
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: |-
     พิจารณาเรื่องร่าง 
     ร.ธ.น. แก้ไขเพิ่มเติม (ฉบับที่..) 
@@ -1877,28 +1830,67 @@
     (พิจารณาเป็นรายมาตรา)โดยสาระสำคัญคือการแก้ไขรัฐธรรมนูญฉบับปี 2560
     เพื่อให้สามารถมีสภาร่างรัฐธรรมมนูญ (ส.ส.ร.) ที่มาจากการเลือกตั้ง 200 คน
     จัดทำรัฐธรรมนูญฉบับใหม่
-  description_en: ''
   document:
-    - title: บันทึกการประชุมร่วมกันของรัฐสภา
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210319113904A3.pdff
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3#G
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 199
+  disprove: 273
+  abstained: 5
+  absent: 8
+  total_voter: 485
+  special: 249
+  total_people: 734
+- id: '33'
+  title: โหวตพ.ร.ก.เงินกู้ เพิ่มเติม 2564
+  field3: votelog.__33
+  is_active: true
+  legal_title: >-
+    พระราชกำหนดให้อำนาจกระทรวงการคลังกู้เงินเพื่อแก้ไขปัญหาเศรษฐกิจและสังคม
+    จากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 เพิ่มเติม พ.ศ. 2564
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2021-06-10'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    พระราชกำหนดให้อำนาจกระทรวงการคลังกู้เงินเพื่อแก้ไขปัญหาเศรษฐกิจและสังคม
+    จากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 เพิ่มเติม พ.ศ. 2564
+    เนื่องจากโรคโควิด - 19
+    ได้ระบาดต่อเนื่องและรุนแรงส่งผลกระทบต่อประชาชนและต่อระบบเศรษฐกิจและสังคม
+    จึงต้องเพิ่มออกพระราชกำหนดนี้
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210611090447A2.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
   approve: 207
   disprove: 4
   abstained: 91
   absent: 432
   total_voter: 734
-- id: '45'
+  special: 250
+  total_people: 984
+- id: '34'
   title: >-
     ร่างพรรคพลังประชารัฐ เพิ่มสิทธิในกระบวนการยุติธรรม
     แก้ระบบเลือกตั้งเป็นบัตรสองใบคล้ายแบบรัฐธรรมนูญ 2540 ลดกลไกปราบทุจริต
+  field3: votelog.__34
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พุทธศักราช ....
     (แก้ไขเพิ่มเติมหมวด ๓ มาตรา ๒๙ มาตรา ๔๑ มาตรา ๔๕ มาตรา ๘๓ มาตรา ๘๕ มาตรา ๘๖
@@ -1936,28 +1928,27 @@
 
     7) แก้ไขมาตรา 270 ให้อำนาจกำกับการปฏิรูปประเทศ และดำเนินการตามยุทธศาสตร์ชาติ
     จากเดิมที่เป็นของ ส.ว. ฝ่ายเดียว ให้เป็นอำนาจของ ส.ส. ร่วมด้วย
-  description_en: ''
   document:
-    - title: ผลการตรวจนับคะแนน
+    - title: ใบประมวลผลการลงมติ
       link: >-
         https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210625095058A1.pdf
     - title: ''
       link: ''
   reference: >-
     https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3&m_id=4325#detail
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
   approve: 334
   disprove: 199
   abstained: 173
   absent: 27
   total_voter: 733
-- id: '46'
-  title: >-
-    ร่างพรรคเพื่อไทย ฉบับที่ 1 เพิ่มสิทธิเสรีภาพของประชาชน
-    สิทธิในกระบวนการยุติธรรม สิทธิพิทักษ์รัฐธรรมนูญ เสรีภาพในการแสดงความเห็น
+  special: 295
+  total_people: 1028
+- id: '35'
+  title: ร่างพรรคเพื่อไทย ฉบับที่ 1 เพิ่มสิทธิเสรีภาพของประชาชน
+  field3: votelog.__35
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พุทธศักราช ....
     (แก้ไขเพิ่มเติมมาตรา ๒๕ มาตรา ๒๙ มาตรา ๒๙/๑ มาตรา ๓๔ มาตรา ๔๕ มาตรา ๔๗ มาตรา
@@ -2012,26 +2003,27 @@
     ศาลรัฐธรรมนูญเคยวินิจฉัยไว้ว่า
     การกำหนดโทษแก่ผู้ฝ่าฝืนหรือไม่ปฏิบัติตามคำสั่งเรียกของคณะกรรมาธิการ
     ขัดหรือแยังต่อรัฐธรมนูญ
-  description_en: ''
   document:
-    - title: ผลการตรวจนับคะแนน
+    - title: ใบประมวลผลการลงมติ
       link: >-
         https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210625095058A1.pdf
     - title: ''
       link: ''
   reference: >-
     https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3&m_id=4325#detail
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
   approve: 399
   disprove: 136
   abstained: 171
   absent: 27
   total_voter: 733
-- id: '47'
+  special: 295
+  total_people: 1028
+- id: '36'
   title: ร่างพรรคเพื่อไทย ฉบับที่ 2 แก้ระบบเลือกตั้งเป็นบัตรสองใบแบบรัฐธรรมนูญ 2540
+  field3: votelog.__36
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พุทธศักราช ....
     (แก้ไขเพิ่มเติมมาตรา ๘๓ มาตรา ๘๕ มาตรา ๘๖ มาตรา ๙๐ มาตรา ๙๑ มาตรา ๙๒
@@ -2049,28 +2041,29 @@
 
     เสนอให้นำระบบเลือกตั้ง "บัตรสองใบ" แบบรัฐธรรมนูญฉบับปี 2540 กลับมาใช้ มี
     ส.ส. ระบบแบ่งเขต 400 คน และระบบบัญชีรายชื่อ 100 คน
-  description_en: ''
   document:
-    - title: ผลการตรวจนับคะแนน
+    - title: ใบประมวลผลการลงมติ
       link: >-
         https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210625095058A1.pdf
     - title: ''
       link: ''
   reference: >-
     https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3&m_id=4325#detail
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
   approve: 376
   disprove: 89
   abstained: 241
   absent: 27
   total_voter: 733
-- id: '48'
+  special: 295
+  total_people: 1028
+- id: '37'
   title: >-
     ร่างพรรคเพื่อไทย ฉบับที่ 3
     แก้เรื่องที่มานายกรัฐมนตรีและยกเลิกอำนาจส.ว.ในการเลือกนายกรัฐมนตรี
+  field3: votelog.__37
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พุทธศักราช ....
     (แก้ไขเพิ่มเติมมาตรา ๑๕๙ และยกเลิกมาตรา ๒๗๒) ซึ่ง นายสมพงษ์ อมรวิวัฒน์
@@ -2091,28 +2084,29 @@
 
     2) ยกเลิกมาตรา 272 เรื่องช่องทางที่มานายกรัฐมนตรีคนนอก และอำนาจของ ส.ว.
     ในการเลือกนายกฯ รัฐมนตรี
-  description_en: ''
   document:
-    - title: ผลการตรวจนับคะแนน
+    - title: ใบประมวลผลการลงมติ
       link: >-
         https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210625095058A1.pdf
     - title: ''
       link: ''
   reference: >-
     https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3&m_id=4325#detail
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
   approve: 455
   disprove: 101
   abstained: 150
   absent: 27
   total_voter: 733
-- id: '49'
+  special: 295
+  total_people: 1028
+- id: '38'
   title: >-
     ร่างพรรคเพื่อไทย ฉบับที่ 4 ยกเลิกแผนยุทธศาสตร์ชาติ 20 ปีและยกเลิกอำนาจ
     ส.ว.บางประการ
+  field3: votelog.__38
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พุทธศักราช ....
     (แก้ไขเพิ่มเติมหมวด ๖ ยกเลิกมาตรา ๖๕ แก้ไขเพิ่มเติมมาตรา ๑๔๒ มาตรา ๑๖๒
@@ -2136,26 +2130,27 @@
     คสช.
 
     3) ยกเลิกมาตรา 279 ไม่นิรโทษกรรมให้ คสช.
-  description_en: ''
   document:
-    - title: ผลการตรวจนับคะแนน
+    - title: ใบประมวลผลการลงมติ
       link: >-
         https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210625095058A1.pdf
     - title: ''
       link: ''
   reference: >-
     https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3&m_id=4325#detail
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
   approve: 327
   disprove: 150
   abstained: 229
   absent: 27
   total_voter: 733
-- id: '50'
+  special: 295
+  total_people: 1028
+- id: '39'
   title: ร่างพรรคภูมิใจไทย ฉบับที่ 1 แก้ไขแผนยุทธศาสตร์ชาติ
+  field3: votelog.__39
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พุทธศักราช ....
     (แก้ไขเพิ่มเติมมาตรา ๖๕) ซึ่ง นายอนุทิน ชาญวีรกูล กับคณะ เป็นผู้เสนอ
@@ -2172,26 +2167,27 @@
 
     เสนอให้ยกเลิกมาตรา 65 ที่กำหนดให้มียุทธศาสตร์ของ คสช. มาตราเดียว เพิ่มคำว่า
     "ปรับเปลี่ยนแก้ไขเพิ่มเติมได้เพื่อให้มีความสอดคล้องกับสถานการณ์"
-  description_en: ''
   document:
-    - title: ผลการตรวจนับคะแนน
+    - title: ใบประมวลผลการลงมติ
       link: >-
         https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210625095058A1.pdf
     - title: ''
       link: ''
   reference: >-
     https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3&m_id=4325#detail
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
   approve: 454
   disprove: 86
   abstained: 166
   absent: 27
   total_voter: 733
-- id: '51'
+  special: 295
+  total_people: 1028
+- id: '40'
   title: ร่างพรรคภูมิใจไทย ฉบับที่ 2 เสนอหลักประกันรายได้ถ้วนหน้า (UBI)
+  field3: votelog.__40
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พุทธศักราช ....
     (แก้ไขเพิ่มเติมหมวด ๕ และมาตรา ๕๕/๑) ซึ่ง นายอนุทิน ชาญวีรกูล กับคณะ
@@ -2209,28 +2205,29 @@
 
     เพิ่มเติมมาตรา 55/1 เขียนว่า รัฐต้องจัดให้ประชาชนได้รับรายได้พื้นฐานถ้วนหน้า
     อันจำเป็นต่อการดำรงชีวิตอย่างทั่วถึง
-  description_en: ''
   document:
-    - title: ผลการตรวจนับคะแนน
+    - title: ใบประมวลผลการลงมติ
       link: >-
         https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210625095058A1.pdf
     - title: ''
       link: ''
   reference: >-
     https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3&m_id=4325#detail
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
   approve: 476
   disprove: 78
   abstained: 152
   absent: 27
   total_voter: 733
-- id: '52'
+  special: 295
+  total_people: 1028
+- id: '41'
   title: >-
     ร่างพรรคประชาธิปัตย์ ฉบับที่ 1 เพิ่มสิทธิในกระบวนการยุติธรรม สิทธิชุมชน
     สิทธิผู้บริโภค
+  field3: votelog.__41
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พุทธศักราช ....
     (แก้ไขเพิ่มเติมมาตรา ๒๙ มาตรา ๔๓ มาตรา ๔๖ และมาตรา ๗๒) ซึ่ง นายจุรินทร์
@@ -2262,26 +2259,27 @@
     4)เพิ่มเติมมาตรา 72 แนวนโยบายแห่งรัฐเกี่ยวกับที่ดิน น้ำ พลังงาน
     โดยให้เกษตรกรมีสิทธิในที่ดินอย่างทั่วถึงโดยการ “ปฏิรูปที่ดิน”
     รวมทั้งจัดหาแหล่งน้ำเพื่อให้เกษตรกรมีน้ำใช้อย่างพอเพียงและเหมาะสม
-  description_en: ''
   document:
-    - title: ผลการตรวจนับคะแนน
+    - title: ใบประมวลผลการลงมติ
       link: >-
         https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210625095058A1.pdf
     - title: ''
       link: ''
   reference: >-
     https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3&m_id=4325#detail
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
   approve: 469
   disprove: 75
   abstained: 162
   absent: 27
   total_voter: 733
-- id: '53'
+  special: 295
+  total_people: 1028
+- id: '42'
   title: ร่างพรรคประชาธิปัตย์ ฉบับที่ 2 ตัดอำนาจ ส.ว. ในการแก้รัฐธรรมนูญ
+  field3: votelog.__42
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พุทธศักราช ....
     (แก้ไขเพิ่มเติมมาตรา ๒๕๖) ซึ่ง นายจุรินทร์ ลักษณวิศิษฏ์ กับคณะ เป็นผู้เสนอ
@@ -2300,26 +2298,27 @@
     ไม่ต้องใช้เสียงพิเศษของ ส.ว. ชุดพิเศษ
     ซึ่งเป็นข้อเสนอคล้ายกับร่างฉบับสุดท้ายที่ไม่ผ่านวาระสามในเดือน 17 มีนาคม
     2564
-  description_en: ''
   document:
-    - title: ผลการตรวจนับคะแนน
+    - title: ใบประมวลผลการลงมติ
       link: >-
         https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210625095058A1.pdf
     - title: ''
       link: ''
   reference: >-
     https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3&m_id=4325#detail
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
   approve: 415
   disprove: 102
   abstained: 189
   absent: 27
   total_voter: 733
-- id: '54'
+  special: 295
+  total_people: 1028
+- id: '43'
   title: ร่างพรรคประชาธิปัตย์ ฉบับที่ 3 กระบวนการตรวจสอบ ป.ป.ช.
+  field3: votelog.__43
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พุทธศักราช ....
     (แก้ไขเพิ่มเติมมาตรา ๒๓๖ และมาตรา ๒๓๗) ซึ่ง นายจุรินทร์ ลักษณวิศิษฏ์ กับคณะ
@@ -2342,28 +2341,29 @@
     หรือกระทำผิดต่อตำแหน่งหน้าที่ราชการ จากเดิมที่ต้องส่งให้อัยการสูงสุด
     ส่งฟ้องต่อศาลฎีกาแผนกคดีอาญาผู้ดำรงตำแหน่งทางการเมือง
     ให้เปลี่ยนเป็นเสนอเรื่องต่อ “ศาลฎีกา” เพื่อวินิจฉัย
-  description_en: ''
   document:
-    - title: ผลการตรวจนับคะแนน
+    - title: ใบประมวลผลการลงมติ
       link: >-
         https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210625095058A1.pdf
     - title: ''
       link: ''
   reference: >-
     https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3&m_id=4325#detail
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
   approve: 431
   disprove: 97
   abstained: 178
   absent: 27
   total_voter: 733
-- id: '55'
+  special: 295
+  total_people: 1028
+- id: '44'
   title: >-
     ร่างพรรคประชาธิปัตย์ ฉบับที่ 4
     แก้เรื่องที่มานายกรัฐมนตรีและยกเลิกอำนาจส.ว.ในการเลือกนายกรัฐมนตรี
+  field3: votelog.__44
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พุทธศักราช ....
     (แก้ไขเพิ่มเติมมาตรา ๑๕๙ และยกเลิกมาตรา ๒๗๒) ซึ่ง นายจุรินทร์ ลักษณวิศิษฏ์
@@ -2385,26 +2385,27 @@
 
     2) ยกเลิกมาตรา 272 เรื่องช่องทางที่มานายกรัฐมนตรีคนนอก และอำนาจของ ส.ว.
     ในการเลือกนายกฯ รัฐมนตรี
-  description_en: ''
   document:
-    - title: ผลการตรวจนับคะแนน
+    - title: ใบประมวลผลการลงมติ
       link: >-
         https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210625095058A1.pdf
     - title: ''
       link: ''
   reference: >-
     https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3&m_id=4325#detail
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
   approve: 461
   disprove: 96
   abstained: 149
   absent: 27
   total_voter: 733
-- id: '56'
+  special: 295
+  total_people: 1028
+- id: '45'
   title: ร่างพรรคประชาธิปัตย์ ฉบับที่ 5 ประเด็นกระจายอำนาจสู่ท้องถิ่น
+  field3: votelog.__45
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พุทธศักราช ....
     (แก้ไขเพิ่มเติมมาตรา ๗๖/๑ มาตรา ๗๖/๒ มาตรา ๒๔๙ มาตรา ๒๕๐ มาตรา ๒๕๑ มาตรา ๒๕๒
@@ -2448,28 +2449,29 @@
     ให้มีองค์กรพิทักษ์ระบบคุณธรรมของข้าราชการส่วนท้องถิ่น
     ขณะเดียวกันก็ไม่ได้เขียนรับรองสิทธิของประชาชนที่จะเข้าชื่อกันเพื่อเสนอข้อบัญญัติหรือเพื่อถอดถอนสมาชิกสภาท้องถิ่น
     และผู้บริหารท้องถิ่น อีกต่อไป
-  description_en: ''
   document:
-    - title: ผลการตรวจนับคะแนน
+    - title: ใบประมวลผลการลงมติ
       link: >-
         https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210625095058A1.pdf
     - title: ''
       link: ''
   reference: >-
     https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3&m_id=4325#detail
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
   approve: 457
   disprove: 82
   abstained: 167
   absent: 27
   total_voter: 733
-- id: '57'
+  special: 295
+  total_people: 1028
+- id: '46'
   title: >-
     ร่างพรรคประชาธิปัตย์ ฉบับที่ 6 แก้ระบบเลือกตั้งเป็นบัตรสองใบแบบรัฐธรรมนูญ
     2540
+  field3: votelog.__46
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พุทธศักราช ....
     (แก้ไขเพิ่มเติมมาตรา ๘๓ และมาตรา ๙๑) ซึ่ง นายจุรินทร์ ลักษณวิศิษฏ์ กับคณะ
@@ -2487,63 +2489,27 @@
 
     เสนอให้นำระบบเลือกตั้ง "บัตรสองใบ" แบบรัฐธรรมนูญฉบับปี 2540 กลับมาใช้ มี
     ส.ส. ระบบแบ่งเขต 400 คน และระบบบัญชีรายชื่อ 100 คน
-  description_en: ''
   document:
-    - title: ผลการตรวจนับคะแนน
+    - title: ใบประมวลผลการลงมติ
       link: >-
         https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210625095058A1.pdf
     - title: ''
       link: ''
   reference: >-
     https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=3&m_id=4325#detail
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
   approve: 552
   disprove: 24
   abstained: 130
   absent: 27
   total_voter: 733
-- id: '58'
-  title: โหวตพ.ร.ก.เงินกู้ เพิ่มเติม 2564
-  is_active: true
-  en:
-    title: ''
-    legal_title: ''
-  legal_title: >-
-    พระราชกำหนดให้อำนาจกระทรวงการคลังกู้เงินเพื่อแก้ไขปัญหาเศรษฐกิจและสังคม
-    จากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 เพิ่มเติม พ.ศ. 2564
-  meeting: ประชุมส.ส.
-  type: ''
-  vote_date: '2021-06-10'
-  prayuth: ''
-  thanathorn: ''
-  passed: true
-  is_no_vote: false
-  no_vote_description: ''
-  description_th: >-
-    พระราชกำหนดให้อำนาจกระทรวงการคลังกู้เงินเพื่อแก้ไขปัญหาเศรษฐกิจและสังคม
-    จากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 เพิ่มเติม พ.ศ. 2564
-    เนื่องจากโรคโควิด - 19
-    ได้ระบาดต่อเนื่องและรุนแรงส่งผลกระทบต่อประชาชนและต่อระบบเศรษฐกิจและสังคม
-    จึงต้องเพิ่มออกพระราชกำหนดนี้
-  description_en: ''
-  document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
-      link: >-
-        http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210611090447A2.pdf
-    - title: ''
-      link: ''
-  reference: >-
-    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-  approve: 261
-  disprove: 196
-  abstained: 5
-  absent: 11
-  total_voter: 473
-- id: '59'
+  special: 295
+  total_people: 1028
+- id: '47'
   title: อภิปรายไม่ไว้วางใจพลเอกประยุทธ์ จันทรโอชา 2564
+  field3: votelog.__47
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคลพลเอก ประยุทธ์
     จันทร์โอชา นายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงกลาโหม
@@ -2563,26 +2529,27 @@
     ในเรื่องการแก้ปัญหาโควิด - 19 ล้มเหลว ทั้งการควบคุมโรคและวัคซีน
     ใช้กำลังปราบปรามม็อบเกินกว่าเหตุ อีกทั้งยังปล่อยให้รัฐมนตรีทุจริตต่อหน้าที่
     นอกจากนี้การซื้ออาวุธยุทโธปกรณ์ต่อเนื่องและไม่จำเป็น
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210904111929A2.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-  approve: 0
-  disprove: 0
-  abstained: 0
-  absent: 0
-  total_voter: 0
-- id: '60'
-  title: อภิปรายไม่ไว้วางใจอนุทิน  ชาญวีรกูล 2564
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 270
+  disprove: 196
+  abstained: 1
+  absent: 2
+  total_voter: 469
+  special: 14
+  total_people: 483
+- id: '48'
+  title: อภิปรายไม่ไว้วางใจอนุทิน ชาญวีรกูล 2564
+  field3: votelog.__48
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคลนายอนุทิน
     ชาญวีรกูล รองนายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงสาธารณสุข
@@ -2601,26 +2568,27 @@
 
     ในเรื่องการแก้ปัญหาโควิด - 19 ล้มเหลวทั้งควบคุมโรคและวัคซีน
     ประกอบกับแสวงหาประโยชน์ในการจัดหาวัคซีนและอุปกรณ์ตรวจโรค
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210904112822A5.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-  approve: 205
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 208
   disprove: 264
   abstained: 3
-  absent: 7
-  total_voter: 479
-- id: '61'
-  title: อภิปรายไม่ไว้วางใจสุชาติ  ชมกลิ่น  2564
+  absent: 0
+  total_voter: 475
+  special: 7
+  total_people: 482
+- id: '49'
+  title: อภิปรายไม่ไว้วางใจสุชาติ ชมกลิ่น 2564
+  field3: votelog.__49
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคลนายสุชาติ
     ชมกลิ่น รัฐมนตรีว่าการกระทรวงแรงงาน
@@ -2639,26 +2607,27 @@
 
     ในเรื่องปล่อยให้มีแรงงานต่างชาติเข้าเมืองผิดกฎหมาย มีคลัสเตอร์โควิด - 19
     ในโรงงาน และอัตราว่างงานสูงมาก
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210904111929A8.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
   approve: 195
   disprove: 260
   abstained: 11
   absent: 6
   total_voter: 472
-- id: '62'
+  special: 556
+  total_people: 1028
+- id: '50'
   title: อภิปรายไม่ไว้วางใจศักดิ์สยาม ชิดชอบ 2564
+  field3: votelog.__50
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคลนายศักดิ์สยาม
     ชิดชอบ รัฐมนตรีว่าการกระทรวงคมนาคม
@@ -2678,26 +2647,27 @@
     ในเรื่องปล่อยให้มีการทุจริตในโครงการใหญ่
     เข้าไปในแหล่งอบายมุขจนเป็นคลัสเตอร์โควิด - 19
     และบุกรุกเอาที่ดินของรัฐมาเป็นของตน
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210904111929A11.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
   approve: 198
   disprove: 255
   abstained: 10
   absent: 8
   total_voter: 471
-- id: '63'
-  title: อภิปรายไม่ไว้วางใจเฉลิมชัย  ศรีอ่อน 2564
+  special: 557
+  total_people: 1028
+- id: '51'
+  title: อภิปรายไม่ไว้วางใจเฉลิมชัย ศรีอ่อน 2564
+  field3: votelog.__51
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคลนายเฉลิมชัย
     ศรีอ่อน รัฐมนตรีว่าการกระทรวงเกษตรและสหกรณ์
@@ -2716,26 +2686,27 @@
 
     ในเรื่องปล่อยให้มีโรคระบาดในวัว , สุกร ส่งผลเสียต่อเกษตรกร
     และเรียกรับผลประโยชน์จากโครงการที่ดูแล
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210904111929A14.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
-  approve: 196
-  disprove: 258
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 195
+  disprove: 269
   abstained: 10
-  absent: 8
-  total_voter: 472
-- id: '64'
-  title: อภิปรายไม่ไว้วางใจชัยวุฒิ  ธนาคมมานุสรณ์  2564
+  absent: 1
+  total_voter: 475
+  special: 7
+  total_people: 482
+- id: '52'
+  title: อภิปรายไม่ไว้วางใจชัยวุฒิ ธนาคมมานุสรณ์ 2564
+  field3: votelog.__52
   is_active: true
-  en:
-    title: ''
-    legal_title: ''
   legal_title: >-
     ขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคลนายชัยวุฒิ
     ธนาคมานุสรณ์ รัฐมนตรีว่าการกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม
@@ -2753,17 +2724,2319 @@
 
 
     ในเรื่องใช้สื่อของรัฐบิดเบือนความจริง และสร้างความแตกแยกให้เกิดขึ้นในสังคม
-  description_en: ''
   document:
-    - title: บันทึกผลการออกเสียงลงคะแนนของ ส.ส.
+    - title: ใบประมวลผลการลงมติ
       link: >-
         http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20210904111929A16.pdf
     - title: ''
       link: ''
   reference: >-
     http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  recheck: 'FALSE'
+  ocr-able: 'TRUE'
+  approve: 199
+  disprove: 270
+  abstained: 8
+  absent: 1
+  total_voter: 478
+  special: 4
+  total_people: 482
+- id: '53'
+  title: ร่างพ.ร.บ.พืชกระท่อม
+  field3: votelog.__53
+  is_active: true
+  legal_title: >-
+    ร่างพระราชบัญญัติพืชกระท่อม พ.ศ. ...
+    ซึ่งคณะกรรมาธิการวิสามัญพิจารณาเสร็จแล้ว วาระที่ 3
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2021-09-08'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    หลัง พ.ร.บ.ยาเสพติดให้โทษ (ฉบับที่ 8) ปี 2564 มีผลบังคับใช้ เมื่อวันที่ 24
+    สิงหาคม 2564 ทำให้พืชกระท่อมถูกถอดออกจากยาเสพติดให้โทษในประเภท 5 
+    โดยให้การเพาะปลูก การบริโภค การจำหน่าย สามารถกระทำได้ไม่ผิดกฎหมาย
+    แต่เพื่อการกำกับดูแลสร้างประโยชน์ทางเศรษฐกิจ
+    และเพื่อไม่ให้มีการบริโภคมากเกินไปอาจจึงจำเป็นต้องมีกฎหมายเฉพาะอย่างร่างพระราชบัญญัติพืชกระท่อม
+    (ร่างพ.ร.บ.พืชกระท่อม) ขึ้นมา
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20211214142846A3.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
   approve: 200
-  disprove: 259
-  abstained: 7
-  absent: 5
+  disprove: 258
+  abstained: 9
+  absent: 4
   total_voter: 471
+  special: 557
+  total_people: 1028
+- id: '54'
+  title: ร่างพ.ร.บ.ลิขสิทธิ์
+  field3: votelog.__54
+  is_active: true
+  legal_title: >-
+    ร่างพระราชบัญญัติลิขสิทธิ์ (ฉบับที่ ..) พ.ศ. ...
+    ซึ่งคณะกรรมาธิการวิสามัญพิจารณาเสร็จแล้ว วาระที่ 3
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2021-11-03'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    เพราะประเทศไทยจะเข้าเป็นภาคีสนธิสัญญาว่าด้วยลิขสิทธิ์ขององค์การทรัพย์สินทางปัญญาโลก
+    เพื่อเพิ่มประสิทธิภาพในการคุ้มครองงานที่มีลิขสิทธิ์ให้ทันต่อการเปลี่ยนแปลงทางเทคโนโลยีและปรับปรุงบทบัญญัติเกี่ยวกับการคุ้มครองมาตรการทางเทคโนโลยี
+    เพื่อให้เป็นตามสนธิสัญญา
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20211103140646A12.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 281
+  disprove: 0
+  abstained: 1
+  absent: 2
+  total_voter: 284
+  special: 196
+  total_people: 480
+- id: '55'
+  title: ร่าง พ.ร.บ. การศึกษาแห่งชาติ
+  field3: votelog.__55
+  is_active: true
+  legal_title: ร่างพระราชบัญญัติการศึกษาแห่งชาติ
+  meeting: ประชุมร่วมสองสภา
+  type: ''
+  vote_date: '2021-11-09'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    เป็นการปรับปรุงกฎหมายว่าด้วยการศึกษาแห่งชาติ
+    เพื่อเป็นกฎหมายแม่บทในการบริหารและการจัดการศึกษาให้สอดคล้องกับบทบัญญัติของรัฐธรรมนูญและการปฏิรูปประเทศ
+    อย่างไรก็ตาม ร่าง พ.ร.บ. ฉบับนี้เกิดขึ้นจากในสมัย คสช.
+    จึงมีข้อวิจารณ์ว่าร่าง พ.ร.บ. ฉบับดังกล่าว เป็นไปเพื่อรัฐชาตินิยม
+    เป็นไปเพื่อการปกครองให้เชื่อ ให้เชื่อง มากกว่าที่จะให้ริเริ่มสร้างสรรค์
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20211109161620A2.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4348
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 274
+  disprove: 0
+  abstained: 5
+  absent: 2
+  total_voter: 281
+  special: 748
+  total_people: 1029
+- id: '56'
+  title: ร่าง พ.ร.บ. ส่งเสริมการเรียนรู้
+  field3: votelog.__56
+  is_active: true
+  legal_title: ร่างพระราชบัญญัติส่งเสริมการเรียนรู้
+  meeting: ประชุมร่วมสองสภา
+  type: ''
+  vote_date: '2021-11-09'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    เป็นการปรับปรุงกฎหมายว่าด้วยการศึกษาแห่งชาติ
+    เพื่อเป็นกฎหมายแม่บทในการบริหารและการจัดการศึกษาให้สอดคล้องกับบทบัญญัติของรัฐธรรมนูญและการปฏิรูปประเทศ
+    อย่างไรก็ตาม ร่าง พ.ร.บ. ฉบับนี้เกิดขึ้นจากในสมัย คสช.
+    จึงมีข้อวิจารณ์ว่าร่าง พ.ร.บ. ฉบับดังกล่าว เป็นไปเพื่อรัฐชาตินิยม
+    เป็นไปเพื่อการปกครองให้เชื่อ ให้เชื่อง มากกว่าที่จะให้ริเริ่มสร้างสรรค์
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20211109161316A5.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4348
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 277
+  disprove: 9
+  abstained: 3
+  absent: 1
+  total_voter: 290
+  special: 185
+  total_people: 475
+- id: '57'
+  title: ร่างพ.ร.บ. คุ้มครองพยานในคดีอาญา
+  field3: votelog.__57
+  is_active: true
+  legal_title: >-
+    ร่างพระราชบัญญัติคุ้มครองพยานในคดีอาญา (ฉบับที่ ..) พ.ศ. ...
+    ซึ่งคณะกรรมการธิการวิสามัญพิจารณาเสร็จแล้ว
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2021-11-10'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    เพราะการคุ้มครองพยานในคดีอาญา เป็นกระบวนการที่สนับสนุนงานยุติธรรม
+    โดนพยานบุคคลมีความสำคัญต่อการหาคนผิดมาลงโทษ
+    เพื่อให้ศาลได้ใช้ดุลยพินิจในการพิจารณาคดีได้อย่างถูกต้องและเป็นธรรม
+    โดยรัฐธรรมนูญแห่งราชอาณาจักรไทยได้บัญญัติรับรองสิทธิบุคคลซึ่งเป็นพยานในคดีอาญาให้มีสิทธิได้รับความคุ้มครองความปลอดภัย
+    การปฏิบัติที่เหมาะสม และค่าตอบแทนที่จำเป็นตามสมควรจากรัฐ
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20211110122437A6.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?id=1#detail
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 421
+  disprove: 29
+  abstained: 2
+  absent: 1
+  total_voter: 453
+  special: 321
+  total_people: 774
+- id: '58'
+  title: ร่างแก้ไขรัฐธรรมนูญ (ฉบับประชาชน - Resolution)
+  field3: votelog.__58
+  is_active: true
+  legal_title: >-
+    ร่างรัฐธรรมนูญแห่งราชอาณาจักรไทย แก้ไขเพิ่มเติม (ฉบับที่ ..) พุทธศักราช ....
+    (ยกเลิกมาตรา ๖๕ แก้ไขเพิ่มเติมหมวด ๗ มาตรา ๑๕๙ วรรคแรก เพิ่มมาตรา ๑๙๓/๑
+    มาตรา ๑๙๓/๒ แก้ไขเพิ่มเติมหมวด ๑๑ หมวด ๑๒ มาตรา ๒๕๖ หมวด ๑๖ ยกเลิกมาตรา ๒๖๙
+    มาตรา ๒๗๐ มาตรา ๒๗๑ มาตรา ๒๗๒ และมาตรา ๒๗๙)
+  meeting: ประชุมร่วมสองสภา
+  type: ''
+  vote_date: '2021-11-17'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    เป็นการรวมตัวกันของ 4 องค์กร  โครงการอินเทอร์เน็ตเพื่อกฎหมายประชาชน
+    (ไอลอว์), กลุ่มรัฐธรรมนูญก้าวหน้า, คณะก้าวหน้าและพรรคก้าวไกล
+    เพื่อเสนอร่างแก้ไขรัฐธรรมนูญรายมาตราและล่ารายชื่อประชาชนให้ได้อย่างน้อย
+    50,000 รายชื่อ เพื่อเสนอร่าง โดยมุ่งเน้นล้ม ส.ว. โละ ศาลรัฐธรรมนูญ
+    องค์กรอิสระ พร้อมปฏิรูปที่มา และเลิกยุทธศาสตร์ชาติ  สุดท้ายล้างมรดกรัฐประหาร
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20211117132303A2.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4352
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 526
+  disprove: 30
+  abstained: 2
+  absent: 6
+  total_voter: 564
+  special: 210
+  total_people: 774
+- id: '59'
+  title: ร่าง พ.ร.บ. ฟอกเงิน
+  field3: votelog.__59
+  is_active: true
+  legal_title: ร่างพระราชบัญญัติป้องกันและปราบปรามการฟอกเงิน
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2021-11-17'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    โดยที่มาตรการซึ่งใช้เพื่อประโยชน์ในการดำเนินการกับทรัพย์สินที่เกี่ยวกับการกระทำความผิดมูลฐานให้ตกเป็นของแผ่นดินตามกฎหมายว่าด้วยการป้องกันและปราบปรามการฟอกเงินนั้น
+    เป็นมาตรการที่เกี่ยวกับการตรวจสอบธุรกรรมและการตรวจสอบทรัพย์สินของผู้เกี่ยวข้องหรือเคยเกี่ยวข้อง  
+    กับผู้กระทำความผิดมูลฐานที่มีผลกระทบต่อสิทธิและเสรีภาพของบุคคลกว้างขวางกว่ามาตรการทางอาญาโดยทั่วไป
+    การที่สำนักงานป้องกันและปราบปรามการฟอกเงินยังมีฐานะเป็นส่วนราชการขึ้นตรงและอยู่
+    ในบังคับบัญชาของรัฐมนตรีว่าการกระทรวงยุติธรรม
+    จึงทำให้ประชาชนบางส่วนยังขาดความเชื่อมั่นใน
+    ความเป็นอิสระและเป็นกลางในการบังคับใช้กฎหมาย
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20211117151614A2.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4353
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 212
+  disprove: 403
+  abstained: 5
+  absent: 0
+  total_voter: 620
+  special: 154
+  total_people: 774
+- id: '60'
+  title: ร่าง พ.ร.บ. ปลดอาวุธ คสช. (ฉบับประชาชน)
+  field3: votelog.__60
+  is_active: true
+  legal_title: >-
+    ร่างพระราชบัญญัติยกเลิกประกาศและคำสั่งคณะรักษาความสงบแห่งชาติและคำสั่งหัวหน้าคณะรักษาความสงบแห่งชาติ
+    ที่ขัดต่อหลักสิทธิมนุษยชนและประชาธิปไตย
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2021-12-15'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    หลังจากการรัฐประหาร 22 พฤษภาคม พ.ศ. 2557 คสช. โดยพลเอกประยุทธ์
+    ได้อ้างใช้อำนาจพิเศษจากมาตรา 44 แม้จะหมดสถานะคำสั่ง
+    ประกาศต่างๆยังได้รับรองโดยมาตรา 279 ของรัฐธรรมนูญปี พ.ศ. 2560
+    ให้มีผลบังคับใช้ต่อไป จนกว่าจะมีการยกเลิกหรือแก้ไข
+    และหลายฉบับมีเนื้อหาจำกัดสิทธิประชาชน กระทบสิทธิในกระบวนการยุติธรรม
+    จำกัดเสรีภาพสื่อมวลชน ละเมิดสิทธิชุมชนและสิ่งแวดล้อม
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20211215151011A2.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4363
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 283
+  disprove: 0
+  abstained: 1
+  absent: 1
+  total_voter: 285
+  special: 190
+  total_people: 475
+- id: '61'
+  title: ร่าง พ.ร.บ. ปลดอาวุธ คสช.
+  field3: votelog.__61
+  is_active: true
+  legal_title: >-
+    ร่างพระราชบัญญัติยกเลิกประกาศคณะรักษาความสงบแห่งชาติและคำสั่งหัวหน้าคณะรักษาความสงบแห่งชาติ
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2021-12-15'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    คล้ายกับร่างของประชาชน โดยส.ส. พรรคอนาคตใหม่เสนอ
+    โดยมองว่าหลังจากการรัฐประหาร 22 พฤษภาคม พ.ศ. 2557 คสช. โดยพลเอกประยุทธ์
+    ได้อ้างใช้อำนาจพิเศษจากมาตรา 44 แม้จะหมดสถานะคำสั่ง
+    ประกาศต่างๆยังได้รับรองโดยมาตรา 279 ของรัฐธรรมนูญปี พ.ศ. 2560
+    ให้มีผลบังคับใช้ต่อไป จนกว่าจะมีการยกเลิกหรือแก้ไข
+    และหลายฉบับมีเนื้อหาจำกัดสิทธิประชาชน
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20211215151011A5.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4363
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 162
+  disprove: 234
+  abstained: 3
+  absent: 1
+  total_voter: 400
+  special: 77
+  total_people: 477
+- id: '62'
+  title: ร่าง พ.ร.บ. กยศ. ((วาระ 1))
+  field3: votelog.__62
+  is_active: true
+  legal_title: ร่างพระราชบัญญัติกองทุนเงินให้กู้ยืมเพื่อการศึกษา
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-01-26'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    มองว่าการกู้ยืมเงินเพื่อการศึกษาเป็นมาตรการหนึ่งที่จะช่วยลดความเหลื่อมล้ำในการศึกษาอันเป็นรากฐานสำคัญในการลดความเหลื่อมล้ำทางเศรษฐกิจและสังคมในภาพรวม
+    แต่บทบัญญัติแห่งกฎหมายว่าด้วยกองทุนเงินให้กู้ยืมเพื่อการศึกษาที่ใช้บังคับอยู่ในปัจจุบันยังไม่อำนวยในปัญหานี้
+    จึงจำเป็นต้องตราพระราชบัญญัตินี้
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220126173848A46.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4374
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 157
+  disprove: 229
+  abstained: 4
+  absent: 2
+  total_voter: 392
+  special: 85
+  total_people: 477
+- id: '63'
+  title: ร่าง พ.ร.บ. จราจรทางบก
+  field3: votelog.__63
+  is_active: true
+  legal_title: |-
+    ร่างพระราชบัญญัติจราจรทางบก (ฉบับที่ ..) พ.ศ. ....
+    ซึ่งคณะกรรมาธิการร่วมกันพิจารณาเสร็จแล้ว
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-02-02'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    ปัจจุบันการเกิดอุบัติเหตุทางถนนของประเทศมีสาเหตุมาจากการที่ผู้ขับขี่ฝ่ายฝืนและไม่ปฏิบัติตามกฎความปลอดภัยในการจราจรทางบก
+    และพระราชบัญญัติจราจรทางบก พ.ศ. 2522 บังคับใช้มานาน
+    จึงเห็นสมควรปรับปรุงกฎหมายเพื่อให้สอดคล้องกับสภาพข้อเท็จจริงในการใช้รถใช้ถนน
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220202123433A2.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4376
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 347
+  disprove: 0
+  abstained: 1
+  absent: 2
+  total_voter: 350
+  special: 124
+  total_people: 474
+- id: '64'
+  title: ร่าง พ.ร.บ. ป้องกันการกระทำความผิดซ้ำฯ ((วาระ 1))
+  field3: votelog.__64
+  is_active: true
+  legal_title: |-
+    ร่างพระราชบัญญัติมาตรการป้องกันการกระทำความผิดซ้ำ
+    ในความผิดเกี่ยวกับเพศหรือที่ใช้ความรุนแรง
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-02-02'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    เนื่องจากผู้กระทำความผิดอุกฉกรรจ์บางประเภทที่เกี่ยวข้องกับการใช้ความรุนแรง
+    เช่น ฆาตกรรม เมื่อได้รับโทษจำคุกและพ้นโทษแล้ว
+    แม้จะมีการติดตามจากพนักงานตำรวจหรือฝ่ายปกครอง
+    แต่ก็ไม่มีสภาพบังคับเป็นกฎหมายและไม่มีประสิทธิผลในการป้องกันการกระทำผิดซ้ำ
+    จึงเห็นสมควรมีกฎหมายเฉพาะขึ้นมา
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220202123433A7.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4376
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 289
+  disprove: 0
+  abstained: 1
+  absent: 2
+  total_voter: 292
+  special: 183
+  total_people: 475
+- id: '65'
+  title: ร่าง พ.ร.บ. คุ้มครองแรงงาน ((วาระ 1))
+  field3: votelog.__65
+  is_active: true
+  legal_title: ร่างพระราชบัญญัติคุ้มครองแรงงาน
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-02-02'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    พระราชบัญญัติคุ้มครองแรงงาน พ.ศ. 2541 ใช้บังคับมายาวนาน
+    และมีบัญญัติบางประการที่อาจไม่เหมาะสมต่อสภาพการณ์ที่เปลี่ยนแปลงไป
+    สมควรเพ่ิมบทบัญญัติเกี่ยวกับการกำหนดอัตราค่าจ้างขั้นต่ำของลูกจ้างบางกลุ่มหรือบางประเภท
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220202144456A19.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4376
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 278
+  disprove: 1
+  abstained: 1
+  absent: 7
+  total_voter: 287
+  special: 188
+  total_people: 475
+- id: '66'
+  title: รายงานศึกษาขุดคลองไทย
+  field3: votelog.__66
+  is_active: true
+  legal_title: >-
+    พิจารณารายงานผลการพิจารณาศึกษาการขุดคลองไทยและการพัฒนาพื้นที่ระเบียงเศรษฐกิจภาคใต้
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-02-04'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    โครงการขุดคลองขนาดใหญ่ ตัดแบ่งแผ่นดินภาคใต้ เชื่อมทะเลฝั่งอันดามันกับอ่าวไทย
+    เพื่อเป็นช่องทางสัญจรทางทะเลระหว่างมหาสมุทรอินเดียกับมหาสมุทรแปซิฟิก
+    เบื้องต้นคาดว่าจะผ่าน 5 จังหวัด คือกระบี่ ตรัง นครศรีธรรมราช พัทลุง และสงขลา
+    ยาว 135 กม. โดยถูกโหวตคว่ำ เนื่องจากเป็นการลงทุนถึง 2 ล้านล้านบาท
+    ควรศึกษาอย่างจริงจัง รายงาน มีการชี้นำมากเกินไปและไม่เป็นกลาง
+    ยังไม่มีรายละเอียดมากเพียงพอ
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220204114657A2.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4378
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 263
+  disprove: 31
+  abstained: 1
+  absent: 2
+  total_voter: 297
+  special: 178
+  total_people: 475
+- id: '67'
+  title: ร่าง พ.ร.บ.สุราก้าวหน้า (โหวตให้ ครม. รับไปพิจารณาก่อนรับหลักการ)
+  field3: votelog.__67
+  is_active: true
+  legal_title: ร่างพระราชบัญญัติภาษีสรรพสามิต
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-02-09'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    ร่างที่เสนอโดยพรรคก้าวไกล เพื่อปลดล็อคให้ผู้ประกอบการรายย่อย
+    หรือประชาชนมีโอกาสในการนำผลผลิตท้องที่มาผลิตเป็นสุราหรือเครื่องดื่มแอลกอฮอล์อื่นๆ
+    เพื่อดื่มเองหรือจำหน่ายได้ เนื่องจากในปัจจุบันมีกฎหมายจำกัดในเรื่องการผลิต
+    ไม่ว่าจะเป็นเรื่องจำนวนแรงงาน การใช้เครื่องมือและเครื่องจักร
+    ซึ่งต้องใช้ทุนมหาศาล
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220209135647A8.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4379
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 121
+  disprove: 144
+  abstained: 53
+  absent: 0
+  total_voter: 318
+  special: 157
+  total_people: 475
+- id: '68'
+  title: ร่าง พ.ร.บ. ฉุกเฉิน (โหวตให้ ครม. รับไปพิจารณาก่อนรับหลักการ)
+  field3: votelog.__68
+  is_active: true
+  legal_title: ร่างพระราชบัญญัติการบริหารราชการในสถานการณ์ฉุกเฉิน
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-02-09'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    ร่างที่เสนอโดยพรรคก้าวไกล
+    เพื่อแก้ไขกฎหมายว่าด้วยยการบริหารราชการในสถานการณ์ฉุกเฉิน
+    ให้อำนาจนายกรัฐมนตรีประกาศสถานการณ์ฉุกเฉินและออกข้อกำหนดต่างๆ
+    ที่มีผลต่อการจำกัดเสรีภาพของประชาชนเกินสมควรแก่เหตุ 
+    และไม่ถูกตรวจสอบถ่วงดุลโดยสภาผู้แทนราษฎรและองค์กรตุลาการ
+    โดยร่างที่เสนอมีสาระสำคัญเพื่อให้การออกข้อกำหนด หรือกติกาที่บังคับใช้
+    ต้องถูกตรวจสอบและมีการจำกัดระยะเวลาในการควบคุมตัวบุคคลที่เหมาะสม
+    เพื่อพิทักษ์สิทธิของประชาชน
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220209165600A11.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4379
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 207
+  disprove: 196
+  abstained: 2
+  absent: 3
+  total_voter: 408
+  special: 113
+  total_people: 521
+- id: '69'
+  title: แก้ พ.ร.บ.ธนาคารแห่งประเทศไทย (โหวตให้ ครม. รับไปพิจารณาก่อนรับหลักการ)
+  field3: votelog.__69
+  is_active: true
+  legal_title: ร่างพระราชบัญญัติธนาคารแห่งประเทศไทย
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-02-09'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    ร่างที่เสนอโดยพรรคประชาธิปัตย์ เพื่อให้ ธนาคารแห่งประเทศไทย (ธปท.)
+    ต้องจัดทำรายงานเปิดเผยสภาพเศรษฐกิจ การเงิน การคลัง
+    วิเคราะห์สภาวะเศรษฐกิจของประเทส และเศรษฐกิจโลก
+    รวมทั้งจัดทำแนวทางการดำเนินงานในอำนาจหน้าที่ของ ธปท. เสนอต่อรัฐสภา
+    เพื่อให้สภาซึ่งเป็นตัวแทนภาคประชาชนได้มีโอกาสรับรู้รับทราบ และเสนอแนะ
+    ซึ่งเป็นการรับฟังความคิดเห็นจากประชาชน
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220209165301A2.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4379
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 227
+  disprove: 158
+  abstained: 10
+  absent: 0
+  total_voter: 395
+  special: 79
+  total_people: 474
+- id: '70'
+  title: >-
+    ร่าง พ.ร.บ. แพ่งและพาณิชย์ (สมรสเท่าเทียม) (โหวตให้ ครม.
+    รับไปพิจารณาก่อนรับหลักการ)
+  field3: votelog.__70
+  is_active: true
+  legal_title: ร่างพระราชบัญญัติแก้ไขเพิ่มเติมประมวลกฎหมายแพ่งและพาณิชย์
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-02-09'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    ร่างที่เสนอโดยพรรคก้าวไกลเพื่อแก้ไขประมวลกฎหมายแพ่งและพาณิชย์ (ป.พ.พ.)
+    โดยมุ่งเน้นแก้กฎหมายเฉพาะเรื่องเกี่ยวกับการสมรส
+    เพื่อรับรองสิทธิในการก่อตั้งครอบครัวแก่บุคคลทุกเพศ
+    โดยไม่นำเหตุแห่งเพศสภาพหรือเพศวิถีมาเป็นข้อจำกัดในการจดทะเบียนสมรสเหมือนกฎหมายปัจจุบันที่ยังจำกัดว่า
+    การสมรสจะทำได้เฉพาะกรณีทั้งสองฝ่ายเป็น ‘ชายและหญิง’
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220209190321A17.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    http://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4379
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 239
+  disprove: 140
+  abstained: 1
+  absent: 0
+  total_voter: 380
+  special: 94
+  total_people: 474
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างพระราชบัญญัติกำหนดระยะเวลาดำเนินงานในกระบวนการยุติธรรม พ.ศ. ....
+    (วาระที่ 1)
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4381
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: ร่างพระราชบัญญัติว่าด้วยการปรับเป็นพินัย พ.ศ. …. (วาระที่ 1)
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4381
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างพระราชบัญญัติประกอบรัฐธรรมนูญว่าด้วยการเลือกตั้งสมาชิกสภาผู้แทนราษฎร
+    (ฉบับที่ ..) พ.ศ. .... - วาระที่ 1 คณะรัฐมนตรี เป็นผู้เสนอ
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4386
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างพระราชบัญญัติประกอบรัฐธรรมนูญว่าด้วยการเลือกตั้งสมาชิกสภาผู้แทนราษฎร
+    (ฉบับที่ ..) พ.ศ. .... - วาระที่ 1 นายชลน่าน ศรีแก้ว กับคณะ เป็นผู้เสนอ
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4386
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างพระราชบัญญัติประกอบรัฐธรรมนูญว่าด้วยการเลือกตั้งสมาชิกสภาผู้แทนราษฎร
+    (ฉบับที่ ..) พ.ศ. ....- วาระที่ 1 นายวิเชียร ชวลิต กับคณะ เป็นผู้เสนอ
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4386
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างพระราชบัญญัติประกอบรัฐธรรมนูญว่าด้วยการเลือกตั้งสมาชิกสภาผู้แทนราษฎร
+    (ฉบับที่ ..) พ.ศ. ....- วาระที่ 1 นายพิธา ลิ้มเจริญรัตน์ กับคณะ เป็นผู้เสนอ
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4386
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างพระราชบัญญัติป้องกันและปราบปรามการทรมานและการกระทำให้บุคคลสูญหาย พ.ศ.
+    .... ซึ่งคณะกรรมาธิการวิสามัญพิจารณาเสร็จแล้ว
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4386
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างพระราชบัญญัติมาตรการป้องกันการกระทำความผิดซ้ำในความผิดเกี่ยวกับเพศหรือที่ใช้ความรุนแรง
+    พ.ศ. .... ซึ่งคณะกรรมาธิการวิสามัญพิจารณาเสร็จแล้ว
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4386
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: ร่างพระราชบัญญัติประกอบรัฐธรรมนูญว่าด้วยพรรคการเมือง (ฉบับที่ ..) พ.ศ. ....
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4385
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างพระราชบัญญัติแก้ไขเพิ่มเติมประมวลกฎหมายแพ่งและพาณิชย์ (ฉบับที่ ..) พ.ศ.
+    .... ซึ่งคณะกรรมาธิการวิสามัญพิจารณาเสร็จ
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4386
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างพระราชบัญญัติกำหนดความผิดเกี่ยวกับห้างหุ้นส่วนจดทะเบียน
+    ห้างหุ้นส่วนจำกัด บริษัทจำกัด สมาคม และมูลนิธิ (ฉบับที่ ..) พ.ศ. ....
+    ซึ่งคณะกรรมาธิการวิสามัญพิจารณาร่างพระราชบัญญัติแก้ไขเพิ่มเติมประมวลกฎหมายแพ่งและพาณิชย์
+    (ฉบับที่ ..) พ.ศ. .... พิจารณาเสร็จแล้ว
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4386
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างพระราชบัญญัติอ้อยและน้ำตาลทราย (ฉบับที่ ..) พ.ศ. ....
+    ซึ่งคณะกรรมาธิการวิสามัญพิจารณาเสร็จแล้ว
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4386
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: '71'
+  title: ร่าง พ.ร.บ. งบประมาณปี 66 (วาระ 1)
+  field3: votelog.__71
+  is_active: true
+  legal_title: ร่างพ.ร.บ.งบประมาณรายจ่ายประจำปีงบประมาณ พ.ศ. 2566 (วาระ 1)
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-06-02'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    การประชุมสภาผู้แทนราษฎรเพื่อพิจารณาร่าง พ.ร.บ.งบประมาณรายจ่ายประจำปีงบประมาณ
+    พ.ศ. 2566 วงเงิน 3.185 ล้านล้านบาท ในวาระแรกว่า จะรับหลักการหรือไม่
+    ได้มีการอภิปรายแสดงความคิดเห็นกันอย่างกว้างขวาง ก่อนลงมติรับหลักการร่าง
+    โดยตั้งคณะกรรมาธิการวิสามัญเพื่อพิจารณา
+    ร่างพระราชบัญญัติงบประมาณรายจ่ายประจำปีงบประมาณ พ.ศ. 2566 เพื่อพิจารณาต่อไป
+    ดูรายละเอียดงบปี 66 ได้ใน https://wevis.info/thbudget66#
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220606084604A2.pdf
+    - title: ร่างพระราชบัญญัติ
+      link: 'https://www.bb.go.th/topic3.php?catID=1377&gid=860&mid=544'
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4389
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 219
+  disprove: 118
+  abstained: 12
+  absent: 1
+  total_voter: 350
+  special: 124
+  total_people: 474
+- id: '72'
+  title: ร่าง พ.ร.บ. กัญชา กัญชง (วาระ 1)
+  field3: votelog.__72
+  is_active: true
+  legal_title: ร่างพระราชบัญญัติกัญชา กัญชง พ.ศ. .... (วาระ 1)
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-06-08'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    ร่างที่เสนอโดย นายอนุทิน ชาญวีรกูล
+    ระบุเจตนาเพื่อปลดล็อกข้อจำกัดการส่งเสริมให้มีการใช้ประโยชน์จากกัญชา กัญชง
+    ในด้านการแพทย์และอุตสาหกรรมอื่น ๆ ตลอดจนเปิดโอกาสให้มีการ ผลิต ขาย นําเข้า
+    ส่งออก หรือมีไว้ในครอบครองเพื่อส่งเสริมเกษตรกรรม อุตสาหกรรม
+    และเศรษฐกิจของประเทศ โดยมีสมาชิกอภิปรายทั้งหมด 46 คน
+    ก่อนที่ประชุมมีมติรับหลักการ และตั้งคณะกรรมาธิการวิสามัญเพื่อพิจารณา
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220609112843A3.pdf
+    - title: ร่างพระราชบัญญัติ
+      link: >-
+        https://pis.parliament.go.th/PARFileDownloadProxy/download?s=jWVgzuNvgPSSiYlsowWLrSJprGCAzChg8fazNeI78fjjppSNrgYFwSsmCgK_-7G-RudRkOVHguW1_FkyXfkwdJO2hE8xMRgZrAh6rQUiFvICOU7CpTcYCmEE7eXKjehv6kKxmRguBZbUIxqSZArbf2Uxi-DxQLVfQoc=&ref=1540052&n=1
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4392
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 278
+  disprove: 194
+  abstained: 2
+  absent: 0
+  total_voter: 474
+  special: 3
+  total_people: 477
+- id: '73'
+  title: ร่าง พ.ร.บ. สุราก้าวหน้า (วาระ 1)
+  field3: votelog.__73
+  is_active: true
+  legal_title: ร่างพระราชบัญญัติภาษีสรรพสามิต (ฉบับที่ ..) พ.ศ. ....  (วาระ 1)
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-06-08'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    ร่าง พ.ร.บ. ที่เสนอโดยพรรคก้าวไกล หลังจากถูกส่งไปให้ ครม.
+    พิจารณาศึกษาอยู่หลายวัน (https://theyworkforus.wevis.info/votelog/79)
+    ก็ได้กลับเข้าสู่สภา โดยมีสมาชิกประสงค์ขออภิปราย จำนวน 16 คน
+    ก่อนที่ประชุมมีมติรับหลักการแห่งร่างพระราชบัญญัติ
+    และตั้งคณะกรรมาธิการวิสามัญเพื่อพิจารณา
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220609112843A7.pdf
+    - title: ร่างพระราชบัญญัติ
+      link: >-
+        https://pis.parliament.go.th/PARFileDownloadProxy/download?s=dye3Z9dSjgYE3dsWP-iQ8RZSeQmwGcKblFnk8BvZujAS5DyA3d-v4cQ-bcSfbwH1X3QwE42Ov45pjm6PzVrii3f1ag-Z8vzDOC2GQBpeF_Z70HTiNtIEBzoxuwFN8hYPsvp8FcyEzXwSO8dA8-RfjG8r5_I68PScnYE=&ref=1540055&n=1
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4392
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 372
+  disprove: 7
+  abstained: 23
+  absent: 0
+  total_voter: 402
+  special: 75
+  total_people: 477
+- id: '74'
+  title: ร่าง พ.ร.บ. แพ่งและพาณิชย์ (สมรสเท่าเทียม) ฉบับก้าวไกล (วาระ 1)
+  field3: votelog.__74
+  is_active: true
+  legal_title: >-
+    ร่างพระราชบัญญัติแก้ไขเพิ่มเติมประมวลกฎหมายแพ่งและพาณิชย์ (ฉบับที่ ..) พ.ศ.
+    .... (วาระ 1)
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-06-15'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    ร่าง พ.ร.บ. ที่เสนอโดยพรรคก้าวไกล หลังจากถูกส่งไปให้ ครม.
+    พิจารณาศึกษาอยู่หลายวัน (https://theyworkforus.wevis.info/votelog/82)
+    ก็ได้กลับเข้าสู่สภา โดยมีการอภิปรายรวมกับร่าง พ.ร.บ. ที่มีประเด็นร่วมกันอีก
+    3 ฉบับ ก่อนที่ประชุมมีมติรับหลักการและตั้งคณะกรรมาธิการวิสามัญเพื่อพิจารณา
+    อ่านเปรียบเทียบได้ที่ https://www.ilaw.or.th/node/6169
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220616125513A9.pdf
+    - title: ร่างพระราชบัญญัติ
+      link: >-
+        https://pis.parliament.go.th/PARFileDownloadProxy/download?s=E4YCYxXo6hFxe41XKTq5K0QLHAppg8pge1mi5zpG0q36HeWHejJERPsuNtvBW5-Yxif1BspGAsPyK6dMoLFLGTryzGGHX3NAQ9St42T9h6ZIncbhqVfYYfEHsbeQZSoNVHoU44Vh0334-HzusLiGDfEsJybIEZPoZG8=&ref=1556279&n=1
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4393
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 178
+  disprove: 138
+  abstained: 15
+  absent: 0
+  total_voter: 331
+  special: 146
+  total_people: 477
+- id: '75'
+  title: ร่าง พ.ร.บ. คู่ชีวิต ฉบับ ครม. (วาระ 1)
+  field3: votelog.__75
+  is_active: true
+  legal_title: ร่างพระราชบัญญัติคู่ชีวิต พ.ศ. .... (วาระ 1)
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-06-15'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    ร่าง พ.ร.บ. ที่เสนอโดย ครม. ในเรื่องบทบัญญัติที่เกี่ยวกับครอบครัว
+    มีการอภิปรายรวมกับร่าง พ.ร.บ. ที่มีประเด็นร่วมกันอีก 3 ฉบับ
+    ก่อนที่ประชุมมีมติรับหลักการและตั้งคณะกรรมาธิการวิสามัญเพื่อพิจารณา
+    อ่านเปรียบเทียบได้ที่ https://www.ilaw.or.th/node/6169
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220616143257A2.pdf
+    - title: ร่างพระราชบัญญัติ
+      link: >-
+        https://pis.parliament.go.th/PARFileDownloadProxy/download?s=WPEwjPNUWk2sSsKfw83ETQKpadvo0bAM8a3T6L68p0I_61ad6sjSIcLfIXdzL5vPAoNO8JoayEAdLNaTHMkdtGQj_DyDdB5U3s8gygvsi9diH-l6o_7zWgpcVixCTAgfGy2CH02ZXdTzA9ojrGR9xrsUUr4sUISEV6k=&ref=1556339&n=1
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4393
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 211
+  disprove: 180
+  abstained: 12
+  absent: 4
+  total_voter: 407
+  special: 70
+  total_people: 477
+- id: '76'
+  title: ร่าง พ.ร.บ. แพ่งและพาณิชย์ ​(คู่ชีวิต) ฉบับ ครม. (วาระ 1)
+  field3: votelog.__76
+  is_active: true
+  legal_title: >-
+    ร่างพระราชบัญญัติแก้ไขเพิ่มเติมประมวลกฎหมายแพ่งและพาณิชย์ (ฉบับที่ ..) พ.ศ.
+    .... (วาระ 1)
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-06-15'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    ร่าง พ.ร.บ. ที่เสนอโดย ครม. ในเรื่องบทบัญญัติที่เกี่ยวกับครอบครัว
+    มีการอภิปรายรวมกับร่าง พ.ร.บ. ที่มีประเด็นร่วมกันอีก 3 ฉบับ
+    ก่อนที่ประชุมมีมติรับหลักการและตั้งคณะกรรมาธิการวิสามัญเพื่อพิจารณา
+    อ่านเปรียบเทียบได้ที่ https://www.ilaw.or.th/node/6169
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220616143257A5.pdf
+    - title: ร่างพระราชบัญญัติ
+      link: >-
+        https://pis.parliament.go.th/PARFileDownloadProxy/download?s=1dJ5Lzwj_7W4Xyq1FKlEeel8cO62o75vjblSA-G4l3EkffKDmFxCjMesAXWa0PbGDXg2CR0aiQzThyS6raO26JuB6cSe9-S-JbKcWjOVVYU0Ribu9l6DWcyWYwqd2f0IUdWXNoGv8-jJj4aFZalwZ4i8TPt164jxYG4=&ref=1556340&n=1
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4393
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 229
+  disprove: 167
+  abstained: 6
+  absent: 2
+  total_voter: 404
+  special: 73
+  total_people: 477
+- id: '77'
+  title: ร่างพ.ร.บ. คู่ชีวิต ฉบับ ประชาธิปัตย์ (วาระ 1)
+  field3: votelog.__77
+  is_active: true
+  legal_title: ร่างพระราชบัญญัติคู่ชีวิต พ.ศ. .... (วาระ 1)
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-06-15'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    ร่าง พ.ร.บ. ที่เสนอโดยพรรคประชาธิปัตย์ ในเรื่องบทบัญญัติที่เกี่ยวกับครอบครัว
+    มีการอภิปรายรวมกับร่าง พ.ร.บ. ที่มีประเด็นร่วมกันอีก 3 ฉบับ
+    ก่อนที่ประชุมมีมติรับหลักการและตั้งคณะกรรมาธิการวิสามัญเพื่อพิจารณา
+    อ่านเปรียบเทียบได้ที่ https://www.ilaw.or.th/node/6169
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220616143257A8.pdf
+    - title: ร่างพระราชบัญญัติ
+      link: >-
+        https://pis.parliament.go.th/PARFileDownloadProxy/download?s=lVpyQwk51gQpfbC_ay_o6T83jJXa6g8jBgFYDbn0rx9yn759wE21LZ9L72XCQvqr8_o7WFAQIEgUuJO7s8MUHXKeI2_sl9E_CodLx_zHFwBF_kg3gxZvRykgKX-Y_KrqCyw_QS-eVhLAMetBgrN2G04SBE70x3x1pu0=&ref=1556276&n=1
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4393
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 230
+  disprove: 169
+  abstained: 7
+  absent: 1
+  total_voter: 407
+  special: 70
+  total_people: 477
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างพระราชบัญญัติสถาปนิก (ฉบับที่ ..) พ.ศ. ....
+    ซึ่งคณะกรรมาธิการวิสามัญพิจารณาเสร็จแล้ว
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4399
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างพระราชบัญญัติพืชกระท่อม พ.ศ. ....
+    ซึ่งคณะกรรมาธิการร่วมกันพิจารณาเสร็จแล้ว
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4399
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างข้อบังคับการประชุมสภาผู้แทนราษฎร (ฉบับที่ ..) พ.ศ. ....
+    ซึ่งคณะกรรมาธิการวิสามัญพิจารณาเสร็จแล้ว
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4399
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างพระราชบัญญัติคุ้มครองแรงงาน (ฉบับที่ ..) พ.ศ. ....
+    ซึ่งคณะกรรมาธิการวิสามัญพิจารณาเสร็จแล้ว
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4399
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    - ร่างพระราชบัญญัติการเลือกตั้งสมาชิกสภาท้องถิ่นหรือผู้บริหารท้องถิ่น
+    (ฉบับที่ ..) พ.ศ. ....
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ''
+      link: ''
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4399
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: '78'
+  title: ร่างพระราชบัญญัติตำรวจแห่งชาติ
+  field3: votelog.__78
+  is_active: true
+  legal_title: >-
+    ร่างพระราชบัญญัติตำรวจแห่งชาติ พ.ศ. ....
+    ซึ่งคณะกรรมาธิการวิสามัญพิจารณาเสร็จแล้ว
+  meeting: ประชุมร่วมสองสภา
+  type: ''
+  vote_date: '2022-07-05'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220705145613A10.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4402
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 251
+  disprove: 124
+  abstained: 30
+  absent: 2
+  total_voter: 407
+  special: 70
+  total_people: 477
+- id: '79'
+  title: >-
+    แก้ไข ร่าง พ.ร.บ.ประกอบรัฐธรรมนูญว่าด้วยการเลือกตั้ง ส.ส.
+    เรื่องการคำนวณบัญชีรายชื่อ
+  field3: votelog.__79
+  is_active: true
+  legal_title: >-
+    แก้ไขร่างพระราชบัญญัติประกอบรัฐธรรมนูญว่าด้วยการเลือกตั้งสมาชิกสภาผู้แทนราษฎร
+    (ฉบับที่ .. ) พ.ศ. ….ในมาตรา 23 เรื่องการคำนวณสัดส่วนสมาชิกสภาผู้แทนราษฎร
+    ส.ส. แบบบัญชีรายชื่อ
+  meeting: ประชุมร่วมสองสภา
+  type: ''
+  vote_date: '2022-07-06'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    การแก้ไข ร่าง พ.ร.บ.ประกอบรัฐธรรมนูญว่าด้วยการเลือกตั้ง ส.ส.
+    เรื่องการคำนวณบัญชีรายชื่อ
+    ที่มีข้อถกเถียงกันว่าจะต้องใช้หลักในการคำนวณเพื่อให้ได้ ส.ส.มาด้วยร่างของ
+    นพ.ระวี มาศฉมาดล ส.ส.พรรคพลังธรรมใหม่ ที่เสนอให้หาร 500 หรือร่างของปกรณ์วุฒิ
+    อุดมพัฒน์สกุล ส.ส.พรรคก้าวไกล ที่เสนอให้หาร 100 ด้วยวิธีการคำนวณตามที่เสนอ
+    ท้ายที่สุดที่ประชุมร่วมกันของรัฐสภามีมติเห็นด้วยกรรมาธิการเสียงข้างน้อยคือนพ.ระวี
+    มาศฉมาดล คือการหารด้วย 500
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220707131107A57.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4403
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 333
+  disprove: 38
+  abstained: 0
+  absent: 1
+  total_voter: 372
+  special: 108
+  total_people: 480
+- id: '80'
+  title: >-
+    ร่างพ.ร.บ.แก้ไขเพิ่มเติมพ.ร.ก.ให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบวิสาหกิจ
+    (วาระ 1)
+  field3: votelog.__80
+  is_active: true
+  legal_title: >-
+    ร่างพระราชบัญญัติแก้ไขเพิ่มเติมพระราชกำหนดการให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบวิสาหกิจที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา
+    2019 พ.ศ. 2563 (ฉบับที่ ..) พ.ศ. ....
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-07'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    ร่าง พ.ร.บ. ที่เสนอโดยส.ส.พรรคฝ่ายค้าน
+    เนื่องจากผู้ประกอบวิสาหกิจที่ได้รับผลกระทบจากการระบาดของโรคโควิด-19 ยื่นคำขอ
+    และการให้กู้ยืมเงินตาม พ.ร.ก. ฉบับดังกล่าวไม่เหมาะสมกับสถานการณ์ปัจจุบัน
+    จึงเห็นว่าธนาคารแห่งประเทศไทย (ธปท.)​
+    ควรกำหนดหลักเกณฑ์และเงื่อนไขขยายระยะเวลาให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบวิสาหกิจที่ได้รับผลกระทบให้เหมาะสมยิ่งขึ้น
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220707133040A2.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4404
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 208
+  disprove: 153
+  abstained: 22
+  absent: 4
+  total_voter: 387
+  special: 90
+  total_people: 477
+- id: '81'
+  title: >-
+    ร่างพ.ร.บ.แก้ไขเพิ่มเติมพ.ร.ก.รักษาเสถียรภาพของระบบการเงินและความมั่นคงทางเศรษฐกิจของประเทศ
+    (วาระ 1)
+  field3: votelog.__81
+  is_active: true
+  legal_title: >-
+    ร่างพระราชบัญญัติแก้ไขเพิ่มเติมพระราชกำหนดการรักษาเสถียรภาพของระบบการเงินและความมั่นคงทางเศรษฐกิจของประเทศ
+    พ.ศ. 2563 (ฉบับที่ ..) พ.ศ. ....
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-07'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220707133040A5.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4404
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 84
+  disprove: 181
+  abstained: 1
+  absent: 3
+  total_voter: 269
+  special: 207
+  total_people: 476
+- id: '82'
+  title: >-
+    ร่างพ.ร.บ.แก้ไขเพิ่มเติมพ.ร.ก.ให้อำนาจกระทรวงการคลังกู้เงินช่วยโควิด-19
+    (วาระ 1)
+  field3: votelog.__82
+  is_active: true
+  legal_title: >-
+    ร่างพระราชบัญญัติแก้ไขเพิ่มเติมพระราชกำหนดให้อำนาจกระทรวงการคลังกู้เงินเพื่อแก้ไขปัญหา
+    เยียวยา และฟื้นฟูเศรษฐกิจและสังคม
+    ที่ได้รับผลกระทบจากการระบาดของโรคติดเชื้อไวรัสโคโรนา 2019 พ.ศ. 2563 (ฉบับที่
+    ..) พ.ศ. ....
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-07'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220707133040A8.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4404
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 84
+  disprove: 180
+  abstained: 2
+  absent: 2
+  total_voter: 268
+  special: 207
+  total_people: 475
+- id: '83'
+  title: ร่างพ.ร.บ.ขนส่งทางราง (วาระ 1)
+  field3: votelog.__83
+  is_active: true
+  legal_title: ร่างพระราชบัญญัติการขนส่งทางราง พ.ศ. ....
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-07'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220707174604A11.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4404
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 83
+  disprove: 181
+  abstained: 1
+  absent: 4
+  total_voter: 269
+  special: 207
+  total_people: 476
+- id: '84'
+  title: ร่างพ.ร.บ.ธรรมนูญศาลทหาร (วาระ 1)
+  field3: votelog.__84
+  is_active: true
+  legal_title: ร่างพระราชบัญญัติธรรมนูญศาลทหาร (ฉบับที่ ..) พ.ศ. ....
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-07'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220707174604A14.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4404
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 251
+  disprove: 1
+  abstained: 0
+  absent: 1
+  total_voter: 253
+  special: 223
+  total_people: 476
+- id: '85'
+  title: >-
+    ลงมติไม่ไว้วางใจ พลเอก ประยุทธ์ จันทร์โอชา
+    นายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงกลาโหม
+  field3: votelog.__85
+  is_active: false
+  legal_title: >-
+    การลงมติญัตติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล
+    พลเอก ประยุทธ์ จันทร์โอชา นายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงกลาโหม
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-23'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    พิจารณาญัตติขอเปิดอภิปรายไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล ซึ่งนายชลน่าน
+    ศรีแก้ว กับส.ส. พรรคฝ่ายค้าน 186 คน เป็นผู้เสนอ โดย พล.อ.ประยุทธ์ จันทร์โอชา
+    นายกรัฐมนตรี และรมว.กลาโหม ถูกกล่าวหาเรื่องแรก คือ
+    ความผิดพลาดในการบริหารราชการแผ่นดินโดยเฉพาะเรื่องเศรษฐกิจทั้งระดับมหภาคและจุลภาค
+    ที่ตกต่ำมาตลอดระยะเวลา 8 ปี
+    โดยก่อนเกิดสถานการณ์โควิดจีดีพีประเทศที่ตกอยู่แล้วเมื่อเกิดสถานการณ์โควิดยิ่งลงเหว
+    ขณะที่สถานการณ์หลังโควิดก็ยังไม่สามารถฟื้นเศรษฐกิจประเทศได้
+    เพราะไม่ได้แก้ปัญหาพื้นฐาน
+    หลายประเทศฟื้นขณะที่ไทยอยู่ในกลุ่มประเทศฟื้นตัวช้ากว่าประเทศอื่น 
+
+
+    รัฐบาลหาเงินไม่เป็น ใช้ไม่เป็น
+    นอกจากบริหารเศรษฐกิจล้มเหลวโดยเฉพาะเรื่องของขีดความสามารถทางการแข่งขันของประเทศแล้ว
+    ยังล้มเหลวการแก้ปัญหาทางสังคม การศึกษา และล้มเหลวเรื่องการแก้ปัญหายาเสพติด
+    มีพฤติการณ์ส่อทุจริต เอื้อพวกพ้อง เอื้อนายทุน ไม่ตรงไปตรงมา
+    โดยเฉพาะการแต่งตั้งลูกนายเสกสกล อัตถาวงศ์ เป็นราชการตำรวจ
+    ใช้งบประมาณไม่คุ้มค่า
+
+
+    ทั้งยังละเมิดกฎหมายจริธรรม โดยเฉพาะการละเมิดอนุสัญญาเดี่ยวยาเสพติดให้โทษฯ
+    ของยูเอ็น กรณีร่วมกับนายอนุทิน รองนายกฯ ปลดล็อกกัญชา
+    รวมถึงการละเว้นปฏิบัติหน้าที่กรณีจ่ายค่าชดเชยคลองด่าน
+    เช่นเดียวกับการใช้อำนาจมาตรา 44 ปิดเหมืองทองอัครา
+    ทั้งยังล้มเหลวเรื่องการบริหารงานการต่างประเทศกรณีเครื่องบินเพื่อนบ้านบินล้ำน่านฟ้าไทย
+    เป็นผู้นำที่ทำลายระบบประชาธิปไตย
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220725135559A2.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4407
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 80
+  disprove: 185
+  abstained: 1
+  absent: 1
+  total_voter: 267
+  special: 209
+  total_people: 476
+- id: '86'
+  title: >-
+    ลงมติไม่ไว้วางใจ นายจุรินทร์ ลักษณวิศิษฏ์
+    รองนายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงพาณิชย์
+  field3: votelog.__86
+  is_active: true
+  legal_title: >-
+    การลงมติญัตติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล
+    นายจุรินทร์ ลักษณวิศิษฏ์ รองนายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงพาณิชย์
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-23'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    พิจารณาญัตติขอเปิดอภิปรายไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล ซึ่งนายชลน่าน
+    ศรีแก้ว กับส.ส. พรรคฝ่ายค้าน 186 คน เป็นผู้เสนอ โดย นายจุรินทร์ ลักษณวิศิษฎ์
+    รองนายกรัฐมนตรี และรมว.พาณิชย์ ถูกกล่าวหา กรณีการจัดซื้อถุงมือยางของ
+    อคส.ที่มีความเสียหายนับแสนล้านบาท ซึ่งได้ส่งเรื่องให้
+    ป.ป.ช.ชี้มูลความผิดแล้ว โดยตั้งข้อสังเกตว่า นายจุรินทร์
+    ไม่ดำเนินการอายัดเงินจากผู้กระทำความผิดทำให้รัฐเกิดความเสียหาย
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220725135559A5.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4407
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 207
+  disprove: 254
+  abstained: 9
+  absent: 0
+  total_voter: 470
+  special: 577
+  total_people: 1047
+- id: '87'
+  title: >-
+    ลงมติไม่ไว้วางใจ นายอนุทิน ชาญวีรกูล
+    รองนายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงสาธารณสุข
+  field3: votelog.__87
+  is_active: true
+  legal_title: >-
+    การลงมติญัตติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล
+    นายอนุทิน ชาญวีรกูล รองนายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงสาธารณสุข
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-23'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    พิจารณาญัตติขอเปิดอภิปรายไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล ซึ่งนายชลน่าน
+    ศรีแก้ว กับส.ส. พรรคฝ่ายค้าน 186 คน เป็นผู้เสนอ โดย นายอนุทิน ชาญวีรกูล
+    รองนายกรัฐมนตรี และ รมว.สาธารณสุข ถูกกล่าวหาว่า ร่วมกับ นายกฯ
+    ผลิตนโยบายเสรีกัญชา เปรียบเหมือนกลัดกระดุมผิดตั้งแต่เม็ดแรก
+    นำมาซึ่งการไปละเมิดอนุสัญญาเดี่ยวยาเสพติดให้โทษ 1961 ของยูเอ็น
+    ทั้งยังเกิดช่องว่างทางกฎหมายเนื่องจาก พ.ร.บ.กัญชง กัญชาฯ
+    ยังอยู่ระหว่างการพิจารณายังไม่ออกมาควบคุมการใช้อย่างชัดเจน
+    ทั้งยังไม่สร้างความรู้ความเข้าใจให้กับประชาชน ส่งผลกระทบกับเยาวชนและสังคม
+    เลยไปถึงผู้ประกอบการที่ลงทุนเกี่ยวกับกัญชาในลักษณะต่าง ๆ อย่างไรก็ดี
+    ยืนยันว่าสนับสนุนให้ใช้กัญชาทางการแพทย์
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220725135559A8.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4407
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 207
+  disprove: 240
+  abstained: 23
+  absent: 0
+  total_voter: 470
+  special: 6
+  total_people: 476
+- id: '88'
+  title: ลงมติไม่ไว้วางใจ พลเอก ประวิตร วงษ์สุวรรณ รองนายกรัฐมนตรี
+  field3: votelog.__88
+  is_active: true
+  legal_title: >-
+    การลงมติญัตติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล
+    พลเอก ประวิตร วงษ์สุวรรณ รองนายกรัฐมนตรี
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-23'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    พิจารณาญัตติขอเปิดอภิปรายไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล ซึ่งนายชลน่าน
+    ศรีแก้ว กับส.ส. พรรคฝ่ายค้าน 186 คน เป็นผู้เสนอ โดยพล.อ.ประวิตร วงษ์สุวรรณ
+    รองนายกรัฐมนตรี ถูกกล่าวหาว่า ไร้ประสิทธิภาพ
+    ขาดความสามารถไม่สามารถแก้ปัญหายาเสพติดได้โดยสถิติการแพทยระบาดของยาเสพติดเพิ่มสูงขึ้น
+    มีการซื้อขายกันง่ายมากขึ้น เยาวชนเข้าถึงยาเสพติดด้วยราคาที่ถูก หาง่าย
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220725135559A11.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4407
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 205
+  disprove: 263
+  abstained: 3
+  absent: 0
+  total_voter: 471
+  special: 5
+  total_people: 476
+- id: '89'
+  title: ลงมติไม่ไว้วางใจ พลเอก อนุพงษ์ เผ่าจินดา รัฐมนตรีว่าการกระทรวงมหาดไทย
+  field3: votelog.__89
+  is_active: true
+  legal_title: >-
+    การลงมติญัตติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล
+    พลเอก อนุพงษ์ เผ่าจินดา รัฐมนตรีว่าการกระทรวงมหาดไทย
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-23'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    พิจารณาญัตติขอเปิดอภิปรายไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล ซึ่งนายชลน่าน
+    ศรีแก้ว กับส.ส. พรรคฝ่ายค้าน 186 คน เป็นผู้เสนอ โดย พล.อ. อนุพงษ์ เผ่าจินดา
+    รมว.มหาดไทย ถูกกล่าวหาในฐานะกำกับดูแลการประปาส่วนภูมิภาคว่า มีเจตนาไม่สุจริต
+    ปล่อยปละละเลยเอื้อเอกชน โครงการร่วมลงทุนน้ำประปาปทุมธานี-รังสิต
+    ทำรัฐเสี่ยงเสียหายหลายหมื่นล้าน
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220725135559A14.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4407
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 193
+  disprove: 267
+  abstained: 11
+  absent: 0
+  total_voter: 471
+  special: 5
+  total_people: 476
+- id: '90'
+  title: ลงมติไม่ไว้วางใจ นายศักดิ์สยาม ชิดชอบ รัฐมนตรีว่าการกระทรวงคมนาคม
+  field3: votelog.__90
+  is_active: true
+  legal_title: >-
+    การลงมติญัตติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล
+    นายศักดิ์สยาม ชิดชอบ รัฐมนตรีว่าการกระทรวงคมนาคม
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-23'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    พิจารณาญัตติขอเปิดอภิปรายไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล ซึ่งนายชลน่าน
+    ศรีแก้ว กับส.ส. พรรคฝ่ายค้าน 186 คน เป็นผู้เสนอ โดย นายศักดิ์สยาม ชิดชอบ
+    รมว.คมนาคม กล่าวหาว่า ทุจริต ปิดบังอำพรางมีผลประโยชน์ทับซ้อน
+    กรณีที่ดินเขากระโดง และกรณีบริษัท บุรีเจริญ ที่เชื่อว่า ไม่มีการโอน
+    และการขายหุ้นจริงเป็นนอมินีที่เข้ามารับงานของกระทรวงคมนาคมหลายโครงการซึ่งจากเอกสารที่นำมายืนยันนั้นเห็นว่า
+    เป็นเอกสารที่มีพิรุธ เพราะไม่มีหัวกระดาษของธนาคาร
+    และลายเซ็นต์เหมือนการตัดแปะทั้งยังเห็นว่า ไม่มีการซื้อขายหุ้นจริง
+    เป็นเอกสารที่ไม่น่าเชื่อถือ มีประโยชน์ทับซ้อน
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220725135559A17.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4407
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 212
+  disprove: 244
+  abstained: 13
+  absent: 0
+  total_voter: 469
+  special: 7
+  total_people: 476
+- id: '91'
+  title: >-
+    ลงมติไม่ไว้วางใจ นายชัยวุฒิ ธนาคมานุสรณ์
+    รัฐมนตรีว่าการกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม
+  field3: votelog.__91
+  is_active: true
+  legal_title: >-
+    การลงมติญัตติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล
+    นายชัยวุฒิ ธนาคมานุสรณ์ รัฐมนตรีว่าการกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-23'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    พิจารณาญัตติขอเปิดอภิปรายไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล ซึ่งนายชลน่าน
+    ศรีแก้ว กับส.ส. พรรคฝ่ายค้าน 186 คน เป็นผู้เสนอ โดย นายชัยวุฒิ ธนาคมานุสรณ์
+    รมว.ดิจิทัลเพื่อเศรษฐกิจและสังคม ถูกกล่าวหาว่า ไร้ประสิทธิภาพ ไร้จริยธรรม
+    โดยเฉพาะเรื่องอาชญากรรมคอมพิวเตอร์ที่เกิดขึ้นในปัจจุบันส่งผลกระทบต่อประชาชน
+    ซึ่งจนถึงวันนี้ในฐานะผู้กำกับดูแลกระทรวงซึ่งมีหน้าที่โดยตรง
+    ยังไม่สามารถแก้ปัญหาเรื่องนีได้
+    ในขณะที่กลับไปเสียเวลาสอดส่องฝ่ายตรงข้ามมากกว่า
+    นอกจากนี้ยังมีพฤติการณ์ตั้งเพื่อนสนิทเป็นที่ปรึกษาและคนๆเดียวกันนี้ได้ไปรับงานโครงการต่าง
+    ๆ รวมถึงการขาดจริยธรรม
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220725135559A20.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4407
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 205
+  disprove: 261
+  abstained: 5
+  absent: 0
+  total_voter: 471
+  special: 7
+  total_people: 478
+- id: '92'
+  title: >-
+    ลงมติไม่ไว้วางใจ นายจุติ ไกรฤกษ์
+    รัฐมนตรีว่าการกระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์
+  field3: votelog.__92
+  is_active: true
+  legal_title: >-
+    การลงมติญัตติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล
+    นายจุติ ไกรฤกษ์ รัฐมนตรีว่าการกระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-23'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    พิจารณาญัตติขอเปิดอภิปรายไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล ซึ่งนายชลน่าน
+    ศรีแก้ว กับส.ส. พรรคฝ่ายค้าน 186 คน เป็นผู้เสนอ โดย นายจุติ ไกรฤกษ์
+    รมว.พัฒนาสังคมและความมั่นคงของมนุษย์ ถูกกล่าวหาว่า ไม่สุจริตโครงการบ้านเคหะฯ
+    สองโครงการ ที่พบว่า
+    บริษัทที่เข้ารับงานถมดินของโครงการไม่มีคุณสมบัติที่เหมาะสมในการรับงาน
+    ขณะเดียวกันพบว่า มีการซอยสัญญาหลายสัญญาด้วยกัน
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220725135559A23.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4407
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 205
+  disprove: 248
+  abstained: 18
+  absent: 0
+  total_voter: 471
+  special: 5
+  total_people: 476
+- id: '93'
+  title: ลงมติไม่ไว้วางใจ นายสันติ พร้อมพัฒน์ รัฐมนตรีช่วยว่าการกระทรวงการคลัง
+  field3: votelog.__93
+  is_active: true
+  legal_title: >-
+    การลงมติญัตติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล
+    นายสันติ พร้อมพัฒน์ รัฐมนตรีช่วยว่าการกระทรวงการคลัง
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-23'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    พิจารณาญัตติขอเปิดอภิปรายไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล ซึ่งนายชลน่าน
+    ศรีแก้ว กับส.ส. พรรคฝ่ายค้าน 186 คน เป็นผู้เสนอ โดย นายสันติ พร้อมพัฒน์
+    รมช.คลัง ถูกกล่าวหาว่า ทุจริตกรณีท่อส่งน้ำอีอีซี
+    ที่กรมธนารักษ์เข้าไปเกี่ยวข้อง จากเดิมที่เป็นงานของ อีสวอร์เตอร์
+    ที่หมดสัญญาไป ต้องหาผู้รับทำงานต่อ พบว่า
+    บริษัทใหม่ที่เข้ามารับช่วงต่อนั้นบอร์ดได้ให้มีการวิจัยและศึกษาเรื่องของสัญญาดังกล่าว
+    โดยได้เสนอแนะให้รวมสัญญา และจัดซื้อจัดจ้างด้วยวิธีพิเศษ
+    พร้อมทั้งมีการแก้ทีโออาร์เพื่อให้ บริษัท วงษ์สยามฯ
+    เข้าเงื่อนไขและชนะการประมูล
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220725135559A26.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4407
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 209
+  disprove: 244
+  abstained: 16
+  absent: 0
+  total_voter: 469
+  special: 7
+  total_people: 476
+- id: '94'
+  title: ลงมติไม่ไว้วางใจ นายนิพนธ์ บุญญามณี รัฐมนตรีช่วยว่าการกระทรวงมหาดไทย
+  field3: votelog.__94
+  is_active: true
+  legal_title: >-
+    การลงมติญัตติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล
+    นายนิพนธ์ บุญญามณี รัฐมนตรีช่วยว่าการกระทรวงมหาดไทย
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-23'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    พิจารณาญัตติขอเปิดอภิปรายไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล ซึ่งนายชลน่าน
+    ศรีแก้ว กับส.ส. พรรคฝ่ายค้าน 186 คน เป็นผู้เสนอ โดย นายนิพนธ์ บุญญามณี
+    รมช.มหาดไทย ถูกกล่าวหาว่า
+    มีส่วนเกี่ยวข้องรูเห็นโครงการเดินสำรวจที่เกาะนุ้ยนอก
+    และอีกสองสามเกาะที่จ.สุราษฎร์ธานี ซึ่งไม่อยู่ในเกณฑ์ที่จะออกเอกสารสิทธิได้
+    และคนที่ได้ก็มีส่วนเกี่ยวข้องกับนายนิพนธ์ เป็นการออกเอกสารสิทธิให้กับพวกพ้อง
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220725135559A29.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4407
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 204
+  disprove: 248
+  abstained: 18
+  absent: 0
+  total_voter: 470
+  special: 6
+  total_people: 476
+- id: '95'
+  title: ลงมติไม่ไว้วางใจ นายสุชาติ ชมกลิ่น รัฐมนตรีว่าการกระทรวงแรงงาน
+  field3: votelog.__95
+  is_active: true
+  legal_title: >-
+    การลงมติญัตติขอเปิดอภิปรายทั่วไปเพื่อลงมติไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล
+    นายสุชาติ ชมกลิ่น รัฐมนตรีว่าการกระทรวงแรงงาน
+  meeting: ประชุมส.ส.
+  type: ''
+  vote_date: '2022-07-23'
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    พิจารณาญัตติขอเปิดอภิปรายไม่ไว้วางใจรัฐมนตรีเป็นรายบุคคล ซึ่งนายชลน่าน
+    ศรีแก้ว กับส.ส. พรรคฝ่ายค้าน  186 คน เป็นผู้เสนอ โดย นายสุชาติ ชมกลิ่น
+    รมว.แรงงาน กล่าวหาว่า ใช้กองทุนประกันสังคมเพื่อซื้อหุ้นเอกชนรายหนึ่ง
+    แล้วบริษัทเอกชนดังกล่าวได้นำเงินดังกล่าวนำไปปั่นหุ้นและวนกลับมาซื้อหุ้นของนายสุชาติ
+    รวมถึงเรื่องของแรงงานต่างชาติ
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220725135559A32.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4407
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 206
+  disprove: 245
+  abstained: 20
+  absent: 0
+  total_voter: 471
+  special: 5
+  total_people: 476
+- id: '96'
+  title: >-
+    ถอนร่าง พ.ร.บ.ประกอบรัฐธรรมนูญว่าด้วยการเลือกตั้ง ส.ส. เพื่อให้ กมธ.
+    พิจารณาใหม่
+  field3: votelog.__96
+  is_active: false
+  legal_title: >-
+    การให้ความยินยอมถอนร่างพระราชบัญญัติประกอบรัฐธรรมนูญ ว่าด้วยการเลือกตั้ง
+    ส.ส. (ฉบับที่ ...) พ.ศ. .... ซึ่งคณะกรรมาธิการพิจารณาเสร็จแล้ว
+    เพื่อนำไปพิจารณาทบทวนใหม่
+  meeting: ประชุมร่วมสองสภา
+  type: ''
+  vote_date: '2022-07-26'
+  prayuth: ''
+  thanathorn: ''
+  passed: true
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: >-
+    ตามที่ประชุมรัฐสภา พิจารณาแก้ไขมาตรา 23 ของร่างพ.ร.บ.
+    ประกอบรัฐธรรมนูญว่าด้วยการเลือกตั้ง ส.ส. เรื่องวิธีคำนวณ
+    ส.ส.บัญชีรายชื่อให้ใช้วิธีหารด้วย 500 แทนการหาร 100 ตามที่
+    กมธ.เสียงข้างมากเสนอนั้น ทำให้ต้องแก้ไขเนื้อหามาตราอื่นๆ
+    ที่เกี่ยวเนื่องกับมาตรา 23 ให้เกิดความสอดคล้องกัน จึงขอที่ประชุมรัฐสภาให้
+    กมธ.ปรึกษาหารือหาทางออกร่วมกันแก้บทบัญญัติที่เกี่ยวข้อง
+    แล้วนำมาเสนอที่ประชุมรัฐสภาใหม่
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220726135727A2.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4408
+  recheck: 'TRUE'
+  ocr-able: 'FALSE'
+  approve: 208
+  disprove: 242
+  abstained: 20
+  absent: 0
+  total_voter: 470
+  special: 6
+  total_people: 476
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างพระราชบัญญัติการปฏิบัติราชการทางอิเล็กทรอนิกส์ พ.ศ. ....
+    ซึ่งคณะกรรมาธิการวิสามัญพิจารณาเสร็จแล้ว
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220727162752A30.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4409
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0
+- id: ''
+  title: ''
+  field3: ''
+  is_active: false
+  legal_title: >-
+    ร่างพระราชบัญญัติว่าด้วยการปรับเป็นพินัย พ.ศ. ....
+    ซึ่งคณะกรรมาธิการวิสามัญพิจารณาเสร็จแล้ว
+  meeting: ''
+  type: ''
+  vote_date: null
+  prayuth: ''
+  thanathorn: ''
+  passed: false
+  is_no_vote: false
+  no_vote_description: ''
+  description_th: ''
+  document:
+    - title: ใบประมวลผลการลงมติ
+      link: >-
+        https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/download/vote_detail/20220727162752A35.pdf
+    - title: ''
+      link: ''
+  reference: >-
+    https://msbis.parliament.go.th/ewtadmin/ewt/parliament_report/main_warehouse.php?m_id=4409
+  recheck: 'FALSE'
+  ocr-able: 'FALSE'
+  approve: 0
+  disprove: 0
+  abstained: 0
+  absent: 0
+  total_voter: 0
+  special: 0
+  total_people: 0

@@ -1,7 +1,7 @@
 import React from "react"
 import { Global, css } from "@emotion/react"
 import { media } from "../styles"
-import times from "../images/icons/votelog/times.png"
+import times from "../images/icons/votelog/vote.png"
 
 const cssLegend = ({ missing, type }) => ({
   display: missing ? "flex" : "unset",
@@ -213,6 +213,8 @@ const VoteLogLegend = ({
           style={{
             margin: "0",
           }}
+          width="8"
+          height="8"
         />{" "}
         {missing != undefined ? (
           type === "group" ? (

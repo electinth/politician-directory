@@ -210,7 +210,7 @@ const VoteInfoPopup = ({
               ...cssSectionWaffle,
             }}
           >
-            <Waffle
+            {/* <Waffle
               style={{ width: "100%" }}
               data={[
                 approve.map(p => ({ node: p })),
@@ -233,7 +233,7 @@ const VoteInfoPopup = ({
                 `var(--cl-senate-vote-absent)`,
                 `var(--cl-senate-vote-missing)`,
               ]}
-            />
+            /> */}
             <div css={{ marginTop: "4rem" }}>
               <VoteLogLegend type="popup" {...countVotelog} />
             </div>

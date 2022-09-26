@@ -145,11 +145,11 @@ class WaffleFilter extends Component {
             currentFilter={this.state.currentFilter}
             handleFilter={this.handleFilter}
           />
-          <Waffle
+          {/* <Waffle
             data={[this.state.data_of_interest, this.state.data_the_rest]}
             colors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
             borderColors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
-          />
+          /> */}
         </div>
       </>
     )

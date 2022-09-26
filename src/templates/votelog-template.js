@@ -125,10 +125,33 @@ const VotelogPage = ({
     const matched = _.find(allPeopleYaml.nodes, ["id", votelog.id])
     combined.push({ ...votelog, ...matched })
   })
+
   const approve = filterVote(combined, votelogYaml.id, "1")
   const disprove = filterVote(combined, votelogYaml.id, "2")
   const abstained = filterVote(combined, votelogYaml.id, "3")
   const absent = filterVote(combined, votelogYaml.id, "4")
+  const special = filterVote(combined, votelogYaml.id, "")
+
+  function getDataGroupBy(x) {
+    let data = []
+    let datagroup = _.groupBy(x, car => car.party)
+    Object.keys(datagroup).forEach(key => {
+      data.push({
+        name: key,
+        count: datagroup[key].length,
+        list: datagroup[key].map(p => ({ node: p })),
+      })
+    })
+    return data.sort((a, b) => b.count - a.count)
+  }
+
+  const approveGroup = getDataGroupBy(approve)
+  const disproveGroup = getDataGroupBy(disprove)
+  const abstainedGroup = getDataGroupBy(abstained)
+  const absentGroup = getDataGroupBy(absent)
+  const specialGroup = getDataGroupBy(special)
+
+  //console.log(approveGroup)
 
   return (
     <Layout
@@ -285,11 +308,20 @@ const VotelogPage = ({
                   disprove.map(p => ({ node: p })),
                   abstained.map(p => ({ node: p })),
                   absent.map(p => ({ node: p })),
+                  special.map(p => ({ node: p })),
+                ]}
+                data2={[
+                  approveGroup,
+                  disproveGroup,
+                  abstainedGroup,
+                  absentGroup,
+                  specialGroup,
                 ]}
                 colors={[
                   `var(--cl-vote-yes)`,
                   `var(--cl-vote-no)`,
                   `var(--cl-vote-abstained)`,
+                  `var(--cl-vote-absent)`,
                   `var(--cl-vote-absent)`,
                 ]}
                 borderColors={[
@@ -297,6 +329,7 @@ const VotelogPage = ({
                   `var(--cl-vote-no)`,
                   `var(--cl-vote-abstained)`,
                   `var(--cl-black)`,
+                  `var(--cl-vote-absent)`,
                 ]}
               />
             </>

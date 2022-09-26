@@ -2,22 +2,24 @@
   display: flex;
   flex-wrap: wrap;
   width: 950px;
-  height: 256px;
+  align-items: flex-start;
+  /* height: 256px; */
+  /* align-items: baseline; */
 }
 
 .line {
   background-color: black;
   width: 2px;
   height: 256px;
-  margin: 0 3rem 0 0;
+  margin: 0 2rem 0 1rem;
 }
 
 .hundred {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  width: 55px;
-  height: 256px;
+  max-width: 140px;
+  /* height: 256px; */
 }
 
 .quarter {
@@ -26,7 +28,7 @@
   align-content: flex-start;
   width: 55px;
   height: 55px;
-  margin: 0 0 12px 0;
+  margin: 0 12px 12px 0;
 }
 
 .quarter:last-child {
@@ -60,4 +62,13 @@
   .quarter:last-child {
     margin: 0;
   }
+}
+
+.test {
+  background-image: url("../images/icons/votelog/vote.png");
+  background-position: center;
+  background-size: contain;
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0 !important;
 }

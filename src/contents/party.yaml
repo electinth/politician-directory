@@ -810,3 +810,56 @@
   facebook: 'https://www.facebook.com/MoveForwardPartyThailand/'
   twitter: 'https://twitter.com/MFPThailand'
   is_active: true
+- id: '32'
+  name: เศรษฐกิจไทย
+  en:
+    name: Thai Economic Party
+    short_name: THEP
+  short_name: ศท.
+  color: ''
+  party_type: พรรค
+  party_ordinal: null
+  party_group: ''
+  description: >-
+    พรรคใหม่ที่ ร.อ.ธรรมนัส พรหมเผ่า จะนำ 20 ส.ส. ย้ายไปสังกัด
+    หลังถูกมติพรรคพลังประชารัฐขับออก
+  established_date: '2020-04-07'
+  dissolved_date: ''
+  speaker: ''
+  first_deputy_speaker: ''
+  second_deputy_speaker: ''
+  opposition_leader: ''
+  party_leader: นางรัชนี ศิวะเวชช
+  party_secretary: นายเมธาวี เนตรไสว
+  website: ''
+  facebook: ''
+  twitter: ''
+  is_active: true
+- id: '33'
+  name: เพื่อชาติไทย
+  en:
+    name: Pheu Chart Thai Party
+    short_name: P.C.T.P
+  short_name: พ.ช.ต.ท.
+  color: ''
+  party_type: พรรค
+  party_ordinal: null
+  party_group: ''
+  description: >-
+    พรรคโดยการนำของนายคฑาเทพ เตชะเดชเรืองกุล และนายวินัย ไชยบุตร
+    เป็นหัวหน้าพรรคและเลขาธิการ จดทะเบียนในชื่อพรรคพลังไทยรักไทย
+    และเปลี่ยนชื่อพรรคเป็นพรรคเพื่อชาติไทย โดยเมื่อเลือกตั้ง 24 มีนาคม 2562
+    ในนามพรรคพลังไทยรักไทย ได้เข้าร่วมรัฐบาลภายใต้การนำของพรรคพลังประชารัฐ
+    และสนับสนุนพลเอก ประยุทธ์ จันทร์โอชา เป็นนายกรัฐมนตรี
+  established_date: '2018-10-30'
+  dissolved_date: ''
+  speaker: ''
+  first_deputy_speaker: ''
+  second_deputy_speaker: ''
+  opposition_leader: ''
+  party_leader: คฑาเทพ เตชะเดชเรืองกุล
+  party_secretary: วินัย ไชยบุตร
+  website: ''
+  facebook: ''
+  twitter: ''
+  is_active: true
