@@ -13,7 +13,7 @@ export const query = graphql`
       filter: { is_active: { eq: true } }
       limit: $limit
       skip: $skip
-      sort: { fields: vote_date, order: ASC }
+      sort: { fields: vote_date, order: DESC }
     ) {
       totalCount
       edges {
