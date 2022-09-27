@@ -132,25 +132,6 @@ const VotelogPage = ({
   const absent = filterVote(combined, votelogYaml.id, "4")
   const special = filterVote(combined, votelogYaml.id, "")
 
-  function getDataGroupBy(x) {
-    let data = []
-    let datagroup = _.groupBy(x, car => car.party)
-    Object.keys(datagroup).forEach(key => {
-      data.push({
-        name: key,
-        count: datagroup[key].length,
-        list: datagroup[key].map(p => ({ node: p })),
-      })
-    })
-    return data.sort((a, b) => b.count - a.count)
-  }
-
-  const approveGroup = getDataGroupBy(approve)
-  const disproveGroup = getDataGroupBy(disprove)
-  const abstainedGroup = getDataGroupBy(abstained)
-  const absentGroup = getDataGroupBy(absent)
-  const specialGroup = getDataGroupBy(special)
-
   //console.log(approveGroup)
 
   return (
@@ -310,13 +291,6 @@ const VotelogPage = ({
                   absent.map(p => ({ node: p })),
                   special.map(p => ({ node: p })),
                 ]}
-                data2={[
-                  approveGroup,
-                  disproveGroup,
-                  abstainedGroup,
-                  absentGroup,
-                  specialGroup,
-                ]}
                 colors={[
                   `var(--cl-vote-yes)`,
                   `var(--cl-vote-no)`,
@@ -331,6 +305,7 @@ const VotelogPage = ({
                   `var(--cl-black)`,
                   `var(--cl-vote-absent)`,
                 ]}
+                crossLast={true}
               />
             </>
           )}

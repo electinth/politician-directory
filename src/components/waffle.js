@@ -54,89 +54,6 @@ const split_array = (array, size, callback) =>
     .map(start => array.slice(start, start + size))
     .map(callback)
 
-const _waffle = (data, color, borderColor, add_separator, index) => {
-  let result = null
-
-  if (index != 4) {
-    result = split_array(data, COUNT_OF_WAFFLE, (quarter, qi) => (
-      <div key={qi} className="quarter">
-        {quarter.map(({ node }) => (
-          <div key={node.id} css={cellStyle(color, borderColor)}>
-            <div className="tooltip-text" css={tooltipTextStyle}>
-              <PeopleCard
-                {...node}
-                css={{
-                  padding: "1rem 1rem",
-                  margin: 0,
-                  alignItems: "center",
-                  border: "2px solid var(--cl-black)",
-                  ".card-info": {
-                    ".card-name": {
-                      fontSize: "1.8rem",
-                      fontWeight: "bold",
-                      fontFamily: "var(--ff-text)",
-                    },
-                    ".card-description": {
-                      fontSize: "1.6rem",
-                      fontFamily: "var(--ff-text)",
-                    },
-                  },
-                  ".profile-picture": {
-                    height: "5rem",
-                    flexBasis: "5rem",
-                  },
-                }}
-              ></PeopleCard>
-            </div>
-          </div>
-        ))}
-      </div>
-    ))
-  } else {
-    result = split_array(data, COUNT_OF_WAFFLE, (quarter, qi) => (
-      <div key={qi} className="quarter">
-        {quarter.map(({ node }) => (
-          <div
-            key={node.id}
-            css={cellStyle(color, borderColor)}
-            className="test"
-          >
-            <div className="tooltip-text" css={tooltipTextStyle}>
-              <PeopleCard
-                {...node}
-                css={{
-                  padding: "1rem 1rem",
-                  margin: 0,
-                  alignItems: "center",
-                  border: "2px solid var(--cl-black)",
-                  ".card-info": {
-                    ".card-name": {
-                      fontSize: "1.8rem",
-                      fontWeight: "bold",
-                      fontFamily: "var(--ff-text)",
-                    },
-                    ".card-description": {
-                      fontSize: "1.6rem",
-                      fontFamily: "var(--ff-text)",
-                    },
-                  },
-                  ".profile-picture": {
-                    height: "5rem",
-                    flexBasis: "5rem",
-                  },
-                }}
-              ></PeopleCard>
-            </div>
-          </div>
-        ))}
-      </div>
-    ))
-  }
-  // if (add_separator) result.push(<div key="line" className="line"></div>)
-
-  return result
-}
-
 const WaffleCell = ({ node, cellStyleProps }) => {
   return (
     <div
@@ -201,8 +118,15 @@ const WaffleGroup = ({ party, cellStyleProps }) => {
   )
 }
 
-const Waffle = ({ data, colors, borderColors, style, css }) => {
-  const new_data = data.map(type => {
+const Waffle = ({
+  data,
+  colors,
+  borderColors,
+  style,
+  css,
+  crossLast = false,
+}) => {
+  const transformed_data = data.map(type => {
     const groupped_obj = _.groupBy(type, ({ node }) => node.party)
     const groupped_arr = Object.keys(groupped_obj).map(key => ({
       name: key,
@@ -222,31 +146,23 @@ const Waffle = ({ data, colors, borderColors, style, css }) => {
       }}
       style={style}
     >
-      {new_data.map((group, group_idx) => (
+      {transformed_data.map((group, group_idx) => (
         <>
-          {
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: `repeat(${
-                  group.length > COUNT_OF_WAFFLE ? 2 : 1
-                },1fr)`,
-              }}
-            >
-              {group.map((party, party_index) => (
-                <WaffleGroup
-                  key={`${group_idx}-${party_index}`}
-                  party={party}
-                  cellStyleProps={{
-                    color: colors[group_idx],
-                    borderColor: borderColors[group_idx],
-                    isCross: group_idx === new_data.length - 1,
-                  }}
-                />
-              ))}
-            </div>
-          }
-          {group_idx !== new_data.length - 1 && (
+          <div>
+            {group.map((party, party_index) => (
+              <WaffleGroup
+                key={`${group_idx}-${party_index}`}
+                party={party}
+                cellStyleProps={{
+                  color: colors[group_idx],
+                  borderColor: borderColors[group_idx],
+                  isCross:
+                    crossLast && group_idx === transformed_data.length - 1,
+                }}
+              />
+            ))}
+          </div>
+          {group_idx !== transformed_data.length - 1 && (
             <div key="line" className="line"></div>
           )}
         </>
