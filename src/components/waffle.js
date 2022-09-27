@@ -1,13 +1,16 @@
 import React from "react"
 import _ from "lodash"
 import PeopleCard from "./peopleCard"
+import PartyLogo from "./partyLogo"
+
+import cross from "../images/icons/votelog/vote.png"
 
 import "../styles/global.css"
 import "./waffle.css"
 
 const COUNT_OF_WAFFLE = 25
 
-let cellStyle = (color, borderColor) => ({
+let cellStyle = (color, borderColor, isCross = false) => ({
   position: "relative",
   width: 8,
   height: 8,
@@ -23,6 +26,12 @@ let cellStyle = (color, borderColor) => ({
     display: "block",
     zIndex: 10,
   },
+  ...(isCross && {
+    border: "none",
+    backgroundImage: `url(${cross})`,
+    backgroundPosition: "center",
+    backgroundSize: "contain",
+  }),
 })
 
 const tooltipTextStyle = {
@@ -45,7 +54,7 @@ const split_array = (array, size, callback) =>
     .map(start => array.slice(start, start + size))
     .map(callback)
 
-const waffle = (data, color, borderColor, add_separator, index) => {
+const _waffle = (data, color, borderColor, add_separator, index) => {
   let result = null
 
   if (index != 4) {
@@ -128,14 +137,83 @@ const waffle = (data, color, borderColor, add_separator, index) => {
   return result
 }
 
-const Waffle = ({ data, data2, colors, borderColors, style, css }) => {
-  let result = ""
-  //console.log(data2)
+const WaffleCell = ({ node, cellStyleProps }) => {
+  return (
+    <div
+      css={cellStyle(
+        cellStyleProps.color,
+        cellStyleProps.borderColor,
+        cellStyleProps.isCross
+      )}
+    >
+      <div className="tooltip-text" css={tooltipTextStyle}>
+        <PeopleCard
+          {...node}
+          css={{
+            padding: "1rem 1rem",
+            margin: 0,
+            alignItems: "center",
+            border: "2px solid var(--cl-black)",
+            ".card-info": {
+              ".card-name": {
+                fontSize: "1.8rem",
+                fontWeight: "bold",
+                fontFamily: "var(--ff-text)",
+              },
+              ".card-description": {
+                fontSize: "1.6rem",
+                fontFamily: "var(--ff-text)",
+              },
+            },
+            ".profile-picture": {
+              height: "5rem",
+              flexBasis: "5rem",
+            },
+          }}
+        ></PeopleCard>
+      </div>
+    </div>
+  )
+}
 
-  //data2.forEach((element, i) => {
-  // element.forEach((element2, j) => {
-  //console.log(data2)
-  result = (
+const WaffleAligner = ({ data, cellStyleProps }) => {
+  const chunks = _.chunk(data, 25)
+
+  return (
+    <div className="waffle-chunk-container">
+      {chunks.map(c => (
+        <div className="waffle-chunk">
+          {c.map(({ node }) => (
+            <WaffleCell {...{ node, cellStyleProps }} />
+          ))}
+        </div>
+      ))}
+    </div>
+  )
+}
+
+const WaffleGroup = ({ party, cellStyleProps }) => {
+  return (
+    <div className="waffle-group">
+      <PartyLogo name={party.name} />
+      <WaffleAligner data={party.data} cellStyleProps={cellStyleProps} />
+    </div>
+  )
+}
+
+const Waffle = ({ data, colors, borderColors, style, css }) => {
+  const new_data = data.map(type => {
+    const groupped_obj = _.groupBy(type, ({ node }) => node.party)
+    const groupped_arr = Object.keys(groupped_obj).map(key => ({
+      name: key,
+      length: groupped_obj[key].length,
+      data: groupped_obj[key],
+    }))
+    const sorted_by_len_arr = groupped_arr.sort((a, z) => z.length - a.length)
+    return sorted_by_len_arr
+  })
+
+  return (
     <div
       className="waffle"
       css={{
@@ -144,38 +222,37 @@ const Waffle = ({ data, data2, colors, borderColors, style, css }) => {
       }}
       style={style}
     >
-      {data.map(
-        (group, group_idx) =>
-          // console.log(_.groupBy(group, car => car.party))
-          console.log(group) || (
-            <>
-              {
-                <div
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: `repeat(${
-                      group.length > COUNT_OF_WAFFLE ? 2 : 1
-                    },1fr)`,
+      {new_data.map((group, group_idx) => (
+        <>
+          {
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: `repeat(${
+                  group.length > COUNT_OF_WAFFLE ? 2 : 1
+                },1fr)`,
+              }}
+            >
+              {group.map((party, party_index) => (
+                <WaffleGroup
+                  key={`${group_idx}-${party_index}`}
+                  party={party}
+                  cellStyleProps={{
+                    color: colors[group_idx],
+                    borderColor: borderColors[group_idx],
+                    isCross: group_idx === new_data.length - 1,
                   }}
-                >
-                  {waffle(
-                    group,
-                    colors[group_idx],
-                    borderColors[group_idx],
-                    group_idx < data.length - 1,
-                    group_idx
-                  )}
-                </div>
-              }
-              <div key="line" className="line"></div>
-            </>
-          )
-      )}
+                />
+              ))}
+            </div>
+          }
+          {group_idx !== new_data.length - 1 && (
+            <div key="line" className="line"></div>
+          )}
+        </>
+      ))}
     </div>
   )
-  // });
-  // });
-  return result
 }
 
 export default Waffle

@@ -3,14 +3,12 @@
   flex-wrap: wrap;
   width: 950px;
   align-items: flex-start;
-  /* height: 256px; */
-  /* align-items: baseline; */
 }
 
 .line {
   background-color: black;
   width: 2px;
-  height: 256px;
+  align-self: stretch;
   margin: 0 2rem 0 1rem;
 }
 
@@ -19,33 +17,47 @@
   flex-wrap: wrap;
   align-content: flex-start;
   max-width: 140px;
-  /* height: 256px; */
 }
 
-.quarter {
+.waffle-group {
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  width: 55px;
-  height: 55px;
-  margin: 0 12px 12px 0;
+  align-items: flex-start;
+  margin-bottom: 16px;
 }
 
-.quarter:last-child {
-  margin: 0;
+.waffle-group > [data-gatsby-image-wrapper] {
+  overflow: hidden;
+  border-radius: 50%;
+
+  border: 1px #ccc solid;
+
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.waffle-chunk-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 4px;
+  gap: 4px;
+}
+
+.waffle-chunk {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-content: start;
+  width: min-content;
 }
 
 @media only screen and (max-width: 950px) {
   .waffle {
     max-width: 348px !important;
     width: 348px;
-    height: 750px;
   }
 
   .line {
-    width: 333px;
-    height: 2px;
-    margin: 0;
+    margin: 0 2px;
   }
 
   .hundred {
@@ -55,20 +67,7 @@
     margin: 0;
   }
 
-  .quarter {
-    margin: 0 12px 0 0;
+  .waffle-chunk-container {
+    grid-template-columns: auto;
   }
-
-  .quarter:last-child {
-    margin: 0;
-  }
-}
-
-.test {
-  background-image: url("../images/icons/votelog/vote.png");
-  background-position: center;
-  background-size: contain;
-  width: 10px !important;
-  height: 10px !important;
-  margin: 0 !important;
 }
