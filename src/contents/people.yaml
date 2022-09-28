@@ -431,7 +431,7 @@
   title: นาย
   name: จุติ
   lastname: ไกรฤกษ์
-  is_mp: false
+  is_mp: true
   is_senator: false
   is_cabinet: true
   is_active: true
@@ -1061,7 +1061,7 @@
   title: ดร.
   name: กนกวรรณ
   lastname: วิลาวัลย์
-  is_mp: false
+  is_mp: true
   is_senator: false
   is_cabinet: true
   is_active: true
@@ -2539,8 +2539,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: นครราชสีมา
   mp_zone: '1'
@@ -2577,7 +2577,9 @@
   debt: 4463273.06
   facebook: 'https://www.facebook.com/KasamSupparanon/'
   twitter: ''
-  bio: ''
+  bio: >-
+    สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '50'
@@ -2640,7 +2642,7 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: อนาคตใหม่
+  party: ก้าวไกล
   party_group: ฝ่ายค้าน
   mp_type: บัญชีรายชื่อ
   mp_province: ''
@@ -3210,7 +3212,7 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังไทยรักไทย
+  party: เพื่อชาติไทย
   party_group: ร่วมรัฐบาล
   mp_type: บัญชีรายชื่อ
   mp_province: ''
@@ -3724,8 +3726,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: สมุทรสาคร
   mp_zone: '3'
@@ -3762,7 +3764,9 @@
   debt: 725760
   facebook: 'https://www.facebook.com/111852293494843/'
   twitter: ''
-  bio: ''
+  bio: >-
+    สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '73'
@@ -4663,8 +4667,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: พะเยา
   mp_zone: '3'
@@ -4707,7 +4711,9 @@
   debt: 4064846.3
   facebook: 'https://www.facebook.com/100014915411284'
   twitter: ''
-  bio: ''
+  bio: >-
+    สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '91'
@@ -5221,7 +5227,9 @@
   debt: 2361562.86
   facebook: 'https://www.facebook.com/profile.php?id=100001724331154'
   twitter: ''
-  bio: ''
+  bio: >-
+    หยุดปฏิบัติหน้าที่ส.ส. กรณีเสียบบัตรแทนกันระหว่างการพิจารณาร่าง
+    พ.ร.บ.งบประมาณรายจ่ายประจำปีงบประมาณ พ.ศ. 2563
   en:
     bio: ''
 - id: '101'
@@ -7141,8 +7149,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: สุรินทร์
   mp_zone: '2'
@@ -7181,7 +7189,9 @@
   debt: 239160.57
   facebook: ''
   twitter: ''
-  bio: ''
+  bio: >-
+    สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '139'
@@ -8079,7 +8089,7 @@
   is_mp: true
   is_senator: false
   is_cabinet: false
-  is_active: true
+  is_active: false
   party: พลังชาติไทย
   party_group: ร่วมรัฐบาล
   mp_type: บัญชีรายชื่อ
@@ -8122,7 +8132,9 @@
   debt: 0
   facebook: ''
   twitter: ''
-  bio: ''
+  bio: >-
+    ลาออกจากสมาชิกสภาผู้แทนราษฎร เมื่อวันที่ 25 ตุลาคม 2564
+    และเสียชีวิตในวันเดียวกันด้วยโรคมะเร็ง
   en:
     bio: ''
 - id: '157'
@@ -8426,7 +8438,7 @@
   debt: 7647.4
   facebook: ''
   twitter: ''
-  bio: ''
+  bio: ยุติปฏิบัติหน้าที่ ส.ส. เนื่องจากสั่งประทับฟ้องคดีทุจริตสนามฟุตซอลโคราช
   en:
     bio: ''
 - id: '163'
@@ -8532,7 +8544,7 @@
   debt: 11573101.44
   facebook: ''
   twitter: ''
-  bio: ''
+  bio: ยุติปฏิบัติหน้าที่ ส.ส. เนื่องจากสั่งประทับฟ้องคดีทุจริตสนามฟุตซอลโคราช
   en:
     bio: ''
 - id: '165'
@@ -8897,7 +8909,10 @@
   debt: 2561380
   facebook: ''
   twitter: ''
-  bio: ''
+  bio: >-
+    ยุติปฏิบัติหน้าที่ส.ส. เนื่องจากหลังศาลฎีการับคำร้อง
+    ป.ป.ช.คดีถูกกล่าวหาว่ากระทำผิดมาตรฐานจริยธรรมฯ อย่างร้ายแรง
+    จากการเสียบบัตรแทนกัน (18 ส.ค. 2564)
   en:
     bio: ''
 - id: '172'
@@ -9059,8 +9074,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: อุบลราชธานี
   mp_zone: '6'
@@ -9099,7 +9114,9 @@
   debt: 0
   facebook: ''
   twitter: ''
-  bio: ''
+  bio: >-
+    สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '176'
@@ -9110,8 +9127,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: ตาก
   mp_zone: '1'
@@ -9150,7 +9167,9 @@
   facebook: >-
     https://www.facebook.com/pages/category/Politician/นายธนัสถ์ทวีเกื้อกูลกิจจตาก2018094114958041/
   twitter: ''
-  bio: ''
+  bio: >-
+    สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '177'
@@ -11312,8 +11331,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: บัญชีรายชื่อ
   mp_province: ''
   mp_zone: ''
@@ -11354,7 +11373,9 @@
   debt: 3753293.82
   facebook: 'https://www.facebook.com/W.Bunsing/'
   twitter: ''
-  bio: ''
+  bio: >-
+    สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '220'
@@ -12411,8 +12432,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: แม่ฮ่องสอน
   mp_zone: '1'
@@ -12449,7 +12470,9 @@
   debt: 8904164.5
   facebook: 'https://www.facebook.com/สสปัญญาจีนาคำ111439630200899/'
   twitter: ''
-  bio: ''
+  bio: >-
+    สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '241'
@@ -12459,7 +12482,7 @@
   is_mp: true
   is_senator: false
   is_cabinet: false
-  is_active: true
+  is_active: false
   party: พลังประชารัฐ
   party_group: ร่วมรัฐบาล
   mp_type: แบ่งเขต
@@ -12721,8 +12744,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: กำแพงเพชร
   mp_zone: '1'
@@ -12763,7 +12786,9 @@
   debt: 26296870.27
   facebook: 'https://www.facebook.com/PaiLeeke'
   twitter: ''
-  bio: ''
+  bio: >-
+    สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '247'
@@ -13040,8 +13065,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: พิจิตร
   mp_zone: '1'
@@ -13081,7 +13106,9 @@
   debt: null
   facebook: 'https://www.facebook.com/PracharatPC1/'
   twitter: ''
-  bio: ''
+  bio: >-
+    สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '253'
@@ -13145,8 +13172,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: เพื่อไทย
-  party_group: ฝ่ายค้าน
+  party: ภูมิใจไทย
+  party_group: ร่วมรัฐบาล
   mp_type: แบ่งเขต
   mp_province: ปทุมธานี
   mp_zone: '5'
@@ -13186,7 +13213,9 @@
   debt: 855403.03
   facebook: 'https://www.facebook.com/pornpimol.thammasan?_rdc=1&_rdr'
   twitter: 'https://twitter.com/Pornpimol_PTP'
-  bio: ''
+  bio: >-
+    12 ตุลาคม 2564 กรรมการบริหารพรรคเพื่อไทยมีมติให้พ้นสภาพสมาชิกพรรคเพื่อไทย
+    และย้ายสังกัดเข้าภูมิใจไทยเมื่อวันที่ 26 ตุลาคม 2564
   en:
     bio: ''
 - id: '255'
@@ -13675,7 +13704,7 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: ประชาธรรมไทย
+  party: พลังประชารัฐ
   party_group: ร่วมรัฐบาล
   mp_type: บัญชีรายชื่อ
   mp_province: ''
@@ -13715,7 +13744,9 @@
   debt: 0
   facebook: 'https://www.facebook.com/satirachavalpichate'
   twitter: ''
-  bio: ''
+  bio: >-
+    9 สิงหาคม 2564 พรรคประชาธรรมไทยมีมติยุบพรรค
+    จึงย้ายเข้าสังกัดพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '265'
@@ -14306,7 +14337,7 @@
   is_mp: true
   is_senator: false
   is_cabinet: false
-  is_active: true
+  is_active: false
   party: รวมพลังประชาชาติไทย
   party_group: ร่วมรัฐบาล
   mp_type: บัญชีรายชื่อ
@@ -14348,7 +14379,9 @@
   debt: 0
   facebook: 'https://www.facebook.com/p.kijburana.page/'
   twitter: ''
-  bio: ''
+  bio: >-
+    18 ตุลาคม 2564 ลาออกจาการเป็นสมาชิกพรรครวมพลังประชาชาติไทย
+    ส่งผลให้พ้นจากสมาชิกภาพ ส.ส.
   en:
     bio: ''
 - id: '277'
@@ -14822,8 +14855,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: ตาก
   mp_zone: '3'
@@ -14866,7 +14899,9 @@
   debt: 2388006.74
   facebook: 'https://www.facebook.com/pakpoom.sj'
   twitter: ''
-  bio: ''
+  bio: >-
+    สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '287'
@@ -15217,7 +15252,9 @@
   debt: 66673.44
   facebook: 'https://www.facebook.com/pumisitkongme/'
   twitter: 'https://twitter.com/poomsitkongmee'
-  bio: ''
+  bio: >-
+    หยุดปฏิบัติหน้าที่ส.ส. กรณีเสียบบัตรแทนกันระหว่างการพิจารณาร่าง
+    พ.ร.บ.งบประมาณรายจ่ายประจำปีงบประมาณ พ.ศ. 2563
   en:
     bio: ''
 - id: '294'
@@ -15886,7 +15923,7 @@
   is_mp: true
   is_senator: false
   is_cabinet: false
-  is_active: true
+  is_active: false
   party: เศรษฐกิจใหม่
   party_group: ฝ่ายค้าน
   mp_type: บัญชีรายชื่อ
@@ -15926,7 +15963,7 @@
   debt: null
   facebook: 'https://www.facebook.com/MINGKWANSANGSUWAN9/'
   twitter: ''
-  bio: ''
+  bio: ลาออกจากการเป็น ส.ส. เมื่อ 18 กุมภาพันธ์ 2565
   en:
     bio: ''
 - id: '308'
@@ -15990,8 +16027,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: ประชานิยม
-  party_group: ร่วมรัฐบาล
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: บัญชีรายชื่อ
   mp_province: ''
   mp_zone: ''
@@ -16028,7 +16065,9 @@
   debt: null
   facebook: 'https://www.facebook.com/y.thepjumnong'
   twitter: ''
-  bio: ''
+  bio: >-
+    สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '310'
@@ -17374,9 +17413,9 @@
   is_mp: true
   is_senator: false
   is_cabinet: true
-  is_active: false
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
+  is_active: true
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: พะเยา
   mp_zone: '1'
@@ -17421,7 +17460,8 @@
   twitter: ''
   bio: >-
     พ้นจากตำแหน่งความเป็นรัฐมนตรีช่วยว่าการกระทรวงเกษตรและสหกรณ์ ตั้งแต่ 8
-    กันยายน 2564
+    กันยายน 2564; สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '337'
@@ -17580,7 +17620,7 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
+  party: ภูมิใจไทย
   party_group: ร่วมรัฐบาล
   mp_type: แบ่งเขต
   mp_province: ขอนแก่น
@@ -17618,7 +17658,7 @@
   debt: 1571496.92
   facebook: 'https://www.facebook.com/Changlao.Watthana'
   twitter: ''
-  bio: ''
+  bio: ถูกขับออกจากพรรคพลังประชารัฐไปยังพรรคภูมิใจไทย
   en:
     bio: ''
 - id: '341'
@@ -17991,7 +18031,7 @@
   is_mp: true
   is_senator: false
   is_cabinet: false
-  is_active: true
+  is_active: false
   party: พลังประชารัฐ
   party_group: ร่วมรัฐบาล
   mp_type: บัญชีรายชื่อ
@@ -18033,7 +18073,9 @@
   debt: 267518.74
   facebook: ''
   twitter: ''
-  bio: ''
+  bio: >-
+    ลาออกจากสมาชิกสภาผู้แทนราษฎร และสมาชิกพรรคพลังประชารัฐ ในเดือนเมษายน พ.ศ.
+    2565 และได้เข้าร่วมงานกับพรรคสร้างอนาคตไทย
   en:
     bio: ''
 - id: '349'
@@ -18092,7 +18134,7 @@
   is_mp: true
   is_senator: false
   is_cabinet: false
-  is_active: true
+  is_active: false
   party: ก้าวไกล
   party_group: ฝ่ายค้าน
   mp_type: บัญชีรายชื่อ
@@ -18134,6 +18176,7 @@
   bio: >-
     เดิมเป็น ส.ส. สังกัดพรรคอนาคตใหม่ เมื่อพรรคอนาคตใหม่ถูกยุบเมื่อวันที่ 21
     ก.พ. 2563 ก็ได้ย้ายไปสังกัดพรรคก้าวไกลตั้งแต่เดือนมีนาคม 2563
+    และประกาศลาออกจากพรรคก้าวไกล เมื่อวันที่ 6 ตุลาคม 2564
   en:
     bio: ''
 - id: '351'
@@ -18233,7 +18276,7 @@
   debt: 115573101.44
   facebook: ''
   twitter: ''
-  bio: ''
+  bio: ยุติปฏิบัติหน้าที่ ส.ส. เนื่องจากสั่งประทับฟ้องคดีทุจริตสนามฟุตซอลโคราช
   en:
     bio: ''
 - id: '353'
@@ -18294,7 +18337,7 @@
   is_mp: true
   is_senator: false
   is_cabinet: false
-  is_active: true
+  is_active: false
   party: ก้าวไกล
   party_group: ฝ่ายค้าน
   mp_type: บัญชีรายชื่อ
@@ -18336,6 +18379,7 @@
   bio: >-
     เดิมเป็น ส.ส. สังกัดพรรคอนาคตใหม่ เมื่อพรรคอนาคตใหม่ถูกยุบเมื่อวันที่ 21
     ก.พ. 2563 ก็ได้ย้ายไปสังกัดพรรคก้าวไกลตั้งแต่เดือนมีนาคม 2563
+    และลาออกจากพรรคก้าวไกล เมื่อ 3 ก.พ. 65 ลงสมัครผู้ว่าฯกทม. 65
   en:
     bio: ''
 - id: '355'
@@ -19216,7 +19260,7 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: เพื่อไทย
+  party: เพื่อชาติ
   party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: อุตรดิตถ์
@@ -19257,7 +19301,9 @@
   debt: 3030404.38
   facebook: ''
   twitter: ''
-  bio: ''
+  bio: >-
+    12 ตุลาคม 2564 กรรมการบริหารพรรคเพื่อไทยมีมติให้พ้นสภาพสมาชิกพรรคเพื่อไทย
+    และย้ายสังกัดเข้าพรรคเพื่อชาติเมื่อพฤศจิกายน 2564
   en:
     bio: ''
 - id: '373'
@@ -21223,7 +21269,7 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
+  party: ภูมิใจไทย
   party_group: ร่วมรัฐบาล
   mp_type: แบ่งเขต
   mp_province: นครราชสีมา
@@ -21261,7 +21307,7 @@
   facebook: >-
     https://www.facebook.com/pages/category/PoliticalParty/%E0%B8%AA%E0%B8%A1%E0%B8%A8%E0%B8%B1%E0%B8%81%E0%B8%94%E0%B8%B4%E0%B9%8C%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%E0%B9%80%E0%B8%81%E0%B8%A9%E0%B8%A1227587094838195/
   twitter: ''
-  bio: ''
+  bio: ถูกขับออกจากพรรคพลังประชารัฐ และย้ายไปพรรคภูมิใจไทย
   en:
     bio: ''
 - id: '412'
@@ -21782,8 +21828,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: ชลบุรี
   mp_zone: '8'
@@ -21823,7 +21869,9 @@
   debt: 26993451.35
   facebook: 'https://www.facebook.com/dr.sathira/'
   twitter: ''
-  bio: ''
+  bio: >-
+    สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '423'
@@ -21938,7 +21986,7 @@
   is_mp: true
   is_senator: false
   is_cabinet: false
-  is_active: true
+  is_active: false
   party: พลังประชารัฐ
   party_group: ร่วมรัฐบาล
   mp_type: บัญชีรายชื่อ
@@ -21977,7 +22025,9 @@
   debt: 0
   facebook: 'https://www.facebook.com/santi.kiranand'
   twitter: ''
-  bio: ''
+  bio: >-
+    ลาออกจากการเป็นสมาชิกพรรคพลังประชารัฐเมื่อวันที่ 17 มกราคม 2565
+    เป็นผลให้สิ้นสภาพ ส.ส.
   en:
     bio: ''
 - id: '426'
@@ -22339,9 +22389,9 @@
       set: ''
   gender: ชาย
   birthdate: '1978-10-06'
-  education: ปริญญาตรี
-  graduation: มหาวิทยาลัยเอเชียอาคเนย์
-  degree: อุตสาหกรรมศาสตรบัณฑิต (วิศวกรรมโยธา)
+  education: ปริญญาโท
+  graduation: มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา
+  degree: รัฐประศาสนศาสตรมหาบัณฑิต วิชารัฐประศาสนศาสตร์
   ex_occupation:
     - สมาชิกองค์การบริหารส่วนจังหวัดเพชรบุรี
   occupation_group: การเมือง
@@ -22449,7 +22499,7 @@
   debt: 6145343.92
   facebook: 'https://www.facebook.com/krusamlee2018'
   twitter: 'https://twitter.com/krulee_fwp'
-  bio: ''
+  bio: หยุดปฏิบัติหน้าที่ ส.ส. เนื่องจากรับเงินเพื่อย้ายพรรค
   en:
     bio: ''
 - id: '435'
@@ -22613,7 +22663,7 @@
   is_mp: true
   is_senator: false
   is_cabinet: false
-  is_active: true
+  is_active: false
   party: พลังประชารัฐ
   party_group: ร่วมรัฐบาล
   mp_type: แบ่งเขต
@@ -22659,7 +22709,9 @@
   facebook: >-
     https://www.facebook.com/pages/category/Cause/%E0%B8%AA%E0%B8%B4%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%88%E0%B8%99%E0%B8%88%E0%B8%B2%E0%B8%84%E0%B8%B0568449340279516/
   twitter: ''
-  bio: ''
+  bio: >-
+    ศาลรัฐธรรมนูญวินิจฉัยให้พ้นจากตำแหน่งเนื่องจากเคยถูกศาลพิพากษาจำคุกในคดีทีเกี่ยวกับการทุจริต
+    เมื่อวันที่ 22 ธันวาคม 2564
   en:
     bio: ''
 - id: '439'
@@ -23299,7 +23351,7 @@
   is_mp: true
   is_senator: false
   is_cabinet: false
-  is_active: true
+  is_active: false
   party: พลังประชารัฐ
   party_group: ร่วมรัฐบาล
   mp_type: บัญชีรายชื่อ
@@ -23338,7 +23390,9 @@
   debt: 1356289.44
   facebook: ''
   twitter: ''
-  bio: ''
+  bio: >-
+    ลาออกจากการเป็นสมาชิกพรรคพลังประชารัฐเมื่อวันที่ 17 มกราคม 2565
+    เป็นผลให้สิ้นสภาพ ส.ส.
   en:
     bio: ''
 - id: '452'
@@ -25202,7 +25256,9 @@
   facebook: >-
     https://www.facebook.com/pages/category/PublicFigure/%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%99%E0%B8%B8%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B9%8C%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%9B%E0%B8%93%E0%B8%B4%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%97%E0%B9%8C623357777676090/
   twitter: ''
-  bio: ''
+  bio: >-
+    หยุดปฏิบัติหน้าที่ ส.ส. กรณีการเรียกรับเงินจำนวน 5 ล้านบาท ของนายอนุรักษ์
+    จากอธิบดีกรมทรัพยากรน้ำบาดาล เพื่อแลกกับการผ่านงบประมาณ
   en:
     bio: ''
 - id: '488'
@@ -25363,7 +25419,7 @@
   is_mp: true
   is_senator: false
   is_cabinet: false
-  is_active: true
+  is_active: false
   party: ประชาธิปัตย์
   party_group: ร่วมรัฐบาล
   mp_type: บัญชีรายชื่อ
@@ -25402,7 +25458,9 @@
   debt: 1544368296.86
   facebook: ''
   twitter: ''
-  bio: ''
+  bio: >-
+    ลาออกจากส.ส. และสมาชิกพรรคประชาธิปัตย์ในวันพฤหัสบดีที่ 17 มีนาคม 2565
+    ย้ายไปสังกัดพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '492'
@@ -26491,7 +26549,7 @@
   is_mp: true
   is_senator: false
   is_cabinet: false
-  is_active: true
+  is_active: false
   party: ประชาธิปัตย์
   party_group: ร่วมรัฐบาล
   mp_type: บัญชีรายชื่อ
@@ -26804,7 +26862,7 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
+  party: ภูมิใจไทย
   party_group: ร่วมรัฐบาล
   mp_type: บัญชีรายชื่อ
   mp_province: ''
@@ -26843,7 +26901,7 @@
   facebook: >-
     https://www.facebook.com/people/%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B2/100009701956000
   twitter: ''
-  bio: ''
+  bio: ถูกขับออกจากพรรคพลังประชารัฐ ย้ายมาภูมิใจไทย
   en:
     bio: ''
 - id: '520'
@@ -27053,7 +27111,7 @@
   title: ศาสตราจารย์ ดร.
   name: นฤมล
   lastname: ภิญโญสินวัฒน์
-  is_mp: false
+  is_mp: true
   is_senator: false
   is_cabinet: true
   is_active: false
@@ -40744,8 +40802,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: แบ่งเขต
   mp_province: ขอนแก่น
   mp_zone: '7'
@@ -40787,9 +40845,8 @@
   bio: >-
     ดำรงตำแหน่ง ส.ส. ตั้งแต่วันที่ 8 มกราคม 63
     สืบเนื่องจากผลการเลือกตั้งซ่อมเมื่อวันที่ 22 ธันวาคม 62 แทนนายนวัธ
-    เตาะเจริญสุขที่ศาลรัฐธรรมนูญสั่งให้สมาชิกภาพของนายนวัธ
-    สิ้นสุดลงนับตั้งแต่วันที่ 16 ตุลาคม 2562 จากคดีจ้างวานฆ่าอดีตปลัด อบจ.
-    ขอนแก่น ปี 56
+    เตาะเจริญสุข; สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '797'
@@ -46094,8 +46151,8 @@
   is_senator: false
   is_cabinet: false
   is_active: true
-  party: พลังประชารัฐ
-  party_group: ร่วมรัฐบาล
+  party: เศรษฐกิจไทย
+  party_group: ฝ่ายค้าน
   mp_type: บัญชีรายชื่อ
   mp_province: ''
   mp_zone: ''
@@ -46134,7 +46191,9 @@
   debt: null
   facebook: ''
   twitter: ''
-  bio: ''
+  bio: >-
+    สมัครเข้าเป็นสมาชิกพรรคเศรษฐกิจไทยเมื่อวันที่ 26 มกราคม 2565
+    หลังมีมติขับออกจากพรรคพลังประชารัฐ
   en:
     bio: ''
 - id: '904'
@@ -52874,7 +52933,9 @@
   debt: null
   facebook: ''
   twitter: ''
-  bio: ชนะการเลือกตั้งซ่อมที่ลำปางเขต 4
+  bio: >-
+    ชนะการเลือกตั้งซ่อมที่ลำปางเขต 4 และหยุดปฏิบัติหน้าที่ ส.ส.
+    เนื่องจากถูกร้องเรื่องการซื้อสิทธิขายเสียง
   en:
     bio: ''
 - id: '1039'
@@ -53544,5 +53605,644 @@
   bio: >-
     ดำรงตำแหน่งส.ส. เนื่องจากชนะการเลือกตั้งซ่อม เขต 3 จ.นครศรีธรรมราช เมื่อ 10
     มีนาคม 2564
+  en:
+    bio: ''
+- id: '1052'
+  title: นาย
+  name: ต่อศักดิ์
+  lastname: อัศวเหม
+  is_mp: true
+  is_senator: false
+  is_cabinet: false
+  is_active: true
+  party: พลังประชารัฐ
+  party_group: ร่วมรัฐบาล
+  mp_type: บัญชีรายชื่อ
+  mp_province: ''
+  mp_zone: ''
+  mp_list: '22'
+  vote: null
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: ชาย
+  birthdate: '1972-01-16'
+  education: ปริญญาโท
+  graduation: PRATT INSTITUTE
+  degree: Master of Science
+  ex_occupation:
+    - สถาปนิก
+  occupation_group: เอกชน
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ดำรงตำแหน่งส.ส. แทนนายพุทธิพงษ์ ปุณณกันต์ เมื่อ 8 ธันวาคม 2564
+  en:
+    bio: ''
+- id: '1053'
+  title: นาย
+  name: สุรพร
+  lastname: ดนัยตั้งตระกูล
+  is_mp: true
+  is_senator: false
+  is_cabinet: false
+  is_active: true
+  party: พลังประชารัฐ
+  party_group: ร่วมรัฐบาล
+  mp_type: บัญชีรายชื่อ
+  mp_province: ''
+  mp_zone: ''
+  mp_list: '25'
+  vote: null
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: ชาย
+  birthdate: '1956-02-20'
+  education: ปริญญาโท
+  graduation: สถาบันบัณฑิตพัฒนบริหารศาสตร์
+  degree: รัฐประศาสนศาสตร์มหาบัณฑิต
+  ex_occupation:
+    - สมาชิกวุฒิสภา
+    - สมาชิกสภาผู้แทนราษฎรจังหวัดร้อยเอ็ด
+  occupation_group: การเมือง
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ดำรงตำแหน่งส.ส. แทนนายสันติ กีระนันท์ เมื่อ 18 มกราคม 2565
+  en:
+    bio: ''
+- id: '1054'
+  title: นาย
+  name: ชวน
+  lastname: ชูจันทร์
+  is_mp: true
+  is_senator: false
+  is_cabinet: false
+  is_active: true
+  party: พลังประชารัฐ
+  party_group: ร่วมรัฐบาล
+  mp_type: บัญชีรายชื่อ
+  mp_province: ''
+  mp_zone: ''
+  mp_list: '23'
+  vote: null
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: ชาย
+  birthdate: '1953-06-01'
+  education: ปริญญาโท
+  graduation: มหาวิทยาลัยธรรมศาสตร์
+  degree: รัฐศาสตรมหาบัณฑิต (การปกครอง)
+  ex_occupation:
+    - เกษตรกร
+  occupation_group: เกษตรกรรม
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ดำรงตำแหน่งส.ส. แทนนายสุพล ฟองงาม เมื่อ 18 มกราคม 2565
+  en:
+    bio: ''
+- id: '1055'
+  title: นาย
+  name: จักพันธ์
+  lastname: ปิยพรไพบูลย์
+  is_mp: true
+  is_senator: false
+  is_cabinet: false
+  is_active: true
+  party: ประชาธิปัตย์
+  party_group: ร่วมรัฐบาล
+  mp_type: บัญชีรายชื่อ
+  mp_province: ''
+  mp_zone: ''
+  mp_list: ''
+  vote: null
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: ชาย
+  birthdate: '1981-07-05'
+  education: ปริญญาตรี
+  graduation: มหาวิทยาลัยราชภัฏสวนดุสิต
+  degree: ศิลปศาสตรบัณฑิต (ศิลปศาสตร์)
+  ex_occupation:
+    - นักการเมืองท้องถิ่น
+  occupation_group: การเมือง
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ''
+  en:
+    bio: ''
+- id: '1056'
+  title: นางสาว
+  name: สุภาพร
+  lastname: กำเนิดผล
+  is_mp: true
+  is_senator: false
+  is_cabinet: false
+  is_active: true
+  party: ประชาธิปัตย์
+  party_group: ร่วมรัฐบาล
+  mp_type: แบ่งเขต
+  mp_province: สงขลา
+  mp_zone: '6'
+  mp_list: ''
+  vote: 45576
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: หญิง
+  birthdate: '1982-01-17'
+  education: ปริญญาตรี
+  graduation: มหาวิทยาลัยราชภัฏสงขลา
+  degree: บริหารธุรกิจบัณฑิต
+  ex_occupation:
+    - นักการเมืองท้องถิ่น
+  occupation_group: การเมือง
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ''
+  en:
+    bio: ''
+- id: '1057'
+  title: นางสาว
+  name: สุเนตตา
+  lastname: แซ่โก๊ะ
+  is_mp: true
+  is_senator: false
+  is_cabinet: false
+  is_active: true
+  party: รวมพลังประชาชาติไทย
+  party_group: ร่วมรัฐบาล
+  mp_type: บัญชีรายชื่อ
+  mp_province: ''
+  mp_zone: ''
+  mp_list: '8'
+  vote: null
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: หญิง
+  birthdate: '1967-07-22'
+  education: ปริญญาโท
+  graduation: สถาบันบัณฑิตพัฒนบริหารศาสตร์
+  degree: การจัดการภาครัฐและภาคเอกชนมหาบัณฑิต
+  ex_occupation:
+    - ที่ปรึกษาธุรกิจอิสระ
+  occupation_group: เอกชน
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ดำรงตำแหน่งส.ส. แทนนางสาวเพชรชมพู กิจบูรณะ เมื่อ 19 ตุลาคม 2564
+  en:
+    bio: ''
+- id: '1058'
+  title: นาง
+  name: บุญญาพร
+  lastname: นาตะธนภัทร
+  is_mp: true
+  is_senator: false
+  is_cabinet: false
+  is_active: true
+  party: พลังชาติไทย
+  party_group: ร่วมรัฐบาล
+  mp_type: บัญชีรายชื่อ
+  mp_province: ''
+  mp_zone: ''
+  mp_list: '2'
+  vote: null
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: หญิง
+  birthdate: '1961-07-22'
+  education: ต่ำกว่าปริญญาตรี
+  graduation: วิทยาลัยพณิชยการบางนา
+  degree: ประกาศนียบัตรมัธยมศึกษาตอนปลาย
+  ex_occupation:
+    - นักธุรกิจ
+  occupation_group: เอกชน
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ''
+  en:
+    bio: ''
+- id: '1059'
+  title: นาย
+  name: สุรชาติ
+  lastname: เทียนทอง
+  is_mp: true
+  is_senator: false
+  is_cabinet: false
+  is_active: true
+  party: เพื่อไทย
+  party_group: ฝ่ายค้าน
+  mp_type: แบ่งเขต
+  mp_province: กรุงเทพมหานคร
+  mp_zone: '9'
+  mp_list: ''
+  vote: 29416
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: ชาย
+  birthdate: '1979-03-29'
+  education: ปริญญาโท
+  graduation: มหาวิทยาลัยจอห์นสัน แอนด์ เวลส์
+  degree: สาขาผู้นำองค์กร
+  ex_occupation:
+    - สมาชิกสภาผู้แทนราษฎร
+    - นักธุรกิจ
+  occupation_group: การเมือง
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ดำรงตำแหน่งส.ส. แทนนายสิระ เจนจาคะ เมื่อ 30 มกราคม 2565
+  en:
+    bio: ''
+- id: '1060'
+  title: นาย
+  name: ภาคิน
+  lastname: สมมิตรธนกุล
+  is_mp: true
+  is_senator: false
+  is_cabinet: false
+  is_active: true
+  party: พลังประชารัฐ
+  party_group: ร่วมรัฐบาล
+  mp_type: บัญชีรายชื่อ
+  mp_province: ''
+  mp_zone: ''
+  mp_list: '26'
+  vote: null
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: ชาย
+  birthdate: '1962-04-06'
+  education: ปริญญาเอก
+  graduation: มหาวิทยาลัยบูรพา
+  degree: ปรัชญาดุษฎีบัณฑิต (รัฐประศาสนศาสตร์)
+  ex_occupation:
+    - สมาชิกสภาผู้แทนราษฎร
+    - นักธุรกิจ
+  occupation_group: การเมือง
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ดำรงตำแหน่งส.ส. แทนนายวิเชียร ชวลิต เมื่อ เมษายน 2565
+  en:
+    bio: ''
+- id: '1061'
+  title: นาย
+  name: อิสรพงษ์
+  lastname: มากอำไพ
+  is_mp: true
+  is_senator: false
+  is_cabinet: false
+  is_active: true
+  party: ประชาธิปัตย์
+  party_group: ร่วมรัฐบาล
+  mp_type: แบ่งเขต
+  mp_province: ชุมพร
+  mp_zone: '1'
+  mp_list: ''
+  vote: 49014
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: ชาย
+  birthdate: '1988-08-13'
+  education: ปริญญาโท
+  graduation: COVENTRY UNIVERSITY
+  degree: Master of Business Administration
+  ex_occupation:
+    - นักการเมืองท้องถิ่น
+  occupation_group: การเมือง
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ดำรงตำแหน่งส.ส. แทนนายชุมพล จุลใส เมื่อ 16 มกราคม 2565
+  en:
+    bio: ''
+- id: '1062'
+  title: นาย
+  name: ชัยทิพย์
+  lastname: กมลพันธ์ทิพย์
+  is_mp: true
+  is_senator: false
+  is_cabinet: false
+  is_active: true
+  party: ประชาธิปัตย์
+  party_group: ร่วมรัฐบาล
+  mp_type: แบ่งเขต
+  mp_province: ราชบุรี
+  mp_zone: '3'
+  mp_list: ''
+  vote: 51743
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: ชาย
+  birthdate: '1964-04-09'
+  education: ปริญญาโท
+  graduation: วิทยาลัยเทคโนโลยีสยาม
+  degree: รัฐประศาสนศาสตรมหาบัณฑิต (การบริหารการจัดการภาครัฐ
+  ex_occupation: []
+  occupation_group: ไม่พบข้อมูล
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ดำรงตำแหน่งส.ส. แทนนางสาวปารีณา ไกรคุปต์ เมื่อ 30 พฤษภาคม 2565
+  en:
+    bio: ''
+- id: '1063'
+  title: นาย
+  name: นราพัฒน์
+  lastname: แก้วทอง
+  is_mp: true
+  is_senator: false
+  is_cabinet: false
+  is_active: true
+  party: ประชาธิปัตย์
+  party_group: ร่วมรัฐบาล
+  mp_type: บัญชีรายชื่อ
+  mp_province: ''
+  mp_zone: ''
+  mp_list: '27'
+  vote: null
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: ชาย
+  birthdate: '1969-08-02'
+  education: ปริญญาโท
+  graduation: US National University
+  degree: บริหารธุรกิจ
+  ex_occupation:
+    - นักธุรกิจ
+  occupation_group: เอกชน
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ดำรงตำแหน่งส.ส. แทนนายอภิชัย เตชะอุบล เมื่อ 17 มีนาคม 2565
+  en:
+    bio: ''
+- id: '1064'
+  title: นางสาว
+  name: จิราพร
+  lastname: นาคดิลก
+  is_mp: true
+  is_senator: false
+  is_cabinet: false
+  is_active: true
+  party: เศรษฐกิจใหม่
+  party_group: ฝ่ายค้าน
+  mp_type: บัญชีรายชื่อ
+  mp_province: ''
+  mp_zone: ''
+  mp_list: '2'
+  vote: null
+  senator_method: ''
+  cabinet_position: []
+  committee:
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+    - position: ''
+      set: ''
+  gender: หญิง
+  birthdate: '1981-05-28'
+  education: ปริญญาตรี
+  graduation: มหาวิทยาลัยหอการค้าไทย
+  degree: บริหารธุรกิจ
+  ex_occupation:
+    - พนักงานบริษัท
+  occupation_group: เอกชน
+  quotes: ''
+  quotes_url: ''
+  asset: null
+  debt: null
+  facebook: ''
+  twitter: ''
+  bio: ดำรงตำแหน่งส.ส. แทนนายมิ่งขวัญ แสงสุวรรณ์ เมื่อ 21 กุมภาพันธ์ 2565
   en:
     bio: ''
