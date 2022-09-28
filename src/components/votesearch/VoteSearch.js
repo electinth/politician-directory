@@ -1,61 +1,90 @@
-import React from "react"
+import React, { useState } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import "./votesearch.css"
 import search_img from "../../images/icons/search/search.png"
+import { useEffect } from "react"
 
 export default function VoteSearch() {
+  const data = useStaticQuery(graphql`
+    {
+      allVotelogYaml(filter: { is_active: { eq: true } }) {
+        edges {
+          node {
+            title
+            legal_title
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+  const transformedQuery = data.allVotelogYaml.edges.map(e => {
+    const { title, legal_title, fields } = e.node
+
+    return {
+      title,
+      legal_title,
+      slug: fields.slug,
+    }
+  })
+
+  const [filteredQuery, setFilteredQuery] = useState(/*<Query[]>*/ [])
+  const [searchText, setSearchText] = useState(/*<string>*/ "")
+  const handleSearchChange = e => setSearchText(e.target.value)
+
+  useEffect(() => {
+    const formattedSearchText = searchText.trim()
+    if (!formattedSearchText) return
+
+    const filtered = transformedQuery.filter(({ title, legal_title }) => {
+      return (
+        legal_title.includes(formattedSearchText) ||
+        title.includes(formattedSearchText)
+      )
+    })
+
+    setFilteredQuery(filtered)
+  }, [searchText])
+
   return (
-    <div className="votesearch-container">
-      <input
-        className="votesearch-input"
-        type="text"
-        placeholder="พิมพ์ชื่อมติ"
-      />
-      <button className="votesearch-button" type="button">
+    <div className="votesearch-origin">
+      <div className="votesearch-container">
+        <input
+          className="votesearch-input"
+          type="text"
+          placeholder="พิมพ์ชื่อมติ"
+          value={searchText}
+          onChange={handleSearchChange}
+        />
         <img
+          className="votesearch-decor"
           src={search_img}
-          alt="ค้นหา"
+          alt=""
           loading="lazy"
           decoding="async"
           width="15"
           height="15"
+          aria-hidden="true"
         />
-      </button>
-      <ul className="votesearch-result">
-        <li>
-          <span>ไม่มีมติชื่อนี้</span>
-        </li>
-        <li>
-          <a href="/votelog/92">
-            ลงมติไม่ไว้วางใจ นายจุติ ไกรฤกษ์
-            รัฐมนตรีว่าการกระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์
-          </a>
-        </li>
-        <li>
-          <a href="/votelog/92">
-            ลงมติไม่ไว้วางใจ นายจุติ ไกรฤกษ์
-            รัฐมนตรีว่าการกระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์
-          </a>
-        </li>
-        <li>
-          <a href="/votelog/92">
-            ลงมติไม่ไว้วางใจ นายจุติ ไกรฤกษ์
-            รัฐมนตรีว่าการกระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์
-          </a>
-        </li>
-        <li>
-          <a href="/votelog/92">
-            ลงมติไม่ไว้วางใจ นายจุติ ไกรฤกษ์
-            รัฐมนตรีว่าการกระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์
-          </a>
-        </li>
-        <li>
-          <a href="/votelog/92">
-            ลงมติไม่ไว้วางใจ นายจุติ ไกรฤกษ์
-            รัฐมนตรีว่าการกระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์
-          </a>
-        </li>
-      </ul>
+        {searchText && (
+          <ul className="votesearch-result">
+            {filteredQuery.length ? (
+              filteredQuery.map(({ title, slug }) => (
+                <li key={slug}>
+                  <a href={slug}>{title}</a>
+                </li>
+              ))
+            ) : (
+              <li>
+                <span>ไม่มีมติชื่อนี้</span>
+              </li>
+            )}
+          </ul>
+        )}
+      </div>
     </div>
   )
 }

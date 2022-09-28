@@ -1,9 +1,13 @@
+.votesearch-origin {
+  padding: 0 1rem;
+}
+
 .votesearch-container {
   position: relative;
 
   width: 100%;
   max-width: 500px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .votesearch-container > .votesearch-input {
@@ -13,7 +17,7 @@
   color: #000;
   margin: 0;
   padding: 10px;
-  padding-right: 40px;
+  padding-right: 37.5px;
   width: 100%;
 }
 
@@ -21,7 +25,6 @@
   border: 1px solid #272727;
 } */
 
-.votesearch-container > .votesearch-button:focus,
 .votesearch-container > .votesearch-input:focus {
   outline: 0;
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.13);
@@ -32,27 +35,16 @@
   opacity: 1;
 }
 
-.votesearch-container > .votesearch-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-
+.votesearch-container > .votesearch-decor {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12.5px;
   padding: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 40px;
-
-  border-radius: 5px;
-}
-
-.votesearch-container > .votesearch-button > img {
   margin-bottom: 0;
+
+  object-fit: contain;
+  object-position: center;
 }
 
 .votesearch-container > .votesearch-result {
@@ -104,4 +96,34 @@
   display: block;
   color: #fff;
   text-decoration: none;
+}
+
+.votesearch-container > .votesearch-result > li > span {
+  color: #bdbdbd;
+}
+
+.votesearch-container > .votesearch-result > li > a:is(:hover, :focus) {
+  background: #fff;
+  color: #000;
+  outline: 0;
+  border-radius: 1px;
+  box-shadow: -2px 0 0 1px #fff, 2px 0 0 1px #fff;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.votesearch-container
+  > .votesearch-result
+  > li:first-child
+  > a:is(:hover, :focus) {
+  margin: 3px 0 0;
+  padding: 2px 0 5px;
+}
+
+.votesearch-container
+  > .votesearch-result
+  > li:last-child
+  > a:is(:hover, :focus) {
+  margin: 0 0 3px;
+  padding: 5px 0 2px;
 }
