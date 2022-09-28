@@ -5,6 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import VoteLogCard from "../components/voteLogCard"
+import VoteSearch from "../components/votesearch/VoteSearch"
 import { Router } from "@reach/router"
 
 export const query = graphql`
@@ -147,6 +148,7 @@ const VoteLogPage = ({
           >
             สรุปผลการลงมติล่าสุด
           </h1>
+          <VoteSearch />
           <Router>
             {votelogs ? (
               <VoteLogWrapper

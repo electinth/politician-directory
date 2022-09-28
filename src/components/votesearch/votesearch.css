@@ -1,0 +1,107 @@
+.votesearch-container {
+  position: relative;
+
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.votesearch-container > .votesearch-input {
+  background: #fff;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  color: #000;
+  margin: 0;
+  padding: 10px;
+  padding-right: 40px;
+  width: 100%;
+}
+
+/* .votesearch-container > .votesearch-input:focus {
+  border: 1px solid #272727;
+} */
+
+.votesearch-container > .votesearch-button:focus,
+.votesearch-container > .votesearch-input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.13);
+}
+
+.votesearch-container > .votesearch-input::placeholder {
+  color: #bdbdbd;
+  opacity: 1;
+}
+
+.votesearch-container > .votesearch-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 40px;
+
+  border-radius: 5px;
+}
+
+.votesearch-container > .votesearch-button > img {
+  margin-bottom: 0;
+}
+
+.votesearch-container > .votesearch-result {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+
+  background: #000;
+  color: #fff;
+
+  border-radius: 5px;
+
+  list-style: none;
+
+  margin: 0;
+  padding: 5px 10px;
+
+  overflow-y: auto;
+  scrollbar-color: #727272 #262626;
+  scrollbar-width: thin;
+
+  z-index: 1;
+}
+
+.votesearch-container > .votesearch-result::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+}
+
+.votesearch-container > .votesearch-result::-webkit-scrollbar-track {
+  background: #262626;
+  border-radius: 5px;
+}
+
+.votesearch-container > .votesearch-result::-webkit-scrollbar-thumb {
+  background: #727272;
+  border-radius: 5px;
+}
+
+.votesearch-container > .votesearch-result > li:not(:last-child) {
+  border-bottom: 1px #fff solid;
+  margin-bottom: 0;
+}
+
+.votesearch-container > .votesearch-result > li > :is(a, span) {
+  margin: 5px 0;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
