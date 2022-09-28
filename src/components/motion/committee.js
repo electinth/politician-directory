@@ -7,7 +7,6 @@ import Profile from "./profile"
 import { breakpoint } from "./size"
 import styled from "@emotion/styled"
 
-import { split_array } from "../waffle"
 const Waffle = ({ partyMember }) => {
   return (
     <div
@@ -16,7 +15,7 @@ const Waffle = ({ partyMember }) => {
         flex-flow: row wrap;
       `}
     >
-      {split_array(partyMember, 10, (tenth, ti) => (
+      {_.chunk(partyMember, 10).map((tenth, ti) => (
         <div
           key={ti}
           css={css`
@@ -25,7 +24,7 @@ const Waffle = ({ partyMember }) => {
             margin-right: 1px;
           `}
         >
-          {split_array(tenth, 5, (fifth, fi) => (
+          {_.chunk(tenth, 5).map((fifth, fi) => (
             <div
               key={fi}
               css={css`

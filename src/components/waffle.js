@@ -45,13 +45,6 @@ const tooltipTextStyle = {
   backgroundColor: "transparent",
 }
 
-const split_array = (array, size, callback) =>
-  Array(Math.ceil(array.length / size))
-    .fill()
-    .map((_, index) => index * size)
-    .map(start => array.slice(start, start + size))
-    .map(callback)
-
 const WaffleCell = ({ node, cellStyleProps }) => {
   return (
     <div
@@ -170,4 +163,3 @@ const Waffle = ({
 }
 
 export default Waffle
-export { split_array }
