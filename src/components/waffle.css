@@ -12,13 +12,6 @@
   margin: 0 1rem;
 }
 
-.hundred {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  max-width: 140px;
-}
-
 .waffle-group {
   display: flex;
   align-items: flex-start;
@@ -58,13 +51,6 @@
 
   .line {
     margin: 0 2px;
-  }
-
-  .hundred {
-    flex-wrap: nowrap;
-    width: 256px;
-    height: 55px;
-    margin: 0;
   }
 
   .waffle-chunk-container {

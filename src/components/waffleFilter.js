@@ -3,9 +3,49 @@ import React, { Component } from "react"
 import _ from "lodash"
 
 import Dropdown from "../components/dropdown"
-import Waffle from "../components/waffle"
+import { WaffleAligner } from "../components/waffle"
 
 const cssH1 = { fontSize: "4.8rem", marginTop: "4rem" }
+
+const Waffle = ({ data, colors, borderColors }) => {
+  const waffleContainerStyle = {
+    display: "flex",
+  }
+  const waffleAlignerStyle = {
+    gridAutoFlow: "column",
+    gridTemplateRows: "repeat(4,auto)",
+    gridTemplateColumns: "initial",
+    alignContent: "start",
+  }
+
+  return (
+    <div style={waffleContainerStyle}>
+      <WaffleAligner
+        data={data[0]}
+        cellStyleProps={{
+          color: colors[0],
+          borderColor: borderColors[0],
+        }}
+        style={waffleAlignerStyle}
+      />
+      {data[0].length && data[1].length ? (
+        <div key="line" className="line"></div>
+      ) : null}
+      <WaffleAligner
+        data={data[1]}
+        cellStyleProps={{
+          color: colors[1],
+          borderColor: borderColors[1],
+        }}
+        style={{
+          gridAutoFlow: "column",
+          gridTemplateRows: "repeat(4,auto)",
+          gridTemplateColumns: "initial",
+        }}
+      />
+    </div>
+  )
+}
 
 const formatHouse = house => {
   if (house === "ทั้งหมด") {
@@ -108,6 +148,7 @@ class WaffleFilter extends Component {
             ).toFixed(2)}
             %
           </span>
+          &nbsp;
           <span css={{ fontFamily: "var(--ff-text)", fontSize: "2.4rem" }}>
             {`ของ${formatHouse(this.state.currentFilter.house)} ${
               this.state.currentFilter.gender === "ทุกเพศ"
@@ -145,11 +186,11 @@ class WaffleFilter extends Component {
             currentFilter={this.state.currentFilter}
             handleFilter={this.handleFilter}
           />
-          {/* <Waffle
+          <Waffle
             data={[this.state.data_of_interest, this.state.data_the_rest]}
             colors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
             borderColors={[`var(--cl-pink)`, `var(--cl-gray-3)`]}
-          /> */}
+          />
         </div>
       </>
     )

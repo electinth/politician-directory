@@ -8,8 +8,6 @@ import cross from "../images/icons/votelog/vote.png"
 import "../styles/global.css"
 import "./waffle.css"
 
-const COUNT_OF_WAFFLE = 25
-
 let cellStyle = (color, borderColor, isCross = false) => ({
   position: "relative",
   width: 8,
@@ -93,15 +91,15 @@ const WaffleCell = ({ node, cellStyleProps }) => {
   )
 }
 
-const WaffleAligner = ({ data, cellStyleProps }) => {
+export const WaffleAligner = ({ data, cellStyleProps, style }) => {
   const chunks = _.chunk(data, 25)
 
   return (
-    <div className="waffle-chunk-container">
-      {chunks.map(c => (
-        <div className="waffle-chunk">
-          {c.map(({ node }) => (
-            <WaffleCell {...{ node, cellStyleProps }} />
+    <div className="waffle-chunk-container" style={style}>
+      {chunks.map((c, ci) => (
+        <div className="waffle-chunk" key={`wch${ci}`}>
+          {c.map(({ node }, ni) => (
+            <WaffleCell {...{ node, cellStyleProps }} key={`wc${ni}`} />
           ))}
         </div>
       ))}
@@ -147,7 +145,7 @@ const Waffle = ({
       style={style}
     >
       {transformed_data.map((group, group_idx) => (
-        <>
+        <React.Fragment key={group_idx}>
           <div>
             {group.map((party, party_index) => (
               <WaffleGroup
@@ -165,7 +163,7 @@ const Waffle = ({
           {group_idx !== transformed_data.length - 1 && (
             <div key="line" className="line"></div>
           )}
-        </>
+        </React.Fragment>
       ))}
     </div>
   )
