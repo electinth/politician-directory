@@ -1,9 +1,8 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, useMemo } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import "./votesearch.css"
 import search_img from "../../images/icons/search/search.png"
-import { useEffect } from "react"
 
 export default function VoteSearch() {
   const data = useStaticQuery(graphql`
@@ -21,15 +20,19 @@ export default function VoteSearch() {
       }
     }
   `)
-  const transformedQuery = data.allVotelogYaml.edges.map(e => {
-    const { title, legal_title, fields } = e.node
+  const transformedQuery = useMemo(
+    () =>
+      data.allVotelogYaml.edges.map(e => {
+        const { title, legal_title, fields } = e.node
 
-    return {
-      title,
-      legal_title,
-      slug: fields.slug,
-    }
-  })
+        return {
+          title,
+          legal_title,
+          slug: fields.slug,
+        }
+      }),
+    [data]
+  )
 
   const [filteredQuery, setFilteredQuery] = useState(/*<Query[]>*/ [])
   const [searchText, setSearchText] = useState(/*<string>*/ "")
@@ -47,7 +50,7 @@ export default function VoteSearch() {
     })
 
     setFilteredQuery(filtered)
-  }, [searchText])
+  }, [searchText, transformedQuery])
 
   return (
     <div className="votesearch-origin">
