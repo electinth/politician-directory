@@ -2,108 +2,42 @@ import React from "react"
 import styled from "@emotion/styled"
 import { css } from "@emotion/react"
 import _ from "lodash"
-import { split_array } from "../waffle"
-import { device, breakpoint } from "./size"
-import { useState } from "react"
-import { useEffect } from "react"
+import { device } from "./size"
 import Committee from "./committee"
 
-const Waffle = ({ partyMember }) => {
+const VoteWaffle = ({ en, members, color }) => {
+  const chunks = _.chunk(members, 25)
+
   return (
     <div
-      css={css`
-        display: flex;
-        flex-flow: row wrap;
-      `}
+      className="waffle-chunk-container"
+      style={{
+        gridAutoFlow: "column",
+        gridTemplateRows: "repeat(2,auto)",
+        gridTemplateColumns: "initial",
+        alignContent: "start",
+      }}
     >
-      {split_array(partyMember, 10, (tenth, ti) => (
-        <div
-          key={ti}
-          className="tenth"
-          css={css`
-            display: flex;
-            flex-flow: row wrap;
-            margin-right: 1px;
-          `}
-        >
-          {split_array(tenth, 5, (fifth, fi) => (
+      {chunks.map((c, ci) => (
+        <div className="waffle-chunk" key={`wch${ci}`}>
+          {c.map((_, i) => (
             <div
-              key={fi}
-              className="fifth"
+              key={i}
               css={css`
-                display: flex;
-                flex-flow: row nowrap;
+                width: 8px;
+                height: 8px;
+                background-color: ${color};
                 margin-right: 1px;
+                margin-bottom: 1px;
+                border: ${en === "absent" && `1px solid black`};
               `}
-            >
-              {fifth.map((_, i) => (
-                <div
-                  key={i}
-                  css={css`
-                    width: 8px;
-                    height: 8px;
-                    background-color: var(--cl-gray-3);
-                    margin-right: 1px;
-                    margin-bottom: 1px;
-                  `}
-                ></div>
-              ))}
-            </div>
+            ></div>
           ))}
         </div>
       ))}
     </div>
   )
 }
-
-const VoteWaffle = ({ en, members, color }) => (
-  <div
-    css={css`
-      display: flex;
-      flex-flow: row wrap;
-    `}
-  >
-    {split_array(members, 100, (hundred, hi) => (
-      <div
-        key={hi}
-        css={css`
-          display: flex;
-          flex-flow: row wrap;
-          margin-right: 2px;
-          width: 92px;
-          align-items: flex-start;
-        `}
-      >
-        {split_array(hundred, 25, (quarter, qi) => (
-          <div
-            key={qi}
-            css={css`
-              display: flex;
-              flex-flow: row wrap;
-              width: 45px;
-              margin-right: 1px;
-              margin-bottom: 1px;
-            `}
-          >
-            {quarter.map((_, i) => (
-              <div
-                key={i}
-                css={css`
-                  width: 8px;
-                  height: 8px;
-                  background-color: ${color};
-                  margin-right: 1px;
-                  margin-bottom: 1px;
-                  border: ${en === "absent" && `1px solid black`};
-                `}
-              ></div>
-            ))}
-          </div>
-        ))}
-      </div>
-    ))}
-  </div>
-)
 
 const Card = styled.div`
   background-color: rgb(250, 250, 250);
@@ -321,4 +255,3 @@ const MotionResult = styled(Motionresult)`
 `
 
 export default MotionResult
-export { Waffle }
