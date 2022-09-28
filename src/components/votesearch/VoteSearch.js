@@ -39,15 +39,13 @@ export default function VoteSearch() {
   const handleSearchChange = e => setSearchText(e.target.value)
 
   useEffect(() => {
-    const formattedSearchText = searchText.trim()
-    if (!formattedSearchText) return
+    const trimmedSearchText = searchText.trim()
+    if (!trimmedSearchText) return
+    const searchRegExp = new RegExp(trimmedSearchText.replace(/\s+/g, "|"), "g")
 
-    const filtered = transformedQuery.filter(({ title, legal_title }) => {
-      return (
-        legal_title.includes(formattedSearchText) ||
-        title.includes(formattedSearchText)
-      )
-    })
+    const filtered = transformedQuery.filter(({ title, legal_title }) =>
+      searchRegExp.test(title + legal_title)
+    )
 
     setFilteredQuery(filtered)
   }, [searchText, transformedQuery])
