@@ -620,7 +620,7 @@ const ScoreViz = props => {
               tooltip.name
             }-${tooltip.lastname.replace(/ /g, "-")}`}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer nofollow noopener"
             css={{ display: "flex", alignItems: "center" }}
           >
             ดูโปรไฟล์
