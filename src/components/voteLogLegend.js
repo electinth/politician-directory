@@ -44,6 +44,7 @@ const cssLegendWrap = ({ missing, type }) => ({
   alignItems: missing ? "center" : "none",
   fontSize: missing ? (type === "group" ? "1rem" : "1rem") : "unset",
   marginTop: "0.6rem",
+  whiteSpace: "nowrap",
   [media(767)]: {
     fontSize: missing ? (type === "group" ? "1rem" : "1.4rem") : "unset",
     marginTop: "0",
@@ -111,7 +112,7 @@ const VoteLogLegend = ({
           )
         ) : (
           <>
-            เห็นด้วย <b> {approve}</b>
+            เห็นด้วย <b>{approve}</b>
           </>
         )}
       </span>
@@ -139,7 +140,7 @@ const VoteLogLegend = ({
           )
         ) : (
           <>
-            ไม่เห็นด้วย <b> {disprove}</b>
+            ไม่เห็นด้วย <b>{disprove}</b>
           </>
         )}
       </span>
@@ -171,7 +172,7 @@ const VoteLogLegend = ({
           )
         ) : (
           <>
-            งดออกเสียง <b> {abstained}</b>
+            งดออกเสียง <b>{abstained}</b>
           </>
         )}
       </span>
@@ -203,7 +204,7 @@ const VoteLogLegend = ({
           )
         ) : (
           <>
-            ไม่ลงคะแนน <b> {absent}</b>
+            ไม่ลงคะแนน <b>{absent}</b>
           </>
         )}
       </span>
@@ -232,7 +233,7 @@ const VoteLogLegend = ({
           )
         ) : (
           <>
-            ไม่เข้าประชุม <b> {special}</b>
+            ไม่เข้าประชุม <b>{special}</b>
           </>
         )}
       </span>
