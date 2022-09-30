@@ -344,7 +344,7 @@ const AutoComplete = ({
     <div>
       <button
         type="button"
-        aria-label="เคลียร์"
+        aria-label="ลบทั้งหมด"
         css={cssClearIcon}
         onClick={clearInput}
       />
