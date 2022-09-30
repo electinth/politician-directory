@@ -128,6 +128,7 @@ const VoteResultsHeader = ({
           </div>
           <div css={cssDesktop}>
             <button
+              type="button"
               css={cssBtn({ active: viewPerson })}
               style={{
                 marginRight: "5px",
@@ -137,6 +138,7 @@ const VoteResultsHeader = ({
               ดูรายคน
             </button>
             <button
+              type="button"
               css={cssBtn({ active: viewGroup })}
               onClick={clickBtnViewGroup}
             >
@@ -157,12 +159,14 @@ const VoteResultsHeader = ({
       </div>
       <div css={cssMobile}>
         <button
+          type="button"
           css={cssBtn({ active: viewPerson })}
           onClick={clickBtnViewPerson}
         >
           ดูรายคน
         </button>
         <button
+          type="button"
           css={cssBtn({ active: viewGroup })}
           onClick={clickBtnViewGroup}
           style={{ marginBottom: "25px" }}

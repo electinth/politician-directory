@@ -83,11 +83,15 @@ const SenateNavbar = () => {
         </div>
         <div>
           <Link to={"/senate/score"} onClick={() => selected("score")}>
-            <button css={cssBtn({ active: score })}>คะแนนจิตพิสัย ส.ว.</button>
+            <button type="button" css={cssBtn({ active: score })}>
+              คะแนนจิตพิสัย ส.ว.
+            </button>
           </Link>
 
           <Link to={"/senate/votelog"} onClick={() => selected("votelog")}>
-            <button css={cssBtn({ active: votelog })}>ผลการลงมติ</button>
+            <button type="button" css={cssBtn({ active: votelog })}>
+              ผลการลงมติ
+            </button>
           </Link>
         </div>
       </div>

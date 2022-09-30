@@ -142,7 +142,11 @@ const Committee = ({ members }) => {
             })}
         </div>
       </div>
-      <Button hidden={showAll} onClick={() => setShowAll(prev => !prev)}>
+      <Button
+        type="button"
+        hidden={showAll}
+        onClick={() => setShowAll(prev => !prev)}
+      >
         + แสดงทั้งหมด
       </Button>
     </div>

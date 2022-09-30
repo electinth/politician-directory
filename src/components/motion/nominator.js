@@ -100,6 +100,7 @@ const NominatorMenu = ({ purposers, n_seconders }) => {
     >
       <Profile {...purposers[0]} />
       <button
+        type="button"
         onClick={() => setMenu(MenuChoice.nominator)}
         css={css`
           border: none;

@@ -169,7 +169,12 @@ const VoteInfoPopup = ({
     <div>
       {popupState && (
         <div css={cssPopupContainer} className="cssPopupScrollbar">
-          <button onClick={handleClose} css={cssCloseBtn} aria-label="ปิด" />
+          <button
+            type="button"
+            onClick={handleClose}
+            css={cssCloseBtn}
+            aria-label="ปิด"
+          />
 
           <section css={cssHeader}>
             <div>ประชุม ส.ว.</div>

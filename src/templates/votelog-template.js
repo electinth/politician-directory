@@ -365,6 +365,7 @@ const VotelogPage = ({
               }
               text-align: left;
             `}
+            type="button"
           >
             {votelogYaml.document
               .filter(doc => doc.link)

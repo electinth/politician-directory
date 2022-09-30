@@ -256,6 +256,7 @@ class DropDown extends Component {
         <ul className="current-filter-list" css={{ margin: 0 }}>
           <li ref={this.container} className="css-dropdown">
             <button
+              type="button"
               onClick={() => this.setState({ show: !this.state.show })}
               className="currentFilter"
             >
@@ -294,7 +295,10 @@ class DropDown extends Component {
             </button>
             {this.state.show ? (
               <div className="menuItems">
-                <button onClick={e => this.handleFilter(e, this.props.filter)}>
+                <button
+                  type="button"
+                  onClick={e => this.handleFilter(e, this.props.filter)}
+                >
                   {this.state.is_senate && !this.state.is_mobile ? (
                     <div>
                       <GatsbyImage
@@ -313,6 +317,7 @@ class DropDown extends Component {
                 </button>
                 {this.props.choices.others.map((choice, i) => (
                   <button
+                    type="button"
                     onClick={e => this.handleFilter(e, this.props.filter)}
                   >
                     {this.state.is_senate && !this.state.is_mobile ? (

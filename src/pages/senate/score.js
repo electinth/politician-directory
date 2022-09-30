@@ -262,6 +262,7 @@ const Motion = ({ data }) => {
               <b>เลือกดูตามประเภท ส.ว.</b>
               <div css={{ ...cssButtonCon }}>
                 <button
+                  type="button"
                   css={{
                     ...cssFilterBtn,
                     border:
@@ -272,7 +273,6 @@ const Motion = ({ data }) => {
                   onClick={() => handleFilterClick("โดยตำแหน่ง")}
                   role="switch"
                   aria-checked={filter === "โดยตำแหน่ง"}
-                  type="button"
                 >
                   <div css={{ ...cssCircle, background: "#999C00" }} />
                   <span css={{ ...cssType }}>โดยตำแหน่ง</span>

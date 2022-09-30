@@ -227,6 +227,7 @@ const MotionPage = props => {
                 `}
                 aria-label="ปิดเมนู"
                 onClick={() => setMenu(null)}
+                type="button"
               ></button>
             </div>
           )}
