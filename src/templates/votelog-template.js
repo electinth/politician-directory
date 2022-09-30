@@ -210,43 +210,50 @@ const VotelogPage = ({
               {votelogYaml.legal_title}
             </p>
           </div>
-          <span>
-            สถานะ{" "}
-            {passed ? (
-              <span
-                css={css`
-                  color: var(--cl-vote-yes);
-                `}
-              >
+          <div
+            css={{
+              [media(767)]: {
+                display: "flex",
+                justifyContent: "space-between",
+              },
+            }}
+          >
+            <span>
+              สถานะ{" "}
+              {passed ? (
                 <span
-                  className="dot"
-                  css={{
-                    backgroundColor: "var(--cl-vote-yes)",
-                  }}
-                ></span>
-                ผ่าน
-              </span>
-            ) : (
-              <span
-                css={css`
-                  color: var(--cl-vote-no);
-                `}
-              >
+                  css={css`
+                    color: var(--cl-vote-yes);
+                  `}
+                >
+                  <span
+                    className="dot"
+                    css={{
+                      backgroundColor: "var(--cl-vote-yes)",
+                    }}
+                  ></span>
+                  ผ่าน
+                </span>
+              ) : (
                 <span
-                  className="dot"
-                  css={{
-                    backgroundColor: "var(--cl-vote-no)",
-                  }}
-                ></span>
-                ไม่ผ่าน
-              </span>
-            )}
+                  css={css`
+                    color: var(--cl-vote-no);
+                  `}
+                >
+                  <span
+                    className="dot"
+                    css={{
+                      backgroundColor: "var(--cl-vote-no)",
+                    }}
+                  ></span>
+                  ไม่ผ่าน
+                </span>
+              )}
+            </span>
+
             <span
               css={{
                 display: "block",
-                [media(767)]: {
-                  float: "right",
-                },
               }}
             >
               ผู้เข้าร่วมประชุม {total_voter} คน
@@ -259,7 +266,7 @@ const VotelogPage = ({
               </span>{" "}
               คน
             </span>
-          </span>
+          </div>
         </section>
         <section
           css={{
