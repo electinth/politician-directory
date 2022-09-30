@@ -38,7 +38,8 @@ ul {
 }
 
 .wv_navbar__logo__wevis svg {
-  height: 100%;
+  height: 35px;
+  width: auto;
 }
 
 .wv_footer__logo svg {
