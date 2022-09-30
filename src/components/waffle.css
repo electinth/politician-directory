@@ -1,7 +1,7 @@
 .waffle {
   display: flex;
   flex-wrap: wrap;
-  width: 950px;
+  width: 100%;
   align-items: flex-start;
 }
 
@@ -40,20 +40,36 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-content: start;
-  width: min-content;
 }
 
-@media only screen and (max-width: 950px) {
-  .waffle {
-    max-width: 348px !important;
-    width: 348px;
-  }
-
+@media only screen and (max-width: 900px) {
   .line {
-    margin: 0 2px;
+    margin: 0 0.5rem;
   }
 
   .waffle-chunk-container {
     grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .waffle {
+    flex-direction: column;
+  }
+
+  .line {
+    width: auto;
+    height: 2px;
+    margin: 1rem 0;
+  }
+
+  .waffle-chunk-container {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .waffle-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
   }
 }

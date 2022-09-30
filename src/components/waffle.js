@@ -139,7 +139,7 @@ const Waffle = ({
     >
       {transformed_data.map((group, group_idx) => (
         <React.Fragment key={group_idx}>
-          <div>
+          <div className="waffle-column">
             {group.map((party, party_index) => (
               <WaffleGroup
                 key={`${group_idx}-${party_index}`}
