@@ -45,6 +45,8 @@
 
   object-fit: contain;
   object-position: center;
+
+  pointer-events: none;
 }
 
 .votesearch-container > .votesearch-result {
