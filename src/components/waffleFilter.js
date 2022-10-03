@@ -28,9 +28,7 @@ const Waffle = ({ data, colors, borderColors }) => {
         }}
         style={waffleAlignerStyle}
       />
-      {data[0].length && data[1].length ? (
-        <div key="line" className="line"></div>
-      ) : null}
+      {!!(data[0].length && data[1].length) && <div className="line" />}
       <WaffleAligner
         data={data[1]}
         cellStyleProps={{

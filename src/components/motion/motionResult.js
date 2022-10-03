@@ -5,8 +5,10 @@ import _ from "lodash"
 import { device } from "./size"
 import Committee from "./committee"
 
+const COUNT_OF_WAFFLE = 25
+
 const VoteWaffle = ({ en, members, color }) => {
-  const chunks = _.chunk(members, 25)
+  const chunks = _.chunk(members, COUNT_OF_WAFFLE)
 
   return (
     <div
@@ -18,11 +20,11 @@ const VoteWaffle = ({ en, members, color }) => {
         alignContent: "start",
       }}
     >
-      {chunks.map((c, ci) => (
-        <div className="waffle-chunk" key={`wch${ci}`}>
-          {c.map((_, i) => (
+      {chunks.map((chunk, chunkIdx) => (
+        <div className="waffle-chunk" key={`wch${chunkIdx}`}>
+          {chunk.map((_, idx) => (
             <div
-              key={i}
+              key={idx}
               css={css`
                 width: 8px;
                 height: 8px;
@@ -31,7 +33,7 @@ const VoteWaffle = ({ en, members, color }) => {
                 margin-bottom: 1px;
                 border: ${en === "absent" && `1px solid black`};
               `}
-            ></div>
+            />
           ))}
         </div>
       ))}

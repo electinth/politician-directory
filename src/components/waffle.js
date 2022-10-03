@@ -1,5 +1,5 @@
 import React from "react"
-import _ from "lodash"
+import { chunk, groupBy } from "lodash"
 import PeopleCard from "./peopleCard"
 import PartyLogo from "./partyLogo"
 
@@ -7,6 +7,8 @@ import cross from "../images/icons/votelog/cross.png"
 
 import "../styles/global.css"
 import "./waffle.css"
+
+const COUNT_OF_WAFFLE = 25
 
 let cellStyle = (color, borderColor, isCross = false) => ({
   position: "relative",
@@ -85,14 +87,14 @@ const WaffleCell = ({ node, cellStyleProps }) => {
 }
 
 export const WaffleAligner = ({ data, cellStyleProps, style }) => {
-  const chunks = _.chunk(data, 25)
+  const chunks = chunk(data, COUNT_OF_WAFFLE)
 
   return (
     <div className="waffle-chunk-container" style={style}>
-      {chunks.map((c, ci) => (
-        <div className="waffle-chunk" key={`wch${ci}`}>
-          {c.map(({ node }, ni) => (
-            <WaffleCell {...{ node, cellStyleProps }} key={`wc${ni}`} />
+      {chunks.map((chunk, chunkIdx) => (
+        <div className="waffle-chunk" key={`wch${chunkIdx}`}>
+          {chunk.map(({ node }, nodeIdx) => (
+            <WaffleCell {...{ node, cellStyleProps }} key={`wc${nodeIdx}`} />
           ))}
         </div>
       ))}
@@ -117,15 +119,14 @@ const Waffle = ({
   css,
   crossLast = false,
 }) => {
-  const transformed_data = data.map(type => {
-    const groupped_obj = _.groupBy(type, ({ node }) => node.party)
-    const groupped_arr = Object.keys(groupped_obj).map(key => ({
-      name: key,
-      length: groupped_obj[key].length,
-      data: groupped_obj[key],
-    }))
-    const sorted_by_len_arr = groupped_arr.sort((a, z) => z.length - a.length)
-    return sorted_by_len_arr
+  const peopleGrouppedByParty = data.map(type => {
+    const groupByParty = groupBy(type, ({ node }) => node.party)
+    return Object.entries(groupByParty)
+      .map(([partyName, data]) => ({
+        name: partyName,
+        data,
+      }))
+      .sort((a, z) => z.data.length - a.data.length)
   })
 
   return (
@@ -137,24 +138,24 @@ const Waffle = ({
       }}
       style={style}
     >
-      {transformed_data.map((group, group_idx) => (
-        <React.Fragment key={group_idx}>
+      {peopleGrouppedByParty.map((group, groupIdx) => (
+        <React.Fragment key={groupIdx}>
           <div className="waffle-column">
-            {group.map((party, party_index) => (
+            {group.map((party, partyIdx) => (
               <WaffleGroup
-                key={`${group_idx}-${party_index}`}
+                key={`${groupIdx}-${partyIdx}`}
                 party={party}
                 cellStyleProps={{
-                  color: colors[group_idx],
-                  borderColor: borderColors[group_idx],
+                  color: colors[groupIdx],
+                  borderColor: borderColors[groupIdx],
                   isCross:
-                    crossLast && group_idx === transformed_data.length - 1,
+                    crossLast && groupIdx === peopleGrouppedByParty.length - 1,
                 }}
               />
             ))}
           </div>
-          {group_idx !== transformed_data.length - 1 && (
-            <div key="line" className="line"></div>
+          {groupIdx !== peopleGrouppedByParty.length - 1 && (
+            <div className="line" />
           )}
         </React.Fragment>
       ))}

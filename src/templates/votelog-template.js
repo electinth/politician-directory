@@ -132,8 +132,6 @@ const VotelogPage = ({
   const absent = filterVote(combined, votelogYaml.id, "4")
   const special = filterVote(combined, votelogYaml.id, "")
 
-  //console.log(approveGroup)
-
   return (
     <Layout
       pageStyles={{
