@@ -3325,6 +3325,12 @@
 - q: ลงมติเลือกนายกรัฐมนตรี
   type: votelog
   url: /votelog/
+- q: พ.ร.บ. เหรียญรัตนาภรณ์ รัชกาลที่ 10 (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: พ.ร.บ. เหรียญราชรุจิ รัชกาลที่ 10 (วาระ 3)
+  type: votelog
+  url: /votelog/
 - q: ตั้งคณะกรรมาธิการผู้มีความหลากหลายทางเพศ
   type: votelog
   url: /votelog/1
@@ -3343,6 +3349,12 @@
 - q: พ.ร.บ.งบประมาณฯ 2563 (วาระ 1)
   type: votelog
   url: /votelog/6
+- q: พ.ร.บ. งบประมาณ 2563 (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: อนุมัติ พรก.
+  type: votelog
+  url: /votelog/
 - q: ตั้ง กมธ. วิสามัญ ศึกษาโครงการผันน้ำ โขง เลย ชี มูล ป่าสัก
   type: votelog
   url: /votelog/7
@@ -3360,17 +3372,81 @@
 - q: ตั้ง กมธ. วิสามัญ ตรวจสอบโครงการก่อสร้างอาคารรัฐสภาแห่งใหม่
   type: votelog
   url: /votelog/11
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: พ.ร.บ. งบประมาณ 2563 (วาระ 3) รอบที่ 1
+  type: votelog
+  url: /votelog/
 - q: ตั้ง กมธ.วิสามัญศึกษาโครงการจัดตั้งกระทรวงการข้าว
   type: votelog
   url: /votelog/12
+- q: พ.ร.บ. งบประมาณ 2563 (วาระ 3) รอบที่ 2
+  type: votelog
+  url: /votelog/
 - q: ตั้ง กมธ. วิสามัญ ศึกษาแนวทางป้องกันไม่ให้เกิดการรัฐประหารขึ้นอีกในอนาคต
   type: votelog
   url: /votelog/13
-- q: >-
-    พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
-    1)
+- q: (วาระ 1)
   type: votelog
-  url: /votelog/14
+  url: /votelog/
+- q: อนุมัติ พรก.
+  type: votelog
+  url: /votelog/
+- q: อนุมัติ พรก.
+  type: votelog
+  url: /votelog/
+- q: อนุมัติ พรก.
+  type: votelog
+  url: /votelog/
+- q: อนุมัติ พรก.
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: พ.ร.บ. งบประมาณ 2564 (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: ''
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: พ.ร.บ. งบประมาณ 2564 (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
 - q: >-
     พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
     2)
@@ -3378,9 +3454,9 @@
   url: /votelog/15
 - q: >-
     พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
-    3)
+    1)
   type: votelog
-  url: /votelog/16
+  url: /votelog/14
 - q: >-
     พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
     4)
@@ -3388,22 +3464,93 @@
   url: /votelog/17
 - q: >-
     พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
-    5)
-  type: votelog
-  url: /votelog/18
-- q: >-
-    พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
     6)
   type: votelog
   url: /votelog/19
 - q: >-
     พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
+    3)
+  type: votelog
+  url: /votelog/16
+- q: >-
+    พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
+    5)
+  type: votelog
+  url: /votelog/18
+- q: >-
+    พิจารณารับหลักการ หรือไม่รับหลักการร่างแก้ไขรัฐธรรมนูญจำนวน 7 ฉบับ (ฉบับที่
     7)
   type: votelog
   url: /votelog/20
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
 - q: ขอให้ศาลรัฐธรรมนูญพิจารณาเกี่ยวกับหน้าที่และอำนาจของรัฐสภาตามรัฐธรรมนูญ
   type: votelog
   url: /votelog/21
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
 - q: >-
     อภิปรายไม่ไว้วางใจรัฐมนตรีรายบุคคล พลเอกประยุทธ์ จันทร์โอชา นายกรัฐมนตรี
     และรัฐมนตรีว่าการกระทรวงกลาโหม
@@ -3452,84 +3599,147 @@
     รัฐมนตรีช่วยว่าการเกษตรและสหกรณ์
   type: votelog
   url: /votelog/31
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
 - q: พิจารณาแก้ไขเพิ่มเติมร่าง ร.ธ.น. (แก้ไขเพิ่มเติมมาตรา 256 และเพิ่มหมวด 15/1)
   type: votelog
   url: /votelog/32
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: อนุมัติ พรก.
+  type: votelog
+  url: /votelog/
+- q: อนุมัติ พรก.
+  type: votelog
+  url: /votelog/
+- q: พ.ร.บ. งบประมาณ 2565 (วาระ 1)
+  type: votelog
+  url: /votelog/
 - q: โหวตพ.ร.ก.เงินกู้ เพิ่มเติม 2564
   type: votelog
   url: /votelog/33
-- q: >-
-    ร่างพรรคพลังประชารัฐ เพิ่มสิทธิในกระบวนการยุติธรรม
-    แก้ระบบเลือกตั้งเป็นบัตรสองใบคล้ายแบบรัฐธรรมนูญ 2540 ลดกลไกปราบทุจริต
+- q: อนุมัติ พรก.
   type: votelog
-  url: /votelog/34
-- q: ร่างพรรคเพื่อไทย ฉบับที่ 1 เพิ่มสิทธิเสรีภาพของประชาชน
+  url: /votelog/
+- q: (วาระ 3)
   type: votelog
-  url: /votelog/35
-- q: ร่างพรรคเพื่อไทย ฉบับที่ 2 แก้ระบบเลือกตั้งเป็นบัตรสองใบแบบรัฐธรรมนูญ 2540
+  url: /votelog/
+- q: (วาระ 3)
   type: votelog
-  url: /votelog/36
-- q: >-
-    ร่างพรรคเพื่อไทย ฉบับที่ 3
-    แก้เรื่องที่มานายกรัฐมนตรีและยกเลิกอำนาจส.ว.ในการเลือกนายกรัฐมนตรี
+  url: /votelog/
+- q: (วาระ 3)
   type: votelog
-  url: /votelog/37
-- q: >-
-    ร่างพรรคเพื่อไทย ฉบับที่ 4 ยกเลิกแผนยุทธศาสตร์ชาติ 20 ปีและยกเลิกอำนาจ
-    ส.ว.บางประการ
+  url: /votelog/
+- q: (วาระ 3)
   type: votelog
-  url: /votelog/38
-- q: ร่างพรรคภูมิใจไทย ฉบับที่ 1 แก้ไขแผนยุทธศาสตร์ชาติ
-  type: votelog
-  url: /votelog/39
-- q: ร่างพรรคภูมิใจไทย ฉบับที่ 2 เสนอหลักประกันรายได้ถ้วนหน้า (UBI)
-  type: votelog
-  url: /votelog/40
-- q: >-
-    ร่างพรรคประชาธิปัตย์ ฉบับที่ 1 เพิ่มสิทธิในกระบวนการยุติธรรม สิทธิชุมชน
-    สิทธิผู้บริโภค
-  type: votelog
-  url: /votelog/41
-- q: ร่างพรรคประชาธิปัตย์ ฉบับที่ 2 ตัดอำนาจ ส.ว. ในการแก้รัฐธรรมนูญ
-  type: votelog
-  url: /votelog/42
-- q: ร่างพรรคประชาธิปัตย์ ฉบับที่ 3 กระบวนการตรวจสอบ ป.ป.ช.
-  type: votelog
-  url: /votelog/43
+  url: /votelog/
 - q: >-
     ร่างพรรคประชาธิปัตย์ ฉบับที่ 4
     แก้เรื่องที่มานายกรัฐมนตรีและยกเลิกอำนาจส.ว.ในการเลือกนายกรัฐมนตรี
   type: votelog
   url: /votelog/44
+- q: >-
+    ร่างพรรคเพื่อไทย ฉบับที่ 3
+    แก้เรื่องที่มานายกรัฐมนตรีและยกเลิกอำนาจส.ว.ในการเลือกนายกรัฐมนตรี
+  type: votelog
+  url: /votelog/37
+- q: ร่างพรรคประชาธิปัตย์ ฉบับที่ 3 กระบวนการตรวจสอบ ป.ป.ช.
+  type: votelog
+  url: /votelog/43
+- q: ร่างพรรคประชาธิปัตย์ ฉบับที่ 2 ตัดอำนาจ ส.ว. ในการแก้รัฐธรรมนูญ
+  type: votelog
+  url: /votelog/42
+- q: ร่างพรรคเพื่อไทย ฉบับที่ 1 เพิ่มสิทธิเสรีภาพของประชาชน
+  type: votelog
+  url: /votelog/35
+- q: >-
+    ร่างพรรคประชาธิปัตย์ ฉบับที่ 1 เพิ่มสิทธิในกระบวนการยุติธรรม สิทธิชุมชน
+    สิทธิผู้บริโภค
+  type: votelog
+  url: /votelog/41
+- q: ร่างพรรคภูมิใจไทย ฉบับที่ 1 แก้ไขแผนยุทธศาสตร์ชาติ
+  type: votelog
+  url: /votelog/39
 - q: ร่างพรรคประชาธิปัตย์ ฉบับที่ 5 ประเด็นกระจายอำนาจสู่ท้องถิ่น
   type: votelog
   url: /votelog/45
+- q: ร่างพรรคเพื่อไทย ฉบับที่ 2 แก้ระบบเลือกตั้งเป็นบัตรสองใบแบบรัฐธรรมนูญ 2540
+  type: votelog
+  url: /votelog/36
 - q: >-
     ร่างพรรคประชาธิปัตย์ ฉบับที่ 6 แก้ระบบเลือกตั้งเป็นบัตรสองใบแบบรัฐธรรมนูญ
     2540
   type: votelog
   url: /votelog/46
-- q: อภิปรายไม่ไว้วางใจพลเอกประยุทธ์ จันทรโอชา 2564
+- q: >-
+    ร่างพรรคพลังประชารัฐ เพิ่มสิทธิในกระบวนการยุติธรรม
+    แก้ระบบเลือกตั้งเป็นบัตรสองใบคล้ายแบบรัฐธรรมนูญ 2540 ลดกลไกปราบทุจริต
   type: votelog
-  url: /votelog/47
-- q: อภิปรายไม่ไว้วางใจอนุทิน ชาญวีรกูล 2564
+  url: /votelog/34
+- q: ร่างพรรคภูมิใจไทย ฉบับที่ 2 เสนอหลักประกันรายได้ถ้วนหน้า (UBI)
   type: votelog
-  url: /votelog/48
-- q: อภิปรายไม่ไว้วางใจสุชาติ ชมกลิ่น 2564
+  url: /votelog/40
+- q: >-
+    ร่างพรรคเพื่อไทย ฉบับที่ 4 ยกเลิกแผนยุทธศาสตร์ชาติ 20 ปีและยกเลิกอำนาจ
+    ส.ว.บางประการ
   type: votelog
-  url: /votelog/49
-- q: อภิปรายไม่ไว้วางใจศักดิ์สยาม ชิดชอบ 2564
+  url: /votelog/38
+- q: (วาระ 1)
   type: votelog
-  url: /votelog/50
+  url: /votelog/
+- q: ร่างพ.ร.บ.พืชกระท่อม (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: พ.ร.บ. งบประมาณ 2565 (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
 - q: อภิปรายไม่ไว้วางใจเฉลิมชัย ศรีอ่อน 2564
   type: votelog
   url: /votelog/51
 - q: อภิปรายไม่ไว้วางใจชัยวุฒิ ธนาคมมานุสรณ์ 2564
   type: votelog
   url: /votelog/52
+- q: อภิปรายไม่ไว้วางใจศักดิ์สยาม ชิดชอบ 2564
+  type: votelog
+  url: /votelog/50
+- q: อภิปรายไม่ไว้วางใจสุชาติ ชมกลิ่น 2564
+  type: votelog
+  url: /votelog/49
+- q: อภิปรายไม่ไว้วางใจอนุทิน ชาญวีรกูล 2564
+  type: votelog
+  url: /votelog/48
+- q: อภิปรายไม่ไว้วางใจพลเอกประยุทธ์ จันทรโอชา 2564
+  type: votelog
+  url: /votelog/47
 - q: ร่างพ.ร.บ.พืชกระท่อม
   type: votelog
   url: /votelog/53
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
 - q: ร่างพ.ร.บ.ลิขสิทธิ์
   type: votelog
   url: /votelog/54
@@ -3542,78 +3752,184 @@
 - q: ร่างพ.ร.บ. คุ้มครองพยานในคดีอาญา
   type: votelog
   url: /votelog/57
-- q: ร่างแก้ไขรัฐธรรมนูญ (ฉบับประชาชน - Resolution)
+- q: (วาระ 1)
   type: votelog
-  url: /votelog/58
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
 - q: ร่าง พ.ร.บ. ฟอกเงิน
   type: votelog
   url: /votelog/59
-- q: ร่าง พ.ร.บ. ปลดอาวุธ คสช. (ฉบับประชาชน)
+- q: ร่างแก้ไขรัฐธรรมนูญ (ฉบับประชาชน - Resolution)
   type: votelog
-  url: /votelog/60
+  url: /votelog/58
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: ร่าง พ.ร.บ. วิธีการงบประมาณ (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: ร่าง พ.ร.บ. สหกรณ์ (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
 - q: ร่าง พ.ร.บ. ปลดอาวุธ คสช.
   type: votelog
   url: /votelog/61
+- q: ร่าง พ.ร.บ. ปลดอาวุธ คสช. (ฉบับประชาชน)
+  type: votelog
+  url: /votelog/60
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (ถอนร่าง)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: อนุมัติ พรก.
+  type: votelog
+  url: /votelog/
+- q: อนุมัติ พรก.
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
 - q: ร่าง พ.ร.บ. กยศ. ((วาระ 1))
   type: votelog
   url: /votelog/62
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: ร่าง พ.ร.บ. คุ้มครองแรงงาน ((วาระ 1))
+  type: votelog
+  url: /votelog/65
 - q: ร่าง พ.ร.บ. จราจรทางบก
   type: votelog
   url: /votelog/63
 - q: ร่าง พ.ร.บ. ป้องกันการกระทำความผิดซ้ำฯ ((วาระ 1))
   type: votelog
   url: /votelog/64
-- q: ร่าง พ.ร.บ. คุ้มครองแรงงาน ((วาระ 1))
-  type: votelog
-  url: /votelog/65
 - q: รายงานศึกษาขุดคลองไทย
   type: votelog
   url: /votelog/66
-- q: ร่าง พ.ร.บ.สุราก้าวหน้า (โหวตให้ ครม. รับไปพิจารณาก่อนรับหลักการ)
+- q: ร่าง พ.ร.บ. เวลาดำเนินงานในกระบวนการยุติธรรม (วาระ 1)
   type: votelog
-  url: /votelog/67
+  url: /votelog/
+- q: ร่าง พ.ร.บ. การปรับเป็นพินัย (วาระ 1)
+  type: votelog
+  url: /votelog/
 - q: ร่าง พ.ร.บ. ฉุกเฉิน (โหวตให้ ครม. รับไปพิจารณาก่อนรับหลักการ)
   type: votelog
   url: /votelog/68
-- q: แก้ พ.ร.บ.ธนาคารแห่งประเทศไทย (โหวตให้ ครม. รับไปพิจารณาก่อนรับหลักการ)
-  type: votelog
-  url: /votelog/69
 - q: >-
     ร่าง พ.ร.บ. แพ่งและพาณิชย์ (สมรสเท่าเทียม) (โหวตให้ ครม.
     รับไปพิจารณาก่อนรับหลักการ)
   type: votelog
   url: /votelog/70
-- q: ''
+- q: (วาระ 1)
   type: votelog
   url: /votelog/
-- q: ''
+- q: แก้ พ.ร.บ.ธนาคารแห่งประเทศไทย (โหวตให้ ครม. รับไปพิจารณาก่อนรับหลักการ)
+  type: votelog
+  url: /votelog/69
+- q: ร่าง พ.ร.บ.สุราก้าวหน้า (โหวตให้ ครม. รับไปพิจารณาก่อนรับหลักการ)
+  type: votelog
+  url: /votelog/67
+- q: (วาระ 1)
   type: votelog
   url: /votelog/
-- q: ''
+- q: ร่าง พ.ร.บ. ป้องกันและปราบปรามการทรมานและบุคคลสูญหาย (วาระ 3)
   type: votelog
   url: /votelog/
-- q: ''
+- q: ร่าง พ.ร.บ. ป้องกันการกระทำความผิดซ้ำเกี่ยวกับเพศหรือความรุนแรง (วาระ 3)
   type: votelog
   url: /votelog/
-- q: ''
+- q: '- วาระที่ 1 คณะรัฐมนตรี เป็นผู้เสนอ (ผลการลงมติ)'
   type: votelog
   url: /votelog/
-- q: ''
+- q: '- วาระที่ 1 นายชลน่าน ศรีแก้ว กับคณะ เป็นผู้เสนอ (ผลการลงมติ)'
   type: votelog
   url: /votelog/
-- q: ''
+- q: '- วาระที่ 1 นายวิเชียร ชวลิต กับคณะ เป็นผู้เสนอ (ผลการลงมติ)'
   type: votelog
   url: /votelog/
-- q: ''
+- q: '- วาระที่ 1 นายพิธา ลิ้มเจริญรัตน์ กับคณะ เป็นผู้เสนอ (ผลการลงมติ)'
   type: votelog
   url: /votelog/
-- q: ''
+- q: คณะรัฐมนตรี
   type: votelog
   url: /votelog/
-- q: ''
+- q: ชลน่าน ศรีแก้ว กับคณะ
   type: votelog
   url: /votelog/
-- q: ''
+- q: พิธา ลิ้มเจริญรัตน์ กับคณะ
+  type: votelog
+  url: /votelog/
+- q: วิเชียร ชวลิต กับคณะ
+  type: votelog
+  url: /votelog/
+- q: พันตำรวจเอก ทวี สอดส่อง กับคณะ
+  type: votelog
+  url: /votelog/
+- q: อนันต์ ผลอำนวย กับคณะ
+  type: votelog
+  url: /votelog/
+- q: >-
+    - ใช้ร่างพระราชบัญญัติประกอบรัฐธรรมนูญของนายวิเชียร ชวลิต กับคณะ
+    เป็นหลักในการพิจารณา (ผลการลงมติ)
+  type: votelog
+  url: /votelog/
+- q: >-
+    ร่าง พ.ร.บ. ห้างหุ้นส่วนจดทะเบียน ห้างหุ้นส่วนจำกัด บริษัทจำกัด สมาคม
+    และมูลนิธิ (วาระ 3)
   type: votelog
   url: /votelog/
 - q: ''
@@ -3622,6 +3938,9 @@
 - q: ร่าง พ.ร.บ. งบประมาณปี 66 (วาระ 1)
   type: votelog
   url: /votelog/71
+- q: พ.ร.บ. งบประมาณ 2566 (วาระ 1)
+  type: votelog
+  url: /votelog/
 - q: ร่าง พ.ร.บ. กัญชา กัญชง (วาระ 1)
   type: votelog
   url: /votelog/72
@@ -3631,28 +3950,49 @@
 - q: ร่าง พ.ร.บ. แพ่งและพาณิชย์ (สมรสเท่าเทียม) ฉบับก้าวไกล (วาระ 1)
   type: votelog
   url: /votelog/74
-- q: ร่าง พ.ร.บ. คู่ชีวิต ฉบับ ครม. (วาระ 1)
-  type: votelog
-  url: /votelog/75
 - q: ร่าง พ.ร.บ. แพ่งและพาณิชย์ ​(คู่ชีวิต) ฉบับ ครม. (วาระ 1)
   type: votelog
   url: /votelog/76
+- q: ร่าง พ.ร.บ. คู่ชีวิต ฉบับ ครม. (วาระ 1)
+  type: votelog
+  url: /votelog/75
 - q: ร่างพ.ร.บ. คู่ชีวิต ฉบับ ประชาธิปัตย์ (วาระ 1)
   type: votelog
   url: /votelog/77
-- q: ''
+- q: ร่าง พ.ร.บ. อ้อยและน้ำตาลทราย (วาระ 3)
   type: votelog
   url: /votelog/
-- q: ''
+- q: (วาระ 3)
   type: votelog
   url: /votelog/
-- q: ''
+- q: (วาระ 3)
   type: votelog
   url: /votelog/
-- q: ''
+- q: (วาระ 3)
   type: votelog
   url: /votelog/
-- q: ''
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: ร่าง พ.ร.บ. เลือกตั้งสมาชิกสภาท้องถิ่นหรือผู้บริหารท้องถิ่น (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: ร่าง พ.ร.บ. คุ้มครองแรงงาน (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: ร่าง พ.ร.บ. พืชกระท่อม (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: ร่าง พ.ร.บ. สถาปนิก (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
   type: votelog
   url: /votelog/
 - q: ร่างพระราชบัญญัติตำรวจแห่งชาติ
@@ -3663,78 +4003,114 @@
     เรื่องการคำนวณบัญชีรายชื่อ
   type: votelog
   url: /votelog/79
-- q: >-
-    ร่างพ.ร.บ.แก้ไขเพิ่มเติมพ.ร.ก.ให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบวิสาหกิจ
-    (วาระ 1)
+- q: ร่างพ.ร.บ.ขนส่งทางราง (วาระ 1)
   type: votelog
-  url: /votelog/80
+  url: /votelog/83
 - q: >-
     ร่างพ.ร.บ.แก้ไขเพิ่มเติมพ.ร.ก.รักษาเสถียรภาพของระบบการเงินและความมั่นคงทางเศรษฐกิจของประเทศ
     (วาระ 1)
   type: votelog
   url: /votelog/81
 - q: >-
+    ร่างพ.ร.บ.แก้ไขเพิ่มเติมพ.ร.ก.ให้ความช่วยเหลือทางการเงินแก่ผู้ประกอบวิสาหกิจ
+    (วาระ 1)
+  type: votelog
+  url: /votelog/80
+- q: >-
     ร่างพ.ร.บ.แก้ไขเพิ่มเติมพ.ร.ก.ให้อำนาจกระทรวงการคลังกู้เงินช่วยโควิด-19
     (วาระ 1)
   type: votelog
   url: /votelog/82
-- q: ร่างพ.ร.บ.ขนส่งทางราง (วาระ 1)
-  type: votelog
-  url: /votelog/83
 - q: ร่างพ.ร.บ.ธรรมนูญศาลทหาร (วาระ 1)
   type: votelog
   url: /votelog/84
-- q: >-
-    ลงมติไม่ไว้วางใจ พลเอก ประยุทธ์ จันทร์โอชา
-    นายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงกลาโหม
+- q: (วาระ 1)
   type: votelog
-  url: /votelog/85
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: >-
+    ลงมติไม่ไว้วางใจ นายจุติ ไกรฤกษ์
+    รัฐมนตรีว่าการกระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์
+  type: votelog
+  url: /votelog/92
 - q: >-
     ลงมติไม่ไว้วางใจ นายจุรินทร์ ลักษณวิศิษฏ์
     รองนายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงพาณิชย์
   type: votelog
   url: /votelog/86
 - q: >-
+    ลงมติไม่ไว้วางใจ นายชัยวุฒิ ธนาคมานุสรณ์
+    รัฐมนตรีว่าการกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม
+  type: votelog
+  url: /votelog/91
+- q: ลงมติไม่ไว้วางใจ นายนิพนธ์ บุญญามณี รัฐมนตรีช่วยว่าการกระทรวงมหาดไทย
+  type: votelog
+  url: /votelog/94
+- q: ลงมติไม่ไว้วางใจ นายศักดิ์สยาม ชิดชอบ รัฐมนตรีว่าการกระทรวงคมนาคม
+  type: votelog
+  url: /votelog/90
+- q: ลงมติไม่ไว้วางใจ นายสันติ พร้อมพัฒน์ รัฐมนตรีช่วยว่าการกระทรวงการคลัง
+  type: votelog
+  url: /votelog/93
+- q: ลงมติไม่ไว้วางใจ นายสุชาติ ชมกลิ่น รัฐมนตรีว่าการกระทรวงแรงงาน
+  type: votelog
+  url: /votelog/95
+- q: >-
     ลงมติไม่ไว้วางใจ นายอนุทิน ชาญวีรกูล
     รองนายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงสาธารณสุข
   type: votelog
   url: /votelog/87
+- q: >-
+    ลงมติไม่ไว้วางใจ พลเอก ประยุทธ์ จันทร์โอชา
+    นายกรัฐมนตรีและรัฐมนตรีว่าการกระทรวงกลาโหม
+  type: votelog
+  url: /votelog/85
 - q: ลงมติไม่ไว้วางใจ พลเอก ประวิตร วงษ์สุวรรณ รองนายกรัฐมนตรี
   type: votelog
   url: /votelog/88
 - q: ลงมติไม่ไว้วางใจ พลเอก อนุพงษ์ เผ่าจินดา รัฐมนตรีว่าการกระทรวงมหาดไทย
   type: votelog
   url: /votelog/89
-- q: ลงมติไม่ไว้วางใจ นายศักดิ์สยาม ชิดชอบ รัฐมนตรีว่าการกระทรวงคมนาคม
-  type: votelog
-  url: /votelog/90
-- q: >-
-    ลงมติไม่ไว้วางใจ นายชัยวุฒิ ธนาคมานุสรณ์
-    รัฐมนตรีว่าการกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม
-  type: votelog
-  url: /votelog/91
-- q: >-
-    ลงมติไม่ไว้วางใจ นายจุติ ไกรฤกษ์
-    รัฐมนตรีว่าการกระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์
-  type: votelog
-  url: /votelog/92
-- q: ลงมติไม่ไว้วางใจ นายสันติ พร้อมพัฒน์ รัฐมนตรีช่วยว่าการกระทรวงการคลัง
-  type: votelog
-  url: /votelog/93
-- q: ลงมติไม่ไว้วางใจ นายนิพนธ์ บุญญามณี รัฐมนตรีช่วยว่าการกระทรวงมหาดไทย
-  type: votelog
-  url: /votelog/94
-- q: ลงมติไม่ไว้วางใจ นายสุชาติ ชมกลิ่น รัฐมนตรีว่าการกระทรวงแรงงาน
-  type: votelog
-  url: /votelog/95
 - q: >-
     ถอนร่าง พ.ร.บ.ประกอบรัฐธรรมนูญว่าด้วยการเลือกตั้ง ส.ส. เพื่อให้ กมธ.
     พิจารณาใหม่
   type: votelog
   url: /votelog/96
-- q: ''
+- q: ร่าง พ.ร.บ. ปฏิบัติราชการทางอิเล็กทรอนิกส์ (วาระ 3)
   type: votelog
   url: /votelog/
-- q: ''
+- q: ร่าง พ.ร.บ. การปรับเป็นพินัย (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: พ.ร.บ. งบประมาณ 2566 (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 3)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
+  type: votelog
+  url: /votelog/
+- q: (วาระ 1)
   type: votelog
   url: /votelog/
