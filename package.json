@@ -8,7 +8,7 @@
     "develop": "gatsby clean && gatsby develop",
     "format": "prettier --write \"**/*.{js,json,md}\"",
     "sync": "tools/sync_data.sh",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
     "dev": "yarn develop"
