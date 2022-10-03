@@ -6,7 +6,52 @@ import { css } from "@emotion/react"
 import Profile from "./profile"
 import { breakpoint } from "./size"
 import styled from "@emotion/styled"
-import { Waffle } from "./motionResult"
+
+const Waffle = ({ partyMember }) => {
+  return (
+    <div
+      css={css`
+        display: flex;
+        flex-flow: row wrap;
+      `}
+    >
+      {_.chunk(partyMember, 10).map((tenth, ti) => (
+        <div
+          key={ti}
+          css={css`
+            display: flex;
+            flex-flow: row wrap;
+            margin-right: 1px;
+          `}
+        >
+          {_.chunk(tenth, 5).map((fifth, fi) => (
+            <div
+              key={fi}
+              css={css`
+                display: flex;
+                flex-flow: row nowrap;
+                margin-right: 1px;
+              `}
+            >
+              {fifth.map((_, i) => (
+                <div
+                  key={i}
+                  css={css`
+                    width: 8px;
+                    height: 8px;
+                    background-color: var(--cl-gray-3);
+                    margin-right: 1px;
+                    margin-bottom: 1px;
+                  `}
+                ></div>
+              ))}
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  )
+}
 
 const Button = styled.button`
   position: absolute;

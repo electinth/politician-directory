@@ -125,10 +125,12 @@ const VotelogPage = ({
     const matched = _.find(allPeopleYaml.nodes, ["id", votelog.id])
     combined.push({ ...votelog, ...matched })
   })
+
   const approve = filterVote(combined, votelogYaml.id, "1")
   const disprove = filterVote(combined, votelogYaml.id, "2")
   const abstained = filterVote(combined, votelogYaml.id, "3")
   const absent = filterVote(combined, votelogYaml.id, "4")
+  const special = filterVote(combined, votelogYaml.id, "")
 
   return (
     <Layout
@@ -206,43 +208,50 @@ const VotelogPage = ({
               {votelogYaml.legal_title}
             </p>
           </div>
-          <span>
-            สถานะ{" "}
-            {passed ? (
-              <span
-                css={css`
-                  color: var(--cl-vote-yes);
-                `}
-              >
+          <div
+            css={{
+              [media(767)]: {
+                display: "flex",
+                justifyContent: "space-between",
+              },
+            }}
+          >
+            <span>
+              สถานะ{" "}
+              {passed ? (
                 <span
-                  className="dot"
-                  css={{
-                    backgroundColor: "var(--cl-vote-yes)",
-                  }}
-                ></span>
-                ผ่าน
-              </span>
-            ) : (
-              <span
-                css={css`
-                  color: var(--cl-vote-no);
-                `}
-              >
+                  css={css`
+                    color: var(--cl-vote-yes);
+                  `}
+                >
+                  <span
+                    className="dot"
+                    css={{
+                      backgroundColor: "var(--cl-vote-yes)",
+                    }}
+                  ></span>
+                  ผ่าน
+                </span>
+              ) : (
                 <span
-                  className="dot"
-                  css={{
-                    backgroundColor: "var(--cl-vote-no)",
-                  }}
-                ></span>
-                ไม่ผ่าน
-              </span>
-            )}
+                  css={css`
+                    color: var(--cl-vote-no);
+                  `}
+                >
+                  <span
+                    className="dot"
+                    css={{
+                      backgroundColor: "var(--cl-vote-no)",
+                    }}
+                  ></span>
+                  ไม่ผ่าน
+                </span>
+              )}
+            </span>
+
             <span
               css={{
                 display: "block",
-                [media(767)]: {
-                  float: "right",
-                },
               }}
             >
               ผู้เข้าร่วมประชุม {total_voter} คน
@@ -255,7 +264,7 @@ const VotelogPage = ({
               </span>{" "}
               คน
             </span>
-          </span>
+          </div>
         </section>
         <section
           css={{
@@ -285,11 +294,13 @@ const VotelogPage = ({
                   disprove.map(p => ({ node: p })),
                   abstained.map(p => ({ node: p })),
                   absent.map(p => ({ node: p })),
+                  special.map(p => ({ node: p })),
                 ]}
                 colors={[
                   `var(--cl-vote-yes)`,
                   `var(--cl-vote-no)`,
                   `var(--cl-vote-abstained)`,
+                  `var(--cl-vote-absent)`,
                   `var(--cl-vote-absent)`,
                 ]}
                 borderColors={[
@@ -297,7 +308,9 @@ const VotelogPage = ({
                   `var(--cl-vote-no)`,
                   `var(--cl-vote-abstained)`,
                   `var(--cl-black)`,
+                  `var(--cl-vote-absent)`,
                 ]}
+                crossLast={true}
               />
             </>
           )}

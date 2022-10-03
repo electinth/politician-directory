@@ -1,63 +1,76 @@
 .waffle {
   display: flex;
   flex-wrap: wrap;
-  width: 950px;
-  height: 256px;
+  width: 100%;
+  align-items: flex-start;
 }
 
 .line {
   background-color: black;
   width: 2px;
-  height: 256px;
-  margin: 0 3rem 0 0;
+  align-self: stretch;
+  margin: 0 1rem;
 }
 
-.hundred {
+.waffle-group {
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  width: 55px;
-  height: 256px;
+  align-items: flex-start;
+  margin-bottom: 16px;
 }
 
-.quarter {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  width: 55px;
-  height: 55px;
-  margin: 0 0 12px 0;
+.waffle-group > [data-gatsby-image-wrapper] {
+  overflow: hidden;
+  border-radius: 50%;
+
+  border: 1px #ccc solid;
+
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
 }
 
-.quarter:last-child {
-  margin: 0;
+.waffle-chunk-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 4px;
+  gap: 4px;
 }
 
-@media only screen and (max-width: 950px) {
+.waffle-chunk {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-content: start;
+  width: min-content;
+}
+
+@media only screen and (max-width: 900px) {
+  .line {
+    margin: 0 0.5rem;
+  }
+
+  .waffle-chunk-container {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 570px) {
   .waffle {
-    max-width: 348px !important;
-    width: 348px;
-    height: 750px;
+    flex-direction: column;
   }
 
   .line {
-    width: 333px;
+    width: auto;
     height: 2px;
-    margin: 0;
+    margin: 1rem 0;
   }
 
-  .hundred {
-    flex-wrap: nowrap;
-    width: 256px;
-    height: 55px;
-    margin: 0;
+  .waffle-chunk-container {
+    grid-template-columns: repeat(2, auto);
   }
 
-  .quarter {
-    margin: 0 12px 0 0;
-  }
-
-  .quarter:last-child {
-    margin: 0;
+  .waffle-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
   }
 }

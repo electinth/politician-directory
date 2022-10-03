@@ -1,11 +1,16 @@
 import React from "react"
-
+import { chunk, groupBy } from "lodash"
 import PeopleCard from "./peopleCard"
+import PartyLogo from "./partyLogo"
+
+import cross from "../images/icons/votelog/cross.png"
 
 import "../styles/global.css"
 import "./waffle.css"
 
-let cellStyle = (color, borderColor) => ({
+const COUNT_OF_WAFFLE = 25
+
+let cellStyle = (color, borderColor, isCross = false) => ({
   position: "relative",
   width: 8,
   height: 8,
@@ -21,6 +26,12 @@ let cellStyle = (color, borderColor) => ({
     display: "block",
     zIndex: 10,
   },
+  ...(isCross && {
+    border: "none",
+    backgroundImage: `url(${cross})`,
+    backgroundPosition: "center",
+    backgroundSize: "contain",
+  }),
 })
 
 const tooltipTextStyle = {
@@ -36,78 +47,120 @@ const tooltipTextStyle = {
   backgroundColor: "transparent",
 }
 
-const split_array = (array, size, callback) =>
-  Array(Math.ceil(array.length / size))
-    .fill()
-    .map((_, index) => index * size)
-    .map(start => array.slice(start, start + size))
-    .map(callback)
+const WaffleCell = ({ node, cellStyleProps }) => {
+  return (
+    <div
+      css={cellStyle(
+        cellStyleProps.color,
+        cellStyleProps.borderColor,
+        cellStyleProps.isCross
+      )}
+    >
+      <div className="tooltip-text" css={tooltipTextStyle}>
+        <PeopleCard
+          {...node}
+          css={{
+            padding: "1rem 1rem",
+            margin: 0,
+            alignItems: "center",
+            border: "2px solid var(--cl-black)",
+            ".card-info": {
+              ".card-name": {
+                fontSize: "1.8rem",
+                fontWeight: "bold",
+                fontFamily: "var(--ff-text)",
+              },
+              ".card-description": {
+                fontSize: "1.6rem",
+                fontFamily: "var(--ff-text)",
+              },
+            },
+            ".profile-picture": {
+              height: "5rem",
+              flexBasis: "5rem",
+            },
+          }}
+        ></PeopleCard>
+      </div>
+    </div>
+  )
+}
 
-const waffle = (data, color, borderColor, add_separator) => {
-  let result = split_array(data, 100, (hundred, hi) => (
-    <div key={hi} className="hundred" 
-      style={{ margin: data[0].node.is_senator ? '0 10px 0 0' : '0 27px 0 0'}}>
-      {split_array(hundred, 25, (quarter, qi) => (
-        <div key={qi} className="quarter">
-          {quarter.map(({ node }) => (
-            <div key={node.id} css={cellStyle(color, borderColor)}>
-              <div className="tooltip-text" css={tooltipTextStyle}>
-                <PeopleCard
-                  {...node}
-                  css={{
-                    padding: "1rem 1rem",
-                    margin: 0,
-                    alignItems: "center",
-                    border: "2px solid var(--cl-black)",
-                    ".card-info": {
-                      ".card-name": {
-                        fontSize: "1.8rem",
-                        fontWeight: "bold",
-                        fontFamily: "var(--ff-text)",
-                      },
-                      ".card-description": {
-                        fontSize: "1.6rem",
-                        fontFamily: "var(--ff-text)",
-                      },
-                    },
-                    ".profile-picture": {
-                      height: "5rem",
-                      flexBasis: "5rem",
-                    },
-                  }}
-                ></PeopleCard>
-              </div>
-            </div>
+export const WaffleAligner = ({ data, cellStyleProps, style }) => {
+  const chunks = chunk(data, COUNT_OF_WAFFLE)
+
+  return (
+    <div className="waffle-chunk-container" style={style}>
+      {chunks.map((chunk, chunkIdx) => (
+        <div className="waffle-chunk" key={`wch${chunkIdx}`}>
+          {chunk.map(({ node }, nodeIdx) => (
+            <WaffleCell {...{ node, cellStyleProps }} key={`wc${nodeIdx}`} />
           ))}
         </div>
       ))}
     </div>
-  ))
-
-  if (add_separator) result.push(<div key="line" className="line"></div>)
-
-  return result
+  )
 }
 
-const Waffle = ({ data, colors, borderColors, style, css }) => (
-  <div
-    className="waffle"
-    css={{
-      justifyContent: "center",
-      ...css,
-    }}
-    style={style}
-  >
-    {data.map((group, group_idx) =>
-      waffle(
-        group,
-        colors[group_idx],
-        borderColors[group_idx],
-        group_idx < data.length - 1
-      )
-    )}
-  </div>
-)
+const WaffleGroup = ({ party, cellStyleProps }) => {
+  return (
+    <div className="waffle-group">
+      <PartyLogo name={party.name} />
+      <WaffleAligner data={party.data} cellStyleProps={cellStyleProps} />
+    </div>
+  )
+}
+
+const Waffle = ({
+  data,
+  colors,
+  borderColors,
+  style,
+  css,
+  crossLast = false,
+}) => {
+  const peopleGrouppedByParty = data.map(type => {
+    const groupByParty = groupBy(type, ({ node }) => node.party)
+    return Object.entries(groupByParty)
+      .map(([partyName, data]) => ({
+        name: partyName,
+        data,
+      }))
+      .sort((a, z) => z.data.length - a.data.length)
+  })
+
+  return (
+    <div
+      className="waffle"
+      css={{
+        justifyContent: "center",
+        ...css,
+      }}
+      style={style}
+    >
+      {peopleGrouppedByParty.map((group, groupIdx) => (
+        <React.Fragment key={groupIdx}>
+          <div className="waffle-column">
+            {group.map((party, partyIdx) => (
+              <WaffleGroup
+                key={`${groupIdx}-${partyIdx}`}
+                party={party}
+                cellStyleProps={{
+                  color: colors[groupIdx],
+                  borderColor: borderColors[groupIdx],
+                  isCross:
+                    crossLast && groupIdx === peopleGrouppedByParty.length - 1,
+                }}
+              />
+            ))}
+          </div>
+          {groupIdx !== peopleGrouppedByParty.length - 1 && (
+            <div className="line" />
+          )}
+        </React.Fragment>
+      ))}
+    </div>
+  )
+}
 
 export default Waffle
-export { split_array }

@@ -22,10 +22,10 @@
 
 ## Development
 
-After installing Node 8+ and `npm install`, you can start in development mode by
+After installing Node 8+ and `yarn`, you can start in development mode by
 
-```
-npm start
+```console
+yarn start
 ```
 
 Your site is running on `http://localhost:8000` and GraphQL tool helper on `http://localhost:8000/___graphql`.
@@ -34,8 +34,8 @@ Your site is running on `http://localhost:8000` and GraphQL tool helper on `http
 
 Data sources are maintained on Google Sheets by contributors. To sync data and append latest changes to `src/contents/*.yaml`, run:
 
-```
-npm run sync
+```console
+yarn sync
 ```
 
 ### Environments
