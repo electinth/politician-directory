@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import "./votesearch.css"
-import search_img from "../../images/icons/search/search.png"
+import searchImg from "../../images/icons/search/search.png"
 
 export default function VoteSearch() {
   const data = useStaticQuery(graphql`
@@ -22,8 +22,8 @@ export default function VoteSearch() {
   `)
   const transformedQuery = useMemo(
     () =>
-      data.allVotelogYaml.edges.map(e => {
-        const { title, legal_title, fields } = e.node
+      data.allVotelogYaml.edges.map(({ node }) => {
+        const { title, legal_title, fields } = node
 
         return {
           title,
@@ -34,14 +34,18 @@ export default function VoteSearch() {
     [data]
   )
 
-  const [filteredQuery, setFilteredQuery] = useState(/*<Query[]>*/ [])
-  const [searchText, setSearchText] = useState(/*<string>*/ "")
+  const [filteredQuery, setFilteredQuery] = useState([])
+  const [searchText, setSearchText] = useState("")
   const handleSearchChange = e => setSearchText(e.target.value)
 
   useEffect(() => {
     const trimmedSearchText = searchText.trim()
     if (!trimmedSearchText) return
-    const searchRegExp = new RegExp(trimmedSearchText.replace(/\s+/g, "|"), "g")
+    const matchConsecutiveSpaces = /\s+/g
+    const searchRegExp = new RegExp(
+      trimmedSearchText.replace(matchConsecutiveSpaces, "|"),
+      "g"
+    )
 
     const filtered = transformedQuery.filter(({ title, legal_title }) =>
       searchRegExp.test(title + legal_title)
@@ -62,7 +66,7 @@ export default function VoteSearch() {
         />
         <img
           className="votesearch-decor"
-          src={search_img}
+          src={searchImg}
           alt=""
           loading="lazy"
           decoding="async"
