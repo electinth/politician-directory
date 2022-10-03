@@ -1,7 +1,6 @@
 import React from "react"
-import { Global, css } from "@emotion/react"
 import { media } from "../styles"
-import times from "../images/icons/votelog/vote.png"
+import cross from "../images/icons/votelog/cross.png"
 
 const cssLegend = ({ missing, type }) => ({
   display: missing ? "flex" : "unset",
@@ -210,7 +209,7 @@ const VoteLogLegend = ({
       </span>
       <span css={cssLegendWrap({ missing, type })}>
         <img
-          src={times}
+          src={cross}
           style={{
             margin: "0",
           }}

@@ -3,7 +3,7 @@ import _ from "lodash"
 import PeopleCard from "./peopleCard"
 import PartyLogo from "./partyLogo"
 
-import cross from "../images/icons/votelog/vote.png"
+import cross from "../images/icons/votelog/cross.png"
 
 import "../styles/global.css"
 import "./waffle.css"
