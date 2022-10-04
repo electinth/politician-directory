@@ -109,6 +109,7 @@ const Menu = ({ siteTitle }) => {
               <GatsbyImage
                 image={staticData.cabinetImage.childImageSharp.gatsbyImageData}
                 alt=""
+                aria-hidden="true"
               />
             </span>
             <Link to="/cabinet">คณะรัฐมนตรี</Link>
@@ -120,6 +121,7 @@ const Menu = ({ siteTitle }) => {
               <GatsbyImage
                 image={staticData.senateImage.childImageSharp.gatsbyImageData}
                 alt=""
+                aria-hidden="true"
               />
             </span>
             <Link to="/senate">สมาชิกวุฒิสภา</Link>
@@ -133,6 +135,7 @@ const Menu = ({ siteTitle }) => {
                   staticData.representativeImage.childImageSharp.gatsbyImageData
                 }
                 alt=""
+                aria-hidden="true"
               />
             </span>
             <Link to="/representatives">สมาชิกสภาผู้แทนราษฎร</Link>
@@ -146,6 +149,7 @@ const Menu = ({ siteTitle }) => {
                   staticData.voteRecordImage.childImageSharp.gatsbyImageData
                 }
                 alt=""
+                aria-hidden="true"
                 style={{ transform: "translate(2px, 0)" }}
               />
             </span>

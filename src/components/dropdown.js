@@ -266,9 +266,17 @@ class DropDown extends Component {
                 this.props.is_selected_government ||
                 this.props.isShowAll ? (
                   !this.props.currentFilter ? (
-                    <GatsbyImage image={this.props.clock_image} alt="" />
+                    <GatsbyImage
+                      image={this.props.clock_image}
+                      alt=""
+                      aria-hidden="true"
+                    />
                   ) : this.props.currentFilter === "เวลาล่าสุด" ? (
-                    <GatsbyImage image={this.props.clock_image} alt="" />
+                    <GatsbyImage
+                      image={this.props.clock_image}
+                      alt=""
+                      aria-hidden="true"
+                    />
                   ) : (
                     <div
                       className="bulletChoice"
@@ -305,6 +313,7 @@ class DropDown extends Component {
                         image={this.props.clock_image}
                         className="clock_image"
                         alt=""
+                        aria-hidden="true"
                       />
                       <div className="clock_text">
                         {" "}

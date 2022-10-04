@@ -286,6 +286,7 @@ const IndexPage = ({ data }) => {
               <GatsbyImage
                 image={data.cabinetImage.childImageSharp.gatsbyImageData}
                 alt=""
+                aria-hidden="true"
                 css={{ marginBottom: "1.2rem" }}
               />
               <h3>คณะรัฐมนตรี</h3>
@@ -295,6 +296,7 @@ const IndexPage = ({ data }) => {
               <GatsbyImage
                 image={data.senateImage.childImageSharp.gatsbyImageData}
                 alt=""
+                aria-hidden="true"
                 css={{ marginBottom: "1.2rem" }}
               />
               <h3>สมาชิกวุฒิสภา</h3>
@@ -313,6 +315,7 @@ const IndexPage = ({ data }) => {
                 style={{ margin: "auto" }}
                 image={data.representativeImage.childImageSharp.gatsbyImageData}
                 alt=""
+                aria-hidden="true"
               />
             </div>
             <h3

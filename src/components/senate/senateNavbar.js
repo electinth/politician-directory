@@ -78,7 +78,7 @@ const SenateNavbar = () => {
     <div>
       <div css={cssHeader}>
         <div style={{ display: "flex" }}>
-          <img css={cssIcon} src={votelogIcon} alt="" />
+          <img css={cssIcon} src={votelogIcon} alt="" aria-hidden="true" />
           <h1 css={cssTitle}>ตรวจงาน ส.ว.</h1>
         </div>
         <div>

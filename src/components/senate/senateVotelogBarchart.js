@@ -3,7 +3,7 @@ import _ from "lodash"
 import dayjs from "dayjs"
 import calendar from "dayjs/plugin/calendar"
 import { graphql, useStaticQuery } from "gatsby"
-import BarChart from "./barChart"
+import BarChart from "./barchart"
 
 dayjs.extend(calendar)
 
@@ -134,15 +134,15 @@ const BarCharts = props => {
           <BarChart
             data={count_all_senate}
             types={types}
-            width_of_barChart={props.width}
-            is_yAxis={props.is_yAxis}
-            color_bars={props.colors}
-            height_svg={height_svg}
-            is_On={props.is_On}
+            barchartWidth={props.width}
+            isYAxis={props.is_yAxis}
+            colorBars={props.colors}
+            heightSvg={height_svg}
+            isOn={props.is_On}
             isShowAll={props.isShowAll}
             setVoteId={props.setVoteId}
             setPopupState={props.setPopupState}
-            filter_senatorId={filter_senatorId}
+            filterSenatorId={filter_senatorId}
             setCountByGroup={props.setCountByGroup}
           />
         ) : (
@@ -159,15 +159,15 @@ const BarCharts = props => {
                 <BarChart
                   data={count_by_position}
                   types={types}
-                  width_of_barChart={props.groupWidth[0]}
-                  is_yAxis={props.is_yAxis}
-                  color_bars={props.colors}
-                  height_svg={height_svg}
-                  is_On={props.is_On}
+                  barchartWidth={props.groupWidth[0]}
+                  isYAxis={props.is_yAxis}
+                  colorBars={props.colors}
+                  heightSvg={height_svg}
+                  isOn={props.is_On}
                   isShowAll={props.isShowAll}
                   setVoteId={props.setVoteId}
                   setPopupState={props.setPopupState}
-                  is_mobile={is_mobile}
+                  isMobile={is_mobile}
                   senatorTypeId={senatorTypeId}
                 />
               )}
@@ -184,16 +184,16 @@ const BarCharts = props => {
                 <BarChart
                   data={count_by_yourSelf}
                   types={types}
-                  width_of_barChart={props.groupWidth[1]}
-                  color_bars={props.colors}
-                  height_svg={height_svg}
-                  is_On={props.is_On}
+                  barchartWidth={props.groupWidth[1]}
+                  colorBars={props.colors}
+                  heightSvg={height_svg}
+                  isOn={props.is_On}
                   isShowAll={props.isShowAll}
                   setVoteId={props.setVoteId}
                   setPopupState={props.setPopupState}
-                  is_mobile={is_mobile}
+                  isMobile={is_mobile}
                   senatorTypeId={senatorTypeId}
-                  is_yAxis={is_mobile ? props.is_yAxis : ""}
+                  isYAxis={is_mobile ? props.is_yAxis : ""}
                 />
               )}
             </div>
@@ -209,16 +209,16 @@ const BarCharts = props => {
                 <BarChart
                   data={count_by_government}
                   types={types}
-                  width_of_barChart={props.groupWidth[2]}
-                  color_bars={props.colors}
-                  height_svg={height_svg}
-                  is_On={props.is_On}
+                  barchartWidth={props.groupWidth[2]}
+                  colorBars={props.colors}
+                  heightSvg={height_svg}
+                  isOn={props.is_On}
                   isShowAll={props.isShowAll}
                   setVoteId={props.setVoteId}
                   setPopupState={props.setPopupState}
-                  is_mobile={is_mobile}
+                  isMobile={is_mobile}
                   senatorTypeId={senatorTypeId}
-                  is_yAxis={is_mobile ? props.is_yAxis : ""}
+                  isYAxis={is_mobile ? props.is_yAxis : ""}
                 />
               )}
             </div>

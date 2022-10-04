@@ -115,6 +115,7 @@ const VoteLogPage = ({
             <GatsbyImage
               image={voteRecordImage.childImageSharp.gatsbyImageData}
               alt=""
+              aria-hidden="true"
               css={{ width: "48px", margin: "auto" }}
             />
           </div>

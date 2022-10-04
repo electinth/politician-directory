@@ -295,7 +295,12 @@ const PeoplePage = props => {
               <GatsbyImage
                 image={data.infoImage.childImageSharp.gatsbyImageData}
                 alt=""
-                style={{ verticalAlign: "bottom", margin: "0 0.8rem" }}
+                aria-hidden="true"
+                style={{
+                  verticalAlign: "bottom",
+                  margin: "0 0.8rem",
+                  display: "inline-block",
+                }}
               />
               ข้อมูลพื้นฐาน
             </h2>

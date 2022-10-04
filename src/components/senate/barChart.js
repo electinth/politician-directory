@@ -4,21 +4,21 @@ import * as d3 from "d3"
 function DrawChart({
   data,
   types,
-  width_of_barChart,
-  is_yAxis,
-  color_bars,
-  height_svg,
-  is_On,
+  barchartWidth,
+  isYAxis,
+  colorBars,
+  heightSvg,
+  isOn,
   isShowAll,
   setVoteId,
   setPopupState,
-  filter_senatorId,
-  is_mobile,
+  filterSenatorId,
+  isMobile,
   senatorTypeId,
 }) {
-  const smallTranslateWidth = width_of_barChart / 6 / 2
+  const smallTranslateWidth = barchartWidth / 6 / 2
   let is_active = []
-  const translateWidth = width_of_barChart / 6
+  const translateWidth = barchartWidth / 6
   let is_mobile_center = 0
   const ref = useRef()
   const getElm = document.getElementsByClassName("barChart-wrapper")
@@ -26,14 +26,12 @@ function DrawChart({
   const margin = {
       top: 0,
       right:
-        (!is_mobile && isShowAll) || (is_yAxis && isShowAll)
-          ? getElm_margin
-          : 0,
+        (!isMobile && isShowAll) || (isYAxis && isShowAll) ? getElm_margin : 0,
       bottom: 0,
       left: 0.5,
     },
-    height = is_On ? 300 : height_svg,
-    width = width_of_barChart
+    height = isOn ? 300 : heightSvg,
+    width = barchartWidth
 
   if (senatorTypeId === 1 || senatorTypeId === 2) {
     is_mobile_center = (document.body.clientWidth - width - 100) / 2
@@ -41,15 +39,15 @@ function DrawChart({
     is_mobile_center = (document.body.clientWidth - width - 100) / 2
   }
   useEffect(() => {
-    if (is_yAxis) {
+    if (isYAxis) {
       d3.selectAll("g").remove()
       d3.select("line").remove()
     }
     draw_bar()
-  }, [filter_senatorId]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [filterSenatorId]) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
-    if (is_yAxis) {
+    if (isYAxis) {
       d3.selectAll("g").remove()
       d3.select("line").remove()
     }
@@ -57,7 +55,7 @@ function DrawChart({
   }, [data]) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
-    if (is_mobile) {
+    if (isMobile) {
       d3.select(".charts").remove()
       d3.select("line").remove()
     }
@@ -65,19 +63,19 @@ function DrawChart({
   }, [senatorTypeId]) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
-    if (is_yAxis) {
+    if (isYAxis) {
       d3.selectAll("g").remove()
       d3.select("line").remove()
     }
     if (isShowAll) {
       d3.selectAll("g").remove()
       d3.select("line").remove()
-      if (is_On) {
+      if (isOn) {
         d3.select(".chart").style("overflow-y", "hidden")
       }
       d3.select("svg").attr("height", height)
     } else {
-      if (is_On) {
+      if (isOn) {
         d3.selectAll(".chart").attr("height", height)
       } else {
         d3.selectAll(".chart")
@@ -87,14 +85,14 @@ function DrawChart({
       d3.selectAll("svg").attr("height", height)
     }
     draw_bar()
-  }, [is_On]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [isOn]) // eslint-disable-line react-hooks/exhaustive-deps
 
   function draw_bar() {
     d3.select(ref.current)
       .attr("className", "chart")
       .attr(
         "width",
-        is_mobile ? document.body.clientWidth : isShowAll ? width - 100 : width
+        isMobile ? document.body.clientWidth : isShowAll ? width - 100 : width
       )
       .attr("height", height)
 
@@ -104,7 +102,7 @@ function DrawChart({
     const color = d3
       .scaleOrdinal()
       .domain(series.map(d => d.key))
-      .range(color_bars)
+      .range(colorBars)
       .unknown("#ccc")
 
     let vote_dates = data.map(d => d.vote_date)
@@ -120,9 +118,9 @@ function DrawChart({
       .nice()
       .range([
         0,
-        filter_senatorId
-          ? width_of_barChart -
-            width_of_barChart / 6 -
+        filterSenatorId
+          ? barchartWidth -
+            barchartWidth / 6 -
             (1 / 250) * width -
             diff_filter_width
           : isShowAll
@@ -132,7 +130,7 @@ function DrawChart({
 
     let y_filter_senatorId = d3
       .scaleBand()
-      .domain(d3.range(filter_senatorId ? filter_senatorId.length : 0))
+      .domain(d3.range(filterSenatorId ? filterSenatorId.length : 0))
       .range([0, height])
       .padding(0.2)
 
@@ -149,7 +147,7 @@ function DrawChart({
 
     const g = chart.append("g").attr("className", "charts-g")
     const diff_line = window.innerWidth < 768 ? 50 : 100
-    if (!filter_senatorId) {
+    if (!filterSenatorId) {
       chart
         .append("line")
         .attr("class", "percentLine")
@@ -157,7 +155,7 @@ function DrawChart({
           "x1",
           isShowAll
             ? width / 2 - diff_line
-            : is_mobile
+            : isMobile
             ? (document.body.clientWidth - width - 100) / 2 + width / 2
             : width / 2
         )
@@ -165,7 +163,7 @@ function DrawChart({
           "x2",
           isShowAll
             ? width / 2 - diff_line
-            : is_mobile
+            : isMobile
             ? (document.body.clientWidth - width - 100) / 2 + width / 2
             : width / 2
         )
@@ -234,21 +232,17 @@ function DrawChart({
           .attr(
             "transform",
             `translate(${
-              is_mobile
-                ? is_mobile_center
-                : filter_senatorId
-                ? translateWidth
-                : 0
+              isMobile ? is_mobile_center : filterSenatorId ? translateWidth : 0
             }, 0)`
           )
       )
 
-    if (filter_senatorId) {
+    if (filterSenatorId) {
       chart
         .append("g")
         .attr("className", "charts")
         .selectAll("rect")
-        .data(filter_senatorId)
+        .data(filterSenatorId)
         .join(enter =>
           enter
             .append("rect")
@@ -258,7 +252,7 @@ function DrawChart({
             .attr("height", y_filter_senatorId.bandwidth())
             .attr(
               "transform",
-              `translate(${filter_senatorId ? smallTranslateWidth : 0}, 0)`
+              `translate(${filterSenatorId ? smallTranslateWidth : 0}, 0)`
             )
             .on("mouseover", mouseover)
             .on("mouseout", mouseout)
@@ -266,24 +260,24 @@ function DrawChart({
             .attr("class", d => "rect" + d.key)
             .attr("fill", function(d) {
               if (d.value === "1") {
-                return color_bars[0]
+                return colorBars[0]
               } else if (d.value === "2") {
-                return color_bars[1]
+                return colorBars[1]
               } else if (d.value === "3") {
-                return color_bars[2]
+                return colorBars[2]
               } else if (d.value === "4") {
-                return color_bars[3]
+                return colorBars[3]
               } else if (d.value === "5") {
-                return color_bars[4]
+                return colorBars[4]
               }
             })
         )
     }
-    if (is_yAxis) {
-      if (!is_On) {
+    if (isYAxis) {
+      if (!isOn) {
         all_axis.append("g").call(yAxis)
       }
-      if (is_On) {
+      if (isOn) {
         all_axis
           .append("g")
           .append("text")
@@ -306,7 +300,7 @@ function DrawChart({
       className="barChart-wrapper"
       style={{ display: "flex", marginBottom: "30px" }}
     >
-      {is_yAxis !== "" ? (
+      {isYAxis !== "" ? (
         <svg className="yAxis" style={{ width: "100px" }} />
       ) : (
         ""

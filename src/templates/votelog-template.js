@@ -163,6 +163,7 @@ const VotelogPage = ({
               <GatsbyImage
                 image={voteRecordIcon.childImageSharp.gatsbyImageData}
                 alt=""
+                aria-hidden="true"
                 style={{
                   verticalAlign: "middle",
                   display: "inline-block",
@@ -398,6 +399,7 @@ const VotelogPage = ({
                     <GatsbyImage
                       image={downloadIcon.childImageSharp.gatsbyImageData}
                       alt=""
+                      aria-hidden="true"
                       css={{ marginRight: "1rem", display: "inline-block" }}
                     />
                     {doc.title || "เอกสาร"}

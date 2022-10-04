@@ -11,7 +11,11 @@ const FeatureIcon = ({ image, borderWidth }) => {
         marginBottom: "1.5rem",
       }}
     >
-      <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt="" />
+      <GatsbyImage
+        image={image.childImageSharp.gatsbyImageData}
+        alt=""
+        aria-hidden="true"
+      />
     </div>
   )
 }

@@ -28,6 +28,7 @@ const Image = () => {
     <GatsbyImage
       image={data.placeholderImage.childImageSharp.gatsbyImageData}
       alt=""
+      aria-hidden="true"
     />
   )
 }
