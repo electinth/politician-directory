@@ -11,7 +11,8 @@
     "start": "yarn develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
-    "dev": "yarn develop"
+    "dev": "yarn develop",
+    "lint": "eslint"
   },
   "dependencies": {
     "@ant-design/icons": "4.0.0",
@@ -60,9 +61,13 @@
     "typography-theme-kirkham": "^0.16.19"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "babel-preset-gatsby": "^2.24.0",
     "csvtojson": "^2.0.10",
     "dayjs": "^1.10.4",
     "doctoc": "^1.4.0",
+    "eslint": "^8.24.0",
+    "eslint-config-react-app": "^7.0.1",
     "esm": "^3.2.25",
     "husky": "^3.0.9",
     "js-yaml": "^3.13.1",
