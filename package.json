@@ -93,11 +93,13 @@
   "lint-staged": {
     "src/**/*.{js,json,css}": [
       "prettier --write",
+      "eslint --fix",
       "git add"
     ],
     "**/README.md": [
       "doctoc",
       "prettier --write",
+      "eslint --fix",
       "git add"
     ]
   }
