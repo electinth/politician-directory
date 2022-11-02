@@ -3,7 +3,7 @@ import _ from "lodash"
 import dayjs from "dayjs"
 import calendar from "dayjs/plugin/calendar"
 import { graphql, useStaticQuery } from "gatsby"
-import BarChart from "./barchart"
+import BarChart from "./barChart"
 
 dayjs.extend(calendar)
 
