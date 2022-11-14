@@ -18,7 +18,7 @@
   margin-bottom: 16px;
 }
 
-.waffle-group > [data-gatsby-image-wrapper] {
+.waffle-group > a > [data-gatsby-image-wrapper] {
   overflow: hidden;
   border-radius: 50%;
 
