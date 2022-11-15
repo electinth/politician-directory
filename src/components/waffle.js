@@ -105,7 +105,7 @@ export const WaffleAligner = ({ data, cellStyleProps, style }) => {
 const WaffleGroup = ({ party, cellStyleProps }) => {
   return (
     <div className="waffle-group">
-      <a href={"/party/" + party.name}>
+      <a href={`/party/${party.name}`}>
         <PartyLogo name={party.name} />
       </a>
       <WaffleAligner data={party.data} cellStyleProps={cellStyleProps} />
