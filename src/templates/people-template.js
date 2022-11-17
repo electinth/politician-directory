@@ -22,7 +22,6 @@ export const query = graphql`
       name
       lastname
       gender
-      bio
       birthdate
       education
       graduation
@@ -286,9 +285,6 @@ const PeoplePage = props => {
               <h1 css={{ ...cssH1, margin: "1rem 0 0 0" }}>{personFullName}</h1>
               <PeopleStatus isActive={person.is_active} />
             </div>
-            <p css={{ marginTop: "3rem", marginBottom: "5rem" }}>
-              {person.bio}
-            </p>
           </div>
           <div className="page" css={cssRightPage}>
             <h2 css={{ ...cssH2, marginTop: "1rem", textAlign: "center" }}>

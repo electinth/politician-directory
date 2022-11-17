@@ -107,8 +107,6 @@ export const query = graphql`
           title
           description_th
           passed
-          is_no_vote
-          no_vote_description
           vote_date
         }
       }

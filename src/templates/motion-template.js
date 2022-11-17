@@ -77,8 +77,6 @@ export const query = graphql`
 
     votelog: votelogYaml(id: { eq: $votelog_id }) {
       passed
-      is_no_vote
-      no_vote_description
       disprove
       approve
       absent
@@ -176,7 +174,7 @@ const MotionPage = props => {
         />
         <Container
           popup={!!menu}
-          style={{ pointerEvents: !!menu ? "all" : "none" }}
+          style={{ pointerEvents: menu ? "all" : "none" }}
         >
           {!!menu && (
             <div

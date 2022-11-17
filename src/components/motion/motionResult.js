@@ -158,45 +158,41 @@ const Motionresult = ({
               >
                 บันทึกคะแนนเสียง
               </h3>
-              {votelog.is_no_vote ? (
-                <div>{votelog.no_vote_description || "-"}</div>
-              ) : (
-                <div
-                  css={css`
-                    padding: 20px 30px;
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-evenly;
-                  `}
-                >
-                  {VOTELOG_MAP.map(({ en, th, color }) => {
-                    return (
-                      <div key={en}>
-                        <h5
+              <div
+                css={css`
+                  padding: 20px 30px;
+                  display: flex;
+                  flex-flow: row wrap;
+                  justify-content: space-evenly;
+                `}
+              >
+                {VOTELOG_MAP.map(({ en, th, color }) => {
+                  return (
+                    <div key={en}>
+                      <h5
+                        css={css`
+                          font-size: 14px;
+                          margin: 10px 0;
+                        `}
+                      >
+                        {th}{" "}
+                        <span
                           css={css`
-                            font-size: 14px;
-                            margin: 10px 0;
+                            color: var(--cl-gray-1);
                           `}
                         >
-                          {th}{" "}
-                          <span
-                            css={css`
-                              color: var(--cl-gray-1);
-                            `}
-                          >
-                            {votelog[en]}
-                          </span>
-                        </h5>
-                        <VoteWaffle
-                          en={en}
-                          members={[...Array(votelog[en]).keys()]}
-                          color={color}
-                        />
-                      </div>
-                    )
-                  })}
-                </div>
-              )}
+                          {votelog[en]}
+                        </span>
+                      </h5>
+                      <VoteWaffle
+                        en={en}
+                        members={[...Array(votelog[en]).keys()]}
+                        color={color}
+                      />
+                    </div>
+                  )
+                })}
+              </div>
             </section>
             {votelog.passed && (
               <section
