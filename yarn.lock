@@ -3774,10 +3774,10 @@
     "@webassemblyjs/ast" "1.11.1"
     "@xtuc/long" "4.2.2"
 
-"@wevisdemo/ui@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@wevisdemo/ui/-/ui-4.1.0.tgz#87ddb2f75d3cc2ca6570c4f58dcac926466cb359"
-  integrity sha512-c0oSDh/now+Q9fUM2Y2y0u/B8Nj6pwAdT6DH3i9eapPIXcrNw91/Ws5mDXA9OqPevfmt8ua3OKqJzrY9khWnKA==
+"@wevisdemo/ui@^5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@wevisdemo/ui/-/ui-5.2.0.tgz#798ec3aa3d054d5ae5e8efa9c7282bd77e276cc9"
+  integrity sha512-L9yRhXcr8IbScDiqqH6GPr+t3QNnqSXXWZftWlC8d4T4srAlqFTt0D4NQTuk9IGt99FXLPo1j9mr+N0Y/eEquA==
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"

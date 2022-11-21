@@ -8,10 +8,17 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import WvFooter from "@wevisdemo/ui/components/footer.js"
-
+import WvFooter from "@wevisdemo/ui/react/footer"
+import WvCookieConsent from "@wevisdemo/ui/react/cookie-consent"
 import Header from "./header/index"
+import { initClarity } from "../utils/clarity"
 import "./layout.css"
+
+function onCookieAccept(option) {
+  if (option["Performance"]) {
+    initClarity()
+  }
+}
 
 const Layout = ({ children, pageStyles, className }) => {
   const data = useStaticQuery(graphql`
@@ -45,6 +52,11 @@ const Layout = ({ children, pageStyles, className }) => {
         {children}
       </main>
       <WvFooter dark />
+      <WvCookieConsent
+        policyUrl="https://wevis.info/cookies_1-3"
+        cookieOptions={["Performance"]}
+        onAccept={onCookieAccept}
+      />
     </div>
   )
 }
