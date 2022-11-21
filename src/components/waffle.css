@@ -43,6 +43,24 @@
   width: min-content;
 }
 
+.index-waffle-container {
+  display: flex;
+  margin-right: -3px;
+  margin-bottom: -3px;
+}
+
+.index-waffle-container > .waffle-aligner {
+  grid-auto-flow: column;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: initial;
+  align-content: start;
+  justify-content: start;
+}
+
+.index-waffle-container > .line {
+  margin: 0 1rem 3px calc(1rem - 3px);
+}
+
 @media only screen and (max-width: 900px) {
   .line {
     margin: 0 0.5rem;
@@ -50,6 +68,22 @@
 
   .waffle-chunk-container {
     grid-template-columns: auto;
+  }
+
+  .index-waffle-container {
+    flex-direction: column;
+  }
+
+  .index-waffle-container > .waffle-aligner {
+    grid-auto-flow: row;
+    grid-template-rows: initial;
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .index-waffle-container > .line {
+    width: auto;
+    height: 2px;
+    margin: calc(1rem - 3px) 3px 1rem 0;
   }
 }
 

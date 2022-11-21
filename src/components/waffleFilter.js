@@ -7,46 +7,27 @@ import { WaffleAligner } from "../components/waffle"
 
 const cssH1 = { fontSize: "4.8rem", marginTop: "4rem" }
 
-const Waffle = ({ data, colors, borderColors }) => {
-  const waffleContainerStyle = {
-    display: "flex",
-    maxWidth: "100vw",
-    overflowX: "auto",
-    padding: "8px",
-  }
-  const waffleAlignerStyle = {
-    gridAutoFlow: "column",
-    gridTemplateRows: "repeat(4,auto)",
-    gridTemplateColumns: "initial",
-    alignContent: "start",
-  }
-
-  return (
-    <div style={waffleContainerStyle}>
-      <WaffleAligner
-        data={data[0]}
-        cellStyleProps={{
-          color: colors[0],
-          borderColor: borderColors[0],
-        }}
-        style={waffleAlignerStyle}
-      />
-      {!!(data[0].length && data[1].length) && <div className="line" />}
-      <WaffleAligner
-        data={data[1]}
-        cellStyleProps={{
-          color: colors[1],
-          borderColor: borderColors[1],
-        }}
-        style={{
-          gridAutoFlow: "column",
-          gridTemplateRows: "repeat(4,auto)",
-          gridTemplateColumns: "initial",
-        }}
-      />
-    </div>
-  )
-}
+const Waffle = ({ data, colors, borderColors }) => (
+  <div className="index-waffle-container">
+    <WaffleAligner
+      className="waffle-aligner"
+      data={data[0]}
+      cellStyleProps={{
+        color: colors[0],
+        borderColor: borderColors[0],
+      }}
+    />
+    {!!(data[0].length && data[1].length) && <div className="line" />}
+    <WaffleAligner
+      className="waffle-aligner"
+      data={data[1]}
+      cellStyleProps={{
+        color: colors[1],
+        borderColor: borderColors[1],
+      }}
+    />
+  </div>
+)
 
 const formatHouse = house => {
   if (house === "ทั้งหมด") {

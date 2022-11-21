@@ -86,11 +86,11 @@ const WaffleCell = ({ node, cellStyleProps }) => {
   )
 }
 
-export const WaffleAligner = ({ data, cellStyleProps, style }) => {
+export const WaffleAligner = ({ data, cellStyleProps, style, className }) => {
   const chunks = chunk(data, COUNT_OF_WAFFLE)
 
   return (
-    <div className="waffle-chunk-container" style={style}>
+    <div className={`waffle-chunk-container ${className ?? ""}`} style={style}>
       {chunks.map((chunk, chunkIdx) => (
         <div className="waffle-chunk" key={`wch${chunkIdx}`}>
           {chunk.map(({ node }, nodeIdx) => (
