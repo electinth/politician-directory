@@ -10,6 +10,9 @@ const cssH1 = { fontSize: "4.8rem", marginTop: "4rem" }
 const Waffle = ({ data, colors, borderColors }) => {
   const waffleContainerStyle = {
     display: "flex",
+    maxWidth: "100vw",
+    overflowX: "auto",
+    padding: "8px",
   }
   const waffleAlignerStyle = {
     gridAutoFlow: "column",
