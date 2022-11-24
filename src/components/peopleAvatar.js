@@ -34,6 +34,7 @@ const PeopleAvatar = ({ title = "", name, lastname }) => {
     <GatsbyImage
       image={getImage((personImageNode || placeHolderImageNode).node)}
       alt={alt}
+      style={{ pointerEvents: "none" }}
     />
   ) : null
 }

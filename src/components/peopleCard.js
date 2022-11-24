@@ -11,12 +11,10 @@ export const ProfilePicture = props => {
         borderRadius: 84,
         width: 84,
         height: 84,
-        float: "left",
         marginBottom: 0,
         marginRight: "2rem",
         border: "2px solid var(--cl-black)",
         background: "var(--cl-gray-2) no-repeat",
-        backgroundSize: "cover",
         overflow: "hidden",
       }}
     >

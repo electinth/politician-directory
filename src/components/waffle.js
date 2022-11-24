@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
 import { chunk, groupBy } from "lodash"
+import { useFloating, shift } from "@floating-ui/react-dom"
 import PeopleCard from "./peopleCard"
 import PartyLogo from "./partyLogo"
 
@@ -22,10 +23,6 @@ let cellStyle = (color, borderColor, isCross = false) => ({
   "&:hover": {
     border: "2px solid var(--cl-black)",
   },
-  "&:hover .tooltip-text": {
-    display: "block",
-    zIndex: 10,
-  },
   ...(isCross && {
     border: "none",
     backgroundImage: `url(${cross})`,
@@ -35,54 +32,74 @@ let cellStyle = (color, borderColor, isCross = false) => ({
 })
 
 const tooltipTextStyle = {
-  display: "none",
   position: "absolute",
-  top: "5px",
-  left: "-2px",
   width: 350,
-  padding: 0,
   lineHeight: "1.8rem",
-  border: "none",
-  borderRadius: "0 5px 5px 5px",
-  backgroundColor: "transparent",
+  zIndex: 10,
 }
 
 const WaffleCell = ({ node, cellStyleProps }) => {
+  const [isWaffleCellHover, setIsWaffleCellHover] = useState(false)
+  const { x, y, reference, floating } = useFloating({
+    placement: "bottom-start",
+    strategy: "absolute",
+    middleware: [shift()],
+  })
+
   return (
-    <div
-      css={cellStyle(
-        cellStyleProps.color,
-        cellStyleProps.borderColor,
-        cellStyleProps.isCross
-      )}
-    >
-      <div className="tooltip-text" css={tooltipTextStyle}>
-        <PeopleCard
-          {...node}
-          css={{
-            padding: "1rem 1rem",
-            margin: 0,
-            alignItems: "center",
-            border: "2px solid var(--cl-black)",
-            ".card-info": {
-              ".card-name": {
-                fontSize: "1.8rem",
-                fontWeight: "bold",
-                fontFamily: "var(--ff-text)",
-              },
-              ".card-description": {
-                fontSize: "1.6rem",
-                fontFamily: "var(--ff-text)",
-              },
-            },
-            ".profile-picture": {
-              height: "5rem",
-              flexBasis: "5rem",
-            },
-          }}
-        ></PeopleCard>
+    <>
+      {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
+      <div
+        css={cellStyle(
+          cellStyleProps.color,
+          cellStyleProps.borderColor,
+          cellStyleProps.isCross
+        )}
+        ref={reference}
+        onMouseEnter={() => {
+          setIsWaffleCellHover(true)
+        }}
+        onMouseLeave={() => {
+          setIsWaffleCellHover(false)
+        }}
+      >
+        {isWaffleCellHover && (
+          <div
+            css={tooltipTextStyle}
+            ref={floating}
+            style={{
+              top: y ?? 0,
+              left: x ?? 0,
+            }}
+          >
+            <PeopleCard
+              {...node}
+              css={{
+                padding: "1rem 1rem",
+                margin: 0,
+                alignItems: "center",
+                border: "2px solid var(--cl-black)",
+                ".card-info": {
+                  ".card-name": {
+                    fontSize: "1.8rem",
+                    fontWeight: "bold",
+                    fontFamily: "var(--ff-text)",
+                  },
+                  ".card-description": {
+                    fontSize: "1.6rem",
+                    fontFamily: "var(--ff-text)",
+                  },
+                },
+                ".profile-picture": {
+                  height: "5rem",
+                  flexBasis: "5rem",
+                },
+              }}
+            ></PeopleCard>
+          </div>
+        )}
       </div>
-    </div>
+    </>
   )
 }
 
