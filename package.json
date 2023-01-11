@@ -38,7 +38,7 @@
     "gatsby-plugin-sharp": "^3.5.0",
     "gatsby-plugin-typography": "^3.5.0",
     "gatsby-source-filesystem": "^3.5.0",
-    "gatsby-transformer-remark": "^4.2.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^3.5.0",
     "gatsby-transformer-yaml": "^3.5.0",
     "googleapis": "^52.1.0",
