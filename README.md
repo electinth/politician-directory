@@ -10,7 +10,7 @@ An open-source politician directory project for listing and tracking activities 
 - [Getting Started for Contributers](#getting-started-for-contributers)
 - [Reference](#reference)
   - [Data Dictionary](#data-dictionary)
-- [Glossary](#glossary)
+  - [Glossary](#glossary)
 
 ## 🌎 Environments
 
@@ -59,11 +59,11 @@ Thank you for your contribution and enjoy coding!
 
 ## 📖 Reference
 
-## Data Dictionary
+### Data Dictionary
 
 - [Data-Dictionary](https://github.com/codeforthailand/politician-directory/wiki/Data-Dictionary)
 
-## Glossary
+### Glossary
 
 | Thai                        | English                                |
 | --------------------------- | -------------------------------------- |
