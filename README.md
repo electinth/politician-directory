@@ -1,63 +1,65 @@
-<h1 align="center">
-  They Work For Us
-</h1>
+# They Work For Us
 
-**They Work For Us** is an open-source politician directory project for listing and tracking activities of members of the Cabinet and National Assembly of Thailand. It's run on [Gatsby](https://www.gatsbyjs.org).
+An open-source politician directory project for listing and tracking activities of members of the Cabinet and National Assembly of Thailand. It's run on [Gatsby](https://www.gatsbyjs.org).
 
-## Table of Contents
+## 👓 Table of Contents
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
+- [Environments](#environments)
 - [Development](#development)
 - [Sync Data](#sync-data)
-  - [Environments](#environments)
 - [Getting Started for Contributers](#getting-started-for-contributers)
 - [Reference](#reference)
-  - [Design & Architecture](#design--architecture)
   - [Data Dictionary](#data-dictionary)
 - [Glossary](#glossary)
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+## 🌎 Environments
 
-## Development
+|                     Environment                     |                Description                |
+| :-------------------------------------------------: | :---------------------------------------: |
+| [Staging](https://staging.theyworkforus.wevis.info) | Non-release features for internal testing |
+|   [Production](https://theyworkforus.wevis.info)    |              Public website               |
 
-After installing Node 8+ and `yarn`, you can start in development mode by
+## 🍳 Development
+
+After installing NodeJS and `yarn`, you can start in development mode by
 
 ```console
 yarn start
 ```
 
-Your site is running on `http://localhost:8000` and GraphQL tool helper on `http://localhost:8000/___graphql`.
+Your site is running on `http://localhost:8000` and GraphQL playground on `http://localhost:8000/___graphql`.
 
-## Sync Data
+## 📑 Sync Data
 
-Data sources are maintained on Google Sheets by contributors. To sync data and append latest changes to `src/contents/*.yaml`, run:
+Data sources are maintained on [Google Sheets](https://docs.google.com/spreadsheets/d/1kcom8zgR-FMCGu78bCwilxq5-GrE4NVr5cE4L7geUuo) by contributors. We have script to fetch and transform it into YAML files, which will be consumed by Gatsby.
+
+```mermaid
+graph TD
+    A[Google Sheets] -->|yarn sync| B[src/contents/*.yaml]
+    B -->|gatsby-source-filesystem| C[Gatsby's GraphQL]
+    C -->|graphql query| D[React frontend]
+    C --> E[GraphQL playground]
+    D -->|build| F[Static site]
+```
+
+To sync data and append latest changes to `src/contents/*.yaml`, run:
 
 ```console
 yarn sync
 ```
 
-### Environments
+## 🙋 Getting Started for Contributers
 
-|                     Environment                     |                 Description                  |
-| :-------------------------------------------------: | :------------------------------------------: |
-|                         Dev                         | Each PR will be built and hosted on Netlify. |
-| [Staging](https://staging.theyworkforus.wevis.info) |      New features awaiting for release.      |
-|   [Production](https://theyworkforus.wevis.info)    |                Public website                |
+- Issues with **"help wanted"** tag can be picked up, and assign yourself to the issue.
+- We ain't no dictatorship! Feel free to suggest an idea, and use the techniques/tools you prefer.
+- The codebase is not so nice, to be honest. Feel free to ask or discuss any concern in the issue.
+- When you are done or need help, submit the PR to the repository for a review.
 
-## Getting Started for Contributers
+Thank you for your contribution and enjoy coding!
 
-For first time contributer, browse for issues with `goodfirstissue` tag. Looking for `hacktoberfest` if you want to join the hack event!
+## 📖 Reference
 
-## Reference
-
-### Design & Architecture
-
-- [Prototype design](https://invis.io/7HU7PWOYAQM#387144381_Landing_Page)
-- [Technical sketches](https://projects.invisionapp.com/freehand/document/NhJHf12G0)
-
-### Data Dictionary
+## Data Dictionary
 
 - [Data-Dictionary](https://github.com/codeforthailand/politician-directory/wiki/Data-Dictionary)
 
