@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import _ from "lodash"
 
 import { formatDate } from "../utils"
+import VoteSearchInput from "./votesearch/VoteSearchInput"
 
 const cssSection = { paddingBottom: "8rem" }
 const cssSectionWhite = {
@@ -80,18 +81,38 @@ class PeopleVote extends Component {
   state = {
     allVote: this.props.allVote,
     activeFilter: 0,
+    searchText: "",
+  }
+
+  applyFilterAndSearch = (choice, searchText) => {
+    let allVote = this.props.allVote
+    const trimmedSearchText = searchText.trim()
+
+    const matchConsecutiveSpaces = /\s+/g
+    const searchRegExp = new RegExp(
+      trimmedSearchText.replace(matchConsecutiveSpaces, "|"),
+      "g"
+    )
+
+    allVote = this.props.allVote.filter(function({
+      choice: voteChoice,
+      title,
+      legal_title,
+    }) {
+      return (
+        (choice === 0 || voteChoice === String(choice)) &&
+        searchRegExp.test(title + legal_title)
+      )
+    })
+    this.setState({ allVote, activeFilter: choice, searchText })
   }
 
   handleFilter = choice => {
-    let allVote = this.props.allVote
-    if (choice === 0) {
-      this.setState({ allVote, activeFilter: choice })
-    } else {
-      allVote = _.filter(allVote, function(o) {
-        return o["choice"] === String(choice)
-      })
-      this.setState({ allVote, activeFilter: choice })
-    }
+    this.applyFilterAndSearch(choice, this.state.searchText)
+  }
+
+  handleChangeSearchText = searchText => {
+    this.applyFilterAndSearch(this.state.activeFilter, searchText)
   }
 
   render() {
@@ -154,6 +175,10 @@ class PeopleVote extends Component {
               </button>
             ))}
           </div>
+          <VoteSearchInput
+            value={this.state.searchText}
+            onChangeText={this.handleChangeSearchText}
+          />
           {allVote.length > 0 ? (
             allVote.map(vote => (
               <PeopleVoteCard key={vote.id} {...vote}></PeopleVoteCard>

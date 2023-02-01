@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import "./votesearch.css"
-import searchImg from "../../images/icons/search/search.png"
+import VoteSearchInput from "./VoteSearchInput"
 
 export default function VoteSearch() {
   const data = useStaticQuery(graphql`
@@ -36,7 +36,6 @@ export default function VoteSearch() {
 
   const [filteredQuery, setFilteredQuery] = useState([])
   const [searchText, setSearchText] = useState("")
-  const handleSearchChange = e => setSearchText(e.target.value)
 
   useEffect(() => {
     const trimmedSearchText = searchText.trim()
@@ -56,24 +55,7 @@ export default function VoteSearch() {
 
   return (
     <div className="votesearch-origin">
-      <div className="votesearch-container">
-        <input
-          className="votesearch-input"
-          type="text"
-          placeholder="พิมพ์ชื่อมติ"
-          value={searchText}
-          onChange={handleSearchChange}
-        />
-        <img
-          className="votesearch-decor"
-          src={searchImg}
-          alt=""
-          loading="lazy"
-          decoding="async"
-          width="15"
-          height="15"
-          aria-hidden="true"
-        />
+      <VoteSearchInput value={searchText} onChangeText={setSearchText}>
         {searchText && (
           <ul className="votesearch-result">
             {filteredQuery.length ? (
@@ -89,7 +71,7 @@ export default function VoteSearch() {
             )}
           </ul>
         )}
-      </div>
+      </VoteSearchInput>
     </div>
   )
 }
