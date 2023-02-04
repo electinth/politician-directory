@@ -191,10 +191,13 @@ const RepresentativesPage = props => {
     })
   )
 
+  const voteLimit = 6
+
   const votelogs = joinPeopleVotelog(
     data.allPeopleYaml,
     data.allPeopleVoteYaml,
-    data.allVotelogYaml
+    data.allVotelogYaml,
+    voteLimit
   )
 
   return (

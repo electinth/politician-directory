@@ -249,10 +249,13 @@ const SenatePage = props => {
 
   const showingMembers = getSortedMembers()
 
+  const voteLimit = 6
+
   const votelogs = joinPeopleVotelog(
     data.allPeopleYaml,
     data.allPeopleVoteYaml,
-    data.allVotelogYaml
+    data.allVotelogYaml,
+    voteLimit
   )
 
   return (

@@ -365,7 +365,7 @@ export function filterVote(peopleVotelog, key, value) {
   })
 }
 
-export function joinPeopleVotelog(people, peopleVotelogs, votelogs, limit = 6) {
+export function joinPeopleVotelog(people, peopleVotelogs, votelogs, limit) {
   const votelogByPeople = peopleVotelogs.edges.map(({ node }) => node)
   const allPeople = people.edges.map(({ node: person }) => {
     const vote = _.find(votelogByPeople, ["id", person.id])
@@ -375,7 +375,7 @@ export function joinPeopleVotelog(people, peopleVotelogs, votelogs, limit = 6) {
     }
   })
 
-  return votelogs.edges
+  let voteResult = votelogs.edges
     .map(({ node: votelog }) => {
       const approve = filterVote(allPeople, votelog.id, "1").length
       const disprove = filterVote(allPeople, votelog.id, "2").length
@@ -394,5 +394,10 @@ export function joinPeopleVotelog(people, peopleVotelogs, votelogs, limit = 6) {
       }
     })
     .filter(({ total_voter }) => total_voter > 0)
-    .slice(0, limit)
+
+  if (limit) {
+    voteResult = voteResult.slice(0, limit)
+  }
+
+  return voteResult
 }
