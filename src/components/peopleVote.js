@@ -85,7 +85,6 @@ class PeopleVote extends Component {
   }
 
   applyFilterAndSearch = (choice, searchText) => {
-    let allVote = this.props.allVote
     const trimmedSearchText = searchText.trim()
 
     const matchConsecutiveSpaces = /\s+/g
@@ -94,7 +93,7 @@ class PeopleVote extends Component {
       "g"
     )
 
-    allVote = this.props.allVote.filter(function({
+    const allVote = this.props.allVote.filter(function({
       choice: voteChoice,
       title,
       legal_title,
