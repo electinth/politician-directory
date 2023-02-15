@@ -185,13 +185,12 @@ class PeopleVote extends Component {
           ) : (
             <div
               css={{
-                fontFamily: "var(--ff-title)",
-                fontSize: "3.2rem",
                 textAlign: "center",
                 margin: "6rem 0",
+                color: "var(--cl-gray-2)",
               }}
             >
-              ยังไม่เคยลงมติประเภทนี้
+              ไม่พบการลงมตินี้ในเว็บไซต์
             </div>
           )}
         </div>
