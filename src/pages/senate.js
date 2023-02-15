@@ -19,6 +19,8 @@ import { media } from "../styles"
 
 import "../styles/profile-book.css"
 
+const VOTE_LIMIT = 6
+
 export const query = graphql`
   query {
     senate: partyYaml(party_type: { eq: "สว" }, is_active: { eq: true }) {
@@ -249,13 +251,11 @@ const SenatePage = props => {
 
   const showingMembers = getSortedMembers()
 
-  const voteLimit = 6
-
   const votelogs = joinPeopleVotelog(
     data.allPeopleYaml,
     data.allPeopleVoteYaml,
     data.allVotelogYaml,
-    voteLimit
+    VOTE_LIMIT
   )
 
   return (

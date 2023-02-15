@@ -18,6 +18,8 @@ import VoteLogCard from "../components/voteLogCard"
 
 import "../styles/profile-book.css"
 
+const VOTE_LIMIT = 6
+
 export const query = graphql`
   query {
     house: partyYaml(party_type: { eq: "สส" }, is_active: { eq: true }) {
@@ -191,13 +193,11 @@ const RepresentativesPage = props => {
     })
   )
 
-  const voteLimit = 6
-
   const votelogs = joinPeopleVotelog(
     data.allPeopleYaml,
     data.allPeopleVoteYaml,
     data.allVotelogYaml,
-    voteLimit
+    VOTE_LIMIT
   )
 
   return (
