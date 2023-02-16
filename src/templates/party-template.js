@@ -68,7 +68,7 @@ export const query = graphql`
         is_active: { eq: true }
       }
     ) {
-      group(field: mp_type) {
+      group(field: { mp_type: SELECT }) {
         value: totalCount
         name: fieldValue
       }
@@ -80,7 +80,7 @@ export const query = graphql`
         is_active: { eq: true }
       }
     ) {
-      group(field: gender) {
+      group(field: { gender: SELECT }) {
         value: totalCount
         name: fieldValue
       }
@@ -92,7 +92,7 @@ export const query = graphql`
         is_active: { eq: true }
       }
     ) {
-      group(field: education) {
+      group(field: { education: SELECT }) {
         value: totalCount
         name: fieldValue
       }
@@ -104,7 +104,7 @@ export const query = graphql`
         is_active: { eq: true }
       }
     ) {
-      group(field: occupation_group) {
+      group(field: { occupation_group: SELECT }) {
         value: totalCount
         name: fieldValue
       }
@@ -137,7 +137,7 @@ export const query = graphql`
     }
     allVotelogYaml(
       filter: { is_active: { eq: true } }
-      sort: { fields: vote_date, order: DESC }
+      sort: { vote_date: DESC }
     ) {
       totalCount
       edges {

@@ -56,7 +56,7 @@ export const query = graphql`
     allVotelogYaml(
       filter: { is_active: { eq: true } }
       limit: 6
-      sort: { fields: vote_date, order: DESC }
+      sort: { vote_date: DESC }
     ) {
       totalCount
       edges {

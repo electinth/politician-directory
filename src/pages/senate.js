@@ -22,7 +22,7 @@ import "../styles/profile-book.css"
 const VOTE_LIMIT = 6
 
 export const query = graphql`
-  query {
+  {
     senate: partyYaml(party_type: { eq: "สว" }, is_active: { eq: true }) {
       name
       party_ordinal
@@ -57,7 +57,7 @@ export const query = graphql`
     gender: allPeopleYaml(
       filter: { is_senator: { eq: true }, is_active: { eq: true } }
     ) {
-      group(field: gender) {
+      group(field: { gender: SELECT }) {
         value: totalCount
         name: fieldValue
       }
@@ -65,7 +65,7 @@ export const query = graphql`
     education: allPeopleYaml(
       filter: { is_senator: { eq: true }, is_active: { eq: true } }
     ) {
-      group(field: education) {
+      group(field: { education: SELECT }) {
         value: totalCount
         name: fieldValue
       }
@@ -73,7 +73,7 @@ export const query = graphql`
     occupation_group: allPeopleYaml(
       filter: { is_senator: { eq: true }, is_active: { eq: true } }
     ) {
-      group(field: occupation_group) {
+      group(field: { occupation_group: SELECT }) {
         value: totalCount
         name: fieldValue
       }
@@ -98,7 +98,7 @@ export const query = graphql`
     }
     allVotelogYaml(
       filter: { is_active: { eq: true } }
-      sort: { fields: vote_date, order: DESC }
+      sort: { vote_date: DESC }
     ) {
       totalCount
       edges {

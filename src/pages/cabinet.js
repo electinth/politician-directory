@@ -12,7 +12,7 @@ import { media } from "../styles"
 import "../styles/profile-book.css"
 
 export const query = graphql`
-  query {
+  {
     cabinet: partyYaml(party_type: { eq: "ครม" }) {
       name
       party_ordinal
@@ -32,7 +32,7 @@ export const query = graphql`
     gender: allPeopleYaml(
       filter: { is_cabinet: { eq: true }, is_active: { eq: true } }
     ) {
-      group(field: gender) {
+      group(field: { gender: SELECT }) {
         value: totalCount
         name: fieldValue
       }
@@ -40,7 +40,7 @@ export const query = graphql`
     education: allPeopleYaml(
       filter: { is_cabinet: { eq: true }, is_active: { eq: true } }
     ) {
-      group(field: education) {
+      group(field: { education: SELECT }) {
         value: totalCount
         name: fieldValue
       }
@@ -48,7 +48,7 @@ export const query = graphql`
     occupation_group: allPeopleYaml(
       filter: { is_cabinet: { eq: true }, is_active: { eq: true } }
     ) {
-      group(field: occupation_group) {
+      group(field: { occupation_group: SELECT }) {
         value: totalCount
         name: fieldValue
       }

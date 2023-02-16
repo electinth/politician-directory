@@ -234,8 +234,8 @@ const Motion = ({ data }) => {
         votelog: votelog,
         score: (votelog / senate.votelog.length) * 100,
         senator_method: data.senatorData.edges.find(
-          senator => senator.node.id === senate.id
-        ).node.senator_method,
+          senator => senator?.node.id === senate.id
+        )?.node.senator_method,
       }
     })
     .sort((a, b) => {
