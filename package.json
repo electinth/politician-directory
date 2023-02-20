@@ -58,6 +58,7 @@
     "react-autosuggest": "^10.0.2",
     "react-dom": "^18.2.0",
     "react-helmet": "^5.2.1",
+    "react-select": "^5.7.0",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
     "typography-theme-kirkham": "^0.16.19"
@@ -93,7 +94,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,json,css}": [
+    "src/**/*.{js,css}": [
       "prettier --write",
       "eslint --fix",
       "git add"
@@ -102,6 +103,10 @@
       "doctoc",
       "prettier --write",
       "eslint --fix",
+      "git add"
+    ],
+    "src/**/*.{json}": [
+      "prettier --write",
       "git add"
     ]
   }
